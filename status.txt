@@ -1,1 +1,42 @@
-starting
+generated: 2026-08-11 13:20:05 UTC
+queue:  active
+done:   106
+queued: 2
+failed: 2
+hold:   36
+
+-- queued --
+h02-88-prove-scripts-and-screen-gate.md
+h04-99-application-shell-and-navigation.md
+-- failed --
+a06-open-every-screen-in-a-real-browser.md
+q01a-bank-transfer.md
+
+-- last 16 log lines --
+  0 task(s) completed, 2 failed
+  finished Tue 11 Aug 12:34
+  logs in logs/  ·  tell Claude in the chat
+
+  failed tasks are in tasks/failed/ — nothing was deleted:
+    a06-open-every-screen-in-a-real-browser.md
+    h02-88-prove-scripts-and-screen-gate.md
+    h04-99-application-shell-and-navigation.md
+    q01a-bank-transfer.md
+================================================
+================================================
+  RunUrBusiness — draining the task queue
+  started Tue 11 Aug 13:09
+================================================
+
+---- h02-88-prove-scripts-and-screen-gate ----  started 13:09:30
+
+-- memory --
+               total        used        free      shared  buff/cache   available
+Mem:           15603       11421         197         155        4479        4182
+-- processes --
+    ELAPSED   RSS CMD
+      05:32 9871328 next-server (v16.2.11)
+      05:20 429692 /home/build/.cache/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-linux64
+      10:32 348624 /usr/bin/claude --dangerously-skip-permissions -p > ### HOW TO RUN THIS TASK — read this 
+-- disk --
+/dev/sda1        75G   21G   52G  29% /
