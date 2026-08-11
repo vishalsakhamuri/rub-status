@@ -1,4 +1,4 @@
-generated: 2026-08-11 17:50:01 UTC
+generated: 2026-08-11 17:55:01 UTC
 done:   107
 queued: 37
 failed: 2
@@ -47,7 +47,6 @@ a06-open-every-screen-in-a-real-browser.md
 q01a-bank-transfer.md
 
 -- log --
-       reason: commit made but no completion marker
        see logs/h04-99-application-shell-and-navigation.log
 
 ================================================
@@ -67,15 +66,16 @@ q01a-bank-transfer.md
 
 ---- h04-99-application-shell-and-navigation ----  started 17:23:03
      . suite green: 2606 tests
+     . build clean
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2743       10800          30        2428       12859
+Mem:           15603        1739       12126          58        2133       13863
 -- top --
     ELAPSED   RSS COMMAND
-      00:16 1737324 node
-      03:30 223912 next-server (v1
-      00:13 144888 node
-      00:16 141128 node
+      03:17 434808 next-server (v1
+      03:12 258384 chrome-headless
+      08:30 223916 next-server (v1
+      03:14 219924 node
 -- disk --
-/dev/sda1        75G   16G   57G  22% /
+/dev/sda1        75G   16G   57G  21% /
