@@ -1,12 +1,11 @@
-generated: 2026-08-11 20:25:01 UTC
-done:   108
-queued: 37
+generated: 2026-08-11 20:30:01 UTC
+done:   109
+queued: 36
 failed: 2
 hold:   0
 
 -- queued --
 h00c-116-prove-it-works-not-that-it-renders.md
-t00-113-reconcile-the-built-digisign-surface.md
 t01-70-digisign-preview-fix.md
 t04-73-signer-experience.md
 t05-74-email-deliverability.md
@@ -47,11 +46,6 @@ a06-open-every-screen-in-a-real-browser.md
 q01a-bank-transfer.md
 
 -- log --
-  failed tasks are in tasks/failed/ — nothing was deleted:
-    a06-open-every-screen-in-a-real-browser.md
-    h04-99-application-shell-and-navigation.md
-    q01a-bank-transfer.md
-================================================
 ================================================
   RunUrBusiness — draining the task queue
   started Tue 11 Aug 17:23
@@ -67,15 +61,20 @@ q01a-bank-transfer.md
 ---- t00-113-reconcile-the-built-digisign-surface ----  started 18:07:11
      . suite green: 2606 tests
      . build clean
+     . screens clean: 181 screens, 21 not reachable
+     . gate clean — see docs/gate-report.md
+     [done] 20:28:14   ->  logs/t00-113-reconcile-the-built-digisign-surface.log   (commit + completion marker)
+
+---- h00c-116-prove-it-works-not-that-it-renders ----  started 20:28:16
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1992       11851          84        2182       13610
+Mem:           15603         921       12745          32        2307       14681
 -- top --
     ELAPSED   RSS COMMAND
-      12:16 569224 next-server (v1
-      12:14 381588 node
-      02:57 280112 chrome-headless
-      12:12 231000 chrome-headless
+      01:43 408000 claude
+ 2-04:18:54 65708 systemd-journal
+   01:30:29 11980 sshd-session
+   01:00:52 11864 sshd-session
 -- disk --
 /dev/sda1        75G   16G   57G  21% /
