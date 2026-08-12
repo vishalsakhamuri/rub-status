@@ -1,4 +1,4 @@
-generated: 2026-08-12 13:30:01 UTC
+generated: 2026-08-12 13:35:01 UTC
 done:   112
 queued: 34
 failed: 7
@@ -49,7 +49,6 @@ t05-74-email-deliverability.md
 t06-75-corrections-after-send.md
 
 -- log --
-     . screens clean: 183 screens, 18 not reachable
      . journeys clean: 5 of 5 passed
      [FAILED] (exit 98) 10:17:07
        moved to tasks/failed/ — the queue carries on
@@ -69,15 +68,16 @@ t06-75-corrections-after-send.md
 
 ---- h00g-t12-96-signature-capture-and-reuse ----  started 12:18:04
      ! SUITE RED: 2 of 2649 tests failing — see logs/suite-latest.log
+     . build clean
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603       13039        2059          31         874        2563
+Mem:           15603       10477         447          60        5078        5125
 -- top --
     ELAPSED   RSS COMMAND
-   01:22:40 10520076 next-server (v1
-      00:08 1748832 node
-      00:05 149608 node
-      00:08 142064 node
+      01:16 9326720 next-server (v1
+      04:03 330024 chrome-headless
+      04:07 189476 node
+      00:00 152248 node
 -- disk --
-/dev/sda1        75G   28G   45G  39% /
+/dev/sda1        75G   28G   44G  39% /
