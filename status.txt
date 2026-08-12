@@ -1,4 +1,4 @@
-generated: 2026-08-12 19:50:01 UTC
+generated: 2026-08-12 19:55:01 UTC
 done:   112
 queued: 31
 failed: 10
@@ -49,8 +49,6 @@ t06-75-corrections-after-send.md
 t07-76-digisign-filing-and-integration.md
 
 -- log --
----- t07-76-digisign-filing-and-integration ----  started 16:09:02
-================================================
   RunUrBusiness — draining the task queue
   started Wed 12 Aug 16:57
 ================================================
@@ -69,15 +67,17 @@ t07-76-digisign-filing-and-integration.md
 ---- t08-77-purpose-routing-and-folder-intelligence ----  started 18:20:44
      ! SUITE RED: 2 of 2685 tests failing — see logs/suite-latest.log
      . build clean
+     ! SCREENS: 32 broken, 0 blank, 0 404 of 184 — see docs/screen-audit.md
+     . journeys clean: 5 of 5 passed
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603       14629         792          69         570         973
+Mem:           15603         946       13934          31        1071       14656
 -- top --
     ELAPSED   RSS COMMAND
-      38:31 13453556 next-server (v1
-      07:26 486736 chrome-headless
-      07:28 222296 node
-      07:26 128360 chrome-headless
+      00:02 241052 node
+      00:02 84800 npm exec tsx --
+      00:12 76248 npm exec tsx --
+      00:11 65684 node
 -- disk --
-/dev/sda1        75G   25G   48G  35% /
+/dev/sda1        75G   27G   45G  38% /
