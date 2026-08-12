@@ -1,4 +1,4 @@
-generated: 2026-08-12 11:55:01 UTC
+generated: 2026-08-12 12:00:01 UTC
 done:   112
 queued: 35
 failed: 6
@@ -49,8 +49,6 @@ t05-74-email-deliverability.md
 t06-75-corrections-after-send.md
 
 -- log --
-     . journeys clean: 5 of 5 passed
-     ! GATE FAILED: 1 of 2649 tests failing; scripts/prove-mail-transport.ts failed (h00-80 is marked done): NOT run. Configure them and re-run this script, or run scripts/prove-mail-send.ts, / to complete that proof against a real inbox. / ────────────────────────────────────────────────────────────────────────────── /  / [31m4 check(s) failed[0m
      [FAILED] (exit 97) 09:00:26
        moved to tasks/failed/ — the queue carries on
        reason: completion marker + commit present, but the gate failed: 1 of 2649 tests failing; scripts/prove-mail-transport.ts failed (h00-80 is marked done): NOT run. Configure them and re-run this script, or run scripts/prove-mail-send.ts, / to complete that proof against a real inbox. / ────────────────────────────────────────────────────────────────────────────── /  / [31m4 check(s) failed[0m
@@ -69,15 +67,17 @@ t06-75-corrections-after-send.md
 
 ---- h00f-119-the-panel-stays-the-document-scrolls ----  started 10:17:09
      ! exited clean but produced nothing verifiable — stalled — log ends on a waiting line, no commit, no marker
+     ! SUITE RED: 2 of 2649 tests failing — see logs/suite-latest.log
+     . build clean
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        5752        7824         124        2562        9850
+Mem:           15603        9639        1632         188        4930        5963
 -- top --
     ELAPSED   RSS COMMAND
-   01:31:41 4058524 next-server (v1
-      21:37 398720 node
-   07:47:37 340268 next-server (v1
-   01:30:51 165616 node
+   01:36:41 7711372 next-server (v1
+      02:14 370444 chrome-headless
+   07:52:37 340268 next-server (v1
+      02:17 174832 node
 -- disk --
-/dev/sda1        75G   16G   56G  23% /
+/dev/sda1        75G   19G   54G  26% /
