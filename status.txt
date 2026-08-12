@@ -1,16 +1,20 @@
-generated: 2026-08-12 07:15:01 UTC
+generated: 2026-08-12 07:20:01 UTC
 done:   112
-queued: 31
+queued: 37
 failed: 4
 hold:   0
 
 -- queued --
+h00a-123-the-red-suite-and-the-employee-who-can-read-everything.md
+h00e-118-four-findings-from-the-owners-hands.md
+h00f-119-the-panel-stays-the-document-scrolls.md
+h00g-t12-96-signature-capture-and-reuse.md
+h00h-120-a-top-level-folder-and-a-file-with-no-questions.md
 t07-76-digisign-filing-and-integration.md
 t08-77-purpose-routing-and-folder-intelligence.md
 t09-78-arrange-and-one-logic.md
 t10-79-no1edit-workspace.md
 t11-93-digisign-templates.md
-t12-96-signature-capture-and-reuse.md
 t14-110-signing-order-and-counter-signature.md
 u01-81-hr-core-and-employment-record.md
 u02-82-self-service-and-approvals.md
@@ -36,6 +40,8 @@ u24-108-accounting-packet-one-file-per-month.md
 u25-109-the-manual-path-when-a-module-is-not-subscribed.md
 u26-111-backups-and-the-restore-drill.md
 u27-112-subscription-scopes-upgrade-and-downgrade.md
+y00-122-the-four-one-step-jobs.md
+z00-121-one-document-through-all-four-tools.md
 -- failed --
 a06-open-every-screen-in-a-real-browser.md
 q01a-bank-transfer.md
@@ -43,12 +49,6 @@ t05-74-email-deliverability.md
 t06-75-corrections-after-send.md
 
 -- log --
-       see logs/t05-74-email-deliverability.log
-
----- t06-75-corrections-after-send ----  started 04:03:08
-================================================
-  RunUrBusiness — draining the task queue
-  started Wed 12 Aug 04:08
 ================================================
 
 ---- t06-75-corrections-after-send ----  started 04:08:07
@@ -63,15 +63,21 @@ t06-75-corrections-after-send.md
        see logs/t06-75-corrections-after-send.log
 
 ---- t07-76-digisign-filing-and-integration ----  started 05:32:47
+================================================
+  RunUrBusiness — draining the task queue
+  started Wed 12 Aug 07:19
+================================================
+
+---- h00a-123-the-red-suite-and-the-employee-who-can-read-everything ----  started 07:19:26
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        8716         625         181        6782        6887
+Mem:           15603        1244       13339          67        1495       14358
 -- top --
     ELAPSED   RSS COMMAND
-      03:21 6754804 next-server (v1
-   01:42:12 471912 claude
-      03:05 429948 chrome-headless
-   03:07:37 340208 next-server (v1
+   03:12:37 340144 next-server (v1
+      00:32 317832 claude
+   03:12:37 125048 node
+      44:57 47864 systemd-journal
 -- disk --
-/dev/sda1        75G   20G   53G  28% /
+/dev/sda1        75G   24G   49G  33% /
