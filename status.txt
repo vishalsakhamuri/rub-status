@@ -1,11 +1,10 @@
-generated: 2026-08-12 13:50:01 UTC
+generated: 2026-08-12 13:55:01 UTC
 done:   112
-queued: 34
-failed: 7
+queued: 33
+failed: 8
 hold:   0
 
 -- queued --
-h00g-t12-96-signature-capture-and-reuse.md
 h00h-120-a-top-level-folder-and-a-file-with-no-questions.md
 t07-76-digisign-filing-and-integration.md
 t08-77-purpose-routing-and-folder-intelligence.md
@@ -44,19 +43,12 @@ a06-open-every-screen-in-a-real-browser.md
 h00a-123-the-red-suite-and-the-employee-who-can-read-everything.md
 h00e-118-four-findings-from-the-owners-hands.md
 h00f-119-the-panel-stays-the-document-scrolls.md
+h00g-t12-96-signature-capture-and-reuse.md
 q01a-bank-transfer.md
 t05-74-email-deliverability.md
 t06-75-corrections-after-send.md
 
 -- log --
-     [FAILED] (exit 98) 10:17:07
-       moved to tasks/failed/ — the queue carries on
-       reason: no commit and no completion marker
-       see logs/h00e-118-four-findings-from-the-owners-hands.log
-
----- h00f-119-the-panel-stays-the-document-scrolls ----  started 10:17:09
-     ! exited clean but produced nothing verifiable — stalled — log ends on a waiting line, no commit, no marker
-     ! SUITE RED: 2 of 2649 tests failing — see logs/suite-latest.log
      . build clean
      ! SCREENS: 1 broken, 0 blank, 0 404 of 183 — see docs/screen-audit.md
      . journeys clean: 5 of 5 passed
@@ -69,15 +61,23 @@ t06-75-corrections-after-send.md
      ! SUITE RED: 2 of 2649 tests failing — see logs/suite-latest.log
      . build clean
      . screens clean: 184 screens, 20 not reachable
+     . journeys clean: 5 of 5 passed
+     ! GATE FAILED: 2 of 2649 tests failing; scripts/prove-mail-transport.ts failed (h00-80 is marked done): NOT run. Configure them and re-run this script, or run scripts/prove-mail-send.ts, / to complete that proof against a real inbox. / ────────────────────────────────────────────────────────────────────────────── /  / [31m4 check(s) failed[0m
+     [FAILED] (exit 97) 13:51:48
+       moved to tasks/failed/ — the queue carries on
+       reason: completion marker + commit present, but the gate failed: 2 of 2649 tests failing; scripts/prove-mail-transport.ts failed (h00-80 is marked done): NOT run. Configure them and re-run this script, or run scripts/prove-mail-send.ts, / to complete that proof against a real inbox. / ────────────────────────────────────────────────────────────────────────────── /  / [31m4 check(s) failed[0m
+       see logs/h00g-t12-96-signature-capture-and-reuse.log
+
+---- h00h-120-a-top-level-folder-and-a-file-with-no-questions ----  started 13:51:50
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603       11311         251          19        4426        4291
+Mem:           15603        9017        2492          19        4451        6585
 -- top --
     ELAPSED   RSS COMMAND
-      05:11 7678164 next-server (v1
-      00:15 1645132 node
-      00:46 1344708 node
-      00:49 186848 node
+      10:11 8343516 next-server (v1
+      03:09 334524 claude
+      09:56 114468 node
+   09:47:37 36476 next-server (v1
 -- disk --
 /dev/sda1        75G   28G   44G  39% /
