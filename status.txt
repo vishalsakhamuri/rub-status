@@ -1,4 +1,4 @@
-generated: 2026-08-12 20:45:01 UTC
+generated: 2026-08-12 20:50:01 UTC
 done:   112
 queued: 30
 failed: 11
@@ -72,12 +72,12 @@ t08-77-purpose-routing-and-folder-intelligence.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1519       13063          58        1397       14083
+Mem:           15603        9459        1004          79        5557        6143
 -- top --
     ELAPSED   RSS COMMAND
-      49:51 451544 claude
-      14:59 226260 node
-      00:14 146424 node
-      15:00 76292 npm exec vitest
+      04:01 8346528 next-server (v1
+      03:21 414856 chrome-headless
+      54:51 218828 claude
+      03:23 167180 node
 -- disk --
-/dev/sda1        75G   27G   45G  38% /
+/dev/sda1        75G   25G   48G  35% /
