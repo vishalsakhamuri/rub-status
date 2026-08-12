@@ -1,4 +1,4 @@
-generated: 2026-08-12 16:25:01 UTC
+generated: 2026-08-12 16:30:01 UTC
 done:   112
 queued: 32
 failed: 9
@@ -72,12 +72,12 @@ t06-75-corrections-after-send.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603       13128        2120          16         709        2474
+Mem:           15603       13162        1481          16        1315        2440
 -- top --
     ELAPSED   RSS COMMAND
-      29:07 12160100 next-server (v1
-      15:57 439056 claude
-      24:42 145612 node
-   12:17:37 42120 next-server (v1
+      34:07 12305840 next-server (v1
+      20:57 431632 claude
+      29:42 156208 node
+   12:22:37 42124 next-server (v1
 -- disk --
 /dev/sda1        75G   34G   39G  47% /
