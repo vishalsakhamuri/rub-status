@@ -1,11 +1,10 @@
-generated: 2026-08-12 05:30:01 UTC
+generated: 2026-08-12 05:35:01 UTC
 done:   112
-queued: 32
-failed: 3
+queued: 31
+failed: 4
 hold:   0
 
 -- queued --
-t06-75-corrections-after-send.md
 t07-76-digisign-filing-and-integration.md
 t08-77-purpose-routing-and-folder-intelligence.md
 t09-78-arrange-and-one-logic.md
@@ -41,16 +40,9 @@ u27-112-subscription-scopes-upgrade-and-downgrade.md
 a06-open-every-screen-in-a-real-browser.md
 q01a-bank-transfer.md
 t05-74-email-deliverability.md
+t06-75-corrections-after-send.md
 
 -- log --
----- t05-74-email-deliverability ----  started 02:49:28
-     . suite green: 2619 tests
-     . build clean
-     . screens clean: 183 screens, 19 not reachable
-     ! GATE FAILED: scripts/prove-mail-transport.ts failed (h00-80 is marked done): NOT run. Configure them and re-run this script, or run scripts/prove-mail-send.ts, / to complete that proof against a real inbox. / ────────────────────────────────────────────────────────────────────────────── /  / [31m4 check(s) failed[0m
-     [FAILED] (exit 97) 04:03:06
-       moved to tasks/failed/ — the queue carries on
-       reason: completion marker + commit present, but the gate failed: scripts/prove-mail-transport.ts failed (h00-80 is marked done): NOT run. Configure them and re-run this script, or run scripts/prove-mail-send.ts, / to complete that proof against a real inbox. / ────────────────────────────────────────────────────────────────────────────── /  / [31m4 check(s) failed[0m
        see logs/t05-74-email-deliverability.log
 
 ---- t06-75-corrections-after-send ----  started 04:03:08
@@ -63,15 +55,23 @@ t05-74-email-deliverability.md
      ! exited clean but produced nothing verifiable — no commit and no completion marker
      ! SUITE RED: 2 of 2640 tests failing — see logs/suite-latest.log
      . build clean
+     . screens clean: 183 screens, 20 not reachable
+     . journeys clean: 5 of 5 passed
+     [FAILED] (exit 98) 05:32:45
+       moved to tasks/failed/ — the queue carries on
+       reason: no commit and no completion marker
+       see logs/t06-75-corrections-after-send.log
+
+---- t07-76-digisign-filing-and-integration ----  started 05:32:47
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2327       11701         109        2022       13275
+Mem:           15603        1188       12717          60        2096       14414
 -- top --
     ELAPSED   RSS COMMAND
-      15:12 514856 next-server (v1
-      15:10 434812 node
-   01:22:37 340184 next-server (v1
-      05:26 296856 chrome-headless
+   01:27:37 340184 next-server (v1
+      02:12 330004 claude
+   01:27:37 125048 node
+ 2-13:23:54 69620 systemd-journal
 -- disk --
 /dev/sda1        75G   16G   57G  21% /
