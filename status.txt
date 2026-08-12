@@ -1,4 +1,4 @@
-generated: 2026-08-12 02:00:01 UTC
+generated: 2026-08-12 02:05:01 UTC
 done:   111
 queued: 34
 failed: 2
@@ -67,12 +67,12 @@ q01a-bank-transfer.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603       12055         750          97        3234        3547
+Mem:           15603       13216        1534          21        1212        2386
 -- top --
     ELAPSED   RSS COMMAND
-      03:28 10775636 next-server (v1
-      01:14 420968 chrome-headless
-      14:04 250236 node
-      03:28 226260 chrome-headless
+      08:28 12643196 next-server (v1
+   01:06:26 213436 claude
+      06:14 139264 node
+ 2-09:53:53 68212 systemd-journal
 -- disk --
-/dev/sda1        75G   26G   47G  36% /
+/dev/sda1        75G   25G   48G  34% /
