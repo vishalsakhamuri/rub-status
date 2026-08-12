@@ -1,4 +1,4 @@
-generated: 2026-08-12 19:15:01 UTC
+generated: 2026-08-12 19:20:01 UTC
 done:   112
 queued: 31
 failed: 10
@@ -72,12 +72,12 @@ t07-76-digisign-filing-and-integration.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        8979        4165          80        2922        6624
+Mem:           15603        7814        3870          60        4369        7788
 -- top --
     ELAPSED   RSS COMMAND
-      03:31 4695872 next-server (v1
-      00:26 2038452 node
-      54:15 499668 claude
-      01:20 440540 chrome-headless
+      08:31 6795212 next-server (v1
+      02:35 335824 node
+      08:03 148552 node
+      00:21 120876 node
 -- disk --
-/dev/sda1        75G   17G   56G  23% /
+/dev/sda1        75G   18G   54G  25% /
