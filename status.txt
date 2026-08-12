@@ -1,11 +1,10 @@
-generated: 2026-08-12 12:15:01 UTC
+generated: 2026-08-12 12:20:01 UTC
 done:   112
-queued: 35
-failed: 6
+queued: 34
+failed: 7
 hold:   0
 
 -- queued --
-h00f-119-the-panel-stays-the-document-scrolls.md
 h00g-t12-96-signature-capture-and-reuse.md
 h00h-120-a-top-level-folder-and-a-file-with-no-questions.md
 t07-76-digisign-filing-and-integration.md
@@ -44,19 +43,12 @@ z00-121-one-document-through-all-four-tools.md
 a06-open-every-screen-in-a-real-browser.md
 h00a-123-the-red-suite-and-the-employee-who-can-read-everything.md
 h00e-118-four-findings-from-the-owners-hands.md
+h00f-119-the-panel-stays-the-document-scrolls.md
 q01a-bank-transfer.md
 t05-74-email-deliverability.md
 t06-75-corrections-after-send.md
 
 -- log --
-     [FAILED] (exit 97) 09:00:26
-       moved to tasks/failed/ — the queue carries on
-       reason: completion marker + commit present, but the gate failed: 1 of 2649 tests failing; scripts/prove-mail-transport.ts failed (h00-80 is marked done): NOT run. Configure them and re-run this script, or run scripts/prove-mail-send.ts, / to complete that proof against a real inbox. / ────────────────────────────────────────────────────────────────────────────── /  / [31m4 check(s) failed[0m
-       see logs/h00a-123-the-red-suite-and-the-employee-who-can-read-everything.log
-
----- h00e-118-four-findings-from-the-owners-hands ----  started 09:00:28
-     ! exited clean but produced nothing verifiable — no commit and no completion marker
-     ! SUITE RED: 2 of 2649 tests failing — see logs/suite-latest.log
      . build clean
      . screens clean: 183 screens, 18 not reachable
      . journeys clean: 5 of 5 passed
@@ -69,15 +61,23 @@ t06-75-corrections-after-send.md
      ! exited clean but produced nothing verifiable — stalled — log ends on a waiting line, no commit, no marker
      ! SUITE RED: 2 of 2649 tests failing — see logs/suite-latest.log
      . build clean
+     ! SCREENS: 1 broken, 0 blank, 0 404 of 183 — see docs/screen-audit.md
+     . journeys clean: 5 of 5 passed
+     [FAILED] (exit 98) 12:18:01
+       moved to tasks/failed/ — the queue carries on
+       reason: stalled — log ends on a waiting line, no commit, no marker
+       see logs/h00f-119-the-panel-stays-the-document-scrolls.log
+
+---- h00g-t12-96-signature-capture-and-reuse ----  started 12:18:04
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603       14623         183         129        1265         979
+Mem:           15603       14455         253          39        1274        1147
 -- top --
     ELAPSED   RSS COMMAND
-      07:40 13207140 next-server (v1
-      03:53 452780 chrome-headless
-      17:17 282068 node
-      17:14 264468 chrome-headless
+      12:40 13781556 next-server (v1
+      01:55 333468 claude
+      08:55 155176 node
+   08:12:37 73612 next-server (v1
 -- disk --
-/dev/sda1        75G   25G   48G  35% /
+/dev/sda1        75G   25G   47G  35% /
