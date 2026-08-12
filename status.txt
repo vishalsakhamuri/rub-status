@@ -1,4 +1,4 @@
-generated: 2026-08-12 22:45:01 UTC
+generated: 2026-08-12 22:50:01 UTC
 done:   112
 queued: 29
 failed: 12
@@ -49,8 +49,6 @@ t08-77-purpose-routing-and-folder-intelligence.md
 t09-78-arrange-and-one-logic.md
 
 -- log --
-     . journeys clean: 5 of 5 passed
-     ! GATE FAILED: 2 of 2685 tests failing; 32 screen(s) broken: /quotations, /release-notes, /reports/[report], /reports/ageing, /reports/balance-sheet, /reports/general-ledger, /reports/packet, /reports; screens (empty tenant) did not produce a result — treated as failed, not unknown; scripts/prove-mail-transport.ts failed (h00-80 is marked done): NOT run. Configure them and re-run this script, or run scripts/prove-mail-send.ts, / to complete that proof against a real inbox. / ────────────────────────────────────────────────────────────────────────────── /  / [31m4 check(s) failed[0m
      [FAILED] (exit 97) 19:55:06
        moved to tasks/failed/ — the queue carries on
        reason: completion marker + commit present, but the gate failed: 2 of 2685 tests failing; 32 screen(s) broken: /quotations, /release-notes, /reports/[report], /reports/ageing, /reports/balance-sheet, /reports/general-ledger, /reports/packet, /reports; screens (empty tenant) did not produce a result — treated as failed, not unknown; scripts/prove-mail-transport.ts failed (h00-80 is marked done): NOT run. Configure them and re-run this script, or run scripts/prove-mail-send.ts, / to complete that proof against a real inbox. / ────────────────────────────────────────────────────────────────────────────── /  / [31m4 check(s) failed[0m
@@ -69,15 +67,17 @@ t09-78-arrange-and-one-logic.md
 
 ---- t10-79-no1edit-workspace ----  started 21:52:28
      ! exited clean but produced nothing verifiable — stalled — log ends on a waiting line, no commit, no marker
+     ! SUITE RED: 2 of 2719 tests failing — see logs/suite-latest.log
+     . build clean
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1178       13431          66        1374       14424
+Mem:           15603        1409       13199          80        1388       14193
 -- top --
     ELAPSED   RSS COMMAND
-      21:58 419924 node
-      00:12 166476 node
-      21:58 74856 npm exec vitest
-   18:37:37 44828 next-server (v1
+      00:19 312972 next-server (v1
+      00:17 206516 node
+      00:15 174464 chrome-headless
+      00:20 143160 node
 -- disk --
 /dev/sda1        75G   16G   57G  22% /
