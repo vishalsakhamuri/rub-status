@@ -1,4 +1,4 @@
-generated: 2026-08-12 11:30:01 UTC
+generated: 2026-08-12 11:35:01 UTC
 done:   112
 queued: 35
 failed: 6
@@ -49,7 +49,6 @@ t05-74-email-deliverability.md
 t06-75-corrections-after-send.md
 
 -- log --
-     . screens clean: 183 screens, 20 not reachable
      . journeys clean: 5 of 5 passed
      ! GATE FAILED: 1 of 2649 tests failing; scripts/prove-mail-transport.ts failed (h00-80 is marked done): NOT run. Configure them and re-run this script, or run scripts/prove-mail-send.ts, / to complete that proof against a real inbox. / ────────────────────────────────────────────────────────────────────────────── /  / [31m4 check(s) failed[0m
      [FAILED] (exit 97) 09:00:26
@@ -69,15 +68,16 @@ t06-75-corrections-after-send.md
        see logs/h00e-118-four-findings-from-the-owners-hands.log
 
 ---- h00f-119-the-panel-stays-the-document-scrolls ----  started 10:17:09
+     ! exited clean but produced nothing verifiable — stalled — log ends on a waiting line, no commit, no marker
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        5945        7631         104        2541        9657
+Mem:           15603        5701        7875         112        2549        9901
 -- top --
     ELAPSED   RSS COMMAND
-   01:06:41 4057932 next-server (v1
-   01:12:50 440420 claude
-   07:22:37 340268 next-server (v1
-      11:56 216648 node
+   01:11:41 4058076 next-server (v1
+      01:38 343924 node
+   07:27:37 340268 next-server (v1
+      44:26 171088 node
 -- disk --
 /dev/sda1        75G   16G   56G  23% /
