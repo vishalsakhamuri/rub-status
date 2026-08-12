@@ -1,11 +1,10 @@
-generated: 2026-08-12 00:55:01 UTC
-done:   110
-queued: 35
+generated: 2026-08-12 01:00:01 UTC
+done:   111
+queued: 34
 failed: 2
 hold:   0
 
 -- queued --
-t01-70-digisign-preview-fix.md
 t04-73-signer-experience.md
 t05-74-email-deliverability.md
 t06-75-corrections-after-send.md
@@ -45,11 +44,6 @@ a06-open-every-screen-in-a-real-browser.md
 q01a-bank-transfer.md
 
 -- log --
-     . gate clean — see docs/gate-report.md
-     [done] 18:07:08   ->  logs/h04-99-application-shell-and-navigation.log   (commit + completion marker)
-
----- t00-113-reconcile-the-built-digisign-surface ----  started 18:07:11
-     . suite green: 2606 tests
      . build clean
      . screens clean: 181 screens, 21 not reachable
      . gate clean — see docs/gate-report.md
@@ -65,15 +59,20 @@ q01a-bank-transfer.md
 ---- t01-70-digisign-preview-fix ----  started 00:10:55
      . suite green: 2609 tests
      . build clean
+     . screens clean: 182 screens, 19 not reachable
+     . gate clean — see docs/gate-report.md
+     [done] 00:58:30   ->  logs/t01-70-digisign-preview-fix.log   (commit + completion marker)
+
+---- t04-73-signer-experience ----  started 00:58:32
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1920       11726          91        2387       13682
+Mem:           15603         824       12820          48        2345       14778
 -- top --
     ELAPSED   RSS COMMAND
-      12:18 589048 next-server (v1
-      12:16 357796 node
-      02:46 250832 chrome-headless
-      12:14 225716 chrome-headless
+      01:26 327328 claude
+ 2-08:48:54 68488 systemd-journal
+ 2-08:49:01 10412 systemd
+ 2-08:48:53  9516 multipathd
 -- disk --
 /dev/sda1        75G   16G   57G  21% /
