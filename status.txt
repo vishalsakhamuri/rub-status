@@ -1,4 +1,4 @@
-generated: 2026-08-12 15:50:01 UTC
+generated: 2026-08-12 15:55:01 UTC
 done:   112
 queued: 33
 failed: 8
@@ -49,7 +49,6 @@ t05-74-email-deliverability.md
 t06-75-corrections-after-send.md
 
 -- log --
-     ! SCREENS: 1 broken, 0 blank, 0 404 of 183 — see docs/screen-audit.md
      . journeys clean: 5 of 5 passed
      [FAILED] (exit 98) 12:18:01
        moved to tasks/failed/ — the queue carries on
@@ -69,15 +68,16 @@ t06-75-corrections-after-send.md
 
 ---- h00h-120-a-top-level-folder-and-a-file-with-no-questions ----  started 13:51:50
      ! SUITE RED: 2 of 2649 tests failing — see logs/suite-latest.log
+     . build clean
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603       12689         377          14        2890        2913
+Mem:           15603       12446         409          58        3145        3156
 -- top --
     ELAPSED   RSS COMMAND
-      34:44 9040968 next-server (v1
-      00:25 2092976 node
-      00:54 1116068 node
-      33:02 148072 node
+      39:44 11342940 next-server (v1
+      04:47 397156 chrome-headless
+      04:50 206712 node
+      04:47 158288 chrome-headless
 -- disk --
 /dev/sda1        75G   32G   40G  45% /
