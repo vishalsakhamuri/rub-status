@@ -1,4 +1,4 @@
-generated: 2026-08-12 02:30:01 UTC
+generated: 2026-08-12 02:35:01 UTC
 done:   111
 queued: 34
 failed: 2
@@ -44,8 +44,6 @@ a06-open-every-screen-in-a-real-browser.md
 q01a-bank-transfer.md
 
 -- log --
-     . build clean
-     . screens clean: 181 screens, 21 not reachable
      . gate clean — see docs/gate-report.md
      [done] 20:28:14   ->  logs/t00-113-reconcile-the-built-digisign-surface.log   (commit + completion marker)
 
@@ -64,15 +62,17 @@ q01a-bank-transfer.md
      [done] 00:58:30   ->  logs/t01-70-digisign-preview-fix.log   (commit + completion marker)
 
 ---- t04-73-signer-experience ----  started 00:58:32
+     . suite green: 2619 tests
+     . build clean
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1161       13479          39        1341       14441
+Mem:           15603        1357       13518          52        1119       14245
 -- top --
     ELAPSED   RSS COMMAND
-      22:31 435744 node
-      00:01 140016 node
-      22:31 74972 npm exec vitest
- 2-10:18:53 68100 systemd-journal
+      01:40 360564 next-server (v1
+      01:35 235156 chrome-headless
+      01:37 189444 node
+      01:35 135748 chrome-headless
 -- disk --
-/dev/sda1        75G   25G   48G  34% /
+/dev/sda1        75G   16G   57G  21% /
