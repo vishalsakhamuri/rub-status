@@ -1,4 +1,4 @@
-generated: 2026-08-12 13:45:01 UTC
+generated: 2026-08-12 13:50:01 UTC
 done:   112
 queued: 34
 failed: 7
@@ -49,7 +49,6 @@ t05-74-email-deliverability.md
 t06-75-corrections-after-send.md
 
 -- log --
-     . journeys clean: 5 of 5 passed
      [FAILED] (exit 98) 10:17:07
        moved to tasks/failed/ — the queue carries on
        reason: no commit and no completion marker
@@ -69,15 +68,16 @@ t06-75-corrections-after-send.md
 ---- h00g-t12-96-signature-capture-and-reuse ----  started 12:18:04
      ! SUITE RED: 2 of 2649 tests failing — see logs/suite-latest.log
      . build clean
+     . screens clean: 184 screens, 20 not reachable
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1860       13320          37         799       13742
+Mem:           15603       11311         251          19        4426        4291
 -- top --
     ELAPSED   RSS COMMAND
-      00:11 812528 next-server (v1
-      14:03 309784 chrome-headless
-      02:55 302344 chrome-headless
-      14:06 250180 node
+      05:11 7678164 next-server (v1
+      00:15 1645132 node
+      00:46 1344708 node
+      00:49 186848 node
 -- disk --
 /dev/sda1        75G   28G   44G  39% /
