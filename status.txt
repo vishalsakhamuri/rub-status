@@ -1,4 +1,4 @@
-generated: 2026-08-12 16:55:01 UTC
+generated: 2026-08-12 17:00:01 UTC
 done:   112
 queued: 32
 failed: 9
@@ -49,12 +49,6 @@ t05-74-email-deliverability.md
 t06-75-corrections-after-send.md
 
 -- log --
-     . screens clean: 184 screens, 20 not reachable
-     . journeys clean: 5 of 5 passed
-     ! GATE FAILED: 2 of 2649 tests failing; scripts/prove-mail-transport.ts failed (h00-80 is marked done): NOT run. Configure them and re-run this script, or run scripts/prove-mail-send.ts, / to complete that proof against a real inbox. / ────────────────────────────────────────────────────────────────────────────── /  / [31m4 check(s) failed[0m
-     [FAILED] (exit 97) 13:51:48
-       moved to tasks/failed/ — the queue carries on
-       reason: completion marker + commit present, but the gate failed: 2 of 2649 tests failing; scripts/prove-mail-transport.ts failed (h00-80 is marked done): NOT run. Configure them and re-run this script, or run scripts/prove-mail-send.ts, / to complete that proof against a real inbox. / ────────────────────────────────────────────────────────────────────────────── /  / [31m4 check(s) failed[0m
        see logs/h00g-t12-96-signature-capture-and-reuse.log
 
 ---- h00h-120-a-top-level-folder-and-a-file-with-no-questions ----  started 13:51:50
@@ -69,15 +63,21 @@ t06-75-corrections-after-send.md
        see logs/h00h-120-a-top-level-folder-and-a-file-with-no-questions.log
 
 ---- t07-76-digisign-filing-and-integration ----  started 16:09:02
+================================================
+  RunUrBusiness — draining the task queue
+  started Wed 12 Aug 16:57
+================================================
+
+---- t07-76-digisign-filing-and-integration ----  started 16:57:12
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603       13703         877          36        1398        1900
+Mem:           15603         904       14535          15         530       14698
 -- top --
     ELAPSED   RSS COMMAND
-      59:07 12399880 next-server (v1
-      45:57 427092 claude
-      23:04 238500 node
-      00:00 197144 node
+      02:46 367476 claude
+   12:52:37 35100 next-server (v1
+ 3-00:49:01 12180 systemd
+   10:24:58 11712 systemd-journal
 -- disk --
 /dev/sda1        75G   34G   39G  47% /
