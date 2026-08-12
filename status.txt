@@ -1,4 +1,4 @@
-generated: 2026-08-12 22:20:01 UTC
+generated: 2026-08-12 22:25:01 UTC
 done:   112
 queued: 29
 failed: 12
@@ -49,7 +49,6 @@ t08-77-purpose-routing-and-folder-intelligence.md
 t09-78-arrange-and-one-logic.md
 
 -- log --
-     ! SCREENS: 32 broken, 0 blank, 0 404 of 184 — see docs/screen-audit.md
      . journeys clean: 5 of 5 passed
      ! GATE FAILED: 2 of 2685 tests failing; 32 screen(s) broken: /quotations, /release-notes, /reports/[report], /reports/ageing, /reports/balance-sheet, /reports/general-ledger, /reports/packet, /reports; screens (empty tenant) did not produce a result — treated as failed, not unknown; scripts/prove-mail-transport.ts failed (h00-80 is marked done): NOT run. Configure them and re-run this script, or run scripts/prove-mail-send.ts, / to complete that proof against a real inbox. / ────────────────────────────────────────────────────────────────────────────── /  / [31m4 check(s) failed[0m
      [FAILED] (exit 97) 19:55:06
@@ -69,15 +68,16 @@ t09-78-arrange-and-one-logic.md
        see logs/t09-78-arrange-and-one-logic.log
 
 ---- t10-79-no1edit-workspace ----  started 21:52:28
+     ! exited clean but produced nothing verifiable — stalled — log ends on a waiting line, no commit, no marker
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1554       13057          43        1349       14048
+Mem:           15603        1102       13509          53        1359       14501
 -- top --
     ELAPSED   RSS COMMAND
-      27:31 413668 claude
-      00:01 336196 node
-      02:49 208488 node
-      00:09 173620 node
+      01:58 386016 node
+      00:44 150148 node
+      01:59 74856 npm exec vitest
+   18:17:37 44816 next-server (v1
 -- disk --
 /dev/sda1        75G   16G   57G  22% /
