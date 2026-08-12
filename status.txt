@@ -1,11 +1,10 @@
-generated: 2026-08-12 04:00:01 UTC
+generated: 2026-08-12 04:05:01 UTC
 done:   112
-queued: 33
-failed: 2
+queued: 32
+failed: 3
 hold:   0
 
 -- queued --
-t05-74-email-deliverability.md
 t06-75-corrections-after-send.md
 t07-76-digisign-filing-and-integration.md
 t08-77-purpose-routing-and-folder-intelligence.md
@@ -41,16 +40,9 @@ u27-112-subscription-scopes-upgrade-and-downgrade.md
 -- failed --
 a06-open-every-screen-in-a-real-browser.md
 q01a-bank-transfer.md
+t05-74-email-deliverability.md
 
 -- log --
-     . gate clean — see docs/gate-report.md
-     [done] 00:10:53   ->  logs/h00c-116-prove-it-works-not-that-it-renders.log   (commit + completion marker)
-
----- t01-70-digisign-preview-fix ----  started 00:10:55
-     . suite green: 2609 tests
-     . build clean
-     . screens clean: 182 screens, 19 not reachable
-     . gate clean — see docs/gate-report.md
      [done] 00:58:30   ->  logs/t01-70-digisign-preview-fix.log   (commit + completion marker)
 
 ---- t04-73-signer-experience ----  started 00:58:32
@@ -63,15 +55,23 @@ q01a-bank-transfer.md
 ---- t05-74-email-deliverability ----  started 02:49:28
      . suite green: 2619 tests
      . build clean
+     . screens clean: 183 screens, 19 not reachable
+     ! GATE FAILED: scripts/prove-mail-transport.ts failed (h00-80 is marked done): NOT run. Configure them and re-run this script, or run scripts/prove-mail-send.ts, / to complete that proof against a real inbox. / ────────────────────────────────────────────────────────────────────────────── /  / [31m4 check(s) failed[0m
+     [FAILED] (exit 97) 04:03:06
+       moved to tasks/failed/ — the queue carries on
+       reason: completion marker + commit present, but the gate failed: scripts/prove-mail-transport.ts failed (h00-80 is marked done): NOT run. Configure them and re-run this script, or run scripts/prove-mail-send.ts, / to complete that proof against a real inbox. / ────────────────────────────────────────────────────────────────────────────── /  / [31m4 check(s) failed[0m
+       see logs/t05-74-email-deliverability.log
+
+---- t06-75-corrections-after-send ----  started 04:03:08
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2064       12279          70        1668       13538
+Mem:           15603         805       13536          35        1635       14797
 -- top --
     ELAPSED   RSS COMMAND
-      12:43 520728 next-server (v1
-      12:41 363768 node
-      03:14 237340 chrome-headless
-      02:33 224308 next-server (v1
+      01:51 307468 claude
+ 2-11:53:54 69080 systemd-journal
+      11:08 12820 systemd
+      04:01 11920 sshd-session
 -- disk --
 /dev/sda1        75G   16G   57G  21% /
