@@ -1,4 +1,4 @@
-generated: 2026-08-13 13:40:01 UTC
+generated: 2026-08-13 13:45:01 UTC
 done:   114
 queued: 30
 failed: 10
@@ -48,8 +48,6 @@ t10-79-no1edit-workspace.md
 t11-93-digisign-templates.md
 
 -- log --
----- h00h-120-a-top-level-folder-and-a-file-with-no-questions ----  started 08:28:15
-     . suite green: 2762 tests
      . build clean
      . screens clean: 185 screens, 20 not reachable
      ! JOURNEYS: 1 of 5 failed — run a No1Edit tool — see docs/journeys-report.md
@@ -68,15 +66,17 @@ t11-93-digisign-templates.md
        see logs/t05-74-email-deliverability.log
 
 ---- t07-76-digisign-filing-and-integration ----  started 12:07:53
+     . suite green: 2764 tests
+     . build clean
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1175       12575          43        2224       14427
+Mem:           15603        1363       13507          63        1110       14239
 -- top --
     ELAPSED   RSS COMMAND
-      23:50 427356 node
-      00:01 153976 node
-      23:51 75060 npm exec vitest
- 1-07:04:57 41116 systemd-journal
+      01:36 370096 next-server (v1
+      01:32 237024 chrome-headless
+      01:34 189164 node
+      01:32 135848 chrome-headless
 -- disk --
-/dev/sda1        75G   26G   47G  36% /
+/dev/sda1        75G   16G   57G  22% /
