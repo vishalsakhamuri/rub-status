@@ -1,10 +1,11 @@
-generated: 2026-08-13 17:15:01 UTC
+generated: 2026-08-13 17:20:01 UTC
 done:   114
-queued: 29
+queued: 30
 failed: 12
 hold:   0
 
 -- queued --
+h002-126-the-reconciliation-line-and-the-transfer.md
 t08-77-purpose-routing-and-folder-intelligence.md
 t09-78-arrange-and-one-logic.md
 t14-110-signing-order-and-counter-signature.md
@@ -72,12 +73,12 @@ t11-93-digisign-templates.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1066       12974          21        1913       14537
+Mem:           15603        1073       12926          24        1957       14529
 -- top --
     ELAPSED   RSS COMMAND
-      12:06 399912 node
-      00:06 130400 node
-      12:07 74876 npm exec vitest
- 1-10:39:57 31340 systemd-journal
+      17:06 389036 node
+      00:14 134380 node
+      17:07 74876 npm exec vitest
+ 1-10:44:57 33776 systemd-journal
 -- disk --
 /dev/sda1        75G   24G   49G  34% /
