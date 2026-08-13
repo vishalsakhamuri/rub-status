@@ -1,4 +1,4 @@
-generated: 2026-08-13 01:55:01 UTC
+generated: 2026-08-13 02:00:01 UTC
 done:   112
 queued: 27
 failed: 14
@@ -49,8 +49,6 @@ t10-79-no1edit-workspace.md
 t11-93-digisign-templates.md
 
 -- log --
-     . build clean
-     . screens clean: 184 screens, 20 not reachable
      ! JOURNEYS: 1 of 5 failed — run a No1Edit tool — see docs/journeys-report.md
      [FAILED] (exit 98) 23:07:11
        moved to tasks/failed/ — the queue carries on
@@ -69,15 +67,17 @@ t11-93-digisign-templates.md
        see logs/t11-93-digisign-templates.log
 
 ---- t14-110-signing-order-and-counter-signature ----  started 00:45:29
+     ! SUITE RED: 2 of 2751 tests failing — see logs/suite-latest.log
+     . build clean
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1260       13303         114        1469       14342
+Mem:           15603        1396       13167         123        1478       14207
 -- top --
     ELAPSED   RSS COMMAND
-      22:19 423696 node
-      00:07 155144 node
-      22:19 75432 npm exec vitest
-   21:47:37 48900 next-server (v1
+      00:29 335180 next-server (v1
+      00:26 201892 chrome-headless
+      00:27 161988 node
+      00:26 132580 chrome-headless
 -- disk --
 /dev/sda1        75G   16G   57G  22% /
