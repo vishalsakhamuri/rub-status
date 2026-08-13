@@ -1,4 +1,4 @@
-generated: 2026-08-13 22:20:01 UTC
+generated: 2026-08-13 22:25:01 UTC
 done:   114
 queued: 26
 failed: 16
@@ -50,7 +50,6 @@ t11-93-digisign-templates.md
 t14-110-signing-order-and-counter-signature.md
 
 -- log --
-     ! GATE FAILED: 1 screen(s) broken: /invoices/bulk/[operation]; journey "invite and sign in" failed: signing in with the one-time password did not force a password change — landed on http://localhost:3000/dashboard
      [FAILED] (exit 97) 20:39:05
        moved to tasks/failed/ — the queue carries on
        reason: completion marker + commit present, but the gate failed: 1 screen(s) broken: /invoices/bulk/[operation]; journey "invite and sign in" failed: signing in with the one-time password did not force a password change — landed on http://localhost:3000/dashboard
@@ -70,15 +69,16 @@ t14-110-signing-order-and-counter-signature.md
 
 ---- u01-81-hr-core-and-employment-record ----  started 21:41:43
      . suite green: 2774 tests
+     . build clean
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2550       12181          15        1213       13052
+Mem:           15603        2977       11590          61        1423       12625
 -- top --
     ELAPSED   RSS COMMAND
-      00:07 1755780 node
-      00:04 147844 node
-      00:07 143092 node
-   07:34:40 44684 next-server (v1
+      00:50 796460 chrome-headless
+      03:02 769292 next-server (v1
+      02:58 477276 chrome-headless
+      03:00 356620 node
 -- disk --
-/dev/sda1        75G   15G   57G  21% /
+/dev/sda1        75G   16G   57G  22% /
