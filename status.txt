@@ -1,10 +1,11 @@
-generated: 2026-08-13 04:30:01 UTC
+generated: 2026-08-13 04:35:01 UTC
 done:   112
-queued: 25
+queued: 26
 failed: 16
 hold:   0
 
 -- queued --
+h000-124-the-gate-that-cannot-pass.md
 u02-82-self-service-and-approvals.md
 u03-83-asset-register.md
 u04-84-timesheets-and-leave.md
@@ -49,12 +50,6 @@ t14-110-signing-order-and-counter-signature.md
 u01-81-hr-core-and-employment-record.md
 
 -- log --
-     . screens clean: 184 screens, 18 not reachable
-     ! JOURNEYS: 1 of 5 failed — run a No1Edit tool — see docs/journeys-report.md
-     ! GATE FAILED: 2 of 2751 tests failing; scripts/prove-mail-transport.ts failed (h00-80 is marked done): NOT run. Configure them and re-run this script, or run scripts/prove-mail-send.ts, / to complete that proof against a real inbox. / ────────────────────────────────────────────────────────────────────────────── /  / [31m4 check(s) failed[0m; journey "run a No1Edit tool" failed: the Rotate tool did not become available after loading a file
-     [FAILED] (exit 97) 02:17:27
-       moved to tasks/failed/ — the queue carries on
-       reason: completion marker + commit present, but the gate failed: 2 of 2751 tests failing; scripts/prove-mail-transport.ts failed (h00-80 is marked done): NOT run. Configure them and re-run this script, or run scripts/prove-mail-send.ts, / to complete that proof against a real inbox. / ────────────────────────────────────────────────────────────────────────────── /  / [31m4 check(s) failed[0m; journey "run a No1Edit tool" failed: the Rotate tool did not become available after loading a file
        see logs/t14-110-signing-order-and-counter-signature.log
 
 ---- u01-81-hr-core-and-employment-record ----  started 02:17:30
@@ -69,15 +64,21 @@ u01-81-hr-core-and-employment-record.md
        see logs/u01-81-hr-core-and-employment-record.log
 
 ---- u02-82-self-service-and-approvals ----  started 03:34:23
+================================================
+  RunUrBusiness — draining the task queue
+  started Thu 13 Aug 04:31
+================================================
+
+---- h000-124-the-gate-that-cannot-pass ----  started 04:31:17
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1375       13103         110        1552       14228
+Mem:           15603        1160       13306         114        1567       14442
 -- top --
     ELAPSED   RSS COMMAND
-      55:36 503404 claude
-      10:27 218292 node
-      00:13 143756 node
-      10:27 75760 npm exec vitest
+      03:42 347116 claude
+      00:25 158176 node
+      00:24 147660 node
+      00:25 75436 npm exec vitest
 -- disk --
 /dev/sda1        75G   16G   57G  22% /
