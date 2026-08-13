@@ -1,11 +1,10 @@
-generated: 2026-08-13 12:05:01 UTC
+generated: 2026-08-13 12:10:01 UTC
 done:   114
-queued: 31
-failed: 9
+queued: 30
+failed: 10
 hold:   0
 
 -- queued --
-t05-74-email-deliverability.md
 t07-76-digisign-filing-and-integration.md
 t08-77-purpose-routing-and-folder-intelligence.md
 t09-78-arrange-and-one-logic.md
@@ -43,20 +42,12 @@ h00a-123-the-red-suite-and-the-employee-who-can-read-everything.md
 h00e-118-four-findings-from-the-owners-hands.md
 h00f-119-the-panel-stays-the-document-scrolls.md
 q01a-bank-transfer.md
+t05-74-email-deliverability.md
 t06-75-corrections-after-send.md
 t10-79-no1edit-workspace.md
 t11-93-digisign-templates.md
 
 -- log --
-
----- h00g-t12-96-signature-capture-and-reuse ----  started 07:14:08
-     . suite green: 2762 tests
-     . build clean
-     . screens clean: 185 screens, 18 not reachable
-     ! JOURNEYS: 1 of 5 failed — run a No1Edit tool — see docs/journeys-report.md
-     . gate clean — see docs/gate-report.md
-     [done] 08:28:13   ->  logs/h00g-t12-96-signature-capture-and-reuse.log   (commit + completion marker)
-
 ---- h00h-120-a-top-level-folder-and-a-file-with-no-questions ----  started 08:28:15
      . suite green: 2762 tests
      . build clean
@@ -68,15 +59,24 @@ t11-93-digisign-templates.md
 ---- t05-74-email-deliverability ----  started 10:40:25
      . suite green: 2762 tests
      . build clean
+     . screens clean: 185 screens, 20 not reachable
+     ! JOURNEYS: 1 of 5 failed — run a No1Edit tool — see docs/journeys-report.md
+     ! GATE FAILED: scripts/prove-no1cloud.ts failed (h00h-120 is marked done):   log: [ /     '  - navigating to "http://localhost:3000/login", waiting until "networkidle"' /   ], /   name: 'Error' / }
+     [FAILED] (exit 97) 12:07:51
+       moved to tasks/failed/ — the queue carries on
+       reason: completion marker + commit present, but the gate failed: scripts/prove-no1cloud.ts failed (h00h-120 is marked done):   log: [ /     '  - navigating to "http://localhost:3000/login", waiting until "networkidle"' /   ], /   name: 'Error' / }
+       see logs/t05-74-email-deliverability.log
+
+---- t07-76-digisign-filing-and-integration ----  started 12:07:53
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1857       12536          67        1592       13745
+Mem:           15603         830       13561          34        1562       14772
 -- top --
     ELAPSED   RSS COMMAND
-      15:29 525820 next-server (v1
-      15:27 386080 node
-      05:48 257580 chrome-headless
-      15:25 221188 chrome-headless
+      02:06 356024 claude
+ 1-05:34:57 44416 systemd-journal
+      00:01 11384 sshd-session
+ 3-19:59:00 10868 systemd
 -- disk --
 /dev/sda1        75G   16G   57G  22% /
