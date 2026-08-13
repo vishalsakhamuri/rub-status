@@ -1,10 +1,11 @@
-generated: 2026-08-13 13:55:01 UTC
+generated: 2026-08-13 14:00:01 UTC
 done:   114
-queued: 30
+queued: 31
 failed: 10
 hold:   0
 
 -- queued --
+h001-125-networkidle-never-settles.md
 t07-76-digisign-filing-and-integration.md
 t08-77-purpose-routing-and-folder-intelligence.md
 t09-78-arrange-and-one-logic.md
@@ -48,12 +49,6 @@ t10-79-no1edit-workspace.md
 t11-93-digisign-templates.md
 
 -- log --
-     . build clean
-     . screens clean: 185 screens, 20 not reachable
-     ! JOURNEYS: 1 of 5 failed — run a No1Edit tool — see docs/journeys-report.md
-     . gate clean — see docs/gate-report.md
-     [done] 10:40:22   ->  logs/h00h-120-a-top-level-folder-and-a-file-with-no-questions.log   (commit + completion marker)
-
 ---- t05-74-email-deliverability ----  started 10:40:25
      . suite green: 2762 tests
      . build clean
@@ -68,15 +63,21 @@ t11-93-digisign-templates.md
 ---- t07-76-digisign-filing-and-integration ----  started 12:07:53
      . suite green: 2764 tests
      . build clean
+================================================
+  RunUrBusiness — draining the task queue
+  started Thu 13 Aug 13:58
+================================================
+
+---- h001-125-networkidle-never-settles ----  started 13:58:24
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1802       13067          65        1113       13800
+Mem:           15603         779       13920          26        1243       14823
 -- top --
     ELAPSED   RSS COMMAND
-      11:36 504884 next-server (v1
-      11:34 367624 node
-      01:55 237688 chrome-headless
-      11:32 224608 chrome-headless
+      01:34 310836 claude
+ 1-07:24:57 42680 systemd-journal
+      01:47 12780 systemd
+      01:51 11824 sshd-session
 -- disk --
 /dev/sda1        75G   16G   57G  22% /
