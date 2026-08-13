@@ -1,4 +1,4 @@
-generated: 2026-08-13 10:20:01 UTC
+generated: 2026-08-13 10:25:01 UTC
 done:   113
 queued: 32
 failed: 9
@@ -49,8 +49,6 @@ t10-79-no1edit-workspace.md
 t11-93-digisign-templates.md
 
 -- log --
----- h00a-123-the-red-suite-and-the-employee-who-can-read-everything ----  started 06:22:44
-     ! exited clean but produced nothing verifiable — stalled — log ends on a waiting line, no commit, no marker
      . suite green: 2762 tests
      . build clean
      . screens clean: 185 screens, 20 not reachable
@@ -69,15 +67,17 @@ t11-93-digisign-templates.md
      [done] 08:28:13   ->  logs/h00g-t12-96-signature-capture-and-reuse.log   (commit + completion marker)
 
 ---- h00h-120-a-top-level-folder-and-a-file-with-no-questions ----  started 08:28:15
+     . suite green: 2762 tests
+     . build clean
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1336       13524          44        1104       14266
+Mem:           15603        1445       13444          57        1086       14157
 -- top --
     ELAPSED   RSS COMMAND
-      25:52 468664 node
-      25:52 76040 npm exec vitest
-      00:00 70880 node
- 1-03:44:57 41128 systemd-journal
+      02:44 399400 next-server (v1
+      02:40 280212 chrome-headless
+      02:42 201480 node
+      02:40 137832 chrome-headless
 -- disk --
-/dev/sda1        75G   26G   47G  36% /
+/dev/sda1        75G   16G   57G  22% /
