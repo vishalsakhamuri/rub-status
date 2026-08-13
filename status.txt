@@ -1,4 +1,4 @@
-generated: 2026-08-13 17:25:01 UTC
+generated: 2026-08-13 17:30:01 UTC
 done:   114
 queued: 30
 failed: 12
@@ -50,8 +50,6 @@ t10-79-no1edit-workspace.md
 t11-93-digisign-templates.md
 
 -- log --
-     . screens clean: 185 screens, 20 not reachable
-     ! JOURNEYS: 2 of 5 failed — invite and sign in, run a No1Edit tool — see docs/journeys-report.md
      [FAILED] (exit 98) 15:06:16
        moved to tasks/failed/ — the queue carries on
        reason: no commit and no completion marker
@@ -70,15 +68,17 @@ t11-93-digisign-templates.md
        see logs/t07-76-digisign-filing-and-integration.log
 
 ---- t08-77-purpose-routing-and-folder-intelligence ----  started 16:11:37
+     . suite green: 2765 tests
+     . build clean
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1097       12898          27        1963       14505
+Mem:           15603        1659       13252          56        1062       13943
 -- top --
     ELAPSED   RSS COMMAND
-      22:06 392012 node
-      00:00 113456 node
-      22:07 74876 npm exec vitest
- 1-10:49:57 34764 systemd-journal
+      00:17 425136 chrome-headless
+      00:22 393108 next-server (v1
+      00:20 192712 node
+      00:17 131800 chrome-headless
 -- disk --
-/dev/sda1        75G   24G   49G  34% /
+/dev/sda1        75G   16G   57G  22% /
