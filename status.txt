@@ -1,4 +1,4 @@
-generated: 2026-08-13 23:15:01 UTC
+generated: 2026-08-13 23:20:01 UTC
 done:   114
 queued: 25
 failed: 17
@@ -73,12 +73,12 @@ u01-81-hr-core-and-employment-record.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2922       11722          31        1318       12680
+Mem:           15603       11719         532          93        3795        3883
 -- top --
     ELAPSED   RSS COMMAND
-      00:13 1747480 node
-      46:59 443828 claude
-      00:10 149852 node
-      00:13 142356 node
+      03:43 10138432 next-server (v1
+      03:04 563316 chrome-headless
+      51:59 457296 claude
+      03:06 218124 node
 -- disk --
-/dev/sda1        75G   15G   57G  21% /
+/dev/sda1        75G   20G   53G  27% /
