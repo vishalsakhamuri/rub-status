@@ -1,4 +1,4 @@
-generated: 2026-08-13 10:05:01 UTC
+generated: 2026-08-13 10:10:01 UTC
 done:   113
 queued: 32
 failed: 9
@@ -72,12 +72,12 @@ t11-93-digisign-templates.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1090       13784          32        1078       14512
+Mem:           15603         991       13881          34        1081       14611
 -- top --
     ELAPSED   RSS COMMAND
-      10:52 395084 node
-      00:02 137520 node
-      10:52 76040 npm exec vitest
- 1-03:29:57 40328 systemd-journal
+      15:52 408444 node
+      00:00 84276 node
+      15:52 76040 npm exec vitest
+ 1-03:34:57 40564 systemd-journal
 -- disk --
 /dev/sda1        75G   26G   47G  36% /
