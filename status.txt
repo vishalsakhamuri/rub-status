@@ -1,4 +1,4 @@
-generated: 2026-08-13 18:55:01 UTC
+generated: 2026-08-13 19:00:01 UTC
 done:   114
 queued: 29
 failed: 13
@@ -73,12 +73,12 @@ t11-93-digisign-templates.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603       13452        1259          25        1237        2150
+Mem:           15603       14196         390           9        1347        1407
 -- top --
     ELAPSED   RSS COMMAND
-      16:51 12517104 next-server (v1
-   01:19:21 186948 claude
-      21:53 186636 node
-      00:07 155160 node
+      21:52 12617404 next-server (v1
+   01:24:21 210468 claude
+      20:12 152632 node
+      00:06 83984 npm exec tsc --
 -- disk --
 /dev/sda1        75G   23G   49G  33% /
