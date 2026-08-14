@@ -1,11 +1,10 @@
-generated: 2026-08-14 04:45:01 UTC
+generated: 2026-08-14 04:50:01 UTC
 done:   114
-queued: 22
-failed: 20
+queued: 21
+failed: 21
 hold:   0
 
 -- queued --
-u05-85-document-drafting.md
 u06-86-payslip-distribution.md
 u07-87-onboarding-offboarding-on-real-data.md
 u09-89-training-sessions-and-evidence.md
@@ -48,17 +47,9 @@ u01-81-hr-core-and-employment-record.md
 u02-82-self-service-and-approvals.md
 u03-83-asset-register.md
 u04-84-timesheets-and-leave.md
+u05-85-document-drafting.md
 
 -- log --
-       moved to tasks/failed/ — the queue carries on
-       reason: completion marker + commit present, but the gate failed: 1 of 2779 tests failing; journey "invite and sign in" failed: signing in with the one-time password did not force a password change — landed on http://localhost:3000/dashboard
-       see logs/u03-83-asset-register.log
-
----- u04-84-timesheets-and-leave ----  started 01:16:19
-     ! SUITE RED: 1 of 2794 tests failing — see logs/suite-latest.log
-     . build clean
-     . screens clean: 186 screens, 20 not reachable
-     ! JOURNEYS: 2 of 5 failed — invite and sign in, run a No1Edit tool — see docs/journeys-report.md
      . gate: 41 pass, 2 fail, 1 pending
      ! GATE FAILED: 1 of 2794 tests failing; journey "invite and sign in" failed: signing in with the one-time password did not force a password change — landed on http://localhost:3000/dashboard
      [FAILED] (exit 97) 02:35:17
@@ -70,15 +61,24 @@ u04-84-timesheets-and-leave.md
      . suite green: 2791 tests
      . build clean
      . screens clean: 192 screens, 25 not reachable
+     ! JOURNEYS: 2 of 5 failed — invite and sign in, run a No1Edit tool — see docs/journeys-report.md
+     . gate: 41 pass, 2 fail, 1 pending
+     ! GATE FAILED: 1 screen(s) missing an empty state that teaches; journey "invite and sign in" failed: signing in with the one-time password did not force a password change — landed on http://localhost:3000/dashboard
+     [FAILED] (exit 97) 04:46:23
+       moved to tasks/failed/ — the queue carries on
+       reason: completion marker + commit present, but the gate failed: 1 screen(s) missing an empty state that teaches; journey "invite and sign in" failed: signing in with the one-time password did not force a password change — landed on http://localhost:3000/dashboard
+       see logs/u05-85-document-drafting.log
+
+---- u06-86-payslip-distribution ----  started 04:46:25
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1832       12646         156        1612       13770
+Mem:           15603        1318       13150         122        1594       14284
 -- top --
     ELAPSED   RSS COMMAND
-   13:59:40 383608 next-server (v1
-      00:04 277900 next-server (v1
-      01:12 165540 node
-      00:04 142584 node
+   14:04:40 383608 next-server (v1
+      03:34 372852 claude
+ 1-22:14:58 54748 systemd-journal
+   14:04:41 14580 node
 -- disk --
 /dev/sda1        75G   16G   57G  22% /
