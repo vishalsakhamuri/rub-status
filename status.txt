@@ -1,4 +1,4 @@
-generated: 2026-08-14 20:35:01 UTC
+generated: 2026-08-14 20:40:01 UTC
 done:   128
 queued: 21
 failed: 14
@@ -66,12 +66,12 @@ u07-87-onboarding-offboarding-on-real-data.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1449       12773          36        1744       14153
+Mem:           15603        1614       12607          39        1747       13988
 -- top --
     ELAPSED   RSS COMMAND
-      07:08 408336 node
-   04:41:34 389528 next-server (v1
-      00:20 190232 node
-      07:08 75316 npm exec vitest
+      12:08 400724 node
+   04:46:34 389548 next-server (v1
+      00:15 321724 node
+      12:08 75316 npm exec vitest
 -- disk --
 /dev/sda1        75G   16G   57G  22% /
