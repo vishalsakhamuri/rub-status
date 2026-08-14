@@ -1,4 +1,4 @@
-generated: 2026-08-14 18:35:01 UTC
+generated: 2026-08-14 18:40:01 UTC
 done:   118
 queued: 21
 failed: 22
@@ -51,7 +51,6 @@ u05-85-document-drafting.md
 u06-86-payslip-distribution.md
 
 -- log --
-
 ---- h005-129-one-way-to-add-a-file ----  started 12:08:37
      . suite green: 2815 tests
      . build clean
@@ -71,15 +70,16 @@ u06-86-payslip-distribution.md
      [done] 16:27:33   ->  logs/h006-130-one-decision-per-screen.log   (commit + completion marker)
 
 ---- h007-131-who-is-signing-and-what-it-files-as ----  started 16:27:35
+     . suite green: 2835 tests
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1180       14156          37         624       14422
+Mem:           15603        3820       11170          17         953       11783
 -- top --
     ELAPSED   RSS COMMAND
-      21:35 409028 node
-      00:05 159412 node
-   02:41:34 75180 next-server (v1
-      21:36 74776 npm exec vitest
+      00:16 1794600 node
+      00:45 1365584 node
+      00:40 133696 node
+      00:46 125348 node
 -- disk --
 /dev/sda1        75G   24G   49G  33% /
