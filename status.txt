@@ -1,4 +1,4 @@
-generated: 2026-08-14 07:55:01 UTC
+generated: 2026-08-14 08:00:01 UTC
 done:   114
 queued: 26
 failed: 22
@@ -56,7 +56,6 @@ u05-85-document-drafting.md
 u06-86-payslip-distribution.md
 
 -- log --
-     ! GATE FAILED: 1 screen(s) missing an empty state that teaches; journey "invite and sign in" failed: signing in with the one-time password did not force a password change — landed on http://localhost:3000/dashboard
      [FAILED] (exit 97) 05:44:37
        moved to tasks/failed/ — the queue carries on
        reason: completion marker + commit present, but the gate failed: 1 screen(s) missing an empty state that teaches; journey "invite and sign in" failed: signing in with the one-time password did not force a password change — landed on http://localhost:3000/dashboard
@@ -76,15 +75,16 @@ u06-86-payslip-distribution.md
 ================================================
 
 ---- h002-126-the-reconciliation-line-and-the-transfer ----  started 07:20:38
+     ! exited clean but produced nothing verifiable — stalled — log ends on a waiting line, no commit, no marker
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1666       12652         172        1794       13936
+Mem:           15603        1497       12821         177        1800       14105
 -- top --
     ELAPSED   RSS COMMAND
-      34:21 456340 claude
-   17:09:40 383808 next-server (v1
-      06:10 173900 node
-      06:08 111332 node
+   17:14:40 383808 next-server (v1
+      04:33 324768 node
+      04:18 132544 node
+      04:33 74952 npm exec vitest
 -- disk --
 /dev/sda1        75G   16G   57G  22% /
