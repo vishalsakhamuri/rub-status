@@ -1,4 +1,4 @@
-generated: 2026-08-14 23:50:01 UTC
+generated: 2026-08-14 23:55:01 UTC
 done:   128
 queued: 20
 failed: 15
@@ -43,8 +43,6 @@ t11-93-digisign-templates.md
 u04-84-timesheets-and-leave.md
 
 -- log --
-       see logs/h008-132-the-wait-race-and-the-retry.log
-
 ---- h009-133-retry-once-and-the-broken-screen ----  started 21:02:52
      ! exited clean but produced nothing verifiable — no commit and no completion marker
      . suite green: 2835 tests
@@ -63,15 +61,17 @@ u04-84-timesheets-and-leave.md
 ================================================
 
 ---- u07-87-onboarding-offboarding-on-real-data ----  started 22:46:08
+     . suite green: 2835 tests
+     . build clean
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1388       13286          50        1303       14214
+Mem:           15603        3044       11627          68        1322       12558
 -- top --
     ELAPSED   RSS COMMAND
-      24:15 410020 node
-   07:56:34 326588 next-server (v1
-      24:15 77012 npm exec vitest
-      00:00 66012 node
+      01:50 1130124 chrome-headless
+      01:55 709364 next-server (v1
+   08:01:34 331372 next-server (v1
+      01:53 281396 node
 -- disk --
-/dev/sda1        75G   24G   49G  33% /
+/dev/sda1        75G   16G   57G  22% /
