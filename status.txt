@@ -1,4 +1,4 @@
-generated: 2026-08-14 22:40:01 UTC
+generated: 2026-08-14 22:45:01 UTC
 done:   128
 queued: 20
 failed: 15
@@ -66,12 +66,12 @@ u04-84-timesheets-and-leave.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        8588        4496          79        2936        7014
+Mem:           15603       14794         625         112         617         809
 -- top --
     ELAPSED   RSS COMMAND
-      03:00 5442540 next-server (v1
-      00:57 841312 chrome-headless
-      53:24 578444 claude
-   06:46:34 390780 next-server (v1
+      08:00 12736520 next-server (v1
+      05:57 508508 chrome-headless
+   06:51:34 384156 next-server (v1
+      58:24 251656 claude
 -- disk --
-/dev/sda1        75G   17G   56G  24% /
+/dev/sda1        75G   24G   49G  33% /
