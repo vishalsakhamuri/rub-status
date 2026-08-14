@@ -1,4 +1,4 @@
-generated: 2026-08-14 20:55:01 UTC
+generated: 2026-08-14 21:00:01 UTC
 done:   128
 queued: 21
 failed: 14
@@ -43,7 +43,6 @@ u04-84-timesheets-and-leave.md
 u07-87-onboarding-offboarding-on-real-data.md
 
 -- log --
-     . build clean
      . screens clean: 192 screens, 25 not reachable
      ! JOURNEYS: 1 of 5 failed — run a No1Edit tool — see docs/journeys-report.md
      . gate: 45 pass, 0 fail, 1 pending
@@ -63,15 +62,16 @@ u07-87-onboarding-offboarding-on-real-data.md
 
 ---- h008-132-the-wait-race-and-the-retry ----  started 19:34:15
      . suite green: 2835 tests
+     . build clean
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3600       10621          24        1733       12002
+Mem:           15603        3564       10983          80        1458       12038
 -- top --
     ELAPSED   RSS COMMAND
-      00:09 1329768 node
-      00:39 1300108 node
-   05:01:34 389556 next-server (v1
-      00:35 136020 node
+      01:12 1052580 chrome-headless
+      03:29 745372 next-server (v1
+      03:24 499612 chrome-headless
+   05:06:34 389560 next-server (v1
 -- disk --
 /dev/sda1        75G   16G   57G  22% /
