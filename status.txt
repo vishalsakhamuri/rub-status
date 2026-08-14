@@ -1,4 +1,4 @@
-generated: 2026-08-14 15:50:01 UTC
+generated: 2026-08-14 15:55:01 UTC
 done:   117
 queued: 22
 failed: 22
@@ -75,12 +75,12 @@ u06-86-payslip-distribution.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2778       11588          48        1594       12824
+Mem:           15603        1250       13048          34        1648       14352
 -- top --
     ELAPSED   RSS COMMAND
-      00:16 631420 chrome-headless
-      30:59 525796 next-server (v1
-      00:18 286896 node
-   01:36:21 235752 claude
+      01:22 376340 node
+      01:34 218196 next-server (v1
+      00:09 143376 node
+      01:35 124184 node
 -- disk --
 /dev/sda1        75G   24G   49G  33% /
