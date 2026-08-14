@@ -1,4 +1,4 @@
-generated: 2026-08-14 00:50:01 UTC
+generated: 2026-08-14 00:55:01 UTC
 done:   114
 queued: 24
 failed: 18
@@ -73,12 +73,12 @@ u02-82-self-service-and-approvals.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1438       13088          30        1437       14164
+Mem:           15603        1461       13065          33        1440       14141
 -- top --
     ELAPSED   RSS COMMAND
-      06:49 391848 node
-   10:04:40 382684 next-server (v1
-      00:03 139812 node
-      06:49 75284 npm exec vitest
+      11:49 407928 node
+   10:09:40 382812 next-server (v1
+      00:12 161672 node
+      11:49 75284 npm exec vitest
 -- disk --
 /dev/sda1        75G   16G   57G  22% /
