@@ -1,4 +1,4 @@
-generated: 2026-08-14 18:40:01 UTC
+generated: 2026-08-14 18:45:01 UTC
 done:   118
 queued: 21
 failed: 22
@@ -51,7 +51,6 @@ u05-85-document-drafting.md
 u06-86-payslip-distribution.md
 
 -- log --
----- h005-129-one-way-to-add-a-file ----  started 12:08:37
      . suite green: 2815 tests
      . build clean
      . screens clean: 192 screens, 25 not reachable
@@ -71,15 +70,16 @@ u06-86-payslip-distribution.md
 
 ---- h007-131-who-is-signing-and-what-it-files-as ----  started 16:27:35
      . suite green: 2835 tests
+     . build clean
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3820       11170          17         953       11783
+Mem:           15603        1682       13237          21        1024       13920
 -- top --
     ELAPSED   RSS COMMAND
-      00:16 1794600 node
-      00:45 1365584 node
-      00:40 133696 node
-      00:46 125348 node
+      03:34 737776 next-server (v1
+      03:34 126476 node
+      03:32 125488 node
+   02:51:34 75180 next-server (v1
 -- disk --
-/dev/sda1        75G   24G   49G  33% /
+/dev/sda1        75G   16G   57G  22% /
