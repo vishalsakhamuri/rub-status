@@ -1,11 +1,10 @@
-generated: 2026-08-14 14:10:01 UTC
-done:   116
-queued: 23
+generated: 2026-08-14 14:15:01 UTC
+done:   117
+queued: 22
 failed: 22
 hold:   0
 
 -- queued --
-h005-129-one-way-to-add-a-file.md
 h006-130-one-decision-per-screen.md
 h007-131-who-is-signing-and-what-it-files-as.md
 u07-87-onboarding-offboarding-on-real-data.md
@@ -53,13 +52,6 @@ u05-85-document-drafting.md
 u06-86-payslip-distribution.md
 
 -- log --
-     . suite green: 2815 tests
-     . build clean
-     . screens clean: 192 screens, 25 not reachable
-     ! JOURNEYS: 1 of 5 failed — run a No1Edit tool — see docs/journeys-report.md
-     . gate: 43 pass, 0 fail, 1 pending
-     . gate clean — see docs/gate-report.md
-     [done] 10:18:13   ->  logs/h003-127-stop-the-line.log   (commit + completion marker)
 
 ---- h004-128-verify-the-batch-once ----  started 10:18:16
      . suite green: 2815 tests
@@ -73,15 +65,22 @@ u06-86-payslip-distribution.md
 ---- h005-129-one-way-to-add-a-file ----  started 12:08:37
      . suite green: 2815 tests
      . build clean
+     . screens clean: 192 screens, 25 not reachable
+     ! JOURNEYS: 1 of 5 failed — run a No1Edit tool — see docs/journeys-report.md
+     . gate: 43 pass, 0 fail, 1 pending
+     . gate clean — see docs/gate-report.md
+     [done] 14:13:35   ->  logs/h005-129-one-way-to-add-a-file.log   (commit + completion marker)
+
+---- h006-130-one-decision-per-screen ----  started 14:13:38
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2856       11072         244        2257       12746
+Mem:           15603        1180       12747         200        2214       14422
 -- top --
     ELAPSED   RSS COMMAND
-      02:29 694980 next-server (v1
-      02:25 462680 chrome-headless
-      00:22 444764 chrome-headless
-      02:27 320400 node
+      01:21 322248 claude
+   02:40:32 218604 next-server (v1
+   02:40:33 124284 node
+ 2-07:39:57 68008 systemd-journal
 -- disk --
 /dev/sda1        75G   16G   57G  22% /
