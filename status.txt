@@ -1,4 +1,4 @@
-generated: 2026-08-14 01:10:01 UTC
+generated: 2026-08-14 01:15:01 UTC
 done:   114
 queued: 24
 failed: 18
@@ -50,7 +50,6 @@ u01-81-hr-core-and-employment-record.md
 u02-82-self-service-and-approvals.md
 
 -- log --
-     [FAILED] (exit 97) 22:27:57
        moved to tasks/failed/ — the queue carries on
        reason: completion marker + commit present, but the gate failed: journey "invite and sign in" failed: signing in with the one-time password did not force a password change — landed on http://localhost:3000/dashboard
        see logs/u01-81-hr-core-and-employment-record.log
@@ -70,15 +69,16 @@ u02-82-self-service-and-approvals.md
 ---- u03-83-asset-register ----  started 00:00:58
      ! SUITE RED: 1 of 2779 tests failing — see logs/suite-latest.log
      . build clean
+     . screens clean: 187 screens, 20 not reachable
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        4432       10093          18        1426       11170
+Mem:           15603        1662       12863          51        1460       13940
 -- top --
     ELAPSED   RSS COMMAND
-      00:25 2134416 node
-      00:54 1373020 node
-   10:24:40 383196 next-server (v1
-      00:49 132928 node
+   10:29:40 383224 next-server (v1
+      00:09 330432 next-server (v1
+      01:18 169280 node
+      00:03 167532 chrome-headless
 -- disk --
 /dev/sda1        75G   16G   57G  22% /
