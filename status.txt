@@ -1,4 +1,4 @@
-generated: 2026-08-14 16:15:01 UTC
+generated: 2026-08-14 16:20:01 UTC
 done:   117
 queued: 22
 failed: 22
@@ -52,7 +52,6 @@ u05-85-document-drafting.md
 u06-86-payslip-distribution.md
 
 -- log --
-
 ---- h004-128-verify-the-batch-once ----  started 10:18:16
      . suite green: 2815 tests
      . build clean
@@ -72,15 +71,16 @@ u06-86-payslip-distribution.md
      [done] 14:13:35   ->  logs/h005-129-one-way-to-add-a-file.log   (commit + completion marker)
 
 ---- h006-130-one-decision-per-screen ----  started 14:13:38
+     . suite green: 2835 tests
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1333       12963          47        1664       14269
+Mem:           15603        4224        9888          28        1830       11378
 -- top --
     ELAPSED   RSS COMMAND
-      21:21 409836 node
-      21:34 218224 next-server (v1
-      00:04 133508 node
-      21:35 124184 node
+      00:27 2191824 node
+      00:56 1268924 node
+      26:34 218228 next-server (v1
+      00:52 130732 node
 -- disk --
 /dev/sda1        75G   24G   49G  33% /
