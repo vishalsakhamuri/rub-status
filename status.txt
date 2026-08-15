@@ -1,4 +1,4 @@
-generated: 2026-08-15 16:05:01 UTC
+generated: 2026-08-15 16:10:01 UTC
 done:   129
 queued: 14
 failed: 19
@@ -64,12 +64,12 @@ u12-92-recurrence-and-the-due-list.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603       15276         189        1700        2147         326
+Mem:           15603        8232        4556         129        3253        7370
 -- top --
     ELAPSED   RSS COMMAND
-      01:38 11774436 next-server (v1
-      00:45 923272 chrome-headless
-      07:36 338248 chrome-headless
-      07:39 268616 node
+      00:29 9174112 next-server (v1
+      00:28 332656 chrome-headless
+      03:11 191348 node
+   02:03:43 140824 claude
 -- disk --
 /dev/sda1        75G   25G   48G  34% /
