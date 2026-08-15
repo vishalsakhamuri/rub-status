@@ -1,4 +1,4 @@
-generated: 2026-08-15 20:25:01 UTC
+generated: 2026-08-15 20:30:01 UTC
 done:   129
 queued: 13
 failed: 21
@@ -42,13 +42,6 @@ u13-94-payroll-runs-and-the-standard-payslip.md
 u14-97-document-list-filing-columns-and-one-vocabulary.md
 
 -- log --
-     ! GATE FAILED, caused by this task
-     [FAILED] (exit 97) 17:20:55
-       moved to tasks/failed/ — the queue carries on
-       reason: completion marker + commit present, but the gate failed: 52 screen(s) flagged for density, up from 48 on the last green run: /accounting/packets/[packet], /assets/[id], /assets/locations, /assets, /banking/[account]/reconcile, /banking/[account]/statements/[statement], /bills/bulk/[operation], /bills/bulk/payment — see docs/screen-density.md
-       see logs/u14-97-document-list-filing-columns-and-one-vocabulary.log
-
----- u13-94-payroll-runs-and-the-standard-payslip ----  started 17:20:57
      . suite green: 2872 tests
      . build clean
      . screens clean: 207 screens, 29 not reachable
@@ -62,15 +55,22 @@ u14-97-document-list-filing-columns-and-one-vocabulary.md
        see logs/u13-94-payroll-runs-and-the-standard-payslip.log
 
 ---- u16-100-search-across-the-suite ----  started 18:29:24
+     . suite green: 2872 tests
+================================================
+  RunUrBusiness — draining the task queue
+  started Sat 15 Aug 20:26
+================================================
+
+---- u16-100-search-across-the-suite ----  started 20:26:43
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603       13341        1914          52         713        2261
+Mem:           15603       11154         561          29        4305        4448
 -- top --
     ELAPSED   RSS COMMAND
-      34:11 12016432 next-server (v1
-      26:37 477672 node
-      32:02 120816 node
-      26:37 75604 npm exec vitest
+      02:15 10222692 next-server (v1
+      03:15 326032 claude
+      01:14 165400 node
+      01:55 133120 node
 -- disk --
-/dev/sda1        75G   26G   47G  36% /
+/dev/sda1        75G   26G   47G  35% /
