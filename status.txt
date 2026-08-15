@@ -1,4 +1,4 @@
-generated: 2026-08-15 16:10:01 UTC
+generated: 2026-08-15 16:15:01 UTC
 done:   129
 queued: 14
 failed: 19
@@ -41,12 +41,6 @@ u11-91-assignments-and-client-documents.md
 u12-92-recurrence-and-the-due-list.md
 
 -- log --
-     . build clean
-     . screens clean: 207 screens, 29 not reachable
-     ! JOURNEYS: 1 of 5 failed — run a No1Edit tool — see docs/journeys-report.md
-     . gate: 44 pass, 1 fail, 1 pending
-     ! GATE FAILED: 50 screen(s) flagged for density, up from 48 on the last green run: /accounting/packets/[packet], /assets/[id], /assets/locations, /assets, /banking/[account]/reconcile, /banking/[account]/statements/[statement], /bills/bulk/[operation], /bills/bulk/payment — see docs/screen-density.md
-     ! GATE FAILED, unrelated to this task — same gate reason was already failing before this task ran: 50 screen(s) flagged for density, up from 48 on the last green run: /accounting/packets/[packet], /assets/[id], /assets/locations, /assets, /banking/[account]/reconcile, /banking/[account]/statements/[statement], /bills/bulk/[operation], /bills/bulk/payment — see docs/screen-density.md (streak: 1)
      [BLOCKED] (exit 97) 13:30:50
        moved to tasks/blocked/ — failed/ must mean failed on its own merits (h003-127 C)
        requeued automatically once the blocking reason clears — nothing here is rebuilt
@@ -61,15 +55,21 @@ u12-92-recurrence-and-the-due-list.md
 ================================================
 
 ---- u14-97-document-list-filing-columns-and-one-vocabulary ----  started 14:06:16
+================================================
+  RunUrBusiness — draining the task queue
+  started Sat 15 Aug 16:14
+================================================
+
+---- u14-97-document-list-filing-columns-and-one-vocabulary ----  started 16:14:32
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        8232        4556         129        3253        7370
+Mem:           15603         847       14484           9         623       14755
 -- top --
     ELAPSED   RSS COMMAND
-      00:29 9174112 next-server (v1
-      00:28 332656 chrome-headless
-      03:11 191348 node
-   02:03:43 140824 claude
+      00:26 308320 claude
+ 3-09:39:57 12280 systemd-journal
+ 6-00:04:01 10332 systemd
+ 3-09:39:35  9264 multipathd
 -- disk --
 /dev/sda1        75G   25G   48G  34% /
