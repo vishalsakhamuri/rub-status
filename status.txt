@@ -1,4 +1,4 @@
-generated: 2026-08-15 20:50:01 UTC
+generated: 2026-08-15 20:55:01 UTC
 done:   129
 queued: 13
 failed: 21
@@ -42,7 +42,6 @@ u13-94-payroll-runs-and-the-standard-payslip.md
 u14-97-document-list-filing-columns-and-one-vocabulary.md
 
 -- log --
-     . suite green: 2872 tests
      . build clean
      . screens clean: 207 screens, 29 not reachable
      ! JOURNEYS: 1 of 5 failed — run a No1Edit tool — see docs/journeys-report.md
@@ -62,15 +61,16 @@ u14-97-document-list-filing-columns-and-one-vocabulary.md
 ================================================
 
 ---- u16-100-search-across-the-suite ----  started 20:26:43
+     ! exited clean but produced nothing verifiable — commit made but no completion marker
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603       11289         382          53        4373        4313
+Mem:           15603        1121       10529          59        4400       14481
 -- top --
     ELAPSED   RSS COMMAND
-      22:16 10222864 next-server (v1
-      23:16 354204 claude
-      11:19 209624 node
-      00:16 149596 node
+      01:23 337492 node
+      00:12 145436 node
+      01:23 76420 npm exec vitest
+ 3-14:19:57 18460 systemd-journal
 -- disk --
-/dev/sda1        75G   26G   47G  35% /
+/dev/sda1        75G   25G   47G  35% /
