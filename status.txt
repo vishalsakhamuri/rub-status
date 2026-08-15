@@ -1,4 +1,4 @@
-generated: 2026-08-15 01:45:01 UTC
+generated: 2026-08-15 01:50:01 UTC
 done:   129
 queued: 19
 failed: 15
@@ -65,12 +65,12 @@ u04-84-timesheets-and-leave.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603       12867        1313          18        1768        2735
+Mem:           15603        1146       12978          28        1833       14456
 -- top --
     ELAPSED   RSS COMMAND
-      08:49 12193224 next-server (v1
-   01:45:47 275616 claude
-      07:05 147440 node
- 2-19:09:57 61824 systemd-journal
+      03:18 378428 node
+      00:28 213740 node
+      03:18 76028 npm exec vitest
+ 2-19:14:57 64840 systemd-journal
 -- disk --
 /dev/sda1        75G   25G   48G  34% /
