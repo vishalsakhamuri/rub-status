@@ -1,4 +1,4 @@
-generated: 2026-08-16 08:45:01 UTC
+generated: 2026-08-16 08:50:01 UTC
 done:   130
 queued: 10
 failed: 24
@@ -65,12 +65,12 @@ u20-104-no1edit-capture-ocr-and-conversion.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3356       10503          95        2177       12246
+Mem:           15603        3630       10226          95        2181       11972
 -- top --
     ELAPSED   RSS COMMAND
-      11:23 2263508 next-server (v1
-      13:57 415672 claude
-      10:48 156008 node
-      11:23 126392 node
+      16:22 2265564 next-server (v1
+      18:57 434500 claude
+      15:48 176832 node
+      00:05 152580 node
 -- disk --
 /dev/sda1        75G   16G   57G  22% /
