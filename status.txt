@@ -1,4 +1,4 @@
-generated: 2026-08-16 00:55:01 UTC
+generated: 2026-08-16 01:00:02 UTC
 done:   129
 queued: 12
 failed: 22
@@ -42,12 +42,6 @@ u14-97-document-list-filing-columns-and-one-vocabulary.md
 u16-100-search-across-the-suite.md
 
 -- log --
-     . suite green: 2872 tests
-================================================
-  RunUrBusiness — draining the task queue
-  started Sat 15 Aug 20:26
-================================================
-
 ---- u16-100-search-across-the-suite ----  started 20:26:43
      ! exited clean but produced nothing verifiable — commit made but no completion marker
      . suite green: 2872 tests
@@ -62,15 +56,21 @@ u16-100-search-across-the-suite.md
 ---- u17-101-one-attention-service ----  started 21:27:21
      ! SUITE RED: 22 of 2872 tests failing — see logs/suite-latest.log
      . build clean
+================================================
+  RunUrBusiness — draining the task queue
+  started Sun 16 Aug 00:55
+================================================
+
+---- u17-101-one-attention-service ----  started 00:55:57
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2731       12417          44         804       12871
+Mem:           15603         897       13865          48        1197       14706
 -- top --
     ELAPSED   RSS COMMAND
-      00:14 1900452 node
-      00:09 153112 node
-      00:15 143472 node
-   05:47:33 67752 next-server (v1
+      04:01 352000 claude
+   05:52:34 67752 next-server (v1
+ 3-18:24:58 21732 systemd-journal
+ 6-08:49:01 10388 systemd
 -- disk --
-/dev/sda1        75G   16G   57G  21% /
+/dev/sda1        75G   16G   57G  22% /
