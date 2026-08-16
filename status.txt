@@ -1,7 +1,7 @@
-generated: 2026-08-16 20:15:01 UTC
-done:   139
+generated: 2026-08-16 20:20:01 UTC
+done:   140
 queued: 8
-failed: 18
+failed: 17
 hold:   0
 
 -- queued --
@@ -15,7 +15,6 @@ u27-112-subscription-scopes-upgrade-and-downgrade.md
 y00-122-the-four-one-step-jobs.md
 -- failed --
 a03-139-integration-proof-run-it-now.md
-a04-140-make-the-gate-fast.md
 a06-open-every-screen-in-a-real-browser.md
 h000-124-the-gate-that-cannot-pass.md
 h001-125-networkidle-never-settles.md
@@ -57,12 +56,12 @@ u18-102-no1cloud-workspace-and-the-picker.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1729       12485         151        1862       13873
+Mem:           15603        1740       12474         151        1862       13862
 -- top --
     ELAPSED   RSS COMMAND
-   01:29:57 553276 node
-   04:02:28 238912 next-server (v1
-   06:51:46 233220 next-server (v1
-   04:02:29 127160 node
+   01:34:57 554300 node
+   04:07:28 238916 next-server (v1
+   06:56:46 233220 next-server (v1
+   04:07:29 127160 node
 -- disk --
 /dev/sda1        75G   16G   57G  22% /
