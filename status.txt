@@ -1,4 +1,4 @@
-generated: 2026-08-16 09:40:01 UTC
+generated: 2026-08-16 09:45:01 UTC
 done:   130
 queued: 12
 failed: 23
@@ -43,13 +43,6 @@ u17-101-one-attention-service.md
 u18-102-no1cloud-workspace-and-the-picker.md
 
 -- log --
-     ! GATE FAILED: 1 screen(s) broken: /invoices/send
-     ! GATE FAILED, caused by this task
-     [FAILED] (exit 97) 08:24:34
-       moved to tasks/failed/ — the queue carries on
-       reason: completion marker + commit present, but the gate failed: 1 screen(s) broken: /invoices/send
-       see logs/u20-104-no1edit-capture-ocr-and-conversion.log
-
 ---- u22-106-home-screens-and-the-subscription ----  started 08:24:36
 ================================================
   RunUrBusiness — draining the task queue
@@ -63,15 +56,22 @@ u18-102-no1cloud-workspace-and-the-picker.md
 ================================================
 
 ---- a01-137-fix-invoices-send ----  started 09:36:17
+     .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
+================================================
+  RunUrBusiness — draining the task queue
+  started Sun 16 Aug 09:43
+================================================
+
+---- a01-137-fix-invoices-send ----  started 09:43:23
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1202       14099          29         646       14400
+Mem:           15603         823       14440          29         685       14779
 -- top --
     ELAPSED   RSS COMMAND
-      03:41 315168 claude
-      02:08 246396 node
-      00:17 227848 node
-      02:09 75460 npm exec vitest
+      01:36 319364 claude
+ 4-03:09:57 30984 systemd-journal
+   14:37:34 17124 next-server (v1
+ 6-17:34:01 10708 systemd
 -- disk --
 /dev/sda1        75G   26G   47G  36% /
