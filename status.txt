@@ -1,4 +1,4 @@
-generated: 2026-08-16 15:25:01 UTC
+generated: 2026-08-16 15:30:02 UTC
 done:   139
 queued: 9
 failed: 17
@@ -34,12 +34,6 @@ u16-100-search-across-the-suite.md
 u18-102-no1cloud-workspace-and-the-picker.md
 
 -- log --
-     . suite green: 2920 tests
-     . build clean
-     . screens clean: 209 screens, 29 not reachable
-     ! JOURNEYS: 1 of 5 failed — run a No1Edit tool — see docs/journeys-report.md
-     . gate: 49 pass, 0 fail, 1 pending
-     . gate clean — see docs/gate-report.md
      [done] 10:40:15   ->  logs/a02-138-reconciliation-restore-and-transfer.log   (commit + completion marker)
 
 ---- a03-139-integration-proof-run-it-now ----  started 10:40:17
@@ -54,15 +48,21 @@ u18-102-no1cloud-workspace-and-the-picker.md
        see logs/a03-139-integration-proof-run-it-now.log
 
 ---- a04-140-make-the-gate-fast ----  started 11:36:33
+================================================
+  RunUrBusiness — draining the task queue
+  started Sun 16 Aug 15:25
+================================================
+
+---- a04-140-make-the-gate-fast ----  started 15:25:43
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1532       13009          80        1458       14070
+Mem:           15603        1440       13100          80        1458       14162
 -- top --
     ELAPSED   RSS COMMAND
-   02:01:11 565296 node
-   02:01:46 220836 next-server (v1
-      02:57 219456 node
-   02:01:46 125624 node
+   02:06:12 554176 node
+   02:06:47 220840 next-server (v1
+      02:42 127512 node
+   02:06:47 125624 node
 -- disk --
 /dev/sda1        75G   16G   57G  22% /
