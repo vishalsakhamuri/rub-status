@@ -1,4 +1,4 @@
-generated: 2026-08-16 06:40:01 UTC
+generated: 2026-08-16 06:45:01 UTC
 done:   129
 queued: 10
 failed: 24
@@ -42,8 +42,6 @@ u17-101-one-attention-service.md
 u18-102-no1cloud-workspace-and-the-picker.md
 
 -- log --
-     . build clean
-     . screens clean: 209 screens, 27 not reachable
      ! JOURNEYS: 1 of 5 failed — run a No1Edit tool — see docs/journeys-report.md
      . gate: 47 pass, 1 fail, 1 pending
      ! GATE FAILED: 53 screen(s) flagged for density, up from 48 on the last green run: /accounting/packets/[packet], /assets/[id], /assets/locations, /assets, /attention, /banking/[account]/reconcile, /banking/[account]/statements/[statement], /bills/bulk/[operation] — see docs/screen-density.md
@@ -62,15 +60,17 @@ u18-102-no1cloud-workspace-and-the-picker.md
 ---- u19-103-no1edit-page-engine-and-where-it-runs ----  started 05:37:59
      . suite green: 2897 tests
      . build clean
+     . screens clean: 209 screens, 29 not reachable
+     ! JOURNEYS: 1 of 5 failed — run a No1Edit tool — see docs/journeys-report.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2978       11511         119        1542       12624
+Mem:           15603         790       13698          78        1501       14812
 -- top --
     ELAPSED   RSS COMMAND
-      01:40 1097632 chrome-headless
-      01:45 883772 next-server (v1
-      01:43 271448 node
-      01:41 143524 chrome-headless
+      00:48 83516 node
+   11:37:33 80620 next-server (v1
+      00:48 77160 npm exec tsx --
+      00:48 55684 node
 -- disk --
 /dev/sda1        75G   16G   57G  22% /
