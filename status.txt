@@ -1,7 +1,7 @@
-generated: 2026-08-16 09:35:01 UTC
+generated: 2026-08-16 09:40:01 UTC
 done:   130
-queued: 11
-failed: 24
+queued: 12
+failed: 23
 hold:   0
 
 -- queued --
@@ -9,6 +9,7 @@ a01-137-fix-invoices-send.md
 a02-138-reconciliation-restore-and-transfer.md
 a03-139-integration-proof-run-it-now.md
 a04-140-make-the-gate-fast.md
+u20-104-no1edit-capture-ocr-and-conversion.md
 u22-106-home-screens-and-the-subscription.md
 u23-107-document-clocks-and-the-review-cycle.md
 u24-108-accounting-packet-one-file-per-month.md
@@ -40,15 +41,8 @@ u14-97-document-list-filing-columns-and-one-vocabulary.md
 u16-100-search-across-the-suite.md
 u17-101-one-attention-service.md
 u18-102-no1cloud-workspace-and-the-picker.md
-u20-104-no1edit-capture-ocr-and-conversion.md
 
 -- log --
----- u20-104-no1edit-capture-ocr-and-conversion ----  started 06:45:15
-     . suite green: 2903 tests
-     . build clean
-     . screens clean: 209 screens, 29 not reachable
-     ! JOURNEYS: 1 of 5 failed — run a No1Edit tool — see docs/journeys-report.md
-     . gate: 48 pass, 1 fail, 1 pending
      ! GATE FAILED: 1 screen(s) broken: /invoices/send
      ! GATE FAILED, caused by this task
      [FAILED] (exit 97) 08:24:34
@@ -63,15 +57,21 @@ u20-104-no1edit-capture-ocr-and-conversion.md
 ================================================
 
 ---- a01-137-fix-invoices-send ----  started 08:31:01
+================================================
+  RunUrBusiness — draining the task queue
+  started Sun 16 Aug 09:36
+================================================
+
+---- a01-137-fix-invoices-send ----  started 09:36:17
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603       15522         172         807         966          80
+Mem:           15603        1202       14099          29         646       14400
 -- top --
     ELAPSED   RSS COMMAND
-      06:10 12906064 next-server (v1
-      02:11 715324 chrome-headless
-      10:21 249216 chrome-headless
-      10:23 248556 node
+      03:41 315168 claude
+      02:08 246396 node
+      00:17 227848 node
+      02:09 75460 npm exec vitest
 -- disk --
 /dev/sda1        75G   26G   47G  36% /
