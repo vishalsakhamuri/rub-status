@@ -1,4 +1,4 @@
-generated: 2026-08-16 12:15:01 UTC
+generated: 2026-08-16 12:20:01 UTC
 done:   132
 queued: 9
 failed: 24
@@ -64,12 +64,12 @@ u18-102-no1cloud-workspace-and-the-picker.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1382       13275          80        1342       14220
+Mem:           15603         956       13701          41        1302       14646
 -- top --
     ELAPSED   RSS COMMAND
-      38:26 433540 claude
-      21:51 307204 node
-      00:07 143216 node
-      21:51 76256 npm exec vitest
+      43:26 435108 claude
+   17:12:33 40316 next-server (v1
+ 4-05:44:57 35524 systemd-journal
+ 6-20:09:01 11004 systemd
 -- disk --
 /dev/sda1        75G   16G   57G  22% /
