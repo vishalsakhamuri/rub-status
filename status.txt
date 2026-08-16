@@ -1,12 +1,14 @@
-generated: 2026-08-16 08:55:01 UTC
+generated: 2026-08-16 09:00:01 UTC
 done:   130
-queued: 10
+queued: 11
 failed: 24
 hold:   0
 
 -- queued --
 a01-137-fix-invoices-send.md
 a02-138-reconciliation-restore-and-transfer.md
+a03-139-integration-proof-run-it-now.md
+a04-140-make-the-gate-fast.md
 u22-106-home-screens-and-the-subscription.md
 u23-107-document-clocks-and-the-review-cycle.md
 u24-108-accounting-packet-one-file-per-month.md
@@ -14,7 +16,6 @@ u25-109-the-manual-path-when-a-module-is-not-subscribed.md
 u26-111-backups-and-the-restore-drill.md
 u27-112-subscription-scopes-upgrade-and-downgrade.md
 y00-122-the-four-one-step-jobs.md
-z00-121-one-document-through-all-four-tools.md
 -- failed --
 a06-open-every-screen-in-a-real-browser.md
 h000-124-the-gate-that-cannot-pass.md
@@ -65,12 +66,12 @@ u20-104-no1edit-capture-ocr-and-conversion.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        4646        8854         105        2547       10956
+Mem:           15603        4552        9019         109        2479       11050
 -- top --
     ELAPSED   RSS COMMAND
-      21:23 3196568 next-server (v1
-      23:57 396504 claude
-      02:19 241952 node
-      20:48 176832 node
+      26:23 3173312 next-server (v1
+      28:57 396896 claude
+      07:19 228444 node
+      25:48 176976 node
 -- disk --
 /dev/sda1        75G   16G   56G  23% /
