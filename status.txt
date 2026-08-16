@@ -1,4 +1,4 @@
-generated: 2026-08-16 02:40:01 UTC
+generated: 2026-08-16 02:45:01 UTC
 done:   129
 queued: 11
 failed: 23
@@ -65,12 +65,12 @@ u17-101-one-attention-service.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1391       13263          67        1324       14211
+Mem:           15603        1262       13392          70        1327       14340
 -- top --
     ELAPSED   RSS COMMAND
-      32:35 447712 claude
-      13:26 226828 node
-      00:05 173672 node
-   07:32:34 77284 next-server (v1
+      37:35 403884 claude
+      18:25 230556 node
+      00:08 177952 node
+   07:37:34 77284 next-server (v1
 -- disk --
 /dev/sda1        75G   16G   57G  22% /
