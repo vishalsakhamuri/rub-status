@@ -1,4 +1,4 @@
-generated: 2026-08-17 07:10:01 UTC
+generated: 2026-08-17 07:15:01 UTC
 done:   140
 queued: 4
 failed: 21
@@ -33,10 +33,6 @@ u23-107-document-clocks-and-the-review-cycle.md
 u24-108-accounting-packet-one-file-per-month.md
 
 -- log --
-; journey "upload and self-sign" failed: page.fill: Timeout 30000ms exceeded.
-Call log:
-  - waiting for locator('#email')
-; journey "invite and sign in" failed: page.fill: Timeout 30000ms exceeded.
 Call log:
   - waiting for locator('#email')
 ; journey "raise an invoice" failed: page.fill: Timeout 30000ms exceeded.
@@ -53,15 +49,19 @@ Call log:
 ================================================
 
 ---- u25-109-the-manual-path-when-a-module-is-not-subscribed ----  started 06:14:20
+     ! SUITE RED: 2 of 2927 tests failing — see logs/suite-latest.log
+     . build/screens/journeys: diff since 16a13c75ef9b touches something that could render — running fresh
+     . build clean
+     ! screen audit did not produce a result at all — see logs/screens-latest.log
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2065       12058         383        2190       13537
+Mem:           15603        1617       12505         345        2152       13985
 -- top --
     ELAPSED   RSS COMMAND
-      23:55 551388 node
-   14:57:29 246408 next-server (v1
-   17:46:46 234096 next-server (v1
-      00:08 153796 node
+   15:02:29 246416 next-server (v1
+   17:51:46 234096 next-server (v1
+      00:32 195972 node
+   15:02:29 127160 node
 -- disk --
 /dev/sda1        75G   16G   57G  22% /
