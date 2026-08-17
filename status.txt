@@ -1,11 +1,11 @@
-generated: 2026-08-17 11:05:01 UTC
+generated: 2026-08-17 11:10:01 UTC
 done:   140
 queued: 3
-failed: 21
+failed: 22
 hold:   0
 
 -- queued --
-u26-111-backups-and-the-restore-drill.md
+u25-109-the-manual-path-when-a-module-is-not-subscribed.md
 u27-112-subscription-scopes-upgrade-and-downgrade.md
 y00-122-the-four-one-step-jobs.md
 -- failed --
@@ -30,8 +30,14 @@ u20-104-no1edit-capture-ocr-and-conversion.md
 u22-106-home-screens-and-the-subscription.md
 u23-107-document-clocks-and-the-review-cycle.md
 u24-108-accounting-packet-one-file-per-month.md
+u26-111-backups-and-the-restore-drill.md
 
 -- log --
+     . requeued u25-109-the-manual-path-when-a-module-is-not-subscribed from blocked/ — its blocking reason has cleared
+     ! GATE FAILED, caused by this task
+     [FAILED] (exit 97) 11:06:42
+       moved to tasks/failed/ — the queue carries on
+       reason: completion marker + commit present, but the gate failed: 1 of 2927 tests failing; screens (demo tenant) did not produce a result — treated as failed, not unknown; screens (empty tenant) did not produce a result — treated as failed, not unknown; scripts/prove-no1cloud.ts failed (h00h-120 is marked done):   log: [ /     "  - waiting for getByPlaceholder('you@company.com') to be visible" /   ], /   name: 'TimeoutError' / }; scripts/prove-bank-reconciliation.ts failed (a02-138 is marked done):   log: [ /     "  - waiting for getByPlaceholder('you@company.com') to be visible" /   ], /   name: 'TimeoutError' / }; journey "open a document" failed: page.fill: Timeout 30000ms exceeded.
 Call log:
   - waiting for locator('#email')
 ; journey "upload and self-sign" failed: page.fill: Timeout 30000ms exceeded.
@@ -44,23 +50,18 @@ Call log:
 Call log:
   - waiting for locator('#email')
 ; screen density check did not produce a result — treated as failed, not unknown
-       see logs/u25-109-the-manual-path-when-a-module-is-not-subscribed.log
+       see logs/u26-111-backups-and-the-restore-drill.log
 
----- u26-111-backups-and-the-restore-drill ----  started 07:24:24
-     ! SUITE RED: 1 of 2927 tests failing — see logs/suite-latest.log
-     . build/screens/journeys: diff since bd7542d66ea7 touches something that could render — running fresh
-     . build clean
-     ! screen audit did not produce a result at all — see logs/screens-latest.log
-     ! JOURNEYS: 5 of 5 failed — open a document, upload and self-sign, invite and sign in, raise an invoice, run a No1Edit tool — see docs/journeys-report.md
+---- u25-109-the-manual-path-when-a-module-is-not-subscribed ----  started 11:06:45
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2196       11525         837        3052       13407
+Mem:           15603        2526       11195         861        3077       13076
 -- top --
     ELAPSED   RSS COMMAND
-   18:52:28 245892 next-server (v1
-   21:41:46 234184 next-server (v1
-      00:03 192420 node
-   18:52:29 127160 node
+      03:14 331832 claude
+      00:42 291148 node
+   18:57:28 245892 next-server (v1
+   21:46:46 234632 next-server (v1
 -- disk --
 /dev/sda1        75G   16G   56G  22% /
