@@ -1,4 +1,4 @@
-generated: 2026-08-17 06:10:01 UTC
+generated: 2026-08-17 06:15:01 UTC
 done:   140
 queued: 4
 failed: 21
@@ -33,13 +33,6 @@ u23-107-document-clocks-and-the-review-cycle.md
 u24-108-accounting-packet-one-file-per-month.md
 
 -- log --
-; screen density check did not produce a result — treated as failed, not unknown
-     ! GATE FAILED, caused by this task
-     [FAILED] (exit 97) 05:36:56
-       moved to tasks/failed/ — the queue carries on
-       reason: completion marker + commit present, but the gate failed: 2 of 2927 tests failing; screens (demo tenant) did not produce a result — treated as failed, not unknown; screens (empty tenant) did not produce a result — treated as failed, not unknown; scripts/prove-no1cloud.ts failed (h00h-120 is marked done):   log: [ /     "  - waiting for getByPlaceholder('you@company.com') to be visible" /   ], /   name: 'TimeoutError' / }; scripts/prove-bank-reconciliation.ts failed (a02-138 is marked done):   log: [ /     "  - waiting for getByPlaceholder('you@company.com') to be visible" /   ], /   name: 'TimeoutError' / }; journey "open a document" failed: page.fill: Timeout 30000ms exceeded.
-Call log:
-  - waiting for locator('#email')
 ; journey "upload and self-sign" failed: page.fill: Timeout 30000ms exceeded.
 Call log:
   - waiting for locator('#email')
@@ -53,15 +46,22 @@ Call log:
        see logs/u24-108-accounting-packet-one-file-per-month.log
 
 ---- u25-109-the-manual-path-when-a-module-is-not-subscribed ----  started 05:36:58
+     .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
+================================================
+  RunUrBusiness — draining the task queue
+  started Mon 17 Aug 06:14
+================================================
+
+---- u25-109-the-manual-path-when-a-module-is-not-subscribed ----  started 06:14:20
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2142       11984         339        2143       13460
+Mem:           15603        1562       12563         343        2148       14040
 -- top --
     ELAPSED   RSS COMMAND
-      33:00 522912 claude
-      01:40 279604 node
-   13:57:29 246324 next-server (v1
-   16:46:46 233580 next-server (v1
+      00:38 309468 claude
+   14:02:28 246324 next-server (v1
+   16:51:46 233580 next-server (v1
+   14:02:29 127160 node
 -- disk --
 /dev/sda1        75G   16G   57G  22% /
