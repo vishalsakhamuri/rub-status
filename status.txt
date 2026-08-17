@@ -1,4 +1,4 @@
-generated: 2026-08-17 12:15:01 UTC
+generated: 2026-08-17 12:20:01 UTC
 done:   140
 queued: 3
 failed: 22
@@ -33,10 +33,6 @@ u24-108-accounting-packet-one-file-per-month.md
 u26-111-backups-and-the-restore-drill.md
 
 -- log --
-     . requeued u25-109-the-manual-path-when-a-module-is-not-subscribed from blocked/ — its blocking reason has cleared
-     ! GATE FAILED, caused by this task
-     [FAILED] (exit 97) 11:06:42
-       moved to tasks/failed/ — the queue carries on
        reason: completion marker + commit present, but the gate failed: 1 of 2927 tests failing; screens (demo tenant) did not produce a result — treated as failed, not unknown; screens (empty tenant) did not produce a result — treated as failed, not unknown; scripts/prove-no1cloud.ts failed (h00h-120 is marked done):   log: [ /     "  - waiting for getByPlaceholder('you@company.com') to be visible" /   ], /   name: 'TimeoutError' / }; scripts/prove-bank-reconciliation.ts failed (a02-138 is marked done):   log: [ /     "  - waiting for getByPlaceholder('you@company.com') to be visible" /   ], /   name: 'TimeoutError' / }; journey "open a document" failed: page.fill: Timeout 30000ms exceeded.
 Call log:
   - waiting for locator('#email')
@@ -53,15 +49,19 @@ Call log:
        see logs/u26-111-backups-and-the-restore-drill.log
 
 ---- u25-109-the-manual-path-when-a-module-is-not-subscribed ----  started 11:06:45
+     ! SUITE RED: 1 of 2927 tests failing — see logs/suite-latest.log
+     . build/screens/journeys: diff since dca934101013 touches something that could render — running fresh
+     . build clean
+     ! screen audit did not produce a result at all — see logs/screens-latest.log
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2572       11144         875        3095       13030
+Mem:           15603        2123       11593         853        3073       13479
 -- top --
     ELAPSED   RSS COMMAND
-      24:26 551316 node
-   20:02:29 246488 next-server (v1
-   22:51:46 234632 next-server (v1
-      00:09 158424 node
+   20:07:29 246488 next-server (v1
+   22:56:46 234632 next-server (v1
+      00:30 166696 node
+      00:28 128572 chrome-headless
 -- disk --
 /dev/sda1        75G   16G   56G  22% /
