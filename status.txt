@@ -1,4 +1,4 @@
-generated: 2026-08-17 03:55:01 UTC
+generated: 2026-08-17 04:00:01 UTC
 done:   140
 queued: 6
 failed: 19
@@ -33,8 +33,6 @@ u20-104-no1edit-capture-ocr-and-conversion.md
 u22-106-home-screens-and-the-subscription.md
 
 -- log --
-     ! GATE FAILED, caused by this task
-     [FAILED] (exit 97) 02:35:35
        moved to tasks/failed/ — the queue carries on
        reason: completion marker + commit present, but the gate failed: 1 of 2923 tests failing; screens (demo tenant) did not produce a result — treated as failed, not unknown; screens (empty tenant) did not produce a result — treated as failed, not unknown; scripts/prove-no1cloud.ts failed (h00h-120 is marked done):   log: [ /     "  - waiting for getByPlaceholder('you@company.com') to be visible" /   ], /   name: 'TimeoutError' / }; scripts/prove-bank-reconciliation.ts failed (a02-138 is marked done):   log: [ /     "  - waiting for getByPlaceholder('you@company.com') to be visible" /   ], /   name: 'TimeoutError' / }; journey "open a document" failed: page.fill: Timeout 30000ms exceeded.
 Call log:
@@ -53,15 +51,17 @@ Call log:
 
 ---- u23-107-document-clocks-and-the-review-cycle ----  started 02:35:38
      ! exited clean but produced nothing verifiable — stalled — log ends on a waiting line, no completion marker (commit was made, but a commit is not proof of completion)
+     ! SUITE RED: 2 of 2923 tests failing — see logs/suite-latest.log
+     . build/screens/journeys: diff since 53b99ad7ca56 touches something that could render — running fresh
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1951       12190         290        2079       13652
+Mem:           15603        2129       12208         252        1843       13473
 -- top --
     ELAPSED   RSS COMMAND
-      21:54 563356 node
-   11:42:29 248564 next-server (v1
-   14:31:46 233392 next-server (v1
-      00:00 137024 node
+      00:02 852992 node
+   11:47:29 248564 next-server (v1
+   14:36:46 233392 next-server (v1
+      00:02 143344 node
 -- disk --
 /dev/sda1        75G   16G   57G  22% /
