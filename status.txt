@@ -1,4 +1,4 @@
-generated: 2026-08-17 05:25:01 UTC
+generated: 2026-08-17 05:30:01 UTC
 done:   140
 queued: 5
 failed: 20
@@ -33,11 +33,6 @@ u22-106-home-screens-and-the-subscription.md
 u23-107-document-clocks-and-the-review-cycle.md
 
 -- log --
-  - waiting for locator('#email')
-; journey "raise an invoice" failed: page.fill: Timeout 30000ms exceeded.
-Call log:
-  - waiting for locator('#email')
-; screen density check did not produce a result — treated as failed, not unknown
        see logs/u22-106-home-screens-and-the-subscription.log
 
 ---- u23-107-document-clocks-and-the-review-cycle ----  started 02:35:38
@@ -53,15 +48,20 @@ Call log:
        see logs/u23-107-document-clocks-and-the-review-cycle.log
 
 ---- u24-108-accounting-packet-one-file-per-month ----  started 04:04:03
+     ! SUITE RED: 2 of 2927 tests failing — see logs/suite-latest.log
+     . build/screens/journeys: diff since 875877dc1c6f touches something that could render — running fresh
+     . build clean
+     ! screen audit did not produce a result at all — see logs/screens-latest.log
+     ! JOURNEYS: 5 of 5 failed — open a document, upload and self-sign, invite and sign in, raise an invoice, run a No1Edit tool — see docs/journeys-report.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2035       12097         353        2151       13567
+Mem:           15603        1588       12543         312        2110       14014
 -- top --
     ELAPSED   RSS COMMAND
-      27:07 554136 node
-   13:12:29 248472 next-server (v1
-   16:01:46 233572 next-server (v1
-      00:01 143556 node
+   13:17:29 246192 next-server (v1
+   16:06:46 233572 next-server (v1
+      00:00 184240 node
+   13:17:29 127160 node
 -- disk --
 /dev/sda1        75G   16G   57G  22% /
