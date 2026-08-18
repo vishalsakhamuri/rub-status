@@ -1,11 +1,10 @@
-generated: 2026-08-18 18:10:01 UTC
+generated: 2026-08-18 18:15:01 UTC
 done:   146
-queued: 1
+queued: 0
 failed: 20
 hold:   0
 
 -- queued --
-y00-122-the-four-one-step-jobs.md
 -- failed --
 a03-139-integration-proof-run-it-now.md
 a05-141-attribution-by-diff.md
@@ -29,35 +28,35 @@ u23-107-document-clocks-and-the-review-cycle.md
 u26-111-backups-and-the-restore-drill.md
 
 -- log --
-     . build clean
-     ! SCREENS: 0 broken, 0 blank, 1 404 of 215 — see docs/screen-audit.md
-     ! JOURNEYS: 8 of 19 failed — invite and sign in, run a No1Edit tool, J3: change a document and take it away, J3: change a document and take it away — No1Edit-only tenant, J3: change a document and take it away — tenant with no entity, one document through all four tools, one document through all four tools — hr+digisign tenant, no No1Cloud, one document through all four tools — digisign+cloud tenant, no HR — see docs/journeys-report.md
-     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
-     . gate: 56 pass, 6 fail, 7 pending
-     ! GATE FAILED: 1 of 2948 tests failing; 1 screen(s) 404: /settings/modules/confirm-off; 1 screen(s) 404: /settings/modules/confirm-off; 1 screen(s) missing an empty state that teaches; journey "invite and sign in" failed: setting a new password did not land on the dashboard — landed on http://localhost:3000/hr/me; 60 screen(s) flagged for density, up from 51 on the last green run: /accounting/packets/[packet], /assets/[id], /assets/locations, /assets, /attention, /banking/[account]/reconcile, /banking/[account]/statements/[statement], /bills/bulk/[operation] — see docs/screen-density.md
-     ! GATE FAILED, unrelated to this task — same gate reason was already failing before this task ran: 1 of 2948 tests failing; 1 screen(s) 404: /settings/modules/confirm-off; 1 screen(s) 404: /settings/modules/confirm-off; 1 screen(s) missing an empty state that teaches; journey "invite and sign in" failed: setting a new password did not land on the dashboard — landed on http://localhost:3000/hr/me; 60 screen(s) flagged for density, up from 51 on the last green run: /accounting/packets/[packet], /assets/[id], /assets/locations, /assets, /attention, /banking/[account]/reconcile, /banking/[account]/statements/[statement], /bills/bulk/[operation] — see docs/screen-density.md (streak: 1)
-     [BLOCKED] (exit 97) 17:17:05
-       moved to tasks/blocked/ — failed/ must mean failed on its own merits (h003-127 C)
-       requeued automatically once the blocking reason clears — nothing here is rebuilt
-       reason: completion marker + commit present, but the gate failed: 1 of 2948 tests failing; 1 screen(s) 404: /settings/modules/confirm-off; 1 screen(s) 404: /settings/modules/confirm-off; 1 screen(s) missing an empty state that teaches; journey "invite and sign in" failed: setting a new password did not land on the dashboard — landed on http://localhost:3000/hr/me; 60 screen(s) flagged for density, up from 51 on the last green run: /accounting/packets/[packet], /assets/[id], /assets/locations, /assets, /attention, /banking/[account]/reconcile, /banking/[account]/statements/[statement], /bills/bulk/[operation] — see docs/screen-density.md
-       see logs/a06-142-one-subscriber-every-tool.log
+    h00a-123-the-red-suite-and-the-employee-who-can-read-everything.md
+    h00e-118-four-findings-from-the-owners-hands.md
+    h00f-119-the-panel-stays-the-document-scrolls.md
+    q01a-bank-transfer.md
+    t05-74-email-deliverability.md
+    t06-75-corrections-after-send.md
+    t10-79-no1edit-workspace.md
+    t11-93-digisign-templates.md
+    u04-84-timesheets-and-leave.md
+    u10-90-policy-library-and-acknowledgement.md
+    u16-100-search-across-the-suite.md
+    u18-102-no1cloud-workspace-and-the-picker.md
+    u23-107-document-clocks-and-the-review-cycle.md
+    u26-111-backups-and-the-restore-drill.md
 
----- y00-122-the-four-one-step-jobs ----  started 17:17:07
-     ! SUITE RED: 1 of 2948 tests failing — see logs/suite-latest.log
-     . build/screens/journeys: diff since 244482706a5a touches something that could render — running fresh
-     . build clean
-     ! SCREENS: 0 broken, 0 blank, 1 404 of 215 — see docs/screen-audit.md
-     ! JOURNEYS: 8 of 19 failed — invite and sign in, run a No1Edit tool, J3: change a document and take it away, J3: change a document and take it away — No1Edit-only tenant, J3: change a document and take it away — tenant with no entity, one document through all four tools, one document through all four tools — hr+digisign tenant, no No1Cloud, one document through all four tools — digisign+cloud tenant, no HR — see docs/journeys-report.md
-     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
+  blocked tasks are in tasks/blocked/ — failed for a cause outside themselves,
+  requeued automatically once it clears (h003-127 C):
+    a06-142-one-subscriber-every-tool.md
+    y00-122-the-four-one-step-jobs.md
+================================================
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1421       12829          31        1713       14181
+Mem:           15603         824       13426          31        1713       14778
 -- top --
     ELAPSED   RSS COMMAND
-      06:01 406804 next-server (v1
-   02:35:22 221796 next-server (v1
-      06:01 127640 node
-   02:35:22 125952 node
+   02:40:22 221800 next-server (v1
+   02:40:23 125952 node
+ 6-11:39:58 58096 systemd-journal
+ 9-02:04:01 11240 systemd
 -- disk --
 /dev/sda1        75G   16G   56G  23% /
