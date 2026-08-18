@@ -1,4 +1,4 @@
-generated: 2026-08-18 09:50:01 UTC
+generated: 2026-08-18 09:55:01 UTC
 done:   140
 queued: 2
 failed: 23
@@ -34,9 +34,6 @@ u27-112-subscription-scopes-upgrade-and-downgrade.md
 
 -- log --
   - waiting for locator('#email')
-; journey "raise an invoice" failed: page.fill: Timeout 30000ms exceeded.
-Call log:
-  - waiting for locator('#email')
 ; screen density check did not produce a result — treated as failed, not unknown
        see logs/u25-109-the-manual-path-when-a-module-is-not-subscribed.log
 
@@ -53,15 +50,18 @@ Call log:
 ================================================
 
 ---- a06-142-one-subscriber-every-tool ----  started 08:49:01
+     ! SUITE RED: 1 of 2934 tests failing — see logs/suite-latest.log
+     . build/screens/journeys: diff since d5728fcf7916 touches something that could render — running fresh
+     . build clean
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1461       13369          62        1150       14141
+Mem:           15603        3405       11248          48        1311       12197
 -- top --
     ELAPSED   RSS COMMAND
-      27:05 543424 node
-   18:02:14 147728 next-server (v1
-      00:02 136616 node
-      27:05 77028 npm exec vitest
+      02:29 1406252 chrome-headless
+      02:34 927436 next-server (v1
+      02:32 307532 node
+   18:07:14 147728 next-server (v1
 -- disk --
-/dev/sda1        75G   25G   48G  34% /
+/dev/sda1        75G   16G   56G  22% /
