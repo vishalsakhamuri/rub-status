@@ -1,4 +1,4 @@
-generated: 2026-08-18 18:00:01 UTC
+generated: 2026-08-18 18:05:01 UTC
 done:   146
 queued: 1
 failed: 20
@@ -29,8 +29,6 @@ u23-107-document-clocks-and-the-review-cycle.md
 u26-111-backups-and-the-restore-drill.md
 
 -- log --
-     ! SUITE RED: 1 of 2948 tests failing — see logs/suite-latest.log
-     . build/screens/journeys: diff since 7e08abe422a5 touches something that could render — running fresh
      . build clean
      ! SCREENS: 0 broken, 0 blank, 1 404 of 215 — see docs/screen-audit.md
      ! JOURNEYS: 8 of 19 failed — invite and sign in, run a No1Edit tool, J3: change a document and take it away, J3: change a document and take it away — No1Edit-only tenant, J3: change a document and take it away — tenant with no entity, one document through all four tools, one document through all four tools — hr+digisign tenant, no No1Cloud, one document through all four tools — digisign+cloud tenant, no HR — see docs/journeys-report.md
@@ -49,15 +47,17 @@ u26-111-backups-and-the-restore-drill.md
      . build/screens/journeys: diff since 244482706a5a touches something that could render — running fresh
      . build clean
      ! SCREENS: 0 broken, 0 blank, 1 404 of 215 — see docs/screen-audit.md
+     ! JOURNEYS: 8 of 19 failed — invite and sign in, run a No1Edit tool, J3: change a document and take it away, J3: change a document and take it away — No1Edit-only tenant, J3: change a document and take it away — tenant with no entity, one document through all four tools, one document through all four tools — hr+digisign tenant, no No1Cloud, one document through all four tools — digisign+cloud tenant, no HR — see docs/journeys-report.md
+     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1466       12784          59        1741       14136
+Mem:           15603        1269       12981          31        1713       14333
 -- top --
     ELAPSED   RSS COMMAND
-      00:56 351240 next-server (v1
-   02:25:22 221788 next-server (v1
-      00:38 182860 chrome-headless
-      02:09 169864 node
+      01:01 236268 next-server (v1
+   02:30:22 221792 next-server (v1
+      00:08 145060 node
+      01:01 127640 node
 -- disk --
 /dev/sda1        75G   16G   56G  23% /
