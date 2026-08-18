@@ -1,10 +1,11 @@
-generated: 2026-08-18 07:55:01 UTC
+generated: 2026-08-18 08:00:02 UTC
 done:   140
-queued: 1
+queued: 2
 failed: 23
 hold:   0
 
 -- queued --
+a06-142-one-subscriber-every-tool.md
 y00-122-the-four-one-step-jobs.md
 -- failed --
 a03-139-integration-proof-run-it-now.md
@@ -32,12 +33,6 @@ u26-111-backups-and-the-restore-drill.md
 u27-112-subscription-scopes-upgrade-and-downgrade.md
 
 -- log --
-; screen density check did not produce a result — treated as failed, not unknown (streak: 1)
-     [BLOCKED] (exit 97) 15:13:54
-       moved to tasks/blocked/ — failed/ must mean failed on its own merits (h003-127 C)
-       requeued automatically once the blocking reason clears — nothing here is rebuilt
-       reason: completion marker + commit present, but the gate failed: 1 of 2929 tests failing; screens (demo tenant) did not produce a result — treated as failed, not unknown; screens (empty tenant) did not produce a result — treated as failed, not unknown; scripts/prove-no1cloud.ts failed (h00h-120 is marked done):   log: [ /     "  - waiting for getByPlaceholder('you@company.com') to be visible" /   ], /   name: 'TimeoutError' / }; scripts/prove-bank-reconciliation.ts failed (a02-138 is marked done):   log: [ /     "  - waiting for getByPlaceholder('you@company.com') to be visible" /   ], /   name: 'TimeoutError' / }; journey "open a document" failed: page.fill: Timeout 30000ms exceeded.
-Call log:
   - waiting for locator('#email')
 ; journey "upload and self-sign" failed: page.fill: Timeout 30000ms exceeded.
 Call log:
@@ -52,15 +47,21 @@ Call log:
        see logs/u25-109-the-manual-path-when-a-module-is-not-subscribed.log
 
 ---- y00-122-the-four-one-step-jobs ----  started 15:13:57
+================================================
+  RunUrBusiness — draining the task queue
+  started Tue 18 Aug 07:56
+================================================
+
+---- a06-142-one-subscriber-every-tool ----  started 07:56:25
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1672       11983         859        3142       13930
+Mem:           15603        1907       11724         859        3165       13695
 -- top --
     ELAPSED   RSS COMMAND
-   16:07:14 233268 next-server (v1
-   16:07:14 126992 node
- 6-01:19:57 124524 systemd-journal
-      00:01 11508 sshd-session
+      03:34 335056 claude
+   16:12:15 233268 next-server (v1
+   16:12:15 126992 node
+ 6-01:24:58 124588 systemd-journal
 -- disk --
 /dev/sda1        75G   16G   56G  22% /
