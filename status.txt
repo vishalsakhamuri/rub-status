@@ -1,4 +1,4 @@
-generated: 2026-08-18 17:55:01 UTC
+generated: 2026-08-18 18:00:01 UTC
 done:   146
 queued: 1
 failed: 20
@@ -29,7 +29,6 @@ u23-107-document-clocks-and-the-review-cycle.md
 u26-111-backups-and-the-restore-drill.md
 
 -- log --
----- a06-142-one-subscriber-every-tool ----  started 16:24:56
      ! SUITE RED: 1 of 2948 tests failing — see logs/suite-latest.log
      . build/screens/journeys: diff since 7e08abe422a5 touches something that could render — running fresh
      . build clean
@@ -49,15 +48,16 @@ u26-111-backups-and-the-restore-drill.md
      ! SUITE RED: 1 of 2948 tests failing — see logs/suite-latest.log
      . build/screens/journeys: diff since 244482706a5a touches something that could render — running fresh
      . build clean
+     ! SCREENS: 0 broken, 0 blank, 1 404 of 215 — see docs/screen-audit.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3279       10972          55        1737       12323
+Mem:           15603        1466       12784          59        1741       14136
 -- top --
     ELAPSED   RSS COMMAND
-      02:33 1257624 chrome-headless
-      02:39 926164 next-server (v1
-      02:37 283372 node
-   02:20:22 221784 next-server (v1
+      00:56 351240 next-server (v1
+   02:25:22 221788 next-server (v1
+      00:38 182860 chrome-headless
+      02:09 169864 node
 -- disk --
 /dev/sda1        75G   16G   56G  23% /
