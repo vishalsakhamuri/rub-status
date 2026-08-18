@@ -1,4 +1,4 @@
-generated: 2026-08-18 12:25:01 UTC
+generated: 2026-08-18 12:30:01 UTC
 done:   140
 queued: 4
 failed: 25
@@ -60,12 +60,12 @@ u27-112-subscription-scopes-upgrade-and-downgrade.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1484       13001          27        1459       14118
+Mem:           15603        1957       12528          70        1503       13646
 -- top --
     ELAPSED   RSS COMMAND
-      39:47 494732 claude
-      03:56 323776 next-server (v1
-      03:57 221140 next-server (v1
-      03:57 126640 node
+      44:47 472932 claude
+      08:56 389008 next-server (v1
+      00:35 239052 chrome-headless
+      08:57 221156 next-server (v1
 -- disk --
 /dev/sda1        75G   16G   56G  22% /
