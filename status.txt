@@ -1,11 +1,10 @@
-generated: 2026-08-18 13:55:01 UTC
+generated: 2026-08-18 14:00:01 UTC
 done:   140
-queued: 4
+queued: 3
 failed: 25
 hold:   0
 
 -- queued --
-a03-139-integration-proof-run-it-now.md
 a05-141-attribution-by-diff.md
 a06-142-one-subscriber-every-tool.md
 y00-122-the-four-one-step-jobs.md
@@ -37,16 +36,6 @@ u26-111-backups-and-the-restore-drill.md
 u27-112-subscription-scopes-upgrade-and-downgrade.md
 
 -- log --
-       see logs/u25-109-the-manual-path-when-a-module-is-not-subscribed.log
-
----- y00-122-the-four-one-step-jobs ----  started 11:15:46
-     .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
-================================================
-  RunUrBusiness — draining the task queue
-  started Tue 18 Aug 11:26
-================================================
-
----- y00-122-the-four-one-step-jobs ----  started 11:26:11
 ================================================
   RunUrBusiness — draining the task queue
   started Tue 18 Aug 11:45
@@ -57,15 +46,25 @@ u27-112-subscription-scopes-upgrade-and-downgrade.md
      . build/screens/journeys: diff since 0b6af71d3af6 touches something that could render — running fresh
      . build clean
      ! SCREENS: 0 broken, 0 blank, 1 404 of 215 — see docs/screen-audit.md
+     ! JOURNEYS: 8 of 19 failed — invite and sign in, run a No1Edit tool, J3: change a document and take it away, J3: change a document and take it away — No1Edit-only tenant, J3: change a document and take it away — tenant with no entity, one document through all four tools, one document through all four tools — hr+digisign tenant, no No1Cloud, one document through all four tools — digisign+cloud tenant, no HR — see docs/journeys-report.md
+     . gate: 57 pass, 5 fail, 7 pending
+     ! GATE FAILED: 1 of 2934 tests failing; 1 screen(s) 404: /settings/modules/confirm-off; 1 screen(s) 404: /settings/modules/confirm-off; 1 screen(s) missing an empty state that teaches; journey "invite and sign in" failed: setting a new password did not land on the dashboard — landed on http://localhost:3000/hr/me; 60 screen(s) flagged for density, up from 51 on the last green run: /accounting/packets/[packet], /assets/[id], /assets/locations, /assets, /attention, /banking/[account]/reconcile, /banking/[account]/statements/[statement], /bills/bulk/[operation] — see docs/screen-density.md
+     ! GATE FAILED, caused by this task
+     [FAILED] (exit 97) 13:59:49
+       moved to tasks/failed/ — the queue carries on
+       reason: completion marker + commit present, but the gate failed: 1 of 2934 tests failing; 1 screen(s) 404: /settings/modules/confirm-off; 1 screen(s) 404: /settings/modules/confirm-off; 1 screen(s) missing an empty state that teaches; journey "invite and sign in" failed: setting a new password did not land on the dashboard — landed on http://localhost:3000/hr/me; 60 screen(s) flagged for density, up from 51 on the last green run: /accounting/packets/[packet], /assets/[id], /assets/locations, /assets, /attention, /banking/[account]/reconcile, /banking/[account]/statements/[statement], /bills/bulk/[operation] — see docs/screen-density.md
+       see logs/a03-139-integration-proof-run-it-now.log
+
+---- a05-141-attribution-by-diff ----  started 13:59:51
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1559       12918          67        1508       14044
+Mem:           15603         991       13485          27        1469       14611
 -- top --
     ELAPSED   RSS COMMAND
-      01:04 392940 next-server (v1
-      38:33 222020 next-server (v1
-      02:18 198344 node
-      00:04 183048 chrome-headless
+      00:07 282520 claude
+      43:33 222024 next-server (v1
+      43:34 126192 node
+ 6-07:24:57 47776 systemd-journal
 -- disk --
 /dev/sda1        75G   16G   56G  22% /
