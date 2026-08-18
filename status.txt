@@ -1,4 +1,4 @@
-generated: 2026-08-18 14:50:01 UTC
+generated: 2026-08-18 14:55:01 UTC
 done:   146
 queued: 3
 failed: 19
@@ -30,12 +30,6 @@ u23-107-document-clocks-and-the-review-cycle.md
 u26-111-backups-and-the-restore-drill.md
 
 -- log --
-  RunUrBusiness — draining the task queue
-  started Tue 18 Aug 11:45
-================================================
-
----- a03-139-integration-proof-run-it-now ----  started 11:45:12
-     ! SUITE RED: 1 of 2934 tests failing — see logs/suite-latest.log
      . build/screens/journeys: diff since 0b6af71d3af6 touches something that could render — running fresh
      . build clean
      ! SCREENS: 0 broken, 0 blank, 1 404 of 215 — see docs/screen-audit.md
@@ -50,15 +44,21 @@ u26-111-backups-and-the-restore-drill.md
 
 ---- a05-141-attribution-by-diff ----  started 13:59:51
      .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
+================================================
+  RunUrBusiness — draining the task queue
+  started Tue 18 Aug 14:50
+================================================
+
+---- a05-141-attribution-by-diff ----  started 14:50:22
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1574       12749          31        1643       14028
+Mem:           15603        1876       12448          57        1666       13727
 -- top --
     ELAPSED   RSS COMMAND
-      28:48 335660 next-server (v1
-   01:33:33 231912 next-server (v1
-      00:55 169208 node
-      03:20 128620 node
+      04:36 327492 claude
+      03:29 298308 node
+      00:01 252988 next-server (v1
+      03:29 223372 next-server (v1
 -- disk --
 /dev/sda1        75G   16G   56G  23% /
