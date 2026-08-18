@@ -1,4 +1,4 @@
-generated: 2026-08-18 08:45:01 UTC
+generated: 2026-08-18 08:50:01 UTC
 done:   140
 queued: 2
 failed: 23
@@ -34,12 +34,6 @@ u27-112-subscription-scopes-upgrade-and-downgrade.md
 
 -- log --
   - waiting for locator('#email')
-; journey "upload and self-sign" failed: page.fill: Timeout 30000ms exceeded.
-Call log:
-  - waiting for locator('#email')
-; journey "invite and sign in" failed: page.fill: Timeout 30000ms exceeded.
-Call log:
-  - waiting for locator('#email')
 ; journey "raise an invoice" failed: page.fill: Timeout 30000ms exceeded.
 Call log:
   - waiting for locator('#email')
@@ -53,15 +47,21 @@ Call log:
 ================================================
 
 ---- a06-142-one-subscriber-every-tool ----  started 07:56:25
+================================================
+  RunUrBusiness — draining the task queue
+  started Tue 18 Aug 08:49
+================================================
+
+---- a06-142-one-subscriber-every-tool ----  started 08:49:01
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603       12055         240         867        4553        3548
+Mem:           15603         940       14474          19         520       14662
 -- top --
     ELAPSED   RSS COMMAND
-      02:52 9259844 next-server (v1
-      02:36 624912 chrome-headless
-      48:33 410500 claude
-   16:57:14 234020 next-server (v1
+      00:56 317488 claude
+   17:02:14 130016 next-server (v1
+ 6-02:14:57 23764 systemd-journal
+      00:03 11632 sshd-session
 -- disk --
-/dev/sda1        75G   19G   54G  26% /
+/dev/sda1        75G   25G   48G  34% /
