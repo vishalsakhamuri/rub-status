@@ -1,4 +1,4 @@
-generated: 2026-08-18 11:45:01 UTC
+generated: 2026-08-18 11:50:01 UTC
 done:   140
 queued: 4
 failed: 25
@@ -37,12 +37,6 @@ u26-111-backups-and-the-restore-drill.md
 u27-112-subscription-scopes-upgrade-and-downgrade.md
 
 -- log --
-     . build/screens/journeys: diff since 2ac7e718a5b2 touches something that could render — running fresh
-     . build clean
-     ! SCREENS: 0 broken, 0 blank, 1 404 of 215 — see docs/screen-audit.md
-     ! JOURNEYS: 3 of 9 failed — invite and sign in, run a No1Edit tool, J3: change a document and take it away — see docs/journeys-report.md
-     . gate: 52 pass, 5 fail, 2 pending
-     ! GATE FAILED: 1 of 2934 tests failing; 1 screen(s) 404: /settings/modules/confirm-off; 1 screen(s) 404: /settings/modules/confirm-off; journey "invite and sign in" failed: setting a new password did not land on the dashboard — landed on http://localhost:3000/hr/me; 57 screen(s) flagged for density, up from 51 on the last green run: /accounting/packets/[packet], /assets/[id], /assets/locations, /assets, /attention, /banking/[account]/reconcile, /banking/[account]/statements/[statement], /bills/bulk/[operation] — see docs/screen-density.md
      ! GATE FAILED, caused by this task
      [FAILED] (exit 97) 11:15:44
        moved to tasks/failed/ — the queue carries on
@@ -57,15 +51,21 @@ u27-112-subscription-scopes-upgrade-and-downgrade.md
 ================================================
 
 ---- y00-122-the-four-one-step-jobs ----  started 11:26:11
+================================================
+  RunUrBusiness — draining the task queue
+  started Tue 18 Aug 11:45
+================================================
+
+---- a03-139-integration-proof-run-it-now ----  started 11:45:12
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603         762       13821          25        1359       14841
+Mem:           15603         985       13540          25        1417       14617
 -- top --
     ELAPSED   RSS COMMAND
-   19:57:14 148040 next-server (v1
- 6-05:09:57 42656 systemd-journal
-      11:31 12752 systemd
-      11:33 12044 sshd-session
+      04:47 342908 claude
+   20:02:14 148040 next-server (v1
+ 6-05:14:57 42768 systemd-journal
+      16:32 12752 systemd
 -- disk --
 /dev/sda1        75G   16G   56G  22% /
