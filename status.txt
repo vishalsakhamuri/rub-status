@@ -1,11 +1,10 @@
-generated: 2026-08-18 17:15:01 UTC
+generated: 2026-08-18 17:20:01 UTC
 done:   146
-queued: 2
+queued: 1
 failed: 20
 hold:   0
 
 -- queued --
-a06-142-one-subscriber-every-tool.md
 y00-122-the-four-one-step-jobs.md
 -- failed --
 a03-139-integration-proof-run-it-now.md
@@ -30,16 +29,6 @@ u23-107-document-clocks-and-the-review-cycle.md
 u26-111-backups-and-the-restore-drill.md
 
 -- log --
-     . build clean
-     ! SCREENS: 0 broken, 0 blank, 1 404 of 215 — see docs/screen-audit.md
-     ! JOURNEYS: 8 of 19 failed — invite and sign in, run a No1Edit tool, J3: change a document and take it away, J3: change a document and take it away — No1Edit-only tenant, J3: change a document and take it away — tenant with no entity, one document through all four tools, one document through all four tools — hr+digisign tenant, no No1Cloud, one document through all four tools — digisign+cloud tenant, no HR — see docs/journeys-report.md
-     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
-     . gate: 56 pass, 6 fail, 7 pending
-     ! GATE FAILED: 1 of 2948 tests failing; 1 screen(s) 404: /settings/modules/confirm-off; 1 screen(s) 404: /settings/modules/confirm-off; 1 screen(s) missing an empty state that teaches; journey "invite and sign in" failed: setting a new password did not land on the dashboard — landed on http://localhost:3000/hr/me; 60 screen(s) flagged for density, up from 51 on the last green run: /accounting/packets/[packet], /assets/[id], /assets/locations, /assets, /attention, /banking/[account]/reconcile, /banking/[account]/statements/[statement], /bills/bulk/[operation] — see docs/screen-density.md
-     ! GATE FAILED, caused by this task
-     ! task had self-moved to tasks/done/ — moved back to tasks/failed/, the gate said otherwise
-     [FAILED] (exit 97) 16:24:52
-       moved to tasks/failed/ — the queue carries on
        reason: completion marker + commit present, but the gate failed: 1 of 2948 tests failing; 1 screen(s) 404: /settings/modules/confirm-off; 1 screen(s) 404: /settings/modules/confirm-off; 1 screen(s) missing an empty state that teaches; journey "invite and sign in" failed: setting a new password did not land on the dashboard — landed on http://localhost:3000/hr/me; 60 screen(s) flagged for density, up from 51 on the last green run: /accounting/packets/[packet], /assets/[id], /assets/locations, /assets, /attention, /banking/[account]/reconcile, /banking/[account]/statements/[statement], /bills/bulk/[operation] — see docs/screen-density.md
        see logs/a05-141-attribution-by-diff.log
 
@@ -50,15 +39,25 @@ u26-111-backups-and-the-restore-drill.md
      ! SCREENS: 0 broken, 0 blank, 1 404 of 215 — see docs/screen-audit.md
      ! JOURNEYS: 8 of 19 failed — invite and sign in, run a No1Edit tool, J3: change a document and take it away, J3: change a document and take it away — No1Edit-only tenant, J3: change a document and take it away — tenant with no entity, one document through all four tools, one document through all four tools — hr+digisign tenant, no No1Cloud, one document through all four tools — digisign+cloud tenant, no HR — see docs/journeys-report.md
      . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
+     . gate: 56 pass, 6 fail, 7 pending
+     ! GATE FAILED: 1 of 2948 tests failing; 1 screen(s) 404: /settings/modules/confirm-off; 1 screen(s) 404: /settings/modules/confirm-off; 1 screen(s) missing an empty state that teaches; journey "invite and sign in" failed: setting a new password did not land on the dashboard — landed on http://localhost:3000/hr/me; 60 screen(s) flagged for density, up from 51 on the last green run: /accounting/packets/[packet], /assets/[id], /assets/locations, /assets, /attention, /banking/[account]/reconcile, /banking/[account]/statements/[statement], /bills/bulk/[operation] — see docs/screen-density.md
+     ! GATE FAILED, unrelated to this task — same gate reason was already failing before this task ran: 1 of 2948 tests failing; 1 screen(s) 404: /settings/modules/confirm-off; 1 screen(s) 404: /settings/modules/confirm-off; 1 screen(s) missing an empty state that teaches; journey "invite and sign in" failed: setting a new password did not land on the dashboard — landed on http://localhost:3000/hr/me; 60 screen(s) flagged for density, up from 51 on the last green run: /accounting/packets/[packet], /assets/[id], /assets/locations, /assets, /attention, /banking/[account]/reconcile, /banking/[account]/statements/[statement], /bills/bulk/[operation] — see docs/screen-density.md (streak: 1)
+     [BLOCKED] (exit 97) 17:17:05
+       moved to tasks/blocked/ — failed/ must mean failed on its own merits (h003-127 C)
+       requeued automatically once the blocking reason clears — nothing here is rebuilt
+       reason: completion marker + commit present, but the gate failed: 1 of 2948 tests failing; 1 screen(s) 404: /settings/modules/confirm-off; 1 screen(s) 404: /settings/modules/confirm-off; 1 screen(s) missing an empty state that teaches; journey "invite and sign in" failed: setting a new password did not land on the dashboard — landed on http://localhost:3000/hr/me; 60 screen(s) flagged for density, up from 51 on the last green run: /accounting/packets/[packet], /assets/[id], /assets/locations, /assets, /attention, /banking/[account]/reconcile, /banking/[account]/statements/[statement], /bills/bulk/[operation] — see docs/screen-density.md
+       see logs/a06-142-one-subscriber-every-tool.log
+
+---- y00-122-the-four-one-step-jobs ----  started 17:17:07
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1476       12832          31        1655       14126
+Mem:           15603        1034       13273          31        1656       14568
 -- top --
     ELAPSED   RSS COMMAND
-      06:22 375888 next-server (v1
-   01:40:22 221752 next-server (v1
-      00:08 155980 node
-      00:09 146732 node
+      02:51 325564 claude
+   01:45:22 221756 next-server (v1
+   01:45:22 125952 node
+ 6-10:44:57 57736 systemd-journal
 -- disk --
 /dev/sda1        75G   16G   56G  23% /
