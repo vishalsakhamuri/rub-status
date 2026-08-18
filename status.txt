@@ -1,4 +1,4 @@
-generated: 2026-08-18 11:10:01 UTC
+generated: 2026-08-18 11:15:01 UTC
 done:   140
 queued: 2
 failed: 24
@@ -34,8 +34,6 @@ u26-111-backups-and-the-restore-drill.md
 u27-112-subscription-scopes-upgrade-and-downgrade.md
 
 -- log --
-
----- a06-142-one-subscriber-every-tool ----  started 08:49:01
      ! SUITE RED: 1 of 2934 tests failing — see logs/suite-latest.log
      . build/screens/journeys: diff since d5728fcf7916 touches something that could render — running fresh
      . build clean
@@ -54,15 +52,17 @@ u27-112-subscription-scopes-upgrade-and-downgrade.md
      ! SUITE RED: 1 of 2934 tests failing — see logs/suite-latest.log
      . build/screens/journeys: diff since 2ac7e718a5b2 touches something that could render — running fresh
      . build clean
+     ! SCREENS: 0 broken, 0 blank, 1 404 of 215 — see docs/screen-audit.md
+     ! JOURNEYS: 3 of 9 failed — invite and sign in, run a No1Edit tool, J3: change a document and take it away — see docs/journeys-report.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2654       11963          71        1370       12948
+Mem:           15603         804       13813          25        1324       14798
 -- top --
     ELAPSED   RSS COMMAND
-      03:49 646180 next-server (v1
-      03:44 499916 chrome-headless
-      00:27 467860 chrome-headless
-      03:47 359708 node
+   19:27:14 147888 next-server (v1
+      00:18 77940 npm exec tsx --
+      00:17 69732 node
+      00:18 55592 node
 -- disk --
 /dev/sda1        75G   16G   56G  22% /
