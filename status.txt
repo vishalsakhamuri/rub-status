@@ -1,4 +1,4 @@
-generated: 2026-08-18 11:05:02 UTC
+generated: 2026-08-18 11:10:01 UTC
 done:   140
 queued: 2
 failed: 24
@@ -34,7 +34,6 @@ u26-111-backups-and-the-restore-drill.md
 u27-112-subscription-scopes-upgrade-and-downgrade.md
 
 -- log --
-================================================
 
 ---- a06-142-one-subscriber-every-tool ----  started 08:49:01
      ! SUITE RED: 1 of 2934 tests failing — see logs/suite-latest.log
@@ -54,15 +53,16 @@ u27-112-subscription-scopes-upgrade-and-downgrade.md
 ---- u25-109-the-manual-path-when-a-module-is-not-subscribed ----  started 10:01:48
      ! SUITE RED: 1 of 2934 tests failing — see logs/suite-latest.log
      . build/screens/journeys: diff since 2ac7e718a5b2 touches something that could render — running fresh
+     . build clean
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2580       12039          25        1323       13022
+Mem:           15603        2654       11963          71        1370       12948
 -- top --
     ELAPSED   RSS COMMAND
-      01:11 1485668 node
-   19:17:15 147888 next-server (v1
-      01:05 140132 node
-      01:11 126228 node
+      03:49 646180 next-server (v1
+      03:44 499916 chrome-headless
+      00:27 467860 chrome-headless
+      03:47 359708 node
 -- disk --
 /dev/sda1        75G   16G   56G  22% /
