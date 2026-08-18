@@ -1,4 +1,4 @@
-generated: 2026-08-18 09:55:01 UTC
+generated: 2026-08-18 10:00:01 UTC
 done:   140
 queued: 2
 failed: 23
@@ -33,7 +33,6 @@ u26-111-backups-and-the-restore-drill.md
 u27-112-subscription-scopes-upgrade-and-downgrade.md
 
 -- log --
-  - waiting for locator('#email')
 ; screen density check did not produce a result — treated as failed, not unknown
        see logs/u25-109-the-manual-path-when-a-module-is-not-subscribed.log
 
@@ -53,15 +52,16 @@ u27-112-subscription-scopes-upgrade-and-downgrade.md
      ! SUITE RED: 1 of 2934 tests failing — see logs/suite-latest.log
      . build/screens/journeys: diff since d5728fcf7916 touches something that could render — running fresh
      . build clean
+     ! SCREENS: 0 broken, 0 blank, 1 404 of 215 — see docs/screen-audit.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3405       11248          48        1311       12197
+Mem:           15603        1389       13261          44        1311       14213
 -- top --
     ELAPSED   RSS COMMAND
-      02:29 1406252 chrome-headless
-      02:34 927436 next-server (v1
-      02:32 307532 node
-   18:07:14 147728 next-server (v1
+      00:59 376108 next-server (v1
+      02:14 194228 node
+   18:12:14 147888 next-server (v1
+      00:56 141492 chrome-headless
 -- disk --
 /dev/sda1        75G   16G   56G  22% /
