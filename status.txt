@@ -1,11 +1,10 @@
-generated: 2026-08-18 15:30:02 UTC
-done:   146
-queued: 3
+generated: 2026-08-18 15:35:01 UTC
+done:   147
+queued: 2
 failed: 19
 hold:   0
 
 -- queued --
-a05-141-attribution-by-diff.md
 a06-142-one-subscriber-every-tool.md
 y00-122-the-four-one-step-jobs.md
 -- failed --
@@ -53,12 +52,12 @@ u26-111-backups-and-the-restore-drill.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1677       12645          31        1641       13925
+Mem:           15603        2348       11974          43        1653       13254
 -- top --
     ELAPSED   RSS COMMAND
-      39:37 385220 claude
-      06:42 321780 next-server (v1
-      06:45 221816 next-server (v1
-      00:24 130164 node
+      00:08 518320 node
+      00:22 221664 next-server (v1
+      00:01 201432 node
+      00:00 185672 node
 -- disk --
 /dev/sda1        75G   16G   56G  23% /
