@@ -1,4 +1,4 @@
-generated: 2026-08-19 22:40:01 UTC
+generated: 2026-08-19 22:45:01 UTC
 done:   146
 queued: 3
 failed: 20
@@ -31,13 +31,6 @@ u23-107-document-clocks-and-the-review-cycle.md
 u26-111-backups-and-the-restore-drill.md
 
 -- log --
-
----- a07-143-three-journey-defects ----  started 18:00:34
-================================================
-  RunUrBusiness — draining the task queue
-  started Wed 19 Aug 20:34
-================================================
-
 ---- a06-142-one-subscriber-every-tool ----  started 20:34:17
      ! exited clean but produced nothing verifiable — commit made but no completion marker
      ! SUITE RED: 1 of 2948 tests failing — see logs/suite-latest.log
@@ -51,15 +44,22 @@ u26-111-backups-and-the-restore-drill.md
        see logs/a06-142-one-subscriber-every-tool.log
 
 ---- a07-143-three-journey-defects ----  started 21:31:09
+     .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
+================================================
+  RunUrBusiness — draining the task queue
+  started Wed 19 Aug 22:43
+================================================
+
+---- a06-142-one-subscriber-every-tool ----  started 22:43:26
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1625       12746          85        1642       13977
+Mem:           15603        1074       13289          85        1652       14529
 -- top --
     ELAPSED   RSS COMMAND
-   01:08:50 499336 claude
-      12:15 309356 node
-      12:28 222416 next-server (v1
-      00:02 132700 node
+      01:33 321452 claude
+      17:28 222420 next-server (v1
+      17:28 127128 node
+ 7-16:09:57 27468 systemd-journal
 -- disk --
 /dev/sda1        75G   16G   56G  23% /
