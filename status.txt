@@ -1,16 +1,16 @@
-generated: 2026-08-19 21:30:01 UTC
+generated: 2026-08-19 21:35:01 UTC
 done:   146
-queued: 3
-failed: 20
+queued: 2
+failed: 21
 hold:   0
 
 -- queued --
-a06-142-one-subscriber-every-tool.md
 a07-143-three-journey-defects.md
 y00-122-the-four-one-step-jobs.md
 -- failed --
 a03-139-integration-proof-run-it-now.md
 a05-141-attribution-by-diff.md
+a06-142-one-subscriber-every-tool.md
 a06-open-every-screen-in-a-real-browser.md
 h000-124-the-gate-that-cannot-pass.md
 h001-125-networkidle-never-settles.md
@@ -31,13 +31,6 @@ u23-107-document-clocks-and-the-review-cycle.md
 u26-111-backups-and-the-restore-drill.md
 
 -- log --
-    a06-142-one-subscriber-every-tool.md
-    y00-122-the-four-one-step-jobs.md
-================================================
-================================================
-  RunUrBusiness — draining the task queue
-  started Wed 19 Aug 18:00
-================================================
 
 ---- a07-143-three-journey-defects ----  started 18:00:34
 ================================================
@@ -51,15 +44,22 @@ u26-111-backups-and-the-restore-drill.md
      . build/screens/journeys: diff since bbf52d4fddf3 touches something that could render — running fresh
      . build clean
      . screens clean: 215 screens, 28 not reachable
+     ! JOURNEYS: 3 of 20 failed — run a No1Edit tool, J3: change a document and take it away, one document through all four tools — hr+digisign tenant, no No1Cloud — see docs/journeys-report.md
+     [FAILED] (exit 98) 21:31:07
+       moved to tasks/failed/ — the queue carries on
+       reason: commit made but no completion marker
+       see logs/a06-142-one-subscriber-every-tool.log
+
+---- a07-143-three-journey-defects ----  started 21:31:09
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1848       12806          85        1350       13754
+Mem:           15603        1065       13492          52        1422       14537
 -- top --
     ELAPSED   RSS COMMAND
-      02:45 695460 next-server (v1
-      04:01 218048 node
-      00:09 194508 chrome-headless
-   01:02:50 153692 next-server (v1
+      03:49 408460 claude
+   01:07:50 153712 next-server (v1
+ 7-14:59:57 20260 systemd-journal
+10-05:24:00 10500 systemd
 -- disk --
 /dev/sda1        75G   16G   56G  23% /
