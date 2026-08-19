@@ -1,4 +1,4 @@
-generated: 2026-08-19 23:45:01 UTC
+generated: 2026-08-19 23:50:01 UTC
 done:   146
 queued: 3
 failed: 20
@@ -31,9 +31,6 @@ u23-107-document-clocks-and-the-review-cycle.md
 u26-111-backups-and-the-restore-drill.md
 
 -- log --
----- a06-142-one-subscriber-every-tool ----  started 20:34:17
-     ! exited clean but produced nothing verifiable — commit made but no completion marker
-     ! SUITE RED: 1 of 2948 tests failing — see logs/suite-latest.log
      . build/screens/journeys: diff since bbf52d4fddf3 touches something that could render — running fresh
      . build clean
      . screens clean: 215 screens, 28 not reachable
@@ -51,15 +48,18 @@ u26-111-backups-and-the-restore-drill.md
 ================================================
 
 ---- a06-142-one-subscriber-every-tool ----  started 22:43:26
+     ! SUITE RED: 1 of 2948 tests failing — see logs/suite-latest.log
+     . build/screens/journeys: diff since 51f95c721393 touches something that could render — running fresh
+     . build clean
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1540       12820         125        1694       14063
+Mem:           15603        3564       10993          85        1455       12038
 -- top --
     ELAPSED   RSS COMMAND
-      24:41 557100 node
-   01:17:28 222468 next-server (v1
-   01:17:28 127128 node
-      00:16 119036 node
+      00:28 2614640 node
+   01:22:28 222472 next-server (v1
+      00:23 158148 node
+   01:22:28 127128 node
 -- disk --
-/dev/sda1        75G   16G   56G  23% /
+/dev/sda1        75G   16G   57G  22% /
