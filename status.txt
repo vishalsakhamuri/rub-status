@@ -1,4 +1,4 @@
-generated: 2026-08-19 21:20:01 UTC
+generated: 2026-08-19 21:25:01 UTC
 done:   146
 queued: 3
 failed: 20
@@ -31,7 +31,6 @@ u23-107-document-clocks-and-the-review-cycle.md
 u26-111-backups-and-the-restore-drill.md
 
 -- log --
-  blocked tasks are in tasks/blocked/ — failed for a cause outside themselves,
   requeued automatically once it clears (h003-127 C):
     a06-142-one-subscriber-every-tool.md
     y00-122-the-four-one-step-jobs.md
@@ -51,15 +50,16 @@ u26-111-backups-and-the-restore-drill.md
      ! exited clean but produced nothing verifiable — commit made but no completion marker
      ! SUITE RED: 1 of 2948 tests failing — see logs/suite-latest.log
      . build/screens/journeys: diff since bbf52d4fddf3 touches something that could render — running fresh
+     . build clean
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2888       11969          48        1111       12714
+Mem:           15603        3429       11238          97        1348       12173
 -- top --
     ELAPSED   RSS COMMAND
-      01:10 1094928 node
-      01:05 142276 node
-      01:10 126552 node
-      52:50 108996 next-server (v1
+      03:50 1155104 next-server (v1
+      00:43 645116 chrome-headless
+      03:44 548940 chrome-headless
+      03:47 367264 node
 -- disk --
-/dev/sda1        75G   25G   48G  35% /
+/dev/sda1        75G   16G   56G  23% /
