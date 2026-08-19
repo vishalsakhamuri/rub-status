@@ -1,10 +1,11 @@
-generated: 2026-08-19 18:00:01 UTC
+generated: 2026-08-19 18:05:01 UTC
 done:   146
-queued: 0
+queued: 1
 failed: 20
 hold:   0
 
 -- queued --
+a07-143-three-journey-defects.md
 -- failed --
 a03-139-integration-proof-run-it-now.md
 a05-141-attribution-by-diff.md
@@ -28,12 +29,6 @@ u23-107-document-clocks-and-the-review-cycle.md
 u26-111-backups-and-the-restore-drill.md
 
 -- log --
-    h00a-123-the-red-suite-and-the-employee-who-can-read-everything.md
-    h00e-118-four-findings-from-the-owners-hands.md
-    h00f-119-the-panel-stays-the-document-scrolls.md
-    q01a-bank-transfer.md
-    t05-74-email-deliverability.md
-    t06-75-corrections-after-send.md
     t10-79-no1edit-workspace.md
     t11-93-digisign-templates.md
     u04-84-timesheets-and-leave.md
@@ -48,15 +43,21 @@ u26-111-backups-and-the-restore-drill.md
     a06-142-one-subscriber-every-tool.md
     y00-122-the-four-one-step-jobs.md
 ================================================
+================================================
+  RunUrBusiness — draining the task queue
+  started Wed 19 Aug 18:00
+================================================
+
+---- a07-143-three-journey-defects ----  started 18:00:34
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603         904       13091          31        1976       14698
+Mem:           15603        1161       12832          31        1978       14442
 -- top --
     ELAPSED   RSS COMMAND
- 1-02:25:22 274904 next-server (v1
- 1-02:25:22 125952 node
- 7-11:24:57 86972 systemd-journal
-      01:31 13192 systemd
+      04:24 377972 claude
+ 1-02:30:22 274904 next-server (v1
+ 1-02:30:23 125952 node
+ 7-11:29:57 87096 systemd-journal
 -- disk --
 /dev/sda1        75G   16G   56G  23% /
