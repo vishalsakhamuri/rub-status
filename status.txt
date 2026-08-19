@@ -1,16 +1,16 @@
-generated: 2026-08-19 22:25:01 UTC
+generated: 2026-08-19 22:30:01 UTC
 done:   146
-queued: 2
-failed: 21
+queued: 3
+failed: 20
 hold:   0
 
 -- queued --
+a06-142-one-subscriber-every-tool.md
 a07-143-three-journey-defects.md
 y00-122-the-four-one-step-jobs.md
 -- failed --
 a03-139-integration-proof-run-it-now.md
 a05-141-attribution-by-diff.md
-a06-142-one-subscriber-every-tool.md
 a06-open-every-screen-in-a-real-browser.md
 h000-124-the-gate-that-cannot-pass.md
 h001-125-networkidle-never-settles.md
@@ -54,12 +54,12 @@ u26-111-backups-and-the-restore-drill.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3855       10518          96        1651       11747
+Mem:           15603        1595       12776          78        1635       14007
 -- top --
     ELAPSED   RSS COMMAND
-      11:42 1134156 next-server (v1
-      00:48 720224 chrome-headless
-      03:43 592368 chrome-headless
-      53:50 478964 claude
+      58:50 468316 claude
+      02:15 297308 node
+      02:28 222400 next-server (v1
+      00:46 181240 node
 -- disk --
 /dev/sda1        75G   16G   56G  23% /
