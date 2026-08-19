@@ -1,4 +1,4 @@
-generated: 2026-08-19 20:30:01 UTC
+generated: 2026-08-19 20:35:01 UTC
 done:   146
 queued: 3
 failed: 20
@@ -31,12 +31,6 @@ u23-107-document-clocks-and-the-review-cycle.md
 u26-111-backups-and-the-restore-drill.md
 
 -- log --
-    t10-79-no1edit-workspace.md
-    t11-93-digisign-templates.md
-    u04-84-timesheets-and-leave.md
-    u10-90-policy-library-and-acknowledgement.md
-    u16-100-search-across-the-suite.md
-    u18-102-no1cloud-workspace-and-the-picker.md
     u23-107-document-clocks-and-the-review-cycle.md
     u26-111-backups-and-the-restore-drill.md
 
@@ -51,15 +45,21 @@ u26-111-backups-and-the-restore-drill.md
 ================================================
 
 ---- a07-143-three-journey-defects ----  started 18:00:34
+================================================
+  RunUrBusiness — draining the task queue
+  started Wed 19 Aug 20:34
+================================================
+
+---- a06-142-one-subscriber-every-tool ----  started 20:34:17
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603       11668         337         247        4198        3934
+Mem:           15603         901       14560          18         473       14702
 -- top --
     ELAPSED   RSS COMMAND
-      02:54 9434844 next-server (v1
-   02:29:23 603016 claude
-      02:35 572580 chrome-headless
-      02:38 238296 node
+      00:41 308216 claude
+      07:50 108964 next-server (v1
+ 7-13:59:57 13160 systemd-journal
+      00:00 11676 sshd-session
 -- disk --
-/dev/sda1        75G   19G   54G  26% /
+/dev/sda1        75G   25G   48G  35% /
