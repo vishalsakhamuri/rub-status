@@ -1,4 +1,4 @@
-generated: 2026-08-20 03:35:01 UTC
+generated: 2026-08-20 03:40:01 UTC
 done:   146
 queued: 1
 failed: 21
@@ -53,12 +53,12 @@ u26-111-backups-and-the-restore-drill.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2698       11332         182        2085       12904
+Mem:           15603        1921       12108         122        2026       13681
 -- top --
     ELAPSED   RSS COMMAND
-      07:36 529720 node
-      04:07 401616 next-server (v1
-   05:07:28 353468 next-server (v1
-      06:19 334292 claude
+      12:35 556428 node
+   05:12:28 353468 next-server (v1
+      11:19 352176 claude
+      00:11 158724 node
 -- disk --
 /dev/sda1        75G   16G   56G  23% /
