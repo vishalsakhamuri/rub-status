@@ -1,4 +1,4 @@
-generated: 2026-08-20 10:10:01 UTC
+generated: 2026-08-20 10:15:01 UTC
 done:   146
 queued: 1
 failed: 22
@@ -31,7 +31,6 @@ u23-107-document-clocks-and-the-review-cycle.md
 u26-111-backups-and-the-restore-drill.md
 
 -- log --
-     .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
 ================================================
   RunUrBusiness — draining the task queue
   started Thu 20 Aug 03:28
@@ -51,15 +50,16 @@ u26-111-backups-and-the-restore-drill.md
 ================================================
 
 ---- y00-122-the-four-one-step-jobs ----  started 10:01:01
+     ! exited clean but produced nothing verifiable — commit made but no completion marker
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2179       11746         177        2194       13424
+Mem:           15603        1934       11990         177        2194       13668
 -- top --
     ELAPSED   RSS COMMAND
-   02:09:56 579952 node
-      08:57 373976 claude
-   11:42:27 353180 next-server (v1
-   02:23:09 249820 next-server (v1
+   02:14:56 579952 node
+   11:47:27 353180 next-server (v1
+   02:28:09 249820 next-server (v1
+   11:47:28 127128 node
 -- disk --
 /dev/sda1        75G   16G   56G  23% /
