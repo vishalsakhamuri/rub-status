@@ -1,16 +1,16 @@
-generated: 2026-08-20 00:05:01 UTC
+generated: 2026-08-20 00:10:01 UTC
 done:   146
-queued: 3
-failed: 20
+queued: 2
+failed: 21
 hold:   0
 
 -- queued --
-a06-142-one-subscriber-every-tool.md
 a07-143-three-journey-defects.md
 y00-122-the-four-one-step-jobs.md
 -- failed --
 a03-139-integration-proof-run-it-now.md
 a05-141-attribution-by-diff.md
+a06-142-one-subscriber-every-tool.md
 a06-open-every-screen-in-a-real-browser.md
 h000-124-the-gate-that-cannot-pass.md
 h001-125-networkidle-never-settles.md
@@ -31,15 +31,6 @@ u23-107-document-clocks-and-the-review-cycle.md
 u26-111-backups-and-the-restore-drill.md
 
 -- log --
-     ! JOURNEYS: 3 of 20 failed — run a No1Edit tool, J3: change a document and take it away, one document through all four tools — hr+digisign tenant, no No1Cloud — see docs/journeys-report.md
-     [FAILED] (exit 98) 21:31:07
-       moved to tasks/failed/ — the queue carries on
-       reason: commit made but no completion marker
-       see logs/a06-142-one-subscriber-every-tool.log
-
----- a07-143-three-journey-defects ----  started 21:31:09
-     .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
-================================================
   RunUrBusiness — draining the task queue
   started Wed 19 Aug 22:43
 ================================================
@@ -51,15 +42,24 @@ u26-111-backups-and-the-restore-drill.md
      . screens clean: 215 screens, 28 not reachable
      . journeys clean: 20 of 20 passed
      . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
+     . gate: 68 pass, 2 fail, 0 pending
+     ! GATE FAILED: 1 of 2948 tests failing
+     ! GATE FAILED, caused by this task
+     [FAILED] (exit 97) 00:08:51
+       moved to tasks/failed/ — the queue carries on
+       reason: completion marker + commit present, but the gate failed: 1 of 2948 tests failing
+       see logs/a06-142-one-subscriber-every-tool.log
+
+---- a07-143-three-journey-defects ----  started 00:08:53
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1404       12952          89        1661       14198
+Mem:           15603        1098       13223          90        1698       14504
 -- top --
     ELAPSED   RSS COMMAND
-      05:00 238364 next-server (v1
-   01:37:27 222480 next-server (v1
-      00:01 201044 node
-      00:01 145464 node
+      01:05 329312 claude
+   01:42:27 222484 next-server (v1
+   01:42:28 127128 node
+ 7-17:34:57 27936 systemd-journal
 -- disk --
 /dev/sda1        75G   16G   56G  23% /
