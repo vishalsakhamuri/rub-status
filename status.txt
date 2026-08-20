@@ -1,17 +1,17 @@
-generated: 2026-08-20 10:00:01 UTC
+generated: 2026-08-20 10:05:01 UTC
 done:   146
-queued: 2
-failed: 21
+queued: 1
+failed: 22
 hold:   0
 
 -- queued --
-a08-144-ready-for-the-test-session.md
 y00-122-the-four-one-step-jobs.md
 -- failed --
 a03-139-integration-proof-run-it-now.md
 a05-141-attribution-by-diff.md
 a06-open-every-screen-in-a-real-browser.md
 a07-143-three-journey-defects.md
+a08-144-ready-for-the-test-session.md
 h000-124-the-gate-that-cannot-pass.md
 h001-125-networkidle-never-settles.md
 h009-133-retry-once-and-the-broken-screen.md
@@ -31,12 +31,6 @@ u23-107-document-clocks-and-the-review-cycle.md
 u26-111-backups-and-the-restore-drill.md
 
 -- log --
-     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
-     . gate: 69 pass, 1 fail, 0 pending
-     . gate clean — see docs/gate-report.md
-     [done] 03:20:04   ->  logs/a06-142-one-subscriber-every-tool.log   (commit + completion marker)
-
----- y00-122-the-four-one-step-jobs ----  started 03:20:06
      .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
 ================================================
   RunUrBusiness — draining the task queue
@@ -51,15 +45,21 @@ u26-111-backups-and-the-restore-drill.md
 
 ---- a08-144-ready-for-the-test-session ----  started 06:53:51
      ! exited clean but produced nothing verifiable — commit made but no completion marker
+================================================
+  RunUrBusiness — draining the task queue
+  started Thu 20 Aug 10:01
+================================================
+
+---- y00-122-the-four-one-step-jobs ----  started 10:01:01
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1923       12004         177        2191       13679
+Mem:           15603        2170       11756         177        2193       13432
 -- top --
     ELAPSED   RSS COMMAND
-   01:59:56 579948 node
-   11:32:27 353180 next-server (v1
-   02:13:09 249804 next-server (v1
-   11:32:28 127128 node
+   02:04:56 579952 node
+   11:37:27 353180 next-server (v1
+      03:57 350472 claude
+   02:18:09 249804 next-server (v1
 -- disk --
 /dev/sda1        75G   16G   56G  23% /
