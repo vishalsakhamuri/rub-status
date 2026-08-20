@@ -1,11 +1,10 @@
-generated: 2026-08-20 03:20:01 UTC
+generated: 2026-08-20 03:25:01 UTC
 done:   146
-queued: 2
+queued: 1
 failed: 21
 hold:   0
 
 -- queued --
-a06-142-one-subscriber-every-tool.md
 y00-122-the-four-one-step-jobs.md
 -- failed --
 a03-139-integration-proof-run-it-now.md
@@ -31,11 +30,6 @@ u23-107-document-clocks-and-the-review-cycle.md
 u26-111-backups-and-the-restore-drill.md
 
 -- log --
-     . build/screens/journeys: diff since 00467192f13e touches something that could render — running fresh
-     . build clean
-     . screens clean: 215 screens, 28 not reachable
-     ! JOURNEYS: 1 of 20 failed — J3: change a document and take it away — tenant with no entity — see docs/journeys-report.md
-     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
      . gate: 68 pass, 2 fail, 0 pending
      ! GATE FAILED: journey "J3: change a document and take it away — tenant with no entity" failed: Rotate did not become available after loading a file — passed on the last green run, so t10-79 not landing is not an excuse now
      ! GATE FAILED, caused by this task
@@ -51,15 +45,20 @@ u26-111-backups-and-the-restore-drill.md
      . screens clean: 215 screens, 28 not reachable
      . journeys clean: 20 of 20 passed
      . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
+     . gate: 69 pass, 1 fail, 0 pending
+     . gate clean — see docs/gate-report.md
+     [done] 03:20:04   ->  logs/a06-142-one-subscriber-every-tool.log   (commit + completion marker)
+
+---- y00-122-the-four-one-step-jobs ----  started 03:20:06
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1472       12563          90        1987       14130
+Mem:           15603        1671       12360         149        2050       13931
 -- top --
     ELAPSED   RSS COMMAND
-      08:33 337684 next-server (v1
-   04:52:27 237984 next-server (v1
-      00:05 151472 node
-      00:05 145620 node
+   04:57:27 357576 next-server (v1
+      04:52 337020 claude
+      03:17 204784 node
+      00:03 203624 chrome-headless
 -- disk --
 /dev/sda1        75G   16G   56G  23% /
