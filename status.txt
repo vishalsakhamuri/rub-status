@@ -1,4 +1,4 @@
-generated: 2026-08-20 08:00:01 UTC
+generated: 2026-08-20 08:05:01 UTC
 done:   146
 queued: 2
 failed: 21
@@ -31,7 +31,6 @@ u23-107-document-clocks-and-the-review-cycle.md
 u26-111-backups-and-the-restore-drill.md
 
 -- log --
-     . journeys clean: 20 of 20 passed
      . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
      . gate: 69 pass, 1 fail, 0 pending
      . gate clean — see docs/gate-report.md
@@ -51,15 +50,16 @@ u26-111-backups-and-the-restore-drill.md
 ================================================
 
 ---- a08-144-ready-for-the-test-session ----  started 06:53:51
+     ! exited clean but produced nothing verifiable — commit made but no completion marker
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1798       12146         141        2135       13804
+Mem:           15603        1983       11962         165        2159       13620
 -- top --
     ELAPSED   RSS COMMAND
-   01:06:07 496656 claude
-   09:32:27 353180 next-server (v1
-      13:09 247304 next-server (v1
-   09:32:28 127128 node
+      04:56 465836 node
+   09:37:27 353180 next-server (v1
+      18:09 247304 next-server (v1
+   09:37:28 127128 node
 -- disk --
 /dev/sda1        75G   16G   56G  23% /
