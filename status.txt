@@ -1,4 +1,4 @@
-generated: 2026-08-20 02:55:01 UTC
+generated: 2026-08-20 03:00:01 UTC
 done:   146
 queued: 2
 failed: 21
@@ -31,8 +31,6 @@ u23-107-document-clocks-and-the-review-cycle.md
 u26-111-backups-and-the-restore-drill.md
 
 -- log --
-       moved to tasks/failed/ — the queue carries on
-       reason: completion marker + commit present, but the gate failed: 1 of 2948 tests failing
        see logs/a06-142-one-subscriber-every-tool.log
 
 ---- a07-143-three-journey-defects ----  started 00:08:53
@@ -51,15 +49,17 @@ u26-111-backups-and-the-restore-drill.md
        see logs/a07-143-three-journey-defects.log
 
 ---- a06-142-one-subscriber-every-tool ----  started 02:27:07
+     . suite green: 2948 tests
+     . build/screens/journeys: diff since 20d480aace02 touches something that could render — running fresh
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1542       12495         130        2025       14060
+Mem:           15603        4250        9788          90        1985       11352
 -- top --
     ELAPSED   RSS COMMAND
-      24:14 531900 node
-   04:27:27 237984 next-server (v1
-      00:13 143832 node
-   04:27:28 127128 node
+      00:21 2124828 node
+      00:52 1199444 node
+   04:32:27 237984 next-server (v1
+      00:46 163612 node
 -- disk --
 /dev/sda1        75G   16G   56G  23% /
