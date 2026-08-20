@@ -1,4 +1,4 @@
-generated: 2026-08-20 02:05:01 UTC
+generated: 2026-08-20 02:10:01 UTC
 done:   146
 queued: 3
 failed: 20
@@ -31,9 +31,6 @@ u23-107-document-clocks-and-the-review-cycle.md
 u26-111-backups-and-the-restore-drill.md
 
 -- log --
-  RunUrBusiness — draining the task queue
-  started Wed 19 Aug 22:43
-================================================
 
 ---- a06-142-one-subscriber-every-tool ----  started 22:43:26
      ! SUITE RED: 1 of 2948 tests failing — see logs/suite-latest.log
@@ -51,15 +48,18 @@ u26-111-backups-and-the-restore-drill.md
        see logs/a06-142-one-subscriber-every-tool.log
 
 ---- a07-143-three-journey-defects ----  started 00:08:53
+     . suite green: 2948 tests
+     . build/screens/journeys: diff since 00467192f13e touches something that could render — running fresh
+     . build clean
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1611       12430         131        2022       13991
+Mem:           15603        2920       11120         121        2012       12682
 -- top --
     ELAPSED   RSS COMMAND
-      26:11 566996 node
-   03:37:28 237984 next-server (v1
-      00:05 166756 node
-   03:37:28 127128 node
+      00:59 977172 chrome-headless
+      01:04 801484 next-server (v1
+   03:42:27 237984 next-server (v1
+      01:02 221356 node
 -- disk --
 /dev/sda1        75G   16G   56G  23% /
