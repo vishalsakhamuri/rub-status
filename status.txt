@@ -1,4 +1,4 @@
-generated: 2026-08-19 23:55:01 UTC
+generated: 2026-08-20 00:00:01 UTC
 done:   146
 queued: 3
 failed: 20
@@ -31,9 +31,6 @@ u23-107-document-clocks-and-the-review-cycle.md
 u26-111-backups-and-the-restore-drill.md
 
 -- log --
-     . build/screens/journeys: diff since bbf52d4fddf3 touches something that could render — running fresh
-     . build clean
-     . screens clean: 215 screens, 28 not reachable
      ! JOURNEYS: 3 of 20 failed — run a No1Edit tool, J3: change a document and take it away, one document through all four tools — hr+digisign tenant, no No1Cloud — see docs/journeys-report.md
      [FAILED] (exit 98) 21:31:07
        moved to tasks/failed/ — the queue carries on
@@ -51,15 +48,18 @@ u26-111-backups-and-the-restore-drill.md
      ! SUITE RED: 1 of 2948 tests failing — see logs/suite-latest.log
      . build/screens/journeys: diff since 51f95c721393 touches something that could render — running fresh
      . build clean
+     . screens clean: 215 screens, 28 not reachable
+     . journeys clean: 20 of 20 passed
+     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        4193       10166         143        1713       11409
+Mem:           15603        1155       13201          85        1658       14447
 -- top --
     ELAPSED   RSS COMMAND
-      04:20 1166324 next-server (v1
-      01:31 1150276 chrome-headless
-      04:15 628920 chrome-headless
-      04:17 427732 node
+   01:32:27 222476 next-server (v1
+      00:00 222028 next-server (v1
+      00:01 143980 node
+   01:32:28 127128 node
 -- disk --
 /dev/sda1        75G   16G   56G  23% /
