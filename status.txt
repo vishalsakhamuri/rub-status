@@ -1,4 +1,4 @@
-generated: 2026-08-20 03:00:01 UTC
+generated: 2026-08-20 03:05:01 UTC
 done:   146
 queued: 2
 failed: 21
@@ -31,7 +31,6 @@ u23-107-document-clocks-and-the-review-cycle.md
 u26-111-backups-and-the-restore-drill.md
 
 -- log --
-       see logs/a06-142-one-subscriber-every-tool.log
 
 ---- a07-143-three-journey-defects ----  started 00:08:53
      . suite green: 2948 tests
@@ -51,15 +50,16 @@ u26-111-backups-and-the-restore-drill.md
 ---- a06-142-one-subscriber-every-tool ----  started 02:27:07
      . suite green: 2948 tests
      . build/screens/journeys: diff since 20d480aace02 touches something that could render — running fresh
+     . build clean
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        4250        9788          90        1985       11352
+Mem:           15603        3327       10709         133        2029       12275
 -- top --
     ELAPSED   RSS COMMAND
-      00:21 2124828 node
-      00:52 1199444 node
-   04:32:27 237984 next-server (v1
-      00:46 163612 node
+      03:29 1152704 next-server (v1
+      03:24 530004 chrome-headless
+      00:20 399100 chrome-headless
+      03:26 352840 node
 -- disk --
 /dev/sda1        75G   16G   56G  23% /
