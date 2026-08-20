@@ -1,11 +1,10 @@
-generated: 2026-08-20 10:50:01 UTC
+generated: 2026-08-20 10:55:01 UTC
 done:   146
-queued: 1
-failed: 22
+queued: 0
+failed: 23
 hold:   0
 
 -- queued --
-y00-122-the-four-one-step-jobs.md
 -- failed --
 a03-139-integration-proof-run-it-now.md
 a05-141-attribution-by-diff.md
@@ -29,37 +28,38 @@ u16-100-search-across-the-suite.md
 u18-102-no1cloud-workspace-and-the-picker.md
 u23-107-document-clocks-and-the-review-cycle.md
 u26-111-backups-and-the-restore-drill.md
+y00-122-the-four-one-step-jobs.md
 
 -- log --
+    a08-144-ready-for-the-test-session.md
+    h000-124-the-gate-that-cannot-pass.md
+    h001-125-networkidle-never-settles.md
+    h009-133-retry-once-and-the-broken-screen.md
+    h00a-123-the-red-suite-and-the-employee-who-can-read-everything.md
+    h00e-118-four-findings-from-the-owners-hands.md
+    h00f-119-the-panel-stays-the-document-scrolls.md
+    q01a-bank-transfer.md
+    t05-74-email-deliverability.md
+    t06-75-corrections-after-send.md
+    t10-79-no1edit-workspace.md
+    t11-93-digisign-templates.md
+    u04-84-timesheets-and-leave.md
+    u10-90-policy-library-and-acknowledgement.md
+    u16-100-search-across-the-suite.md
+    u18-102-no1cloud-workspace-and-the-picker.md
+    u23-107-document-clocks-and-the-review-cycle.md
+    u26-111-backups-and-the-restore-drill.md
+    y00-122-the-four-one-step-jobs.md
 ================================================
-  RunUrBusiness — draining the task queue
-  started Thu 20 Aug 03:28
-================================================
-
----- y00-122-the-four-one-step-jobs ----  started 03:28:39
-================================================
-  RunUrBusiness — draining the task queue
-  started Thu 20 Aug 06:53
-================================================
-
----- a08-144-ready-for-the-test-session ----  started 06:53:51
-     ! exited clean but produced nothing verifiable — commit made but no completion marker
-================================================
-  RunUrBusiness — draining the task queue
-  started Thu 20 Aug 10:01
-================================================
-
----- y00-122-the-four-one-step-jobs ----  started 10:01:01
-     ! exited clean but produced nothing verifiable — commit made but no completion marker
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1940       11981         178        2199       13663
+Mem:           15603        1956       11963         178        2200       13646
 -- top --
     ELAPSED   RSS COMMAND
-   02:49:56 567568 node
-   12:22:28 353180 next-server (v1
-   03:03:10 250044 next-server (v1
-   12:22:28 127128 node
+   02:54:56 569540 node
+   12:27:28 353180 next-server (v1
+   03:08:10 251624 next-server (v1
+      02:19 146600 node
 -- disk --
 /dev/sda1        75G   16G   56G  23% /
