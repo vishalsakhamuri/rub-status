@@ -1,17 +1,17 @@
-generated: 2026-08-20 02:25:01 UTC
+generated: 2026-08-20 02:30:01 UTC
 done:   146
-queued: 3
-failed: 20
+queued: 2
+failed: 21
 hold:   0
 
 -- queued --
 a06-142-one-subscriber-every-tool.md
-a07-143-three-journey-defects.md
 y00-122-the-four-one-step-jobs.md
 -- failed --
 a03-139-integration-proof-run-it-now.md
 a05-141-attribution-by-diff.md
 a06-open-every-screen-in-a-real-browser.md
+a07-143-three-journey-defects.md
 h000-124-the-gate-that-cannot-pass.md
 h001-125-networkidle-never-settles.md
 h009-133-retry-once-and-the-broken-screen.md
@@ -31,15 +31,6 @@ u23-107-document-clocks-and-the-review-cycle.md
 u26-111-backups-and-the-restore-drill.md
 
 -- log --
-     . build/screens/journeys: diff since 51f95c721393 touches something that could render — running fresh
-     . build clean
-     . screens clean: 215 screens, 28 not reachable
-     . journeys clean: 20 of 20 passed
-     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
-     . gate: 68 pass, 2 fail, 0 pending
-     ! GATE FAILED: 1 of 2948 tests failing
-     ! GATE FAILED, caused by this task
-     [FAILED] (exit 97) 00:08:51
        moved to tasks/failed/ — the queue carries on
        reason: completion marker + commit present, but the gate failed: 1 of 2948 tests failing
        see logs/a06-142-one-subscriber-every-tool.log
@@ -51,15 +42,24 @@ u26-111-backups-and-the-restore-drill.md
      . screens clean: 215 screens, 28 not reachable
      ! JOURNEYS: 1 of 20 failed — J3: change a document and take it away — tenant with no entity — see docs/journeys-report.md
      . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
+     . gate: 68 pass, 2 fail, 0 pending
+     ! GATE FAILED: journey "J3: change a document and take it away — tenant with no entity" failed: Rotate did not become available after loading a file — passed on the last green run, so t10-79 not landing is not an excuse now
+     ! GATE FAILED, caused by this task
+     [FAILED] (exit 97) 02:27:05
+       moved to tasks/failed/ — the queue carries on
+       reason: completion marker + commit present, but the gate failed: journey "J3: change a document and take it away — tenant with no entity" failed: Rotate did not become available after loading a file — passed on the last green run, so t10-79 not landing is not an excuse now
+       see logs/a07-143-three-journey-defects.log
+
+---- a06-142-one-subscriber-every-tool ----  started 02:27:07
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1814       12226         137        2030       13789
+Mem:           15603        1095       12944          90        1984       14508
 -- top --
     ELAPSED   RSS COMMAND
-      06:40 390560 next-server (v1
-   03:57:27 237984 next-server (v1
-      00:13 208624 chrome-headless
-      00:14 206600 node
+      02:51 318208 claude
+   04:02:27 237984 next-server (v1
+   04:02:28 127128 node
+ 7-19:54:57 28668 systemd-journal
 -- disk --
 /dev/sda1        75G   16G   56G  23% /
