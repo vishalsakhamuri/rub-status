@@ -1,4 +1,4 @@
-generated: 2026-08-21 21:05:01 UTC
+generated: 2026-08-21 21:10:01 UTC
 done:   146
 queued: 1
 failed: 22
@@ -31,8 +31,6 @@ u26-111-backups-and-the-restore-drill.md
 y00-122-the-four-one-step-jobs.md
 
 -- log --
-    u26-111-backups-and-the-restore-drill.md
-    y00-122-the-four-one-step-jobs.md
 ================================================
 ================================================
   RunUrBusiness — draining the task queue
@@ -51,15 +49,17 @@ y00-122-the-four-one-step-jobs.md
      . build/screens/journeys: diff since efe56fd56ef6 touches something that could render — running fresh
      . build clean
      . screens clean: 215 screens, 28 not reachable
+     ! JOURNEYS: 2 of 22 failed — J3: change a document and take it away, invoice → payment → reconcile, end to end — default tenant (a08-144 D) — see docs/journeys-report.md
+     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2284       11556         258        2359       13319
+Mem:           15603        1778       12061         222        2324       13824
 -- top --
     ELAPSED   RSS COMMAND
-      03:59 884604 next-server (v1
-      41:26 222392 next-server (v1
-      05:14 212292 node
-      00:15 195236 chrome-headless
+      00:05 405584 node
+      04:44 237092 next-server (v1
+      46:26 222396 next-server (v1
+      00:05 145604 node
 -- disk --
 /dev/sda1        75G   16G   56G  23% /
