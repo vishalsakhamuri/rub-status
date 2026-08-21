@@ -1,4 +1,4 @@
-generated: 2026-08-21 20:55:01 UTC
+generated: 2026-08-21 21:00:01 UTC
 done:   146
 queued: 1
 failed: 22
@@ -31,7 +31,6 @@ u26-111-backups-and-the-restore-drill.md
 y00-122-the-four-one-step-jobs.md
 
 -- log --
-    u23-107-document-clocks-and-the-review-cycle.md
     u26-111-backups-and-the-restore-drill.md
     y00-122-the-four-one-step-jobs.md
 ================================================
@@ -51,15 +50,16 @@ y00-122-the-four-one-step-jobs.md
      . suite green: 2948 tests
      . build/screens/journeys: diff since efe56fd56ef6 touches something that could render — running fresh
      . build clean
+     . screens clean: 215 screens, 28 not reachable
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2913       10928         258        2359       12689
+Mem:           15603        3460       10578         222        2126       12142
 -- top --
     ELAPSED   RSS COMMAND
-      00:36 841180 chrome-headless
-      00:41 778424 next-server (v1
-      31:26 222384 next-server (v1
-      00:39 184016 node
+      00:10 1992880 node
+      36:26 222388 next-server (v1
+      00:14 194388 node
+      00:06 160440 node
 -- disk --
-/dev/sda1        75G   16G   56G  23% /
+/dev/sda1        75G   16G   56G  22% /
