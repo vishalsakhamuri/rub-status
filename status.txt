@@ -1,4 +1,4 @@
-generated: 2026-08-21 19:05:01 UTC
+generated: 2026-08-21 19:10:01 UTC
 done:   146
 queued: 1
 failed: 22
@@ -31,12 +31,6 @@ u26-111-backups-and-the-restore-drill.md
 y00-122-the-four-one-step-jobs.md
 
 -- log --
-    a08-144-ready-for-the-test-session.md
-    h000-124-the-gate-that-cannot-pass.md
-    h001-125-networkidle-never-settles.md
-    h009-133-retry-once-and-the-broken-screen.md
-    h00a-123-the-red-suite-and-the-employee-who-can-read-everything.md
-    h00e-118-four-findings-from-the-owners-hands.md
     h00f-119-the-panel-stays-the-document-scrolls.md
     q01a-bank-transfer.md
     t05-74-email-deliverability.md
@@ -51,15 +45,21 @@ y00-122-the-four-one-step-jobs.md
     u26-111-backups-and-the-restore-drill.md
     y00-122-the-four-one-step-jobs.md
 ================================================
+================================================
+  RunUrBusiness — draining the task queue
+  started Fri 21 Aug 19:06
+================================================
+
+---- a05-141-attribution-by-diff ----  started 19:06:12
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1357       12463         182        2303       14245
+Mem:           15603        2189       11628         204        2328       13413
 -- top --
     ELAPSED   RSS COMMAND
- 1-20:37:28 353180 next-server (v1
- 1-11:18:10 247484 next-server (v1
- 1-20:37:28 127128 node
- 1-11:18:10 126520 node
+      00:29 487208 node
+ 1-20:42:28 353180 next-server (v1
+      03:47 331028 claude
+ 1-11:23:10 247488 next-server (v1
 -- disk --
 /dev/sda1        75G   16G   56G  23% /
