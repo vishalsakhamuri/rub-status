@@ -1,13 +1,13 @@
-generated: 2026-08-21 19:00:01 UTC
+generated: 2026-08-21 19:05:01 UTC
 done:   146
-queued: 0
-failed: 23
+queued: 1
+failed: 22
 hold:   0
 
 -- queued --
+a05-141-attribution-by-diff.md
 -- failed --
 a03-139-integration-proof-run-it-now.md
-a05-141-attribution-by-diff.md
 a06-open-every-screen-in-a-real-browser.md
 a07-143-three-journey-defects.md
 a08-144-ready-for-the-test-session.md
@@ -54,12 +54,12 @@ y00-122-the-four-one-step-jobs.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1361       12460         182        2302       14241
+Mem:           15603        1357       12463         182        2303       14245
 -- top --
     ELAPSED   RSS COMMAND
- 1-20:32:28 353180 next-server (v1
- 1-11:13:09 247480 next-server (v1
- 1-20:32:28 127128 node
- 1-11:13:10 126520 node
+ 1-20:37:28 353180 next-server (v1
+ 1-11:18:10 247484 next-server (v1
+ 1-20:37:28 127128 node
+ 1-11:18:10 126520 node
 -- disk --
 /dev/sda1        75G   16G   56G  23% /
