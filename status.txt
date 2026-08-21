@@ -1,13 +1,13 @@
-generated: 2026-08-21 21:10:01 UTC
+generated: 2026-08-21 21:15:01 UTC
 done:   146
-queued: 1
-failed: 22
+queued: 0
+failed: 23
 hold:   0
 
 -- queued --
-a05-141-attribution-by-diff.md
 -- failed --
 a03-139-integration-proof-run-it-now.md
+a05-141-attribution-by-diff.md
 a06-open-every-screen-in-a-real-browser.md
 a07-143-three-journey-defects.md
 a08-144-ready-for-the-test-session.md
@@ -31,35 +31,35 @@ u26-111-backups-and-the-restore-drill.md
 y00-122-the-four-one-step-jobs.md
 
 -- log --
+    a08-144-ready-for-the-test-session.md
+    h000-124-the-gate-that-cannot-pass.md
+    h001-125-networkidle-never-settles.md
+    h009-133-retry-once-and-the-broken-screen.md
+    h00a-123-the-red-suite-and-the-employee-who-can-read-everything.md
+    h00e-118-four-findings-from-the-owners-hands.md
+    h00f-119-the-panel-stays-the-document-scrolls.md
+    q01a-bank-transfer.md
+    t05-74-email-deliverability.md
+    t06-75-corrections-after-send.md
+    t10-79-no1edit-workspace.md
+    t11-93-digisign-templates.md
+    u04-84-timesheets-and-leave.md
+    u10-90-policy-library-and-acknowledgement.md
+    u16-100-search-across-the-suite.md
+    u18-102-no1cloud-workspace-and-the-picker.md
+    u23-107-document-clocks-and-the-review-cycle.md
+    u26-111-backups-and-the-restore-drill.md
+    y00-122-the-four-one-step-jobs.md
 ================================================
-================================================
-  RunUrBusiness — draining the task queue
-  started Fri 21 Aug 19:06
-================================================
-
----- a05-141-attribution-by-diff ----  started 19:06:12
-     .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
-================================================
-  RunUrBusiness — draining the task queue
-  started Fri 21 Aug 19:29
-================================================
-
----- a05-141-attribution-by-diff ----  started 19:29:18
-     . suite green: 2948 tests
-     . build/screens/journeys: diff since efe56fd56ef6 touches something that could render — running fresh
-     . build clean
-     . screens clean: 215 screens, 28 not reachable
-     ! JOURNEYS: 2 of 22 failed — J3: change a document and take it away, invoice → payment → reconcile, end to end — default tenant (a08-144 D) — see docs/journeys-report.md
-     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1778       12061         222        2324       13824
+Mem:           15603        1050       12786         222        2328       14552
 -- top --
     ELAPSED   RSS COMMAND
-      00:05 405584 node
-      04:44 237092 next-server (v1
-      46:26 222396 next-server (v1
-      00:05 145604 node
+      51:26 222400 next-server (v1
+      51:27 125860 node
+ 9-14:39:57 88520 systemd-journal
+   02:18:00 13144 systemd
 -- disk --
 /dev/sda1        75G   16G   56G  23% /
