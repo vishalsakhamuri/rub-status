@@ -1,10 +1,11 @@
-generated: 2026-08-22 19:55:01 UTC
+generated: 2026-08-22 20:00:01 UTC
 done:   146
-queued: 0
+queued: 1
 failed: 23
 hold:   0
 
 -- queued --
+a09-145-the-hundred-thousand-and-the-journey-owner.md
 -- failed --
 a03-139-integration-proof-run-it-now.md
 a05-141-attribution-by-diff.md
@@ -31,18 +32,6 @@ u26-111-backups-and-the-restore-drill.md
 y00-122-the-four-one-step-jobs.md
 
 -- log --
-    a08-144-ready-for-the-test-session.md
-    h000-124-the-gate-that-cannot-pass.md
-    h001-125-networkidle-never-settles.md
-    h009-133-retry-once-and-the-broken-screen.md
-    h00a-123-the-red-suite-and-the-employee-who-can-read-everything.md
-    h00e-118-four-findings-from-the-owners-hands.md
-    h00f-119-the-panel-stays-the-document-scrolls.md
-    q01a-bank-transfer.md
-    t05-74-email-deliverability.md
-    t06-75-corrections-after-send.md
-    t10-79-no1edit-workspace.md
-    t11-93-digisign-templates.md
     u04-84-timesheets-and-leave.md
     u10-90-policy-library-and-acknowledgement.md
     u16-100-search-across-the-suite.md
@@ -51,15 +40,27 @@ y00-122-the-four-one-step-jobs.md
     u26-111-backups-and-the-restore-drill.md
     y00-122-the-four-one-step-jobs.md
 ================================================
+================================================
+  RunUrBusiness — draining the task queue
+  started Sat 22 Aug 19:56
+================================================
+
+---- a09-145-the-hundred-thousand-and-the-journey-owner ----  started 19:56:28
+================================================
+  RunUrBusiness — draining the task queue
+  started Sat 22 Aug 19:59
+================================================
+
+---- a09-145-the-hundred-thousand-and-the-journey-owner ----  started 19:59:24
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1086       12523         222        2554       14516
+Mem:           15603         878       14327           6         677       14724
 -- top --
     ELAPSED   RSS COMMAND
-   23:31:26 257120 next-server (v1
-   23:31:26 125860 node
-10-13:19:57 115380 systemd-journal
-      00:13 13212 systemd
+      00:35 290108 claude
+      00:37 212216 next-server (v1
+      00:38 135392 node
+      00:43 35460 systemd-journal
 -- disk --
 /dev/sda1        75G   16G   56G  23% /
