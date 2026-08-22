@@ -1,14 +1,13 @@
-generated: 2026-08-22 23:50:01 UTC
-done:   146
+generated: 2026-08-22 23:55:02 UTC
+done:   147
 queued: 1
-failed: 23
+failed: 22
 hold:   0
 
 -- queued --
 a09-145-the-hundred-thousand-and-the-journey-owner.md
 -- failed --
 a03-139-integration-proof-run-it-now.md
-a05-141-attribution-by-diff.md
 a06-open-every-screen-in-a-real-browser.md
 a07-143-three-journey-defects.md
 a08-144-ready-for-the-test-session.md
@@ -55,12 +54,12 @@ y00-122-the-four-one-step-jobs.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1995       12314          22        1618       13607
+Mem:           15603        2070       12238          22        1618       13532
 -- top --
     ELAPSED   RSS COMMAND
-      40:20 654396 next-server (v1
-   02:41:27 493156 claude
-      40:18 220704 next-server (v1
-      00:11 147256 node
+      45:20 578864 next-server (v1
+   02:46:28 521600 claude
+      45:19 220708 next-server (v1
+      00:01 142776 node
 -- disk --
 /dev/sda1        75G   16G   56G  23% /
