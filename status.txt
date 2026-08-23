@@ -1,4 +1,4 @@
-generated: 2026-08-23 00:00:01 UTC
+generated: 2026-08-23 00:05:01 UTC
 done:   147
 queued: 1
 failed: 22
@@ -54,12 +54,12 @@ y00-122-the-four-one-step-jobs.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2409       11899          60        1656       13193
+Mem:           15603        1839       12467          22        1622       13764
 -- top --
     ELAPSED   RSS COMMAND
-      50:20 673988 next-server (v1
-   02:51:28 455376 claude
-      00:14 232560 chrome-headless
-      50:18 220708 next-server (v1
+      55:20 579452 next-server (v1
+   02:56:28 510276 claude
+      55:18 220712 next-server (v1
+      00:00 145992 node
 -- disk --
 /dev/sda1        75G   16G   56G  23% /
