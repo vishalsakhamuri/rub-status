@@ -1,4 +1,4 @@
-generated: 2026-08-23 12:00:01 UTC
+generated: 2026-08-23 12:05:01 UTC
 done:   153
 queued: 17
 failed: 1
@@ -26,12 +26,6 @@ y00-122-the-four-one-step-jobs.md
 t05-74-email-deliverability.md
 
 -- log --
-     . screens clean: 215 screens, 28 not reachable
-     . journeys clean: 22 of 22 passed
-     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
-     . gate: 70 pass, 2 fail, 0 pending
-     . gate clean — see docs/gate-report.md
-     [done] 09:17:11   ->  logs/a06-open-every-screen-in-a-real-browser.log   (commit + completion marker)
 
 ---- a01-u04-84-timesheets-and-leave ----  started 09:17:13
      . suite green: 2954 tests
@@ -46,15 +40,21 @@ t05-74-email-deliverability.md
      . suite green: 2954 tests
      . build/screens/journeys: diff since 75a48b2a1dae touches something that could render — running fresh
      . build clean
+================================================
+  RunUrBusiness — draining the task queue
+  started Sun 23 Aug 12:00
+================================================
+
+---- a01-u04-84-timesheets-and-leave ----  started 12:00:32
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603       14002        1697          84         231        1600
+Mem:           15603       15065         402         166         603         537
 -- top --
     ELAPSED   RSS COMMAND
-   16:00:43 17968 systemd-journal
-   16:00:37 15052 networkd-dispat
-   16:00:43  9500 multipathd
-   16:00:49  8552 systemd
+      03:28 13412092 next-server (v1
+      01:14 946548 chrome-headless
+      01:18 188484 node
+      03:07 135068 node
 -- disk --
 /dev/sda1        75G   27G   46G  37% /
