@@ -1,11 +1,10 @@
-generated: 2026-08-23 13:35:01 UTC
-done:   153
-queued: 17
+generated: 2026-08-23 13:40:01 UTC
+done:   154
+queued: 16
 failed: 1
 hold:   0
 
 -- queued --
-a01-u04-84-timesheets-and-leave.md
 a01-u18-102-no1cloud-workspace-and-the-picker.md
 a08-144-ready-for-the-test-session.md
 h000-124-the-gate-that-cannot-pass.md
@@ -26,11 +25,6 @@ y00-122-the-four-one-step-jobs.md
 t05-74-email-deliverability.md
 
 -- log --
-     . build/screens/journeys: diff since 75a48b2a1dae touches something that could render — running fresh
-     . build clean
-================================================
-  RunUrBusiness — draining the task queue
-  started Sun 23 Aug 12:00
 ================================================
 
 ---- a01-u04-84-timesheets-and-leave ----  started 12:00:32
@@ -46,15 +40,20 @@ t05-74-email-deliverability.md
      . screens clean: 215 screens, 28 not reachable
      . journeys clean: 22 of 22 passed
      . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
+     . gate: 71 pass, 1 fail, 0 pending
+     . gate clean — see docs/gate-report.md
+     [done] 13:38:46   ->  logs/a01-u04-84-timesheets-and-leave.log   (commit + completion marker)
+
+---- a01-u18-102-no1cloud-workspace-and-the-picker ----  started 13:38:48
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2357       12310         296        1533       13246
+Mem:           15603        1064       13468         310        1682       14538
 -- top --
     ELAPSED   RSS COMMAND
-      01:31 982152 node
-      10:14 333648 next-server (v1
-      10:14 129624 node
-      01:32 128668 node
+      01:11 309460 claude
+   17:40:43 33220 systemd-journal
+   02:52:54 20168 next-server (v1
+   17:40:37 11464 networkd-dispat
 -- disk --
 /dev/sda1        75G   17G   56G  23% /
