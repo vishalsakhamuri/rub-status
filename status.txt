@@ -1,4 +1,4 @@
-generated: 2026-08-23 12:15:01 UTC
+generated: 2026-08-23 12:20:01 UTC
 done:   153
 queued: 17
 failed: 1
@@ -49,12 +49,12 @@ t05-74-email-deliverability.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603       12144        1410          38        2396        3459
+Mem:           15603       12203        1342          43        2409        3399
 -- top --
     ELAPSED   RSS COMMAND
-      04:58 11307784 next-server (v1
-      05:46 343840 claude
-      02:39 283224 node
-      04:43 150772 node
+      09:58 11307872 next-server (v1
+      10:46 323916 claude
+      07:39 305252 node
+      09:43 150772 node
 -- disk --
 /dev/sda1        75G   27G   46G  37% /
