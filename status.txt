@@ -1,4 +1,4 @@
-generated: 2026-08-23 07:45:01 UTC
+generated: 2026-08-23 07:50:01 UTC
 done:   151
 queued: 19
 failed: 1
@@ -28,9 +28,6 @@ y00-122-the-four-one-step-jobs.md
 t05-74-email-deliverability.md
 
 -- log --
-    h00f-119-the-panel-stays-the-document-scrolls.md
-    q01a-bank-transfer.md
-    t05-74-email-deliverability.md
     t06-75-corrections-after-send.md
     t10-79-no1edit-workspace.md
     t11-93-digisign-templates.md
@@ -48,15 +45,18 @@ t05-74-email-deliverability.md
 ================================================
 
 ---- a00-146-clear-the-board ----  started 05:57:40
+     . suite green: 2954 tests
+     . build/screens/journeys: diff since fe59dd6697dd touches something that could render — running fresh
+     . build clean
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1878       12048         346        2358       13724
+Mem:           15603        2813       11113         348        2359       12789
 -- top --
     ELAPSED   RSS COMMAND
-      26:41 579984 node
-      27:26 240208 next-server (v1
-      00:03 158828 node
-      27:26 126484 node
+      01:07 809364 next-server (v1
+      01:02 592348 chrome-headless
+      01:04 233600 node
+      32:26 228288 next-server (v1
 -- disk --
 /dev/sda1        75G   17G   56G  23% /
