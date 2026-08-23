@@ -1,11 +1,10 @@
-generated: 2026-08-23 08:10:01 UTC
+generated: 2026-08-23 08:15:01 UTC
 done:   151
-queued: 19
-failed: 1
+queued: 18
+failed: 2
 hold:   0
 
 -- queued --
-a00-146-clear-the-board.md
 a06-open-every-screen-in-a-real-browser.md
 a08-144-ready-for-the-test-session.md
 h000-124-the-gate-that-cannot-pass.md
@@ -25,18 +24,10 @@ u18-102-no1cloud-workspace-and-the-picker.md
 u23-107-document-clocks-and-the-review-cycle.md
 y00-122-the-four-one-step-jobs.md
 -- failed --
+a00-146-clear-the-board.md
 t05-74-email-deliverability.md
 
 -- log --
-    u04-84-timesheets-and-leave.md
-    u10-90-policy-library-and-acknowledgement.md
-    u16-100-search-across-the-suite.md
-    u18-102-no1cloud-workspace-and-the-picker.md
-    u23-107-document-clocks-and-the-review-cycle.md
-    u26-111-backups-and-the-restore-drill.md
-    y00-122-the-four-one-step-jobs.md
-================================================
-================================================
   RunUrBusiness — draining the task queue
   started Sun 23 Aug 05:57
 ================================================
@@ -48,15 +39,24 @@ t05-74-email-deliverability.md
      . screens clean: 215 screens, 28 not reachable
      ! JOURNEYS: 1 of 22 failed — one document through all four tools — see docs/journeys-report.md
      . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
+     . gate: 70 pass, 2 fail, 0 pending
+     ! GATE FAILED: journey "one document through all four tools" failed: step 7: the Merge tool did not become available after loading the filed contract (No1Edit's own file-load gate — see the pre-existing Rotate finding in docs/journeys-report.md)
+     ! GATE FAILED, caused by this task
+     [FAILED] (exit 97) 08:13:41
+       moved to tasks/failed/ — the queue carries on
+       reason: completion marker + commit present, but the gate failed: journey "one document through all four tools" failed: step 7: the Merge tool did not become available after loading the filed contract (No1Edit's own file-load gate — see the pre-existing Rotate finding in docs/journeys-report.md)
+       see logs/a00-146-clear-the-board.log
+
+---- a06-open-every-screen-in-a-real-browser ----  started 08:13:43
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2799       11006         575        2709       12803
+Mem:           15603        1574       12203         585        2747       14028
 -- top --
     ELAPSED   RSS COMMAND
-      01:35 996924 node
-      10:41 326192 next-server (v1
-      52:26 234452 next-server (v1
-      01:35 129876 node
+      01:15 305348 claude
+      57:26 234568 next-server (v1
+      57:26 126484 node
+   12:15:43 51008 systemd-journal
 -- disk --
 /dev/sda1        75G   17G   56G  23% /
