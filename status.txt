@@ -1,4 +1,4 @@
-generated: 2026-08-23 08:50:01 UTC
+generated: 2026-08-23 08:55:01 UTC
 done:   151
 queued: 18
 failed: 2
@@ -28,9 +28,6 @@ a00-146-clear-the-board.md
 t05-74-email-deliverability.md
 
 -- log --
-  RunUrBusiness — draining the task queue
-  started Sun 23 Aug 05:57
-================================================
 
 ---- a00-146-clear-the-board ----  started 05:57:40
      . suite green: 2954 tests
@@ -48,15 +45,18 @@ t05-74-email-deliverability.md
        see logs/a00-146-clear-the-board.log
 
 ---- a06-open-every-screen-in-a-real-browser ----  started 08:13:43
+     . suite green: 2954 tests
+     . build/screens/journeys: diff since 0394a1462b26 touches something that could render — running fresh
+     . build clean
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2112       11663         626        2791       13491
+Mem:           15603        3665       10109         622        2787       11937
 -- top --
     ELAPSED   RSS COMMAND
-      27:36 579352 node
-      28:03 221232 next-server (v1
-      28:04 126344 node
-      00:00 124744 node
+      01:57 1112156 chrome-headless
+      02:02 914452 next-server (v1
+      01:59 253988 node
+      33:03 221236 next-server (v1
 -- disk --
 /dev/sda1        75G   17G   56G  23% /
