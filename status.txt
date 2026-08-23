@@ -1,4 +1,4 @@
-generated: 2026-08-23 08:55:01 UTC
+generated: 2026-08-23 09:00:01 UTC
 done:   151
 queued: 18
 failed: 2
@@ -28,7 +28,6 @@ a00-146-clear-the-board.md
 t05-74-email-deliverability.md
 
 -- log --
-
 ---- a00-146-clear-the-board ----  started 05:57:40
      . suite green: 2954 tests
      . build/screens/journeys: diff since fe59dd6697dd touches something that could render — running fresh
@@ -48,15 +47,16 @@ t05-74-email-deliverability.md
      . suite green: 2954 tests
      . build/screens/journeys: diff since 0394a1462b26 touches something that could render — running fresh
      . build clean
+     . screens clean: 215 screens, 28 not reachable
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3665       10109         622        2787       11937
+Mem:           15603        2263       11511         619        2784       13339
 -- top --
     ELAPSED   RSS COMMAND
-      01:57 1112156 chrome-headless
-      02:02 914452 next-server (v1
-      01:59 253988 node
-      33:03 221236 next-server (v1
+      01:02 561872 next-server (v1
+      38:03 221240 next-server (v1
+      02:15 197744 node
+      00:59 144488 chrome-headless
 -- disk --
 /dev/sda1        75G   17G   56G  23% /
