@@ -1,4 +1,4 @@
-generated: 2026-08-23 19:30:01 UTC
+generated: 2026-08-23 19:35:01 UTC
 done:   154
 queued: 16
 failed: 1
@@ -25,8 +25,6 @@ y00-122-the-four-one-step-jobs.md
 t05-74-email-deliverability.md
 
 -- log --
-================================================
-
 ---- a01-u04-84-timesheets-and-leave ----  started 12:00:32
 ================================================
   RunUrBusiness — draining the task queue
@@ -45,15 +43,17 @@ t05-74-email-deliverability.md
      [done] 13:38:46   ->  logs/a01-u04-84-timesheets-and-leave.log   (commit + completion marker)
 
 ---- a01-u18-102-no1cloud-workspace-and-the-picker ----  started 13:38:48
+     ! SUITE RED: 42 of 2960 tests failing — see logs/suite-latest.log
+     . build/screens/journeys: diff since e04f9d13986c touches something that could render — running fresh
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1571       12614         391        2114       14032
+Mem:           15603        3404       10780         394        2119       12198
 -- top --
     ELAPSED   RSS COMMAND
-   03:31:51 575628 node
-      03:27 138296 node
-   03:31:51 76760 npm exec vitest
-   23:30:43 42360 systemd-journal
+      00:33 1349560 node
+      00:05 1008608 node
+      00:31 146536 node
+      00:34 128300 node
 -- disk --
 /dev/sda1        75G   17G   56G  24% /
