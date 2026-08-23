@@ -1,4 +1,4 @@
-generated: 2026-08-23 13:20:01 UTC
+generated: 2026-08-23 13:25:01 UTC
 done:   153
 queued: 17
 failed: 1
@@ -26,8 +26,6 @@ y00-122-the-four-one-step-jobs.md
 t05-74-email-deliverability.md
 
 -- log --
----- a01-u04-84-timesheets-and-leave ----  started 10:40:02
-     . suite green: 2954 tests
      . build/screens/journeys: diff since 75a48b2a1dae touches something that could render — running fresh
      . build clean
 ================================================
@@ -46,15 +44,17 @@ t05-74-email-deliverability.md
      . build/screens/journeys: diff since 75a48b2a1dae touches something that could render — running fresh
      . build clean
      . screens clean: 215 screens, 28 not reachable
+     . journeys clean: 22 of 22 passed
+     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3493       11385          14        1037       12109
+Mem:           15603        1165       13705          14        1045       14437
 -- top --
     ELAPSED   RSS COMMAND
-      00:10 1450676 node
-      00:39 1256880 node
-      00:43 195372 node
-      00:36 142128 node
+      00:14 257232 next-server (v1
+      00:02 157612 node
+      00:14 146044 node
+      00:03 145612 node
 -- disk --
 /dev/sda1        75G   17G   56G  23% /
