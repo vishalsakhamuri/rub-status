@@ -1,4 +1,4 @@
-generated: 2026-08-23 10:30:01 UTC
+generated: 2026-08-23 10:35:01 UTC
 done:   153
 queued: 17
 failed: 1
@@ -26,9 +26,6 @@ y00-122-the-four-one-step-jobs.md
 t05-74-email-deliverability.md
 
 -- log --
-     . gate: 70 pass, 2 fail, 0 pending
-     ! GATE FAILED: journey "one document through all four tools" failed: step 7: the Merge tool did not become available after loading the filed contract (No1Edit's own file-load gate — see the pre-existing Rotate finding in docs/journeys-report.md)
-     ! GATE FAILED, caused by this task
      [FAILED] (exit 97) 08:13:41
        moved to tasks/failed/ — the queue carries on
        reason: completion marker + commit present, but the gate failed: journey "one document through all four tools" failed: step 7: the Merge tool did not become available after loading the filed contract (No1Edit's own file-load gate — see the pre-existing Rotate finding in docs/journeys-report.md)
@@ -46,15 +43,18 @@ t05-74-email-deliverability.md
      [done] 09:17:11   ->  logs/a06-open-every-screen-in-a-real-browser.log   (commit + completion marker)
 
 ---- a01-u04-84-timesheets-and-leave ----  started 09:17:13
+     . suite green: 2954 tests
+     . build/screens/journeys: diff since 75a48b2a1dae touches something that could render — running fresh
+     . build clean
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        5282        7789         914        3785       10320
+Mem:           15603       11863         232        1184        5047        3739
 -- top --
     ELAPSED   RSS COMMAND
-   01:11:46 2779140 next-server (v1
-      26:48 557504 node
-   02:08:03 221308 next-server (v1
-   01:11:17 172912 node
+   01:16:46 8735872 next-server (v1
+      02:00 939012 chrome-headless
+      02:02 225004 node
+   02:13:03 221312 next-server (v1
 -- disk --
-/dev/sda1        75G   17G   55G  24% /
+/dev/sda1        75G   20G   53G  27% /
