@@ -1,4 +1,4 @@
-generated: 2026-08-23 12:05:01 UTC
+generated: 2026-08-23 12:10:01 UTC
 done:   153
 queued: 17
 failed: 1
@@ -26,12 +26,6 @@ y00-122-the-four-one-step-jobs.md
 t05-74-email-deliverability.md
 
 -- log --
-
----- a01-u04-84-timesheets-and-leave ----  started 09:17:13
-     . suite green: 2954 tests
-     . build/screens/journeys: diff since 75a48b2a1dae touches something that could render — running fresh
-     . build clean
-================================================
   RunUrBusiness — draining the task queue
   started Sun 23 Aug 10:40
 ================================================
@@ -46,15 +40,21 @@ t05-74-email-deliverability.md
 ================================================
 
 ---- a01-u04-84-timesheets-and-leave ----  started 12:00:32
+================================================
+  RunUrBusiness — draining the task queue
+  started Sun 23 Aug 12:09
+================================================
+
+---- a01-u04-84-timesheets-and-leave ----  started 12:09:12
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603       15065         402         166         603         537
+Mem:           15603         841       14421          11         651       14761
 -- top --
     ELAPSED   RSS COMMAND
-      03:28 13412092 next-server (v1
-      01:14 946548 chrome-headless
-      01:18 188484 node
-      03:07 135068 node
+      00:46 310976 claude
+   16:10:43 24276 systemd-journal
+      00:03 11540 sshd-session
+   16:10:37 11464 networkd-dispat
 -- disk --
 /dev/sda1        75G   27G   46G  37% /
