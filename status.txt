@@ -1,4 +1,4 @@
-generated: 2026-08-23 23:45:01 UTC
+generated: 2026-08-23 23:50:01 UTC
 done:   154
 queued: 16
 failed: 1
@@ -25,12 +25,6 @@ y00-122-the-four-one-step-jobs.md
 t05-74-email-deliverability.md
 
 -- log --
-     . screens clean: 215 screens, 28 not reachable
-     . journeys clean: 22 of 22 passed
-     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
-     . gate: 71 pass, 1 fail, 0 pending
-     . gate clean — see docs/gate-report.md
-     [done] 13:38:46   ->  logs/a01-u04-84-timesheets-and-leave.log   (commit + completion marker)
 
 ---- a01-u18-102-no1cloud-workspace-and-the-picker ----  started 13:38:48
      ! SUITE RED: 42 of 2960 tests failing — see logs/suite-latest.log
@@ -45,15 +39,21 @@ t05-74-email-deliverability.md
 ================================================
 
 ---- a01-u18-102-no1cloud-workspace-and-the-picker ----  started 20:00:31
+================================================
+  RunUrBusiness — draining the task queue
+  started Sun 23 Aug 23:45
+================================================
+
+---- a01-u18-102-no1cloud-workspace-and-the-picker ----  started 23:45:33
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603       13683        1995          36         226        1919
+Mem:           15603        1149       14078          64         742       14454
 -- top --
     ELAPSED   RSS COMMAND
- 1-03:45:43 21852 systemd-journal
- 1-03:45:37 11016 networkd-dispat
-   12:57:54  9632 next-server (v1
- 1-03:45:42  9500 multipathd
+      04:25 314776 claude
+      02:49 301796 node
+      00:57 106764 node
+      02:50 76216 npm exec vitest
 -- disk --
 /dev/sda1        75G   26G   47G  36% /
