@@ -1,4 +1,4 @@
-generated: 2026-08-23 17:30:01 UTC
+generated: 2026-08-23 17:35:01 UTC
 done:   154
 queued: 16
 failed: 1
@@ -48,12 +48,12 @@ t05-74-email-deliverability.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1542       12659         386        2092       14060
+Mem:           15603        1574       12627         386        2092       14028
 -- top --
     ELAPSED   RSS COMMAND
-   01:31:51 565776 node
-      01:08 131568 node
-   01:31:51 76760 npm exec vitest
-   21:30:43 40708 systemd-journal
+   01:36:51 572896 node
+      02:29 151000 node
+   01:36:51 76760 npm exec vitest
+   21:35:43 40708 systemd-journal
 -- disk --
 /dev/sda1        75G   17G   56G  24% /
