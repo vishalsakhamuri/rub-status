@@ -1,4 +1,4 @@
-generated: 2026-08-23 10:40:01 UTC
+generated: 2026-08-23 10:45:01 UTC
 done:   153
 queued: 17
 failed: 1
@@ -26,12 +26,6 @@ y00-122-the-four-one-step-jobs.md
 t05-74-email-deliverability.md
 
 -- log --
-     [FAILED] (exit 97) 08:13:41
-       moved to tasks/failed/ — the queue carries on
-       reason: completion marker + commit present, but the gate failed: journey "one document through all four tools" failed: step 7: the Merge tool did not become available after loading the filed contract (No1Edit's own file-load gate — see the pre-existing Rotate finding in docs/journeys-report.md)
-       see logs/a00-146-clear-the-board.log
-
----- a06-open-every-screen-in-a-real-browser ----  started 08:13:43
      . suite green: 2954 tests
      . build/screens/journeys: diff since 0394a1462b26 touches something that could render — running fresh
      . build clean
@@ -46,15 +40,21 @@ t05-74-email-deliverability.md
      . suite green: 2954 tests
      . build/screens/journeys: diff since 75a48b2a1dae touches something that could render — running fresh
      . build clean
+================================================
+  RunUrBusiness — draining the task queue
+  started Sun 23 Aug 10:40
+================================================
+
+---- a01-u04-84-timesheets-and-leave ----  started 10:40:02
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603         659       15028           7         181       14943
+Mem:           15603        8956        2917          82        4123        6646
 -- top --
     ELAPSED   RSS COMMAND
-   02:18:03 125736 next-server (v1
-   14:40:43 21500 systemd-journal
-   14:40:37 18320 networkd-dispat
-   14:40:37 17760 unattended-upgr
+      00:35 10068308 next-server (v1
+      04:56 386504 claude
+   02:23:03 198476 next-server (v1
+      00:09 189180 node
 -- disk --
-/dev/sda1        75G   25G   47G  35% /
+/dev/sda1        75G   25G   48G  35% /
