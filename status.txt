@@ -1,4 +1,4 @@
-generated: 2026-08-24 02:55:01 UTC
+generated: 2026-08-24 03:00:01 UTC
 done:   154
 queued: 16
 failed: 1
@@ -25,8 +25,6 @@ y00-122-the-four-one-step-jobs.md
 t05-74-email-deliverability.md
 
 -- log --
-================================================
-
 ---- a01-u18-102-no1cloud-workspace-and-the-picker ----  started 00:45:34
      .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
 ================================================
@@ -45,15 +43,17 @@ t05-74-email-deliverability.md
      . build/screens/journeys: diff since 75a48b2a1dae touches something that could render — running fresh
      . build clean
      . screens clean: 215 screens, 28 not reachable
+     . journeys clean: 22 of 22 passed
+     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1341       13328          50        1301       14261
+Mem:           15603        1102       13290          18        1548       14501
 -- top --
     ELAPSED   RSS COMMAND
-      01:32 427400 next-server (v1
-      02:45 198312 node
-      00:07 157712 chrome-headless
-      01:30 144264 chrome-headless
+      02:11 236084 next-server (v1
+      00:13 155732 node
+      00:14 145160 node
+      02:11 129904 node
 -- disk --
 /dev/sda1        75G   17G   56G  24% /
