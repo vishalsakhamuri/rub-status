@@ -1,4 +1,4 @@
-generated: 2026-08-24 00:55:01 UTC
+generated: 2026-08-24 01:00:01 UTC
 done:   154
 queued: 16
 failed: 1
@@ -25,13 +25,6 @@ y00-122-the-four-one-step-jobs.md
 t05-74-email-deliverability.md
 
 -- log --
-     ! journeys did not produce a result at all — see logs/journeys-latest.log
-     . gate: reusing a server already up on :3000
-================================================
-  RunUrBusiness — draining the task queue
-  started Sun 23 Aug 20:00
-================================================
-
 ---- a01-u18-102-no1cloud-workspace-and-the-picker ----  started 20:00:31
 ================================================
   RunUrBusiness — draining the task queue
@@ -45,15 +38,22 @@ t05-74-email-deliverability.md
 ================================================
 
 ---- a01-u18-102-no1cloud-workspace-and-the-picker ----  started 00:45:34
+     .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
+================================================
+  RunUrBusiness — draining the task queue
+  started Mon 24 Aug 00:59
+================================================
+
+---- a01-u18-102-no1cloud-workspace-and-the-picker ----  started 00:59:58
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603       14711         332         180        1042         892
+Mem:           15603         706       14819          43         442       14896
 -- top --
     ELAPSED   RSS COMMAND
-      03:04 13274220 next-server (v1
-      00:21 429752 chrome-headless
-      09:24 233796 claude
-      00:23 173492 node
+      00:00 284736 claude
+ 1-05:00:43 22548 systemd-journal
+   14:12:54 13232 next-server (v1
+ 1-05:00:49  9732 systemd
 -- disk --
 /dev/sda1        75G   28G   45G  38% /
