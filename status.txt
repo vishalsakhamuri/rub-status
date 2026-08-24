@@ -1,11 +1,10 @@
-generated: 2026-08-24 10:10:01 UTC
+generated: 2026-08-24 10:15:01 UTC
 done:   155
-queued: 14
+queued: 13
 failed: 3
 hold:   0
 
 -- queued --
-h00a-123-the-red-suite-and-the-employee-who-can-read-everything.md
 h00e-118-four-findings-from-the-owners-hands.md
 h00f-119-the-panel-stays-the-document-scrolls.md
 n01-147-the-folder-tree.md
@@ -25,19 +24,6 @@ h000-124-the-gate-that-cannot-pass.md
 t05-74-email-deliverability.md
 
 -- log --
-     [BLOCKED] (exit 97) 08:34:26
-       moved to tasks/blocked/ — failed/ must mean failed on its own merits (h003-127 C)
-       requeued automatically once the blocking reason clears — nothing here is rebuilt
-       reason: completion marker + commit present, but the gate failed: 64 screen(s) flagged for density, up from 63 on the last green run: /accounting/packets/[packet], /assets/[id], /assets/locations, /assets, /attention, /banking/[account]/reconcile, /banking/[account]/statements/[statement], /bills/bulk/[operation] — see docs/screen-density.md
-       see logs/h009-133-retry-once-and-the-broken-screen.log
-
----- h00a-123-the-red-suite-and-the-employee-who-can-read-everything ----  started 08:34:29
-     .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
-================================================
-  RunUrBusiness — draining the task queue
-  started Mon 24 Aug 08:42
-================================================
-
 ---- h00a-123-the-red-suite-and-the-employee-who-can-read-everything ----  started 08:42:09
      . suite green: 2971 tests
      . build/screens/journeys: diff since 10a73ab8aaf2 touches something that could render — running fresh
@@ -45,15 +31,28 @@ t05-74-email-deliverability.md
      . screens clean: 215 screens, 28 not reachable
      . journeys clean: 22 of 22 passed
      . gate: reusing a server already up on :3000
+     . gate: 61 pass, 11 fail, 0 pending
+     ! GATE FAILED: 64 screen(s) flagged for density, up from 63 on the last green run: /accounting/packets/[packet], /assets/[id], /assets/locations, /assets, /attention, /banking/[account]/reconcile, /banking/[account]/statements/[statement], /bills/bulk/[operation] — see docs/screen-density.md
+     ! GATE FAILED, unrelated to this task — same gate reason was already failing before this task ran: 64 screen(s) flagged for density, up from 63 on the last green run: /accounting/packets/[packet], /assets/[id], /assets/locations, /assets, /attention, /banking/[account]/reconcile, /banking/[account]/statements/[statement], /bills/bulk/[operation] — see docs/screen-density.md (streak: 3)
+     [BLOCKED] (exit 97) 10:13:48
+       moved to tasks/blocked/ — failed/ must mean failed on its own merits (h003-127 C)
+       requeued automatically once the blocking reason clears — nothing here is rebuilt
+       reason: completion marker + commit present, but the gate failed: 64 screen(s) flagged for density, up from 63 on the last green run: /accounting/packets/[packet], /assets/[id], /assets/locations, /assets, /attention, /banking/[account]/reconcile, /banking/[account]/statements/[statement], /bills/bulk/[operation] — see docs/screen-density.md
+       see logs/h00a-123-the-red-suite-and-the-employee-who-can-read-everything.log
+
+############################################################
+#  QUEUE HALTED — the same gate reason failed 3 tasks in a row
+#  see docs/queue-halt.md
+############################################################
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3271       10015        1661        4323       12331
+Mem:           15603        3072       10214        1661        4323       12530
 -- top --
     ELAPSED   RSS COMMAND
-   06:31:09 617276 next-server (v1
-   06:31:09 226560 next-server (v1
-   06:31:10 130348 node
-      03:22 129200 node
+   06:36:09 617276 next-server (v1
+   06:36:09 226560 next-server (v1
+   06:36:09 130348 node
+   06:36:09 126560 node
 -- disk --
 /dev/sda1        75G   18G   55G  25% /
