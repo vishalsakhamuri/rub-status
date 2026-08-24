@@ -1,4 +1,4 @@
-generated: 2026-08-24 02:45:01 UTC
+generated: 2026-08-24 02:50:01 UTC
 done:   154
 queued: 16
 failed: 1
@@ -25,9 +25,6 @@ y00-122-the-four-one-step-jobs.md
 t05-74-email-deliverability.md
 
 -- log --
----- a01-u18-102-no1cloud-workspace-and-the-picker ----  started 23:45:33
-================================================
-  RunUrBusiness — draining the task queue
   started Mon 24 Aug 00:45
 ================================================
 
@@ -45,15 +42,18 @@ t05-74-email-deliverability.md
 ================================================
 
 ---- a01-u18-102-no1cloud-workspace-and-the-picker ----  started 01:41:26
+     . suite green: 2971 tests
+     . build/screens/journeys: diff since 75a48b2a1dae touches something that could render — running fresh
+     . build clean
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1295       13559          55        1123       14307
+Mem:           15603        3251       11421          57        1305       12351
 -- top --
     ELAPSED   RSS COMMAND
-      27:38 550048 node
-      00:05 144176 node
-      27:38 77552 npm exec vitest
- 1-06:45:43 46956 systemd-journal
+      02:13 1192944 chrome-headless
+      02:18 1128004 next-server (v1
+      02:16 290444 node
+      02:14 139172 chrome-headless
 -- disk --
-/dev/sda1        75G   27G   45G  38% /
+/dev/sda1        75G   17G   56G  24% /
