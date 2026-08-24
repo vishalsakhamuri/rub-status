@@ -1,4 +1,4 @@
-generated: 2026-08-24 05:25:01 UTC
+generated: 2026-08-24 05:30:01 UTC
 done:   155
 queued: 16
 failed: 3
@@ -27,12 +27,6 @@ h000-124-the-gate-that-cannot-pass.md
 t05-74-email-deliverability.md
 
 -- log --
-     . screens clean: 215 screens, 28 not reachable
-     . journeys clean: 24 of 24 passed
-     . gate: reusing a server already up on :3000
-     . gate: 71 pass, 3 fail, 0 pending
-     ! GATE FAILED: 64 screen(s) flagged for density, up from 63 on the last green run: /accounting/packets/[packet], /assets/[id], /assets/locations, /assets, /attention, /banking/[account]/reconcile, /banking/[account]/statements/[statement], /bills/bulk/[operation] — see docs/screen-density.md
-     ! GATE FAILED, caused by this task
      [FAILED] (exit 97) 05:04:34
        moved to tasks/failed/ — the queue carries on
        reason: completion marker + commit present, but the gate failed: 64 screen(s) flagged for density, up from 63 on the last green run: /accounting/packets/[packet], /assets/[id], /assets/locations, /assets, /attention, /banking/[account]/reconcile, /banking/[account]/statements/[statement], /bills/bulk/[operation] — see docs/screen-density.md
@@ -47,15 +41,21 @@ t05-74-email-deliverability.md
 
 ---- a08-144-ready-for-the-test-session ----  started 05:18:48
      .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
+================================================
+  RunUrBusiness — draining the task queue
+  started Mon 24 Aug 05:25
+================================================
+
+---- h001-125-networkidle-never-settles ----  started 05:25:53
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2012       11940         671        2649       13591
+Mem:           15603        2625       11325         671        2651       12977
 -- top --
     ELAPSED   RSS COMMAND
-   01:46:09 584568 next-server (v1
-   01:46:09 214852 next-server (v1
-   01:46:10 130348 node
-   01:46:09 126560 node
+   01:51:09 585092 next-server (v1
+      04:05 330700 claude
+   01:51:09 214856 next-server (v1
+      00:05 164348 node
 -- disk --
 /dev/sda1        75G   17G   55G  24% /
