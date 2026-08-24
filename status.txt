@@ -1,4 +1,4 @@
-generated: 2026-08-24 20:35:01 UTC
+generated: 2026-08-24 20:40:01 UTC
 done:   159
 queued: 14
 failed: 2
@@ -24,12 +24,6 @@ a08-144-ready-for-the-test-session.md
 t05-74-email-deliverability.md
 
 -- log --
-  started Mon 24 Aug 14:16
-================================================
-
-############################################################
-#  QUEUE HALTED — see docs/queue-halt.md
-#  re-checking whether the blocking reason still applies...
 ############################################################
      ! suite did not produce a result at all — see logs/suite-latest.log
      . build clean
@@ -44,15 +38,21 @@ t05-74-email-deliverability.md
      . requeued h00a-123-the-red-suite-and-the-employee-who-can-read-everything from blocked/ — its blocking reason has cleared
 
 ---- h001-125-networkidle-never-settles ----  started 16:38:13
+================================================
+  RunUrBusiness — draining the task queue
+  started Mon 24 Aug 20:39
+================================================
+
+---- h00b-150-a-marker-is-completion ----  started 20:39:41
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3154       10103        1744        4437       12448
+Mem:           15603        3368        9889        1744        4437       12234
 -- top --
     ELAPSED   RSS COMMAND
-   03:45:15 571784 node
-   03:49:38 229676 next-server (v1
-   03:49:38 126984 node
-      00:27 106724 node
+   03:50:15 574772 node
+      00:17 290136 claude
+   03:54:38 229676 next-server (v1
+      03:11 133236 node
 -- disk --
 /dev/sda1        75G   18G   55G  25% /
