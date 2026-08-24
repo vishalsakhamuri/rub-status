@@ -1,4 +1,4 @@
-generated: 2026-08-24 08:10:01 UTC
+generated: 2026-08-24 08:15:01 UTC
 done:   155
 queued: 15
 failed: 3
@@ -26,7 +26,6 @@ h000-124-the-gate-that-cannot-pass.md
 t05-74-email-deliverability.md
 
 -- log --
-     . gate: reusing a server already up on :3000
      . gate: 72 pass, 2 fail, 0 pending
      ! GATE FAILED: 64 screen(s) flagged for density, up from 63 on the last green run: /accounting/packets/[packet], /assets/[id], /assets/locations, /assets, /attention, /banking/[account]/reconcile, /banking/[account]/statements/[statement], /bills/bulk/[operation] — see docs/screen-density.md
      ! GATE FAILED, unrelated to this task — same gate reason was already failing before this task ran: 64 screen(s) flagged for density, up from 63 on the last green run: /accounting/packets/[packet], /assets/[id], /assets/locations, /assets, /attention, /banking/[account]/reconcile, /banking/[account]/statements/[statement], /bills/bulk/[operation] — see docs/screen-density.md (streak: 1)
@@ -46,15 +45,16 @@ t05-74-email-deliverability.md
 ---- h009-133-retry-once-and-the-broken-screen ----  started 07:01:01
      . suite green: 2971 tests
      . build/screens/journeys: diff since 75a48b2a1dae touches something that could render — running fresh
+     . build clean
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        4772        8861        1320        3631       10831
+Mem:           15603        5045        8388        1363        3876       10557
 -- top --
     ELAPSED   RSS COMMAND
-      00:19 1933236 node
-   04:31:09 590832 next-server (v1
-   04:31:09 224792 next-server (v1
-      00:14 160156 node
+   04:36:09 1358256 next-server (v1
+      00:48 694780 chrome-headless
+      04:03 538080 chrome-headless
+      04:06 390336 node
 -- disk --
-/dev/sda1        75G   17G   55G  24% /
+/dev/sda1        75G   18G   55G  24% /
