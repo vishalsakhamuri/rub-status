@@ -1,11 +1,10 @@
-generated: 2026-08-24 05:20:01 UTC
+generated: 2026-08-24 05:25:01 UTC
 done:   155
-queued: 17
-failed: 2
+queued: 16
+failed: 3
 hold:   0
 
 -- queued --
-a08-144-ready-for-the-test-session.md
 h001-125-networkidle-never-settles.md
 h009-133-retry-once-and-the-broken-screen.md
 h00a-123-the-red-suite-and-the-employee-who-can-read-everything.md
@@ -23,11 +22,11 @@ u16-100-search-across-the-suite.md
 u23-107-document-clocks-and-the-review-cycle.md
 y00-122-the-four-one-step-jobs.md
 -- failed --
+a08-144-ready-for-the-test-session.md
 h000-124-the-gate-that-cannot-pass.md
 t05-74-email-deliverability.md
 
 -- log --
-     . build clean
      . screens clean: 215 screens, 28 not reachable
      . journeys clean: 24 of 24 passed
      . gate: reusing a server already up on :3000
@@ -47,15 +46,16 @@ t05-74-email-deliverability.md
 ================================================
 
 ---- a08-144-ready-for-the-test-session ----  started 05:18:48
+     .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2211       11740         671        2649       13391
+Mem:           15603        2012       11940         671        2649       13591
 -- top --
     ELAPSED   RSS COMMAND
-   01:41:09 583684 next-server (v1
-      01:10 312020 claude
-   01:41:09 214848 next-server (v1
-   01:41:10 130348 node
+   01:46:09 584568 next-server (v1
+   01:46:09 214852 next-server (v1
+   01:46:10 130348 node
+   01:46:09 126560 node
 -- disk --
 /dev/sda1        75G   17G   55G  24% /
