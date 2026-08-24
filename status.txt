@@ -1,4 +1,4 @@
-generated: 2026-08-24 09:25:01 UTC
+generated: 2026-08-24 09:30:01 UTC
 done:   155
 queued: 14
 failed: 3
@@ -25,8 +25,6 @@ h000-124-the-gate-that-cannot-pass.md
 t05-74-email-deliverability.md
 
 -- log --
-     ! GATE FAILED: 64 screen(s) flagged for density, up from 63 on the last green run: /accounting/packets/[packet], /assets/[id], /assets/locations, /assets, /attention, /banking/[account]/reconcile, /banking/[account]/statements/[statement], /bills/bulk/[operation] — see docs/screen-density.md
-     ! GATE FAILED, unrelated to this task — same gate reason was already failing before this task ran: 64 screen(s) flagged for density, up from 63 on the last green run: /accounting/packets/[packet], /assets/[id], /assets/locations, /assets, /attention, /banking/[account]/reconcile, /banking/[account]/statements/[statement], /bills/bulk/[operation] — see docs/screen-density.md (streak: 2)
      [BLOCKED] (exit 97) 08:34:26
        moved to tasks/blocked/ — failed/ must mean failed on its own merits (h003-127 C)
        requeued automatically once the blocking reason clears — nothing here is rebuilt
@@ -45,15 +43,17 @@ t05-74-email-deliverability.md
      . build/screens/journeys: diff since 10a73ab8aaf2 touches something that could render — running fresh
      . build clean
      . screens clean: 215 screens, 28 not reachable
+     . journeys clean: 22 of 22 passed
+     . gate: reusing a server already up on :3000
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        4062        9225        1661        4323       11540
+Mem:           15603        3418        9869        1661        4323       12184
 -- top --
     ELAPSED   RSS COMMAND
-   05:46:09 1368872 next-server (v1
-   05:46:09 224792 next-server (v1
-      00:01 200484 node
-   05:46:10 130348 node
+   05:51:09 616044 next-server (v1
+   05:51:09 224792 next-server (v1
+      00:06 156632 node
+      00:06 145576 node
 -- disk --
 /dev/sda1        75G   18G   55G  25% /
