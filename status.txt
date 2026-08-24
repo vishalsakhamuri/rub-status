@@ -1,4 +1,4 @@
-generated: 2026-08-24 23:50:01 UTC
+generated: 2026-08-24 23:55:01 UTC
 done:   159
 queued: 14
 failed: 2
@@ -24,7 +24,6 @@ a08-144-ready-for-the-test-session.md
 t05-74-email-deliverability.md
 
 -- log --
-     ! screen audit did not produce a result at all — see logs/screens-latest.log
      ! journeys did not produce a result at all — see logs/journeys-latest.log
      . gate: reusing a server already up on :3000
      . gate: 18 pass, 32 fail, 0 pending
@@ -44,15 +43,16 @@ t05-74-email-deliverability.md
      ! SUITE RED: 20 of 2971 tests failing — see logs/suite-latest.log
      . build/screens/journeys: diff since 1e6daa84caa2 touches something that could render — running fresh
      . build clean
+     . screens clean: 215 screens, 28 not reachable
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        5083        8077        1868        4674       10519
+Mem:           15603        3583        9577        1862        4668       12020
 -- top --
     ELAPSED   RSS COMMAND
-      01:29 1187432 chrome-headless
-      01:33 929284 next-server (v1
-      01:31 255628 node
-   02:50:23 233188 next-server (v1
+      00:33 537996 next-server (v1
+   02:55:23 233188 next-server (v1
+      00:13 204296 chrome-headless
+      01:47 184768 node
 -- disk --
 /dev/sda1        75G   18G   55G  25% /
