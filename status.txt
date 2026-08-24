@@ -1,4 +1,4 @@
-generated: 2026-08-24 06:30:01 UTC
+generated: 2026-08-24 06:35:02 UTC
 done:   155
 queued: 16
 failed: 3
@@ -27,8 +27,6 @@ h000-124-the-gate-that-cannot-pass.md
 t05-74-email-deliverability.md
 
 -- log --
-
----- a08-144-ready-for-the-test-session ----  started 05:04:36
      .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
 ================================================
   RunUrBusiness — draining the task queue
@@ -47,15 +45,17 @@ t05-74-email-deliverability.md
      . build/screens/journeys: diff since 9d89cf564441 touches something that could render — running fresh
      . build clean
      . screens clean: 215 screens, 28 not reachable
+     . journeys clean: 24 of 24 passed
+     . gate: reusing a server already up on :3000
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3093       10488        1009        3372       12510
+Mem:           15603        2497       11083         981        3344       13105
 -- top --
     ELAPSED   RSS COMMAND
-   02:51:09 947544 next-server (v1
-   02:51:09 224780 next-server (v1
-      01:19 207836 node
-      00:17 200464 chrome-headless
+   02:56:10 590352 next-server (v1
+   02:56:10 224792 next-server (v1
+      00:00 131888 node
+   02:56:10 130348 node
 -- disk --
 /dev/sda1        75G   18G   55G  24% /
