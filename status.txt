@@ -1,4 +1,4 @@
-generated: 2026-08-24 05:15:01 UTC
+generated: 2026-08-24 05:20:01 UTC
 done:   155
 queued: 17
 failed: 2
@@ -27,13 +27,6 @@ h000-124-the-gate-that-cannot-pass.md
 t05-74-email-deliverability.md
 
 -- log --
-  RunUrBusiness — draining the task queue
-  started Mon 24 Aug 03:59
-================================================
-
----- h000-124-the-gate-that-cannot-pass ----  started 03:59:40
-     . suite green: 2971 tests
-     . build/screens/journeys: diff since 588bd54ec00d touches something that could render — running fresh
      . build clean
      . screens clean: 215 screens, 28 not reachable
      . journeys clean: 24 of 24 passed
@@ -47,15 +40,22 @@ t05-74-email-deliverability.md
        see logs/h000-124-the-gate-that-cannot-pass.log
 
 ---- a08-144-ready-for-the-test-session ----  started 05:04:36
+     .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
+================================================
+  RunUrBusiness — draining the task queue
+  started Mon 24 Aug 05:18
+================================================
+
+---- a08-144-ready-for-the-test-session ----  started 05:18:48
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2644       11309         656        2631       12958
+Mem:           15603        2211       11740         671        2649       13391
 -- top --
     ELAPSED   RSS COMMAND
-   01:36:09 583456 next-server (v1
-      10:22 381316 claude
-      04:34 280168 node
-      00:54 217944 node
+   01:41:09 583684 next-server (v1
+      01:10 312020 claude
+   01:41:09 214848 next-server (v1
+   01:41:10 130348 node
 -- disk --
 /dev/sda1        75G   17G   55G  24% /
