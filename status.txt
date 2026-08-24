@@ -1,7 +1,7 @@
-generated: 2026-08-24 04:05:01 UTC
-done:   154
+generated: 2026-08-24 04:10:01 UTC
+done:   155
 queued: 14
-failed: 3
+failed: 2
 hold:   0
 
 -- queued --
@@ -20,7 +20,6 @@ u16-100-search-across-the-suite.md
 u23-107-document-clocks-and-the-review-cycle.md
 y00-122-the-four-one-step-jobs.md
 -- failed --
-a01-u18-102-no1cloud-workspace-and-the-picker.md
 a08-144-ready-for-the-test-session.md
 t05-74-email-deliverability.md
 
@@ -48,12 +47,12 @@ t05-74-email-deliverability.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1857       12235         322        2156       13746
+Mem:           15603        1867       12224         322        2157       13735
 -- top --
     ELAPSED   RSS COMMAND
-      26:09 583948 next-server (v1
-      05:18 330028 claude
-      26:09 214660 next-server (v1
-      26:10 130348 node
+      31:09 584216 next-server (v1
+      10:18 347460 claude
+      31:09 214664 next-server (v1
+      31:10 130348 node
 -- disk --
 /dev/sda1        75G   17G   56G  24% /
