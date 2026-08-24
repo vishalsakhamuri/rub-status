@@ -1,4 +1,4 @@
-generated: 2026-08-24 09:20:01 UTC
+generated: 2026-08-24 09:25:01 UTC
 done:   155
 queued: 14
 failed: 3
@@ -25,8 +25,6 @@ h000-124-the-gate-that-cannot-pass.md
 t05-74-email-deliverability.md
 
 -- log --
-     . gate: reusing a server already up on :3000
-     . gate: 70 pass, 2 fail, 0 pending
      ! GATE FAILED: 64 screen(s) flagged for density, up from 63 on the last green run: /accounting/packets/[packet], /assets/[id], /assets/locations, /assets, /attention, /banking/[account]/reconcile, /banking/[account]/statements/[statement], /bills/bulk/[operation] — see docs/screen-density.md
      ! GATE FAILED, unrelated to this task — same gate reason was already failing before this task ran: 64 screen(s) flagged for density, up from 63 on the last green run: /accounting/packets/[packet], /assets/[id], /assets/locations, /assets, /attention, /banking/[account]/reconcile, /banking/[account]/statements/[statement], /bills/bulk/[operation] — see docs/screen-density.md (streak: 2)
      [BLOCKED] (exit 97) 08:34:26
@@ -45,15 +43,17 @@ t05-74-email-deliverability.md
 ---- h00a-123-the-red-suite-and-the-employee-who-can-read-everything ----  started 08:42:09
      . suite green: 2971 tests
      . build/screens/journeys: diff since 10a73ab8aaf2 touches something that could render — running fresh
+     . build clean
+     . screens clean: 215 screens, 28 not reachable
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        6440        6854        1661        4316        9162
+Mem:           15603        4062        9225        1661        4323       11540
 -- top --
     ELAPSED   RSS COMMAND
-      01:08 1402428 node
-   05:41:09 598828 next-server (v1
-   05:41:09 224792 next-server (v1
-      01:03 143664 node
+   05:46:09 1368872 next-server (v1
+   05:46:09 224792 next-server (v1
+      00:01 200484 node
+   05:46:10 130348 node
 -- disk --
 /dev/sda1        75G   18G   55G  25% /
