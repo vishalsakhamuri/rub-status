@@ -1,4 +1,4 @@
-generated: 2026-08-24 03:50:01 UTC
+generated: 2026-08-24 03:55:01 UTC
 done:   154
 queued: 15
 failed: 2
@@ -25,12 +25,6 @@ a01-u18-102-no1cloud-workspace-and-the-picker.md
 t05-74-email-deliverability.md
 
 -- log --
-  started Mon 24 Aug 01:41
-================================================
-
----- a01-u18-102-no1cloud-workspace-and-the-picker ----  started 01:41:26
-     . suite green: 2971 tests
-     . build/screens/journeys: diff since 75a48b2a1dae touches something that could render — running fresh
      . build clean
      . screens clean: 215 screens, 28 not reachable
      . journeys clean: 22 of 22 passed
@@ -45,15 +39,21 @@ t05-74-email-deliverability.md
 
 ---- a08-144-ready-for-the-test-session ----  started 03:11:46
      .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
+================================================
+  RunUrBusiness — draining the task queue
+  started Mon 24 Aug 03:50
+================================================
+
+---- a08-144-ready-for-the-test-session ----  started 03:50:35
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        4298        9845         366        2149       11304
+Mem:           15603        2119       12022         321        2105       13483
 -- top --
     ELAPSED   RSS COMMAND
-      11:10 1266528 next-server (v1
-      01:30 1128080 chrome-headless
-      04:26 522196 chrome-headless
-      04:29 429092 node
+      16:09 583312 next-server (v1
+      04:24 331580 claude
+      16:09 214652 next-server (v1
+      00:06 159512 node
 -- disk --
 /dev/sda1        75G   17G   56G  24% /
