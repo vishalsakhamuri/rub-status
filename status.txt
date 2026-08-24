@@ -1,12 +1,11 @@
-generated: 2026-08-24 05:00:01 UTC
+generated: 2026-08-24 05:05:01 UTC
 done:   155
-queued: 18
-failed: 1
+queued: 17
+failed: 2
 hold:   0
 
 -- queued --
 a08-144-ready-for-the-test-session.md
-h000-124-the-gate-that-cannot-pass.md
 h001-125-networkidle-never-settles.md
 h009-133-retry-once-and-the-broken-screen.md
 h00a-123-the-red-suite-and-the-employee-who-can-read-everything.md
@@ -24,18 +23,10 @@ u16-100-search-across-the-suite.md
 u23-107-document-clocks-and-the-review-cycle.md
 y00-122-the-four-one-step-jobs.md
 -- failed --
+h000-124-the-gate-that-cannot-pass.md
 t05-74-email-deliverability.md
 
 -- log --
-     .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
-================================================
-  RunUrBusiness — draining the task queue
-  started Mon 24 Aug 03:50
-================================================
-
----- a08-144-ready-for-the-test-session ----  started 03:50:35
-     .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
-================================================
   RunUrBusiness — draining the task queue
   started Mon 24 Aug 03:59
 ================================================
@@ -47,15 +38,24 @@ t05-74-email-deliverability.md
      . screens clean: 215 screens, 28 not reachable
      . journeys clean: 24 of 24 passed
      . gate: reusing a server already up on :3000
+     . gate: 71 pass, 3 fail, 0 pending
+     ! GATE FAILED: 64 screen(s) flagged for density, up from 63 on the last green run: /accounting/packets/[packet], /assets/[id], /assets/locations, /assets, /attention, /banking/[account]/reconcile, /banking/[account]/statements/[statement], /bills/bulk/[operation] — see docs/screen-density.md
+     ! GATE FAILED, caused by this task
+     [FAILED] (exit 97) 05:04:34
+       moved to tasks/failed/ — the queue carries on
+       reason: completion marker + commit present, but the gate failed: 64 screen(s) flagged for density, up from 63 on the last green run: /accounting/packets/[packet], /assets/[id], /assets/locations, /assets, /attention, /banking/[account]/reconcile, /banking/[account]/statements/[statement], /bills/bulk/[operation] — see docs/screen-density.md
+       see logs/h000-124-the-gate-that-cannot-pass.log
+
+---- a08-144-ready-for-the-test-session ----  started 05:04:36
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2110       11978         381        2219       13492
+Mem:           15603        2157       11799         626        2599       13445
 -- top --
     ELAPSED   RSS COMMAND
-   01:21:09 599384 next-server (v1
-      00:41 316092 node
-   01:21:09 214832 next-server (v1
-   01:21:10 130348 node
+   01:26:09 600832 next-server (v1
+      00:22 291304 claude
+   01:26:09 214836 next-server (v1
+   01:26:10 130348 node
 -- disk --
-/dev/sda1        75G   17G   56G  24% /
+/dev/sda1        75G   17G   55G  24% /
