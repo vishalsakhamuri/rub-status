@@ -1,4 +1,4 @@
-generated: 2026-08-24 06:55:01 UTC
+generated: 2026-08-24 07:00:01 UTC
 done:   155
 queued: 15
 failed: 3
@@ -26,7 +26,6 @@ h000-124-the-gate-that-cannot-pass.md
 t05-74-email-deliverability.md
 
 -- log --
-  started Mon 24 Aug 05:25
 ================================================
 
 ---- h001-125-networkidle-never-settles ----  started 05:25:53
@@ -46,15 +45,16 @@ t05-74-email-deliverability.md
        see logs/h001-125-networkidle-never-settles.log
 
 ---- h009-133-retry-once-and-the-broken-screen ----  started 06:46:52
+     .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3281       10161        1315        3818       12321
+Mem:           15603        2686       10755        1320        3824       12916
 -- top --
     ELAPSED   RSS COMMAND
-   03:16:10 589188 next-server (v1
-      08:07 340700 claude
-      01:41 292372 node
-   03:16:09 224792 next-server (v1
+   03:21:10 589444 next-server (v1
+   03:21:09 224792 next-server (v1
+   03:21:10 130348 node
+   03:21:10 126560 node
 -- disk --
 /dev/sda1        75G   18G   55G  24% /
