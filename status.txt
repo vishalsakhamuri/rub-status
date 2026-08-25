@@ -1,11 +1,10 @@
-generated: 2026-08-25 03:25:01 UTC
+generated: 2026-08-25 03:30:01 UTC
 done:   159
-queued: 12
-failed: 4
+queued: 11
+failed: 5
 hold:   0
 
 -- queued --
-h00f-119-the-panel-stays-the-document-scrolls.md
 n01-147-the-folder-tree.md
 n02-148-preview-and-sharing.md
 n03-149-erasure-and-compliance.md
@@ -21,18 +20,10 @@ y00-122-the-four-one-step-jobs.md
 a08-144-ready-for-the-test-session.md
 h00b-150-a-marker-is-completion.md
 h00e-118-four-findings-from-the-owners-hands.md
+h00f-119-the-panel-stays-the-document-scrolls.md
 t05-74-email-deliverability.md
 
 -- log --
----- h00e-118-four-findings-from-the-owners-hands ----  started 00:28:54
-     .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
-================================================
-  RunUrBusiness — draining the task queue
-  started Tue 25 Aug 00:35
-================================================
-
----- h00f-119-the-panel-stays-the-document-scrolls ----  started 00:35:59
-================================================
   RunUrBusiness — draining the task queue
   started Tue 25 Aug 01:45
 ================================================
@@ -44,15 +35,24 @@ t05-74-email-deliverability.md
      . screens clean: 215 screens, 28 not reachable
      ! JOURNEYS: 1 of 22 failed — one document through all four tools — see docs/journeys-report.md
      . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
+     . gate: 68 pass, 5 fail, 0 pending
+     ! GATE FAILED: 65 screen(s) flagged for density, up from 63 on the last green run: /accounting/packets/[packet], /assets/[id], /assets/locations, /assets, /attention, /banking/[account]/reconcile, /banking/[account]/statements/[statement], /bills/bulk/[operation] — see docs/screen-density.md
+     ! GATE FAILED, caused by this task
+     [FAILED] (exit 97) 03:25:17
+       moved to tasks/failed/ — the queue carries on
+       reason: completion marker + commit present, but the gate failed: 65 screen(s) flagged for density, up from 63 on the last green run: /accounting/packets/[packet], /assets/[id], /assets/locations, /assets, /attention, /banking/[account]/reconcile, /banking/[account]/statements/[statement], /bills/bulk/[operation] — see docs/screen-density.md
+       see logs/h00f-119-the-panel-stays-the-document-scrolls.log
+
+---- n01-147-the-folder-tree ----  started 03:25:19
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3461       11006         380        1835       12141
+Mem:           15603        1529       12914         380        1861       14074
 -- top --
     ELAPSED   RSS COMMAND
-      04:59 1177508 node
-      01:57 497616 node
-      18:30 320888 next-server (v1
-   06:25:23 253180 next-server (v1
+      04:39 379872 claude
+   06:30:22 253180 next-server (v1
+   06:30:23 35872 node
+ 2-07:30:43 12036 systemd-journal
 -- disk --
 /dev/sda1        75G   18G   55G  25% /
