@@ -1,11 +1,10 @@
-generated: 2026-08-25 18:10:01 UTC
+generated: 2026-08-25 18:15:01 UTC
 done:   161
-queued: 10
-failed: 5
+queued: 9
+failed: 6
 hold:   0
 
 -- queued --
-n03-149-erasure-and-compliance.md
 p00-151-the-gate-must-use-the-box.md
 q01a-bank-transfer.md
 t06-75-corrections-after-send.md
@@ -20,20 +19,10 @@ a08-144-ready-for-the-test-session.md
 h00e-118-four-findings-from-the-owners-hands.md
 n01-147-the-folder-tree.md
 n02-148-preview-and-sharing.md
+n03-149-erasure-and-compliance.md
 t05-74-email-deliverability.md
 
 -- log --
-       see logs/n01-147-the-folder-tree.log
-
----- n02-148-preview-and-sharing ----  started 07:14:26
-================================================
-  RunUrBusiness — draining the task queue
-  started Tue 25 Aug 12:21
-================================================
-
----- n02-148-preview-and-sharing ----  started 12:21:08
-     ! exited clean but produced nothing verifiable — stalled — log ends on a waiting line, no completion marker (commit was made, but a commit is not proof of completion when the task's own words say it isn't finished)
-================================================
   RunUrBusiness — draining the task queue
   started Tue 25 Aug 16:26
 ================================================
@@ -43,15 +32,26 @@ t05-74-email-deliverability.md
      ! suite did not produce a result at all — see logs/suite-latest.log
      . build/screens/journeys: diff since 3e687aa9aa88 touches something that could render — running fresh
      . build clean
+     ! screen audit did not produce a result at all — see logs/screens-latest.log
+     ! journeys did not produce a result at all — see logs/journeys-latest.log
+     [FAILED] (exit 98) 18:13:08
+       moved to tasks/failed/ — the queue carries on
+       reason: stalled — log ends on a waiting line, no completion marker (commit was made, but a commit is not proof of completion when the task's own words say it isn't finished)
+       see logs/n03-149-erasure-and-compliance.log
+     ! orphaned dev server found: pid 441595, owned by build, cwd /home/build/runurbusiness (node /usr/bin/pnpm start) — killing it
+     ! orphaned dev server found: pid 441608, owned by build, cwd /home/build/runurbusiness (next-server (v16.2.11)) — killing it
+     . orphaned dev server(s) cleaned up before this task starts
+
+---- p00-151-the-gate-must-use-the-box ----  started 18:13:12
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3027       10598        1306        3627       12576
+Mem:           15603        2686       10937        1283        3606       12916
 -- top --
     ELAPSED   RSS COMMAND
-      53:07 311492 node
-      03:19 236608 next-server (v1
-   11:59:57 233096 next-server (v1
-      03:17 157500 node
+      01:46 327616 claude
+      58:07 315004 node
+   12:04:57 233096 next-server (v1
+   12:04:57 126436 node
 -- disk --
 /dev/sda1        75G   19G   54G  26% /
