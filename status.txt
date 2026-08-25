@@ -1,4 +1,4 @@
-generated: 2026-08-24 23:55:01 UTC
+generated: 2026-08-25 00:00:01 UTC
 done:   159
 queued: 14
 failed: 2
@@ -24,8 +24,6 @@ a08-144-ready-for-the-test-session.md
 t05-74-email-deliverability.md
 
 -- log --
-     ! journeys did not produce a result at all — see logs/journeys-latest.log
-     . gate: reusing a server already up on :3000
      . gate: 18 pass, 32 fail, 0 pending
      ! GATE FAILED: the test suite did not produce a result — no summary line, treated as failed, not unknown; screens (demo tenant) did not produce a result — treated as failed, not unknown; screens (empty tenant) did not produce a result — treated as failed, not unknown; scripts/prove-tenancy-and-roles.ts failed (h01-95 is marked done):   code: 'XX000', /   severity_local: 'FATAL' / } /  / Node.js v22.23.1; scripts/prove-mail-transport.ts failed (h00-80 is marked done):     at process.processTicksAndRejections (node:internal/process/task_queues:103:5) /     at async ensureDemoCompany (/home/build/runurbusiness/scripts/lib/demo.ts:114:18) /     at async main (/home/build/runurbusiness/scripts/prove-mail-transport.ts:95:32) /  / Node.js v22.23.1; scripts/prove-employment-record.ts failed (u01-81 is marked done):   code: 'XX000', /   severity_local: 'FATAL' / } /  / Node.js v22.23.1; scripts/prove-self-service.ts failed (u02-82 is marked done): killed (SIGTERM) after 300000ms — did not finish; scripts/prove-approvals.ts failed (u02-82 is marked done): killed (SIGTERM) after 300000ms — did not finish; scripts/prove-asset-register.ts failed (u03-83 is marked done):   args: [], /   types: [] / } /  / Node.js v22.23.1; scripts/prove-assign-documents.ts failed (u05-85 is marked done): killed (SIGTERM) after 300000ms — did not finish; scripts/prove-offer-accept.ts failed (u05-85 is marked done):   code: '08006', /   severity_local: 'FATAL' / } /  / Node.js v22.23.1; scripts/prove-payslip-distribution.ts failed (u06-86 is marked done):     file: 'postgres.c', /     line: '3405', /     routine: 'ProcessInterrupts' /   } / }; scripts/prove-onboarding-run.ts failed (u07-87 is marked done): killed (SIGTERM) after 300000ms — did not finish; scripts/prove-offboarding-return-list.ts failed (u07-87 is marked done): killed (SIGTERM) after 300000ms — did not finish; scripts/prove-joiner-end-to-end.ts failed (u07-87 is marked done):   code: '08006', /   severity_local: 'FATAL' / } /  / Node.js v22.23.1; scripts/prove-training.ts failed (u09-89 is marked done):   code: 'XX000', /   severity_local: 'FATAL' / } /  / Node.js v22.23.1; scripts/prove-assignments.ts failed (u11-91 is marked done):     file: 'postgres.c', /     line: '3405', /     routine: 'ProcessInterrupts' /   } / }; scripts/prove-client-documents.ts failed (u11-91 is marked done): killed (SIGTERM) after 300000ms — did not finish; scripts/prove-due-list.ts failed (u12-92 is marked done): killed (SIGTERM) after 300000ms — did not finish; scripts/prove-payroll-run.ts failed (u13-94 is marked done): Error: could not sign empty-tenant-audit@runurbusiness.com in or up: {} / {} /     at emptyTenantUserId (/home/build/runurbusiness/scripts/lib/empty-tenant.ts:131:11) /     at process.processTicksAndRejections (node:internal/process/task_queues:103:5) /     at async ensureEmptyTenant (/home/build/runurbusiness/scripts/lib/empty-tenant.ts:164:18) /     at async main (/home/build/runurbusiness/scripts/prove-payroll-run.ts:118:19); scripts/prove-standard-payslip.ts failed (u13-94 is marked done): killed (SIGTERM) after 300000ms — did not finish; scripts/prove-manual-path.ts failed (u25-109 is marked done):   code: '08006', /   severity_local: 'FATAL' / } /  / Node.js v22.23.1; scripts/prove-no1cloud.ts failed (h00h-120 is marked done):       at TCP.onStreamRead (node:internal/stream_base_commons:189:23) { /     code: '08006', /     severity_local: 'FATAL' /   } / }; scripts/prove-signing-order.ts failed (t14-110 is marked done): killed (SIGTERM) after 300000ms — did not finish; scripts/prove-bank-reconciliation.ts failed (a02-138 is marked done):     at main (/home/build/runurbusiness/scripts/prove-bank-reconciliation.ts:144:16) /     at async outer (/home/build/runurbusiness/scripts/prove-bank-reconciliation.ts:553:5) { /   log: [], /   name: 'TimeoutError' / }; scripts/prove-digisign-filing.ts failed (h007-131 is marked done): killed (SIGTERM) after 300000ms — did not finish; scripts/prove-document-list.ts failed (u14-97 is marked done): killed (SIGTERM) after 300000ms — did not finish; scripts/prove-attention.ts failed (u17-101 is marked done): killed (SIGTERM) after 300000ms — did not finish; scripts/prove-home.ts failed (u22-106 is marked done): killed (SIGTERM) after 300000ms — did not finish; scripts/prove-no1edit-pages.ts failed (u19-103 is marked done):   args: [], /   types: [] / } /  / Node.js v22.23.1; scripts/prove-backup-restore.ts failed (u26-111 is marked done): killed (SIGTERM) after 300000ms — did not finish; journeys did not produce a result — treated as failed, not unknown; screen density check did not produce a result — treated as failed, not unknown
      . the blocking reason has cleared — resuming
@@ -44,15 +42,17 @@ t05-74-email-deliverability.md
      . build/screens/journeys: diff since 1e6daa84caa2 touches something that could render — running fresh
      . build clean
      . screens clean: 215 screens, 28 not reachable
+     . journeys clean: 22 of 22 passed
+     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3583        9577        1862        4668       12020
+Mem:           15603        3157       10002        1832        4639       12445
 -- top --
     ELAPSED   RSS COMMAND
-      00:33 537996 next-server (v1
-   02:55:23 233188 next-server (v1
-      00:13 204296 chrome-headless
-      01:47 184768 node
+      01:35 235088 next-server (v1
+   03:00:23 233188 next-server (v1
+      00:03 162020 node
+      00:03 145800 node
 -- disk --
 /dev/sda1        75G   18G   55G  25% /
