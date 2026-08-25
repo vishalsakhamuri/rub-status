@@ -1,6 +1,6 @@
-generated: 2026-08-25 04:40:01 UTC
+generated: 2026-08-25 04:45:01 UTC
 done:   161
-queued: 11
+queued: 12
 failed: 3
 hold:   0
 
@@ -8,6 +8,7 @@ hold:   0
 n01-147-the-folder-tree.md
 n02-148-preview-and-sharing.md
 n03-149-erasure-and-compliance.md
+p00-151-the-gate-must-use-the-box.md
 q01a-bank-transfer.md
 t06-75-corrections-after-send.md
 t10-79-no1edit-workspace.md
@@ -45,12 +46,12 @@ t05-74-email-deliverability.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        4280       10159         143        1638       11323
+Mem:           15603        1858       12575          99        1600       13744
 -- top --
     ELAPSED   RSS COMMAND
-      05:34 1274944 next-server (v1
-      01:06 880384 chrome-headless
-      04:50 595008 chrome-headless
-      04:54 398336 node
+      10:34 560292 next-server (v1
+      49:00 377576 claude
+      53:44 211632 next-server (v1
+      10:34 129652 node
 -- disk --
 /dev/sda1        75G   24G   49G  33% /
