@@ -1,4 +1,4 @@
-generated: 2026-08-25 03:00:01 UTC
+generated: 2026-08-25 03:05:01 UTC
 done:   159
 queued: 12
 failed: 4
@@ -24,7 +24,6 @@ h00e-118-four-findings-from-the-owners-hands.md
 t05-74-email-deliverability.md
 
 -- log --
-  started Tue 25 Aug 00:28
 ================================================
 
 ---- h00e-118-four-findings-from-the-owners-hands ----  started 00:28:54
@@ -44,15 +43,16 @@ t05-74-email-deliverability.md
      . suite green: 2971 tests
      . build/screens/journeys: diff since 7ef5f7a5cefd touches something that could render — running fresh
      . build clean
+     . screens clean: 215 screens, 28 not reachable
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        4178       10523          92        1312       11424
+Mem:           15603        1692       13007          71        1293       13911
 -- top --
     ELAPSED   RSS COMMAND
-      05:12 1275380 next-server (v1
-      01:30 1127944 chrome-headless
-      05:06 492324 chrome-headless
-      05:10 420124 node
+      03:31 398136 next-server (v1
+   06:05:23 252580 next-server (v1
+      00:31 217804 chrome-headless
+      04:47 207344 node
 -- disk --
 /dev/sda1        75G   18G   55G  25% /
