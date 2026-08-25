@@ -1,4 +1,4 @@
-generated: 2026-08-25 01:45:01 UTC
+generated: 2026-08-25 01:50:01 UTC
 done:   159
 queued: 12
 failed: 4
@@ -24,12 +24,6 @@ h00e-118-four-findings-from-the-owners-hands.md
 t05-74-email-deliverability.md
 
 -- log --
-     [FAILED] (exit 97) 00:18:42
-       moved to tasks/failed/ — the queue carries on
-       reason: completion marker + commit present, but the gate failed: 20 of 2971 tests failing; 64 screen(s) flagged for density, up from 63 on the last green run: /accounting/packets/[packet], /assets/[id], /assets/locations, /assets, /attention, /banking/[account]/reconcile, /banking/[account]/statements/[statement], /bills/bulk/[operation] — see docs/screen-density.md
-       see logs/h00b-150-a-marker-is-completion.log
-
----- h00e-118-four-findings-from-the-owners-hands ----  started 00:18:44
      .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
 ================================================
   RunUrBusiness — draining the task queue
@@ -44,15 +38,21 @@ t05-74-email-deliverability.md
 ================================================
 
 ---- h00f-119-the-panel-stays-the-document-scrolls ----  started 00:35:59
+================================================
+  RunUrBusiness — draining the task queue
+  started Tue 25 Aug 01:45
+================================================
+
+---- h00f-119-the-panel-stays-the-document-scrolls ----  started 01:45:15
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603         932       14742         131         329       14670
+Mem:           15603       10153        1021          57        4825        5449
 -- top --
     ELAPSED   RSS COMMAND
-   04:45:23 239952 next-server (v1
-   04:45:23 35872 node
- 2-05:45:43  9748 systemd-journal
- 2-05:45:43  9500 multipathd
+      03:07 8784820 next-server (v1
+      04:43 330644 claude
+   04:50:23 252500 next-server (v1
+      00:56 205288 node
 -- disk --
-/dev/sda1        75G   25G   47G  35% /
+/dev/sda1        75G   24G   48G  34% /
