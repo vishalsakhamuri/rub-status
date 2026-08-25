@@ -1,7 +1,7 @@
-generated: 2026-08-25 03:50:01 UTC
-done:   159
+generated: 2026-08-25 03:55:01 UTC
+done:   161
 queued: 11
-failed: 5
+failed: 3
 hold:   0
 
 -- queued --
@@ -18,9 +18,7 @@ u23-107-document-clocks-and-the-review-cycle.md
 y00-122-the-four-one-step-jobs.md
 -- failed --
 a08-144-ready-for-the-test-session.md
-h00b-150-a-marker-is-completion.md
 h00e-118-four-findings-from-the-owners-hands.md
-h00f-119-the-panel-stays-the-document-scrolls.md
 t05-74-email-deliverability.md
 
 -- log --
@@ -47,12 +45,12 @@ t05-74-email-deliverability.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1614       13445          94         960       13988
+Mem:           15603        1498       13170          96        1362       14104
 -- top --
     ELAPSED   RSS COMMAND
-      08:12 372068 claude
-      04:45 272656 node
-   06:50:22 234764 next-server (v1
-      00:26 217956 node
+      13:12 374668 claude
+      09:45 293560 node
+      03:44 211584 next-server (v1
+      03:45 126372 node
 -- disk --
 /dev/sda1        75G   24G   49G  33% /
