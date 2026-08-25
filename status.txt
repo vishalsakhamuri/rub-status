@@ -1,4 +1,4 @@
-generated: 2026-08-25 06:35:02 UTC
+generated: 2026-08-25 06:40:01 UTC
 done:   161
 queued: 12
 failed: 3
@@ -23,8 +23,6 @@ h00e-118-four-findings-from-the-owners-hands.md
 t05-74-email-deliverability.md
 
 -- log --
-     . build clean
-     . screens clean: 215 screens, 28 not reachable
      ! JOURNEYS: 1 of 22 failed — one document through all four tools — see docs/journeys-report.md
      . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
      . gate: 68 pass, 5 fail, 0 pending
@@ -43,15 +41,17 @@ t05-74-email-deliverability.md
 
 ---- n01-147-the-folder-tree ----  started 03:41:46
      .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
+     . suite green: 2976 tests
+     . build/screens/journeys: diff since 10a73ab8aaf2 touches something that could render — running fresh
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2302       11586         802        2859       13300
+Mem:           15603        3632       10455         762        2616       11970
 -- top --
     ELAPSED   RSS COMMAND
-      24:46 534180 node
-      24:58 221172 next-server (v1
-      00:04 154728 node
-      24:58 126436 node
+      00:08 1965320 node
+      29:58 221176 next-server (v1
+      00:05 158436 node
+      00:08 145252 node
 -- disk --
 /dev/sda1        75G   24G   48G  34% /
