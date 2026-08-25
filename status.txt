@@ -1,4 +1,4 @@
-generated: 2026-08-25 06:40:01 UTC
+generated: 2026-08-25 06:45:01 UTC
 done:   161
 queued: 12
 failed: 3
@@ -23,7 +23,6 @@ h00e-118-four-findings-from-the-owners-hands.md
 t05-74-email-deliverability.md
 
 -- log --
-     ! JOURNEYS: 1 of 22 failed — one document through all four tools — see docs/journeys-report.md
      . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
      . gate: 68 pass, 5 fail, 0 pending
      ! GATE FAILED: 65 screen(s) flagged for density, up from 63 on the last green run: /accounting/packets/[packet], /assets/[id], /assets/locations, /assets, /attention, /banking/[account]/reconcile, /banking/[account]/statements/[statement], /bills/bulk/[operation] — see docs/screen-density.md
@@ -43,15 +42,16 @@ t05-74-email-deliverability.md
      .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
      . suite green: 2976 tests
      . build/screens/journeys: diff since 10a73ab8aaf2 touches something that could render — running fresh
+     . build clean
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3632       10455         762        2616       11970
+Mem:           15603        4271        9627         801        2844       11331
 -- top --
     ELAPSED   RSS COMMAND
-      00:08 1965320 node
-      29:58 221176 next-server (v1
-      00:05 158436 node
-      00:08 145252 node
+      02:42 1176596 chrome-headless
+      02:48 1175928 next-server (v1
+      02:46 283408 node
+      34:58 221180 next-server (v1
 -- disk --
-/dev/sda1        75G   24G   48G  34% /
+/dev/sda1        75G   18G   54G  25% /
