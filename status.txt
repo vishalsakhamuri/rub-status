@@ -1,4 +1,4 @@
-generated: 2026-08-25 12:20:01 UTC
+generated: 2026-08-25 12:25:01 UTC
 done:   161
 queued: 11
 failed: 4
@@ -23,12 +23,6 @@ n01-147-the-folder-tree.md
 t05-74-email-deliverability.md
 
 -- log --
-  started Tue 25 Aug 03:41
-================================================
-
----- n01-147-the-folder-tree ----  started 03:41:46
-     .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
-     . suite green: 2976 tests
      . build/screens/journeys: diff since 10a73ab8aaf2 touches something that could render — running fresh
      . build clean
      . screens clean: 215 screens, 28 not reachable
@@ -43,15 +37,21 @@ t05-74-email-deliverability.md
        see logs/n01-147-the-folder-tree.log
 
 ---- n02-148-preview-and-sharing ----  started 07:14:26
+================================================
+  RunUrBusiness — draining the task queue
+  started Tue 25 Aug 12:21
+================================================
+
+---- n02-148-preview-and-sharing ----  started 12:21:08
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2753       10929        1182        3446       12849
+Mem:           15603        4734        8945        1182        3449       10868
 -- top --
     ELAPSED   RSS COMMAND
-   05:05:33 519412 claude
-      58:41 331176 node
-   06:09:58 221544 next-server (v1
-   06:09:58 126436 node
+      00:38 2488024 node
+      03:51 333980 claude
+   06:14:57 221548 next-server (v1
+   06:14:58 126436 node
 -- disk --
 /dev/sda1        75G   18G   54G  26% /
