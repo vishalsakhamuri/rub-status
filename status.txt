@@ -1,4 +1,4 @@
-generated: 2026-08-25 03:40:01 UTC
+generated: 2026-08-25 03:45:01 UTC
 done:   159
 queued: 11
 failed: 5
@@ -24,12 +24,6 @@ h00f-119-the-panel-stays-the-document-scrolls.md
 t05-74-email-deliverability.md
 
 -- log --
-  RunUrBusiness — draining the task queue
-  started Tue 25 Aug 01:45
-================================================
-
----- h00f-119-the-panel-stays-the-document-scrolls ----  started 01:45:15
-     . suite green: 2971 tests
      . build/screens/journeys: diff since 7ef5f7a5cefd touches something that could render — running fresh
      . build clean
      . screens clean: 215 screens, 28 not reachable
@@ -44,15 +38,21 @@ t05-74-email-deliverability.md
        see logs/h00f-119-the-panel-stays-the-document-scrolls.log
 
 ---- n01-147-the-folder-tree ----  started 03:25:19
+================================================
+  RunUrBusiness — draining the task queue
+  started Tue 25 Aug 03:41
+================================================
+
+---- n01-147-the-folder-tree ----  started 03:41:46
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603       14049         301         432        2011        1553
+Mem:           15603        3498       11722          49         752       12105
 -- top --
     ELAPSED   RSS COMMAND
-      04:10 11571832 next-server (v1
-      03:45 708276 chrome-headless
-      14:40 422480 claude
-   06:40:23 253180 next-server (v1
+      00:27 2345620 node
+      03:12 338864 claude
+   06:45:23 234760 next-server (v1
+      00:27 75656 npm exec tsc --
 -- disk --
-/dev/sda1        75G   22G   50G  31% /
+/dev/sda1        75G   24G   49G  33% /
