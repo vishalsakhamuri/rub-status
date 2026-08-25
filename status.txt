@@ -1,4 +1,4 @@
-generated: 2026-08-25 00:25:01 UTC
+generated: 2026-08-25 00:30:01 UTC
 done:   159
 queued: 13
 failed: 3
@@ -24,13 +24,6 @@ h00b-150-a-marker-is-completion.md
 t05-74-email-deliverability.md
 
 -- log --
-  RunUrBusiness — draining the task queue
-  started Mon 24 Aug 20:39
-================================================
-
----- h00b-150-a-marker-is-completion ----  started 20:39:41
-     ! SUITE RED: 20 of 2971 tests failing — see logs/suite-latest.log
-     . build/screens/journeys: diff since 1e6daa84caa2 touches something that could render — running fresh
      . build clean
      . screens clean: 215 screens, 28 not reachable
      . journeys clean: 22 of 22 passed
@@ -44,15 +37,22 @@ t05-74-email-deliverability.md
        see logs/h00b-150-a-marker-is-completion.log
 
 ---- h00e-118-four-findings-from-the-owners-hands ----  started 00:18:44
+     .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
+================================================
+  RunUrBusiness — draining the task queue
+  started Tue 25 Aug 00:28
+================================================
+
+---- h00e-118-four-findings-from-the-owners-hands ----  started 00:28:54
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3298        9714        2163        5117       12304
+Mem:           15603        3441        9571        2163        5117       12162
 -- top --
     ELAPSED   RSS COMMAND
-      06:14 394160 claude
-   03:25:23 233188 next-server (v1
-   03:25:23 126256 node
- 2-04:25:43 80820 systemd-journal
+      01:05 318272 claude
+   03:30:23 233188 next-server (v1
+      00:08 158480 node
+      00:09 145640 node
 -- disk --
 /dev/sda1        75G   18G   55G  25% /
