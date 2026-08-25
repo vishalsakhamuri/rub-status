@@ -1,11 +1,10 @@
-generated: 2026-08-25 22:30:01 UTC
+generated: 2026-08-25 22:35:01 UTC
 done:   162
-queued: 11
-failed: 3
+queued: 10
+failed: 4
 hold:   0
 
 -- queued --
-n02-148-preview-and-sharing.md
 n03-149-erasure-and-compliance.md
 p00-151-the-gate-must-use-the-box.md
 q01a-bank-transfer.md
@@ -19,15 +18,10 @@ y00-122-the-four-one-step-jobs.md
 -- failed --
 a08-144-ready-for-the-test-session.md
 h00e-118-four-findings-from-the-owners-hands.md
+n02-148-preview-and-sharing.md
 t05-74-email-deliverability.md
 
 -- log --
-  RunUrBusiness — draining the task queue
-  started Tue 25 Aug 16:26
-================================================
-
----- n03-149-erasure-and-compliance ----  started 16:26:21
-     ! exited clean but produced nothing verifiable — stalled — log ends on a waiting line, no completion marker (commit was made, but a commit is not proof of completion when the task's own words say it isn't finished)
      ! suite did not produce a result at all — see logs/suite-latest.log
      . build/screens/journeys: diff since 3e687aa9aa88 touches something that could render — running fresh
      . build clean
@@ -42,15 +36,21 @@ t05-74-email-deliverability.md
      . orphaned dev server(s) cleaned up before this task starts
 
 ---- p00-151-the-gate-must-use-the-box ----  started 18:13:12
+================================================
+  RunUrBusiness — draining the task queue
+  started Tue 25 Aug 22:31
+================================================
+
+---- n03-149-erasure-and-compliance ----  started 22:31:37
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2844       10762        1326        3665       12758
+Mem:           15603        2775       10827        1334        3677       12827
 -- top --
     ELAPSED   RSS COMMAND
-   04:16:47 407164 claude
-   04:00:09 331740 node
-   16:19:58 233236 next-server (v1
-      05:04 132832 node
+      03:22 314768 claude
+      00:18 279500 node
+   16:24:58 233236 next-server (v1
+      00:13 159240 node
 -- disk --
 /dev/sda1        75G   19G   54G  26% /
