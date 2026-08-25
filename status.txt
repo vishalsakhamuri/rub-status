@@ -1,11 +1,10 @@
-generated: 2026-08-25 00:30:01 UTC
+generated: 2026-08-25 00:35:01 UTC
 done:   159
-queued: 13
-failed: 3
+queued: 12
+failed: 4
 hold:   0
 
 -- queued --
-h00e-118-four-findings-from-the-owners-hands.md
 h00f-119-the-panel-stays-the-document-scrolls.md
 n01-147-the-folder-tree.md
 n02-148-preview-and-sharing.md
@@ -21,10 +20,10 @@ y00-122-the-four-one-step-jobs.md
 -- failed --
 a08-144-ready-for-the-test-session.md
 h00b-150-a-marker-is-completion.md
+h00e-118-four-findings-from-the-owners-hands.md
 t05-74-email-deliverability.md
 
 -- log --
-     . build clean
      . screens clean: 215 screens, 28 not reachable
      . journeys clean: 22 of 22 passed
      . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
@@ -44,15 +43,16 @@ t05-74-email-deliverability.md
 ================================================
 
 ---- h00e-118-four-findings-from-the-owners-hands ----  started 00:28:54
+     .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3441        9571        2163        5117       12162
+Mem:           15603        3414        9596        2187        5142       12188
 -- top --
     ELAPSED   RSS COMMAND
-      01:05 318272 claude
-   03:30:23 233188 next-server (v1
-      00:08 158480 node
-      00:09 145640 node
+      02:11 305968 node
+   03:35:22 233188 next-server (v1
+      00:32 152960 node
+   03:35:23 126256 node
 -- disk --
 /dev/sda1        75G   18G   55G  25% /
