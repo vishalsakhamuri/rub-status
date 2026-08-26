@@ -1,4 +1,4 @@
-generated: 2026-08-26 06:30:01 UTC
+generated: 2026-08-26 06:35:01 UTC
 done:   163
 queued: 10
 failed: 3
@@ -21,12 +21,6 @@ h00e-118-four-findings-from-the-owners-hands.md
 t05-74-email-deliverability.md
 
 -- log --
-     ! GATE FAILED, caused by this task
-     [FAILED] (exit 97) 01:11:00
-       moved to tasks/failed/ — the queue carries on
-       reason: completion marker + commit present, but the gate failed: 65 screen(s) flagged for density, up from 63 on the last green run: /accounting/packets/[packet], /assets/[id], /assets/locations, /assets, /attention, /banking/[account]/reconcile, /banking/[account]/statements/[statement], /bills/bulk/[operation] — see docs/screen-density.md
-       see logs/n03-149-erasure-and-compliance.log
-
 ---- p00-151-the-gate-must-use-the-box ----  started 01:11:02
      .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
 ================================================
@@ -41,15 +35,21 @@ t05-74-email-deliverability.md
 ================================================
 
 ---- n02-148-preview-and-sharing ----  started 05:16:06
+================================================
+  RunUrBusiness — draining the task queue
+  started Wed 26 Aug 06:30
+================================================
+
+---- n02-148-preview-and-sharing ----  started 06:30:58
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603       15291         227        1502        1911         311
+Mem:           15603        2999       12256        1494        2189       12603
 -- top --
     ELAPSED   RSS COMMAND
-      18:16 11666180 next-server (v1
-      04:32 586640 chrome-headless
-   01:13:52 265488 claude
-      04:36 192556 node
+      04:00 323928 claude
+      02:09 281204 node
+      00:31 200032 node
+ 1-00:24:57 143560 next-server (v1
 -- disk --
 /dev/sda1        75G   24G   49G  33% /
