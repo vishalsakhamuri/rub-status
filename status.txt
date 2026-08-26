@@ -1,4 +1,4 @@
-generated: 2026-08-26 16:00:01 UTC
+generated: 2026-08-26 16:05:01 UTC
 done:   163
 queued: 12
 failed: 1
@@ -21,8 +21,6 @@ z00-151-the-gate-must-use-the-box.md
 t05-74-email-deliverability.md
 
 -- log --
-  RunUrBusiness — draining the task queue
-  started Wed 26 Aug 06:30
 ================================================
 
 ---- n02-148-preview-and-sharing ----  started 06:30:58
@@ -41,15 +39,17 @@ t05-74-email-deliverability.md
 #  QUEUE HALTED — see docs/queue-halt.md
 #  re-checking whether the blocking reason still applies...
 ############################################################
+     ! suite did not produce a result at all — see logs/suite-latest.log
+     . build clean
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3100       11274        1532        3222       12502
+Mem:           15603        3559       10814        1532        3223       12043
 -- top --
     ELAPSED   RSS COMMAND
-   04:39:38 573280 node
- 1-09:49:57 163244 next-server (v1
-      00:23 95800 node
-   04:39:38 77164 npm exec vitest
+   04:44:38 578424 node
+      00:39 234956 next-server (v1
+ 1-09:54:57 163244 next-server (v1
+      00:37 151656 node
 -- disk --
-/dev/sda1        75G   24G   48G  34% /
+/dev/sda1        75G   19G   54G  26% /
