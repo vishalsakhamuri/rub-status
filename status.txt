@@ -1,11 +1,10 @@
-generated: 2026-08-26 22:05:01 UTC
+generated: 2026-08-26 22:10:01 UTC
 done:   163
 queued: 12
 failed: 1
 hold:   0
 
 -- queued --
-n02-148-preview-and-sharing.md
 q01a-bank-transfer.md
 t06-75-corrections-after-send.md
 t10-79-no1edit-workspace.md
@@ -16,17 +15,12 @@ u23-107-document-clocks-and-the-review-cycle.md
 y00-122-the-four-one-step-jobs.md
 y01-118-four-findings-from-the-owners-hands.md
 y02-144-ready-for-the-test-session.md
+y03-148-preview-and-sharing.md
 z00-151-the-gate-must-use-the-box.md
 -- failed --
 t05-74-email-deliverability.md
 
 -- log --
-  started Wed 26 Aug 15:21
-================================================
-
-############################################################
-#  QUEUE HALTED — see docs/queue-halt.md
-#  re-checking whether the blocking reason still applies...
 ############################################################
      ! suite did not produce a result at all — see logs/suite-latest.log
      . build clean
@@ -41,15 +35,21 @@ t05-74-email-deliverability.md
      . orphaned dev server(s) cleaned up before this task starts
 
 ---- n02-148-preview-and-sharing ----  started 18:43:23
+================================================
+  RunUrBusiness — draining the task queue
+  started Wed 26 Aug 22:10
+================================================
+
+---- q01a-bank-transfer ----  started 22:10:01
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3175       11168        1573        3296       12428
+Mem:           15603        2589       11752        1573        3297       13013
 -- top --
     ELAPSED   RSS COMMAND
-   03:21:36 352692 claude
-   03:19:31 343464 node
- 1-15:54:58 169872 next-server (v1
-      01:02 112996 node
+ 1-15:59:58 169872 next-server (v1
+ 1-15:59:58 75196 node
+ 4-02:10:43 44800 systemd-journal
+      00:55 13024 systemd
 -- disk --
 /dev/sda1        75G   19G   54G  26% /
