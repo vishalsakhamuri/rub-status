@@ -1,4 +1,4 @@
-generated: 2026-08-26 16:10:01 UTC
+generated: 2026-08-26 16:15:01 UTC
 done:   163
 queued: 12
 failed: 1
@@ -21,8 +21,6 @@ z00-151-the-gate-must-use-the-box.md
 t05-74-email-deliverability.md
 
 -- log --
-
----- n02-148-preview-and-sharing ----  started 06:30:58
 ================================================
   RunUrBusiness — draining the task queue
   started Wed 26 Aug 07:14
@@ -41,15 +39,17 @@ t05-74-email-deliverability.md
      ! suite did not produce a result at all — see logs/suite-latest.log
      . build clean
      ! screen audit did not produce a result at all — see logs/screens-latest.log
+     ! journeys did not produce a result at all — see logs/journeys-latest.log
+     . gate: reusing a server already up on :3000
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3504       10869        1532        3224       12098
+Mem:           15603        3739       10634        1532        3224       11863
 -- top --
     ELAPSED   RSS COMMAND
-   04:49:38 579092 node
-      01:20 238868 next-server (v1
- 1-09:59:57 163244 next-server (v1
-      02:36 161920 node
+   04:54:38 580656 node
+      06:20 240808 next-server (v1
+      02:53 167788 node
+ 1-10:04:57 163244 next-server (v1
 -- disk --
 /dev/sda1        75G   19G   54G  26% /
