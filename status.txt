@@ -1,4 +1,4 @@
-generated: 2026-08-26 00:40:01 UTC
+generated: 2026-08-26 00:45:01 UTC
 done:   162
 queued: 10
 failed: 4
@@ -22,7 +22,6 @@ n02-148-preview-and-sharing.md
 t05-74-email-deliverability.md
 
 -- log --
-     ! screen audit did not produce a result at all — see logs/screens-latest.log
      ! journeys did not produce a result at all — see logs/journeys-latest.log
      [FAILED] (exit 98) 18:13:08
        moved to tasks/failed/ — the queue carries on
@@ -42,15 +41,16 @@ t05-74-email-deliverability.md
      . suite green: 2991 tests
      . build/screens/journeys: diff since 10a73ab8aaf2 touches something that could render — running fresh
      . build clean
+     . screens clean: 218 screens, 31 not reachable
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        4567        9022        1406        3762       11035
+Mem:           15603        3274       10314        1403        3760       12328
 -- top --
     ELAPSED   RSS COMMAND
-      03:47 1209044 next-server (v1
-      03:42 778212 chrome-headless
-      03:45 303940 node
-   18:29:57 233644 next-server (v1
+      00:59 714980 next-server (v1
+   18:34:57 233644 next-server (v1
+      02:14 174960 node
+      00:04 170960 chrome-headless
 -- disk --
 /dev/sda1        75G   19G   54G  26% /
