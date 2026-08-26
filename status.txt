@@ -1,4 +1,4 @@
-generated: 2026-08-26 07:10:01 UTC
+generated: 2026-08-26 07:15:01 UTC
 done:   163
 queued: 10
 failed: 3
@@ -21,12 +21,6 @@ h00e-118-four-findings-from-the-owners-hands.md
 t05-74-email-deliverability.md
 
 -- log --
----- p00-151-the-gate-must-use-the-box ----  started 01:11:02
-     .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
-================================================
-  RunUrBusiness — draining the task queue
-  started Wed 26 Aug 04:27
-================================================
 
 ---- n02-148-preview-and-sharing ----  started 04:27:13
 ================================================
@@ -41,15 +35,21 @@ t05-74-email-deliverability.md
 ================================================
 
 ---- n02-148-preview-and-sharing ----  started 06:30:58
+================================================
+  RunUrBusiness — draining the task queue
+  started Wed 26 Aug 07:14
+================================================
+
+---- n02-148-preview-and-sharing ----  started 07:14:35
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603       13695         198        1707        3784        1907
+Mem:           15603        2589       12942        1467        1951       13013
 -- top --
     ELAPSED   RSS COMMAND
-      03:15 9955728 next-server (v1
-      02:27 809980 chrome-headless
-      39:00 365644 claude
-      02:30 200424 node
+      00:23 293676 claude
+ 1-01:04:57 143700 next-server (v1
+ 1-01:04:57 75196 node
+ 3-11:15:43 12560 systemd-journal
 -- disk --
-/dev/sda1        75G   24G   49G  33% /
+/dev/sda1        75G   24G   48G  34% /
