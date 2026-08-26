@@ -1,4 +1,4 @@
-generated: 2026-08-26 22:10:01 UTC
+generated: 2026-08-26 22:15:01 UTC
 done:   163
 queued: 12
 failed: 1
@@ -21,7 +21,6 @@ z00-151-the-gate-must-use-the-box.md
 t05-74-email-deliverability.md
 
 -- log --
-############################################################
      ! suite did not produce a result at all — see logs/suite-latest.log
      . build clean
      ! screen audit did not produce a result at all — see logs/screens-latest.log
@@ -41,15 +40,16 @@ t05-74-email-deliverability.md
 ================================================
 
 ---- q01a-bank-transfer ----  started 22:10:01
+     .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2589       11752        1573        3297       13013
+Mem:           15603        2793       11546        1587        3313       12809
 -- top --
     ELAPSED   RSS COMMAND
- 1-15:59:58 169872 next-server (v1
- 1-15:59:58 75196 node
- 4-02:10:43 44800 systemd-journal
-      00:55 13024 systemd
+      00:35 316328 claude
+ 1-16:04:58 169872 next-server (v1
+ 1-16:04:58 75196 node
+ 4-02:15:43 44980 systemd-journal
 -- disk --
 /dev/sda1        75G   19G   54G  26% /
