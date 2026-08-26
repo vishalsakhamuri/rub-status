@@ -1,4 +1,4 @@
-generated: 2026-08-26 16:05:01 UTC
+generated: 2026-08-26 16:10:01 UTC
 done:   163
 queued: 12
 failed: 1
@@ -21,7 +21,6 @@ z00-151-the-gate-must-use-the-box.md
 t05-74-email-deliverability.md
 
 -- log --
-================================================
 
 ---- n02-148-preview-and-sharing ----  started 06:30:58
 ================================================
@@ -41,15 +40,16 @@ t05-74-email-deliverability.md
 ############################################################
      ! suite did not produce a result at all — see logs/suite-latest.log
      . build clean
+     ! screen audit did not produce a result at all — see logs/screens-latest.log
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3559       10814        1532        3223       12043
+Mem:           15603        3504       10869        1532        3224       12098
 -- top --
     ELAPSED   RSS COMMAND
-   04:44:38 578424 node
-      00:39 234956 next-server (v1
- 1-09:54:57 163244 next-server (v1
-      00:37 151656 node
+   04:49:38 579092 node
+      01:20 238868 next-server (v1
+ 1-09:59:57 163244 next-server (v1
+      02:36 161920 node
 -- disk --
 /dev/sda1        75G   19G   54G  26% /
