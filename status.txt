@@ -1,10 +1,11 @@
-generated: 2026-08-26 04:20:01 UTC
-done:   162
-queued: 9
-failed: 5
+generated: 2026-08-26 04:25:01 UTC
+done:   163
+queued: 10
+failed: 3
 hold:   0
 
 -- queued --
+n02-148-preview-and-sharing.md
 p00-151-the-gate-must-use-the-box.md
 q01a-bank-transfer.md
 t06-75-corrections-after-send.md
@@ -17,8 +18,6 @@ y00-122-the-four-one-step-jobs.md
 -- failed --
 a08-144-ready-for-the-test-session.md
 h00e-118-four-findings-from-the-owners-hands.md
-n02-148-preview-and-sharing.md
-n03-149-erasure-and-compliance.md
 t05-74-email-deliverability.md
 
 -- log --
@@ -45,12 +44,12 @@ t05-74-email-deliverability.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        8504        3178        1742        6005        7098
+Mem:           15603        8603        3078        1742        6006        6999
 -- top --
     ELAPSED   RSS COMMAND
-   01:11:24 4844876 next-server (v1
-   02:55:56 446260 claude
-   22:09:57 233956 next-server (v1
-   01:11:23 190872 node
+   01:16:24 4776976 next-server (v1
+   03:00:56 459476 claude
+   22:14:58 233956 next-server (v1
+   01:16:23 192160 node
 -- disk --
 /dev/sda1        75G   20G   52G  28% /
