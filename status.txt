@@ -1,11 +1,10 @@
-generated: 2026-08-26 01:10:01 UTC
+generated: 2026-08-26 01:15:01 UTC
 done:   162
-queued: 10
-failed: 4
+queued: 9
+failed: 5
 hold:   0
 
 -- queued --
-n03-149-erasure-and-compliance.md
 p00-151-the-gate-must-use-the-box.md
 q01a-bank-transfer.md
 t06-75-corrections-after-send.md
@@ -19,18 +18,10 @@ y00-122-the-four-one-step-jobs.md
 a08-144-ready-for-the-test-session.md
 h00e-118-four-findings-from-the-owners-hands.md
 n02-148-preview-and-sharing.md
+n03-149-erasure-and-compliance.md
 t05-74-email-deliverability.md
 
 -- log --
-       moved to tasks/failed/ — the queue carries on
-       reason: stalled — log ends on a waiting line, no completion marker (commit was made, but a commit is not proof of completion when the task's own words say it isn't finished)
-       see logs/n03-149-erasure-and-compliance.log
-     ! orphaned dev server found: pid 441595, owned by build, cwd /home/build/runurbusiness (node /usr/bin/pnpm start) — killing it
-     ! orphaned dev server found: pid 441608, owned by build, cwd /home/build/runurbusiness (next-server (v16.2.11)) — killing it
-     . orphaned dev server(s) cleaned up before this task starts
-
----- p00-151-the-gate-must-use-the-box ----  started 18:13:12
-================================================
   RunUrBusiness — draining the task queue
   started Tue 25 Aug 22:31
 ================================================
@@ -42,15 +33,24 @@ t05-74-email-deliverability.md
      . screens clean: 218 screens, 31 not reachable
      . journeys clean: 22 of 22 passed
      . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
+     . gate: 70 pass, 5 fail, 0 pending
+     ! GATE FAILED: 65 screen(s) flagged for density, up from 63 on the last green run: /accounting/packets/[packet], /assets/[id], /assets/locations, /assets, /attention, /banking/[account]/reconcile, /banking/[account]/statements/[statement], /bills/bulk/[operation] — see docs/screen-density.md
+     ! GATE FAILED, caused by this task
+     [FAILED] (exit 97) 01:11:00
+       moved to tasks/failed/ — the queue carries on
+       reason: completion marker + commit present, but the gate failed: 65 screen(s) flagged for density, up from 63 on the last green run: /accounting/packets/[packet], /assets/[id], /assets/locations, /assets, /attention, /banking/[account]/reconcile, /banking/[account]/statements/[statement], /bills/bulk/[operation] — see docs/screen-density.md
+       see logs/n03-149-erasure-and-compliance.log
+
+---- p00-151-the-gate-must-use-the-box ----  started 01:11:02
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3769        9667        1747        4257       11834
+Mem:           15603        2812       10622        1710        4222       12790
 -- top --
     ELAPSED   RSS COMMAND
-      20:31 561956 next-server (v1
-      00:10 350624 chrome-headless
-   18:59:57 233644 next-server (v1
-      00:28 176176 node
+      03:56 335208 claude
+   19:04:57 233644 next-server (v1
+   19:04:57 126436 node
+ 3-05:15:42 64676 systemd-journal
 -- disk --
 /dev/sda1        75G   19G   54G  26% /
