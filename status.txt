@@ -1,4 +1,4 @@
-generated: 2026-08-26 05:15:01 UTC
+generated: 2026-08-26 05:20:01 UTC
 done:   163
 queued: 10
 failed: 3
@@ -21,12 +21,6 @@ h00e-118-four-findings-from-the-owners-hands.md
 t05-74-email-deliverability.md
 
 -- log --
-     . build clean
-     . screens clean: 218 screens, 31 not reachable
-     . journeys clean: 22 of 22 passed
-     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
-     . gate: 70 pass, 5 fail, 0 pending
-     ! GATE FAILED: 65 screen(s) flagged for density, up from 63 on the last green run: /accounting/packets/[packet], /assets/[id], /assets/locations, /assets, /attention, /banking/[account]/reconcile, /banking/[account]/statements/[statement], /bills/bulk/[operation] — see docs/screen-density.md
      ! GATE FAILED, caused by this task
      [FAILED] (exit 97) 01:11:00
        moved to tasks/failed/ — the queue carries on
@@ -41,15 +35,21 @@ t05-74-email-deliverability.md
 ================================================
 
 ---- n02-148-preview-and-sharing ----  started 04:27:13
+================================================
+  RunUrBusiness — draining the task queue
+  started Wed 26 Aug 05:16
+================================================
+
+---- n02-148-preview-and-sharing ----  started 05:16:06
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603       15108         173        1944        2604         494
+Mem:           15603        2932       12277        1456        2173       12670
 -- top --
     ELAPSED   RSS COMMAND
-      05:17 11011360 next-server (v1
-      04:40 834840 chrome-headless
-      47:45 266896 claude
-      04:43 200408 node
+      03:52 325748 claude
+      02:44 283112 node
+      01:08 205228 node
+   23:09:57 143628 next-server (v1
 -- disk --
 /dev/sda1        75G   24G   49G  33% /
