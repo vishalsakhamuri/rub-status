@@ -1,4 +1,4 @@
-generated: 2026-08-26 04:25:01 UTC
+generated: 2026-08-26 04:30:01 UTC
 done:   163
 queued: 10
 failed: 3
@@ -6,7 +6,6 @@ hold:   0
 
 -- queued --
 n02-148-preview-and-sharing.md
-p00-151-the-gate-must-use-the-box.md
 q01a-bank-transfer.md
 t06-75-corrections-after-send.md
 t10-79-no1edit-workspace.md
@@ -15,18 +14,13 @@ u10-90-policy-library-and-acknowledgement.md
 u16-100-search-across-the-suite.md
 u23-107-document-clocks-and-the-review-cycle.md
 y00-122-the-four-one-step-jobs.md
+z00-151-the-gate-must-use-the-box.md
 -- failed --
 a08-144-ready-for-the-test-session.md
 h00e-118-four-findings-from-the-owners-hands.md
 t05-74-email-deliverability.md
 
 -- log --
-  started Tue 25 Aug 22:31
-================================================
-
----- n03-149-erasure-and-compliance ----  started 22:31:37
-     . suite green: 2991 tests
-     . build/screens/journeys: diff since 10a73ab8aaf2 touches something that could render — running fresh
      . build clean
      . screens clean: 218 screens, 31 not reachable
      . journeys clean: 22 of 22 passed
@@ -41,15 +35,21 @@ t05-74-email-deliverability.md
 
 ---- p00-151-the-gate-must-use-the-box ----  started 01:11:02
      .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
+================================================
+  RunUrBusiness — draining the task queue
+  started Wed 26 Aug 04:27
+================================================
+
+---- n02-148-preview-and-sharing ----  started 04:27:13
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        8603        3078        1742        6006        6999
+Mem:           15603        3054        8624        1742        6008       12548
 -- top --
     ELAPSED   RSS COMMAND
-   01:16:24 4776976 next-server (v1
-   03:00:56 459476 claude
-   22:14:58 233956 next-server (v1
-   01:16:23 192160 node
+      02:46 316592 claude
+   22:19:57 233956 next-server (v1
+   22:19:58 126436 node
+ 3-08:30:43 82012 systemd-journal
 -- disk --
 /dev/sda1        75G   20G   52G  28% /
