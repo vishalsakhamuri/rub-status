@@ -1,4 +1,4 @@
-generated: 2026-08-26 01:20:01 UTC
+generated: 2026-08-26 01:25:01 UTC
 done:   162
 queued: 9
 failed: 5
@@ -22,7 +22,6 @@ n03-149-erasure-and-compliance.md
 t05-74-email-deliverability.md
 
 -- log --
-  RunUrBusiness — draining the task queue
   started Tue 25 Aug 22:31
 ================================================
 
@@ -42,15 +41,16 @@ t05-74-email-deliverability.md
        see logs/n03-149-erasure-and-compliance.log
 
 ---- p00-151-the-gate-must-use-the-box ----  started 01:11:02
+     .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3189       10244        1733        4246       12413
+Mem:           15603        2818       10614        1741        4255       12784
 -- top --
     ELAPSED   RSS COMMAND
-      08:57 365336 claude
-      00:49 269008 node
-   19:09:57 233732 next-server (v1
-      00:36 150284 node
+      00:55 315708 claude
+   19:14:57 233736 next-server (v1
+   19:14:57 126436 node
+ 3-05:25:42 64832 systemd-journal
 -- disk --
 /dev/sda1        75G   19G   54G  26% /
