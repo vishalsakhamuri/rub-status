@@ -1,4 +1,4 @@
-generated: 2026-08-27 04:50:01 UTC
+generated: 2026-08-27 04:55:01 UTC
 done:   163
 queued: 10
 failed: 3
@@ -21,7 +21,6 @@ t05-74-email-deliverability.md
 t06-75-corrections-after-send.md
 
 -- log --
-  RunUrBusiness — draining the task queue
   started Thu 27 Aug 02:34
 ================================================
 
@@ -41,15 +40,16 @@ t06-75-corrections-after-send.md
        see logs/t06-75-corrections-after-send.log
 
 ---- t10-79-no1edit-workspace ----  started 04:29:16
+     .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3400       10838        1762        3466       12203
+Mem:           15603        3005       11237        1763        3462       12597
 -- top --
     ELAPSED   RSS COMMAND
-      20:42 419024 claude
-      17:08 314344 node
- 1-22:39:57 257500 next-server (v1
-      00:24 141516 node
+      00:54 322704 claude
+ 1-22:44:57 257500 next-server (v1
+ 1-22:44:58 75196 node
+ 4-08:55:43 43688 systemd-journal
 -- disk --
 /dev/sda1        75G   19G   53G  27% /
