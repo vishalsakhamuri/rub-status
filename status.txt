@@ -1,4 +1,4 @@
-generated: 2026-08-27 16:15:01 UTC
+generated: 2026-08-27 16:20:01 UTC
 done:   167
 queued: 9
 failed: 0
@@ -17,17 +17,6 @@ z00-151-the-gate-must-use-the-box.md
 -- failed --
 
 -- log --
-       see logs/t10-79-no1edit-workspace.log
-To github.com:vishalsakhamuri/runurbusiness.git
- ! [remote rejected] main -> main (cannot lock ref 'refs/heads/main': is at 65238fe8f866df084dbc3f1248f8ae3b3d374dd9 but expected eef71bc2440c46dbd10ab5d199495572f772f961)
-error: failed to push some refs to 'github.com:vishalsakhamuri/runurbusiness.git'
-     ! queue-status.json write/commit/push failed — continuing
-
----- t11-93-digisign-templates ----  started 07:00:03
-================================================
-  RunUrBusiness — draining the task queue
-  started Thu 27 Aug 08:13
-================================================
 
 ---- t11-93-digisign-templates ----  started 08:13:25
      .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
@@ -37,15 +26,26 @@ error: failed to push some refs to 'github.com:vishalsakhamuri/runurbusiness.git
      ! screen audit did not produce a result at all — see logs/screens-latest.log
      ! journeys did not produce a result at all — see logs/journeys-latest.log
      . gate: reusing a server already up on :3000
+================================================
+  RunUrBusiness — draining the task queue
+  started Thu 27 Aug 16:18
+================================================
+     ! orphaned dev server found: pid 693790, owned by build, cwd /home/build/runurbusiness (node /usr/bin/pnpm start) — killing it
+     ! orphaned dev server found: pid 693803, owned by build, cwd /home/build/runurbusiness (next-server (v16.2.11)) — killing it
+     ! orphaned dev server found: pid 704799, owned by build, cwd /home/build/runurbusiness (sh -c next dev) — killing it
+     ! orphaned dev server found: pid 704800, owned by build, cwd /home/build/runurbusiness (node /home/build/runurbusiness/node_modules/.bin/../next/dist/bin/next dev) — killing it
+     . orphaned dev server(s) cleaned up before this task starts
+
+---- t11-93-digisign-templates ----  started 16:18:50
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        5369        8780        1884        3670       10233
+Mem:           15603        4049       10139        1884        3632       11553
 -- top --
     ELAPSED   RSS COMMAND
-   06:53:41 1951688 next-server (v1
-   07:59:00 326364 next-server (v1
- 2-10:04:57 239740 next-server (v1
-   06:52:56 187240 node
+      00:04 657480 next-server (v1
+      01:09 311016 claude
+ 2-10:09:58 239740 next-server (v1
+      00:03 171632 node
 -- disk --
 /dev/sda1        75G   20G   53G  27% /
