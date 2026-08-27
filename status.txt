@@ -1,11 +1,10 @@
-generated: 2026-08-27 17:55:01 UTC
+generated: 2026-08-27 18:00:01 UTC
 done:   167
-queued: 9
-failed: 0
+queued: 8
+failed: 1
 hold:   0
 
 -- queued --
-t11-93-digisign-templates.md
 u10-90-policy-library-and-acknowledgement.md
 u16-100-search-across-the-suite.md
 u23-107-document-clocks-and-the-review-cycle.md
@@ -15,37 +14,38 @@ y02-144-ready-for-the-test-session.md
 y03-148-preview-and-sharing.md
 z00-151-the-gate-must-use-the-box.md
 -- failed --
+t11-93-digisign-templates.md
 
 -- log --
-     ! screen audit did not produce a result at all — see logs/screens-latest.log
-     ! journeys did not produce a result at all — see logs/journeys-latest.log
-     . gate: reusing a server already up on :3000
+     ! GATE FAILED: the test suite did not produce a result — no summary line, treated as failed, not unknown; screens (demo tenant) did not produce a result — treated as failed, not unknown; screens (empty tenant) did not produce a result — treated as failed, not unknown; journeys did not produce a result — treated as failed, not unknown; screen density check did not produce a result — treated as failed, not unknown
+     ! GATE FAILED, caused by this task
+     [FAILED] (exit 97) 17:55:22
+       moved to tasks/failed/ — the queue carries on
+       reason: completion marker + commit present, but the gate failed: the test suite did not produce a result — no summary line, treated as failed, not unknown; screens (demo tenant) did not produce a result — treated as failed, not unknown; screens (empty tenant) did not produce a result — treated as failed, not unknown; journeys did not produce a result — treated as failed, not unknown; screen density check did not produce a result — treated as failed, not unknown
+       see logs/t11-93-digisign-templates.log
+
+############################################################
+#  QUEUE HALTED — the prove-* sweep hit 10 consecutive unattributed failures
+#  see docs/queue-halt.md
+############################################################
 ================================================
   RunUrBusiness — draining the task queue
-  started Thu 27 Aug 16:18
+  started Thu 27 Aug 17:57
 ================================================
-     ! orphaned dev server found: pid 693790, owned by build, cwd /home/build/runurbusiness (node /usr/bin/pnpm start) — killing it
-     ! orphaned dev server found: pid 693803, owned by build, cwd /home/build/runurbusiness (next-server (v16.2.11)) — killing it
-     ! orphaned dev server found: pid 704799, owned by build, cwd /home/build/runurbusiness (sh -c next dev) — killing it
-     ! orphaned dev server found: pid 704800, owned by build, cwd /home/build/runurbusiness (node /home/build/runurbusiness/node_modules/.bin/../next/dist/bin/next dev) — killing it
-     . orphaned dev server(s) cleaned up before this task starts
 
----- t11-93-digisign-templates ----  started 16:18:50
-     ! suite did not produce a result at all — see logs/suite-latest.log
-     . build/screens/journeys: diff since 4c61918adceb touches something that could render — running fresh
-     . build clean
-     ! screen audit did not produce a result at all — see logs/screens-latest.log
-     ! journeys did not produce a result at all — see logs/journeys-latest.log
-     . gate: reusing a server already up on :3000
+############################################################
+#  QUEUE HALTED — see docs/queue-halt.md
+#  re-checking whether the blocking reason still applies...
+############################################################
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3854       10562        1890        3407       11748
+Mem:           15603        3658       10758        1916        3433       11945
 -- top --
     ELAPSED   RSS COMMAND
-      04:43 375600 node
-      21:14 243004 next-server (v1
- 2-11:44:57 240384 next-server (v1
-      04:43 131060 node
+      02:10 490936 node
+      26:14 243004 next-server (v1
+ 2-11:49:57 240384 next-server (v1
+      26:14 129940 node
 -- disk --
 /dev/sda1        75G   19G   53G  27% /
