@@ -1,4 +1,4 @@
-generated: 2026-08-27 09:20:01 UTC
+generated: 2026-08-27 09:25:01 UTC
 done:   163
 queued: 9
 failed: 4
@@ -21,7 +21,6 @@ t06-75-corrections-after-send.md
 t10-79-no1edit-workspace.md
 
 -- log --
-     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
      . gate: 71 pass, 4 fail, 0 pending
      ! GATE FAILED: 65 screen(s) flagged for density, up from 63 on the last green run: /accounting/packets/[packet], /assets/[id], /assets/locations, /assets, /attention, /banking/[account]/reconcile, /banking/[account]/statements/[statement], /bills/bulk/[operation] — see docs/screen-density.md
      ! GATE FAILED, caused by this task
@@ -41,15 +40,16 @@ error: failed to push some refs to 'github.com:vishalsakhamuri/runurbusiness.git
 ================================================
 
 ---- t11-93-digisign-templates ----  started 08:13:25
+     .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3682       10987        1841        3104       11920
+Mem:           15603        4402       10078        1841        3295       11201
 -- top --
     ELAPSED   RSS COMMAND
-   01:06:33 380296 claude
-      30:41 326080 node
-   01:04:00 315416 next-server (v1
- 2-03:09:57 234464 next-server (v1
+      03:41 875248 next-server (v1
+      04:25 338292 claude
+   01:09:00 316764 next-server (v1
+ 2-03:14:57 234464 next-server (v1
 -- disk --
-/dev/sda1        75G   19G   53G  27% /
+/dev/sda1        75G   20G   53G  27% /
