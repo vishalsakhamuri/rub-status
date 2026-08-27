@@ -1,7 +1,7 @@
-generated: 2026-08-27 11:20:01 UTC
-done:   163
+generated: 2026-08-27 11:25:01 UTC
+done:   166
 queued: 9
-failed: 4
+failed: 1
 hold:   0
 
 -- queued --
@@ -15,10 +15,7 @@ y02-144-ready-for-the-test-session.md
 y03-148-preview-and-sharing.md
 z00-151-the-gate-must-use-the-box.md
 -- failed --
-q01a-bank-transfer.md
 t05-74-email-deliverability.md
-t06-75-corrections-after-send.md
-t10-79-no1edit-workspace.md
 
 -- log --
      . gate: 71 pass, 4 fail, 0 pending
@@ -44,12 +41,12 @@ error: failed to push some refs to 'github.com:vishalsakhamuri/runurbusiness.git
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        5711        8516        1873        3582        9891
+Mem:           15603        5773        8437        1874        3599        9829
 -- top --
     ELAPSED   RSS COMMAND
-   01:58:40 1956532 next-server (v1
-   01:10:35 558544 node
-   03:04:00 319388 next-server (v1
- 2-05:09:57 234464 next-server (v1
+   02:03:40 1956692 next-server (v1
+   01:15:35 559404 node
+   03:09:00 319400 next-server (v1
+ 2-05:14:57 234464 next-server (v1
 -- disk --
 /dev/sda1        75G   20G   53G  27% /
