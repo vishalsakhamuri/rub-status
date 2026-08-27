@@ -1,4 +1,4 @@
-generated: 2026-08-27 03:30:01 UTC
+generated: 2026-08-27 03:35:01 UTC
 done:   163
 queued: 11
 failed: 2
@@ -21,9 +21,6 @@ q01a-bank-transfer.md
 t05-74-email-deliverability.md
 
 -- log --
-     . build/screens/journeys: diff since 6cb6c2265c82 touches something that could render — running fresh
-     . build clean
-     . screens clean: 218 screens, 30 not reachable
      . journeys clean: 22 of 22 passed
      . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
      . gate: 71 pass, 4 fail, 0 pending
@@ -41,15 +38,18 @@ t05-74-email-deliverability.md
 ================================================
 
 ---- t06-75-corrections-after-send ----  started 02:34:27
+     . suite green: 3012 tests
+     . build/screens/journeys: diff since b73465bee7d2 touches something that could render — running fresh
+     . build clean
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3353        9233        1725        5068       12249
+Mem:           15603        4337       10231        1766        3126       11265
 -- top --
     ELAPSED   RSS COMMAND
-      41:21 589568 node
- 1-21:19:57 257172 next-server (v1
-      00:05 164080 node
-      41:21 76988 npm exec vitest
+      00:47 759208 next-server (v1
+      00:40 716080 chrome-headless
+ 1-21:24:57 257480 next-server (v1
+      00:45 183180 node
 -- disk --
-/dev/sda1        75G   24G   49G  33% /
+/dev/sda1        75G   19G   54G  27% /
