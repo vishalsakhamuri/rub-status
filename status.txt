@@ -1,4 +1,4 @@
-generated: 2026-08-27 14:20:01 UTC
+generated: 2026-08-27 14:25:01 UTC
 done:   167
 queued: 9
 failed: 0
@@ -17,8 +17,6 @@ z00-151-the-gate-must-use-the-box.md
 -- failed --
 
 -- log --
-     . gate: 71 pass, 4 fail, 0 pending
-     ! GATE FAILED: 65 screen(s) flagged for density, up from 63 on the last green run: /accounting/packets/[packet], /assets/[id], /assets/locations, /assets, /attention, /banking/[account]/reconcile, /banking/[account]/statements/[statement], /bills/bulk/[operation] — see docs/screen-density.md
      ! GATE FAILED, caused by this task
      [FAILED] (exit 97) 07:00:00
        moved to tasks/failed/ — the queue carries on
@@ -37,15 +35,17 @@ error: failed to push some refs to 'github.com:vishalsakhamuri/runurbusiness.git
 
 ---- t11-93-digisign-templates ----  started 08:13:25
      .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
+     ! SUITE RED: 36 of 3019 tests failing — see logs/suite-latest.log
+     . build/screens/journeys: diff since eef71bc2440c touches something that could render — running fresh
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        5780        8463        1884        3575        9822
+Mem:           15603        7308        7129        1884        3380        8294
 -- top --
     ELAPSED   RSS COMMAND
-   04:58:41 1954212 next-server (v1
-   04:10:36 556316 node
-   06:04:00 319856 next-server (v1
- 2-08:09:57 235836 next-server (v1
+      00:10 2060756 node
+   05:03:40 1954112 next-server (v1
+   06:09:00 319856 next-server (v1
+ 2-08:14:57 235836 next-server (v1
 -- disk --
 /dev/sda1        75G   20G   53G  27% /
