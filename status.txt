@@ -1,4 +1,4 @@
-generated: 2026-08-27 02:30:01 UTC
+generated: 2026-08-27 02:35:01 UTC
 done:   163
 queued: 11
 failed: 2
@@ -21,12 +21,6 @@ q01a-bank-transfer.md
 t05-74-email-deliverability.md
 
 -- log --
-  started Wed 26 Aug 22:10
-================================================
-
----- q01a-bank-transfer ----  started 22:10:01
-     .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
-     . suite green: 3009 tests
      . build/screens/journeys: diff since 6cb6c2265c82 touches something that could render — running fresh
      . build clean
      . screens clean: 218 screens, 30 not reachable
@@ -41,15 +35,21 @@ t05-74-email-deliverability.md
        see logs/q01a-bank-transfer.log
 
 ---- t06-75-corrections-after-send ----  started 01:32:32
+================================================
+  RunUrBusiness — draining the task queue
+  started Thu 27 Aug 02:34
+================================================
+
+---- t06-75-corrections-after-send ----  started 02:34:27
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        9642        3141        1716        5019        5960
+Mem:           15603        2743       12681        1683        2178       12859
 -- top --
     ELAPSED   RSS COMMAND
-      01:56 6034140 next-server (v1
-      57:27 397180 claude
-      01:26 345888 chrome-headless
-      01:29 189336 node
+      00:31 314244 claude
+ 1-20:24:57 146812 next-server (v1
+ 1-20:24:57 75196 node
+ 4-06:35:42 19144 systemd-journal
 -- disk --
-/dev/sda1        75G   20G   52G  28% /
+/dev/sda1        75G   23G   49G  32% /
