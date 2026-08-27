@@ -1,4 +1,4 @@
-generated: 2026-08-27 14:30:01 UTC
+generated: 2026-08-27 14:35:01 UTC
 done:   167
 queued: 9
 failed: 0
@@ -17,8 +17,6 @@ z00-151-the-gate-must-use-the-box.md
 -- failed --
 
 -- log --
-       moved to tasks/failed/ — the queue carries on
-       reason: completion marker + commit present, but the gate failed: 65 screen(s) flagged for density, up from 63 on the last green run: /accounting/packets/[packet], /assets/[id], /assets/locations, /assets, /attention, /banking/[account]/reconcile, /banking/[account]/statements/[statement], /bills/bulk/[operation] — see docs/screen-density.md
        see logs/t10-79-no1edit-workspace.log
 To github.com:vishalsakhamuri/runurbusiness.git
  ! [remote rejected] main -> main (cannot lock ref 'refs/heads/main': is at 65238fe8f866df084dbc3f1248f8ae3b3d374dd9 but expected eef71bc2440c46dbd10ab5d199495572f772f961)
@@ -37,15 +35,17 @@ error: failed to push some refs to 'github.com:vishalsakhamuri/runurbusiness.git
      . build/screens/journeys: diff since eef71bc2440c touches something that could render — running fresh
      . build clean
      ! screen audit did not produce a result at all — see logs/screens-latest.log
+     ! journeys did not produce a result at all — see logs/journeys-latest.log
+     . gate: reusing a server already up on :3000
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        5313        8922        1884        3584       10289
+Mem:           15603        5353        8880        1884        3586       10249
 -- top --
     ELAPSED   RSS COMMAND
-   05:08:41 1952832 next-server (v1
-   06:14:00 320596 next-server (v1
- 2-08:19:57 235836 next-server (v1
-   05:07:55 187692 node
+   05:13:41 1952740 next-server (v1
+   06:19:00 320596 next-server (v1
+ 2-08:24:57 235836 next-server (v1
+   05:12:56 188108 node
 -- disk --
 /dev/sda1        75G   20G   53G  27% /
