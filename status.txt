@@ -1,4 +1,4 @@
-generated: 2026-08-27 17:25:01 UTC
+generated: 2026-08-27 17:30:01 UTC
 done:   167
 queued: 9
 failed: 0
@@ -17,7 +17,6 @@ z00-151-the-gate-must-use-the-box.md
 -- failed --
 
 -- log --
-     .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
      ! SUITE RED: 36 of 3019 tests failing — see logs/suite-latest.log
      . build/screens/journeys: diff since eef71bc2440c touches something that could render — running fresh
      . build clean
@@ -37,15 +36,16 @@ z00-151-the-gate-must-use-the-box.md
 ---- t11-93-digisign-templates ----  started 16:18:50
      ! suite did not produce a result at all — see logs/suite-latest.log
      . build/screens/journeys: diff since 4c61918adceb touches something that could render — running fresh
+     . build clean
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        5201        9114        1888        3507       10401
+Mem:           15603        3517       10901        1890        3405       12085
 -- top --
     ELAPSED   RSS COMMAND
-      00:22 1955620 node
- 2-11:14:58 240384 next-server (v1
-      11:26 206368 node
-      00:19 160024 node
+ 2-11:19:57 240384 next-server (v1
+      03:02 235060 next-server (v1
+      01:09 159488 node
+      02:59 152640 node
 -- disk --
-/dev/sda1        75G   20G   53G  27% /
+/dev/sda1        75G   19G   53G  27% /
