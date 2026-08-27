@@ -1,4 +1,4 @@
-generated: 2026-08-27 08:10:01 UTC
+generated: 2026-08-27 08:15:01 UTC
 done:   163
 queued: 9
 failed: 4
@@ -21,12 +21,6 @@ t06-75-corrections-after-send.md
 t10-79-no1edit-workspace.md
 
 -- log --
-     .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
-     . suite green: 3019 tests
-     . build/screens/journeys: diff since b08f0d8e6b5f touches something that could render — running fresh
-     . build clean
-     . screens clean: 218 screens, 30 not reachable
-     . journeys clean: 22 of 22 passed
      . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
      . gate: 71 pass, 4 fail, 0 pending
      ! GATE FAILED: 65 screen(s) flagged for density, up from 63 on the last green run: /accounting/packets/[packet], /assets/[id], /assets/locations, /assets, /attention, /banking/[account]/reconcile, /banking/[account]/statements/[statement], /bills/bulk/[operation] — see docs/screen-density.md
@@ -41,15 +35,21 @@ error: failed to push some refs to 'github.com:vishalsakhamuri/runurbusiness.git
      ! queue-status.json write/commit/push failed — continuing
 
 ---- t11-93-digisign-templates ----  started 07:00:03
+================================================
+  RunUrBusiness — draining the task queue
+  started Thu 27 Aug 08:13
+================================================
+
+---- t11-93-digisign-templates ----  started 08:13:25
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603       10918        1123        1833        5734        4685
+Mem:           15603        5081       10087        1803        2562       10521
 -- top --
     ELAPSED   RSS COMMAND
-   01:08:47 6660280 next-server (v1
-   01:09:56 373672 claude
-      00:58 324512 chrome-headless
- 2-01:59:57 257552 next-server (v1
+      00:14 1970356 node
+      01:33 314156 claude
+ 2-02:04:57 218588 next-server (v1
+      00:10 166344 node
 -- disk --
-/dev/sda1        75G   21G   51G  30% /
+/dev/sda1        75G   19G   53G  27% /
