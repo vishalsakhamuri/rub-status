@@ -1,4 +1,4 @@
-generated: 2026-08-27 22:15:01 UTC
+generated: 2026-08-27 22:20:01 UTC
 done:   168
 queued: 8
 failed: 0
@@ -16,15 +16,6 @@ z00-151-the-gate-must-use-the-box.md
 -- failed --
 
 -- log --
-       see logs/t11-93-digisign-templates.log
-
-############################################################
-#  QUEUE HALTED — the prove-* sweep hit 10 consecutive unattributed failures
-#  see docs/queue-halt.md
-############################################################
-================================================
-  RunUrBusiness — draining the task queue
-  started Thu 27 Aug 17:57
 ================================================
 
 ############################################################
@@ -36,15 +27,24 @@ z00-151-the-gate-must-use-the-box.md
      ! screen audit did not produce a result at all — see logs/screens-latest.log
      ! journeys did not produce a result at all — see logs/journeys-latest.log
      . gate: reusing a server already up on :3000
+================================================
+  RunUrBusiness — draining the task queue
+  started Thu 27 Aug 22:19
+================================================
+
+############################################################
+#  QUEUE HALTED — see docs/queue-halt.md
+#  re-checking whether the blocking reason still applies...
+############################################################
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3324       11077        1933        3464       12278
+Mem:           15603        3400       11001        1933        3464       12202
 -- top --
     ELAPSED   RSS COMMAND
-   04:41:14 251472 next-server (v1
- 2-16:04:58 240384 next-server (v1
-   04:41:15 129940 node
-      02:34 128824 node
+   04:46:14 251472 next-server (v1
+ 2-16:09:57 240384 next-server (v1
+   04:46:14 129940 node
+      02:33 129672 node
 -- disk --
 /dev/sda1        75G   19G   53G  27% /
