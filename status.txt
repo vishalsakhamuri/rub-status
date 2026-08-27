@@ -1,4 +1,4 @@
-generated: 2026-08-27 03:40:01 UTC
+generated: 2026-08-27 03:45:01 UTC
 done:   163
 queued: 11
 failed: 2
@@ -21,7 +21,6 @@ q01a-bank-transfer.md
 t05-74-email-deliverability.md
 
 -- log --
-     . journeys clean: 22 of 22 passed
      . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
      . gate: 71 pass, 4 fail, 0 pending
      ! GATE FAILED: 68 screen(s) flagged for density, up from 63 on the last green run: /accounting/packets/[packet], /accounting/packets, /assets/[id], /assets/locations, /assets, /attention, /banking/[account]/reconcile, /banking/[account]/statements/[statement] — see docs/screen-density.md
@@ -41,15 +40,16 @@ t05-74-email-deliverability.md
      . suite green: 3012 tests
      . build/screens/journeys: diff since b73465bee7d2 touches something that could render — running fresh
      . build clean
+     . screens clean: 218 screens, 30 not reachable
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        4869        9695        1761        3124       10733
+Mem:           15603        3538       11024        1758        3123       12064
 -- top --
     ELAPSED   RSS COMMAND
-      05:47 1332104 next-server (v1
-      05:40 525576 chrome-headless
-      05:45 333176 node
- 1-21:29:57 257484 next-server (v1
+      00:54 551068 next-server (v1
+ 1-21:34:57 257484 next-server (v1
+      00:23 190220 chrome-headless
+      02:10 177224 node
 -- disk --
 /dev/sda1        75G   19G   54G  27% /
