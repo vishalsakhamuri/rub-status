@@ -1,4 +1,4 @@
-generated: 2026-08-27 00:30:01 UTC
+generated: 2026-08-27 00:35:01 UTC
 done:   163
 queued: 12
 failed: 1
@@ -21,8 +21,6 @@ z00-151-the-gate-must-use-the-box.md
 t05-74-email-deliverability.md
 
 -- log --
-     ! suite did not produce a result at all — see logs/suite-latest.log
-     . build clean
      ! screen audit did not produce a result at all — see logs/screens-latest.log
      ! journeys did not produce a result at all — see logs/journeys-latest.log
      . gate: reusing a server already up on :3000
@@ -41,15 +39,17 @@ t05-74-email-deliverability.md
 
 ---- q01a-bank-transfer ----  started 22:10:01
      .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
+     . suite green: 3009 tests
+     . build/screens/journeys: diff since 6cb6c2265c82 touches something that could render — running fresh
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3315       11016        1685        3421       12287
+Mem:           15603        5981        8349        1686        3422        9621
 -- top --
     ELAPSED   RSS COMMAND
-      39:17 576476 node
- 1-18:19:57 169876 next-server (v1
-      00:11 128328 node
-      39:17 76800 npm exec vitest
+      00:17 1948284 node
+      00:47 1339508 node
+ 1-18:24:57 169876 next-server (v1
+      00:43 142512 node
 -- disk --
 /dev/sda1        75G   19G   54G  26% /
