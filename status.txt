@@ -1,4 +1,4 @@
-generated: 2026-08-28 13:25:01 UTC
+generated: 2026-08-28 13:30:01 UTC
 done:   171
 queued: 5
 failed: 0
@@ -13,13 +13,6 @@ z00-151-the-gate-must-use-the-box.md
 -- failed --
 
 -- log --
-================================================
-  RunUrBusiness — draining the task queue
-  started Fri 28 Aug 10:16
-================================================
-
----- u23-107-document-clocks-and-the-review-cycle ----  started 10:16:31
-================================================
   RunUrBusiness — draining the task queue
   started Fri 28 Aug 10:48
 ================================================
@@ -33,15 +26,22 @@ z00-151-the-gate-must-use-the-box.md
 ---- y00-122-the-four-one-step-jobs ----  started 10:50:45
      .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
      ! exited clean but produced nothing verifiable — attempt 2 of 2 — no commit and no completion marker
+run-queue.sh: line 167: 828656 Killed                     npx vitest run > "$suite_log" 2>&1
+================================================
+  RunUrBusiness — draining the task queue
+  started Fri 28 Aug 13:29
+================================================
+
+---- y00-122-the-four-one-step-jobs ----  started 13:29:31
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3707        9530        2133        4837       11895
+Mem:           15603        3215        9989        2133        4870       12387
 -- top --
     ELAPSED   RSS COMMAND
-   02:17:32 582736 node
- 3-07:14:57 240968 next-server (v1
-      03:53 123452 node
- 5-17:25:43 84820 systemd-journal
+      00:27 298776 claude
+      00:27 222428 next-server (v1
+      00:28 126476 node
+ 5-17:30:43 85608 systemd-journal
 -- disk --
 /dev/sda1        75G   20G   52G  28% /
