@@ -1,4 +1,4 @@
-generated: 2026-08-28 16:25:01 UTC
+generated: 2026-08-28 16:30:01 UTC
 done:   171
 queued: 5
 failed: 0
@@ -13,12 +13,6 @@ z00-151-the-gate-must-use-the-box.md
 -- failed --
 
 -- log --
-     ! exited clean but produced nothing verifiable — attempt 2 of 2 — no commit and no completion marker
-run-queue.sh: line 167: 828656 Killed                     npx vitest run > "$suite_log" 2>&1
-================================================
-  RunUrBusiness — draining the task queue
-  started Fri 28 Aug 13:29
-================================================
 
 ---- y00-122-the-four-one-step-jobs ----  started 13:29:31
 ================================================
@@ -33,15 +27,21 @@ run-queue.sh: line 167: 828656 Killed                     npx vitest run > "$sui
 ================================================
 
 ---- y00-122-the-four-one-step-jobs ----  started 16:00:01
+================================================
+  RunUrBusiness — draining the task queue
+  started Fri 28 Aug 16:25
+================================================
+
+---- y00-122-the-four-one-step-jobs ----  started 16:25:01
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3175       10015        2212        4964       12427
+Mem:           15603        3309        9879        2212        4966       12293
 -- top --
     ELAPSED   RSS COMMAND
-      29:27 215556 next-server (v1
-      29:28 126752 node
- 5-20:25:42 88728 systemd-journal
- 5-20:25:49 11084 systemd
+      04:57 333240 claude
+      34:27 215560 next-server (v1
+      34:28 126752 node
+ 5-20:30:43 89056 systemd-journal
 -- disk --
 /dev/sda1        75G   20G   52G  28% /
