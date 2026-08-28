@@ -1,4 +1,4 @@
-generated: 2026-08-28 13:40:01 UTC
+generated: 2026-08-28 13:45:01 UTC
 done:   171
 queued: 5
 failed: 0
@@ -36,12 +36,12 @@ run-queue.sh: line 167: 828656 Killed                     npx vitest run > "$sui
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3681        9519        2133        4875       11921
+Mem:           15603        3496        9704        2133        4875       12107
 -- top --
     ELAPSED   RSS COMMAND
-      10:27 377916 claude
-      05:32 231768 next-server (v1
-      10:27 222448 next-server (v1
-      00:10 194928 node
+      15:27 379752 claude
+      10:32 232836 next-server (v1
+      15:27 222452 next-server (v1
+      10:32 129612 node
 -- disk --
 /dev/sda1        75G   20G   52G  28% /
