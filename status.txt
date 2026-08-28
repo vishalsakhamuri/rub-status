@@ -1,4 +1,4 @@
-generated: 2026-08-28 23:45:01 UTC
+generated: 2026-08-28 23:50:01 UTC
 done:   172
 queued: 4
 failed: 0
@@ -12,8 +12,6 @@ z00-151-the-gate-must-use-the-box.md
 -- failed --
 
 -- log --
-     ! GATE FAILED, caused by this task
-     ! task had self-moved to tasks/done/ — moved back to tasks/failed/, the gate said otherwise
      [FAILED] (exit 97) 21:25:51
        moved to tasks/failed/ — the queue carries on
        reason: completion marker + commit present, but the gate failed: the test suite did not produce a result — no summary line, treated as failed, not unknown; screens (demo tenant) did not produce a result — treated as failed, not unknown; screens (empty tenant) did not produce a result — treated as failed, not unknown; screen density check did not produce a result — treated as failed, not unknown
@@ -32,15 +30,17 @@ z00-151-the-gate-must-use-the-box.md
 #  QUEUE HALTED — see docs/queue-halt.md
 #  re-checking whether the blocking reason still applies...
 ############################################################
+     ! SUITE RED: 34 of 3019 tests failing — see logs/suite-latest.log
+     . build clean
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3917        7386        2337        6976       11685
+Mem:           15603        5742        5560        2376        7015        9860
 -- top --
     ELAPSED   RSS COMMAND
-   02:17:51 577664 node
-   03:41:22 222764 next-server (v1
-      00:04 181652 node
-   03:41:22 126152 node
+      00:55 1266748 chrome-headless
+      01:00 1012752 next-server (v1
+   03:46:22 222768 next-server (v1
+      00:58 183884 node
 -- disk --
 /dev/sda1        75G   20G   52G  28% /
