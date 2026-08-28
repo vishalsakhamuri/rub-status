@@ -1,7 +1,7 @@
-generated: 2026-08-28 05:15:01 UTC
-done:   169
+generated: 2026-08-28 05:20:01 UTC
+done:   170
 queued: 6
-failed: 1
+failed: 0
 hold:   0
 
 -- queued --
@@ -12,7 +12,6 @@ y02-144-ready-for-the-test-session.md
 y03-148-preview-and-sharing.md
 z00-151-the-gate-must-use-the-box.md
 -- failed --
-u16-100-search-across-the-suite.md
 
 -- log --
        moved to tasks/failed/ — the queue carries on
@@ -38,12 +37,12 @@ u16-100-search-across-the-suite.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3501        9999        2046        4487       12101
+Mem:           15603        3673        9827        2049        4490       11929
 -- top --
     ELAPSED   RSS COMMAND
-      22:49 340596 claude
-      16:46 302488 node
- 2-23:04:58 240828 next-server (v1
-      16:46 76916 npm exec vitest
+      27:49 341212 claude
+      21:46 312664 node
+ 2-23:09:58 240828 next-server (v1
+      00:11 179692 node
 -- disk --
 /dev/sda1        75G   20G   52G  28% /
