@@ -1,4 +1,4 @@
-generated: 2026-08-28 02:25:01 UTC
+generated: 2026-08-28 02:30:01 UTC
 done:   168
 queued: 8
 failed: 0
@@ -16,7 +16,6 @@ z00-151-the-gate-must-use-the-box.md
 -- failed --
 
 -- log --
-############################################################
 #  QUEUE HALTED — see docs/queue-halt.md
 #  re-checking whether the blocking reason still applies...
 ############################################################
@@ -36,15 +35,16 @@ z00-151-the-gate-must-use-the-box.md
      . suite green: 3019 tests
      . build/screens/journeys: diff since 188da5fe14ed touches something that could render — running fresh
      . build clean
+     . screens clean: 218 screens, 30 not reachable
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3114       10736        2010        4102       12489
+Mem:           15603        4177        9672        2044        4136       11425
 -- top --
     ELAPSED   RSS COMMAND
- 2-20:14:58 240764 next-server (v1
- 2-20:14:58 75196 node
- 5-06:25:43 72772 systemd-journal
- 5-06:25:49 10816 systemd
+      03:43 883256 next-server (v1
+ 2-20:19:58 240764 next-server (v1
+      04:59 207484 node
+      00:05 148132 chrome-headless
 -- disk --
 /dev/sda1        75G   20G   53G  28% /
