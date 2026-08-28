@@ -1,4 +1,4 @@
-generated: 2026-08-28 21:00:01 UTC
+generated: 2026-08-28 21:05:01 UTC
 done:   172
 queued: 4
 failed: 0
@@ -12,8 +12,6 @@ z00-151-the-gate-must-use-the-box.md
 -- failed --
 
 -- log --
----- y00-122-the-four-one-step-jobs ----  started 16:50:01
-To github.com:vishalsakhamuri/runurbusiness.git
  ! [remote rejected] main -> main (cannot lock ref 'refs/heads/main': is at 6516421688e24678d0822ab9cbe106ec27562ccb but expected afaee5a005c52cb27f1ff5a7c4d3dcee92122c01)
 error: failed to push some refs to 'github.com:vishalsakhamuri/runurbusiness.git'
      ! queue-status.json write/commit/push failed — continuing
@@ -32,15 +30,17 @@ Terminated                 npx vitest run > "$suite_log" 2>&1
      . build/screens/journeys: diff since 9334c7e38547 touches something that could render — running fresh
      . build clean
      ! screen audit did not produce a result at all — see logs/screens-latest.log
+     ! JOURNEYS: 4 of 4 failed — open a document, upload and self-sign, invite and sign in, (remaining journeys) — see docs/journeys-report.md
+     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3666        7641        2319        6954       11936
+Mem:           15603        3795        7512        2296        6930       11808
 -- top --
     ELAPSED   RSS COMMAND
-      08:26 242640 next-server (v1
-      56:22 222524 next-server (v1
-      09:41 176908 node
-      03:41 134748 chrome-headless
+      00:37 235860 next-server (v1
+   01:01:22 222528 next-server (v1
+      00:34 131076 node
+      00:34 130720 node
 -- disk --
 /dev/sda1        75G   20G   52G  28% /
