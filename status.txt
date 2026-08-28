@@ -1,4 +1,4 @@
-generated: 2026-08-28 10:15:01 UTC
+generated: 2026-08-28 10:20:01 UTC
 done:   170
 queued: 6
 failed: 0
@@ -14,12 +14,6 @@ z00-151-the-gate-must-use-the-box.md
 -- failed --
 
 -- log --
-       moved to tasks/failed/ — the queue carries on
-       reason: completion marker + commit present, but the gate failed: 65 screen(s) flagged for density, up from 63 on the last green run: /accounting/packets/[packet], /assets/[id], /assets/locations, /assets, /attention, /banking/[account]/reconcile, /banking/[account]/statements/[statement], /bills/bulk/[operation] — see docs/screen-density.md
-       see logs/u10-90-policy-library-and-acknowledgement.log
-
----- u16-100-search-across-the-suite ----  started 03:06:01
-     . suite green: 3019 tests
      . build/screens/journeys: diff since d17e96e1a183 touches something that could render — running fresh
      . build clean
      ! SCREENS: 1 broken, 0 blank, 0 404 of 218 — see docs/screen-audit.md
@@ -34,15 +28,21 @@ z00-151-the-gate-must-use-the-box.md
        see logs/u16-100-search-across-the-suite.log
 
 ---- u23-107-document-clocks-and-the-review-cycle ----  started 04:52:10
+================================================
+  RunUrBusiness — draining the task queue
+  started Fri 28 Aug 10:16
+================================================
+
+---- u23-107-document-clocks-and-the-review-cycle ----  started 10:16:31
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3651        9842        2095        4544       11951
+Mem:           15603        3422       10070        2095        4545       12181
 -- top --
     ELAPSED   RSS COMMAND
-   04:00:56 581492 node
- 3-04:04:57 240956 next-server (v1
-      01:09 96004 node
- 5-14:15:42 80436 systemd-journal
+      03:27 328324 claude
+ 3-04:09:57 240956 next-server (v1
+      01:34 128808 node
+      01:34 107412 node
 -- disk --
 /dev/sda1        75G   20G   52G  28% /
