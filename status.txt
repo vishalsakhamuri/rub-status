@@ -1,4 +1,4 @@
-generated: 2026-08-28 04:15:01 UTC
+generated: 2026-08-28 04:20:01 UTC
 done:   169
 queued: 7
 failed: 0
@@ -15,8 +15,6 @@ z00-151-the-gate-must-use-the-box.md
 -- failed --
 
 -- log --
----- u10-90-policy-library-and-acknowledgement ----  started 00:56:40
-     . suite green: 3019 tests
      . build/screens/journeys: diff since 188da5fe14ed touches something that could render — running fresh
      . build clean
      . screens clean: 218 screens, 30 not reachable
@@ -35,15 +33,17 @@ z00-151-the-gate-must-use-the-box.md
      . build/screens/journeys: diff since d17e96e1a183 touches something that could render — running fresh
      . build clean
      ! SCREENS: 1 broken, 0 blank, 0 404 of 218 — see docs/screen-audit.md
+     . journeys clean: 22 of 22 passed
+     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        4070        9602        2063        4333       11532
+Mem:           15603        3654       10018        2010        4280       11948
 -- top --
     ELAPSED   RSS COMMAND
-      02:58 652692 next-server (v1
- 2-22:04:57 240828 next-server (v1
-      00:26 235508 chrome-headless
-      04:13 194136 node
+      02:05 322848 next-server (v1
+ 2-22:09:57 240828 next-server (v1
+      01:00 130280 node
+      01:00 130020 node
 -- disk --
 /dev/sda1        75G   20G   53G  28% /
