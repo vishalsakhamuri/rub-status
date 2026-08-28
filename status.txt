@@ -1,4 +1,4 @@
-generated: 2026-08-28 02:10:01 UTC
+generated: 2026-08-28 02:15:01 UTC
 done:   168
 queued: 8
 failed: 0
@@ -16,9 +16,6 @@ z00-151-the-gate-must-use-the-box.md
 -- failed --
 
 -- log --
-  started Thu 27 Aug 22:19
-================================================
-
 ############################################################
 #  QUEUE HALTED — see docs/queue-halt.md
 #  re-checking whether the blocking reason still applies...
@@ -36,15 +33,18 @@ z00-151-the-gate-must-use-the-box.md
      . orphaned dev server(s) cleaned up before this task starts
 
 ---- u10-90-policy-library-and-acknowledgement ----  started 00:56:40
+     . suite green: 3019 tests
+     . build/screens/journeys: diff since 188da5fe14ed touches something that could render — running fresh
+     . build clean
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3734       10117        2052        4143       11869
+Mem:           15603        5168        8880        2010        3903       10434
 -- top --
     ELAPSED   RSS COMMAND
-      27:40 575328 node
- 2-19:59:58 240764 next-server (v1
-      00:07 165224 node
-      27:40 78456 npm exec vitest
+      00:24 2070752 node
+ 2-20:04:58 240764 next-server (v1
+      00:21 143572 node
+      00:24 127864 node
 -- disk --
-/dev/sda1        75G   20G   53G  28% /
+/dev/sda1        75G   20G   53G  27% /
