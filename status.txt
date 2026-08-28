@@ -1,4 +1,4 @@
-generated: 2026-08-28 20:50:01 UTC
+generated: 2026-08-28 20:55:01 UTC
 done:   172
 queued: 4
 failed: 0
@@ -12,7 +12,6 @@ z00-151-the-gate-must-use-the-box.md
 -- failed --
 
 -- log --
-
 ---- y00-122-the-four-one-step-jobs ----  started 16:50:01
 To github.com:vishalsakhamuri/runurbusiness.git
  ! [remote rejected] main -> main (cannot lock ref 'refs/heads/main': is at 6516421688e24678d0822ab9cbe106ec27562ccb but expected afaee5a005c52cb27f1ff5a7c4d3dcee92122c01)
@@ -32,15 +31,16 @@ Terminated                 npx vitest run > "$suite_log" 2>&1
      ! suite did not produce a result at all — see logs/suite-latest.log
      . build/screens/journeys: diff since 9334c7e38547 touches something that could render — running fresh
      . build clean
+     ! screen audit did not produce a result at all — see logs/screens-latest.log
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3718        7589        2319        6954       11884
+Mem:           15603        3564        7743        2296        6930       12039
 -- top --
     ELAPSED   RSS COMMAND
-      04:04 241464 next-server (v1
-      46:22 222516 next-server (v1
-      04:02 163304 node
-      00:44 134152 chrome-headless
+      03:26 237060 next-server (v1
+      51:22 222520 next-server (v1
+      04:41 163948 node
+      03:27 129800 node
 -- disk --
 /dev/sda1        75G   20G   52G  28% /
