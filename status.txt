@@ -1,4 +1,4 @@
-generated: 2026-08-28 20:00:01 UTC
+generated: 2026-08-28 20:05:01 UTC
 done:   172
 queued: 4
 failed: 0
@@ -12,7 +12,6 @@ z00-151-the-gate-must-use-the-box.md
 -- failed --
 
 -- log --
-================================================
   RunUrBusiness — draining the task queue
   started Fri 28 Aug 16:50
 ================================================
@@ -32,15 +31,16 @@ To github.com:vishalsakhamuri/runurbusiness.git
  ! [remote rejected] main -> main (cannot lock ref 'refs/heads/main': is at 1ff0d24d9c22d34da1a4d610bd8098e9e28a07db but expected cc2f30a849cc1c9caa3ac46ca7bd963122ab8c8f)
 error: failed to push some refs to 'github.com:vishalsakhamuri/runurbusiness.git'
      ! queue-status.json write/commit/push failed — continuing
+Terminated                 npx vitest run > "$suite_log" 2>&1
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3792        7519        2296        6927       11810
+Mem:           15603        3184        8124        2296        6929       12418
 -- top --
     ELAPSED   RSS COMMAND
-   02:26:19 576104 node
-   04:04:28 225408 next-server (v1
-   04:04:28 126752 node
-      05:21 106536 node
+      01:22 222472 next-server (v1
+      01:22 126152 node
+ 6-00:05:43 97760 systemd-journal
+      03:56 12908 systemd
 -- disk --
 /dev/sda1        75G   20G   52G  28% /
