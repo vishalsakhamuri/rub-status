@@ -1,4 +1,4 @@
-generated: 2026-08-28 10:45:01 UTC
+generated: 2026-08-28 10:50:01 UTC
 done:   170
 queued: 6
 failed: 0
@@ -14,12 +14,6 @@ z00-151-the-gate-must-use-the-box.md
 -- failed --
 
 -- log --
-     . build/screens/journeys: diff since d17e96e1a183 touches something that could render — running fresh
-     . build clean
-     ! SCREENS: 1 broken, 0 blank, 0 404 of 218 — see docs/screen-audit.md
-     . journeys clean: 22 of 22 passed
-     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
-     . gate: 70 pass, 5 fail, 0 pending
      ! GATE FAILED: 64 screen(s) flagged for density, up from 63 on the last green run: /accounting/packets/[packet], /assets/[id], /assets/locations, /assets, /attention, /banking/[account]/reconcile, /banking/[account]/statements/[statement], /bills/bulk/[operation] — see docs/screen-density.md
      ! GATE FAILED, caused by this task
      [FAILED] (exit 97) 04:52:08
@@ -34,15 +28,21 @@ z00-151-the-gate-must-use-the-box.md
 ================================================
 
 ---- u23-107-document-clocks-and-the-review-cycle ----  started 10:16:31
+================================================
+  RunUrBusiness — draining the task queue
+  started Fri 28 Aug 10:48
+================================================
+
+---- u23-107-document-clocks-and-the-review-cycle ----  started 10:48:56
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3473       10017        2095        4547       12129
+Mem:           15603        3435       10022        2095        4581       12167
 -- top --
     ELAPSED   RSS COMMAND
-      28:27 364312 claude
- 3-04:34:58 240956 next-server (v1
-      07:11 128036 node
-      07:11 120916 node
+      01:03 317236 claude
+ 3-04:39:58 240956 next-server (v1
+      00:11 145852 node
+      00:10 106288 node
 -- disk --
 /dev/sda1        75G   20G   52G  28% /
