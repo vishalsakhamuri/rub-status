@@ -1,11 +1,10 @@
-generated: 2026-08-29 02:15:01 UTC
-done:   172
-queued: 4
+generated: 2026-08-29 02:20:01 UTC
+done:   173
+queued: 3
 failed: 0
 hold:   0
 
 -- queued --
-y01-118-four-findings-from-the-owners-hands.md
 y02-144-ready-for-the-test-session.md
 y03-148-preview-and-sharing.md
 z00-151-the-gate-must-use-the-box.md
@@ -35,12 +34,12 @@ z00-151-the-gate-must-use-the-box.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        4039        7081        2371        7193       11564
+Mem:           15603        4514        6606        2369        7191       11088
 -- top --
     ELAPSED   RSS COMMAND
-      00:33 485648 next-server (v1
-   06:11:22 222872 next-server (v1
-      00:16 180572 chrome-headless
-      01:50 177744 node
+      05:33 918484 next-server (v1
+   06:16:22 233736 next-server (v1
+      06:50 213220 node
+      00:03 165620 chrome-headless
 -- disk --
 /dev/sda1        75G   20G   52G  28% /
