@@ -1,4 +1,4 @@
-generated: 2026-08-29 13:45:01 UTC
+generated: 2026-08-29 13:50:01 UTC
 done:   174
 queued: 3
 failed: 0
@@ -11,8 +11,6 @@ z00-151-the-gate-must-use-the-box.md
 -- failed --
 
 -- log --
-     ! task had self-moved to tasks/done/ — moved back to tasks/failed/, the gate said otherwise
-     [FAILED] (exit 97) 11:06:46
        moved to tasks/failed/ — the queue carries on
        reason: completion marker + commit present, but the gate failed: 21 of 3019 tests failing; screens (demo tenant) did not produce a result — treated as failed, not unknown; screens (empty tenant) did not produce a result — treated as failed, not unknown; scripts/prove-access-boundaries.ts failed (h00a-123 is marked done):   code: 'XX000', /   severity_local: 'FATAL' / } /  / Node.js v22.23.1; scripts/prove-mail-transport.ts failed (h00-80 is marked done): killed (SIGTERM) after exceeding its 300000ms cap — did not finish; journeys did not produce a result — treated as failed, not unknown; screen density check did not produce a result — treated as failed, not unknown
        see logs/y02-144-ready-for-the-test-session.log
@@ -31,15 +29,17 @@ z00-151-the-gate-must-use-the-box.md
 #  re-checking whether the blocking reason still applies...
 ############################################################
      ! suite did not produce a result at all — see logs/suite-latest.log
+     . build clean
+     ! screen audit did not produce a result at all — see logs/screens-latest.log
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603       10009         893        6474       11514        5594
+Mem:           15603        9267        2253        6232       10654        6335
 -- top --
     ELAPSED   RSS COMMAND
-      00:28 2574512 node
-      40:25 223296 next-server (v1
-      00:24 145284 node
-      00:28 129036 node
+      00:06 1843568 node
+      45:25 223300 next-server (v1
+      00:10 195648 node
+      00:01 162924 node
 -- disk --
 /dev/sda1        75G   20G   52G  28% /
