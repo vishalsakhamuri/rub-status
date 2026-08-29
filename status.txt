@@ -1,4 +1,4 @@
-generated: 2026-08-29 23:40:01 UTC
+generated: 2026-08-29 23:45:01 UTC
 done:   173
 queued: 4
 failed: 1
@@ -13,7 +13,6 @@ z00-151-the-gate-must-use-the-box.md
 x00-152-the-fixture-litter-ratchet.md
 
 -- log --
-================================================
   RunUrBusiness — draining the task queue
   started Sat 29 Aug 19:20
 ================================================
@@ -33,15 +32,16 @@ x00-152-the-fixture-litter-ratchet.md
 ############################################################
      ! SUITE RED: 19 of 3019 tests failing — see logs/suite-latest.log
      . build clean
+     . screens clean: 218 screens, 48 not reachable
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        9505        2070        6391       10758        6097
+Mem:           15603        8559        3016        6387       10753        7043
 -- top --
     ELAPSED   RSS COMMAND
-      02:21 1112036 chrome-headless
-   02:53:06 741760 next-server (v1
-      02:25 301752 node
-   02:53:03 222572 next-server (v1
+   02:58:06 833952 next-server (v1
+   02:58:03 222576 next-server (v1
+      00:15 218040 chrome-headless
+      03:00 213036 node
 -- disk --
 /dev/sda1        75G   21G   52G  29% /
