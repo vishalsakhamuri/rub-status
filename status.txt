@@ -1,4 +1,4 @@
-generated: 2026-08-29 10:05:01 UTC
+generated: 2026-08-29 10:10:01 UTC
 done:   174
 queued: 3
 failed: 0
@@ -11,9 +11,6 @@ z00-151-the-gate-must-use-the-box.md
 -- failed --
 
 -- log --
-     ! GATE FAILED: 34 of 3019 tests failing; scripts/prove-access-boundaries.ts failed (h00a-123 is marked done): wrote docs/rls-audit.md (174 tables) /  / cleaned up test companies and users /  / [31m1 CHECK(S) FAILED[0m; scripts/prove-tenancy-and-roles.ts failed (h01-95 is marked done):     file: 'deadlock.c', /     line: '1130', /     routine: 'DeadLockReport' /   } / } (failed after 1 retries); scripts/prove-digisign-templates.ts failed (t11-93 is marked done): ============================================================ /     at main (/home/build/runurbusiness/scripts/prove-digisign-templates.ts:389:16) { /   log: [], /   name: 'TimeoutError' / }; scripts/prove-bank-reconciliation.ts failed (a02-138 is marked done):     file: 'nbtinsert.c', /     line: '666', /     routine: '_bt_check_unique' /   } / }; scripts/prove-the-gate.ts failed (h000-124 is marked done): killed (SIGTERM) after exceeding its 300000ms cap — did not finish; scripts/prove-search.ts failed (u16-100 is marked done):   log: [ /     "  - waiting for locator('[data-row-index]').first() to be visible" /   ], /   name: 'TimeoutError' / }; 65 screen(s) flagged for density, up from 63 on the last green run: /accounting/packets/[packet], /assets/[id], /assets/locations, /assets, /attention, /banking/[account]/reconcile, /banking/[account]/statements/[statement], /bills/bulk/[operation] — see docs/screen-density.md
-     . the blocking reason has cleared — resuming
-
 ---- y01-118-four-findings-from-the-owners-hands ----  started 00:42:21
      . suite green: 3019 tests
      . build/screens/journeys: diff since f3691331b922 touches something that could render — running fresh
@@ -31,15 +28,18 @@ z00-151-the-gate-must-use-the-box.md
        see logs/y01-118-four-findings-from-the-owners-hands.log
 
 ---- y02-144-ready-for-the-test-session ----  started 02:56:13
+     ! SUITE RED: 21 of 3019 tests failing — see logs/suite-latest.log
+     . build/screens/journeys: diff since a8eedca479ac touches something that could render — running fresh
+     . build clean
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        4024        6688        2383        7612       11579
+Mem:           15603        3724        6987        2383        7614       11878
 -- top --
     ELAPSED   RSS COMMAND
-   03:07:42 599660 node
-   03:15:36 230852 next-server (v1
-      00:11 208336 node
-   03:15:37 127136 node
+      01:24 236124 next-server (v1
+   03:20:36 230852 next-server (v1
+      01:22 153132 node
+      01:25 129600 node
 -- disk --
 /dev/sda1        75G   21G   52G  29% /
