@@ -1,4 +1,4 @@
-generated: 2026-08-29 15:15:01 UTC
+generated: 2026-08-29 15:20:01 UTC
 done:   174
 queued: 3
 failed: 0
@@ -11,15 +11,6 @@ z00-151-the-gate-must-use-the-box.md
 -- failed --
 
 -- log --
-       see logs/y02-144-ready-for-the-test-session.log
-
-############################################################
-#  QUEUE HALTED — the prove-* sweep hit 10 consecutive unattributed failures
-#  see docs/queue-halt.md
-############################################################
-================================================
-  RunUrBusiness — draining the task queue
-  started Sat 29 Aug 11:08
 ================================================
 
 ############################################################
@@ -31,15 +22,24 @@ z00-151-the-gate-must-use-the-box.md
      ! screen audit did not produce a result at all — see logs/screens-latest.log
      ! journeys did not produce a result at all — see logs/journeys-latest.log
      . gate: reusing a server already up on :3000
+================================================
+  RunUrBusiness — draining the task queue
+  started Sat 29 Aug 15:19
+================================================
+
+############################################################
+#  QUEUE HALTED — see docs/queue-halt.md
+#  re-checking whether the blocking reason still applies...
+############################################################
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        7682        3639        6232       10852        7920
+Mem:           15603        7740        3581        6232       10852        7863
 -- top --
     ELAPSED   RSS COMMAND
-   01:23:55 241760 next-server (v1
-   02:10:25 234880 next-server (v1
-      00:09 147860 node
-      00:09 146960 node
+   01:28:55 241760 next-server (v1
+   02:15:25 234880 next-server (v1
+      00:13 132948 node
+   01:28:55 129860 node
 -- disk --
 /dev/sda1        75G   21G   52G  29% /
