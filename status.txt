@@ -1,4 +1,4 @@
-generated: 2026-08-29 02:20:01 UTC
+generated: 2026-08-29 02:25:01 UTC
 done:   173
 queued: 3
 failed: 0
@@ -11,8 +11,6 @@ z00-151-the-gate-must-use-the-box.md
 -- failed --
 
 -- log --
-================================================
-
 ############################################################
 #  QUEUE HALTED — see docs/queue-halt.md
 #  re-checking whether the blocking reason still applies...
@@ -31,15 +29,17 @@ z00-151-the-gate-must-use-the-box.md
      . build/screens/journeys: diff since f3691331b922 touches something that could render — running fresh
      . build clean
      . screens clean: 218 screens, 30 not reachable
+     . journeys clean: 22 of 22 passed
+     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        4514        6606        2369        7191       11088
+Mem:           15603        3878        7242        2339        7161       11724
 -- top --
     ELAPSED   RSS COMMAND
-      05:33 918484 next-server (v1
-   06:16:22 233736 next-server (v1
-      06:50 213220 node
-      00:03 165620 chrome-headless
+      04:10 308580 next-server (v1
+   06:21:22 234220 next-server (v1
+      03:22 131040 node
+      03:22 130640 node
 -- disk --
 /dev/sda1        75G   20G   52G  28% /
