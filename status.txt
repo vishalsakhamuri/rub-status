@@ -1,7 +1,7 @@
-generated: 2026-08-29 03:15:01 UTC
-done:   172
+generated: 2026-08-29 03:20:01 UTC
+done:   173
 queued: 3
-failed: 1
+failed: 0
 hold:   0
 
 -- queued --
@@ -9,7 +9,6 @@ y02-144-ready-for-the-test-session.md
 y03-148-preview-and-sharing.md
 z00-151-the-gate-must-use-the-box.md
 -- failed --
-y01-118-four-findings-from-the-owners-hands.md
 
 -- log --
      ! GATE FAILED: 34 of 3019 tests failing; scripts/prove-access-boundaries.ts failed (h00a-123 is marked done): wrote docs/rls-audit.md (174 tables) /  / cleaned up test companies and users /  / [31m1 CHECK(S) FAILED[0m; scripts/prove-tenancy-and-roles.ts failed (h01-95 is marked done):     file: 'deadlock.c', /     line: '1130', /     routine: 'DeadLockReport' /   } / } (failed after 1 retries); scripts/prove-digisign-templates.ts failed (t11-93 is marked done): ============================================================ /     at main (/home/build/runurbusiness/scripts/prove-digisign-templates.ts:389:16) { /   log: [], /   name: 'TimeoutError' / }; scripts/prove-bank-reconciliation.ts failed (a02-138 is marked done):     file: 'nbtinsert.c', /     line: '666', /     routine: '_bt_check_unique' /   } / }; scripts/prove-the-gate.ts failed (h000-124 is marked done): killed (SIGTERM) after exceeding its 300000ms cap — did not finish; scripts/prove-search.ts failed (u16-100 is marked done):   log: [ /     "  - waiting for locator('[data-row-index]').first() to be visible" /   ], /   name: 'TimeoutError' / }; 65 screen(s) flagged for density, up from 63 on the last green run: /accounting/packets/[packet], /assets/[id], /assets/locations, /assets, /attention, /banking/[account]/reconcile, /banking/[account]/statements/[statement], /bills/bulk/[operation] — see docs/screen-density.md
@@ -35,12 +34,12 @@ y01-118-four-findings-from-the-owners-hands.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3924        7016        2372        7374       11678
+Mem:           15603        3928        7012        2374        7376       11674
 -- top --
     ELAPSED   RSS COMMAND
-      18:46 376508 claude
-      08:21 309364 node
-   07:11:22 234496 next-server (v1
-      00:12 154216 node
+      23:46 374720 claude
+      13:21 311076 node
+   07:16:22 234496 next-server (v1
+      00:12 159328 node
 -- disk --
 /dev/sda1        75G   21G   52G  29% /
