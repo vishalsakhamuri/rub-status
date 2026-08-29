@@ -1,4 +1,4 @@
-generated: 2026-08-29 02:10:01 UTC
+generated: 2026-08-29 02:15:01 UTC
 done:   172
 queued: 4
 failed: 0
@@ -12,7 +12,6 @@ z00-151-the-gate-must-use-the-box.md
 -- failed --
 
 -- log --
-  started Fri 28 Aug 21:27
 ================================================
 
 ############################################################
@@ -32,15 +31,16 @@ z00-151-the-gate-must-use-the-box.md
      . suite green: 3019 tests
      . build/screens/journeys: diff since f3691331b922 touches something that could render — running fresh
      . build clean
+     . screens clean: 218 screens, 30 not reachable
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        5621        5499        2376        7197        9981
+Mem:           15603        4039        7081        2371        7193       11564
 -- top --
     ELAPSED   RSS COMMAND
-      07:16 1440668 next-server (v1
-      07:10 578356 chrome-headless
-      07:14 331356 node
-   06:06:22 222868 next-server (v1
+      00:33 485648 next-server (v1
+   06:11:22 222872 next-server (v1
+      00:16 180572 chrome-headless
+      01:50 177744 node
 -- disk --
 /dev/sda1        75G   20G   52G  28% /
