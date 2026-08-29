@@ -1,4 +1,4 @@
-generated: 2026-08-29 00:05:01 UTC
+generated: 2026-08-29 00:10:01 UTC
 done:   172
 queued: 4
 failed: 0
@@ -12,8 +12,6 @@ z00-151-the-gate-must-use-the-box.md
 -- failed --
 
 -- log --
-       moved to tasks/failed/ — the queue carries on
-       reason: completion marker + commit present, but the gate failed: the test suite did not produce a result — no summary line, treated as failed, not unknown; screens (demo tenant) did not produce a result — treated as failed, not unknown; screens (empty tenant) did not produce a result — treated as failed, not unknown; screen density check did not produce a result — treated as failed, not unknown
        see logs/y00-122-the-four-one-step-jobs.log
 
 ############################################################
@@ -32,15 +30,17 @@ z00-151-the-gate-must-use-the-box.md
      ! SUITE RED: 34 of 3019 tests failing — see logs/suite-latest.log
      . build clean
      . screens clean: 218 screens, 30 not reachable
+     . journeys clean: 22 of 22 passed
+     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        4486        6815        2375        7015       11116
+Mem:           15603        3733        7568        2338        6980       11870
 -- top --
     ELAPSED   RSS COMMAND
-      04:41 939780 next-server (v1
-   04:01:22 222780 next-server (v1
-      05:56 208752 node
-      00:06 162220 chrome-headless
+      03:08 315296 next-server (v1
+   04:06:22 222780 next-server (v1
+      01:59 130376 node
+      03:09 129312 node
 -- disk --
 /dev/sda1        75G   20G   52G  28% /
