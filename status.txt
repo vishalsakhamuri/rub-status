@@ -1,4 +1,4 @@
-generated: 2026-08-30 07:25:01 UTC
+generated: 2026-08-30 07:30:01 UTC
 done:   175
 queued: 7
 failed: 1
@@ -16,12 +16,6 @@ z00-151-the-gate-must-use-the-box.md
 x00-152-the-fixture-litter-ratchet.md
 
 -- log --
-       moved to tasks/failed/ — the queue carries on
-       reason: completion marker + commit present, but the gate failed: scripts/prove-asset-register.ts failed (u03-83 is marked done): killed (SIGTERM) after exceeding its 300000ms cap — did not finish; scripts/prove-search.ts failed (u16-100 is marked done):   [32m✓[0m the input is focused on open /   [32m✓[0m Enter on a result navigates (URL changed or overlay closed) /   [32m✓[0m Esc closes the overlay and returns focus to the trigger /  / [31m1 check(s) failed.[0m
-       see logs/w00-153-the-server-must-not-outlive-the-task.log
-
----- y02-144-ready-for-the-test-session ----  started 02:43:53
-     . suite green: 3019 tests
      . build/screens/journeys: diff since 5719392a6a8e touches something that could render — running fresh
      . build clean
      . screens clean: 218 screens, 48 not reachable
@@ -36,15 +30,21 @@ x00-152-the-fixture-litter-ratchet.md
      . build/screens/journeys: diff since d17c59ca274e touches something that could render — running fresh
      . build clean
      ! screen audit did not produce a result at all — see logs/screens-latest.log
+================================================
+  RunUrBusiness — draining the task queue
+  started Sun 30 Aug 07:25
+================================================
+
+---- u01-166-auth-must-hold-and-search-must-find ----  started 07:25:05
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3637       10912        2551        3944       11965
+Mem:           15603        3854       10374        2551        4264       11748
 -- top --
     ELAPSED   RSS COMMAND
-      06:04 221568 next-server (v1
-      06:04 126684 node
- 1-00:28:03 62620 systemd-journal
- 7-11:25:38 20836 networkd-dispat
+      04:54 346260 claude
+      11:04 221572 next-server (v1
+      11:04 126684 node
+ 1-00:33:03 63152 systemd-journal
 -- disk --
 /dev/sda1        75G   21G   52G  29% /
