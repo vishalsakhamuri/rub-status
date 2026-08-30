@@ -1,10 +1,11 @@
-generated: 2026-08-30 07:15:01 UTC
+generated: 2026-08-30 07:20:01 UTC
 done:   175
-queued: 6
+queued: 7
 failed: 1
 hold:   0
 
 -- queued --
+u01-166-auth-must-hold-and-search-must-find.md
 v00-154-the-access-boundary-check-must-finish.md
 w01-162-suite-basic-and-integration.md
 w02-163-single-tool-subscription.md
@@ -15,7 +16,6 @@ z00-151-the-gate-must-use-the-box.md
 x00-152-the-fixture-litter-ratchet.md
 
 -- log --
-     [FAILED] (exit 97) 02:43:51
        moved to tasks/failed/ — the queue carries on
        reason: completion marker + commit present, but the gate failed: scripts/prove-asset-register.ts failed (u03-83 is marked done): killed (SIGTERM) after exceeding its 300000ms cap — did not finish; scripts/prove-search.ts failed (u16-100 is marked done):   [32m✓[0m the input is focused on open /   [32m✓[0m Enter on a result navigates (URL changed or overlay closed) /   [32m✓[0m Esc closes the overlay and returns focus to the trigger /  / [31m1 check(s) failed.[0m
        see logs/w00-153-the-server-must-not-outlive-the-task.log
@@ -35,15 +35,16 @@ x00-152-the-fixture-litter-ratchet.md
      ! SUITE RED: 5 of 3019 tests failing — see logs/suite-latest.log
      . build/screens/journeys: diff since d17c59ca274e touches something that could render — running fresh
      . build clean
+     ! screen audit did not produce a result at all — see logs/screens-latest.log
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        4029       10560        2551        3904       11574
+Mem:           15603        3630       10920        2551        3943       11972
 -- top --
     ELAPSED   RSS COMMAND
-      06:22 234828 next-server (v1
-   01:18:27 228032 next-server (v1
-      06:20 152448 node
-      06:22 129300 node
+      01:04 221556 next-server (v1
+      01:04 126684 node
+ 1-00:23:03 61460 systemd-journal
+ 7-11:20:38 20836 networkd-dispat
 -- disk --
 /dev/sda1        75G   21G   52G  29% /
