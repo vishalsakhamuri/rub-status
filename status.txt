@@ -1,4 +1,4 @@
-generated: 2026-08-30 23:25:01 UTC
+generated: 2026-08-30 23:30:01 UTC
 done:   175
 queued: 7
 failed: 6
@@ -21,8 +21,6 @@ u03-168-clean-the-demo-tenant-for-wednesday.md
 x00-152-the-fixture-litter-ratchet.md
 
 -- log --
----- u03-168-clean-the-demo-tenant-for-wednesday ----  started 19:00:23
-     . suite green: 3025 tests
      . build/screens/journeys: diff since a686358ddadb touches something that could render — running fresh
      . build clean
      ! SCREENS: 0 broken, 1 blank, 1 404 of 218 — see docs/screen-audit.md
@@ -41,15 +39,17 @@ x00-152-the-fixture-litter-ratchet.md
      . build/screens/journeys: diff since 9645da7655c7 touches something that could render — running fresh
      . build clean
      ! SCREENS: 0 broken, 1 blank, 1 404 of 218 — see docs/screen-audit.md
+     . journeys clean: 22 of 22 passed
+     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        4406        9304        2579        4816       11197
+Mem:           15603        4072        9637        2544        4781       11530
 -- top --
     ELAPSED   RSS COMMAND
-      00:29 481220 next-server (v1
-      00:13 236372 chrome-headless
-   11:26:44 226932 next-server (v1
-      01:44 170964 node
+      01:53 303304 next-server (v1
+   11:31:44 226932 next-server (v1
+      01:27 130576 node
+      01:54 129844 node
 -- disk --
 /dev/sda1        75G   22G   50G  31% /
