@@ -1,4 +1,4 @@
-generated: 2026-08-30 01:50:01 UTC
+generated: 2026-08-30 01:55:01 UTC
 done:   173
 queued: 4
 failed: 1
@@ -13,9 +13,6 @@ z00-151-the-gate-must-use-the-box.md
 x00-152-the-fixture-litter-ratchet.md
 
 -- log --
-================================================
-
-############################################################
 #  QUEUE HALTED — see docs/queue-halt.md
 #  re-checking whether the blocking reason still applies...
 ############################################################
@@ -33,15 +30,18 @@ x00-152-the-fixture-litter-ratchet.md
      . orphaned dev server(s) cleaned up before this task starts
 
 ---- w00-153-the-server-must-not-outlive-the-task ----  started 00:17:15
+     . suite green: 3019 tests
+     . build/screens/journeys: diff since b11604e61046 touches something that could render — running fresh
+     . build clean
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        7989        3903        6365       10415        7613
+Mem:           15603        9559        2334        6323       10372        6043
 -- top --
     ELAPSED   RSS COMMAND
-      28:59 586740 node
-   05:03:03 233096 next-server (v1
-      00:00 143168 node
-   05:03:04 126204 node
+      00:32 1325672 node
+      00:03 755548 node
+   05:08:03 233096 next-server (v1
+      00:29 145436 node
 -- disk --
 /dev/sda1        75G   21G   52G  29% /
