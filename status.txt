@@ -1,4 +1,4 @@
-generated: 2026-08-30 04:20:01 UTC
+generated: 2026-08-30 04:25:01 UTC
 done:   174
 queued: 3
 failed: 1
@@ -12,7 +12,6 @@ z00-151-the-gate-must-use-the-box.md
 x00-152-the-fixture-litter-ratchet.md
 
 -- log --
-
 ---- w00-153-the-server-must-not-outlive-the-task ----  started 00:17:15
      . suite green: 3019 tests
      . build/screens/journeys: diff since b11604e61046 touches something that could render — running fresh
@@ -32,15 +31,16 @@ x00-152-the-fixture-litter-ratchet.md
      . suite green: 3019 tests
      . build/screens/journeys: diff since 5719392a6a8e touches something that could render — running fresh
      . build clean
+     . screens clean: 218 screens, 48 not reachable
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        9318        2470        6357       10511        6284
+Mem:           15603        8084        3705        6352       10505        7519
 -- top --
     ELAPSED   RSS COMMAND
-      02:04 1067516 chrome-headless
-      02:09 679876 next-server (v1
-      02:07 270112 node
-   07:33:02 233652 next-server (v1
+      01:32 439824 next-server (v1
+   07:38:03 233652 next-server (v1
+      00:15 205868 chrome-headless
+      02:48 184928 node
 -- disk --
 /dev/sda1        75G   21G   52G  29% /
