@@ -1,4 +1,4 @@
-generated: 2026-08-30 13:40:01 UTC
+generated: 2026-08-30 13:45:01 UTC
 done:   175
 queued: 11
 failed: 2
@@ -21,8 +21,6 @@ u01-166-auth-must-hold-and-search-must-find.md
 x00-152-the-fixture-litter-ratchet.md
 
 -- log --
-     . gate: 72 pass, 3 fail, 0 pending
-     ! GATE FAILED: scripts/prove-search.ts failed (u16-100 is marked done):   [32m✓[0m the input is focused on open /   [32m✓[0m Enter on a result navigates (URL changed or overlay closed) /   [32m✓[0m Esc closes the overlay and returns focus to the trigger /  / [31m1 check(s) failed.[0m
      ! GATE FAILED, caused by this task
      ! task had self-moved to tasks/done/ — moved back to tasks/failed/, the gate said otherwise
      [FAILED] (exit 97) 09:56:26
@@ -41,15 +39,17 @@ x00-152-the-fixture-litter-ratchet.md
      . build/screens/journeys: diff since 759df300f995 touches something that could render — running fresh
      . build clean
      ! SCREENS: 0 broken, 1 blank, 1 404 of 218 — see docs/screen-audit.md
+     . journeys clean: 22 of 22 passed
+     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        4573        9685        2582        4266       11029
+Mem:           15603        4221       10036        2542        4226       11381
 -- top --
     ELAPSED   RSS COMMAND
-      02:48 509464 next-server (v1
-      00:15 278304 chrome-headless
-   01:41:45 224300 next-server (v1
-      04:03 210244 node
+      03:59 323940 next-server (v1
+   01:46:45 224300 next-server (v1
+      03:32 131184 node
+      03:32 130748 node
 -- disk --
 /dev/sda1        75G   22G   51G  30% /
