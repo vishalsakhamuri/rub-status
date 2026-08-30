@@ -1,12 +1,11 @@
-generated: 2026-08-30 08:20:01 UTC
-done:   175
-queued: 8
+generated: 2026-08-30 08:25:01 UTC
+done:   176
+queued: 7
 failed: 1
 hold:   0
 
 -- queued --
 u00-165-fix-everything-the-live-test-found.md
-u01-166-auth-must-hold-and-search-must-find.md
 v00-154-the-access-boundary-check-must-finish.md
 w01-162-suite-basic-and-integration.md
 w02-163-single-tool-subscription.md
@@ -40,12 +39,12 @@ x00-152-the-fixture-litter-ratchet.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        6771        6924        2619        4866        8831
+Mem:           15603        6920        6766        2621        4876        8682
 -- top --
     ELAPSED   RSS COMMAND
-      22:02 2338848 next-server (v1
-      54:53 482564 claude
-      09:19 295908 node
-   01:01:03 221728 next-server (v1
+      27:02 2343400 next-server (v1
+      59:53 550532 claude
+      14:19 319084 node
+   01:06:03 221728 next-server (v1
 -- disk --
 /dev/sda1        75G   22G   51G  30% /
