@@ -1,4 +1,4 @@
-generated: 2026-08-30 02:00:01 UTC
+generated: 2026-08-30 02:05:01 UTC
 done:   173
 queued: 4
 failed: 1
@@ -13,8 +13,6 @@ z00-151-the-gate-must-use-the-box.md
 x00-152-the-fixture-litter-ratchet.md
 
 -- log --
-#  re-checking whether the blocking reason still applies...
-############################################################
      ! SUITE RED: 19 of 3019 tests failing — see logs/suite-latest.log
      . build clean
      . screens clean: 218 screens, 48 not reachable
@@ -33,15 +31,17 @@ x00-152-the-fixture-litter-ratchet.md
      . build/screens/journeys: diff since b11604e61046 touches something that could render — running fresh
      . build clean
      . screens clean: 218 screens, 48 not reachable
+     ! JOURNEYS: 1 of 22 failed — invoice → payment → reconcile, end to end — default tenant (a08-144 D) — see docs/journeys-report.md
+     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        9625        2461        6323       10179        5977
+Mem:           15603        8655        3236        6348       10398        6947
 -- top --
     ELAPSED   RSS COMMAND
-      00:11 2076368 node
-   05:13:03 233096 next-server (v1
-      00:14 194884 node
-      00:08 160328 node
+      00:05 272536 next-server (v1
+   05:18:03 233096 next-server (v1
+      00:02 190288 node
+      00:02 160860 node
 -- disk --
-/dev/sda1        75G   21G   52G  28% /
+/dev/sda1        75G   21G   52G  29% /
