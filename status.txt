@@ -1,4 +1,4 @@
-generated: 2026-08-30 09:10:01 UTC
+generated: 2026-08-30 09:15:01 UTC
 done:   176
 queued: 7
 failed: 1
@@ -16,7 +16,6 @@ z00-151-the-gate-must-use-the-box.md
 x00-152-the-fixture-litter-ratchet.md
 
 -- log --
-     . screens clean: 218 screens, 48 not reachable
      . journeys clean: 22 of 22 passed
      . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
      . gate: 73 pass, 2 fail, 0 pending
@@ -36,15 +35,16 @@ x00-152-the-fixture-litter-ratchet.md
 ---- u01-166-auth-must-hold-and-search-must-find ----  started 07:25:05
      . suite green: 3019 tests
      . build/screens/journeys: diff since d17c59ca274e touches something that could render — running fresh
+     . build clean
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        6819        6862        2584        4845        8783
+Mem:           15603        6115        8052        2625        4400        9487
 -- top --
     ELAPSED   RSS COMMAND
-      00:19 2062160 node
-      00:49 1101920 node
-   01:51:04 221764 next-server (v1
-      00:44 145052 node
+      03:27 878888 next-server (v1
+      01:07 842284 chrome-headless
+      03:23 448620 chrome-headless
+      03:25 382904 node
 -- disk --
-/dev/sda1        75G   22G   51G  30% /
+/dev/sda1        75G   21G   52G  29% /
