@@ -1,4 +1,4 @@
-generated: 2026-08-30 04:15:01 UTC
+generated: 2026-08-30 04:20:01 UTC
 done:   174
 queued: 3
 failed: 1
@@ -12,9 +12,6 @@ z00-151-the-gate-must-use-the-box.md
 x00-152-the-fixture-litter-ratchet.md
 
 -- log --
-     ! orphaned dev server found: pid 1001562, owned by build, cwd /home/build/runurbusiness (node /usr/bin/pnpm start) — killing it
-     ! orphaned dev server found: pid 1001575, owned by build, cwd /home/build/runurbusiness (next-server (v16.2.11)) — killing it
-     . orphaned dev server(s) cleaned up before this task starts
 
 ---- w00-153-the-server-must-not-outlive-the-task ----  started 00:17:15
      . suite green: 3019 tests
@@ -32,15 +29,18 @@ x00-152-the-fixture-litter-ratchet.md
        see logs/w00-153-the-server-must-not-outlive-the-task.log
 
 ---- y02-144-ready-for-the-test-session ----  started 02:43:53
+     . suite green: 3019 tests
+     . build/screens/journeys: diff since 5719392a6a8e touches something that could render — running fresh
+     . build clean
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        7973        3815        6366       10519        7629
+Mem:           15603        9318        2470        6357       10511        6284
 -- top --
     ELAPSED   RSS COMMAND
-      30:49 567016 node
-   07:28:02 233652 next-server (v1
-      00:03 142288 node
-   07:28:03 126204 node
+      02:04 1067516 chrome-headless
+      02:09 679876 next-server (v1
+      02:07 270112 node
+   07:33:02 233652 next-server (v1
 -- disk --
 /dev/sda1        75G   21G   52G  29% /
