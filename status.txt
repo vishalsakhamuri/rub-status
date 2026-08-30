@@ -1,4 +1,4 @@
-generated: 2026-08-30 20:20:01 UTC
+generated: 2026-08-30 20:25:01 UTC
 done:   175
 queued: 8
 failed: 5
@@ -21,9 +21,6 @@ u02-167-fix-what-the-agent-swarm-found.md
 x00-152-the-fixture-litter-ratchet.md
 
 -- log --
-       moved to tasks/failed/ — the queue carries on
-       reason: completion marker + commit present, but the gate failed: 1 screen(s) blank: /expenses/batches/[id]; 1 screen(s) 404: /quotations/[id]; scripts/prove-search.ts failed (u16-100 is marked done):   [32m✓[0m the input is focused on open /   [32m✓[0m Enter on a result navigates (URL changed or overlay closed) /   [32m✓[0m Esc closes the overlay and returns focus to the trigger /  / [31m1 check(s) failed.[0m; 54 screen(s) flagged for density, up from 45 on the last green run: /accounting/packets/[packet], /accounting/packets/build/[statement], /assets/[id], /assets/holders, /assets, /attention, /banking/[account]/reconcile, /banking/[account]/statements/[statement] — see docs/screen-density.md
-       see logs/u01-170-finish-the-auth-task-gate.log
 
 ---- u02-167-fix-what-the-agent-swarm-found ----  started 16:30:22
      . suite green: 3025 tests
@@ -41,15 +38,18 @@ x00-152-the-fixture-litter-ratchet.md
        see logs/u02-167-fix-what-the-agent-swarm-found.log
 
 ---- u03-168-clean-the-demo-tenant-for-wednesday ----  started 19:00:23
+     . suite green: 3025 tests
+     . build/screens/journeys: diff since a686358ddadb touches something that could render — running fresh
+     . build clean
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        4289        8150        2585        6089       11314
+Mem:           15603        4865        8656        2586        5007       10737
 -- top --
     ELAPSED   RSS COMMAND
-      25:17 575608 node
-   08:21:45 226932 next-server (v1
-      00:05 143952 node
-   08:21:45 125860 node
+      00:33 567852 next-server (v1
+      00:29 470012 chrome-headless
+   08:26:45 226932 next-server (v1
+      00:31 195856 node
 -- disk --
-/dev/sda1        75G   23G   50G  32% /
+/dev/sda1        75G   22G   51G  31% /
