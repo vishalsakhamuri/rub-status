@@ -1,11 +1,10 @@
-generated: 2026-08-30 21:05:01 UTC
+generated: 2026-08-30 21:10:01 UTC
 done:   175
-queued: 8
-failed: 5
+queued: 7
+failed: 6
 hold:   0
 
 -- queued --
-u03-168-clean-the-demo-tenant-for-wednesday.md
 u04-169-fix-the-full-sweep-findings.md
 v00-154-the-access-boundary-check-must-finish.md
 w01-162-suite-basic-and-integration.md
@@ -18,18 +17,10 @@ u00-165-fix-everything-the-live-test-found.md
 u01-166-auth-must-hold-and-search-must-find.md
 u01-170-finish-the-auth-task-gate.md
 u02-167-fix-what-the-agent-swarm-found.md
+u03-168-clean-the-demo-tenant-for-wednesday.md
 x00-152-the-fixture-litter-ratchet.md
 
 -- log --
-     . build/screens/journeys: diff since 14a080ede4dd touches something that could render — running fresh
-     . build clean
-     ! SCREENS: 0 broken, 1 blank, 1 404 of 218 — see docs/screen-audit.md
-     . journeys clean: 22 of 22 passed
-     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
-     . gate: 69 pass, 6 fail, 0 pending
-     ! GATE FAILED: 1 screen(s) blank: /expenses/batches/[id]; 1 screen(s) 404: /quotations/[id]; scripts/prove-payslip-distribution.ts failed (u06-86 is marked done):       <Buffer 25 50 44 46 2d 31 2e 37 0a 25 81 81 81 81 0a 0a 36 20 30 20 6f 62 6a 0a 3c 3c 0a 2f 46 69 6c 74 65 72 20 2f 46 6c 61 74 65 44 65 63 6f 64 65 0a 2f 4c ... 822 more bytes> /     ], /     types: [ 0, 0, 17 ] /   } / }; scripts/prove-bank-reconciliation.ts failed (a02-138 is marked done):     at async outer (/home/build/runurbusiness/scripts/prove-bank-reconciliation.ts:553:5) { /   code: 'JE005', /   detail: 'period 7 of 2026 (2026-07-01 to 2026-07-31)', /   [cause]: undefined / }; scripts/prove-search.ts failed (u16-100 is marked done):   [32m✓[0m the input is focused on open /   [32m✓[0m Enter on a result navigates (URL changed or overlay closed) /   [32m✓[0m Esc closes the overlay and returns focus to the trigger /  / [31m1 check(s) failed.[0m; 54 screen(s) flagged for density, up from 45 on the last green run: /accounting/packets/[packet], /accounting/packets/build/[statement], /assets/[id], /assets/holders, /assets, /attention, /banking/[account]/reconcile, /banking/[account]/statements/[statement] — see docs/screen-density.md
-     ! GATE FAILED, caused by this task
-     [FAILED] (exit 97) 19:00:21
        moved to tasks/failed/ — the queue carries on
        reason: completion marker + commit present, but the gate failed: 1 screen(s) blank: /expenses/batches/[id]; 1 screen(s) 404: /quotations/[id]; scripts/prove-payslip-distribution.ts failed (u06-86 is marked done):       <Buffer 25 50 44 46 2d 31 2e 37 0a 25 81 81 81 81 0a 0a 36 20 30 20 6f 62 6a 0a 3c 3c 0a 2f 46 69 6c 74 65 72 20 2f 46 6c 61 74 65 44 65 63 6f 64 65 0a 2f 4c ... 822 more bytes> /     ], /     types: [ 0, 0, 17 ] /   } / }; scripts/prove-bank-reconciliation.ts failed (a02-138 is marked done):     at async outer (/home/build/runurbusiness/scripts/prove-bank-reconciliation.ts:553:5) { /   code: 'JE005', /   detail: 'period 7 of 2026 (2026-07-01 to 2026-07-31)', /   [cause]: undefined / }; scripts/prove-search.ts failed (u16-100 is marked done):   [32m✓[0m the input is focused on open /   [32m✓[0m Enter on a result navigates (URL changed or overlay closed) /   [32m✓[0m Esc closes the overlay and returns focus to the trigger /  / [31m1 check(s) failed.[0m; 54 screen(s) flagged for density, up from 45 on the last green run: /accounting/packets/[packet], /accounting/packets/build/[statement], /assets/[id], /assets/holders, /assets, /attention, /banking/[account]/reconcile, /banking/[account]/statements/[statement] — see docs/screen-density.md
        see logs/u02-167-fix-what-the-agent-swarm-found.log
@@ -41,15 +32,24 @@ x00-152-the-fixture-litter-ratchet.md
      ! SCREENS: 0 broken, 1 blank, 1 404 of 218 — see docs/screen-audit.md
      . journeys clean: 22 of 22 passed
      . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
+     . gate: 68 pass, 7 fail, 0 pending
+     ! GATE FAILED: 1 screen(s) blank: /expenses/batches/[id]; 1 screen(s) 404: /quotations/[id]; 51 screen(s) flagged for density, up from 45 on the last green run: /accounting/packets/[packet], /assets/[id], /assets/holders, /assets, /attention, /banking/[account]/reconcile, /banking/[account]/statements/[statement], /bills/bulk/[operation] — see docs/screen-density.md
+     ! GATE FAILED, caused by this task
+     [FAILED] (exit 97) 21:05:51
+       moved to tasks/failed/ — the queue carries on
+       reason: completion marker + commit present, but the gate failed: 1 screen(s) blank: /expenses/batches/[id]; 1 screen(s) 404: /quotations/[id]; 51 screen(s) flagged for density, up from 45 on the last green run: /accounting/packets/[packet], /assets/[id], /assets/holders, /assets, /attention, /banking/[account]/reconcile, /banking/[account]/statements/[statement], /bills/bulk/[operation] — see docs/screen-density.md
+       see logs/u03-168-clean-the-demo-tenant-for-wednesday.log
+
+---- u04-169-fix-the-full-sweep-findings ----  started 21:05:54
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        5671        7740        2813        5343        9931
+Mem:           15603        4096        9278        2543        5111       11506
 -- top --
     ELAPSED   RSS COMMAND
-      05:10 966536 node
-      02:32 377408 node
-      30:32 336440 next-server (v1
-   09:06:45 226932 next-server (v1
+      04:05 421828 claude
+      01:01 277340 next-server (v1
+   09:11:45 226932 next-server (v1
+   09:11:45 125860 node
 -- disk --
 /dev/sda1        75G   22G   50G  31% /
