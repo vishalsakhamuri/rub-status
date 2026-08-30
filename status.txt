@@ -1,4 +1,4 @@
-generated: 2026-08-30 18:25:01 UTC
+generated: 2026-08-30 18:30:01 UTC
 done:   175
 queued: 9
 failed: 4
@@ -21,8 +21,6 @@ u01-170-finish-the-auth-task-gate.md
 x00-152-the-fixture-litter-ratchet.md
 
 -- log --
----- u01-170-finish-the-auth-task-gate ----  started 14:16:46
-     . suite green: 3019 tests
      . build/screens/journeys: diff since c339b5e3a5ac touches something that could render — running fresh
      . build clean
      ! SCREENS: 0 broken, 1 blank, 1 404 of 218 — see docs/screen-audit.md
@@ -41,15 +39,17 @@ x00-152-the-fixture-litter-ratchet.md
      . build/screens/journeys: diff since 14a080ede4dd touches something that could render — running fresh
      . build clean
      ! SCREENS: 0 broken, 1 blank, 1 404 of 218 — see docs/screen-audit.md
+     . journeys clean: 22 of 22 passed
+     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        4450        9194        2576        4874       11152
+Mem:           15603        4060        9584        2542        4840       11542
 -- top --
     ELAPSED   RSS COMMAND
-      03:24 549916 next-server (v1
-   06:26:44 226932 next-server (v1
-      04:39 214172 node
-      00:02 149068 chrome-headless
+      04:49 317988 next-server (v1
+   06:31:44 226932 next-server (v1
+      04:24 130788 node
+      04:50 129104 node
 -- disk --
 /dev/sda1        75G   22G   51G  31% /
