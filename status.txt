@@ -1,4 +1,4 @@
-generated: 2026-08-31 07:15:01 UTC
+generated: 2026-08-31 07:20:01 UTC
 done:   175
 queued: 4
 failed: 9
@@ -21,8 +21,6 @@ w01-162-suite-basic-and-integration.md
 x00-152-the-fixture-litter-ratchet.md
 
 -- log --
-     . suite green: 3033 tests
-     . build/screens/journeys: diff since 93412869f92f touches something that could render — running fresh
      . build clean
      ! SCREENS: 0 broken, 1 blank, 1 404 of 218 — see docs/screen-audit.md
      . journeys clean: 22 of 22 passed
@@ -41,15 +39,17 @@ x00-152-the-fixture-litter-ratchet.md
      . build/screens/journeys: diff since bf5d1b995b8e touches something that could render — running fresh
      . build clean
      ! SCREENS: 0 broken, 1 blank, 1 404 of 218 — see docs/screen-audit.md
+     ! JOURNEYS: 2 of 22 failed — J2: sign a document myself and take it away — DigiSign-only tenant, one document through all four tools — hr+digisign tenant, no No1Cloud — see docs/journeys-report.md
+     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        4485       10247        2638        3848       11117
+Mem:           15603        4449       10282        2604        3815       11153
 -- top --
     ELAPSED   RSS COMMAND
-      04:03 447276 next-server (v1
-      05:22 237112 node
-      00:04 167868 chrome-headless
-      04:01 147492 chrome-headless
+      00:06 414080 node
+      04:56 305188 next-server (v1
+   19:21:44 147436 next-server (v1
+      00:06 144888 node
 -- disk --
 /dev/sda1        75G   23G   50G  31% /
