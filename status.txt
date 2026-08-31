@@ -1,4 +1,4 @@
-generated: 2026-08-31 04:40:01 UTC
+generated: 2026-08-31 04:45:01 UTC
 done:   175
 queued: 5
 failed: 8
@@ -21,8 +21,6 @@ v00-154-the-access-boundary-check-must-finish.md
 x00-152-the-fixture-litter-ratchet.md
 
 -- log --
-       see logs/v00-154-the-access-boundary-check-must-finish.log
-
 ---- w01-162-suite-basic-and-integration ----  started 01:36:11
 ================================================
   RunUrBusiness — draining the task queue
@@ -41,15 +39,17 @@ x00-152-the-fixture-litter-ratchet.md
      . build/screens/journeys: diff since 93412869f92f touches something that could render — running fresh
      . build clean
      ! SCREENS: 0 broken, 1 blank, 1 404 of 218 — see docs/screen-audit.md
+     . journeys clean: 22 of 22 passed
+     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        4563       10121        2609        3898       11040
+Mem:           15603        4129       10551        2577        3869       11473
 -- top --
     ELAPSED   RSS COMMAND
-      02:20 551300 next-server (v1
-      03:36 210540 node
-      00:12 201608 chrome-headless
-   16:41:45 153060 next-server (v1
+      03:42 319088 next-server (v1
+   16:46:45 153060 next-server (v1
+      03:16 130340 node
+      03:42 130068 node
 -- disk --
 /dev/sda1        75G   22G   50G  31% /
