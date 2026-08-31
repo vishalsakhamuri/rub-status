@@ -1,4 +1,4 @@
-generated: 2026-08-31 23:05:01 UTC
+generated: 2026-08-31 23:10:01 UTC
 done:   175
 queued: 2
 failed: 11
@@ -21,7 +21,6 @@ w03-164-reconciliation-and-statuses.md
 x00-152-the-fixture-litter-ratchet.md
 
 -- log --
-Terminated                 sleep $LIMIT_WAIT
      ! received SIGTERM — cleaning up before exit
 ================================================
   RunUrBusiness — draining the task queue
@@ -41,15 +40,16 @@ Terminated                 sleep $LIMIT_WAIT
      .. out of Claude usage at 22:22:08 — waiting 15m, attempt 10 of 48
      .. out of Claude usage at 22:37:10 — waiting 15m, attempt 11 of 48
      .. out of Claude usage at 22:52:11 — waiting 15m, attempt 12 of 48
+     .. out of Claude usage at 23:07:13 — waiting 15m, attempt 13 of 48
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3635        9594        2605        5318       11968
+Mem:           15603        3628        9600        2605        5318       11974
 -- top --
     ELAPSED   RSS COMMAND
- 1-11:06:44 148780 next-server (v1
- 1-11:06:45 75720 node
- 2-16:08:02 34984 systemd-journal
- 9-03:05:37 21448 networkd-dispat
+ 1-11:11:44 148780 next-server (v1
+ 1-11:11:45 75720 node
+ 2-16:13:02 35004 systemd-journal
+ 9-03:10:37 21448 networkd-dispat
 -- disk --
 /dev/sda1        75G   24G   49G  33% /
