@@ -1,4 +1,4 @@
-generated: 2026-08-31 04:30:01 UTC
+generated: 2026-08-31 04:35:01 UTC
 done:   175
 queued: 5
 failed: 8
@@ -21,7 +21,6 @@ v00-154-the-access-boundary-check-must-finish.md
 x00-152-the-fixture-litter-ratchet.md
 
 -- log --
-       moved to tasks/failed/ — the queue carries on
        reason: completion marker + commit present, but the gate failed: 1 screen(s) blank: /expenses/batches/[id]; 1 screen(s) 404: /quotations/[id]; 48 screen(s) flagged for density, up from 45 on the last green run: /accounting/packets/[packet], /assets/[id], /assets/holders, /assets, /attention, /banking/[account]/reconcile, /banking/[account]/statements/[statement], /bills/bulk/[operation] — see docs/screen-density.md
        see logs/v00-154-the-access-boundary-check-must-finish.log
 
@@ -41,15 +40,16 @@ x00-152-the-fixture-litter-ratchet.md
      .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
      . suite green: 3033 tests
      . build/screens/journeys: diff since 93412869f92f touches something that could render — running fresh
+     . build clean
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        6749        8093        2577        3711        8853
+Mem:           15603        5869        8817        2619        3906        9733
 -- top --
     ELAPSED   RSS COMMAND
-      00:12 1642880 node
-      00:41 1411432 node
-   16:31:45 151584 next-server (v1
-      00:38 147088 node
+      03:20 961212 next-server (v1
+      03:15 505428 chrome-headless
+      00:26 475272 chrome-headless
+      03:18 358580 node
 -- disk --
-/dev/sda1        75G   29G   43G  41% /
+/dev/sda1        75G   22G   50G  31% /
