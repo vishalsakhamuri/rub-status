@@ -1,4 +1,4 @@
-generated: 2026-08-31 08:00:01 UTC
+generated: 2026-08-31 08:05:01 UTC
 done:   175
 queued: 3
 failed: 10
@@ -21,7 +21,6 @@ w02-163-single-tool-subscription.md
 x00-152-the-fixture-litter-ratchet.md
 
 -- log --
-       reason: completion marker + commit present, but the gate failed: 1 screen(s) blank: /expenses/batches/[id]; 1 screen(s) 404: /quotations/[id]; 47 screen(s) flagged for density, up from 45 on the last green run: /accounting/packets/[packet], /assets/[id], /assets/holders, /assets, /attention, /banking/[account]/reconcile, /banking/[account]/statements/[statement], /bills/bulk/[operation] — see docs/screen-density.md
        see logs/w01-162-suite-basic-and-integration.log
 
 ---- w02-163-single-tool-subscription ----  started 05:16:59
@@ -41,15 +40,16 @@ x00-152-the-fixture-litter-ratchet.md
        see logs/w02-163-single-tool-subscription.log
 
 ---- w03-164-reconciliation-and-statuses ----  started 07:41:13
+     .. out of Claude usage at 08:03:07 — waiting 15m, attempt 1 of 48
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        9054        4278        2606        5215        6548
+Mem:           15603        8535        4834        2605        5178        7067
 -- top --
     ELAPSED   RSS COMMAND
-      16:52 4841296 next-server (v1
-      18:45 426860 claude
-      16:32 170984 node
-   20:01:44 150368 next-server (v1
+      21:53 4865288 next-server (v1
+      21:32 163752 node
+   20:06:45 150368 next-server (v1
+      21:53 127344 node
 -- disk --
 /dev/sda1        75G   23G   49G  33% /
