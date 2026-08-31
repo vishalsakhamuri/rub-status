@@ -1,4 +1,4 @@
-generated: 2026-08-31 23:20:01 UTC
+generated: 2026-08-31 23:25:01 UTC
 done:   175
 queued: 2
 failed: 11
@@ -21,7 +21,6 @@ w03-164-reconciliation-and-statuses.md
 x00-152-the-fixture-litter-ratchet.md
 
 -- log --
-     ! received SIGTERM — cleaning up before exit
 ================================================
   RunUrBusiness — draining the task queue
   started Mon 31 Aug 20:06
@@ -41,15 +40,16 @@ x00-152-the-fixture-litter-ratchet.md
      .. out of Claude usage at 22:37:10 — waiting 15m, attempt 11 of 48
      .. out of Claude usage at 22:52:11 — waiting 15m, attempt 12 of 48
      .. out of Claude usage at 23:07:13 — waiting 15m, attempt 13 of 48
+     .. out of Claude usage at 23:22:14 — waiting 15m, attempt 14 of 48
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3631        9597        2605        5319       11971
+Mem:           15603        3626        9602        2605        5319       11976
 -- top --
     ELAPSED   RSS COMMAND
- 1-11:21:44 148780 next-server (v1
- 1-11:21:45 75720 node
- 2-16:23:02 35388 systemd-journal
- 9-03:20:37 21448 networkd-dispat
+ 1-11:26:44 148780 next-server (v1
+ 1-11:26:45 75720 node
+ 2-16:28:02 35404 systemd-journal
+ 9-03:25:37 21448 networkd-dispat
 -- disk --
 /dev/sda1        75G   24G   49G  33% /
