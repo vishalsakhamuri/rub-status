@@ -1,4 +1,4 @@
-generated: 2026-08-31 09:30:01 UTC
+generated: 2026-08-31 09:35:01 UTC
 done:   175
 queued: 3
 failed: 10
@@ -21,7 +21,6 @@ w02-163-single-tool-subscription.md
 x00-152-the-fixture-litter-ratchet.md
 
 -- log --
-     . build/screens/journeys: diff since bf5d1b995b8e touches something that could render — running fresh
      . build clean
      ! SCREENS: 0 broken, 1 blank, 1 404 of 218 — see docs/screen-audit.md
      ! JOURNEYS: 2 of 22 failed — J2: sign a document myself and take it away — DigiSign-only tenant, one document through all four tools — hr+digisign tenant, no No1Cloud — see docs/journeys-report.md
@@ -41,15 +40,16 @@ x00-152-the-fixture-litter-ratchet.md
      .. out of Claude usage at 08:48:12 — waiting 15m, attempt 4 of 48
      .. out of Claude usage at 09:03:14 — waiting 15m, attempt 5 of 48
      .. out of Claude usage at 09:18:15 — waiting 15m, attempt 6 of 48
+     .. out of Claude usage at 09:33:17 — waiting 15m, attempt 7 of 48
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        8525        4841        2605        5181        7077
+Mem:           15603        8529        4837        2605        5181        7073
 -- top --
     ELAPSED   RSS COMMAND
-   01:46:52 4865656 next-server (v1
-   01:46:32 163752 node
-   21:31:44 152172 next-server (v1
-   01:46:53 127344 node
+   01:51:52 4865656 next-server (v1
+   01:51:32 163752 node
+   21:36:44 152172 next-server (v1
+   01:51:53 127344 node
 -- disk --
 /dev/sda1        75G   23G   49G  33% /
