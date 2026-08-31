@@ -1,4 +1,4 @@
-generated: 2026-08-31 04:35:01 UTC
+generated: 2026-08-31 04:40:01 UTC
 done:   175
 queued: 5
 failed: 8
@@ -21,7 +21,6 @@ v00-154-the-access-boundary-check-must-finish.md
 x00-152-the-fixture-litter-ratchet.md
 
 -- log --
-       reason: completion marker + commit present, but the gate failed: 1 screen(s) blank: /expenses/batches/[id]; 1 screen(s) 404: /quotations/[id]; 48 screen(s) flagged for density, up from 45 on the last green run: /accounting/packets/[packet], /assets/[id], /assets/holders, /assets, /attention, /banking/[account]/reconcile, /banking/[account]/statements/[statement], /bills/bulk/[operation] — see docs/screen-density.md
        see logs/v00-154-the-access-boundary-check-must-finish.log
 
 ---- w01-162-suite-basic-and-integration ----  started 01:36:11
@@ -41,15 +40,16 @@ x00-152-the-fixture-litter-ratchet.md
      . suite green: 3033 tests
      . build/screens/journeys: diff since 93412869f92f touches something that could render — running fresh
      . build clean
+     ! SCREENS: 0 broken, 1 blank, 1 404 of 218 — see docs/screen-audit.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        5869        8817        2619        3906        9733
+Mem:           15603        4563       10121        2609        3898       11040
 -- top --
     ELAPSED   RSS COMMAND
-      03:20 961212 next-server (v1
-      03:15 505428 chrome-headless
-      00:26 475272 chrome-headless
-      03:18 358580 node
+      02:20 551300 next-server (v1
+      03:36 210540 node
+      00:12 201608 chrome-headless
+   16:41:45 153060 next-server (v1
 -- disk --
 /dev/sda1        75G   22G   50G  31% /
