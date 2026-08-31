@@ -1,4 +1,4 @@
-generated: 2026-08-31 20:05:01 UTC
+generated: 2026-08-31 20:10:01 UTC
 done:   175
 queued: 2
 failed: 11
@@ -21,15 +21,6 @@ w03-164-reconciliation-and-statuses.md
 x00-152-the-fixture-litter-ratchet.md
 
 -- log --
-  started Mon 31 Aug 16:05
-================================================
-
----- y03-148-preview-and-sharing ----  started 16:05:35
-     .. out of Claude usage at 16:05:39 — waiting 15m, attempt 1 of 48
-     .. out of Claude usage at 16:20:40 — waiting 15m, attempt 2 of 48
-     .. out of Claude usage at 16:35:42 — waiting 15m, attempt 3 of 48
-     .. out of Claude usage at 16:50:44 — waiting 15m, attempt 4 of 48
-     .. out of Claude usage at 17:05:45 — waiting 15m, attempt 5 of 48
      .. out of Claude usage at 17:20:47 — waiting 15m, attempt 6 of 48
      .. out of Claude usage at 17:35:49 — waiting 15m, attempt 7 of 48
      .. out of Claude usage at 17:50:50 — waiting 15m, attempt 8 of 48
@@ -41,15 +32,24 @@ x00-152-the-fixture-litter-ratchet.md
      .. out of Claude usage at 19:21:01 — waiting 15m, attempt 14 of 48
      .. out of Claude usage at 19:36:03 — waiting 15m, attempt 15 of 48
      .. out of Claude usage at 19:51:04 — waiting 15m, attempt 16 of 48
+Terminated                 sleep $LIMIT_WAIT
+     ! received SIGTERM — cleaning up before exit
+================================================
+  RunUrBusiness — draining the task queue
+  started Mon 31 Aug 20:06
+================================================
+
+---- y03-148-preview-and-sharing ----  started 20:06:49
+     .. out of Claude usage at 20:06:53 — waiting 15m, attempt 1 of 48
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3629        9614        2605        5304       11973
+Mem:           15603        3634        9607        2605        5306       11969
 -- top --
     ELAPSED   RSS COMMAND
- 1-08:06:44 148440 next-server (v1
- 1-08:06:45 75720 node
- 2-13:08:02 30728 systemd-journal
- 9-00:05:37 21448 networkd-dispat
+ 1-08:11:44 148668 next-server (v1
+ 1-08:11:45 75720 node
+ 2-13:13:02 30736 systemd-journal
+ 9-00:10:37 21448 networkd-dispat
 -- disk --
 /dev/sda1        75G   24G   49G  33% /
