@@ -1,4 +1,4 @@
-generated: 2026-08-31 12:00:01 UTC
+generated: 2026-08-31 12:05:02 UTC
 done:   175
 queued: 3
 failed: 10
@@ -21,15 +21,6 @@ w02-163-single-tool-subscription.md
 x00-152-the-fixture-litter-ratchet.md
 
 -- log --
-       reason: completion marker + commit present, but the gate failed: 1 screen(s) blank: /expenses/batches/[id]; 1 screen(s) 404: /quotations/[id]; scripts/prove-bank-reconciliation.ts failed (a02-138 is marked done):     at async outer (/home/build/runurbusiness/scripts/prove-bank-reconciliation.ts:553:5) { /   code: 'JE005', /   detail: 'period 7 of 2026 (2026-07-01 to 2026-07-31)', /   [cause]: undefined / }; scripts/prove-search.ts failed (u16-100 is marked done):   [32m✓[0m the input is focused on open /   [32m✓[0m Enter on a result navigates (URL changed or overlay closed) /   [32m✓[0m Esc closes the overlay and returns focus to the trigger /  / [31m1 check(s) failed.[0m; journey "J2: sign a document myself and take it away — DigiSign-only tenant" failed: the uploaded PDF never rendered on canvas; journey "one document through all four tools — hr+digisign tenant, no No1Cloud" failed: step 8: searching for "Journeys OneStore1788160444284" did not return the contract in the results; 47 screen(s) flagged for density, up from 45 on the last green run: /accounting/packets/[packet], /assets/[id], /assets/holders, /assets, /attention, /banking/[account]/reconcile, /banking/[account]/statements/[statement], /bills/bulk/[operation] — see docs/screen-density.md
-       see logs/w02-163-single-tool-subscription.log
-
----- w03-164-reconciliation-and-statuses ----  started 07:41:13
-     .. out of Claude usage at 08:03:07 — waiting 15m, attempt 1 of 48
-     .. out of Claude usage at 08:18:09 — waiting 15m, attempt 2 of 48
-     .. out of Claude usage at 08:33:10 — waiting 15m, attempt 3 of 48
-     .. out of Claude usage at 08:48:12 — waiting 15m, attempt 4 of 48
-     .. out of Claude usage at 09:03:14 — waiting 15m, attempt 5 of 48
      .. out of Claude usage at 09:18:15 — waiting 15m, attempt 6 of 48
      .. out of Claude usage at 09:33:17 — waiting 15m, attempt 7 of 48
      .. out of Claude usage at 09:48:19 — waiting 15m, attempt 8 of 48
@@ -41,15 +32,24 @@ x00-152-the-fixture-litter-ratchet.md
      .. out of Claude usage at 11:18:29 — waiting 15m, attempt 14 of 48
      .. out of Claude usage at 11:33:31 — waiting 15m, attempt 15 of 48
      .. out of Claude usage at 11:48:33 — waiting 15m, attempt 16 of 48
+Terminated                 sleep $LIMIT_WAIT
+     ! received SIGTERM — cleaning up before exit
+================================================
+  RunUrBusiness — draining the task queue
+  started Mon 31 Aug 12:04
+================================================
+
+---- w03-164-reconciliation-and-statuses ----  started 12:04:20
+     .. out of Claude usage at 12:04:24 — waiting 15m, attempt 1 of 48
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        8711        4551        2605        5284        6891
+Mem:           15603        3637        9621        2605        5289       11965
 -- top --
     ELAPSED   RSS COMMAND
-   04:16:52 5043552 next-server (v1
-   04:16:31 163752 node
- 1-00:01:44 146388 next-server (v1
-   04:16:53 127344 node
+ 1-00:06:45 146392 next-server (v1
+ 1-00:06:45 75720 node
+ 2-05:08:03 27968 systemd-journal
+ 8-16:05:38 21448 networkd-dispat
 -- disk --
 /dev/sda1        75G   24G   49G  33% /
