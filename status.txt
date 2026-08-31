@@ -1,4 +1,4 @@
-generated: 2026-08-31 11:00:01 UTC
+generated: 2026-08-31 11:05:01 UTC
 done:   175
 queued: 3
 failed: 10
@@ -21,7 +21,6 @@ w02-163-single-tool-subscription.md
 x00-152-the-fixture-litter-ratchet.md
 
 -- log --
-     ! GATE FAILED: 1 screen(s) blank: /expenses/batches/[id]; 1 screen(s) 404: /quotations/[id]; scripts/prove-bank-reconciliation.ts failed (a02-138 is marked done):     at async outer (/home/build/runurbusiness/scripts/prove-bank-reconciliation.ts:553:5) { /   code: 'JE005', /   detail: 'period 7 of 2026 (2026-07-01 to 2026-07-31)', /   [cause]: undefined / }; scripts/prove-search.ts failed (u16-100 is marked done):   [32m✓[0m the input is focused on open /   [32m✓[0m Enter on a result navigates (URL changed or overlay closed) /   [32m✓[0m Esc closes the overlay and returns focus to the trigger /  / [31m1 check(s) failed.[0m; journey "J2: sign a document myself and take it away — DigiSign-only tenant" failed: the uploaded PDF never rendered on canvas; journey "one document through all four tools — hr+digisign tenant, no No1Cloud" failed: step 8: searching for "Journeys OneStore1788160444284" did not return the contract in the results; 47 screen(s) flagged for density, up from 45 on the last green run: /accounting/packets/[packet], /assets/[id], /assets/holders, /assets, /attention, /banking/[account]/reconcile, /banking/[account]/statements/[statement], /bills/bulk/[operation] — see docs/screen-density.md
      ! GATE FAILED, caused by this task
      [FAILED] (exit 97) 07:41:11
        moved to tasks/failed/ — the queue carries on
@@ -41,15 +40,16 @@ x00-152-the-fixture-litter-ratchet.md
      .. out of Claude usage at 10:18:22 — waiting 15m, attempt 10 of 48
      .. out of Claude usage at 10:33:24 — waiting 15m, attempt 11 of 48
      .. out of Claude usage at 10:48:26 — waiting 15m, attempt 12 of 48
+     .. out of Claude usage at 11:03:27 — waiting 15m, attempt 13 of 48
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        8560        4789        2605        5197        7042
+Mem:           15603        8561        4788        2605        5198        7041
 -- top --
     ELAPSED   RSS COMMAND
-   03:16:52 4890024 next-server (v1
-   03:16:32 163752 node
-   23:01:44 152496 next-server (v1
-   03:16:53 127344 node
+   03:21:52 4890024 next-server (v1
+   03:21:32 163752 node
+   23:06:44 152496 next-server (v1
+   03:21:53 127344 node
 -- disk --
 /dev/sda1        75G   23G   49G  33% /
