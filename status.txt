@@ -1,4 +1,4 @@
-generated: 2026-09-01 05:15:01 UTC
+generated: 2026-09-01 05:20:01 UTC
 done:   176
 queued: 0
 failed: 12
@@ -20,7 +20,6 @@ x00-152-the-fixture-litter-ratchet.md
 y03-148-preview-and-sharing.md
 
 -- log --
-     .. out of Claude usage at 01:53:19 — waiting 15m, attempt 8 of 48
      .. out of Claude usage at 02:08:21 — waiting 15m, attempt 9 of 48
      .. out of Claude usage at 02:23:22 — waiting 15m, attempt 10 of 48
      .. out of Claude usage at 02:38:24 — waiting 15m, attempt 11 of 48
@@ -40,15 +39,16 @@ Terminated                 sleep $LIMIT_WAIT
      . suite green: 3040 tests
      . build/screens/journeys: diff since 9efdafbad848 touches something that could render — running fresh
      . build clean
+     ! SCREENS: 0 broken, 1 blank, 1 404 of 218 — see docs/screen-audit.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        4608        9458        2631        4506       10994
+Mem:           15603        6367        7700        2599        4474        9235
 -- top --
     ELAPSED   RSS COMMAND
-      00:17 412244 next-server (v1
-      00:13 284236 chrome-headless
-      00:15 219612 node
- 1-17:16:44 148884 next-server (v1
+      00:37 1285980 node
+      00:08 1217300 node
+      00:41 205456 node
+ 1-17:21:44 148884 next-server (v1
 -- disk --
 /dev/sda1        75G   23G   50G  31% /
