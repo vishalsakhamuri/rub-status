@@ -1,4 +1,4 @@
-generated: 2026-09-01 18:55:01 UTC
+generated: 2026-09-01 19:00:01 UTC
 done:   175
 queued: 1
 failed: 13
@@ -22,12 +22,6 @@ y03-148-preview-and-sharing.md
 z00-151-the-gate-must-use-the-box.md
 
 -- log --
-    u00-165-fix-everything-the-live-test-found.md
-    u01-166-auth-must-hold-and-search-must-find.md
-    u01-170-finish-the-auth-task-gate.md
-    u02-167-fix-what-the-agent-swarm-found.md
-    u03-168-clean-the-demo-tenant-for-wednesday.md
-    u04-169-fix-the-full-sweep-findings.md
     v00-154-the-access-boundary-check-must-finish.md
     w01-162-suite-basic-and-integration.md
     w02-163-single-tool-subscription.md
@@ -42,15 +36,21 @@ z00-151-the-gate-must-use-the-box.md
 ================================================
 
 ---- u05-171-clear-the-last-gate-blockers ----  started 18:15:01
+================================================
+  RunUrBusiness — draining the task queue
+  started Tue 01 Sep 18:56
+================================================
+
+---- u05-171-clear-the-last-gate-blockers ----  started 18:56:40
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603       13886         163        2729        4621        1716
+Mem:           15603        4012       11141        2639        3428       11590
 -- top --
     ELAPSED   RSS COMMAND
-      03:31 8284108 next-server (v1
-      02:20 714480 chrome-headless
-      39:57 545580 claude
-      13:45 312956 node
+      03:17 447332 claude
+ 2-07:01:44 157116 next-server (v1
+ 2-07:01:45 75720 node
+ 3-12:03:02 22812 systemd-journal
 -- disk --
-/dev/sda1        75G   26G   47G  36% /
+/dev/sda1        75G   28G   45G  39% /
