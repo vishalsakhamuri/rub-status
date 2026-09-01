@@ -1,11 +1,10 @@
-generated: 2026-09-01 04:40:01 UTC
-done:   175
-queued: 1
+generated: 2026-09-01 04:45:01 UTC
+done:   176
+queued: 0
 failed: 12
 hold:   0
 
 -- queued --
-z00-151-the-gate-must-use-the-box.md
 -- failed --
 u00-165-fix-everything-the-live-test-found.md
 u01-166-auth-must-hold-and-search-must-find.md
@@ -44,12 +43,12 @@ Terminated                 sleep $LIMIT_WAIT
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        4321        8881        2638        5378       11281
+Mem:           15603        4641        8561        2620        5360       10961
 -- top --
     ELAPSED   RSS COMMAND
-      30:41 339628 claude
-      24:41 330152 node
-      00:05 160040 node
- 1-16:41:44 148852 next-server (v1
+      00:26 714584 node
+ 1-16:46:44 148852 next-server (v1
+      00:08 143944 node
+      00:26 77968 npm exec vitest
 -- disk --
 /dev/sda1        75G   24G   49G  33% /
