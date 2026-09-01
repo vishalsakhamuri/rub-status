@@ -1,4 +1,4 @@
-generated: 2026-09-01 20:45:02 UTC
+generated: 2026-09-01 20:50:01 UTC
 done:   175
 queued: 1
 failed: 13
@@ -22,12 +22,6 @@ y03-148-preview-and-sharing.md
 z00-151-the-gate-must-use-the-box.md
 
 -- log --
-================================================
-================================================
-  RunUrBusiness — draining the task queue
-  started Tue 01 Sep 18:15
-================================================
-
 ---- u05-171-clear-the-last-gate-blockers ----  started 18:15:01
 ================================================
   RunUrBusiness — draining the task queue
@@ -42,15 +36,21 @@ z00-151-the-gate-must-use-the-box.md
 ================================================
 
 ---- u05-171-clear-the-last-gate-blockers ----  started 20:09:41
+================================================
+  RunUrBusiness — draining the task queue
+  started Tue 01 Sep 20:49
+================================================
+
+---- u05-171-clear-the-last-gate-blockers ----  started 20:49:44
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        4579       10235        2677        3804       11023
+Mem:           15603        3869       11549        2677        3206       11733
 -- top --
     ELAPSED   RSS COMMAND
-      35:17 384088 claude
- 2-08:46:45 141728 next-server (v1
- 2-08:46:45 75720 node
- 3-13:48:03 34488 systemd-journal
+      00:13 272080 claude
+ 2-08:51:44 142148 next-server (v1
+ 2-08:51:45 75720 node
+ 3-13:53:02 23348 systemd-journal
 -- disk --
-/dev/sda1        75G   26G   47G  36% /
+/dev/sda1        75G   25G   47G  35% /
