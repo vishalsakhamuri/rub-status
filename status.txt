@@ -1,4 +1,4 @@
-generated: 2026-09-01 05:25:01 UTC
+generated: 2026-09-01 05:30:01 UTC
 done:   176
 queued: 0
 failed: 12
@@ -43,12 +43,12 @@ Terminated                 sleep $LIMIT_WAIT
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        4972        9094        2599        4475       10630
+Mem:           15603        4156        9909        2601        4477       11446
 -- top --
     ELAPSED   RSS COMMAND
-      00:05 263780 next-server (v1
-      00:01 203744 node
-      00:01 169776 node
-      00:01 167004 node
+      05:05 309492 next-server (v1
+ 1-17:31:44 148884 next-server (v1
+      04:36 129356 node
+      05:05 129168 node
 -- disk --
 /dev/sda1        75G   23G   50G  31% /
