@@ -1,7 +1,7 @@
-generated: 2026-09-01 06:00:01 UTC
-done:   176
+generated: 2026-09-01 06:05:01 UTC
+done:   175
 queued: 0
-failed: 12
+failed: 13
 hold:   0
 
 -- queued --
@@ -18,37 +18,38 @@ w02-163-single-tool-subscription.md
 w03-164-reconciliation-and-statuses.md
 x00-152-the-fixture-litter-ratchet.md
 y03-148-preview-and-sharing.md
+z00-151-the-gate-must-use-the-box.md
 
 -- log --
-     .. out of Claude usage at 02:38:24 — waiting 15m, attempt 11 of 48
-     .. out of Claude usage at 02:53:26 — waiting 15m, attempt 12 of 48
-     .. out of Claude usage at 03:08:27 — waiting 15m, attempt 13 of 48
-     .. out of Claude usage at 03:23:29 — waiting 15m, attempt 14 of 48
-     .. out of Claude usage at 03:38:31 — waiting 15m, attempt 15 of 48
-     .. out of Claude usage at 03:53:32 — waiting 15m, attempt 16 of 48
-Terminated                 sleep $LIMIT_WAIT
-     ! received SIGTERM — cleaning up before exit
 ================================================
-  RunUrBusiness — draining the task queue
-  started Tue 01 Sep 04:09
-================================================
+  0 task(s) completed, 1 failed, 0 blocked
+  finished Tue 01 Sep 06:00
+  logs in logs/  ·  tell Claude in the chat
 
----- z00-151-the-gate-must-use-the-box ----  started 04:09:17
-     . suite green: 3040 tests
-     . build/screens/journeys: diff since 9efdafbad848 touches something that could render — running fresh
-     . build clean
-     ! SCREENS: 0 broken, 1 blank, 1 404 of 218 — see docs/screen-audit.md
-     ! JOURNEYS: 2 of 22 failed — J2: sign a document myself and take it away — DigiSign-only tenant, one document through all four tools — hr+digisign tenant, no No1Cloud — see docs/journeys-report.md
-     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
+  failed tasks are in tasks/failed/ — nothing was deleted:
+    u00-165-fix-everything-the-live-test-found.md
+    u01-166-auth-must-hold-and-search-must-find.md
+    u01-170-finish-the-auth-task-gate.md
+    u02-167-fix-what-the-agent-swarm-found.md
+    u03-168-clean-the-demo-tenant-for-wednesday.md
+    u04-169-fix-the-full-sweep-findings.md
+    v00-154-the-access-boundary-check-must-finish.md
+    w01-162-suite-basic-and-integration.md
+    w02-163-single-tool-subscription.md
+    w03-164-reconciliation-and-statuses.md
+    x00-152-the-fixture-litter-ratchet.md
+    y03-148-preview-and-sharing.md
+    z00-151-the-gate-must-use-the-box.md
+================================================
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        4483        9461        2622        4620       11119
+Mem:           15603        3646       10297        2603        4602       11956
 -- top --
     ELAPSED   RSS COMMAND
-      35:05 478572 next-server (v1
-      00:42 204884 node
- 1-18:01:45 149140 next-server (v1
-      00:40 140524 chrome-headless
+ 1-18:06:44 149140 next-server (v1
+ 1-18:06:45 75720 node
+ 2-23:08:02 37832 systemd-journal
+ 9-10:05:37 21448 networkd-dispat
 -- disk --
 /dev/sda1        75G   23G   50G  32% /
