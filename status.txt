@@ -1,4 +1,4 @@
-generated: 2026-09-01 23:30:01 UTC
+generated: 2026-09-01 23:35:01 UTC
 done:   175
 queued: 1
 failed: 13
@@ -22,7 +22,6 @@ y03-148-preview-and-sharing.md
 z00-151-the-gate-must-use-the-box.md
 
 -- log --
----- u05-171-clear-the-last-gate-blockers ----  started 20:49:44
 ================================================
   RunUrBusiness — draining the task queue
   started Tue 01 Sep 21:34
@@ -42,15 +41,16 @@ z00-151-the-gate-must-use-the-box.md
 
 ---- u05-171-clear-the-last-gate-blockers ----  started 22:39:02
      .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
+     ! exited clean but produced nothing verifiable — attempt 2 of 2 — stalled — log ends on a waiting line, no commit, no marker
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        7267        7243        2796        4227        8335
+Mem:           15603        4896        9613        2778        4210       10706
 -- top --
     ELAPSED   RSS COMMAND
-      06:31 981848 next-server (v1
-      00:55 829824 chrome-headless
-      31:59 546560 claude
-      03:44 516244 chrome-headless
+      11:32 566724 next-server (v1
+      00:53 449776 node
+   01:44:58 164944 next-server (v1
+      00:34 148952 node
 -- disk --
 /dev/sda1        75G   23G   50G  32% /
