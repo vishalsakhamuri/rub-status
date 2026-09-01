@@ -1,4 +1,4 @@
-generated: 2026-09-01 05:20:01 UTC
+generated: 2026-09-01 05:25:01 UTC
 done:   176
 queued: 0
 failed: 12
@@ -20,8 +20,6 @@ x00-152-the-fixture-litter-ratchet.md
 y03-148-preview-and-sharing.md
 
 -- log --
-     .. out of Claude usage at 02:08:21 — waiting 15m, attempt 9 of 48
-     .. out of Claude usage at 02:23:22 — waiting 15m, attempt 10 of 48
      .. out of Claude usage at 02:38:24 — waiting 15m, attempt 11 of 48
      .. out of Claude usage at 02:53:26 — waiting 15m, attempt 12 of 48
      .. out of Claude usage at 03:08:27 — waiting 15m, attempt 13 of 48
@@ -40,15 +38,17 @@ Terminated                 sleep $LIMIT_WAIT
      . build/screens/journeys: diff since 9efdafbad848 touches something that could render — running fresh
      . build clean
      ! SCREENS: 0 broken, 1 blank, 1 404 of 218 — see docs/screen-audit.md
+     ! JOURNEYS: 2 of 22 failed — J2: sign a document myself and take it away — DigiSign-only tenant, one document through all four tools — hr+digisign tenant, no No1Cloud — see docs/journeys-report.md
+     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        6367        7700        2599        4474        9235
+Mem:           15603        4972        9094        2599        4475       10630
 -- top --
     ELAPSED   RSS COMMAND
-      00:37 1285980 node
-      00:08 1217300 node
-      00:41 205456 node
- 1-17:21:44 148884 next-server (v1
+      00:05 263780 next-server (v1
+      00:01 203744 node
+      00:01 169776 node
+      00:01 167004 node
 -- disk --
 /dev/sda1        75G   23G   50G  31% /
