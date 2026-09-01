@@ -1,4 +1,4 @@
-generated: 2026-09-01 20:05:01 UTC
+generated: 2026-09-01 20:10:01 UTC
 done:   175
 queued: 1
 failed: 13
@@ -22,12 +22,6 @@ y03-148-preview-and-sharing.md
 z00-151-the-gate-must-use-the-box.md
 
 -- log --
-    w01-162-suite-basic-and-integration.md
-    w02-163-single-tool-subscription.md
-    w03-164-reconciliation-and-statuses.md
-    x00-152-the-fixture-litter-ratchet.md
-    y03-148-preview-and-sharing.md
-    z00-151-the-gate-must-use-the-box.md
 ================================================
 ================================================
   RunUrBusiness — draining the task queue
@@ -42,15 +36,21 @@ z00-151-the-gate-must-use-the-box.md
 
 ---- u05-171-clear-the-last-gate-blockers ----  started 18:56:40
      .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
+================================================
+  RunUrBusiness — draining the task queue
+  started Tue 01 Sep 20:09
+================================================
+
+---- u05-171-clear-the-last-gate-blockers ----  started 20:09:41
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        4280       10369        2676        3969       11322
+Mem:           15603        3894       11528        2677        3196       11708
 -- top --
     ELAPSED   RSS COMMAND
-      34:41 377532 claude
- 2-08:06:45 160252 next-server (v1
- 2-08:06:45 75720 node
- 3-13:08:03 34680 systemd-journal
+      00:16 290020 claude
+ 2-08:11:44 141728 next-server (v1
+ 2-08:11:45 75720 node
+ 3-13:13:02 20312 systemd-journal
 -- disk --
-/dev/sda1        75G   23G   50G  32% /
+/dev/sda1        75G   26G   47G  36% /
