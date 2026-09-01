@@ -1,4 +1,4 @@
-generated: 2026-09-01 05:10:01 UTC
+generated: 2026-09-01 05:15:01 UTC
 done:   176
 queued: 0
 failed: 12
@@ -20,9 +20,6 @@ x00-152-the-fixture-litter-ratchet.md
 y03-148-preview-and-sharing.md
 
 -- log --
-     .. out of Claude usage at 01:08:14 — waiting 15m, attempt 5 of 48
-     .. out of Claude usage at 01:23:16 — waiting 15m, attempt 6 of 48
-     .. out of Claude usage at 01:38:17 — waiting 15m, attempt 7 of 48
      .. out of Claude usage at 01:53:19 — waiting 15m, attempt 8 of 48
      .. out of Claude usage at 02:08:21 — waiting 15m, attempt 9 of 48
      .. out of Claude usage at 02:23:22 — waiting 15m, attempt 10 of 48
@@ -40,15 +37,18 @@ Terminated                 sleep $LIMIT_WAIT
 ================================================
 
 ---- z00-151-the-gate-must-use-the-box ----  started 04:09:17
+     . suite green: 3040 tests
+     . build/screens/journeys: diff since 9efdafbad848 touches something that could render — running fresh
+     . build clean
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        4444        8757        2639        5380       11158
+Mem:           15603        4608        9458        2631        4506       10994
 -- top --
     ELAPSED   RSS COMMAND
-      25:26 593264 node
-      00:05 163348 node
- 1-17:11:44 148884 next-server (v1
-      25:26 77968 npm exec vitest
+      00:17 412244 next-server (v1
+      00:13 284236 chrome-headless
+      00:15 219612 node
+ 1-17:16:44 148884 next-server (v1
 -- disk --
-/dev/sda1        75G   24G   49G  33% /
+/dev/sda1        75G   23G   50G  31% /
