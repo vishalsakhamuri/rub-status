@@ -1,4 +1,4 @@
-generated: 2026-09-01 04:05:01 UTC
+generated: 2026-09-01 04:10:01 UTC
 done:   175
 queued: 1
 failed: 12
@@ -21,14 +21,6 @@ x00-152-the-fixture-litter-ratchet.md
 y03-148-preview-and-sharing.md
 
 -- log --
-  started Tue 01 Sep 00:08
-================================================
-
----- z00-151-the-gate-must-use-the-box ----  started 00:08:03
-     .. out of Claude usage at 00:08:07 — waiting 15m, attempt 1 of 48
-     .. out of Claude usage at 00:23:09 — waiting 15m, attempt 2 of 48
-     .. out of Claude usage at 00:38:10 — waiting 15m, attempt 3 of 48
-     .. out of Claude usage at 00:53:12 — waiting 15m, attempt 4 of 48
      .. out of Claude usage at 01:08:14 — waiting 15m, attempt 5 of 48
      .. out of Claude usage at 01:23:16 — waiting 15m, attempt 6 of 48
      .. out of Claude usage at 01:38:17 — waiting 15m, attempt 7 of 48
@@ -41,15 +33,23 @@ y03-148-preview-and-sharing.md
      .. out of Claude usage at 03:23:29 — waiting 15m, attempt 14 of 48
      .. out of Claude usage at 03:38:31 — waiting 15m, attempt 15 of 48
      .. out of Claude usage at 03:53:32 — waiting 15m, attempt 16 of 48
+Terminated                 sleep $LIMIT_WAIT
+     ! received SIGTERM — cleaning up before exit
+================================================
+  RunUrBusiness — draining the task queue
+  started Tue 01 Sep 04:09
+================================================
+
+---- z00-151-the-gate-must-use-the-box ----  started 04:09:17
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3631        9586        2605        5329       11972
+Mem:           15603        3818        9394        2605        5335       11784
 -- top --
     ELAPSED   RSS COMMAND
- 1-16:06:45 148852 next-server (v1
- 1-16:06:45 75720 node
- 2-21:08:03 37172 systemd-journal
- 9-08:05:38 21448 networkd-dispat
+      00:42 306468 claude
+ 1-16:11:45 148852 next-server (v1
+ 1-16:11:45 75720 node
+ 2-21:13:03 37304 systemd-journal
 -- disk --
 /dev/sda1        75G   24G   49G  33% /
