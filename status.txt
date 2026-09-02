@@ -1,4 +1,4 @@
-generated: 2026-09-02 18:15:01 UTC
+generated: 2026-09-02 18:20:01 UTC
 done:   175
 queued: 6
 failed: 17
@@ -31,12 +31,6 @@ y03-148-preview-and-sharing.md
 z00-151-the-gate-must-use-the-box.md
 
 -- log --
-       see logs/u07-173-the-write-layer-lies.log
-
----- u08-174-edit-and-digisign-still-broken ----  started 13:43:23
-================================================
-  RunUrBusiness — draining the task queue
-  started Wed 02 Sep 16:34
 ================================================
 
 ---- u08-174-edit-and-digisign-still-broken ----  started 16:34:04
@@ -51,15 +45,21 @@ z00-151-the-gate-must-use-the-box.md
 ================================================
 
 ---- u08-174-edit-and-digisign-still-broken ----  started 17:42:34
+================================================
+  RunUrBusiness — draining the task queue
+  started Wed 02 Sep 18:19
+================================================
+
+---- u00-177-the-invoice-detail-page-must-render ----  started 18:19:22
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        4712        9670        2968        4607       10890
+Mem:           15603        4252       11164        2968        3529       11350
 -- top --
     ELAPSED   RSS COMMAND
-      32:24 338804 claude
-      31:57 218852 next-server (v1
-      31:57 126844 node
-   11:22:17 47248 systemd-journal
+      00:36 324192 claude
+      36:58 130096 next-server (v1
+      36:58 75972 node
+   11:27:18 25280 systemd-journal
 -- disk --
-/dev/sda1        75G   23G   50G  32% /
+/dev/sda1        75G   28G   45G  38% /
