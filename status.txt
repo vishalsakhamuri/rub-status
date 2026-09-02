@@ -1,4 +1,4 @@
-generated: 2026-09-02 23:25:01 UTC
+generated: 2026-09-02 23:30:01 UTC
 done:   175
 queued: 4
 failed: 19
@@ -31,7 +31,6 @@ y03-148-preview-and-sharing.md
 z00-151-the-gate-must-use-the-box.md
 
 -- log --
-       reason: completion marker + commit present, but the gate failed: 6 screen(s) 404: /credit-notes/[id]/copy, /credit-notes/[id]/delete, /credit-notes/[id]/edit, /credit-notes/[id], /credit-notes/[id]/send, /credit-notes/[id]/void; 57 screen(s) flagged for density, up from 49 on the last green run: /accounting/packets/[packet], /accounting/packets/build/[statement], /assets/[id], /assets/holders, /assets, /attention, /banking/[account]/reconcile, /banking/[account]/statements/[statement] — see docs/screen-density.md
        see logs/u00-177-the-invoice-detail-page-must-render.log
 
 ---- u08a-174-sign-forges-a-second-document ----  started 21:28:09
@@ -51,15 +50,16 @@ z00-151-the-gate-must-use-the-box.md
 
 ---- u08b-174-no1edit-server-tools-500 ----  started 22:54:17
      .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
+     ! exited clean but produced nothing verifiable — attempt 2 of 2 — stalled — log ends on a waiting line, no commit, no marker
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        7413        6218        2857        5229        8190
+Mem:           15603        6623        6973        2911        5317        8980
 -- top --
     ELAPSED   RSS COMMAND
-      29:02 3224220 next-server (v1
-      08:59 360788 claude
-   03:13:21 222852 next-server (v1
-      28:19 163824 node
+      04:43 1886536 next-server (v1
+      01:20 491672 node
+   03:18:21 222856 next-server (v1
+      01:01 207552 node
 -- disk --
 /dev/sda1        75G   24G   49G  33% /
