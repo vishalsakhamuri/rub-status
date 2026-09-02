@@ -1,4 +1,4 @@
-generated: 2026-09-02 08:15:01 UTC
+generated: 2026-09-02 08:20:01 UTC
 done:   175
 queued: 2
 failed: 14
@@ -24,8 +24,6 @@ y03-148-preview-and-sharing.md
 z00-151-the-gate-must-use-the-box.md
 
 -- log --
-    u01-170-finish-the-auth-task-gate.md
-    u02-167-fix-what-the-agent-swarm-found.md
     u03-168-clean-the-demo-tenant-for-wednesday.md
     u04-169-fix-the-full-sweep-findings.md
     u05-171-clear-the-last-gate-blockers.md
@@ -44,15 +42,17 @@ z00-151-the-gate-must-use-the-box.md
 
 ---- u06-172-opening-balances-and-cross-entity ----  started 06:20:01
      .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
+     . suite green: 3058 tests
+     . build/screens/journeys: diff since a107af72430e touches something that could render — running fresh
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        4530        9543        2803        4672       11073
+Mem:           15603        6643        7430        2762        4632        8959
 -- top --
     ELAPSED   RSS COMMAND
-      23:31 574132 node
-      00:01 190596 node
-   10:24:58 162980 next-server (v1
-      23:31 76708 npm exec vitest
+      00:35 1888892 node
+      00:04 963240 node
+   10:29:57 162980 next-server (v1
+      00:31 143940 node
 -- disk --
 /dev/sda1        75G   23G   50G  32% /
