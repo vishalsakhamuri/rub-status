@@ -1,12 +1,13 @@
-generated: 2026-09-02 14:30:01 UTC
+generated: 2026-09-02 14:35:01 UTC
 done:   175
-queued: 2
+queued: 3
 failed: 16
 hold:   0
 
 -- queued --
 u08-174-edit-and-digisign-still-broken.md
 u09-175-silent-noops-hr-and-no1cloud.md
+u10-176-wrong-company-on-the-packet-and-missing-vat.md
 -- failed --
 u00-165-fix-everything-the-live-test-found.md
 u01-166-auth-must-hold-and-search-must-find.md
@@ -49,12 +50,12 @@ z00-151-the-gate-must-use-the-box.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        6737        6472        2867        5627        8865
+Mem:           15603        6739        6463        2867        5635        8864
 -- top --
     ELAPSED   RSS COMMAND
-      13:11 2428940 next-server (v1
-      46:32 460324 claude
-      13:18 222912 next-server (v1
-      13:10 168416 node
+      18:11 2416528 next-server (v1
+      51:32 489964 claude
+      18:17 222912 next-server (v1
+      18:10 150460 node
 -- disk --
 /dev/sda1        75G   24G   49G  33% /
