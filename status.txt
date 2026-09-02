@@ -1,11 +1,12 @@
-generated: 2026-09-02 11:05:05 UTC
+generated: 2026-09-02 11:10:01 UTC
 done:   175
-queued: 1
+queued: 2
 failed: 15
 hold:   0
 
 -- queued --
 u07-173-the-write-layer-lies.md
+u08-174-edit-and-digisign-still-broken.md
 -- failed --
 u00-165-fix-everything-the-live-test-found.md
 u01-166-auth-must-hold-and-search-must-find.md
@@ -24,12 +25,6 @@ y03-148-preview-and-sharing.md
 z00-151-the-gate-must-use-the-box.md
 
 -- log --
-================================================
-
----- u06-172-opening-balances-and-cross-entity ----  started 06:20:01
-     .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
-     . suite green: 3058 tests
-     . build/screens/journeys: diff since a107af72430e touches something that could render — running fresh
      . build clean
      . screens clean: 218 screens, 19 not reachable
      ! JOURNEYS: 2 of 22 failed — J2: sign a document myself and take it away — DigiSign-only tenant, one document through all four tools — hr+digisign tenant, no No1Cloud — see docs/journeys-report.md
@@ -44,15 +39,21 @@ z00-151-the-gate-must-use-the-box.md
 
 ---- u07-173-the-write-layer-lies ----  started 09:12:10
      .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
+================================================
+  RunUrBusiness — draining the task queue
+  started Wed 02 Sep 11:05
+================================================
+
+---- u07-173-the-write-layer-lies ----  started 11:05:05
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603       13743        1899        2797        3059        1859
+Mem:           15603        4267       10955        2797        3536       11335
 -- top --
     ELAPSED   RSS COMMAND
-   13:15:01 285900 next-server (v1
-   13:15:01 74988 node
-   04:12:21 21988 systemd-journal
-10-15:05:41 18380 networkd-dispat
+      04:54 361652 claude
+   13:19:58 288836 next-server (v1
+   13:19:58 74988 node
+   04:17:18 29856 systemd-journal
 -- disk --
 /dev/sda1        75G   25G   48G  34% /
