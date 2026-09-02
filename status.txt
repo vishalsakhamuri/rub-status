@@ -1,16 +1,16 @@
-generated: 2026-09-02 17:50:01 UTC
+generated: 2026-09-02 17:55:01 UTC
 done:   175
 queued: 6
 failed: 17
 hold:   0
 
 -- queued --
+u00-177-the-invoice-detail-page-must-render.md
 u08a-174-sign-forges-a-second-document.md
 u08b-174-no1edit-server-tools-500.md
 u08c-174-digisign-and-edit-remainder.md
 u09-175-silent-noops-hr-and-no1cloud.md
 u10-176-wrong-company-on-the-packet-and-missing-vat.md
-u11-177-the-invoice-detail-page-must-render.md
 -- failed --
 u00-165-fix-everything-the-live-test-found.md
 u01-166-auth-must-hold-and-search-must-find.md
@@ -54,12 +54,12 @@ z00-151-the-gate-must-use-the-box.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        4667        9774        3000        4580       10935
+Mem:           15603        4868        9573        3003        4583       10734
 -- top --
     ELAPSED   RSS COMMAND
-      07:25 327080 claude
-      06:41 315464 node
-      06:58 218832 next-server (v1
-      06:58 126844 node
+      12:25 336324 claude
+      11:41 320120 node
+      00:08 299904 node
+      11:58 218836 next-server (v1
 -- disk --
 /dev/sda1        75G   23G   50G  32% /
