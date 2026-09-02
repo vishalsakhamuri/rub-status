@@ -1,11 +1,10 @@
-generated: 2026-09-02 22:50:01 UTC
+generated: 2026-09-02 22:55:01 UTC
 done:   175
-queued: 5
-failed: 18
+queued: 4
+failed: 19
 hold:   0
 
 -- queued --
-u08a-174-sign-forges-a-second-document.md
 u08b-174-no1edit-server-tools-500.md
 u08c-174-digisign-and-edit-remainder.md
 u09-175-silent-noops-hr-and-no1cloud.md
@@ -22,6 +21,7 @@ u05-171-clear-the-last-gate-blockers.md
 u06-172-opening-balances-and-cross-entity.md
 u07-173-the-write-layer-lies.md
 u08-174-too-big-split-into-u08a-u08b-u08c.md
+u08a-174-sign-forges-a-second-document.md
 v00-154-the-access-boundary-check-must-finish.md
 w01-162-suite-basic-and-integration.md
 w02-163-single-tool-subscription.md
@@ -31,15 +31,6 @@ y03-148-preview-and-sharing.md
 z00-151-the-gate-must-use-the-box.md
 
 -- log --
-     . build/screens/journeys: diff since bd67b696e270 touches something that could render — running fresh
-     . build clean
-     ! SCREENS: 0 broken, 0 blank, 6 404 of 218 — see docs/screen-audit.md
-     ! JOURNEYS: 2 of 22 failed — J2: sign a document myself and take it away — DigiSign-only tenant, one document through all four tools — hr+digisign tenant, no No1Cloud — see docs/journeys-report.md
-     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
-     . gate: 65 pass, 10 fail, 0 pending
-     ! GATE FAILED: 6 screen(s) 404: /credit-notes/[id]/copy, /credit-notes/[id]/delete, /credit-notes/[id]/edit, /credit-notes/[id], /credit-notes/[id]/send, /credit-notes/[id]/void; 57 screen(s) flagged for density, up from 49 on the last green run: /accounting/packets/[packet], /accounting/packets/build/[statement], /assets/[id], /assets/holders, /assets, /attention, /banking/[account]/reconcile, /banking/[account]/statements/[statement] — see docs/screen-density.md
-     ! GATE FAILED, caused by this task
-     [FAILED] (exit 97) 21:28:07
        moved to tasks/failed/ — the queue carries on
        reason: completion marker + commit present, but the gate failed: 6 screen(s) 404: /credit-notes/[id]/copy, /credit-notes/[id]/delete, /credit-notes/[id]/edit, /credit-notes/[id], /credit-notes/[id]/send, /credit-notes/[id]/void; 57 screen(s) flagged for density, up from 49 on the last green run: /accounting/packets/[packet], /accounting/packets/build/[statement], /assets/[id], /assets/holders, /assets, /attention, /banking/[account]/reconcile, /banking/[account]/statements/[statement] — see docs/screen-density.md
        see logs/u00-177-the-invoice-detail-page-must-render.log
@@ -51,15 +42,24 @@ z00-151-the-gate-must-use-the-box.md
      ! SCREENS: 0 broken, 0 blank, 6 404 of 218 — see docs/screen-audit.md
      ! JOURNEYS: 2 of 22 failed — J2: sign a document myself and take it away — DigiSign-only tenant, one document through all four tools — hr+digisign tenant, no No1Cloud — see docs/journeys-report.md
      . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
+     . gate: 66 pass, 9 fail, 0 pending
+     ! GATE FAILED: 6 screen(s) 404: /credit-notes/[id]/copy, /credit-notes/[id]/delete, /credit-notes/[id]/edit, /credit-notes/[id], /credit-notes/[id]/send, /credit-notes/[id]/void; 55 screen(s) flagged for density, up from 49 on the last green run: /accounting/packets/[packet], /accounting/packets/build/[statement], /assets/[id], /assets/holders, /assets, /attention, /banking/[account]/reconcile, /banking/[account]/statements/[statement] — see docs/screen-density.md
+     ! GATE FAILED, caused by this task
+     [FAILED] (exit 97) 22:54:14
+       moved to tasks/failed/ — the queue carries on
+       reason: completion marker + commit present, but the gate failed: 6 screen(s) 404: /credit-notes/[id]/copy, /credit-notes/[id]/delete, /credit-notes/[id]/edit, /credit-notes/[id], /credit-notes/[id]/send, /credit-notes/[id]/void; 55 screen(s) flagged for density, up from 49 on the last green run: /accounting/packets/[packet], /accounting/packets/build/[statement], /assets/[id], /assets/holders, /assets, /attention, /banking/[account]/reconcile, /banking/[account]/statements/[statement] — see docs/screen-density.md
+       see logs/u08a-174-sign-forges-a-second-document.log
+
+---- u08b-174-no1edit-server-tools-500 ----  started 22:54:17
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        6115        8121        3131        4889        9487
+Mem:           15603        4090       10145        2819        4578       11512
 -- top --
     ELAPSED   RSS COMMAND
-      03:24 1105532 node
-      00:25 341740 node
-      27:19 334816 next-server (v1
-   02:38:21 222828 next-server (v1
+      00:42 317028 claude
+   02:43:21 222828 next-server (v1
+   02:43:21 126244 node
+   16:02:18 53728 systemd-journal
 -- disk --
 /dev/sda1        75G   23G   49G  32% /
