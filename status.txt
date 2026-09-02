@@ -1,4 +1,4 @@
-generated: 2026-09-02 08:30:01 UTC
+generated: 2026-09-02 08:35:01 UTC
 done:   175
 queued: 2
 failed: 14
@@ -24,8 +24,6 @@ y03-148-preview-and-sharing.md
 z00-151-the-gate-must-use-the-box.md
 
 -- log --
-    u05-171-clear-the-last-gate-blockers.md
-    v00-154-the-access-boundary-check-must-finish.md
     w01-162-suite-basic-and-integration.md
     w02-163-single-tool-subscription.md
     w03-164-reconciliation-and-statuses.md
@@ -44,15 +42,17 @@ z00-151-the-gate-must-use-the-box.md
      . build/screens/journeys: diff since a107af72430e touches something that could render — running fresh
      . build clean
      . screens clean: 218 screens, 19 not reachable
+     ! JOURNEYS: 2 of 22 failed — J2: sign a document myself and take it away — DigiSign-only tenant, one document through all four tools — hr+digisign tenant, no No1Cloud — see docs/journeys-report.md
+     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        4549        9522        2798        4669       11053
+Mem:           15603        4291        9780        2762        4634       11311
 -- top --
     ELAPSED   RSS COMMAND
-      02:09 427364 next-server (v1
-      03:26 204520 node
-   10:39:57 162980 next-server (v1
-      00:01 149656 chrome-headless
+      03:10 301768 next-server (v1
+   10:44:57 162980 next-server (v1
+      02:44 130820 node
+      03:10 129544 node
 -- disk --
 /dev/sda1        75G   23G   50G  32% /
