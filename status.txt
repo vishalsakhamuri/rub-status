@@ -1,4 +1,4 @@
-generated: 2026-09-02 12:50:01 UTC
+generated: 2026-09-02 12:55:01 UTC
 done:   175
 queued: 3
 failed: 15
@@ -26,9 +26,6 @@ y03-148-preview-and-sharing.md
 z00-151-the-gate-must-use-the-box.md
 
 -- log --
-     . screens clean: 218 screens, 19 not reachable
-     ! JOURNEYS: 2 of 22 failed — J2: sign a document myself and take it away — DigiSign-only tenant, one document through all four tools — hr+digisign tenant, no No1Cloud — see docs/journeys-report.md
-     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
      . gate: 70 pass, 5 fail, 0 pending
      ! GATE FAILED: scripts/prove-search.ts failed (u16-100 is marked done):   [32m✓[0m the input is focused on open /   [32m✓[0m Enter on a result navigates (URL changed or overlay closed) /   [32m✓[0m Esc closes the overlay and returns focus to the trigger /  / [31m1 check(s) failed.[0m; journey "one document through all four tools — hr+digisign tenant, no No1Cloud" failed: step 8: searching for "Journeys OneStore1788337851899" did not return the contract in the results; 50 screen(s) flagged for density, up from 49 on the last green run: /accounting/packets/[packet], /accounting/packets/build/[statement], /assets/[id], /assets/holders, /assets, /attention, /banking/[account]/reconcile, /banking/[account]/statements/[statement] — see docs/screen-density.md
      ! GATE FAILED, caused by this task
@@ -46,15 +43,18 @@ z00-151-the-gate-must-use-the-box.md
 
 ---- u07-173-the-write-layer-lies ----  started 11:05:05
      .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
+     . suite green: 3066 tests
+     . build/screens/journeys: diff since d5f6e068a7ec touches something that could render — running fresh
+     . build clean
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        4641        9842        2908        4389       10961
+Mem:           15603        5897        8762        2866        4171        9706
 -- top --
     ELAPSED   RSS COMMAND
-      24:46 583060 node
-      25:01 221664 next-server (v1
-      25:01 126256 node
-      24:46 77188 npm exec vitest
+      00:06 1861136 node
+      30:01 221668 next-server (v1
+      00:02 167828 node
+      00:07 145040 node
 -- disk --
-/dev/sda1        75G   25G   48G  35% /
+/dev/sda1        75G   23G   50G  32% /
