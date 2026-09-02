@@ -1,4 +1,4 @@
-generated: 2026-09-02 22:10:01 UTC
+generated: 2026-09-02 22:15:01 UTC
 done:   175
 queued: 5
 failed: 18
@@ -31,9 +31,6 @@ y03-148-preview-and-sharing.md
 z00-151-the-gate-must-use-the-box.md
 
 -- log --
-  RunUrBusiness — draining the task queue
-  started Wed 02 Sep 19:00
-================================================
 
 ---- u00-177-the-invoice-detail-page-must-render ----  started 19:00:04
      . suite green: 3099 tests
@@ -51,15 +48,18 @@ z00-151-the-gate-must-use-the-box.md
        see logs/u00-177-the-invoice-detail-page-must-render.log
 
 ---- u08a-174-sign-forges-a-second-document ----  started 21:28:09
+     . suite green: 3099 tests
+     . build/screens/journeys: diff since 9fb6e81172ca touches something that could render — running fresh
+     . build clean
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        4654        9132        2862        5076       10948
+Mem:           15603        6296        8071        2858        4483        9307
 -- top --
     ELAPSED   RSS COMMAND
-      28:30 553624 node
-   01:58:21 222800 next-server (v1
-      00:04 164332 node
-   01:58:21 126244 node
+      02:19 1154560 chrome-headless
+      02:23 913596 next-server (v1
+      02:21 299092 node
+   02:03:20 222804 next-server (v1
 -- disk --
-/dev/sda1        75G   24G   49G  33% /
+/dev/sda1        75G   23G   49G  32% /
