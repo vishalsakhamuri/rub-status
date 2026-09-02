@@ -1,11 +1,12 @@
-generated: 2026-09-02 07:15:01 UTC
+generated: 2026-09-02 07:20:01 UTC
 done:   175
-queued: 1
+queued: 2
 failed: 14
 hold:   0
 
 -- queued --
 u06-172-opening-balances-and-cross-entity.md
+u07-173-the-write-layer-lies.md
 -- failed --
 u00-165-fix-everything-the-live-test-found.md
 u01-166-auth-must-hold-and-search-must-find.md
@@ -46,12 +47,12 @@ z00-151-the-gate-must-use-the-box.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        4480        9598        2790        4654       11122
+Mem:           15603        4527        9550        2795        4659       11075
 -- top --
     ELAPSED   RSS COMMAND
-      05:50 369520 claude
-      02:22 295944 node
-      00:04 178496 node
-   09:24:57 162588 next-server (v1
+      10:50 399716 claude
+      07:23 335352 node
+   09:29:58 162588 next-server (v1
+      00:10 147532 node
 -- disk --
 /dev/sda1        75G   23G   50G  32% /
