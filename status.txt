@@ -1,10 +1,11 @@
-generated: 2026-09-02 06:15:01 UTC
+generated: 2026-09-02 06:20:01 UTC
 done:   175
-queued: 0
+queued: 1
 failed: 14
 hold:   0
 
 -- queued --
+u06-172-opening-balances-and-cross-entity.md
 -- failed --
 u00-165-fix-everything-the-live-test-found.md
 u01-166-auth-must-hold-and-search-must-find.md
@@ -45,12 +46,12 @@ z00-151-the-gate-must-use-the-box.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3786       10668        2755        4243       11816
+Mem:           15603        3798       10640        2755        4258       11804
 -- top --
     ELAPSED   RSS COMMAND
-   08:24:58 162028 next-server (v1
-   08:24:58 74988 node
- 3-23:18:03 52576 systemd-journal
-10-10:15:37 18604 networkd-dispat
+   08:29:57 162028 next-server (v1
+   08:29:58 74988 node
+ 3-23:23:02 53240 systemd-journal
+10-10:20:37 18604 networkd-dispat
 -- disk --
 /dev/sda1        75G   23G   50G  32% /
