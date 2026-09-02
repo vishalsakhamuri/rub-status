@@ -1,11 +1,10 @@
-generated: 2026-09-02 00:10:01 UTC
+generated: 2026-09-02 00:15:01 UTC
 done:   175
-queued: 1
-failed: 13
+queued: 0
+failed: 14
 hold:   0
 
 -- queued --
-u05-171-clear-the-last-gate-blockers.md
 -- failed --
 u00-165-fix-everything-the-live-test-found.md
 u01-166-auth-must-hold-and-search-must-find.md
@@ -13,6 +12,7 @@ u01-170-finish-the-auth-task-gate.md
 u02-167-fix-what-the-agent-swarm-found.md
 u03-168-clean-the-demo-tenant-for-wednesday.md
 u04-169-fix-the-full-sweep-findings.md
+u05-171-clear-the-last-gate-blockers.md
 v00-154-the-access-boundary-check-must-finish.md
 w01-162-suite-basic-and-integration.md
 w02-163-single-tool-subscription.md
@@ -22,35 +22,35 @@ y03-148-preview-and-sharing.md
 z00-151-the-gate-must-use-the-box.md
 
 -- log --
+  0 task(s) completed, 1 failed, 0 blocked
+  finished Wed 02 Sep 00:12
+  logs in logs/  ·  tell Claude in the chat
 
----- u05-171-clear-the-last-gate-blockers ----  started 21:34:12
+  failed tasks are in tasks/failed/ — nothing was deleted:
+    u00-165-fix-everything-the-live-test-found.md
+    u01-166-auth-must-hold-and-search-must-find.md
+    u01-170-finish-the-auth-task-gate.md
+    u02-167-fix-what-the-agent-swarm-found.md
+    u03-168-clean-the-demo-tenant-for-wednesday.md
+    u04-169-fix-the-full-sweep-findings.md
+    u05-171-clear-the-last-gate-blockers.md
+    v00-154-the-access-boundary-check-must-finish.md
+    w01-162-suite-basic-and-integration.md
+    w02-163-single-tool-subscription.md
+    w03-164-reconciliation-and-statuses.md
+    x00-152-the-fixture-litter-ratchet.md
+    y03-148-preview-and-sharing.md
+    z00-151-the-gate-must-use-the-box.md
 ================================================
-  RunUrBusiness — draining the task queue
-  started Tue 01 Sep 21:55
-================================================
-
----- u05-171-clear-the-last-gate-blockers ----  started 21:55:02
-================================================
-  RunUrBusiness — draining the task queue
-  started Tue 01 Sep 22:39
-================================================
-
----- u05-171-clear-the-last-gate-blockers ----  started 22:39:02
-     .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
-     ! exited clean but produced nothing verifiable — attempt 2 of 2 — stalled — log ends on a waiting line, no commit, no marker
-     . suite green: 3048 tests
-     . build/screens/journeys: diff since 05d304255c81 touches something that could render — running fresh
-     . build clean
-     . screens clean: 218 screens, 19 not reachable
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        4855        9631        2790        4246       10747
+Mem:           15603        3798       10686        2755        4213       11804
 -- top --
     ELAPSED   RSS COMMAND
-      46:32 702988 next-server (v1
-      01:40 206980 node
-      00:04 179160 chrome-headless
-   02:19:57 166896 next-server (v1
+   02:24:57 167112 next-server (v1
+   02:24:58 74988 node
+ 3-17:18:02 39704 systemd-journal
+10-04:15:37 18604 networkd-dispat
 -- disk --
 /dev/sda1        75G   23G   50G  32% /
