@@ -1,4 +1,4 @@
-generated: 2026-09-02 06:20:01 UTC
+generated: 2026-09-02 06:25:01 UTC
 done:   175
 queued: 1
 failed: 14
@@ -23,12 +23,6 @@ y03-148-preview-and-sharing.md
 z00-151-the-gate-must-use-the-box.md
 
 -- log --
-  0 task(s) completed, 1 failed, 0 blocked
-  finished Wed 02 Sep 00:12
-  logs in logs/  ·  tell Claude in the chat
-
-  failed tasks are in tasks/failed/ — nothing was deleted:
-    u00-165-fix-everything-the-live-test-found.md
     u01-166-auth-must-hold-and-search-must-find.md
     u01-170-finish-the-auth-task-gate.md
     u02-167-fix-what-the-agent-swarm-found.md
@@ -43,15 +37,21 @@ z00-151-the-gate-must-use-the-box.md
     y03-148-preview-and-sharing.md
     z00-151-the-gate-must-use-the-box.md
 ================================================
+================================================
+  RunUrBusiness — draining the task queue
+  started Wed 02 Sep 06:20
+================================================
+
+---- u06-172-opening-balances-and-cross-entity ----  started 06:20:01
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3798       10640        2755        4258       11804
+Mem:           15603        4140       10294        2755        4263       11462
 -- top --
     ELAPSED   RSS COMMAND
-   08:29:57 162028 next-server (v1
-   08:29:58 74988 node
- 3-23:23:02 53240 systemd-journal
-10-10:20:37 18604 networkd-dispat
+      04:57 471492 claude
+   08:34:57 162028 next-server (v1
+   08:34:58 74988 node
+ 3-23:28:02 53272 systemd-journal
 -- disk --
 /dev/sda1        75G   23G   50G  32% /
