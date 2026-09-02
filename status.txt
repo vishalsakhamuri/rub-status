@@ -1,4 +1,4 @@
-generated: 2026-09-02 10:05:01 UTC
+generated: 2026-09-02 10:10:01 UTC
 done:   175
 queued: 1
 failed: 15
@@ -24,7 +24,6 @@ y03-148-preview-and-sharing.md
 z00-151-the-gate-must-use-the-box.md
 
 -- log --
-  started Wed 02 Sep 06:20
 ================================================
 
 ---- u06-172-opening-balances-and-cross-entity ----  started 06:20:01
@@ -44,15 +43,16 @@ z00-151-the-gate-must-use-the-box.md
        see logs/u06-172-opening-balances-and-cross-entity.log
 
 ---- u07-173-the-write-layer-lies ----  started 09:12:10
+     .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603       11479        1924        2796        5334        4123
+Mem:           15603       11349        1822        2824        5594        4253
 -- top --
     ELAPSED   RSS COMMAND
-      48:39 6805380 next-server (v1
-      52:48 464136 claude
-   12:14:57 326364 next-server (v1
-      10:19 324048 node
+      53:40 6893784 next-server (v1
+      02:15 348364 claude
+   12:19:58 326460 next-server (v1
+      53:34 193720 node
 -- disk --
 /dev/sda1        75G   24G   49G  33% /
