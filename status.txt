@@ -1,11 +1,13 @@
-generated: 2026-09-02 17:40:01 UTC
+generated: 2026-09-02 17:45:01 UTC
 done:   175
-queued: 4
-failed: 16
+queued: 6
+failed: 17
 hold:   0
 
 -- queued --
-u08-174-edit-and-digisign-still-broken.md
+u08a-174-sign-forges-a-second-document.md
+u08b-174-no1edit-server-tools-500.md
+u08c-174-digisign-and-edit-remainder.md
 u09-175-silent-noops-hr-and-no1cloud.md
 u10-176-wrong-company-on-the-packet-and-missing-vat.md
 u11-177-the-invoice-detail-page-must-render.md
@@ -19,6 +21,7 @@ u04-169-fix-the-full-sweep-findings.md
 u05-171-clear-the-last-gate-blockers.md
 u06-172-opening-balances-and-cross-entity.md
 u07-173-the-write-layer-lies.md
+u08-174-too-big-split-into-u08a-u08b-u08c.md
 v00-154-the-access-boundary-check-must-finish.md
 w01-162-suite-basic-and-integration.md
 w02-163-single-tool-subscription.md
@@ -28,12 +31,6 @@ y03-148-preview-and-sharing.md
 z00-151-the-gate-must-use-the-box.md
 
 -- log --
-     . gate: 65 pass, 10 fail, 0 pending
-     ! GATE FAILED: scripts/prove-payroll-run.ts failed (u13-94 is marked done):       null /     ], /     types: [ 0, 0, 0, 0, 0, 0 ] /   } / }; scripts/prove-standard-payslip.ts failed (u13-94 is marked done):       <Buffer 25 50 44 46 2d 31 2e 37 0a 25 81 81 81 81 0a 0a 31 20 30 20 6f 62 6a 0a 3c 3c 0a 2f 54 79 70 65 20 2f 50 61 67 65 73 0a 2f 4b 69 64 73 20 5b 20 36 20 ... 33186 more bytes> /     ], /     types: [ 0, 0, 17 ] /   } / }; scripts/prove-search.ts failed (u16-100 is marked done):   [32m✓[0m the input is focused on open /   [32m✓[0m Enter on a result navigates (URL changed or overlay closed) /   [32m✓[0m Esc closes the overlay and returns focus to the trigger /  / [31m1 check(s) failed.[0m; scripts/prove-attention.ts failed (u17-101 is marked done):       <Buffer 25 50 44 46 2d 31 2e 37 0a 25 81 81 81 81 0a 0a 35 20 30 20 6f 62 6a 0a 3c 3c 0a 2f 46 69 6c 74 65 72 20 2f 46 6c 61 74 65 44 65 63 6f 64 65 0a 2f 54 ... 525 more bytes> /     ], /     types: [ 0, 0, 17 ] /   } / }; scripts/prove-no1edit-pages.ts failed (u19-103 is marked done):     file: 'deadlock.c', /     line: '1130', /     routine: 'DeadLockReport' /   } / } (failed after 1 retries); scripts/prove-backup-restore.ts failed (u26-111 is marked done):       2950, 25, 3802, /       3802, 25 /     ] /   } / }; journey "one document through all four tools — hr+digisign tenant, no No1Cloud" failed: step 8: searching for "Journeys OneStore1788354324072" did not return the contract in the results; 57 screen(s) flagged for density, up from 49 on the last green run: /accounting/packets/[packet], /accounting/packets/build/[statement], /assets/[id], /assets/holders, /assets, /attention, /banking/[account]/reconcile, /banking/[account]/statements/[statement] — see docs/screen-density.md
-     ! GATE FAILED, caused by this task
-     [FAILED] (exit 97) 13:43:21
-       moved to tasks/failed/ — the queue carries on
-       reason: completion marker + commit present, but the gate failed: scripts/prove-payroll-run.ts failed (u13-94 is marked done):       null /     ], /     types: [ 0, 0, 0, 0, 0, 0 ] /   } / }; scripts/prove-standard-payslip.ts failed (u13-94 is marked done):       <Buffer 25 50 44 46 2d 31 2e 37 0a 25 81 81 81 81 0a 0a 31 20 30 20 6f 62 6a 0a 3c 3c 0a 2f 54 79 70 65 20 2f 50 61 67 65 73 0a 2f 4b 69 64 73 20 5b 20 36 20 ... 33186 more bytes> /     ], /     types: [ 0, 0, 17 ] /   } / }; scripts/prove-search.ts failed (u16-100 is marked done):   [32m✓[0m the input is focused on open /   [32m✓[0m Enter on a result navigates (URL changed or overlay closed) /   [32m✓[0m Esc closes the overlay and returns focus to the trigger /  / [31m1 check(s) failed.[0m; scripts/prove-attention.ts failed (u17-101 is marked done):       <Buffer 25 50 44 46 2d 31 2e 37 0a 25 81 81 81 81 0a 0a 35 20 30 20 6f 62 6a 0a 3c 3c 0a 2f 46 69 6c 74 65 72 20 2f 46 6c 61 74 65 44 65 63 6f 64 65 0a 2f 54 ... 525 more bytes> /     ], /     types: [ 0, 0, 17 ] /   } / }; scripts/prove-no1edit-pages.ts failed (u19-103 is marked done):     file: 'deadlock.c', /     line: '1130', /     routine: 'DeadLockReport' /   } / } (failed after 1 retries); scripts/prove-backup-restore.ts failed (u26-111 is marked done):       2950, 25, 3802, /       3802, 25 /     ] /   } / }; journey "one document through all four tools — hr+digisign tenant, no No1Cloud" failed: step 8: searching for "Journeys OneStore1788354324072" did not return the contract in the results; 57 screen(s) flagged for density, up from 49 on the last green run: /accounting/packets/[packet], /accounting/packets/build/[statement], /assets/[id], /assets/holders, /assets, /attention, /banking/[account]/reconcile, /banking/[account]/statements/[statement] — see docs/screen-density.md
        see logs/u07-173-the-write-layer-lies.log
 
 ---- u08-174-edit-and-digisign-still-broken ----  started 13:43:23
@@ -48,15 +45,21 @@ z00-151-the-gate-must-use-the-box.md
      . suite green: 3099 tests
      . build/screens/journeys: diff since bd67b696e270 touches something that could render — running fresh
      . build clean
+================================================
+  RunUrBusiness — draining the task queue
+  started Wed 02 Sep 17:42
+================================================
+
+---- u08-174-edit-and-digisign-still-broken ----  started 17:42:34
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        8050        6582        2968        4354        7552
+Mem:           15603        4709        9732        2996        4576       10893
 -- top --
     ELAPSED   RSS COMMAND
-      00:34 2485244 node
-      01:01 1459900 node
-   03:23:17 164852 next-server (v1
-      00:56 147104 node
+      02:25 317912 claude
+      01:41 289108 node
+      01:57 218816 next-server (v1
+      01:22 202756 node
 -- disk --
 /dev/sda1        75G   23G   50G  32% /
