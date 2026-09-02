@@ -1,4 +1,4 @@
-generated: 2026-09-02 19:00:03 UTC
+generated: 2026-09-02 19:05:02 UTC
 done:   175
 queued: 6
 failed: 17
@@ -31,12 +31,6 @@ y03-148-preview-and-sharing.md
 z00-151-the-gate-must-use-the-box.md
 
 -- log --
-
----- u08-174-edit-and-digisign-still-broken ----  started 16:34:04
-     .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
-     ! exited clean but produced nothing verifiable — attempt 2 of 2 — no commit and no completion marker
-     . suite green: 3099 tests
-     . build/screens/journeys: diff since bd67b696e270 touches something that could render — running fresh
      . build clean
 ================================================
   RunUrBusiness — draining the task queue
@@ -51,15 +45,21 @@ z00-151-the-gate-must-use-the-box.md
 
 ---- u00-177-the-invoice-detail-page-must-render ----  started 18:19:22
      .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
+================================================
+  RunUrBusiness — draining the task queue
+  started Wed 02 Sep 19:00
+================================================
+
+---- u00-177-the-invoice-detail-page-must-render ----  started 19:00:04
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603       13406        2223        2970        3258        2196
+Mem:           15603        9913        3163        2970        5885        5689
 -- top --
     ELAPSED   RSS COMMAND
-      38:17 195020 next-server (v1
-      38:18 75540 node
-   12:07:20 27316 systemd-journal
-10-23:00:40 18380 networkd-dispat
+      02:57 5500720 next-server (v1
+      04:53 331320 claude
+      43:15 208588 next-server (v1
+      02:45 172364 node
 -- disk --
 /dev/sda1        75G   27G   46G  38% /
