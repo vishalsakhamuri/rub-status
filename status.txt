@@ -1,4 +1,4 @@
-generated: 2026-09-02 08:25:01 UTC
+generated: 2026-09-02 08:30:01 UTC
 done:   175
 queued: 2
 failed: 14
@@ -24,7 +24,6 @@ y03-148-preview-and-sharing.md
 z00-151-the-gate-must-use-the-box.md
 
 -- log --
-    u04-169-fix-the-full-sweep-findings.md
     u05-171-clear-the-last-gate-blockers.md
     v00-154-the-access-boundary-check-must-finish.md
     w01-162-suite-basic-and-integration.md
@@ -44,15 +43,16 @@ z00-151-the-gate-must-use-the-box.md
      . suite green: 3058 tests
      . build/screens/journeys: diff since a107af72430e touches something that could render — running fresh
      . build clean
+     . screens clean: 218 screens, 19 not reachable
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        6100        7972        2811        4681        9503
+Mem:           15603        4549        9522        2798        4669       11053
 -- top --
     ELAPSED   RSS COMMAND
-      03:12 1032784 next-server (v1
-      03:08 576632 chrome-headless
-      00:17 376972 chrome-headless
-      03:10 357940 node
+      02:09 427364 next-server (v1
+      03:26 204520 node
+   10:39:57 162980 next-server (v1
+      00:01 149656 chrome-headless
 -- disk --
 /dev/sda1        75G   23G   50G  32% /
