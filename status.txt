@@ -1,4 +1,4 @@
-generated: 2026-09-02 17:00:01 UTC
+generated: 2026-09-02 17:05:01 UTC
 done:   175
 queued: 3
 failed: 16
@@ -27,7 +27,6 @@ y03-148-preview-and-sharing.md
 z00-151-the-gate-must-use-the-box.md
 
 -- log --
-     . build/screens/journeys: diff since d5f6e068a7ec touches something that could render — running fresh
      . build clean
      . screens clean: 218 screens, 19 not reachable
      ! JOURNEYS: 2 of 22 failed — J2: sign a document myself and take it away — DigiSign-only tenant, one document through all four tools — hr+digisign tenant, no No1Cloud — see docs/journeys-report.md
@@ -47,15 +46,16 @@ z00-151-the-gate-must-use-the-box.md
 ================================================
 
 ---- u08-174-edit-and-digisign-still-broken ----  started 16:34:04
+     .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        4802       10174        2909        3946       10800
+Mem:           15603        4691       10276        2960        4008       10911
 -- top --
     ELAPSED   RSS COMMAND
-      25:54 487600 claude
-      24:11 328884 node
-   02:43:18 164852 next-server (v1
-      00:04 164616 node
+      03:54 335028 claude
+      00:35 273996 node
+   02:48:17 164852 next-server (v1
+      00:17 144656 node
 -- disk --
 /dev/sda1        75G   27G   46G  37% /
