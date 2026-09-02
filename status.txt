@@ -1,11 +1,10 @@
-generated: 2026-09-02 21:25:02 UTC
+generated: 2026-09-02 21:30:01 UTC
 done:   175
-queued: 6
-failed: 17
+queued: 5
+failed: 18
 hold:   0
 
 -- queued --
-u00-177-the-invoice-detail-page-must-render.md
 u08a-174-sign-forges-a-second-document.md
 u08b-174-no1edit-server-tools-500.md
 u08c-174-digisign-and-edit-remainder.md
@@ -13,6 +12,7 @@ u09-175-silent-noops-hr-and-no1cloud.md
 u10-176-wrong-company-on-the-packet-and-missing-vat.md
 -- failed --
 u00-165-fix-everything-the-live-test-found.md
+u00-177-the-invoice-detail-page-must-render.md
 u01-166-auth-must-hold-and-search-must-find.md
 u01-170-finish-the-auth-task-gate.md
 u02-167-fix-what-the-agent-swarm-found.md
@@ -31,15 +31,6 @@ y03-148-preview-and-sharing.md
 z00-151-the-gate-must-use-the-box.md
 
 -- log --
----- u08-174-edit-and-digisign-still-broken ----  started 17:42:34
-================================================
-  RunUrBusiness — draining the task queue
-  started Wed 02 Sep 18:19
-================================================
-
----- u00-177-the-invoice-detail-page-must-render ----  started 18:19:22
-     .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
-================================================
   RunUrBusiness — draining the task queue
   started Wed 02 Sep 19:00
 ================================================
@@ -51,15 +42,24 @@ z00-151-the-gate-must-use-the-box.md
      ! SCREENS: 0 broken, 0 blank, 6 404 of 218 — see docs/screen-audit.md
      ! JOURNEYS: 2 of 22 failed — J2: sign a document myself and take it away — DigiSign-only tenant, one document through all four tools — hr+digisign tenant, no No1Cloud — see docs/journeys-report.md
      . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
+     . gate: 65 pass, 10 fail, 0 pending
+     ! GATE FAILED: 6 screen(s) 404: /credit-notes/[id]/copy, /credit-notes/[id]/delete, /credit-notes/[id]/edit, /credit-notes/[id], /credit-notes/[id]/send, /credit-notes/[id]/void; 57 screen(s) flagged for density, up from 49 on the last green run: /accounting/packets/[packet], /accounting/packets/build/[statement], /assets/[id], /assets/holders, /assets, /attention, /banking/[account]/reconcile, /banking/[account]/statements/[statement] — see docs/screen-density.md
+     ! GATE FAILED, caused by this task
+     [FAILED] (exit 97) 21:28:07
+       moved to tasks/failed/ — the queue carries on
+       reason: completion marker + commit present, but the gate failed: 6 screen(s) 404: /credit-notes/[id]/copy, /credit-notes/[id]/delete, /credit-notes/[id]/edit, /credit-notes/[id], /credit-notes/[id]/send, /credit-notes/[id]/void; 57 screen(s) flagged for density, up from 49 on the last green run: /accounting/packets/[packet], /accounting/packets/build/[statement], /assets/[id], /assets/holders, /assets, /attention, /banking/[account]/reconcile, /banking/[account]/statements/[statement] — see docs/screen-density.md
+       see logs/u00-177-the-invoice-detail-page-must-render.log
+
+---- u08a-174-sign-forges-a-second-document ----  started 21:28:09
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        6119        8262        3127        4738        9483
+Mem:           15603        4105       10271        2819        4434       11497
 -- top --
     ELAPSED   RSS COMMAND
-      04:38 1095860 node
-      32:54 352632 next-server (v1
-      01:35 351236 node
-   01:13:21 222764 next-server (v1
+      01:49 321092 claude
+   01:18:20 222768 next-server (v1
+   01:18:21 126244 node
+   14:37:17 51632 systemd-journal
 -- disk --
 /dev/sda1        75G   23G   49G  32% /
