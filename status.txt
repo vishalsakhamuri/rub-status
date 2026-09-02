@@ -1,4 +1,4 @@
-generated: 2026-09-02 13:05:01 UTC
+generated: 2026-09-02 13:10:01 UTC
 done:   175
 queued: 3
 failed: 15
@@ -26,8 +26,6 @@ y03-148-preview-and-sharing.md
 z00-151-the-gate-must-use-the-box.md
 
 -- log --
-     ! GATE FAILED: scripts/prove-search.ts failed (u16-100 is marked done):   [32m✓[0m the input is focused on open /   [32m✓[0m Enter on a result navigates (URL changed or overlay closed) /   [32m✓[0m Esc closes the overlay and returns focus to the trigger /  / [31m1 check(s) failed.[0m; journey "one document through all four tools — hr+digisign tenant, no No1Cloud" failed: step 8: searching for "Journeys OneStore1788337851899" did not return the contract in the results; 50 screen(s) flagged for density, up from 49 on the last green run: /accounting/packets/[packet], /accounting/packets/build/[statement], /assets/[id], /assets/holders, /assets, /attention, /banking/[account]/reconcile, /banking/[account]/statements/[statement] — see docs/screen-density.md
-     ! GATE FAILED, caused by this task
      [FAILED] (exit 97) 09:12:08
        moved to tasks/failed/ — the queue carries on
        reason: completion marker + commit present, but the gate failed: scripts/prove-search.ts failed (u16-100 is marked done):   [32m✓[0m the input is focused on open /   [32m✓[0m Enter on a result navigates (URL changed or overlay closed) /   [32m✓[0m Esc closes the overlay and returns focus to the trigger /  / [31m1 check(s) failed.[0m; journey "one document through all four tools — hr+digisign tenant, no No1Cloud" failed: step 8: searching for "Journeys OneStore1788337851899" did not return the contract in the results; 50 screen(s) flagged for density, up from 49 on the last green run: /accounting/packets/[packet], /accounting/packets/build/[statement], /assets/[id], /assets/holders, /assets, /attention, /banking/[account]/reconcile, /banking/[account]/statements/[statement] — see docs/screen-density.md
@@ -46,15 +44,17 @@ z00-151-the-gate-must-use-the-box.md
      . build/screens/journeys: diff since d5f6e068a7ec touches something that could render — running fresh
      . build clean
      . screens clean: 218 screens, 19 not reachable
+     ! JOURNEYS: 2 of 22 failed — J2: sign a document myself and take it away — DigiSign-only tenant, one document through all four tools — hr+digisign tenant, no No1Cloud — see docs/journeys-report.md
+     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        4721        9754        2895        4385       10881
+Mem:           15603        4414       10059        2867        4358       11188
 -- top --
     ELAPSED   RSS COMMAND
-      03:01 515356 next-server (v1
-      40:01 221676 next-server (v1
-      04:16 208776 node
-      02:59 147960 chrome-headless
+      03:37 307032 next-server (v1
+      45:01 221680 next-server (v1
+      03:38 129812 node
+      03:09 129524 node
 -- disk --
 /dev/sda1        75G   23G   50G  32% /
