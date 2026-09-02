@@ -1,4 +1,4 @@
-generated: 2026-09-02 22:20:01 UTC
+generated: 2026-09-02 22:25:01 UTC
 done:   175
 queued: 5
 failed: 18
@@ -31,8 +31,6 @@ y03-148-preview-and-sharing.md
 z00-151-the-gate-must-use-the-box.md
 
 -- log --
----- u00-177-the-invoice-detail-page-must-render ----  started 19:00:04
-     . suite green: 3099 tests
      . build/screens/journeys: diff since bd67b696e270 touches something that could render — running fresh
      . build clean
      ! SCREENS: 0 broken, 0 blank, 6 404 of 218 — see docs/screen-audit.md
@@ -51,15 +49,17 @@ z00-151-the-gate-must-use-the-box.md
      . build/screens/journeys: diff since 9fb6e81172ca touches something that could render — running fresh
      . build clean
      ! SCREENS: 0 broken, 0 blank, 6 404 of 218 — see docs/screen-audit.md
+     ! JOURNEYS: 2 of 22 failed — J2: sign a document myself and take it away — DigiSign-only tenant, one document through all four tools — hr+digisign tenant, no No1Cloud — see docs/journeys-report.md
+     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        4699        9667        2839        4465       10903
+Mem:           15603        4389        9977        2819        4445       11213
 -- top --
     ELAPSED   RSS COMMAND
-      01:18 548152 next-server (v1
-   02:08:21 222808 next-server (v1
-      02:35 186344 node
-      01:15 143584 chrome-headless
+      02:18 310108 next-server (v1
+   02:13:20 222812 next-server (v1
+      01:51 129864 node
+      02:19 129632 node
 -- disk --
 /dev/sda1        75G   23G   49G  32% /
