@@ -1,4 +1,4 @@
-generated: 2026-09-02 11:35:01 UTC
+generated: 2026-09-02 11:40:01 UTC
 done:   175
 queued: 2
 failed: 15
@@ -25,7 +25,6 @@ y03-148-preview-and-sharing.md
 z00-151-the-gate-must-use-the-box.md
 
 -- log --
-     . build clean
      . screens clean: 218 screens, 19 not reachable
      ! JOURNEYS: 2 of 22 failed — J2: sign a document myself and take it away — DigiSign-only tenant, one document through all four tools — hr+digisign tenant, no No1Cloud — see docs/journeys-report.md
      . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
@@ -45,15 +44,16 @@ z00-151-the-gate-must-use-the-box.md
 ================================================
 
 ---- u07-173-the-write-layer-lies ----  started 11:05:05
+     .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        4658       10031        2864        4139       10944
+Mem:           15603        4574       10112        2894        4171       11028
 -- top --
     ELAPSED   RSS COMMAND
-      29:53 458800 claude
-      12:16 319844 node
-      23:23 215888 next-server (v1
-      00:13 165456 node
+      02:27 330008 claude
+      00:44 290492 node
+      28:23 215892 next-server (v1
+      00:25 200008 node
 -- disk --
 /dev/sda1        75G   25G   48G  35% /
