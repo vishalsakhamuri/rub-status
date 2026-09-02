@@ -1,4 +1,4 @@
-generated: 2026-09-02 07:05:01 UTC
+generated: 2026-09-02 07:10:01 UTC
 done:   175
 queued: 1
 failed: 14
@@ -23,7 +23,6 @@ y03-148-preview-and-sharing.md
 z00-151-the-gate-must-use-the-box.md
 
 -- log --
-    u01-166-auth-must-hold-and-search-must-find.md
     u01-170-finish-the-auth-task-gate.md
     u02-167-fix-what-the-agent-swarm-found.md
     u03-168-clean-the-demo-tenant-for-wednesday.md
@@ -43,15 +42,16 @@ z00-151-the-gate-must-use-the-box.md
 ================================================
 
 ---- u06-172-opening-balances-and-cross-entity ----  started 06:20:01
+     .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        4851        9229        2770        4632       10751
+Mem:           15603        3992       10087        2762        4625       11611
 -- top --
     ELAPSED   RSS COMMAND
-      44:57 595148 claude
-      00:10 402464 node
-      00:06 172284 node
-   09:14:57 162588 next-server (v1
+      00:50 312436 claude
+   09:19:57 162588 next-server (v1
+   09:19:58 74988 node
+      17:18 35472 systemd-journal
 -- disk --
 /dev/sda1        75G   23G   50G  32% /
