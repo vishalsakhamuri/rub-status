@@ -1,10 +1,11 @@
-generated: 2026-09-03 04:40:01 UTC
+generated: 2026-09-03 04:45:01 UTC
 done:   175
-queued: 3
+queued: 4
 failed: 20
 hold:   0
 
 -- queued --
+u00a-178-invoice-detail-fails-ONLY-in-production.md
 u08c-174-digisign-and-edit-remainder.md
 u09-175-silent-noops-hr-and-no1cloud.md
 u10-176-wrong-company-on-the-packet-and-missing-vat.md
@@ -54,12 +55,12 @@ z00-151-the-gate-must-use-the-box.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603       12853        1154        1946        3885        2749
+Mem:           15603       12844        1128        1950        3924        2758
 -- top --
     ELAPSED   RSS COMMAND
-      05:27 9153456 next-server (v1
-      01:46 433544 node
-      42:16 193788 next-server (v1
-      01:26 180256 node
+      10:27 9177864 next-server (v1
+      06:46 537140 node
+      47:16 193792 next-server (v1
+      10:26 176448 node
 -- disk --
 /dev/sda1        75G   28G   44G  39% /
