@@ -1,4 +1,4 @@
-generated: 2026-09-03 07:40:01 UTC
+generated: 2026-09-03 07:45:01 UTC
 done:   175
 queued: 5
 failed: 20
@@ -33,8 +33,6 @@ y03-148-preview-and-sharing.md
 z00-151-the-gate-must-use-the-box.md
 
 -- log --
-
----- u08c-174-digisign-and-edit-remainder ----  started 04:17:10
      ! exited clean but produced nothing verifiable — stalled — log ends on a waiting line, no completion marker (commit was made, but a commit is not proof of completion when the task's own words say it isn't finished)
 ================================================
   RunUrBusiness — draining the task queue
@@ -53,15 +51,17 @@ z00-151-the-gate-must-use-the-box.md
      . build/screens/journeys: diff since c0baa2784267 touches something that could render — running fresh
      . build clean
      ! SCREENS: 0 broken, 0 blank, 6 404 of 218 — see docs/screen-audit.md
+     ! JOURNEYS: 2 of 22 failed — J2: sign a document myself and take it away — DigiSign-only tenant, one document through all four tools — hr+digisign tenant, no No1Cloud — see docs/journeys-report.md
+     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1704       12448          99        1885       13898
+Mem:           15603        1600       12548          74        1863       14002
 -- top --
     ELAPSED   RSS COMMAND
-      02:15 488796 next-server (v1
-   02:40:50 280088 next-server (v1
-      03:31 215892 node
-      02:13 145168 chrome-headless
+      03:03 315704 next-server (v1
+   02:45:50 280088 next-server (v1
+      02:36 130588 node
+      02:36 129956 node
 -- disk --
 /dev/sda1        75G   24G   49G  33% /
