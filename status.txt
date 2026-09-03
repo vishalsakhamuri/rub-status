@@ -1,11 +1,12 @@
-generated: 2026-09-03 12:05:01 UTC
+generated: 2026-09-03 12:10:01 UTC
 done:   175
-queued: 4
+queued: 5
 failed: 21
 hold:   0
 
 -- queued --
 u08c-174-digisign-and-edit-remainder.md
+u08d-180-the-gate-must-not-kill-the-task.md
 u09-175-silent-noops-hr-and-no1cloud.md
 u10-176-wrong-company-on-the-packet-and-missing-vat.md
 u11-179-the-gap-list-fixed-once-still-broken.md
@@ -56,12 +57,12 @@ z00-151-the-gate-must-use-the-box.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1171       13436          37        1353       14431
+Mem:           15603        1239       13368          46        1362       14364
 -- top --
     ELAPSED   RSS COMMAND
-      00:41 459916 node
-      00:22 147376 node
-      00:41 76264 npm exec vitest
-   07:10:22 21732 systemd-journal
+      05:41 561188 node
+      00:14 123564 node
+      05:42 76264 npm exec vitest
+   07:15:23 22792 systemd-journal
 -- disk --
 /dev/sda1        75G   24G   49G  33% /
