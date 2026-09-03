@@ -1,4 +1,4 @@
-generated: 2026-09-03 09:20:01 UTC
+generated: 2026-09-03 09:25:01 UTC
 done:   175
 queued: 4
 failed: 21
@@ -33,12 +33,6 @@ y03-148-preview-and-sharing.md
 z00-151-the-gate-must-use-the-box.md
 
 -- log --
-================================================
-
----- u00a-178-invoice-detail-fails-ONLY-in-production ----  started 04:54:44
-     .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
-     . suite green: 3100 tests
-     . build/screens/journeys: diff since c0baa2784267 touches something that could render — running fresh
      . build clean
      ! SCREENS: 0 broken, 0 blank, 6 404 of 218 — see docs/screen-audit.md
      ! JOURNEYS: 2 of 22 failed — J2: sign a document myself and take it away — DigiSign-only tenant, one document through all four tools — hr+digisign tenant, no No1Cloud — see docs/journeys-report.md
@@ -53,15 +47,21 @@ z00-151-the-gate-must-use-the-box.md
 
 ---- u08c-174-digisign-and-edit-remainder ----  started 08:23:14
      .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
+================================================
+  RunUrBusiness — draining the task queue
+  started Thu 03 Sep 09:24
+================================================
+
+---- u08c-174-digisign-and-edit-remainder ----  started 09:24:53
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603       13852         267         627        2446        1750
+Mem:           15603         782       14705          29         460       14820
 -- top --
     ELAPSED   RSS COMMAND
-      15:05 11209464 next-server (v1
-      02:49 815860 chrome-headless
-      01:51 326200 claude
-   04:20:51 280032 next-server (v1
+      00:05 271620 claude
+   04:30:17 17292 unattended-upgr
+   04:30:18 16652 networkd-dispat
+   04:30:23 16056 systemd-journal
 -- disk --
-/dev/sda1        75G   29G   43G  41% /
+/dev/sda1        75G   35G   38G  48% /
