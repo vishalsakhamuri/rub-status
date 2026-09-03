@@ -1,11 +1,10 @@
-generated: 2026-09-03 18:55:01 UTC
+generated: 2026-09-03 19:00:01 UTC
 done:   175
-queued: 3
-failed: 23
+queued: 2
+failed: 24
 hold:   0
 
 -- queued --
-u09-175-silent-noops-hr-and-no1cloud.md
 u10-176-wrong-company-on-the-packet-and-missing-vat.md
 u11-179-the-gap-list-fixed-once-still-broken.md
 -- failed --
@@ -25,6 +24,7 @@ u08a-174-sign-forges-a-second-document.md
 u08b-174-no1edit-server-tools-500.md
 u08c-174-digisign-and-edit-remainder.md
 u08d-180-the-gate-must-not-kill-the-task.md
+u09-175-silent-noops-hr-and-no1cloud.md
 v00-154-the-access-boundary-check-must-finish.md
 w01-162-suite-basic-and-integration.md
 w02-163-single-tool-subscription.md
@@ -34,6 +34,12 @@ y03-148-preview-and-sharing.md
 z00-151-the-gate-must-use-the-box.md
 
 -- log --
+Call log:
+  - waiting for getByRole('button', { name: /^Finish$/ })
+    - locator resolved to <button disabled type="submit" class="inline-flex items-center justify-center gap-2 font-semibold whitespace-nowrap transition disabled:cursor-not-allowed disabled:opacity-60 bg-brand-600 text-white hover:bg-brand px-[18px] py-[11px] text-[14px] rounded-control">Finish</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
     - retrying click action
     - waiting 20ms
     2 × waiting for element to be visible, enabled and stable
@@ -44,25 +50,19 @@ z00-151-the-gate-must-use-the-box.md
        - element is not enabled
      - retrying click action
        - waiting 500ms
-; 60 screen(s) flagged for density, up from 49 on the last green run: /accounting/packets/[packet], /accounting/packets/build/[statement], /assets/[id], /assets/holders, /assets, /attention, /banking/[account]/reconcile, /banking/[account]/statements/[statement] — see docs/screen-density.md
-       see logs/u08d-180-the-gate-must-not-kill-the-task.log
+; 61 screen(s) flagged for density, up from 49 on the last green run: /accounting/packets/[packet], /accounting/packets/build/[statement], /assets/[id], /assets/holders, /assets, /attention, /banking/[account]/reconcile, /banking/[account]/statements/[statement] — see docs/screen-density.md
+       see logs/u09-175-silent-noops-hr-and-no1cloud.log
 
----- u09-175-silent-noops-hr-and-no1cloud ----  started 16:10:46
-     . suite green: 3113 tests
-     . build/screens/journeys: diff since 5f0f5eef6600 touches something that could render — running fresh
-     . build clean
-     ! SCREENS: 0 broken, 0 blank, 6 404 of 218 — see docs/screen-audit.md
-     ! JOURNEYS: 3 of 22 failed — J2: sign a document myself and take it away — DigiSign-only tenant, one document through all four tools — hr+digisign tenant, no No1Cloud, one document through all four tools — digisign+cloud tenant, no HR — see docs/journeys-report.md
-     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
+---- u10-176-wrong-company-on-the-packet-and-missing-vat ----  started 18:56:45
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3092       10773         388        2457       12510
+Mem:           15603         912       12844          35        2221       14690
 -- top --
     ELAPSED   RSS COMMAND
-      06:28 1190936 node
-      03:08 436000 node
-      26:08 381092 next-server (v1
-      00:05 163724 node
+      03:14 414820 claude
+   14:05:23 29056 systemd-journal
+   14:05:29 11964 systemd
+   14:05:17 11012 networkd-dispat
 -- disk --
 /dev/sda1        75G   24G   48G  34% /
