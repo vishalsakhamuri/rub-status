@@ -1,4 +1,4 @@
-generated: 2026-09-03 04:10:01 UTC
+generated: 2026-09-03 04:15:01 UTC
 done:   175
 queued: 3
 failed: 20
@@ -31,7 +31,6 @@ y03-148-preview-and-sharing.md
 z00-151-the-gate-must-use-the-box.md
 
 -- log --
-     ! GATE FAILED, caused by this task
      [FAILED] (exit 97) 01:58:50
        moved to tasks/failed/ — the queue carries on
        reason: completion marker + commit present, but the gate failed: 1 of 3100 tests failing; 6 screen(s) 404: /credit-notes/[id]/copy, /credit-notes/[id]/delete, /credit-notes/[id]/edit, /credit-notes/[id], /credit-notes/[id]/send, /credit-notes/[id]/void; 55 screen(s) flagged for density, up from 49 on the last green run: /accounting/packets/[packet], /accounting/packets/build/[statement], /assets/[id], /assets/holders, /assets, /attention, /banking/[account]/reconcile, /banking/[account]/statements/[statement] — see docs/screen-density.md
@@ -51,15 +50,16 @@ z00-151-the-gate-must-use-the-box.md
 
 ---- u08c-174-digisign-and-edit-remainder ----  started 03:48:15
      .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
+     ! exited clean but produced nothing verifiable — attempt 2 of 2 — stalled — log ends on a waiting line, no commit, no marker
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        7836        4899        1848        5063        7766
+Mem:           15603        8627        4080        1873        5116        6975
 -- top --
     ELAPSED   RSS COMMAND
-      12:08 4315564 next-server (v1
-      04:36 336268 claude
-      02:38 294828 node
-      12:16 216176 next-server (v1
+      17:08 4317136 next-server (v1
+      00:16 657376 node
+      17:16 216180 next-server (v1
+      16:59 190944 node
 -- disk --
 /dev/sda1        75G   25G   48G  35% /
