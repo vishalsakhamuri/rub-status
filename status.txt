@@ -1,4 +1,4 @@
-generated: 2026-09-03 18:25:01 UTC
+generated: 2026-09-03 18:30:01 UTC
 done:   175
 queued: 3
 failed: 23
@@ -34,8 +34,6 @@ y03-148-preview-and-sharing.md
 z00-151-the-gate-must-use-the-box.md
 
 -- log --
-    2 × waiting for element to be visible, enabled and stable
-      - element is not enabled
     - retrying click action
     - waiting 20ms
     2 × waiting for element to be visible, enabled and stable
@@ -54,15 +52,17 @@ z00-151-the-gate-must-use-the-box.md
      . build/screens/journeys: diff since 5f0f5eef6600 touches something that could render — running fresh
      . build clean
      ! SCREENS: 0 broken, 0 blank, 6 404 of 218 — see docs/screen-audit.md
+     ! JOURNEYS: 3 of 22 failed — J2: sign a document myself and take it away — DigiSign-only tenant, one document through all four tools — hr+digisign tenant, no No1Cloud, one document through all four tools — digisign+cloud tenant, no HR — see docs/journeys-report.md
+     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1436       12573          66        1989       14167
+Mem:           15603        1179       12830          35        1959       14424
 -- top --
     ELAPSED   RSS COMMAND
-      00:53 541788 next-server (v1
-      02:09 184292 node
-      00:51 143328 chrome-headless
-      00:01 139720 chrome-headless
+      01:08 300336 next-server (v1
+      00:02 146652 node
+      00:01 139736 node
+      01:08 130324 node
 -- disk --
 /dev/sda1        75G   24G   48G  34% /
