@@ -1,4 +1,4 @@
-generated: 2026-09-03 00:00:01 UTC
+generated: 2026-09-03 00:05:01 UTC
 done:   175
 queued: 4
 failed: 19
@@ -31,12 +31,6 @@ y03-148-preview-and-sharing.md
 z00-151-the-gate-must-use-the-box.md
 
 -- log --
-     . suite green: 3099 tests
-     . build/screens/journeys: diff since 9fb6e81172ca touches something that could render — running fresh
-     . build clean
-     ! SCREENS: 0 broken, 0 blank, 6 404 of 218 — see docs/screen-audit.md
-     ! JOURNEYS: 2 of 22 failed — J2: sign a document myself and take it away — DigiSign-only tenant, one document through all four tools — hr+digisign tenant, no No1Cloud — see docs/journeys-report.md
-     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
      . gate: 66 pass, 9 fail, 0 pending
      ! GATE FAILED: 6 screen(s) 404: /credit-notes/[id]/copy, /credit-notes/[id]/delete, /credit-notes/[id]/edit, /credit-notes/[id], /credit-notes/[id]/send, /credit-notes/[id]/void; 55 screen(s) flagged for density, up from 49 on the last green run: /accounting/packets/[packet], /accounting/packets/build/[statement], /assets/[id], /assets/holders, /assets, /attention, /banking/[account]/reconcile, /banking/[account]/statements/[statement] — see docs/screen-density.md
      ! GATE FAILED, caused by this task
@@ -51,15 +45,21 @@ z00-151-the-gate-must-use-the-box.md
      . suite green: 3100 tests
      . build/screens/journeys: diff since 979d66324eb3 touches something that could render — running fresh
      . build clean
+================================================
+  RunUrBusiness — draining the task queue
+  started Thu 03 Sep 00:03
+================================================
+
+---- u08b-174-no1edit-server-tools-500 ----  started 00:03:29
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603       10450        1656        2925        6840        5152
+Mem:           15603        3180       12031        1792        2523       12422
 -- top --
     ELAPSED   RSS COMMAND
-      34:44 6000992 next-server (v1
-      01:09 526004 chrome-headless
-   03:48:21 232452 next-server (v1
-      01:11 193160 node
+      01:29 324840 claude
+   03:53:21 142032 next-server (v1
+   03:53:22 75276 node
+   17:12:18 28980 systemd-journal
 -- disk --
-/dev/sda1        75G   25G   47G  35% /
+/dev/sda1        75G   29G   44G  40% /
