@@ -1,4 +1,4 @@
-generated: 2026-09-03 05:30:01 UTC
+generated: 2026-09-03 05:35:01 UTC
 done:   175
 queued: 5
 failed: 20
@@ -33,7 +33,6 @@ y03-148-preview-and-sharing.md
 z00-151-the-gate-must-use-the-box.md
 
 -- log --
-     ! exited clean but produced nothing verifiable — attempt 2 of 2 — stalled — log ends on a waiting line, no commit, no marker
 ================================================
   RunUrBusiness — draining the task queue
   started Thu 03 Sep 04:17
@@ -53,15 +52,16 @@ z00-151-the-gate-must-use-the-box.md
 ================================================
 
 ---- u00a-178-invoice-detail-fails-ONLY-in-production ----  started 04:54:44
+     .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2058       12336          51        1582       13544
+Mem:           15603        2869       11488          83        1660       12733
 -- top --
     ELAPSED   RSS COMMAND
-      35:14 458892 claude
-      11:39 429780 next-server (v1
-      08:19 315400 node
-      30:50 278388 next-server (v1
+      00:10 376244 node
+      16:39 356012 next-server (v1
+      02:50 329664 claude
+      35:50 278484 next-server (v1
 -- disk --
 /dev/sda1        75G   24G   49G  33% /
