@@ -1,11 +1,10 @@
-generated: 2026-09-03 13:20:01 UTC
+generated: 2026-09-03 13:25:01 UTC
 done:   175
-queued: 5
-failed: 21
+queued: 4
+failed: 22
 hold:   0
 
 -- queued --
-u08c-174-digisign-and-edit-remainder.md
 u08d-180-the-gate-must-not-kill-the-task.md
 u09-175-silent-noops-hr-and-no1cloud.md
 u10-176-wrong-company-on-the-packet-and-missing-vat.md
@@ -25,6 +24,7 @@ u07-173-the-write-layer-lies.md
 u08-174-too-big-split-into-u08a-u08b-u08c.md
 u08a-174-sign-forges-a-second-document.md
 u08b-174-no1edit-server-tools-500.md
+u08c-174-digisign-and-edit-remainder.md
 v00-154-the-access-boundary-check-must-finish.md
 w01-162-suite-basic-and-integration.md
 w02-163-single-tool-subscription.md
@@ -34,15 +34,6 @@ y03-148-preview-and-sharing.md
 z00-151-the-gate-must-use-the-box.md
 
 -- log --
-================================================
-
----- u08c-174-digisign-and-edit-remainder ----  started 09:24:53
-     .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
-     . suite green: 3102 tests
-     . build/screens/journeys: diff since 6b9c963e873c touches something that could render — running fresh
-     . build clean
-     ! SCREENS: 0 broken, 0 blank, 6 404 of 218 — see docs/screen-audit.md
-================================================
   RunUrBusiness — draining the task queue
   started Thu 03 Sep 12:01
 ================================================
@@ -54,15 +45,24 @@ z00-151-the-gate-must-use-the-box.md
      ! SCREENS: 0 broken, 0 blank, 6 404 of 218 — see docs/screen-audit.md
      ! JOURNEYS: 3 of 22 failed — J2: sign a document myself and take it away — DigiSign-only tenant, one document through all four tools — hr+digisign tenant, no No1Cloud, one document through all four tools — digisign+cloud tenant, no HR — see docs/journeys-report.md
      . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
+     . gate: 65 pass, 10 fail, 0 pending
+     ! GATE FAILED: 6 screen(s) 404: /credit-notes/[id]/copy, /credit-notes/[id]/delete, /credit-notes/[id]/edit, /credit-notes/[id], /credit-notes/[id]/send, /credit-notes/[id]/void; 60 screen(s) flagged for density, up from 49 on the last green run: /accounting/packets/[packet], /accounting/packets/build/[statement], /assets/[id], /assets/holders, /assets, /attention, /banking/[account]/reconcile, /banking/[account]/statements/[statement] — see docs/screen-density.md
+     ! GATE FAILED, caused by this task
+     [FAILED] (exit 97) 13:22:55
+       moved to tasks/failed/ — the queue carries on
+       reason: completion marker + commit present, but the gate failed: 6 screen(s) 404: /credit-notes/[id]/copy, /credit-notes/[id]/delete, /credit-notes/[id]/edit, /credit-notes/[id], /credit-notes/[id]/send, /credit-notes/[id]/void; 60 screen(s) flagged for density, up from 49 on the last green run: /accounting/packets/[packet], /accounting/packets/build/[statement], /assets/[id], /assets/holders, /assets, /attention, /banking/[account]/reconcile, /banking/[account]/statements/[statement] — see docs/screen-density.md
+       see logs/u08c-174-digisign-and-edit-remainder.log
+
+---- u08d-180-the-gate-must-not-kill-the-task ----  started 13:22:57
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2850       11537         350        1891       12752
+Mem:           15603         795       13591          19        1561       14807
 -- top --
     ELAPSED   RSS COMMAND
-      04:53 1156964 node
-      01:39 355420 node
-      33:54 343864 next-server (v1
-      33:54 129876 node
+      02:01 325472 claude
+   08:30:22 25264 systemd-journal
+   01:15:07 13004 systemd
+   08:30:28 11964 systemd
 -- disk --
 /dev/sda1        75G   24G   49G  33% /
