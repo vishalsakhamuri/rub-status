@@ -1,4 +1,4 @@
-generated: 2026-09-03 15:30:02 UTC
+generated: 2026-09-03 15:35:01 UTC
 done:   175
 queued: 4
 failed: 22
@@ -34,7 +34,6 @@ y03-148-preview-and-sharing.md
 z00-151-the-gate-must-use-the-box.md
 
 -- log --
-================================================
 
 ---- u08c-174-digisign-and-edit-remainder ----  started 12:01:55
      . suite green: 3102 tests
@@ -54,15 +53,16 @@ z00-151-the-gate-must-use-the-box.md
 ---- u08d-180-the-gate-must-not-kill-the-task ----  started 13:22:57
      . suite green: 3102 tests
      . build/screens/journeys: diff since 130cef8d401e touches something that could render — running fresh
+     . build clean
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3599       10627          33        1736       12004
+Mem:           15603        2961       11264          80        1784       12641
 -- top --
     ELAPSED   RSS COMMAND
-      00:14 1566368 node
-      00:42 1329572 node
-      00:37 146348 node
-      00:43 128552 node
+      03:17 1103400 next-server (v1
+      03:13 522964 chrome-headless
+      00:24 441336 chrome-headless
+      03:15 344872 node
 -- disk --
 /dev/sda1        75G   24G   49G  33% /
