@@ -1,4 +1,4 @@
-generated: 2026-09-03 15:25:01 UTC
+generated: 2026-09-03 15:30:02 UTC
 done:   175
 queued: 4
 failed: 22
@@ -34,8 +34,6 @@ y03-148-preview-and-sharing.md
 z00-151-the-gate-must-use-the-box.md
 
 -- log --
-  RunUrBusiness — draining the task queue
-  started Thu 03 Sep 12:01
 ================================================
 
 ---- u08c-174-digisign-and-edit-remainder ----  started 12:01:55
@@ -54,15 +52,17 @@ z00-151-the-gate-must-use-the-box.md
        see logs/u08c-174-digisign-and-edit-remainder.log
 
 ---- u08d-180-the-gate-must-not-kill-the-task ----  started 13:22:57
+     . suite green: 3102 tests
+     . build/screens/journeys: diff since 130cef8d401e touches something that could render — running fresh
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1392       12834          74        1778       14210
+Mem:           15603        3599       10627          33        1736       12004
 -- top --
     ELAPSED   RSS COMMAND
-      24:17 595632 node
-      00:08 191152 node
-      24:17 77424 npm exec vitest
-   10:30:23 26968 systemd-journal
+      00:14 1566368 node
+      00:42 1329572 node
+      00:37 146348 node
+      00:43 128552 node
 -- disk --
 /dev/sda1        75G   24G   49G  33% /
