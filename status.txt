@@ -1,4 +1,4 @@
-generated: 2026-09-03 15:40:01 UTC
+generated: 2026-09-03 15:45:01 UTC
 done:   175
 queued: 4
 failed: 22
@@ -34,8 +34,6 @@ y03-148-preview-and-sharing.md
 z00-151-the-gate-must-use-the-box.md
 
 -- log --
----- u08c-174-digisign-and-edit-remainder ----  started 12:01:55
-     . suite green: 3102 tests
      . build/screens/journeys: diff since 6b9c963e873c touches something that could render — running fresh
      . build clean
      ! SCREENS: 0 broken, 0 blank, 6 404 of 218 — see docs/screen-audit.md
@@ -54,15 +52,17 @@ z00-151-the-gate-must-use-the-box.md
      . build/screens/journeys: diff since 130cef8d401e touches something that could render — running fresh
      . build clean
      ! SCREENS: 0 broken, 0 blank, 6 404 of 218 — see docs/screen-audit.md
+     ! JOURNEYS: 3 of 22 failed — J2: sign a document myself and take it away — DigiSign-only tenant, one document through all four tools — hr+digisign tenant, no No1Cloud, one document through all four tools — digisign+cloud tenant, no HR — see docs/journeys-report.md
+     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1464       12761          66        1771       14138
+Mem:           15603        1095       13130          33        1737       14507
 -- top --
     ELAPSED   RSS COMMAND
-      02:21 518192 next-server (v1
-      03:38 173940 node
-      02:19 144616 chrome-headless
-      00:01 140328 chrome-headless
+      02:45 301972 next-server (v1
+      00:10 147912 node
+      02:46 129444 node
+      00:10 113744 node
 -- disk --
 /dev/sda1        75G   24G   49G  33% /
