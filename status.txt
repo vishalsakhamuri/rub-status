@@ -1,4 +1,4 @@
-generated: 2026-09-03 01:20:01 UTC
+generated: 2026-09-03 01:25:01 UTC
 done:   175
 queued: 4
 failed: 19
@@ -31,7 +31,6 @@ y03-148-preview-and-sharing.md
 z00-151-the-gate-must-use-the-box.md
 
 -- log --
-     [FAILED] (exit 97) 22:54:14
        moved to tasks/failed/ — the queue carries on
        reason: completion marker + commit present, but the gate failed: 6 screen(s) 404: /credit-notes/[id]/copy, /credit-notes/[id]/delete, /credit-notes/[id]/edit, /credit-notes/[id], /credit-notes/[id]/send, /credit-notes/[id]/void; 55 screen(s) flagged for density, up from 49 on the last green run: /accounting/packets/[packet], /accounting/packets/build/[statement], /assets/[id], /assets/holders, /assets, /attention, /banking/[account]/reconcile, /banking/[account]/statements/[statement] — see docs/screen-density.md
        see logs/u08a-174-sign-forges-a-second-document.log
@@ -51,15 +50,16 @@ z00-151-the-gate-must-use-the-box.md
      ! SUITE RED: 1 of 3100 tests failing — see logs/suite-latest.log
      . build/screens/journeys: diff since 979d66324eb3 touches something that could render — running fresh
      . build clean
+     ! SCREENS: 0 broken, 0 blank, 6 404 of 218 — see docs/screen-audit.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        5402        9241        1830        3129       10200
+Mem:           15603        3709       10933        1812        3112       11893
 -- top --
     ELAPSED   RSS COMMAND
-      02:09 1318392 chrome-headless
-      02:13 866548 next-server (v1
-      02:11 301484 node
-      02:09 147812 chrome-headless
+      01:32 473624 next-server (v1
+      02:48 206056 node
+   05:13:21 146956 next-server (v1
+      01:30 145820 chrome-headless
 -- disk --
 /dev/sda1        75G   23G   49G  32% /
