@@ -1,4 +1,4 @@
-generated: 2026-09-03 01:25:01 UTC
+generated: 2026-09-03 01:30:01 UTC
 done:   175
 queued: 4
 failed: 19
@@ -31,8 +31,6 @@ y03-148-preview-and-sharing.md
 z00-151-the-gate-must-use-the-box.md
 
 -- log --
-       moved to tasks/failed/ — the queue carries on
-       reason: completion marker + commit present, but the gate failed: 6 screen(s) 404: /credit-notes/[id]/copy, /credit-notes/[id]/delete, /credit-notes/[id]/edit, /credit-notes/[id], /credit-notes/[id]/send, /credit-notes/[id]/void; 55 screen(s) flagged for density, up from 49 on the last green run: /accounting/packets/[packet], /accounting/packets/build/[statement], /assets/[id], /assets/holders, /assets, /attention, /banking/[account]/reconcile, /banking/[account]/statements/[statement] — see docs/screen-density.md
        see logs/u08a-174-sign-forges-a-second-document.log
 
 ---- u08b-174-no1edit-server-tools-500 ----  started 22:54:17
@@ -51,15 +49,17 @@ z00-151-the-gate-must-use-the-box.md
      . build/screens/journeys: diff since 979d66324eb3 touches something that could render — running fresh
      . build clean
      ! SCREENS: 0 broken, 0 blank, 6 404 of 218 — see docs/screen-audit.md
+     ! JOURNEYS: 2 of 22 failed — J2: sign a document myself and take it away — DigiSign-only tenant, one document through all four tools — hr+digisign tenant, no No1Cloud — see docs/journeys-report.md
+     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3709       10933        1812        3112       11893
+Mem:           15603        3400       11239        1793        3096       12202
 -- top --
     ELAPSED   RSS COMMAND
-      01:32 473624 next-server (v1
-      02:48 206056 node
-   05:13:21 146956 next-server (v1
-      01:30 145820 chrome-headless
+      02:36 318720 next-server (v1
+   05:18:21 146956 next-server (v1
+      02:07 129764 node
+      02:36 129428 node
 -- disk --
 /dev/sda1        75G   23G   49G  32% /
