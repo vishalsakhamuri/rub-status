@@ -1,4 +1,4 @@
-generated: 2026-09-03 22:30:01 UTC
+generated: 2026-09-03 22:35:01 UTC
 done:   175
 queued: 1
 failed: 25
@@ -34,7 +34,6 @@ y03-148-preview-and-sharing.md
 z00-151-the-gate-must-use-the-box.md
 
 -- log --
-Call log:
   - waiting for getByRole('button', { name: /^Finish$/ })
     - locator resolved to <button disabled type="submit" class="inline-flex items-center justify-center gap-2 font-semibold whitespace-nowrap transition disabled:cursor-not-allowed disabled:opacity-60 bg-brand-600 text-white hover:bg-brand px-[18px] py-[11px] text-[14px] rounded-control">Finish</button>
   - attempting click action
@@ -54,15 +53,16 @@ Call log:
        see logs/u10-176-wrong-company-on-the-packet-and-missing-vat.log
 
 ---- u11-179-the-gap-list-fixed-once-still-broken ----  started 21:31:25
+     ! exited clean but produced nothing verifiable — stalled — log ends on a waiting line, no completion marker (commit was made, but a commit is not proof of completion when the task's own words say it isn't finished)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1395       12785          87        1845       14207
+Mem:           15603        1268       12912          89        1847       14334
 -- top --
     ELAPSED   RSS COMMAND
-      58:33 555148 claude
-      03:23 203392 chrome-headless
-      03:24 162012 node
-      03:23 138036 chrome-headless
+      02:00 492816 node
+      00:18 150492 node
+      02:01 76704 npm exec vitest
+   17:40:23 34840 systemd-journal
 -- disk --
 /dev/sda1        75G   25G   48G  34% /
