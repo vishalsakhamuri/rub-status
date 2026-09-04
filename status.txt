@@ -1,4 +1,4 @@
-generated: 2026-09-04 14:55:01 UTC
+generated: 2026-09-04 15:00:01 UTC
 done:   181
 queued: 3
 failed: 20
@@ -32,12 +32,6 @@ z00-151-the-gate-must-use-the-box.md
 
 -- log --
   RunUrBusiness — draining the task queue
-  started Fri 04 Sep 12:20
-================================================
-
----- a00-181-the-gate-fails-every-task-on-its-own-self-tests ----  started 12:20:01
-================================================
-  RunUrBusiness — draining the task queue
   started Fri 04 Sep 12:31
 ================================================
 
@@ -51,15 +45,21 @@ z00-151-the-gate-must-use-the-box.md
      . build/screens/journeys: diff since c816cd4f0a82 touches something that could render — running fresh
      . build clean
      . mem: build step peaked at 4665MB (cgroup MemoryCurrent, sampled every 3s)
+================================================
+  RunUrBusiness — draining the task queue
+  started Fri 04 Sep 14:55
+================================================
+
+---- a00-181-the-gate-fails-every-task-on-its-own-self-tests ----  started 14:55:04
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1336       12114         102        2594       14267
+Mem:           15603        1228       12220         130        2623       14374
 -- top --
     ELAPSED   RSS COMMAND
-      09:34 533012 node
-      00:03 140844 node
-      09:35 78536 npm exec vitest
- 1-10:00:23 53728 systemd-journal
+      04:54 323680 claude
+      02:28 294584 node
+      00:50 99852 node
+      02:28 76808 npm exec vitest
 -- disk --
 /dev/sda1        75G   25G   48G  35% /
