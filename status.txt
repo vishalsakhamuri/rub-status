@@ -1,4 +1,4 @@
-generated: 2026-09-04 22:05:01 UTC
+generated: 2026-09-04 22:10:01 UTC
 done:   182
 queued: 2
 failed: 21
@@ -31,8 +31,6 @@ y03-148-preview-and-sharing.md
 z00-151-the-gate-must-use-the-box.md
 
 -- log --
-     . suite green: 3148 tests
-     . mem: tests step peaked at 2744MB (cgroup MemoryCurrent, sampled every 3s)
      . screens clean: 220 screens, 17 not reachable
      . mem: screens step peaked at 4679MB (cgroup MemoryCurrent, sampled every 3s)
      ! JOURNEYS: 3 of 22 failed — J2: sign a document myself and take it away — DigiSign-only tenant, one document through all four tools — hr+digisign tenant, no No1Cloud, one document through all four tools — digisign+cloud tenant, no HR — see docs/journeys-report.md
@@ -51,15 +49,17 @@ z00-151-the-gate-must-use-the-box.md
      . build/screens/journeys: diff since d8810eeb7f4e touches something that could render — running fresh
      . build clean
      . mem: build step peaked at 4830MB (cgroup MemoryCurrent, sampled every 3s)
+     . suite green: 3148 tests
+     . mem: tests step peaked at 2906MB (cgroup MemoryCurrent, sampled every 3s)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1347       11267         165        3493       14256
+Mem:           15603        3195        9418         156        3484       12407
 -- top --
     ELAPSED   RSS COMMAND
-      27:43 602808 node
-      27:43 79008 npm exec vitest
- 1-17:10:23 66652 systemd-journal
-      00:00 58656 node
+      01:53 1328276 chrome-headless
+      01:57 869804 next-server (v1
+      01:55 254972 node
+      01:54 146864 chrome-headless
 -- disk --
 /dev/sda1        75G   25G   47G  35% /
