@@ -1,11 +1,12 @@
-generated: 2026-09-04 21:20:01 UTC
+generated: 2026-09-04 21:25:01 UTC
 done:   182
-queued: 1
+queued: 2
 failed: 21
 hold:   0
 
 -- queued --
 a02-183-touch-every-control-fix-or-queue.md
+a03-184-public-sign-links-404-service-role-client.md
 -- failed --
 a01-182-three-defects-still-broken-in-production.md
 u00-165-fix-everything-the-live-test-found.md
@@ -53,12 +54,12 @@ z00-151-the-gate-must-use-the-box.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1013       11602         122        3448       14589
+Mem:           15603        1078       11537         122        3448       14524
 -- top --
     ELAPSED   RSS COMMAND
-      37:27 408292 claude
- 1-16:25:23 65812 systemd-journal
-      27:09 13100 systemd
- 1-16:25:29 12072 systemd
+      42:27 450668 claude
+ 1-16:30:23 65880 systemd-journal
+      32:09 13100 systemd
+ 1-16:30:29 12072 systemd
 -- disk --
 /dev/sda1        75G   25G   47G  35% /
