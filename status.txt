@@ -1,12 +1,13 @@
-generated: 2026-09-04 12:30:01 UTC
+generated: 2026-09-04 12:35:01 UTC
 done:   175
-queued: 2
+queued: 3
 failed: 26
 hold:   0
 
 -- queued --
 a00-181-the-gate-fails-every-task-on-its-own-self-tests.md
 a01-182-three-defects-still-broken-in-production.md
+a02-183-touch-every-control-fix-or-queue.md
 -- failed --
 u00-165-fix-everything-the-live-test-found.md
 u00-177-the-invoice-detail-page-must-render.md
@@ -36,18 +37,6 @@ y03-148-preview-and-sharing.md
 z00-151-the-gate-must-use-the-box.md
 
 -- log --
-    u08b-174-no1edit-server-tools-500.md
-    u08c-174-digisign-and-edit-remainder.md
-    u08d-180-the-gate-must-not-kill-the-task.md
-    u09-175-silent-noops-hr-and-no1cloud.md
-    u10-176-wrong-company-on-the-packet-and-missing-vat.md
-    u11-179-the-gap-list-fixed-once-still-broken.md
-    v00-154-the-access-boundary-check-must-finish.md
-    w01-162-suite-basic-and-integration.md
-    w02-163-single-tool-subscription.md
-    w03-164-reconciliation-and-statuses.md
-    x00-152-the-fixture-litter-ratchet.md
-    y03-148-preview-and-sharing.md
     z00-151-the-gate-must-use-the-box.md
 ================================================
 ================================================
@@ -56,15 +45,27 @@ z00-151-the-gate-must-use-the-box.md
 ================================================
 
 ---- a00-181-the-gate-fails-every-task-on-its-own-self-tests ----  started 12:20:01
+================================================
+  RunUrBusiness — draining the task queue
+  started Fri 04 Sep 12:31
+================================================
+
+---- a00-181-the-gate-fails-every-task-on-its-own-self-tests ----  started 12:31:42
+================================================
+  RunUrBusiness — draining the task queue
+  started Fri 04 Sep 12:34
+================================================
+
+---- a00-181-the-gate-fails-every-task-on-its-own-self-tests ----  started 12:34:51
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3675       10231          62        2097       11928
+Mem:           15603         827       13076          63        2100       14775
 -- top --
     ELAPSED   RSS COMMAND
-      00:10 1526692 node
-      00:39 1211068 node
-      09:58 345620 claude
-      00:36 144232 node
+      00:08 283288 claude
+ 1-07:40:23 52436 systemd-journal
+      21:10 12916 systemd
+      07:44 12096 sshd-session
 -- disk --
 /dev/sda1        75G   25G   48G  34% /
