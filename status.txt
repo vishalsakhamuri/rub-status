@@ -1,13 +1,13 @@
-generated: 2026-09-04 20:40:01 UTC
+generated: 2026-09-04 20:45:01 UTC
 done:   182
-queued: 2
-failed: 20
+queued: 1
+failed: 21
 hold:   0
 
 -- queued --
-a01-182-three-defects-still-broken-in-production.md
 a02-183-touch-every-control-fix-or-queue.md
 -- failed --
+a01-182-three-defects-still-broken-in-production.md
 u00-165-fix-everything-the-live-test-found.md
 u00-177-the-invoice-detail-page-must-render.md
 u01-166-auth-must-hold-and-search-must-find.md
@@ -30,16 +30,6 @@ y03-148-preview-and-sharing.md
 z00-151-the-gate-must-use-the-box.md
 
 -- log --
-     . mem: screens step peaked at 4067MB (cgroup MemoryCurrent, sampled every 3s)
-     ! JOURNEYS: 3 of 22 failed — J2: sign a document myself and take it away — DigiSign-only tenant, one document through all four tools — hr+digisign tenant, no No1Cloud, one document through all four tools — digisign+cloud tenant, no HR — see docs/journeys-report.md
-     . mem: journeys step peaked at 4327MB (cgroup MemoryCurrent, sampled every 3s)
-     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
-     . gate: 69 pass, 6 fail, 0 pending
-     . gate clean — see docs/gate-report.md
-     . mem: gate step peaked at 3050MB (cgroup MemoryCurrent, sampled every 3s)
-     [done] 16:31:08   ->  logs/a00-181-the-gate-fails-every-task-on-its-own-self-tests.log   (commit + completion marker)
-
----- a01-182-three-defects-still-broken-in-production ----  started 16:31:10
      . build/screens/journeys: diff since ab6013d43449 touches something that could render — running fresh
      . build clean
      . mem: build step peaked at 4759MB (cgroup MemoryCurrent, sampled every 3s)
@@ -50,15 +40,25 @@ z00-151-the-gate-must-use-the-box.md
      ! JOURNEYS: 3 of 22 failed — J2: sign a document myself and take it away — DigiSign-only tenant, one document through all four tools — hr+digisign tenant, no No1Cloud, one document through all four tools — digisign+cloud tenant, no HR — see docs/journeys-report.md
      . mem: journeys step peaked at 4975MB (cgroup MemoryCurrent, sampled every 3s)
      . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
+     . gate: 69 pass, 6 fail, 0 pending
+     ! GATE FAILED: scripts/prove-email-deliverability.ts failed (t05-74 is marked done): MAIL_FROM is configured, is checked live against DNS, and every message / built stays free of the three spam signals named in section A. / ────────────────────────────────────────────────────────────────────────────── /  / [31m1 check(s) failed[0m; scripts/prove-search.ts failed (u16-100 is marked done):   [32m✓[0m the input is focused on open /   [32m✓[0m Enter on a result navigates (URL changed or overlay closed) /   [32m✓[0m Esc closes the overlay and returns focus to the trigger /  / [31m1 check(s) failed.[0m
+     . mem: gate step peaked at 3700MB (cgroup MemoryCurrent, sampled every 3s)
+     ! GATE FAILED, caused by this task
+     [FAILED] (exit 97) 20:42:29
+       moved to tasks/failed/ — the queue carries on
+       reason: completion marker + commit present, but the gate failed: scripts/prove-email-deliverability.ts failed (t05-74 is marked done): MAIL_FROM is configured, is checked live against DNS, and every message / built stays free of the three spam signals named in section A. / ────────────────────────────────────────────────────────────────────────────── /  / [31m1 check(s) failed[0m; scripts/prove-search.ts failed (u16-100 is marked done):   [32m✓[0m the input is focused on open /   [32m✓[0m Enter on a result navigates (URL changed or overlay closed) /   [32m✓[0m Esc closes the overlay and returns focus to the trigger /  / [31m1 check(s) failed.[0m
+       see logs/a01-182-three-defects-still-broken-in-production.log
+
+---- a02-183-touch-every-control-fix-or-queue ----  started 20:42:32
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3341        9280         490        3811       12261
+Mem:           15603         979       11640         122        3444       14623
 -- top --
     ELAPSED   RSS COMMAND
-      05:35 1251084 node
-      02:19 498380 node
-      16:13 334592 next-server (v1
-      00:01 154048 node
+      02:27 357848 claude
+ 1-15:50:22 61748 systemd-journal
+ 1-15:50:29 12072 systemd
+      00:16 11216 sshd-session
 -- disk --
 /dev/sda1        75G   25G   47G  35% /
