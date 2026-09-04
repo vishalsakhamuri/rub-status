@@ -1,4 +1,4 @@
-generated: 2026-09-04 20:15:01 UTC
+generated: 2026-09-04 20:20:01 UTC
 done:   182
 queued: 2
 failed: 20
@@ -30,8 +30,6 @@ y03-148-preview-and-sharing.md
 z00-151-the-gate-must-use-the-box.md
 
 -- log --
-     . build clean
-     . mem: build step peaked at 4085MB (cgroup MemoryCurrent, sampled every 3s)
      . suite green: 3139 tests
      . mem: tests step peaked at 1891MB (cgroup MemoryCurrent, sampled every 3s)
      . screens clean: 220 screens, 17 not reachable
@@ -50,15 +48,17 @@ z00-151-the-gate-must-use-the-box.md
      . mem: build step peaked at 4759MB (cgroup MemoryCurrent, sampled every 3s)
      . suite green: 3148 tests
      . mem: tests step peaked at 2744MB (cgroup MemoryCurrent, sampled every 3s)
+     . screens clean: 220 screens, 17 not reachable
+     . mem: screens step peaked at 4679MB (cgroup MemoryCurrent, sampled every 3s)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3347        9427         162        3329       12255
+Mem:           15603        1667       11107         183        3351       13935
 -- top --
     ELAPSED   RSS COMMAND
-      02:17 1357516 chrome-headless
-      02:22 903644 next-server (v1
-      02:19 318012 node
-      02:18 144604 chrome-headless
+      01:02 530932 next-server (v1
+      00:09 247788 chrome-headless
+      02:20 197924 node
+      01:00 143164 chrome-headless
 -- disk --
 /dev/sda1        75G   25G   47G  35% /
