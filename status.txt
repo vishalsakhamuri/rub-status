@@ -1,7 +1,7 @@
-generated: 2026-09-04 14:20:01 UTC
-done:   175
+generated: 2026-09-04 14:25:01 UTC
+done:   181
 queued: 3
-failed: 26
+failed: 20
 hold:   0
 
 -- queued --
@@ -11,7 +11,6 @@ a02-183-touch-every-control-fix-or-queue.md
 -- failed --
 u00-165-fix-everything-the-live-test-found.md
 u00-177-the-invoice-detail-page-must-render.md
-u00a-178-invoice-detail-fails-ONLY-in-production.md
 u01-166-auth-must-hold-and-search-must-find.md
 u01-170-finish-the-auth-task-gate.md
 u02-167-fix-what-the-agent-swarm-found.md
@@ -23,11 +22,6 @@ u07-173-the-write-layer-lies.md
 u08-174-too-big-split-into-u08a-u08b-u08c.md
 u08a-174-sign-forges-a-second-document.md
 u08b-174-no1edit-server-tools-500.md
-u08c-174-digisign-and-edit-remainder.md
-u08d-180-the-gate-must-not-kill-the-task.md
-u09-175-silent-noops-hr-and-no1cloud.md
-u10-176-wrong-company-on-the-packet-and-missing-vat.md
-u11-179-the-gap-list-fixed-once-still-broken.md
 v00-154-the-access-boundary-check-must-finish.md
 w01-162-suite-basic-and-integration.md
 w02-163-single-tool-subscription.md
@@ -60,12 +54,12 @@ z00-151-the-gate-must-use-the-box.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1347       12253          68        2410       14255
+Mem:           15603        1549       12050          68        2411       14053
 -- top --
     ELAPSED   RSS COMMAND
-   01:45:08 457292 claude
-      27:17 365188 next-server (v1
-      27:17 129232 node
- 1-09:25:23 53476 systemd-journal
+   01:50:08 461316 claude
+      02:46 292736 next-server (v1
+      00:04 148032 node
+      00:03 143016 node
 -- disk --
 /dev/sda1        75G   25G   48G  34% /
