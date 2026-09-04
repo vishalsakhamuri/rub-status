@@ -1,4 +1,4 @@
-generated: 2026-09-04 16:05:01 UTC
+generated: 2026-09-04 16:10:01 UTC
 done:   181
 queued: 3
 failed: 20
@@ -31,8 +31,6 @@ y03-148-preview-and-sharing.md
 z00-151-the-gate-must-use-the-box.md
 
 -- log --
-================================================
-  RunUrBusiness — draining the task queue
   started Fri 04 Sep 12:34
 ================================================
 
@@ -51,15 +49,17 @@ z00-151-the-gate-must-use-the-box.md
      . mem: build step peaked at 4085MB (cgroup MemoryCurrent, sampled every 3s)
      . suite green: 3139 tests
      . mem: tests step peaked at 1891MB (cgroup MemoryCurrent, sampled every 3s)
+     . screens clean: 220 screens, 17 not reachable
+     . mem: screens step peaked at 4067MB (cgroup MemoryCurrent, sampled every 3s)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3465        9982         147        2641       12137
+Mem:           15603        1659       11787         157        2652       13943
 -- top --
     ELAPSED   RSS COMMAND
-      04:27 1066808 next-server (v1
-      01:10 872592 chrome-headless
-      04:23 506240 chrome-headless
-      04:25 412468 node
+      03:08 478568 next-server (v1
+      00:17 308284 chrome-headless
+      04:25 198392 node
+      03:06 145508 chrome-headless
 -- disk --
 /dev/sda1        75G   25G   48G  35% /
