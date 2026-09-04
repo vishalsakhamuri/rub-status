@@ -1,11 +1,12 @@
-generated: 2026-09-04 12:25:01 UTC
+generated: 2026-09-04 12:30:01 UTC
 done:   175
-queued: 1
+queued: 2
 failed: 26
 hold:   0
 
 -- queued --
 a00-181-the-gate-fails-every-task-on-its-own-self-tests.md
+a01-182-three-defects-still-broken-in-production.md
 -- failed --
 u00-165-fix-everything-the-live-test-found.md
 u00-177-the-invoice-detail-page-must-render.md
@@ -58,12 +59,12 @@ z00-151-the-gate-must-use-the-box.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603         871       13035          62        2096       14731
+Mem:           15603        3675       10231          62        2097       11928
 -- top --
     ELAPSED   RSS COMMAND
-      04:57 328472 claude
- 1-07:30:22 52284 systemd-journal
-      11:09 12916 systemd
- 1-07:30:28 12060 systemd
+      00:10 1526692 node
+      00:39 1211068 node
+      09:58 345620 claude
+      00:36 144232 node
 -- disk --
 /dev/sda1        75G   25G   48G  34% /
