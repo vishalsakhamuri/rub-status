@@ -1,4 +1,4 @@
-generated: 2026-09-04 22:10:01 UTC
+generated: 2026-09-04 22:15:01 UTC
 done:   182
 queued: 2
 failed: 21
@@ -31,8 +31,6 @@ y03-148-preview-and-sharing.md
 z00-151-the-gate-must-use-the-box.md
 
 -- log --
-     . screens clean: 220 screens, 17 not reachable
-     . mem: screens step peaked at 4679MB (cgroup MemoryCurrent, sampled every 3s)
      ! JOURNEYS: 3 of 22 failed — J2: sign a document myself and take it away — DigiSign-only tenant, one document through all four tools — hr+digisign tenant, no No1Cloud, one document through all four tools — digisign+cloud tenant, no HR — see docs/journeys-report.md
      . mem: journeys step peaked at 4975MB (cgroup MemoryCurrent, sampled every 3s)
      . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
@@ -51,15 +49,17 @@ z00-151-the-gate-must-use-the-box.md
      . mem: build step peaked at 4830MB (cgroup MemoryCurrent, sampled every 3s)
      . suite green: 3148 tests
      . mem: tests step peaked at 2906MB (cgroup MemoryCurrent, sampled every 3s)
+     ! SCREENS: 0 broken, 0 blank, 1 404 of 220 — see docs/screen-audit.md
+     . mem: screens step peaked at 4792MB (cgroup MemoryCurrent, sampled every 3s)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3195        9418         156        3484       12407
+Mem:           15603        1539       11075         155        3483       14063
 -- top --
     ELAPSED   RSS COMMAND
-      01:53 1328276 chrome-headless
-      01:57 869804 next-server (v1
-      01:55 254972 node
-      01:54 146864 chrome-headless
+      00:38 530208 next-server (v1
+      01:55 193492 node
+      00:36 142156 chrome-headless
+      00:02 138000 chrome-headless
 -- disk --
 /dev/sda1        75G   25G   47G  35% /
