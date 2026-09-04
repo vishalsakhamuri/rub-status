@@ -1,4 +1,4 @@
-generated: 2026-09-04 16:10:01 UTC
+generated: 2026-09-04 16:15:01 UTC
 done:   181
 queued: 3
 failed: 20
@@ -31,9 +31,6 @@ y03-148-preview-and-sharing.md
 z00-151-the-gate-must-use-the-box.md
 
 -- log --
-  started Fri 04 Sep 12:34
-================================================
-
 ---- a00-181-the-gate-fails-every-task-on-its-own-self-tests ----  started 12:34:51
      . build/screens/journeys: diff since c816cd4f0a82 touches something that could render — running fresh
      . build clean
@@ -51,15 +48,18 @@ z00-151-the-gate-must-use-the-box.md
      . mem: tests step peaked at 1891MB (cgroup MemoryCurrent, sampled every 3s)
      . screens clean: 220 screens, 17 not reachable
      . mem: screens step peaked at 4067MB (cgroup MemoryCurrent, sampled every 3s)
+     ! JOURNEYS: 3 of 22 failed — J2: sign a document myself and take it away — DigiSign-only tenant, one document through all four tools — hr+digisign tenant, no No1Cloud, one document through all four tools — digisign+cloud tenant, no HR — see docs/journeys-report.md
+     . mem: journeys step peaked at 4327MB (cgroup MemoryCurrent, sampled every 3s)
+     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1659       11787         157        2652       13943
+Mem:           15603        1234       12213         102        2597       14368
 -- top --
     ELAPSED   RSS COMMAND
-      03:08 478568 next-server (v1
-      00:17 308284 chrome-headless
-      04:25 198392 node
-      03:06 145508 chrome-headless
+      03:20 298160 next-server (v1
+      00:05 146824 node
+      00:05 141440 node
+      03:21 129376 node
 -- disk --
 /dev/sda1        75G   25G   48G  35% /
