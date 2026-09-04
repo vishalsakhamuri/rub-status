@@ -1,4 +1,4 @@
-generated: 2026-09-04 19:40:01 UTC
+generated: 2026-09-04 19:45:01 UTC
 done:   182
 queued: 2
 failed: 20
@@ -30,9 +30,6 @@ y03-148-preview-and-sharing.md
 z00-151-the-gate-must-use-the-box.md
 
 -- log --
-  started Fri 04 Sep 14:55
-================================================
-
 ---- a00-181-the-gate-fails-every-task-on-its-own-self-tests ----  started 14:55:04
      . build/screens/journeys: diff since c816cd4f0a82 touches something that could render — running fresh
      . build clean
@@ -50,15 +47,18 @@ z00-151-the-gate-must-use-the-box.md
      [done] 16:31:08   ->  logs/a00-181-the-gate-fails-every-task-on-its-own-self-tests.log   (commit + completion marker)
 
 ---- a01-182-three-defects-still-broken-in-production ----  started 16:31:10
+     . build/screens/journeys: diff since ab6013d43449 touches something that could render — running fresh
+     . build clean
+     . mem: build step peaked at 4759MB (cgroup MemoryCurrent, sampled every 3s)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1088       11687         122        3290       14515
+Mem:           15603        1372       11404         149        3315       14230
 -- top --
     ELAPSED   RSS COMMAND
-   03:08:48 491248 claude
- 1-14:45:23 60192 systemd-journal
- 1-14:45:29 12072 systemd
-      00:24 11808 sshd-session
+      03:17 533340 node
+      00:12 152056 node
+      03:17 78048 npm exec vitest
+ 1-14:50:23 60288 systemd-journal
 -- disk --
 /dev/sda1        75G   25G   47G  35% /
