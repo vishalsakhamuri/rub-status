@@ -1,4 +1,4 @@
-generated: 2026-09-04 20:10:01 UTC
+generated: 2026-09-04 20:15:01 UTC
 done:   182
 queued: 2
 failed: 20
@@ -30,8 +30,6 @@ y03-148-preview-and-sharing.md
 z00-151-the-gate-must-use-the-box.md
 
 -- log --
----- a00-181-the-gate-fails-every-task-on-its-own-self-tests ----  started 14:55:04
-     . build/screens/journeys: diff since c816cd4f0a82 touches something that could render — running fresh
      . build clean
      . mem: build step peaked at 4085MB (cgroup MemoryCurrent, sampled every 3s)
      . suite green: 3139 tests
@@ -50,15 +48,17 @@ z00-151-the-gate-must-use-the-box.md
      . build/screens/journeys: diff since ab6013d43449 touches something that could render — running fresh
      . build clean
      . mem: build step peaked at 4759MB (cgroup MemoryCurrent, sampled every 3s)
+     . suite green: 3148 tests
+     . mem: tests step peaked at 2744MB (cgroup MemoryCurrent, sampled every 3s)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1435       11340         164        3332       14167
+Mem:           15603        3347        9427         162        3329       12255
 -- top --
     ELAPSED   RSS COMMAND
-      28:17 585256 node
-      00:04 147084 node
-      28:18 78048 npm exec vitest
- 1-15:15:23 60784 systemd-journal
+      02:17 1357516 chrome-headless
+      02:22 903644 next-server (v1
+      02:19 318012 node
+      02:18 144604 chrome-headless
 -- disk --
 /dev/sda1        75G   25G   47G  35% /
