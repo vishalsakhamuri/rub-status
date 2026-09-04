@@ -1,4 +1,4 @@
-generated: 2026-09-04 23:15:01 UTC
+generated: 2026-09-04 23:20:01 UTC
 done:   182
 queued: 1
 failed: 22
@@ -31,7 +31,6 @@ y03-148-preview-and-sharing.md
 z00-151-the-gate-must-use-the-box.md
 
 -- log --
-     . build/screens/journeys: diff since d8810eeb7f4e touches something that could render — running fresh
      . build clean
      . mem: build step peaked at 4830MB (cgroup MemoryCurrent, sampled every 3s)
      . suite green: 3148 tests
@@ -51,15 +50,16 @@ z00-151-the-gate-must-use-the-box.md
        see logs/a02-183-touch-every-control-fix-or-queue.log
 
 ---- a03-184-public-sign-links-404-service-role-client ----  started 22:37:41
+     . build/screens/journeys: diff since 4047d6fce786 touches something that could render — running fresh
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1459       10998         164        3648       14143
+Mem:           15603        1874       10758         122        3431       13728
 -- top --
     ELAPSED   RSS COMMAND
-      37:17 381816 claude
-      25:23 341608 node
-      00:04 150280 node
-      25:23 77264 npm exec vitest
+      00:03 1157896 node
+      00:03 146256 node
+ 1-18:25:22 67660 systemd-journal
+ 1-18:25:29 12072 systemd
 -- disk --
-/dev/sda1        75G   26G   47G  35% /
+/dev/sda1        75G   25G   47G  35% /
