@@ -1,14 +1,14 @@
-generated: 2026-09-04 22:35:01 UTC
+generated: 2026-09-04 22:40:01 UTC
 done:   182
-queued: 2
-failed: 21
+queued: 1
+failed: 22
 hold:   0
 
 -- queued --
-a02-183-touch-every-control-fix-or-queue.md
 a03-184-public-sign-links-404-service-role-client.md
 -- failed --
 a01-182-three-defects-still-broken-in-production.md
+a02-183-touch-every-control-fix-or-queue.md
 u00-165-fix-everything-the-live-test-found.md
 u00-177-the-invoice-detail-page-must-render.md
 u01-166-auth-must-hold-and-search-must-find.md
@@ -31,16 +31,6 @@ y03-148-preview-and-sharing.md
 z00-151-the-gate-must-use-the-box.md
 
 -- log --
-     . gate: 69 pass, 6 fail, 0 pending
-     ! GATE FAILED: scripts/prove-email-deliverability.ts failed (t05-74 is marked done): MAIL_FROM is configured, is checked live against DNS, and every message / built stays free of the three spam signals named in section A. / ────────────────────────────────────────────────────────────────────────────── /  / [31m1 check(s) failed[0m; scripts/prove-search.ts failed (u16-100 is marked done):   [32m✓[0m the input is focused on open /   [32m✓[0m Enter on a result navigates (URL changed or overlay closed) /   [32m✓[0m Esc closes the overlay and returns focus to the trigger /  / [31m1 check(s) failed.[0m
-     . mem: gate step peaked at 3700MB (cgroup MemoryCurrent, sampled every 3s)
-     ! GATE FAILED, caused by this task
-     [FAILED] (exit 97) 20:42:29
-       moved to tasks/failed/ — the queue carries on
-       reason: completion marker + commit present, but the gate failed: scripts/prove-email-deliverability.ts failed (t05-74 is marked done): MAIL_FROM is configured, is checked live against DNS, and every message / built stays free of the three spam signals named in section A. / ────────────────────────────────────────────────────────────────────────────── /  / [31m1 check(s) failed[0m; scripts/prove-search.ts failed (u16-100 is marked done):   [32m✓[0m the input is focused on open /   [32m✓[0m Enter on a result navigates (URL changed or overlay closed) /   [32m✓[0m Esc closes the overlay and returns focus to the trigger /  / [31m1 check(s) failed.[0m
-       see logs/a01-182-three-defects-still-broken-in-production.log
-
----- a02-183-touch-every-control-fix-or-queue ----  started 20:42:32
      . build/screens/journeys: diff since d8810eeb7f4e touches something that could render — running fresh
      . build clean
      . mem: build step peaked at 4830MB (cgroup MemoryCurrent, sampled every 3s)
@@ -51,15 +41,25 @@ z00-151-the-gate-must-use-the-box.md
      ! JOURNEYS: 3 of 22 failed — J2: sign a document myself and take it away — DigiSign-only tenant, one document through all four tools — hr+digisign tenant, no No1Cloud, one document through all four tools — digisign+cloud tenant, no HR — see docs/journeys-report.md
      . mem: journeys step peaked at 4996MB (cgroup MemoryCurrent, sampled every 3s)
      . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
+     . gate: 68 pass, 7 fail, 0 pending
+     ! GATE FAILED: 1 screen(s) 404: /no1cloud/training/courses/[id]
+     . mem: gate step peaked at 3882MB (cgroup MemoryCurrent, sampled every 3s)
+     ! GATE FAILED, caused by this task
+     [FAILED] (exit 97) 22:37:39
+       moved to tasks/failed/ — the queue carries on
+       reason: completion marker + commit present, but the gate failed: 1 screen(s) 404: /no1cloud/training/courses/[id]
+       see logs/a02-183-touch-every-control-fix-or-queue.log
+
+---- a03-184-public-sign-links-404-service-role-client ----  started 22:37:41
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3163        9296         490        3973       12439
+Mem:           15603        1263       11196         122        3605       14339
 -- top --
     ELAPSED   RSS COMMAND
-      05:12 1263412 node
-      02:02 399660 node
-      15:52 315848 next-server (v1
-      00:17 133816 node
+      01:57 319528 node
+      02:17 317620 claude
+      01:58 128912 node
+ 1-17:45:23 66804 systemd-journal
 -- disk --
 /dev/sda1        75G   26G   47G  35% /
