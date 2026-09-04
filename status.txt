@@ -1,4 +1,4 @@
-generated: 2026-09-04 17:10:01 UTC
+generated: 2026-09-04 17:15:01 UTC
 done:   182
 queued: 2
 failed: 20
@@ -53,12 +53,12 @@ z00-151-the-gate-must-use-the-box.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1661       11126         140        3295       13942
+Mem:           15603        1561       11228         134        3288       14041
 -- top --
     ELAPSED   RSS COMMAND
-      38:48 501728 claude
-      03:56 354300 next-server (v1
-      00:04 192988 node
-      00:03 145640 chrome-headless
+      43:48 513940 claude
+      02:12 250892 next-server (v1
+      00:01 181728 node
+      00:01 131760 chrome-headless
 -- disk --
 /dev/sda1        75G   25G   47G  35% /
