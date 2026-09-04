@@ -1,4 +1,4 @@
-generated: 2026-09-04 12:20:01 UTC
+generated: 2026-09-04 12:25:01 UTC
 done:   175
 queued: 1
 failed: 26
@@ -35,12 +35,6 @@ y03-148-preview-and-sharing.md
 z00-151-the-gate-must-use-the-box.md
 
 -- log --
-    u04-169-fix-the-full-sweep-findings.md
-    u05-171-clear-the-last-gate-blockers.md
-    u06-172-opening-balances-and-cross-entity.md
-    u07-173-the-write-layer-lies.md
-    u08-174-too-big-split-into-u08a-u08b-u08c.md
-    u08a-174-sign-forges-a-second-document.md
     u08b-174-no1edit-server-tools-500.md
     u08c-174-digisign-and-edit-remainder.md
     u08d-180-the-gate-must-not-kill-the-task.md
@@ -55,15 +49,21 @@ z00-151-the-gate-must-use-the-box.md
     y03-148-preview-and-sharing.md
     z00-151-the-gate-must-use-the-box.md
 ================================================
+================================================
+  RunUrBusiness — draining the task queue
+  started Fri 04 Sep 12:20
+================================================
+
+---- a00-181-the-gate-fails-every-task-on-its-own-self-tests ----  started 12:20:01
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603         661       13249          62        2093       14942
+Mem:           15603         871       13035          62        2096       14731
 -- top --
     ELAPSED   RSS COMMAND
- 1-07:25:22 52284 systemd-journal
-      06:09 12916 systemd
- 1-07:25:28 12060 systemd
-      06:11 11896 sshd-session
+      04:57 328472 claude
+ 1-07:30:22 52284 systemd-journal
+      11:09 12916 systemd
+ 1-07:30:28 12060 systemd
 -- disk --
 /dev/sda1        75G   25G   48G  34% /
