@@ -1,4 +1,4 @@
-generated: 2026-09-04 22:15:01 UTC
+generated: 2026-09-04 22:20:01 UTC
 done:   182
 queued: 2
 failed: 21
@@ -31,9 +31,6 @@ y03-148-preview-and-sharing.md
 z00-151-the-gate-must-use-the-box.md
 
 -- log --
-     ! JOURNEYS: 3 of 22 failed — J2: sign a document myself and take it away — DigiSign-only tenant, one document through all four tools — hr+digisign tenant, no No1Cloud, one document through all four tools — digisign+cloud tenant, no HR — see docs/journeys-report.md
-     . mem: journeys step peaked at 4975MB (cgroup MemoryCurrent, sampled every 3s)
-     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
      . gate: 69 pass, 6 fail, 0 pending
      ! GATE FAILED: scripts/prove-email-deliverability.ts failed (t05-74 is marked done): MAIL_FROM is configured, is checked live against DNS, and every message / built stays free of the three spam signals named in section A. / ────────────────────────────────────────────────────────────────────────────── /  / [31m1 check(s) failed[0m; scripts/prove-search.ts failed (u16-100 is marked done):   [32m✓[0m the input is focused on open /   [32m✓[0m Enter on a result navigates (URL changed or overlay closed) /   [32m✓[0m Esc closes the overlay and returns focus to the trigger /  / [31m1 check(s) failed.[0m
      . mem: gate step peaked at 3700MB (cgroup MemoryCurrent, sampled every 3s)
@@ -51,15 +48,18 @@ z00-151-the-gate-must-use-the-box.md
      . mem: tests step peaked at 2906MB (cgroup MemoryCurrent, sampled every 3s)
      ! SCREENS: 0 broken, 0 blank, 1 404 of 220 — see docs/screen-audit.md
      . mem: screens step peaked at 4792MB (cgroup MemoryCurrent, sampled every 3s)
+     ! JOURNEYS: 3 of 22 failed — J2: sign a document myself and take it away — DigiSign-only tenant, one document through all four tools — hr+digisign tenant, no No1Cloud, one document through all four tools — digisign+cloud tenant, no HR — see docs/journeys-report.md
+     . mem: journeys step peaked at 4996MB (cgroup MemoryCurrent, sampled every 3s)
+     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1539       11075         155        3483       14063
+Mem:           15603        1361       11253         122        3450       14242
 -- top --
     ELAPSED   RSS COMMAND
-      00:38 530208 next-server (v1
-      01:55 193492 node
-      00:36 142156 chrome-headless
-      00:02 138000 chrome-headless
+      00:52 367644 next-server (v1
+      00:03 147252 node
+      00:02 138208 node
+      00:53 129128 node
 -- disk --
 /dev/sda1        75G   25G   47G  35% /
