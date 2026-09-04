@@ -1,11 +1,10 @@
-generated: 2026-09-04 16:30:01 UTC
-done:   181
-queued: 3
+generated: 2026-09-04 16:35:01 UTC
+done:   182
+queued: 2
 failed: 20
 hold:   0
 
 -- queued --
-a00-181-the-gate-fails-every-task-on-its-own-self-tests.md
 a01-182-three-defects-still-broken-in-production.md
 a02-183-touch-every-control-fix-or-queue.md
 -- failed --
@@ -31,12 +30,6 @@ y03-148-preview-and-sharing.md
 z00-151-the-gate-must-use-the-box.md
 
 -- log --
----- a00-181-the-gate-fails-every-task-on-its-own-self-tests ----  started 12:34:51
-     . build/screens/journeys: diff since c816cd4f0a82 touches something that could render — running fresh
-     . build clean
-     . mem: build step peaked at 4665MB (cgroup MemoryCurrent, sampled every 3s)
-================================================
-  RunUrBusiness — draining the task queue
   started Fri 04 Sep 14:55
 ================================================
 
@@ -51,15 +44,21 @@ z00-151-the-gate-must-use-the-box.md
      ! JOURNEYS: 3 of 22 failed — J2: sign a document myself and take it away — DigiSign-only tenant, one document through all four tools — hr+digisign tenant, no No1Cloud, one document through all four tools — digisign+cloud tenant, no HR — see docs/journeys-report.md
      . mem: journeys step peaked at 4327MB (cgroup MemoryCurrent, sampled every 3s)
      . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
+     . gate: 69 pass, 6 fail, 0 pending
+     . gate clean — see docs/gate-report.md
+     . mem: gate step peaked at 3050MB (cgroup MemoryCurrent, sampled every 3s)
+     [done] 16:31:08   ->  logs/a00-181-the-gate-fails-every-task-on-its-own-self-tests.log   (commit + completion marker)
+
+---- a01-182-three-defects-still-broken-in-production ----  started 16:31:10
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1599       11696         135        2781       14003
+Mem:           15603        1068       11837         107        3143       14534
 -- top --
     ELAPSED   RSS COMMAND
-      18:20 400080 next-server (v1
-      00:11 213556 node
-      00:03 148580 chrome-headless
-      00:11 147544 node
+      03:48 341772 claude
+      02:05 118692 node
+      02:06 108236 npm exec vercel
+ 1-11:40:22 57968 systemd-journal
 -- disk --
-/dev/sda1        75G   25G   48G  35% /
+/dev/sda1        75G   25G   47G  35% /
