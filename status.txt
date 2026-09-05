@@ -1,4 +1,4 @@
-generated: 2026-09-05 15:20:02 UTC
+generated: 2026-09-05 15:25:01 UTC
 done:   182
 queued: 1
 failed: 24
@@ -33,7 +33,6 @@ y03-148-preview-and-sharing.md
 z00-151-the-gate-must-use-the-box.md
 
 -- log --
-    u05-171-clear-the-last-gate-blockers.md
     u06-172-opening-balances-and-cross-entity.md
     u07-173-the-write-layer-lies.md
     u08-174-too-big-split-into-u08a-u08b-u08c.md
@@ -53,15 +52,16 @@ z00-151-the-gate-must-use-the-box.md
 ================================================
 
 ---- t00-192-defects-that-produce-wrong-numbers ----  started 13:24:42
+     . build/screens/journeys: diff since 827dc0a16273 touches something that could render — running fresh
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1292       10536         158        4273       14311
+Mem:           15603        2980        9022         158        4098       12622
 -- top --
     ELAPSED   RSS COMMAND
-   01:55:17 644344 claude
- 2-10:25:23 98868 systemd-journal
-   02:32:19 13048 systemd
-   02:09:25 12136 sshd-session
+      00:10 2042556 node
+      00:05 165540 node
+      00:10 150760 node
+ 2-10:30:23 99140 systemd-journal
 -- disk --
 /dev/sda1        75G   26G   47G  36% /
