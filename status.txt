@@ -1,4 +1,4 @@
-generated: 2026-09-05 08:35:01 UTC
+generated: 2026-09-05 08:40:01 UTC
 done:   183
 queued: 1
 failed: 22
@@ -31,8 +31,6 @@ y03-148-preview-and-sharing.md
 z00-151-the-gate-must-use-the-box.md
 
 -- log --
-    u08b-174-no1edit-server-tools-500.md
-    v00-154-the-access-boundary-check-must-finish.md
     w01-162-suite-basic-and-integration.md
     w02-163-single-tool-subscription.md
     w03-164-reconciliation-and-statuses.md
@@ -51,15 +49,17 @@ z00-151-the-gate-must-use-the-box.md
 
 ---- s00-190-security-account-takeover-and-employee-data-leak ----  started 07:10:02
      . build/screens/journeys: diff since b8df835b8b3e touches something that could render — running fresh
+     . build clean
+     . mem: build step peaked at 5520MB (cgroup MemoryCurrent, sampled every 3s)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2779        8003         122        5282       12823
+Mem:           15603        1453        9328         154        5314       14149
 -- top --
     ELAPSED   RSS COMMAND
-      00:32 1328076 node
-      00:02 633972 node
-      00:27 149308 node
-      00:32 129180 node
+      04:18 582732 node
+      00:09 152456 node
+ 2-03:45:23 88508 systemd-journal
+      04:18 77752 npm exec vitest
 -- disk --
 /dev/sda1        75G   27G   46G  38% /
