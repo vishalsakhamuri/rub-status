@@ -1,10 +1,11 @@
-generated: 2026-09-05 13:20:01 UTC
+generated: 2026-09-05 13:25:01 UTC
 done:   182
-queued: 0
+queued: 1
 failed: 24
 hold:   0
 
 -- queued --
+t00-192-defects-that-produce-wrong-numbers.md
 -- failed --
 a01-182-three-defects-still-broken-in-production.md
 a02-183-touch-every-control-fix-or-queue.md
@@ -32,12 +33,6 @@ y03-148-preview-and-sharing.md
 z00-151-the-gate-must-use-the-box.md
 
 -- log --
-    u00-177-the-invoice-detail-page-must-render.md
-    u01-166-auth-must-hold-and-search-must-find.md
-    u01-170-finish-the-auth-task-gate.md
-    u02-167-fix-what-the-agent-swarm-found.md
-    u03-168-clean-the-demo-tenant-for-wednesday.md
-    u04-169-fix-the-full-sweep-findings.md
     u05-171-clear-the-last-gate-blockers.md
     u06-172-opening-balances-and-cross-entity.md
     u07-173-the-write-layer-lies.md
@@ -52,15 +47,21 @@ z00-151-the-gate-must-use-the-box.md
     y03-148-preview-and-sharing.md
     z00-151-the-gate-must-use-the-box.md
 ================================================
+================================================
+  RunUrBusiness — draining the task queue
+  started Sat 05 Sep 13:24
+================================================
+
+---- t00-192-defects-that-produce-wrong-numbers ----  started 13:24:42
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603         787       11052         158        4262       14816
+Mem:           15603         944       10894         158        4262       14658
 -- top --
     ELAPSED   RSS COMMAND
- 2-08:25:22 92196 systemd-journal
-      32:18 13048 systemd
-      09:24 12136 sshd-session
- 2-08:25:28 12120 systemd
+      00:16 272128 claude
+ 2-08:30:22 92528 systemd-journal
+      37:18 13048 systemd
+      14:24 12136 sshd-session
 -- disk --
 /dev/sda1        75G   26G   47G  36% /
