@@ -1,4 +1,4 @@
-generated: 2026-09-05 12:45:01 UTC
+generated: 2026-09-05 12:50:01 UTC
 done:   182
 queued: 1
 failed: 23
@@ -32,9 +32,6 @@ y03-148-preview-and-sharing.md
 z00-151-the-gate-must-use-the-box.md
 
 -- log --
-    2 × waiting for element to be visible, enabled and stable
-      - element is not enabled
-    - retrying click action
       - waiting 100ms
     58 × waiting for element to be visible, enabled and stable
        - element is not enabled
@@ -52,15 +49,18 @@ z00-151-the-gate-must-use-the-box.md
      . mem: tests step peaked at 2314MB (cgroup MemoryCurrent, sampled every 3s)
      ! SCREENS: 1 broken, 0 blank, 1 404 of 220 — see docs/screen-audit.md
      . mem: screens step peaked at 4350MB (cgroup MemoryCurrent, sampled every 3s)
+     ! JOURNEYS: 7 of 22 failed — invite and sign in, J4: the employee folder — nothing typed twice, J2: sign a document myself and take it away — DigiSign-only tenant, one document through all four tools, one document through all four tools — hr+digisign tenant, no No1Cloud, one document through all four tools — digisign+cloud tenant, no HR, invoice → payment → reconcile, end to end — default tenant (a08-144 D) — see docs/journeys-report.md
+     . mem: journeys step peaked at 4565MB (cgroup MemoryCurrent, sampled every 3s)
+     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1473       10524         186        4130       14129
+Mem:           15603        1377       10620         158        4103       14225
 -- top --
     ELAPSED   RSS COMMAND
-      00:38 430248 next-server (v1
-      01:55 178356 node
-      00:17 156096 chrome-headless
-      00:36 141648 chrome-headless
+      00:23 254744 next-server (v1
+      00:02 147456 node
+      00:01 146264 node
+      00:23 129268 node
 -- disk --
 /dev/sda1        75G   26G   47G  36% /
