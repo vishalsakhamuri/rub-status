@@ -1,4 +1,4 @@
-generated: 2026-09-05 07:10:01 UTC
+generated: 2026-09-05 07:15:01 UTC
 done:   182
 queued: 1
 failed: 22
@@ -31,12 +31,6 @@ y03-148-preview-and-sharing.md
 z00-151-the-gate-must-use-the-box.md
 
 -- log --
-    u03-168-clean-the-demo-tenant-for-wednesday.md
-    u04-169-fix-the-full-sweep-findings.md
-    u05-171-clear-the-last-gate-blockers.md
-    u06-172-opening-balances-and-cross-entity.md
-    u07-173-the-write-layer-lies.md
-    u08-174-too-big-split-into-u08a-u08b-u08c.md
     u08a-174-sign-forges-a-second-document.md
     u08b-174-no1edit-server-tools-500.md
     v00-154-the-access-boundary-check-must-finish.md
@@ -51,15 +45,21 @@ z00-151-the-gate-must-use-the-box.md
   requeued automatically once it clears (h003-127 C):
     a03-184-public-sign-links-404-service-role-client.md
 ================================================
+================================================
+  RunUrBusiness — draining the task queue
+  started Sat 05 Sep 07:10
+================================================
+
+---- s00-190-security-account-takeover-and-employee-data-leak ----  started 07:10:02
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603         742       11497         122        3824       14860
+Mem:           15603        1028       11209         122        3826       14574
 -- top --
     ELAPSED   RSS COMMAND
- 2-02:15:23 83840 systemd-journal
-   02:05:12 12956 systemd
- 2-02:15:29 12120 systemd
-      00:31 12076 sshd-session
+      04:57 408952 claude
+ 2-02:20:23 83988 systemd-journal
+   02:10:12 12956 systemd
+ 2-02:20:29 12120 systemd
 -- disk --
 /dev/sda1        75G   26G   47G  36% /
