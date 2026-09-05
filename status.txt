@@ -1,11 +1,12 @@
-generated: 2026-09-05 07:30:01 UTC
+generated: 2026-09-05 07:35:01 UTC
 done:   182
-queued: 1
+queued: 2
 failed: 22
 hold:   0
 
 -- queued --
 s00-190-security-account-takeover-and-employee-data-leak.md
+s01-191-blockers-that-survived-and-hr-gaps.md
 -- failed --
 a01-182-three-defects-still-broken-in-production.md
 a02-183-touch-every-control-fix-or-queue.md
@@ -54,12 +55,12 @@ z00-151-the-gate-must-use-the-box.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1083       11154         122        3828       14520
+Mem:           15603        1082       11153         122        3828       14520
 -- top --
     ELAPSED   RSS COMMAND
-      19:56 472056 claude
- 2-02:35:23 84120 systemd-journal
-   02:25:12 12956 systemd
- 2-02:35:29 12120 systemd
+      24:56 465784 claude
+ 2-02:40:23 84316 systemd-journal
+   02:30:12 12956 systemd
+      00:29 12136 sshd-session
 -- disk --
 /dev/sda1        75G   26G   47G  36% /
