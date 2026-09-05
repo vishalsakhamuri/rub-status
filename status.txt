@@ -1,4 +1,4 @@
-generated: 2026-09-05 00:00:01 UTC
+generated: 2026-09-05 00:05:01 UTC
 done:   182
 queued: 1
 failed: 22
@@ -31,9 +31,6 @@ y03-148-preview-and-sharing.md
 z00-151-the-gate-must-use-the-box.md
 
 -- log --
-     ! JOURNEYS: 3 of 22 failed — J2: sign a document myself and take it away — DigiSign-only tenant, one document through all four tools — hr+digisign tenant, no No1Cloud, one document through all four tools — digisign+cloud tenant, no HR — see docs/journeys-report.md
-     . mem: journeys step peaked at 4996MB (cgroup MemoryCurrent, sampled every 3s)
-     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
      . gate: 68 pass, 7 fail, 0 pending
      ! GATE FAILED: 1 screen(s) 404: /no1cloud/training/courses/[id]
      . mem: gate step peaked at 3882MB (cgroup MemoryCurrent, sampled every 3s)
@@ -51,15 +48,18 @@ z00-151-the-gate-must-use-the-box.md
      . mem: tests step peaked at 3030MB (cgroup MemoryCurrent, sampled every 3s)
      ! SCREENS: 0 broken, 0 blank, 1 404 of 220 — see docs/screen-audit.md
      . mem: screens step peaked at 5060MB (cgroup MemoryCurrent, sampled every 3s)
+     ! JOURNEYS: 3 of 22 failed — J2: sign a document myself and take it away — DigiSign-only tenant, one document through all four tools — hr+digisign tenant, no No1Cloud, one document through all four tools — digisign+cloud tenant, no HR — see docs/journeys-report.md
+     . mem: journeys step peaked at 5213MB (cgroup MemoryCurrent, sampled every 3s)
+     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1522       10934         182        3669       14080
+Mem:           15603        1262       11193         122        3608       14340
 -- top --
     ELAPSED   RSS COMMAND
-      01:19 399312 next-server (v1
-      00:07 244944 chrome-headless
-      02:34 178448 node
-      01:17 143800 chrome-headless
+      01:10 285504 next-server (v1
+      00:03 147416 node
+      00:03 140192 node
+      01:11 129724 node
 -- disk --
 /dev/sda1        75G   26G   47G  35% /
