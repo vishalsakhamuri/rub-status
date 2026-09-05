@@ -1,4 +1,4 @@
-generated: 2026-09-05 12:40:01 UTC
+generated: 2026-09-05 12:45:01 UTC
 done:   182
 queued: 1
 failed: 23
@@ -32,8 +32,6 @@ y03-148-preview-and-sharing.md
 z00-151-the-gate-must-use-the-box.md
 
 -- log --
-    - retrying click action
-    - waiting 20ms
     2 × waiting for element to be visible, enabled and stable
       - element is not enabled
     - retrying click action
@@ -52,15 +50,17 @@ z00-151-the-gate-must-use-the-box.md
      . mem: build step peaked at 4060MB (cgroup MemoryCurrent, sampled every 3s)
      . suite green: 3173 tests
      . mem: tests step peaked at 2314MB (cgroup MemoryCurrent, sampled every 3s)
+     ! SCREENS: 1 broken, 0 blank, 1 404 of 220 — see docs/screen-audit.md
+     . mem: screens step peaked at 4350MB (cgroup MemoryCurrent, sampled every 3s)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3131        8866         192        4136       12471
+Mem:           15603        1473       10524         186        4130       14129
 -- top --
     ELAPSED   RSS COMMAND
-      03:54 992428 next-server (v1
-      03:50 957428 chrome-headless
-      03:52 345948 node
-      03:50 144804 chrome-headless
+      00:38 430248 next-server (v1
+      01:55 178356 node
+      00:17 156096 chrome-headless
+      00:36 141648 chrome-headless
 -- disk --
 /dev/sda1        75G   26G   47G  36% /
