@@ -1,4 +1,4 @@
-generated: 2026-09-05 16:00:01 UTC
+generated: 2026-09-05 16:05:01 UTC
 done:   182
 queued: 1
 failed: 24
@@ -33,8 +33,6 @@ y03-148-preview-and-sharing.md
 z00-151-the-gate-must-use-the-box.md
 
 -- log --
-    u08b-174-no1edit-server-tools-500.md
-    v00-154-the-access-boundary-check-must-finish.md
     w01-162-suite-basic-and-integration.md
     w02-163-single-tool-subscription.md
     w03-164-reconciliation-and-statuses.md
@@ -53,15 +51,17 @@ z00-151-the-gate-must-use-the-box.md
      . mem: build step peaked at 3859MB (cgroup MemoryCurrent, sampled every 3s)
      . suite green: 3180 tests
      . mem: tests step peaked at 2009MB (cgroup MemoryCurrent, sampled every 3s)
+     ! SCREENS: 0 broken, 0 blank, 1 404 of 220 — see docs/screen-audit.md
+     . mem: screens step peaked at 3993MB (cgroup MemoryCurrent, sampled every 3s)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2349        9475         188        4306       13253
+Mem:           15603        3143        8857         159        4101       12459
 -- top --
     ELAPSED   RSS COMMAND
-      01:59 820960 next-server (v1
-      01:55 501004 chrome-headless
-      01:57 260400 node
-      01:55 141164 chrome-headless
+      00:10 2088788 node
+      00:14 193728 node
+      00:07 168584 node
+      00:11 145884 node
 -- disk --
 /dev/sda1        75G   26G   47G  36% /
