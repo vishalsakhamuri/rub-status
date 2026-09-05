@@ -1,15 +1,15 @@
-generated: 2026-09-05 13:05:01 UTC
+generated: 2026-09-05 13:10:01 UTC
 done:   182
-queued: 1
-failed: 23
+queued: 0
+failed: 24
 hold:   0
 
 -- queued --
-s01-191-blockers-that-survived-and-hr-gaps.md
 -- failed --
 a01-182-three-defects-still-broken-in-production.md
 a02-183-touch-every-control-fix-or-queue.md
 s00-190-security-account-takeover-and-employee-data-leak.md
+s01-191-blockers-that-survived-and-hr-gaps.md
 u00-165-fix-everything-the-live-test-found.md
 u00-177-the-invoice-detail-page-must-render.md
 u01-166-auth-must-hold-and-search-must-find.md
@@ -32,35 +32,35 @@ y03-148-preview-and-sharing.md
 z00-151-the-gate-must-use-the-box.md
 
 -- log --
-      - waiting 100ms
-    58 × waiting for element to be visible, enabled and stable
-       - element is not enabled
-     - retrying click action
-       - waiting 500ms
-; 67 screen(s) flagged for density, up from 64 on the last green run: /accounting/packets/[packet], /accounting/packets/build/[statement], /accounts, /assets/[id], /assets/holders, /assets/locations, /assets, /attention — see docs/screen-density.md
-       see logs/s00-190-security-account-takeover-and-employee-data-leak.log
-
----- s01-191-blockers-that-survived-and-hr-gaps ----  started 09:40:45
-     .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
-     . build/screens/journeys: diff since 9d41de04d549 touches something that could render — running fresh
-     . build clean
-     . mem: build step peaked at 4060MB (cgroup MemoryCurrent, sampled every 3s)
-     . suite green: 3173 tests
-     . mem: tests step peaked at 2314MB (cgroup MemoryCurrent, sampled every 3s)
-     ! SCREENS: 1 broken, 0 blank, 1 404 of 220 — see docs/screen-audit.md
-     . mem: screens step peaked at 4350MB (cgroup MemoryCurrent, sampled every 3s)
-     ! JOURNEYS: 7 of 22 failed — invite and sign in, J4: the employee folder — nothing typed twice, J2: sign a document myself and take it away — DigiSign-only tenant, one document through all four tools, one document through all four tools — hr+digisign tenant, no No1Cloud, one document through all four tools — digisign+cloud tenant, no HR, invoice → payment → reconcile, end to end — default tenant (a08-144 D) — see docs/journeys-report.md
-     . mem: journeys step peaked at 4565MB (cgroup MemoryCurrent, sampled every 3s)
-     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
+    u00-177-the-invoice-detail-page-must-render.md
+    u01-166-auth-must-hold-and-search-must-find.md
+    u01-170-finish-the-auth-task-gate.md
+    u02-167-fix-what-the-agent-swarm-found.md
+    u03-168-clean-the-demo-tenant-for-wednesday.md
+    u04-169-fix-the-full-sweep-findings.md
+    u05-171-clear-the-last-gate-blockers.md
+    u06-172-opening-balances-and-cross-entity.md
+    u07-173-the-write-layer-lies.md
+    u08-174-too-big-split-into-u08a-u08b-u08c.md
+    u08a-174-sign-forges-a-second-document.md
+    u08b-174-no1edit-server-tools-500.md
+    v00-154-the-access-boundary-check-must-finish.md
+    w01-162-suite-basic-and-integration.md
+    w02-163-single-tool-subscription.md
+    w03-164-reconciliation-and-statuses.md
+    x00-152-the-fixture-litter-ratchet.md
+    y03-148-preview-and-sharing.md
+    z00-151-the-gate-must-use-the-box.md
+================================================
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3213        8625         534        4637       12389
+Mem:           15603         776       11062         158        4262       14826
 -- top --
     ELAPSED   RSS COMMAND
-      04:31 1285520 node
-      15:22 392692 next-server (v1
-      00:55 320104 node
-      04:32 129504 node
+ 2-08:15:23 92196 systemd-journal
+      22:19 13048 systemd
+ 2-08:15:29 12120 systemd
+      22:20 12020 sshd-session
 -- disk --
 /dev/sda1        75G   26G   47G  36% /
