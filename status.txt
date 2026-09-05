@@ -1,4 +1,4 @@
-generated: 2026-09-05 09:05:01 UTC
+generated: 2026-09-05 09:10:01 UTC
 done:   183
 queued: 1
 failed: 22
@@ -31,8 +31,6 @@ y03-148-preview-and-sharing.md
 z00-151-the-gate-must-use-the-box.md
 
 -- log --
-    w01-162-suite-basic-and-integration.md
-    w02-163-single-tool-subscription.md
     w03-164-reconciliation-and-statuses.md
     x00-152-the-fixture-litter-ratchet.md
     y03-148-preview-and-sharing.md
@@ -51,15 +49,17 @@ z00-151-the-gate-must-use-the-box.md
      . build/screens/journeys: diff since b8df835b8b3e touches something that could render — running fresh
      . build clean
      . mem: build step peaked at 5520MB (cgroup MemoryCurrent, sampled every 3s)
+     . suite green: 3169 tests
+     . mem: tests step peaked at 3497MB (cgroup MemoryCurrent, sampled every 3s)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1540        9241         166        5326       14062
+Mem:           15603        2502        9699         157        3897       13101
 -- top --
     ELAPSED   RSS COMMAND
-      29:17 597392 node
-      00:02 158308 node
- 2-04:10:23 88696 systemd-journal
-      29:18 77752 npm exec vitest
+      02:15 797712 next-server (v1
+      02:11 691852 chrome-headless
+      02:13 252320 node
+      02:11 143492 chrome-headless
 -- disk --
-/dev/sda1        75G   27G   46G  38% /
+/dev/sda1        75G   26G   47G  36% /
