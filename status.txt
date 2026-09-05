@@ -1,4 +1,4 @@
-generated: 2026-09-05 09:20:01 UTC
+generated: 2026-09-05 09:25:01 UTC
 done:   183
 queued: 1
 failed: 22
@@ -31,9 +31,6 @@ y03-148-preview-and-sharing.md
 z00-151-the-gate-must-use-the-box.md
 
 -- log --
-    y03-148-preview-and-sharing.md
-    z00-151-the-gate-must-use-the-box.md
-
   blocked tasks are in tasks/blocked/ — failed for a cause outside themselves,
   requeued automatically once it clears (h003-127 C):
     a03-184-public-sign-links-404-service-role-client.md
@@ -51,15 +48,18 @@ z00-151-the-gate-must-use-the-box.md
      . mem: tests step peaked at 3497MB (cgroup MemoryCurrent, sampled every 3s)
      ! SCREENS: 0 broken, 0 blank, 1 404 of 220 — see docs/screen-audit.md
      . mem: screens step peaked at 3867MB (cgroup MemoryCurrent, sampled every 3s)
+     ! JOURNEYS: 5 of 22 failed — invite and sign in, J2: sign a document myself and take it away — DigiSign-only tenant, one document through all four tools, one document through all four tools — hr+digisign tenant, no No1Cloud, one document through all four tools — digisign+cloud tenant, no HR — see docs/journeys-report.md
+     . mem: journeys step peaked at 4402MB (cgroup MemoryCurrent, sampled every 3s)
+     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1516       10685         167        3908       14086
+Mem:           15603        1245       10956         123        3864       14357
 -- top --
     ELAPSED   RSS COMMAND
-      04:33 413944 next-server (v1
-      05:51 195352 node
-      00:32 163504 chrome-headless
-      00:16 148068 chrome-headless
+      04:23 291672 next-server (v1
+      00:52 157076 node
+      00:52 131560 node
+      04:23 128736 node
 -- disk --
 /dev/sda1        75G   26G   47G  36% /
