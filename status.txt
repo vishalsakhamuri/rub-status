@@ -1,11 +1,10 @@
-generated: 2026-09-05 00:20:01 UTC
+generated: 2026-09-05 00:25:01 UTC
 done:   182
-queued: 1
+queued: 0
 failed: 22
 hold:   0
 
 -- queued --
-a03-184-public-sign-links-404-service-role-client.md
 -- failed --
 a01-182-three-defects-still-broken-in-production.md
 a02-183-touch-every-control-fix-or-queue.md
@@ -31,35 +30,35 @@ y03-148-preview-and-sharing.md
 z00-151-the-gate-must-use-the-box.md
 
 -- log --
-     . gate: 68 pass, 7 fail, 0 pending
-     ! GATE FAILED: 1 screen(s) 404: /no1cloud/training/courses/[id]
-     . mem: gate step peaked at 3882MB (cgroup MemoryCurrent, sampled every 3s)
-     ! GATE FAILED, caused by this task
-     [FAILED] (exit 97) 22:37:39
-       moved to tasks/failed/ — the queue carries on
-       reason: completion marker + commit present, but the gate failed: 1 screen(s) 404: /no1cloud/training/courses/[id]
-       see logs/a02-183-touch-every-control-fix-or-queue.log
+    u03-168-clean-the-demo-tenant-for-wednesday.md
+    u04-169-fix-the-full-sweep-findings.md
+    u05-171-clear-the-last-gate-blockers.md
+    u06-172-opening-balances-and-cross-entity.md
+    u07-173-the-write-layer-lies.md
+    u08-174-too-big-split-into-u08a-u08b-u08c.md
+    u08a-174-sign-forges-a-second-document.md
+    u08b-174-no1edit-server-tools-500.md
+    v00-154-the-access-boundary-check-must-finish.md
+    w01-162-suite-basic-and-integration.md
+    w02-163-single-tool-subscription.md
+    w03-164-reconciliation-and-statuses.md
+    x00-152-the-fixture-litter-ratchet.md
+    y03-148-preview-and-sharing.md
+    z00-151-the-gate-must-use-the-box.md
 
----- a03-184-public-sign-links-404-service-role-client ----  started 22:37:41
-     . build/screens/journeys: diff since 4047d6fce786 touches something that could render — running fresh
-     . build clean
-     . mem: build step peaked at 5154MB (cgroup MemoryCurrent, sampled every 3s)
-     . suite green: 3151 tests
-     . mem: tests step peaked at 3030MB (cgroup MemoryCurrent, sampled every 3s)
-     ! SCREENS: 0 broken, 0 blank, 1 404 of 220 — see docs/screen-audit.md
-     . mem: screens step peaked at 5060MB (cgroup MemoryCurrent, sampled every 3s)
-     ! JOURNEYS: 3 of 22 failed — J2: sign a document myself and take it away — DigiSign-only tenant, one document through all four tools — hr+digisign tenant, no No1Cloud, one document through all four tools — digisign+cloud tenant, no HR — see docs/journeys-report.md
-     . mem: journeys step peaked at 5213MB (cgroup MemoryCurrent, sampled every 3s)
-     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
+  blocked tasks are in tasks/blocked/ — failed for a cause outside themselves,
+  requeued automatically once it clears (h003-127 C):
+    a03-184-public-sign-links-404-service-role-client.md
+================================================
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3207        9092         493        4136       12395
+Mem:           15603         721       11577         122        3765       14881
 -- top --
     ELAPSED   RSS COMMAND
-      05:33 1266732 node
-      02:12 378348 node
-      16:10 342228 next-server (v1
-      00:17 162488 node
+ 1-19:30:23 69288 systemd-journal
+ 1-19:30:29 12072 systemd
+ 1-19:30:17 11012 networkd-dispat
+ 1-19:30:22  9548 multipathd
 -- disk --
 /dev/sda1        75G   26G   47G  36% /
