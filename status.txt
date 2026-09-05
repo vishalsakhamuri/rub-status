@@ -1,16 +1,16 @@
-generated: 2026-09-05 16:30:01 UTC
+generated: 2026-09-05 16:35:01 UTC
 done:   182
-queued: 1
-failed: 24
+queued: 0
+failed: 25
 hold:   0
 
 -- queued --
-t00-192-defects-that-produce-wrong-numbers.md
 -- failed --
 a01-182-three-defects-still-broken-in-production.md
 a02-183-touch-every-control-fix-or-queue.md
 s00-190-security-account-takeover-and-employee-data-leak.md
 s01-191-blockers-that-survived-and-hr-gaps.md
+t00-192-defects-that-produce-wrong-numbers.md
 u00-165-fix-everything-the-live-test-found.md
 u00-177-the-invoice-detail-page-must-render.md
 u01-166-auth-must-hold-and-search-must-find.md
@@ -33,35 +33,35 @@ y03-148-preview-and-sharing.md
 z00-151-the-gate-must-use-the-box.md
 
 -- log --
+    u00-177-the-invoice-detail-page-must-render.md
+    u01-166-auth-must-hold-and-search-must-find.md
+    u01-170-finish-the-auth-task-gate.md
+    u02-167-fix-what-the-agent-swarm-found.md
+    u03-168-clean-the-demo-tenant-for-wednesday.md
+    u04-169-fix-the-full-sweep-findings.md
+    u05-171-clear-the-last-gate-blockers.md
+    u06-172-opening-balances-and-cross-entity.md
+    u07-173-the-write-layer-lies.md
+    u08-174-too-big-split-into-u08a-u08b-u08c.md
+    u08a-174-sign-forges-a-second-document.md
+    u08b-174-no1edit-server-tools-500.md
+    v00-154-the-access-boundary-check-must-finish.md
+    w01-162-suite-basic-and-integration.md
+    w02-163-single-tool-subscription.md
+    w03-164-reconciliation-and-statuses.md
     x00-152-the-fixture-litter-ratchet.md
     y03-148-preview-and-sharing.md
     z00-151-the-gate-must-use-the-box.md
 ================================================
-================================================
-  RunUrBusiness — draining the task queue
-  started Sat 05 Sep 13:24
-================================================
-
----- t00-192-defects-that-produce-wrong-numbers ----  started 13:24:42
-     . build/screens/journeys: diff since 827dc0a16273 touches something that could render — running fresh
-     . build clean
-     . mem: build step peaked at 3859MB (cgroup MemoryCurrent, sampled every 3s)
-     . suite green: 3180 tests
-     . mem: tests step peaked at 2009MB (cgroup MemoryCurrent, sampled every 3s)
-     ! SCREENS: 0 broken, 0 blank, 1 404 of 220 — see docs/screen-audit.md
-     . mem: screens step peaked at 3993MB (cgroup MemoryCurrent, sampled every 3s)
-     ! JOURNEYS: 7 of 22 failed — invite and sign in, J4: the employee folder — nothing typed twice, J2: sign a document myself and take it away — DigiSign-only tenant, one document through all four tools, one document through all four tools — hr+digisign tenant, no No1Cloud, one document through all four tools — digisign+cloud tenant, no HR, invoice → payment → reconcile, end to end — default tenant (a08-144 D) — see docs/journeys-report.md
-     . mem: journeys step peaked at 4165MB (cgroup MemoryCurrent, sampled every 3s)
-     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1472       10191         178        4456       14130
+Mem:           15603         762       10901         159        4438       14840
 -- top --
     ELAPSED   RSS COMMAND
-      18:45 359204 next-server (v1
-      01:13 197896 node
-      01:11 139160 chrome-headless
-      01:13 129768 node
+ 2-11:40:23 106280 systemd-journal
+ 2-11:40:29 12120 systemd
+      00:03 11264 sshd-session
+ 2-11:40:17 11012 networkd-dispat
 -- disk --
 /dev/sda1        75G   26G   47G  36% /
