@@ -1,7 +1,7 @@
-generated: 2026-09-05 09:40:01 UTC
-done:   183
+generated: 2026-09-05 09:45:02 UTC
+done:   182
 queued: 1
-failed: 22
+failed: 23
 hold:   0
 
 -- queued --
@@ -9,6 +9,7 @@ s01-191-blockers-that-survived-and-hr-gaps.md
 -- failed --
 a01-182-three-defects-still-broken-in-production.md
 a02-183-touch-every-control-fix-or-queue.md
+s00-190-security-account-takeover-and-employee-data-leak.md
 u00-165-fix-everything-the-live-test-found.md
 u00-177-the-invoice-detail-page-must-render.md
 u01-166-auth-must-hold-and-search-must-find.md
@@ -31,35 +32,35 @@ y03-148-preview-and-sharing.md
 z00-151-the-gate-must-use-the-box.md
 
 -- log --
-  blocked tasks are in tasks/blocked/ — failed for a cause outside themselves,
-  requeued automatically once it clears (h003-127 C):
-    a03-184-public-sign-links-404-service-role-client.md
-================================================
-================================================
-  RunUrBusiness — draining the task queue
-  started Sat 05 Sep 07:10
-================================================
+Call log:
+  - waiting for getByRole('button', { name: /^Finish$/ })
+    - locator resolved to <button disabled type="submit" class="inline-flex items-center justify-center gap-2 font-semibold whitespace-nowrap transition disabled:cursor-not-allowed disabled:opacity-60 bg-brand-600 text-white hover:bg-brand px-[18px] py-[11px] text-[14px] rounded-control">Finish</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+      - waiting 100ms
+    58 × waiting for element to be visible, enabled and stable
+       - element is not enabled
+     - retrying click action
+       - waiting 500ms
+; 67 screen(s) flagged for density, up from 64 on the last green run: /accounting/packets/[packet], /accounting/packets/build/[statement], /accounts, /assets/[id], /assets/holders, /assets/locations, /assets, /attention — see docs/screen-density.md
+       see logs/s00-190-security-account-takeover-and-employee-data-leak.log
 
----- s00-190-security-account-takeover-and-employee-data-leak ----  started 07:10:02
-     . build/screens/journeys: diff since b8df835b8b3e touches something that could render — running fresh
-     . build clean
-     . mem: build step peaked at 5520MB (cgroup MemoryCurrent, sampled every 3s)
-     . suite green: 3169 tests
-     . mem: tests step peaked at 3497MB (cgroup MemoryCurrent, sampled every 3s)
-     ! SCREENS: 0 broken, 0 blank, 1 404 of 220 — see docs/screen-audit.md
-     . mem: screens step peaked at 3867MB (cgroup MemoryCurrent, sampled every 3s)
-     ! JOURNEYS: 5 of 22 failed — invite and sign in, J2: sign a document myself and take it away — DigiSign-only tenant, one document through all four tools, one document through all four tools — hr+digisign tenant, no No1Cloud, one document through all four tools — digisign+cloud tenant, no HR — see docs/journeys-report.md
-     . mem: journeys step peaked at 4402MB (cgroup MemoryCurrent, sampled every 3s)
-     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
+---- s01-191-blockers-that-survived-and-hr-gaps ----  started 09:40:45
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1430       10615         141        4038       14173
+Mem:           15603        1091       10924         123        4049       14511
 -- top --
     ELAPSED   RSS COMMAND
-      19:23 343176 next-server (v1
-      01:23 204800 node
-      01:22 138664 chrome-headless
-      01:24 129472 node
+      04:14 479204 claude
+ 2-04:50:23 89020 systemd-journal
+   04:40:12 12956 systemd
+   02:10:30 12136 sshd-session
 -- disk --
 /dev/sda1        75G   26G   47G  36% /
