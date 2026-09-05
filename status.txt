@@ -1,4 +1,4 @@
-generated: 2026-09-05 16:10:01 UTC
+generated: 2026-09-05 16:15:01 UTC
 done:   182
 queued: 1
 failed: 24
@@ -33,9 +33,6 @@ y03-148-preview-and-sharing.md
 z00-151-the-gate-must-use-the-box.md
 
 -- log --
-    w01-162-suite-basic-and-integration.md
-    w02-163-single-tool-subscription.md
-    w03-164-reconciliation-and-statuses.md
     x00-152-the-fixture-litter-ratchet.md
     y03-148-preview-and-sharing.md
     z00-151-the-gate-must-use-the-box.md
@@ -53,15 +50,18 @@ z00-151-the-gate-must-use-the-box.md
      . mem: tests step peaked at 2009MB (cgroup MemoryCurrent, sampled every 3s)
      ! SCREENS: 0 broken, 0 blank, 1 404 of 220 — see docs/screen-audit.md
      . mem: screens step peaked at 3993MB (cgroup MemoryCurrent, sampled every 3s)
+     ! JOURNEYS: 7 of 22 failed — invite and sign in, J4: the employee folder — nothing typed twice, J2: sign a document myself and take it away — DigiSign-only tenant, one document through all four tools, one document through all four tools — hr+digisign tenant, no No1Cloud, one document through all four tools — digisign+cloud tenant, no HR, invoice → payment → reconcile, end to end — default tenant (a08-144 D) — see docs/journeys-report.md
+     . mem: journeys step peaked at 4165MB (cgroup MemoryCurrent, sampled every 3s)
+     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1543       10281         187        4305       14059
+Mem:           15603        1298       10526         159        4277       14304
 -- top --
     ELAPSED   RSS COMMAND
-      03:56 398044 next-server (v1
-      00:25 222560 chrome-headless
-      05:14 196836 node
-      03:54 143980 chrome-headless
+      03:44 291620 next-server (v1
+      00:10 157556 node
+      00:11 147136 node
+      03:45 129496 node
 -- disk --
 /dev/sda1        75G   26G   47G  36% /
