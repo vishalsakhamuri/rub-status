@@ -1,4 +1,4 @@
-generated: 2026-09-05 12:00:01 UTC
+generated: 2026-09-05 12:05:01 UTC
 done:   182
 queued: 1
 failed: 23
@@ -32,9 +32,6 @@ y03-148-preview-and-sharing.md
 z00-151-the-gate-must-use-the-box.md
 
 -- log --
-  - waiting for getByRole('button', { name: /^Finish$/ })
-    - locator resolved to <button disabled type="submit" class="inline-flex items-center justify-center gap-2 font-semibold whitespace-nowrap transition disabled:cursor-not-allowed disabled:opacity-60 bg-brand-600 text-white hover:bg-brand px-[18px] py-[11px] text-[14px] rounded-control">Finish</button>
-  - attempting click action
     2 × waiting for element to be visible, enabled and stable
       - element is not enabled
     - retrying click action
@@ -52,15 +49,18 @@ z00-151-the-gate-must-use-the-box.md
 
 ---- s01-191-blockers-that-survived-and-hr-gaps ----  started 09:40:45
      .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
+     . build/screens/journeys: diff since 9d41de04d549 touches something that could render — running fresh
+     . build clean
+     . mem: build step peaked at 4060MB (cgroup MemoryCurrent, sampled every 3s)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1522       10476         194        4138       14080
+Mem:           15603        1675       10323         186        4130       13927
 -- top --
     ELAPSED   RSS COMMAND
-   01:23:22 524484 claude
-      00:08 193560 node
-      00:07 176224 chrome-headless
-      00:07 136024 chrome-headless
+      00:34 708104 node
+      00:14 180012 node
+ 2-07:10:23 91684 systemd-journal
+      00:34 78564 npm exec vitest
 -- disk --
 /dev/sda1        75G   26G   47G  36% /
