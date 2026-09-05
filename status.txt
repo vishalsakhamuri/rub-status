@@ -1,11 +1,10 @@
-generated: 2026-09-05 08:30:01 UTC
-done:   182
-queued: 2
+generated: 2026-09-05 08:35:01 UTC
+done:   183
+queued: 1
 failed: 22
 hold:   0
 
 -- queued --
-s00-190-security-account-takeover-and-employee-data-leak.md
 s01-191-blockers-that-survived-and-hr-gaps.md
 -- failed --
 a01-182-three-defects-still-broken-in-production.md
@@ -32,7 +31,6 @@ y03-148-preview-and-sharing.md
 z00-151-the-gate-must-use-the-box.md
 
 -- log --
-    u08a-174-sign-forges-a-second-document.md
     u08b-174-no1edit-server-tools-500.md
     v00-154-the-access-boundary-check-must-finish.md
     w01-162-suite-basic-and-integration.md
@@ -52,15 +50,16 @@ z00-151-the-gate-must-use-the-box.md
 ================================================
 
 ---- s00-190-security-account-takeover-and-employee-data-leak ----  started 07:10:02
+     . build/screens/journeys: diff since b8df835b8b3e touches something that could render — running fresh
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1643        9137         158        5320       13959
+Mem:           15603        2779        8003         122        5282       12823
 -- top --
     ELAPSED   RSS COMMAND
-   01:19:57 656960 claude
-      00:04 206520 chrome-headless
-      00:05 178348 node
-      00:04 134456 chrome-headless
+      00:32 1328076 node
+      00:02 633972 node
+      00:27 149308 node
+      00:32 129180 node
 -- disk --
 /dev/sda1        75G   27G   46G  38% /
