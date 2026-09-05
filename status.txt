@@ -1,4 +1,4 @@
-generated: 2026-09-05 10:35:02 UTC
+generated: 2026-09-05 10:40:01 UTC
 done:   182
 queued: 1
 failed: 23
@@ -32,7 +32,6 @@ y03-148-preview-and-sharing.md
 z00-151-the-gate-must-use-the-box.md
 
 -- log --
-Call log:
   - waiting for getByRole('button', { name: /^Finish$/ })
     - locator resolved to <button disabled type="submit" class="inline-flex items-center justify-center gap-2 font-semibold whitespace-nowrap transition disabled:cursor-not-allowed disabled:opacity-60 bg-brand-600 text-white hover:bg-brand px-[18px] py-[11px] text-[14px] rounded-control">Finish</button>
   - attempting click action
@@ -52,15 +51,16 @@ Call log:
        see logs/s00-190-security-account-takeover-and-employee-data-leak.log
 
 ---- s01-191-blockers-that-survived-and-hr-gaps ----  started 09:40:45
+     .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1602       10408         156        4088       14001
+Mem:           15603        1028       10980         157        4091       14575
 -- top --
     ELAPSED   RSS COMMAND
-      54:14 587840 claude
-      09:35 314676 node
-      00:05 146156 node
- 2-05:40:23 90816 systemd-journal
+      03:22 369984 claude
+ 2-05:45:23 90944 systemd-journal
+ 2-05:45:29 12120 systemd
+      00:24 11592 sshd-session
 -- disk --
 /dev/sda1        75G   26G   47G  36% /
