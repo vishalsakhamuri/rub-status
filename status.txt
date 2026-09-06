@@ -1,44 +1,25 @@
-generated: 2026-09-06 18:15:01 UTC
-done:   182
-queued: 0
-failed: 25
+generated: 2026-09-06 18:20:01 UTC
+done:   199
+queued: 12
+failed: 0
 hold:   0
 
 -- queued --
--- failed --
-a01-182-three-defects-still-broken-in-production.md
-a02-183-touch-every-control-fix-or-queue.md
 s00-190-security-account-takeover-and-employee-data-leak.md
-s01-191-blockers-that-survived-and-hr-gaps.md
-t00-192-defects-that-produce-wrong-numbers.md
-u00-165-fix-everything-the-live-test-found.md
 u00-177-the-invoice-detail-page-must-render.md
-u01-166-auth-must-hold-and-search-must-find.md
-u01-170-finish-the-auth-task-gate.md
-u02-167-fix-what-the-agent-swarm-found.md
-u03-168-clean-the-demo-tenant-for-wednesday.md
 u04-169-fix-the-full-sweep-findings.md
 u05-171-clear-the-last-gate-blockers.md
-u06-172-opening-balances-and-cross-entity.md
-u07-173-the-write-layer-lies.md
 u08-174-too-big-split-into-u08a-u08b-u08c.md
-u08a-174-sign-forges-a-second-document.md
-u08b-174-no1edit-server-tools-500.md
-v00-154-the-access-boundary-check-must-finish.md
-w01-162-suite-basic-and-integration.md
-w02-163-single-tool-subscription.md
+v00-193-the-input-layer-what-you-type-must-land.md
+v01-194-money-in-tax-inclusive-takings-journals.md
+v02-195-credit-notes-recurring-invoices-discounts.md
+v03-196-hr-owner-side-vat-treatments-remainder.md
 w03-164-reconciliation-and-statuses.md
 x00-152-the-fixture-litter-ratchet.md
 y03-148-preview-and-sharing.md
-z00-151-the-gate-must-use-the-box.md
+-- failed --
 
 -- log --
-    u00-177-the-invoice-detail-page-must-render.md
-    u01-166-auth-must-hold-and-search-must-find.md
-    u01-170-finish-the-auth-task-gate.md
-    u02-167-fix-what-the-agent-swarm-found.md
-    u03-168-clean-the-demo-tenant-for-wednesday.md
-    u04-169-fix-the-full-sweep-findings.md
     u05-171-clear-the-last-gate-blockers.md
     u06-172-opening-balances-and-cross-entity.md
     u07-173-the-write-layer-lies.md
@@ -53,15 +34,21 @@ z00-151-the-gate-must-use-the-box.md
     y03-148-preview-and-sharing.md
     z00-151-the-gate-must-use-the-box.md
 ================================================
+================================================
+  RunUrBusiness — draining the task queue
+  started Sun 06 Sep 18:18
+================================================
+
+---- s00-190-security-account-takeover-and-employee-data-leak ----  started 18:18:15
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603         787       10731         159        4583       14815
+Mem:           15603        1004       10487         159        4610       14598
 -- top --
     ELAPSED   RSS COMMAND
- 3-13:20:22 145956 systemd-journal
-      55:22 13248 systemd
-      55:23 12200 sshd-session
- 3-13:20:28 12124 systemd
+      01:44 324252 claude
+ 3-13:25:23 149368 systemd-journal
+   01:00:22 13248 systemd
+      01:59 12204 sshd-session
 -- disk --
 /dev/sda1        75G   26G   47G  36% /
