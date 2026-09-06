@@ -1,4 +1,4 @@
-generated: 2026-09-06 21:35:01 UTC
+generated: 2026-09-06 21:40:01 UTC
 done:   200
 queued: 7
 failed: 0
@@ -15,7 +15,6 @@ vp2-199-end-of-day-and-the-german-fiscal-layer.md
 -- failed --
 
 -- log --
-    w03-164-reconciliation-and-statuses.md
     x00-152-the-fixture-litter-ratchet.md
     y03-148-preview-and-sharing.md
     z00-151-the-gate-must-use-the-box.md
@@ -35,15 +34,16 @@ vp2-199-end-of-day-and-the-german-fiscal-layer.md
 ================================================
 
 ---- v00-193-the-input-layer-what-you-type-must-land ----  started 19:40:02
+     . build/screens/journeys: diff since 3d154355dbe8 touches something that could render — running fresh
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1780        9499         201        4864       13822
+Mem:           15603        3883        7396         201        4864       11720
 -- top --
     ELAPSED   RSS COMMAND
-      28:07 564352 next-server (v1
-   01:54:57 532592 claude
- 3-16:40:23 152092 systemd-journal
-      28:07 128660 node
+      00:14 1808096 node
+      00:43 1237656 node
+ 3-16:45:23 152188 systemd-journal
+      00:39 147856 node
 -- disk --
 /dev/sda1        75G   26G   46G  36% /
