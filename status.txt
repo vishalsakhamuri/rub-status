@@ -1,4 +1,4 @@
-generated: 2026-09-06 18:30:01 UTC
+generated: 2026-09-06 18:35:01 UTC
 done:   199
 queued: 5
 failed: 0
@@ -36,12 +36,12 @@ v03-196-hr-owner-side-vat-treatments-remainder.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1467       10016         193        4652       14135
+Mem:           15603        1453       10029         196        4656       14150
 -- top --
     ELAPSED   RSS COMMAND
-      11:44 334324 claude
-      09:32 311860 node
-      00:06 173916 node
- 3-13:35:23 150528 systemd-journal
+      16:44 340236 claude
+      14:33 314624 node
+      00:10 172244 node
+ 3-13:40:23 150852 systemd-journal
 -- disk --
 /dev/sda1        75G   26G   47G  36% /
