@@ -1,6 +1,6 @@
-generated: 2026-09-06 18:40:01 UTC
+generated: 2026-09-06 18:45:01 UTC
 done:   199
-queued: 5
+queued: 8
 failed: 0
 hold:   0
 
@@ -10,6 +10,9 @@ v00-193-the-input-layer-what-you-type-must-land.md
 v01-194-money-in-tax-inclusive-takings-journals.md
 v02-195-credit-notes-recurring-invoices-discounts.md
 v03-196-hr-owner-side-vat-treatments-remainder.md
+vp0-197-the-till-screen-and-the-barcode-scanner.md
+vp1-198-payment-sumup-and-the-thermal-receipt.md
+vp2-199-end-of-day-and-the-german-fiscal-layer.md
 -- failed --
 
 -- log --
@@ -36,12 +39,12 @@ v03-196-hr-owner-side-vat-treatments-remainder.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1476       10006         198        4658       14127
+Mem:           15603        1484        9997         201        4661       14118
 -- top --
     ELAPSED   RSS COMMAND
-      21:44 341916 claude
-      19:33 340088 node
-      00:08 158960 node
- 3-13:45:23 150980 systemd-journal
+      26:44 348848 claude
+      24:32 329908 node
+      00:09 158296 node
+ 3-13:50:23 150980 systemd-journal
 -- disk --
 /dev/sda1        75G   26G   47G  36% /
