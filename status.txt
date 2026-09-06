@@ -1,4 +1,4 @@
-generated: 2026-09-06 19:40:01 UTC
+generated: 2026-09-06 19:45:01 UTC
 done:   200
 queued: 7
 failed: 0
@@ -15,12 +15,6 @@ vp2-199-end-of-day-and-the-german-fiscal-layer.md
 -- failed --
 
 -- log --
-    u08-174-too-big-split-into-u08a-u08b-u08c.md
-    u08a-174-sign-forges-a-second-document.md
-    u08b-174-no1edit-server-tools-500.md
-    v00-154-the-access-boundary-check-must-finish.md
-    w01-162-suite-basic-and-integration.md
-    w02-163-single-tool-subscription.md
     w03-164-reconciliation-and-statuses.md
     x00-152-the-fixture-litter-ratchet.md
     y03-148-preview-and-sharing.md
@@ -35,15 +29,21 @@ vp2-199-end-of-day-and-the-german-fiscal-layer.md
      . build/screens/journeys: diff since 3d154355dbe8 touches something that could render — running fresh
      . build clean
      . mem: build step peaked at 4262MB (cgroup MemoryCurrent, sampled every 3s)
+================================================
+  RunUrBusiness — draining the task queue
+  started Sun 06 Sep 19:40
+================================================
+
+---- v00-193-the-input-layer-what-you-type-must-land ----  started 19:40:02
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1524        9932         200        4686       14078
+Mem:           15603        1112       10341         200        4689       14490
 -- top --
     ELAPSED   RSS COMMAND
-      21:51 587836 node
-      00:02 161724 node
- 3-14:45:22 151472 systemd-journal
-      21:51 78224 npm exec vitest
+      04:56 409396 claude
+ 3-14:50:22 151504 systemd-journal
+   02:25:22 13248 systemd
+   01:26:59 12204 sshd-session
 -- disk --
 /dev/sda1        75G   26G   47G  36% /
