@@ -1,4 +1,4 @@
-generated: 2026-09-06 20:55:01 UTC
+generated: 2026-09-06 21:00:01 UTC
 done:   200
 queued: 7
 failed: 0
@@ -38,12 +38,12 @@ vp2-199-end-of-day-and-the-german-fiscal-layer.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1902        9544         229        4725       13700
+Mem:           15603        4351        7095         201        4696       11251
 -- top --
     ELAPSED   RSS COMMAND
-   01:14:57 556520 claude
-      01:41 311320 next-server (v1
-      02:59 191660 node
-      00:18 155340 chrome-headless
+      00:13 1693392 node
+      00:42 1231172 node
+   01:19:56 478784 claude
+      00:45 216760 node
 -- disk --
 /dev/sda1        75G   26G   47G  36% /
