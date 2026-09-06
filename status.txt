@@ -1,4 +1,4 @@
-generated: 2026-09-06 23:25:01 UTC
+generated: 2026-09-06 23:30:01 UTC
 done:   202
 queued: 5
 failed: 0
@@ -13,14 +13,6 @@ vp2-199-end-of-day-and-the-german-fiscal-layer.md
 -- failed --
 
 -- log --
-
----- s00-190-security-account-takeover-and-employee-data-leak ----  started 18:18:15
-     . build/screens/journeys: diff since 3d154355dbe8 touches something that could render — running fresh
-     . build clean
-     . mem: build step peaked at 4262MB (cgroup MemoryCurrent, sampled every 3s)
-================================================
-  RunUrBusiness — draining the task queue
-  started Sun 06 Sep 19:40
 ================================================
 
 ---- v00-193-the-input-layer-what-you-type-must-land ----  started 19:40:02
@@ -33,15 +25,23 @@ vp2-199-end-of-day-and-the-german-fiscal-layer.md
 ================================================
 
 ---- v01-194-money-in-tax-inclusive-takings-journals ----  started 22:00:02
+     ! exited clean but produced nothing verifiable — stalled — log ends on a waiting line, no completion marker (commit was made, but a commit is not proof of completion when the task's own words say it isn't finished)
+     . build/screens/journeys: diff since 3d154355dbe8 touches something that could render — running fresh
+     . build clean
+     . mem: build step peaked at 7847MB (cgroup MemoryCurrent, sampled every 3s)
+     ! orphaned dev server found: pid 666712, owned by build, age 6m, cwd /home/build/runurbusiness (sh -c next dev) — killing it
+     ! orphaned dev server found: pid 666713, owned by build, age 6m, cwd /home/build/runurbusiness (node /home/build/runurbusiness/node_modules/.bin/../next/dist/bin/next dev) — killing it
+     ! orphaned dev server found: pid 666730, owned by build, age 6m, cwd /home/build/runurbusiness (next-server (v16.2.11)) — killing it
+     . orphaned dev server(s) cleaned up before this task starts
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        4741        5742         241        5700       10861
+Mem:           15603        1480        9000         266        5728       14122
 -- top --
     ELAPSED   RSS COMMAND
-      02:39 3013264 next-server (v1
-   01:24:57 634484 claude
- 3-18:30:23 153284 systemd-journal
-      02:36 152848 node
+      00:40 488460 node
+ 3-18:35:23 153424 systemd-journal
+      00:20 151052 node
+      00:40 78468 npm exec vitest
 -- disk --
 /dev/sda1        75G   27G   46G  37% /
