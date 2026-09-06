@@ -1,11 +1,10 @@
-generated: 2026-09-06 19:15:01 UTC
-done:   199
-queued: 8
+generated: 2026-09-06 19:20:01 UTC
+done:   200
+queued: 7
 failed: 0
 hold:   0
 
 -- queued --
-s00-190-security-account-takeover-and-employee-data-leak.md
 v00-193-the-input-layer-what-you-type-must-land.md
 v01-194-money-in-tax-inclusive-takings-journals.md
 v02-195-credit-notes-recurring-invoices-discounts.md
@@ -16,9 +15,6 @@ vp2-199-end-of-day-and-the-german-fiscal-layer.md
 -- failed --
 
 -- log --
-    u05-171-clear-the-last-gate-blockers.md
-    u06-172-opening-balances-and-cross-entity.md
-    u07-173-the-write-layer-lies.md
     u08-174-too-big-split-into-u08a-u08b-u08c.md
     u08a-174-sign-forges-a-second-document.md
     u08b-174-no1edit-server-tools-500.md
@@ -36,15 +32,18 @@ vp2-199-end-of-day-and-the-german-fiscal-layer.md
 ================================================
 
 ---- s00-190-security-account-takeover-and-employee-data-leak ----  started 18:18:15
+     . build/screens/journeys: diff since 3d154355dbe8 touches something that could render — running fresh
+     . build clean
+     . mem: build step peaked at 4262MB (cgroup MemoryCurrent, sampled every 3s)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1487        9971         196        4681       14116
+Mem:           15603        1439       10019         187        4672       14163
 -- top --
     ELAPSED   RSS COMMAND
-      56:43 382472 claude
-      00:15 209908 chrome-headless
-      00:15 155048 node
- 3-14:20:22 151080 systemd-journal
+      01:51 514504 node
+      00:16 151792 node
+ 3-14:25:22 151356 systemd-journal
+      01:51 78224 npm exec vitest
 -- disk --
 /dev/sda1        75G   26G   47G  36% /
