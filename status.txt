@@ -1,4 +1,4 @@
-generated: 2026-09-07 14:05:01 UTC
+generated: 2026-09-07 14:10:01 UTC
 done:   208
 queued: 0
 failed: 0
@@ -8,8 +8,6 @@ hold:   0
 -- failed --
 
 -- log --
-================================================
-  RunUrBusiness — draining the task queue
   started Mon 07 Sep 10:10
 ================================================
 
@@ -28,15 +26,17 @@ hold:   0
      . build/screens/journeys: diff since 3d154355dbe8 touches something that could render — running fresh
      . build clean
      . mem: build step peaked at 4745MB (cgroup MemoryCurrent, sampled every 3s)
+     ! SUITE RED: 4 of 3338 tests failing — see logs/suite-latest.log
+     . mem: tests step peaked at 2412MB (cgroup MemoryCurrent, sampled every 3s)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1930        9733         579        4858       13672
+Mem:           15603        2762       10408         621        3393       12840
 -- top --
     ELAPSED   RSS COMMAND
-      29:02 616512 node
-      00:08 166492 node
- 4-09:10:23 112224 systemd-journal
-      29:03 78568 npm exec vitest
+      00:39 690548 next-server (v1
+      00:35 551804 chrome-headless
+      00:37 224848 node
+      00:35 140192 chrome-headless
 -- disk --
-/dev/sda1        75G   28G   45G  39% /
+/dev/sda1        75G   26G   46G  36% /
