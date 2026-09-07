@@ -1,4 +1,4 @@
-generated: 2026-09-07 10:10:01 UTC
+generated: 2026-09-07 10:15:01 UTC
 done:   206
 queued: 1
 failed: 0
@@ -9,12 +9,6 @@ vp2-199-end-of-day-and-the-german-fiscal-layer.md
 -- failed --
 
 -- log --
-
----- vp0-197-the-till-screen-and-the-barcode-scanner ----  started 05:10:02
-     . build/screens/journeys: diff since 3d154355dbe8 touches something that could render — running fresh
-     . build clean
-     . mem: build step peaked at 7466MB (cgroup MemoryCurrent, sampled every 3s)
-     ! orphaned dev server found: pid 755867, owned by build, age 42m, cwd /home/build/runurbusiness (next-server (v16.2.11)) — killing it
      . orphaned dev server(s) cleaned up before this task starts
 ================================================
   RunUrBusiness — draining the task queue
@@ -29,15 +23,21 @@ vp2-199-end-of-day-and-the-german-fiscal-layer.md
      ! orphaned dev server found: pid 787702, owned by build, age 40m, cwd /home/build/runurbusiness (node /home/build/runurbusiness/node_modules/.bin/../.pnpm/next@16.2.11_@babel+core@7.29.7_supports-color@7.2.0__react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/bin/next dev) — killing it
      ! orphaned dev server found: pid 787719, owned by build, age 40m, cwd /home/build/runurbusiness (next-server (v16.2.11)) — killing it
      . orphaned dev server(s) cleaned up before this task starts
+================================================
+  RunUrBusiness — draining the task queue
+  started Mon 07 Sep 10:10
+================================================
+
+---- vp2-199-end-of-day-and-the-german-fiscal-layer ----  started 10:10:02
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1742       10482         433        4151       13860
+Mem:           15603        1383       10839         433        4153       14219
 -- top --
     ELAPSED   RSS COMMAND
-      17:01 611896 node
-      00:17 154440 node
- 4-05:15:22 104532 systemd-journal
-      17:02 78336 npm exec vitest
+      04:57 441732 claude
+ 4-05:20:22 104672 systemd-journal
+ 4-05:20:29 12140 systemd
+ 4-05:20:17 11012 networkd-dispat
 -- disk --
 /dev/sda1        75G   28G   45G  38% /
