@@ -1,4 +1,4 @@
-generated: 2026-09-07 12:10:01 UTC
+generated: 2026-09-07 12:15:01 UTC
 done:   207
 queued: 0
 failed: 0
@@ -8,7 +8,6 @@ hold:   0
 -- failed --
 
 -- log --
-================================================
 
 ---- vp1-198-payment-sumup-and-the-thermal-receipt ----  started 07:20:02
      . build/screens/journeys: diff since 3d154355dbe8 touches something that could render — running fresh
@@ -28,15 +27,16 @@ hold:   0
      . build/screens/journeys: diff since 3d154355dbe8 touches something that could render — running fresh
      . build clean
      . mem: build step peaked at 5032MB (cgroup MemoryCurrent, sampled every 3s)
+./queue-gate-steps.sh: line 85: 815985 Killed                     NODE_OPTIONS="--max-old-space-size=${TEST_HEAP_MB}" npx vitest run > "$suite_log" 2>&1
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1875       10088         534        4513       13727
+Mem:           15603        1179       10784         534        4514       14424
 -- top --
     ELAPSED   RSS COMMAND
-      30:24 597384 node
-      00:00 126856 node
- 4-07:15:23 106428 systemd-journal
-      30:24 78820 npm exec vitest
+ 4-07:20:22 106432 systemd-journal
+      19:52 13024 systemd
+      19:53 12168 sshd-session
+ 4-07:20:28 12140 systemd
 -- disk --
 /dev/sda1        75G   28G   45G  39% /
