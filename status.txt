@@ -1,25 +1,15 @@
-generated: 2026-09-07 14:35:01 UTC
-done:   208
-queued: 0
-failed: 0
+generated: 2026-09-07 14:40:01 UTC
+done:   207
+queued: 1
+failed: 1
 hold:   0
 
 -- queued --
+a03-184-public-sign-links-404-service-role-client.md
 -- failed --
+a00-200-a-half-typed-amount-must-never-crash-the-page.md
 
 -- log --
-     . build/screens/journeys: diff since 3d154355dbe8 touches something that could render — running fresh
-     . build clean
-     . mem: build step peaked at 5032MB (cgroup MemoryCurrent, sampled every 3s)
-./queue-gate-steps.sh: line 85: 815985 Killed                     NODE_OPTIONS="--max-old-space-size=${TEST_HEAP_MB}" npx vitest run > "$suite_log" 2>&1
-================================================
-  RunUrBusiness — draining the task queue
-  started Mon 07 Sep 12:30
-================================================
-
----- a00-200-a-half-typed-amount-must-never-crash-the-page ----  started 12:30:02
-     . build/screens/journeys: diff since 3d154355dbe8 touches something that could render — running fresh
-     . build clean
      . mem: build step peaked at 4745MB (cgroup MemoryCurrent, sampled every 3s)
      ! SUITE RED: 4 of 3338 tests failing — see logs/suite-latest.log
      . mem: tests step peaked at 2412MB (cgroup MemoryCurrent, sampled every 3s)
@@ -28,15 +18,27 @@ hold:   0
      ! JOURNEYS: 7 of 23 failed — invite and sign in, J4: the employee folder — nothing typed twice, J2: sign a document myself and take it away — DigiSign-only tenant, one document through all four tools, one document through all four tools — hr+digisign tenant, no No1Cloud, one document through all four tools — digisign+cloud tenant, no HR, invoice → payment → reconcile, end to end — default tenant (a08-144 D) — see docs/journeys-report.md
      . mem: journeys step peaked at 4248MB (cgroup MemoryCurrent, sampled every 3s)
      . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
+     . gate: 63 pass, 20 fail, 0 pending
+     ! GATE FAILED: 4 of 3338 tests failing; 1 screen(s) broken: /settings/opening-balances; screens (empty tenant) did not produce a result — treated as failed, not unknown; scripts/prove-email-deliverability.ts failed (t05-74 is marked done): MAIL_FROM is configured, is checked live against DNS, and every message / built stays free of the three spam signals named in section A. / ────────────────────────────────────────────────────────────────────────────── /  / [31m1 check(s) failed[0m; scripts/prove-no1cloud.ts failed (h00h-120 is marked done):  (failed after 2 retries) /     at withInfraRetry (/home/build/runurbusiness/scripts/lib/robust-wait.ts:146:9) /     at async gotoReady (/home/build/runurbusiness/scripts/lib/robust-wait.ts:163:3) /     at async signIn (/home/build/runurbusiness/scripts/prove-no1cloud.ts:99:3) /     at async main (/home/build/runurbusiness/scripts/prove-no1cloud.ts:198:18); scripts/prove-bank-reconciliation.ts failed (a02-138 is marked done): signing up as bank-reconcile-f7463c@runurbusiness.com, run F7463C /  /   [31m✗[0m http://localhost:3000 is answering — start it with "pnpm dev" and re-run /  / [31m1 CHECK(S) FAILED[0m; scripts/prove-search.ts failed (u16-100 is marked done):  / [1mL. Keyboard-only: / opens, arrows move, Enter opens, Esc restores focus[0m /   [31m✗[0m the site is up for the keyboard section — http://localhost:3000 is not answering — start it with "pnpm dev" and re-run /  / [31m2 check(s) failed.[0m; scripts/prove-home.ts failed (u22-106 is marked done): [1m9. Reset restores the default layout[0m /   [32m✓[0m the layout was actually saved /   [32m✓[0m reset clears hidden cards and the stored order in one action /  / [31m1 check(s) failed.[0m; scripts/prove-backup-restore.ts failed (u26-111 is marked done):       2950, 25, 3802, /       3802, 25 /     ] /   } / }; scripts/prove-scroll-containment.ts failed (h00f-119 is marked done):   - navigating to "http://localhost:3000/login", waiting until "load" /  /   cleaned up 200 ScrollList employee(s), 200 ScrollList contact(s) /  / [31m7 check(s) failed.[0m; scripts/prove-input-integrity.ts failed (v00-193 is marked done):   - navigating to "http://localhost:3000/login", waiting until "domcontentloaded" /  (failed after 2 retries) /     at withInfraRetry (/home/build/runurbusiness/scripts/lib/robust-wait.ts:146:9) /     at async gotoReady (/home/build/runurbusiness/scripts/lib/robust-wait.ts:163:3) /     at async main (/home/build/runurbusiness/scripts/prove-input-integrity.ts:207:3); journey "invoice → payment → reconcile, end to end — default tenant (a08-144 D)" failed: the arriving account's reconcile screen does not show the transfer as already identified (C6 state 3)
+     . mem: gate step peaked at 2963MB (cgroup MemoryCurrent, sampled every 3s)
+     . requeued a03-184-public-sign-links-404-service-role-client from blocked/ — its blocking reason has cleared
+     ! GATE FAILED, caused by this task
+     ! task had self-moved to tasks/done/ — moved back to tasks/failed/, the gate said otherwise
+     [FAILED] (exit 97) 14:37:56
+       moved to tasks/failed/ — the queue carries on
+       reason: completion marker + commit present, but the gate failed: 4 of 3338 tests failing; 1 screen(s) broken: /settings/opening-balances; screens (empty tenant) did not produce a result — treated as failed, not unknown; scripts/prove-email-deliverability.ts failed (t05-74 is marked done): MAIL_FROM is configured, is checked live against DNS, and every message / built stays free of the three spam signals named in section A. / ────────────────────────────────────────────────────────────────────────────── /  / [31m1 check(s) failed[0m; scripts/prove-no1cloud.ts failed (h00h-120 is marked done):  (failed after 2 retries) /     at withInfraRetry (/home/build/runurbusiness/scripts/lib/robust-wait.ts:146:9) /     at async gotoReady (/home/build/runurbusiness/scripts/lib/robust-wait.ts:163:3) /     at async signIn (/home/build/runurbusiness/scripts/prove-no1cloud.ts:99:3) /     at async main (/home/build/runurbusiness/scripts/prove-no1cloud.ts:198:18); scripts/prove-bank-reconciliation.ts failed (a02-138 is marked done): signing up as bank-reconcile-f7463c@runurbusiness.com, run F7463C /  /   [31m✗[0m http://localhost:3000 is answering — start it with "pnpm dev" and re-run /  / [31m1 CHECK(S) FAILED[0m; scripts/prove-search.ts failed (u16-100 is marked done):  / [1mL. Keyboard-only: / opens, arrows move, Enter opens, Esc restores focus[0m /   [31m✗[0m the site is up for the keyboard section — http://localhost:3000 is not answering — start it with "pnpm dev" and re-run /  / [31m2 check(s) failed.[0m; scripts/prove-home.ts failed (u22-106 is marked done): [1m9. Reset restores the default layout[0m /   [32m✓[0m the layout was actually saved /   [32m✓[0m reset clears hidden cards and the stored order in one action /  / [31m1 check(s) failed.[0m; scripts/prove-backup-restore.ts failed (u26-111 is marked done):       2950, 25, 3802, /       3802, 25 /     ] /   } / }; scripts/prove-scroll-containment.ts failed (h00f-119 is marked done):   - navigating to "http://localhost:3000/login", waiting until "load" /  /   cleaned up 200 ScrollList employee(s), 200 ScrollList contact(s) /  / [31m7 check(s) failed.[0m; scripts/prove-input-integrity.ts failed (v00-193 is marked done):   - navigating to "http://localhost:3000/login", waiting until "domcontentloaded" /  (failed after 2 retries) /     at withInfraRetry (/home/build/runurbusiness/scripts/lib/robust-wait.ts:146:9) /     at async gotoReady (/home/build/runurbusiness/scripts/lib/robust-wait.ts:163:3) /     at async main (/home/build/runurbusiness/scripts/prove-input-integrity.ts:207:3); journey "invoice → payment → reconcile, end to end — default tenant (a08-144 D)" failed: the arriving account's reconcile screen does not show the transfer as already identified (C6 state 3)
+       see logs/a00-200-a-half-typed-amount-must-never-crash-the-page.log
+
+---- a03-184-public-sign-links-404-service-role-client ----  started 14:37:58
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3598        9402         992        3933       12004
+Mem:           15603        1588       11358         592        3587       14014
 -- top --
     ELAPSED   RSS COMMAND
-      06:14 1340696 node
-      02:37 427228 node
-      06:15 130492 node
-      00:00 128160 node
+      02:00 354320 claude
+      00:00 128700 node
+ 4-09:45:23 112740 systemd-journal
+      00:00 86104 npm exec vitest
 -- disk --
 /dev/sda1        75G   26G   46G  37% /
