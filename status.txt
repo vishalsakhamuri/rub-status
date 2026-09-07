@@ -1,4 +1,4 @@
-generated: 2026-09-07 13:35:01 UTC
+generated: 2026-09-07 13:40:01 UTC
 done:   207
 queued: 1
 failed: 0
@@ -9,8 +9,6 @@ a00-200-a-half-typed-amount-must-never-crash-the-page.md
 -- failed --
 
 -- log --
-     ! orphaned dev server found: pid 787719, owned by build, age 40m, cwd /home/build/runurbusiness (next-server (v16.2.11)) — killing it
-     . orphaned dev server(s) cleaned up before this task starts
 ================================================
   RunUrBusiness — draining the task queue
   started Mon 07 Sep 10:10
@@ -29,15 +27,17 @@ a00-200-a-half-typed-amount-must-never-crash-the-page.md
 
 ---- a00-200-a-half-typed-amount-must-never-crash-the-page ----  started 12:30:02
      . build/screens/journeys: diff since 3d154355dbe8 touches something that could render — running fresh
+     . build clean
+     . mem: build step peaked at 4745MB (cgroup MemoryCurrent, sampled every 3s)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3419        8432         534        4625       12183
+Mem:           15603        1926        9737         567        4846       13676
 -- top --
     ELAPSED   RSS COMMAND
-      00:19 2059684 node
-      00:15 170624 node
-      00:19 129148 node
- 4-08:40:22 111540 systemd-journal
+      04:02 593404 node
+      00:04 147424 node
+ 4-08:45:22 111604 systemd-journal
+      04:02 78568 npm exec vitest
 -- disk --
 /dev/sda1        75G   28G   45G  39% /
