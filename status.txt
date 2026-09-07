@@ -1,4 +1,4 @@
-generated: 2026-09-07 04:45:01 UTC
+generated: 2026-09-07 04:50:01 UTC
 done:   203
 queued: 4
 failed: 0
@@ -12,9 +12,6 @@ vp2-199-end-of-day-and-the-german-fiscal-layer.md
 -- failed --
 
 -- log --
-     . mem: build step peaked at 7847MB (cgroup MemoryCurrent, sampled every 3s)
-     ! orphaned dev server found: pid 666712, owned by build, age 6m, cwd /home/build/runurbusiness (sh -c next dev) — killing it
-     ! orphaned dev server found: pid 666713, owned by build, age 6m, cwd /home/build/runurbusiness (node /home/build/runurbusiness/node_modules/.bin/../next/dist/bin/next dev) — killing it
      ! orphaned dev server found: pid 666730, owned by build, age 6m, cwd /home/build/runurbusiness (next-server (v16.2.11)) — killing it
      . orphaned dev server(s) cleaned up before this task starts
 ================================================
@@ -32,15 +29,18 @@ vp2-199-end-of-day-and-the-german-fiscal-layer.md
 ================================================
 
 ---- v03-196-hr-owner-side-vat-treatments-remainder ----  started 03:10:02
+     . build/screens/journeys: diff since 3d154355dbe8 touches something that could render — running fresh
+     . build clean
+     . mem: build step peaked at 5195MB (cgroup MemoryCurrent, sampled every 3s)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1957        8624         360        5720       13645
+Mem:           15603        1701        8829         390        5802       13901
 -- top --
     ELAPSED   RSS COMMAND
-   01:34:57 656772 claude
-      03:27 349012 node
-      00:29 215640 node
- 3-23:50:22 88908 systemd-journal
+      00:47 512616 node
+      00:27 208224 node
+ 3-23:55:22 88908 systemd-journal
+      00:47 78008 npm exec vitest
 -- disk --
 /dev/sda1        75G   30G   42G  42% /
