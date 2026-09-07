@@ -1,4 +1,4 @@
-generated: 2026-09-07 03:10:01 UTC
+generated: 2026-09-07 03:15:01 UTC
 done:   203
 queued: 4
 failed: 0
@@ -12,12 +12,6 @@ vp2-199-end-of-day-and-the-german-fiscal-layer.md
 -- failed --
 
 -- log --
-================================================
-
----- v01-194-money-in-tax-inclusive-takings-journals ----  started 22:00:02
-     ! exited clean but produced nothing verifiable — stalled — log ends on a waiting line, no completion marker (commit was made, but a commit is not proof of completion when the task's own words say it isn't finished)
-     . build/screens/journeys: diff since 3d154355dbe8 touches something that could render — running fresh
-     . build clean
      . mem: build step peaked at 7847MB (cgroup MemoryCurrent, sampled every 3s)
      ! orphaned dev server found: pid 666712, owned by build, age 6m, cwd /home/build/runurbusiness (sh -c next dev) — killing it
      ! orphaned dev server found: pid 666713, owned by build, age 6m, cwd /home/build/runurbusiness (node /home/build/runurbusiness/node_modules/.bin/../next/dist/bin/next dev) — killing it
@@ -32,15 +26,21 @@ vp2-199-end-of-day-and-the-german-fiscal-layer.md
      . build/screens/journeys: diff since 3d154355dbe8 touches something that could render — running fresh
      . build clean
      . mem: build step peaked at 4757MB (cgroup MemoryCurrent, sampled every 3s)
+================================================
+  RunUrBusiness — draining the task queue
+  started Mon 07 Sep 03:10
+================================================
+
+---- v03-196-hr-owner-side-vat-treatments-remainder ----  started 03:10:02
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1643        8304         325        6320       13959
+Mem:           15603        1249        8696         325        6323       14354
 -- top --
     ELAPSED   RSS COMMAND
-      23:40 593716 node
- 3-22:15:22 161040 systemd-journal
-      00:00 125740 node
-      23:40 78308 npm exec vitest
+      04:57 431052 claude
+ 3-22:20:22 161188 systemd-journal
+ 3-22:20:28 12132 systemd
+      00:01 11780 sshd-session
 -- disk --
 /dev/sda1        75G   27G   45G  38% /
