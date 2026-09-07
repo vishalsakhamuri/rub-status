@@ -1,4 +1,4 @@
-generated: 2026-09-07 14:15:01 UTC
+generated: 2026-09-07 14:20:01 UTC
 done:   208
 queued: 0
 failed: 0
@@ -8,9 +8,6 @@ hold:   0
 -- failed --
 
 -- log --
-
----- vp2-199-end-of-day-and-the-german-fiscal-layer ----  started 10:10:02
-     .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
      . build/screens/journeys: diff since 3d154355dbe8 touches something that could render — running fresh
      . build clean
      . mem: build step peaked at 5032MB (cgroup MemoryCurrent, sampled every 3s)
@@ -28,15 +25,18 @@ hold:   0
      . mem: tests step peaked at 2412MB (cgroup MemoryCurrent, sampled every 3s)
      ! SCREENS: 183 broken, 0 blank, 0 404 of 236 — see docs/screen-audit.md
      . mem: screens step peaked at 4038MB (cgroup MemoryCurrent, sampled every 3s)
+     ! JOURNEYS: 7 of 23 failed — invite and sign in, J4: the employee folder — nothing typed twice, J2: sign a document myself and take it away — DigiSign-only tenant, one document through all four tools, one document through all four tools — hr+digisign tenant, no No1Cloud, one document through all four tools — digisign+cloud tenant, no HR, invoice → payment → reconcile, end to end — default tenant (a08-144 D) — see docs/journeys-report.md
+     . mem: journeys step peaked at 4248MB (cgroup MemoryCurrent, sampled every 3s)
+     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2152       11019         644        3415       13450
+Mem:           15603        1796       11374         588        3359       13806
 -- top --
     ELAPSED   RSS COMMAND
-      02:56 528500 next-server (v1
-      00:07 231648 chrome-headless
-      04:18 210032 node
-      02:54 144476 chrome-headless
+      02:33 294720 next-server (v1
+      00:03 160152 node
+      00:04 147812 node
+      02:33 129188 node
 -- disk --
 /dev/sda1        75G   26G   46G  36% /
