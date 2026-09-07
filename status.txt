@@ -1,4 +1,4 @@
-generated: 2026-09-07 02:05:01 UTC
+generated: 2026-09-07 02:10:01 UTC
 done:   202
 queued: 5
 failed: 0
@@ -36,12 +36,12 @@ vp2-199-end-of-day-and-the-german-fiscal-layer.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        4864        5591         283        5771       10738
+Mem:           15603        1869        8585         316        5804       13733
 -- top --
     ELAPSED   RSS COMMAND
-      00:37 2072792 node
-      01:05 1331612 node
-   02:14:56 697536 claude
- 3-21:10:22 160128 systemd-journal
+   02:19:56 616016 claude
+      04:38 341748 node
+      00:27 220064 node
+ 3-21:15:22 160128 systemd-journal
 -- disk --
 /dev/sda1        75G   27G   46G  37% /
