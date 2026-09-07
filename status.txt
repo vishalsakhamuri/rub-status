@@ -1,4 +1,4 @@
-generated: 2026-09-07 13:30:01 UTC
+generated: 2026-09-07 13:35:01 UTC
 done:   207
 queued: 1
 failed: 0
@@ -9,7 +9,6 @@ a00-200-a-half-typed-amount-must-never-crash-the-page.md
 -- failed --
 
 -- log --
-     ! orphaned dev server found: pid 787702, owned by build, age 40m, cwd /home/build/runurbusiness (node /home/build/runurbusiness/node_modules/.bin/../.pnpm/next@16.2.11_@babel+core@7.29.7_supports-color@7.2.0__react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/bin/next dev) — killing it
      ! orphaned dev server found: pid 787719, owned by build, age 40m, cwd /home/build/runurbusiness (next-server (v16.2.11)) — killing it
      . orphaned dev server(s) cleaned up before this task starts
 ================================================
@@ -29,15 +28,16 @@ a00-200-a-half-typed-amount-must-never-crash-the-page.md
 ================================================
 
 ---- a00-200-a-half-typed-amount-must-never-crash-the-page ----  started 12:30:02
+     . build/screens/journeys: diff since 3d154355dbe8 touches something that could render — running fresh
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        4398        7235         534        4843       11205
+Mem:           15603        3419        8432         534        4625       12183
 -- top --
     ELAPSED   RSS COMMAND
-      46:13 2804172 next-server (v1
-      59:57 497988 claude
-      46:12 178516 node
-      46:14 127900 node
+      00:19 2059684 node
+      00:15 170624 node
+      00:19 129148 node
+ 4-08:40:22 111540 systemd-journal
 -- disk --
 /dev/sda1        75G   28G   45G  39% /
