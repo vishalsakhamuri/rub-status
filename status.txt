@@ -1,4 +1,4 @@
-generated: 2026-09-07 16:05:01 UTC
+generated: 2026-09-07 16:10:01 UTC
 done:   209
 queued: 0
 failed: 0
@@ -8,9 +8,6 @@ hold:   0
 -- failed --
 
 -- log --
-     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
-     . gate: 63 pass, 20 fail, 0 pending
-     ! GATE FAILED: 4 of 3338 tests failing; 1 screen(s) broken: /settings/opening-balances; screens (empty tenant) did not produce a result — treated as failed, not unknown; scripts/prove-email-deliverability.ts failed (t05-74 is marked done): MAIL_FROM is configured, is checked live against DNS, and every message / built stays free of the three spam signals named in section A. / ────────────────────────────────────────────────────────────────────────────── /  / [31m1 check(s) failed[0m; scripts/prove-no1cloud.ts failed (h00h-120 is marked done):  (failed after 2 retries) /     at withInfraRetry (/home/build/runurbusiness/scripts/lib/robust-wait.ts:146:9) /     at async gotoReady (/home/build/runurbusiness/scripts/lib/robust-wait.ts:163:3) /     at async signIn (/home/build/runurbusiness/scripts/prove-no1cloud.ts:99:3) /     at async main (/home/build/runurbusiness/scripts/prove-no1cloud.ts:198:18); scripts/prove-bank-reconciliation.ts failed (a02-138 is marked done): signing up as bank-reconcile-f7463c@runurbusiness.com, run F7463C /  /   [31m✗[0m http://localhost:3000 is answering — start it with "pnpm dev" and re-run /  / [31m1 CHECK(S) FAILED[0m; scripts/prove-search.ts failed (u16-100 is marked done):  / [1mL. Keyboard-only: / opens, arrows move, Enter opens, Esc restores focus[0m /   [31m✗[0m the site is up for the keyboard section — http://localhost:3000 is not answering — start it with "pnpm dev" and re-run /  / [31m2 check(s) failed.[0m; scripts/prove-home.ts failed (u22-106 is marked done): [1m9. Reset restores the default layout[0m /   [32m✓[0m the layout was actually saved /   [32m✓[0m reset clears hidden cards and the stored order in one action /  / [31m1 check(s) failed.[0m; scripts/prove-backup-restore.ts failed (u26-111 is marked done):       2950, 25, 3802, /       3802, 25 /     ] /   } / }; scripts/prove-scroll-containment.ts failed (h00f-119 is marked done):   - navigating to "http://localhost:3000/login", waiting until "load" /  /   cleaned up 200 ScrollList employee(s), 200 ScrollList contact(s) /  / [31m7 check(s) failed.[0m; scripts/prove-input-integrity.ts failed (v00-193 is marked done):   - navigating to "http://localhost:3000/login", waiting until "domcontentloaded" /  (failed after 2 retries) /     at withInfraRetry (/home/build/runurbusiness/scripts/lib/robust-wait.ts:146:9) /     at async gotoReady (/home/build/runurbusiness/scripts/lib/robust-wait.ts:163:3) /     at async main (/home/build/runurbusiness/scripts/prove-input-integrity.ts:207:3); journey "invoice → payment → reconcile, end to end — default tenant (a08-144 D)" failed: the arriving account's reconcile screen does not show the transfer as already identified (C6 state 3)
      . mem: gate step peaked at 2963MB (cgroup MemoryCurrent, sampled every 3s)
      . requeued a03-184-public-sign-links-404-service-role-client from blocked/ — its blocking reason has cleared
      ! GATE FAILED, caused by this task
@@ -28,15 +25,18 @@ hold:   0
      . mem: tests step peaked at 1928MB (cgroup MemoryCurrent, sampled every 3s)
      ! SCREENS: 7 broken, 0 blank, 1 404 of 236 — see docs/screen-audit.md
      . mem: screens step peaked at 4565MB (cgroup MemoryCurrent, sampled every 3s)
+     ! JOURNEYS: 7 of 23 failed — invite and sign in, J4: the employee folder — nothing typed twice, J2: sign a document myself and take it away — DigiSign-only tenant, one document through all four tools, one document through all four tools — hr+digisign tenant, no No1Cloud, one document through all four tools — digisign+cloud tenant, no HR, invoice → payment → reconcile, end to end — default tenant (a08-144 D) — see docs/journeys-report.md
+     . mem: journeys step peaked at 4493MB (cgroup MemoryCurrent, sampled every 3s)
+     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1983       10960         624        3622       13619
+Mem:           15603        1758       11185         592        3590       13844
 -- top --
     ELAPSED   RSS COMMAND
-      03:32 394892 next-server (v1
-      00:13 202192 chrome-headless
-      04:52 192392 node
-      03:29 144808 chrome-headless
+      02:54 291616 next-server (v1
+      00:15 148268 node
+      02:55 129644 node
+      00:14 121076 node
 -- disk --
 /dev/sda1        75G   26G   46G  37% /
