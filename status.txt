@@ -1,4 +1,4 @@
-generated: 2026-09-07 07:00:01 UTC
+generated: 2026-09-07 07:05:01 UTC
 done:   204
 queued: 3
 failed: 0
@@ -11,11 +11,6 @@ vp2-199-end-of-day-and-the-german-fiscal-layer.md
 -- failed --
 
 -- log --
-
----- v02-195-credit-notes-recurring-invoices-discounts ----  started 23:50:02
-     . build/screens/journeys: diff since 3d154355dbe8 touches something that could render — running fresh
-     . build clean
-     . mem: build step peaked at 4757MB (cgroup MemoryCurrent, sampled every 3s)
 ================================================
   RunUrBusiness — draining the task queue
   started Mon 07 Sep 03:10
@@ -31,15 +26,20 @@ vp2-199-end-of-day-and-the-german-fiscal-layer.md
 ================================================
 
 ---- vp0-197-the-till-screen-and-the-barcode-scanner ----  started 05:10:02
+     . build/screens/journeys: diff since 3d154355dbe8 touches something that could render — running fresh
+     . build clean
+     . mem: build step peaked at 7466MB (cgroup MemoryCurrent, sampled every 3s)
+     ! orphaned dev server found: pid 755867, owned by build, age 42m, cwd /home/build/runurbusiness (next-server (v16.2.11)) — killing it
+     . orphaned dev server(s) cleaned up before this task starts
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        5494        7657         349        3140       10108
+Mem:           15603        1701       11415         382        3209       13902
 -- top --
     ELAPSED   RSS COMMAND
-      40:09 2773768 next-server (v1
-      00:11 1507368 node
-   01:49:57 389376 claude
-      39:39 166564 node
+      02:30 526032 node
+      00:49 226028 node
+ 4-02:10:23 96792 systemd-journal
+      02:31 78228 npm exec vitest
 -- disk --
 /dev/sda1        75G   27G   45G  38% /
