@@ -1,4 +1,4 @@
-generated: 2026-09-08 17:35:01 UTC
+generated: 2026-09-08 17:40:01 UTC
 done:   209
 queued: 4
 failed: 0
@@ -35,12 +35,12 @@ w02-203-the-job-object-what-did-this-job-make.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2079       10540         636        3959       13523
+Mem:           15603        4336        8283         592        3914       11266
 -- top --
     ELAPSED   RSS COMMAND
-      46:17 468464 claude
-      26:59 343568 node
-      00:05 139776 node
- 5-12:40:23 115364 systemd-journal
+      00:31 2239876 node
+      51:17 459080 claude
+      00:02 455088 node
+      00:28 146728 node
 -- disk --
 /dev/sda1        75G   27G   46G  37% /
