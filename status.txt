@@ -1,4 +1,4 @@
-generated: 2026-09-08 22:45:01 UTC
+generated: 2026-09-08 22:50:01 UTC
 done:   211
 queued: 2
 failed: 0
@@ -33,12 +33,12 @@ w02-203-the-job-object-what-did-this-job-make.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603       11959         659         704        4028        3643
+Mem:           15603        9858        1425         673        5332        5745
 -- top --
     ELAPSED   RSS COMMAND
-      18:16 10158808 next-server (v1
-   01:24:56 338556 claude
-      01:04 208664 chrome-headless
-      01:05 153256 node
+      00:56 9442008 next-server (v1
+   01:29:56 328036 claude
+ 5-17:55:22 143788 systemd-journal
+      00:57 128452 node
 -- disk --
 /dev/sda1        75G   33G   40G  46% /
