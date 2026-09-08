@@ -1,4 +1,4 @@
-generated: 2026-09-08 18:20:01 UTC
+generated: 2026-09-08 18:25:01 UTC
 done:   210
 queued: 3
 failed: 0
@@ -11,12 +11,6 @@ w02-203-the-job-object-what-did-this-job-make.md
 -- failed --
 
 -- log --
-       reason: completion marker + commit present, but the gate failed: 4 of 3338 tests failing; 1 screen(s) 404: /no1cloud/training/courses/[id]; screens (empty tenant) did not produce a result — treated as failed, not unknown; 76 screen(s) flagged for density, up from 64 on the last green run: /accounting/journals, /accounting/packets/[packet], /accounting/packets/build/[statement], /accounts, /assets/[id], /assets/holders, /assets/locations, /assets — see docs/screen-density.md
-       see logs/a03-184-public-sign-links-404-service-role-client.log
-
-================================================
-  0 task(s) completed, 2 failed, 0 blocked
-  finished Mon 07 Sep 16:27
   logs in logs/  ·  tell Claude in the chat
 
   failed tasks are in tasks/failed/ — nothing was deleted:
@@ -31,15 +25,21 @@ w02-203-the-job-object-what-did-this-job-make.md
      . build/screens/journeys: diff since 3d8a3995edfb touches something that could render — running fresh
      . build clean
      . mem: build step peaked at 5221MB (cgroup MemoryCurrent, sampled every 3s)
+================================================
+  RunUrBusiness — draining the task queue
+  started Tue 08 Sep 18:20
+================================================
+
+---- w01-202-signup-the-country-gate-and-email-confirmation ----  started 18:20:02
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1910        9823         632        4841       13692
+Mem:           15603        1508       10220         632        4847       14094
 -- top --
     ELAPSED   RSS COMMAND
-      18:46 598320 node
- 5-13:25:22 117032 systemd-journal
-      00:10 111404 node
-      18:46 77356 npm exec vitest
+      04:56 346428 claude
+ 5-13:30:22 117432 systemd-journal
+   02:36:29 13196 systemd
+   02:36:29 12204 sshd-session
 -- disk --
 /dev/sda1        75G   27G   45G  38% /
