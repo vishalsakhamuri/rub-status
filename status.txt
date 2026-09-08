@@ -1,4 +1,4 @@
-generated: 2026-09-08 21:20:01 UTC
+generated: 2026-09-08 21:25:01 UTC
 done:   211
 queued: 2
 failed: 0
@@ -10,12 +10,6 @@ w02-203-the-job-object-what-did-this-job-make.md
 -- failed --
 
 -- log --
-    a03-184-public-sign-links-404-service-role-client.md
-================================================
-================================================
-  RunUrBusiness — draining the task queue
-  started Tue 08 Sep 16:48
-================================================
 
 ---- w00-201-finish-the-pos-fiskaly-screen-and-three-smaller ----  started 16:48:41
      . build/screens/journeys: diff since 3d8a3995edfb touches something that could render — running fresh
@@ -30,15 +24,21 @@ w02-203-the-job-object-what-did-this-job-make.md
      . build/screens/journeys: diff since 3d8a3995edfb touches something that could render — running fresh
      ! BUILD BROKEN — see logs/build-latest.log
      . mem: build step peaked at 4254MB (cgroup MemoryCurrent, sampled every 3s)
+================================================
+  RunUrBusiness — draining the task queue
+  started Tue 08 Sep 21:20
+================================================
+
+---- w01a-204-inventory-one-number-per-item-kept-current ----  started 21:20:02
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1972       10463         673        4180       13631
+Mem:           15603        1584       10839         673        4191       14018
 -- top --
     ELAPSED   RSS COMMAND
-      17:24 567104 node
-      00:15 162448 node
- 5-16:25:22 133016 systemd-journal
-      17:24 78424 npm exec vitest
+      04:56 376992 claude
+ 5-16:30:23 133772 systemd-journal
+   01:34:18 12976 systemd
+   01:34:19 12176 sshd-session
 -- disk --
 /dev/sda1        75G   33G   40G  46% /
