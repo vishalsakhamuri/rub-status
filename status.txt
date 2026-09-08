@@ -1,4 +1,4 @@
-generated: 2026-09-08 23:20:01 UTC
+generated: 2026-09-08 23:25:01 UTC
 done:   212
 queued: 1
 failed: 0
@@ -9,12 +9,6 @@ w02-203-the-job-object-what-did-this-job-make.md
 -- failed --
 
 -- log --
-     . build clean
-     . mem: build step peaked at 5221MB (cgroup MemoryCurrent, sampled every 3s)
-================================================
-  RunUrBusiness — draining the task queue
-  started Tue 08 Sep 18:20
-================================================
 
 ---- w01-202-signup-the-country-gate-and-email-confirmation ----  started 18:20:02
      . build/screens/journeys: diff since 3d8a3995edfb touches something that could render — running fresh
@@ -29,15 +23,21 @@ w02-203-the-job-object-what-did-this-job-make.md
      . build/screens/journeys: diff since 3d8a3995edfb touches something that could render — running fresh
      ! BUILD BROKEN — see logs/build-latest.log
      . mem: build step peaked at 5182MB (cgroup MemoryCurrent, sampled every 3s)
+================================================
+  RunUrBusiness — draining the task queue
+  started Tue 08 Sep 23:20
+================================================
+
+---- w02-203-the-job-object-what-did-this-job-make ----  started 23:20:02
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2027        9390         712        5237       13575
+Mem:           15603        1616        9789         713        5249       13987
 -- top --
     ELAPSED   RSS COMMAND
-      19:56 604980 node
-      00:09 154112 node
- 5-18:25:23 145104 systemd-journal
-      19:56 77764 npm exec vitest
+      04:57 386560 claude
+ 5-18:30:23 145428 systemd-journal
+ 5-18:30:29 12140 systemd
+ 5-18:30:17 11012 networkd-dispat
 -- disk --
 /dev/sda1        75G   33G   39G  46% /
