@@ -1,19 +1,17 @@
-generated: 2026-09-08 16:45:01 UTC
+generated: 2026-09-08 16:50:01 UTC
 done:   209
-queued: 0
+queued: 4
 failed: 0
 hold:   0
 
 -- queued --
+w00-201-finish-the-pos-fiskaly-screen-and-three-smaller.md
+w01-202-signup-the-country-gate-and-email-confirmation.md
+w01a-204-inventory-one-number-per-item-kept-current.md
+w02-203-the-job-object-what-did-this-job-make.md
 -- failed --
 
 -- log --
-     . mem: journeys step peaked at 4493MB (cgroup MemoryCurrent, sampled every 3s)
-     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
-     . gate: 62 pass, 21 fail, 0 pending
-     ! GATE FAILED: 4 of 3338 tests failing; 1 screen(s) 404: /no1cloud/training/courses/[id]; screens (empty tenant) did not produce a result — treated as failed, not unknown; 76 screen(s) flagged for density, up from 64 on the last green run: /accounting/journals, /accounting/packets/[packet], /accounting/packets/build/[statement], /accounts, /assets/[id], /assets/holders, /assets/locations, /assets — see docs/screen-density.md
-     . mem: gate step peaked at 3177MB (cgroup MemoryCurrent, sampled every 3s)
-     ! GATE FAILED, caused by this task
      ! task had self-moved to tasks/done/ — moved back to tasks/failed/, the gate said otherwise
      [FAILED] (exit 97) 16:27:40
        moved to tasks/failed/ — the queue carries on
@@ -28,15 +26,21 @@ hold:   0
   failed tasks are in tasks/failed/ — nothing was deleted:
     a03-184-public-sign-links-404-service-role-client.md
 ================================================
+================================================
+  RunUrBusiness — draining the task queue
+  started Tue 08 Sep 16:48
+================================================
+
+---- w00-201-finish-the-pos-fiskaly-screen-and-three-smaller ----  started 16:48:41
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1249       11413         592        3871       14353
+Mem:           15603        1446       11213         592        3875       14157
 -- top --
     ELAPSED   RSS COMMAND
- 5-11:50:23 114260 systemd-journal
-      56:29 13196 systemd
-      56:30 12204 sshd-session
- 5-11:50:29 12140 systemd
+      01:17 328192 claude
+ 5-11:55:23 114260 systemd-journal
+   01:01:29 13196 systemd
+   01:01:30 12204 sshd-session
 -- disk --
 /dev/sda1        75G   27G   46G  37% /
