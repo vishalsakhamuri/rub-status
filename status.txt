@@ -1,17 +1,14 @@
-generated: 2026-09-08 23:00:01 UTC
-done:   211
-queued: 2
+generated: 2026-09-08 23:05:01 UTC
+done:   212
+queued: 1
 failed: 0
 hold:   0
 
 -- queued --
-w01a-204-inventory-one-number-per-item-kept-current.md
 w02-203-the-job-object-what-did-this-job-make.md
 -- failed --
 
 -- log --
----- w00-201-finish-the-pos-fiskaly-screen-and-three-smaller ----  started 16:48:41
-     . build/screens/journeys: diff since 3d8a3995edfb touches something that could render — running fresh
      . build clean
      . mem: build step peaked at 5221MB (cgroup MemoryCurrent, sampled every 3s)
 ================================================
@@ -30,15 +27,17 @@ w02-203-the-job-object-what-did-this-job-make.md
 
 ---- w01a-204-inventory-one-number-per-item-kept-current ----  started 21:20:02
      . build/screens/journeys: diff since 3d8a3995edfb touches something that could render — running fresh
+     ! BUILD BROKEN — see logs/build-latest.log
+     . mem: build step peaked at 5182MB (cgroup MemoryCurrent, sampled every 3s)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        5154        6265         672        5195       10448
+Mem:           15603        1998        9421         706        5229       13605
 -- top --
     ELAPSED   RSS COMMAND
-      00:41 2592396 node
-      01:11 1245512 node
-      01:08 150012 node
- 5-18:05:22 144436 systemd-journal
+      04:56 608380 node
+ 5-18:10:23 144576 systemd-journal
+      00:24 126328 node
+      04:56 77764 npm exec vitest
 -- disk --
 /dev/sda1        75G   33G   39G  46% /
