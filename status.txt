@@ -1,13 +1,38 @@
-generated: 2026-09-08 22:15:01 UTC
+generated: 2026-09-08 22:20:01 UTC
 done:   211
-queued: 2
-failed: 0
+queued: 5
+failed: 22
 hold:   0
 
 -- queued --
+a00-200-a-half-typed-amount-must-never-crash-the-page.md
+s01-191-blockers-that-survived-and-hr-gaps.md
+t00-192-defects-that-produce-wrong-numbers.md
 w01a-204-inventory-one-number-per-item-kept-current.md
 w02-203-the-job-object-what-did-this-job-make.md
 -- failed --
+a01-182-three-defects-still-broken-in-production.md
+a02-183-touch-every-control-fix-or-queue.md
+u00-165-fix-everything-the-live-test-found.md
+u00-177-the-invoice-detail-page-must-render.md
+u01-166-auth-must-hold-and-search-must-find.md
+u01-170-finish-the-auth-task-gate.md
+u02-167-fix-what-the-agent-swarm-found.md
+u03-168-clean-the-demo-tenant-for-wednesday.md
+u04-169-fix-the-full-sweep-findings.md
+u05-171-clear-the-last-gate-blockers.md
+u06-172-opening-balances-and-cross-entity.md
+u07-173-the-write-layer-lies.md
+u08-174-too-big-split-into-u08a-u08b-u08c.md
+u08a-174-sign-forges-a-second-document.md
+u08b-174-no1edit-server-tools-500.md
+v00-154-the-access-boundary-check-must-finish.md
+w01-162-suite-basic-and-integration.md
+w02-163-single-tool-subscription.md
+w03-164-reconciliation-and-statuses.md
+x00-152-the-fixture-litter-ratchet.md
+y03-148-preview-and-sharing.md
+z00-151-the-gate-must-use-the-box.md
 
 -- log --
 
@@ -33,12 +58,12 @@ w02-203-the-job-object-what-did-this-job-make.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2190       10226         719        4244       13412
+Mem:           15603        3106        9497         674        4013       12496
 -- top --
     ELAPSED   RSS COMMAND
-      54:56 492352 claude
-      28:17 332576 node
- 5-17:20:22 141604 systemd-journal
-      00:02 135472 node
+      00:04 1381924 node
+      59:56 467172 claude
+      00:01 172348 node
+      00:04 149908 node
 -- disk --
 /dev/sda1        75G   33G   40G  46% /
