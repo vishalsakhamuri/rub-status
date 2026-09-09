@@ -1,4 +1,4 @@
-generated: 2026-09-09 20:35:01 UTC
+generated: 2026-09-09 20:40:01 UTC
 done:   214
 queued: 2
 failed: 0
@@ -10,7 +10,6 @@ a02-207-depreciation-as-a-percentage-table.md
 -- failed --
 
 -- log --
-
   failed tasks are in tasks/failed/ — nothing was deleted:
     w02-203-the-job-object-what-did-this-job-make.md
 ================================================
@@ -30,15 +29,16 @@ a02-207-depreciation-as-a-percentage-table.md
 ================================================
 
 ---- a01-206-a-job-cannot-be-created-by-a-german-business ----  started 19:40:02
+     . build/screens/journeys: diff since a3da46462a01 touches something that could render — running fresh
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603       11597        1599         991        3736        4005
+Mem:           15603       12205        1180         770        3327        3398
 -- top --
     ELAPSED   RSS COMMAND
-      05:11 8903832 next-server (v1
-      02:46 757088 chrome-headless
-      54:56 334664 claude
-      02:48 230052 node
+      10:11 8238512 next-server (v1
+      04:56 2145896 node
+      07:48 215160 node
+      07:46 192428 chrome-headless
 -- disk --
 /dev/sda1        75G   34G   39G  47% /
