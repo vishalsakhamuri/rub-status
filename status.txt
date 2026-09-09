@@ -1,4 +1,4 @@
-generated: 2026-09-09 03:50:01 UTC
+generated: 2026-09-09 03:55:01 UTC
 done:   213
 queued: 0
 failed: 0
@@ -8,8 +8,6 @@ hold:   0
 -- failed --
 
 -- log --
-================================================
-  RunUrBusiness — draining the task queue
   started Tue 08 Sep 21:20
 ================================================
 
@@ -28,15 +26,17 @@ hold:   0
      . mem: build step peaked at 4246MB (cgroup MemoryCurrent, sampled every 3s)
      ! SUITE RED: 4 of 3450 tests failing — see logs/suite-latest.log
      . mem: tests step peaked at 1737MB (cgroup MemoryCurrent, sampled every 3s)
+     ! SCREENS: 113 broken, 0 blank, 0 404 of 238 — see docs/screen-audit.md
+     . mem: screens step peaked at 3757MB (cgroup MemoryCurrent, sampled every 3s)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2976       10299         700        3365       12626
+Mem:           15603        2052       11223         700        3367       13550
 -- top --
     ELAPSED   RSS COMMAND
-      02:35 891240 next-server (v1
-      02:31 485140 chrome-headless
-      02:32 247904 node
-      02:31 144532 chrome-headless
+      03:12 382288 next-server (v1
+      04:33 218492 node
+      00:07 183412 chrome-headless
+      03:10 144548 chrome-headless
 -- disk --
 /dev/sda1        75G   27G   46G  37% /
