@@ -1,4 +1,4 @@
-generated: 2026-09-09 19:40:01 UTC
+generated: 2026-09-09 19:45:01 UTC
 done:   214
 queued: 2
 failed: 0
@@ -10,12 +10,6 @@ a02-207-depreciation-as-a-percentage-table.md
 -- failed --
 
 -- log --
-       see logs/w02-203-the-job-object-what-did-this-job-make.log
-
-================================================
-  0 task(s) completed, 1 failed, 0 blocked
-  finished Wed 09 Sep 04:18
-  logs in logs/  ·  tell Claude in the chat
 
   failed tasks are in tasks/failed/ — nothing was deleted:
     w02-203-the-job-object-what-did-this-job-make.md
@@ -30,15 +24,21 @@ a02-207-depreciation-as-a-percentage-table.md
      . build/screens/journeys: diff since a3da46462a01 touches something that could render — running fresh
      . build clean
      . mem: build step peaked at 11392MB (cgroup MemoryCurrent, sampled every 3s)
+================================================
+  RunUrBusiness — draining the task queue
+  started Wed 09 Sep 19:40
+================================================
+
+---- a01-206-a-job-cannot-be-created-by-a-german-business ----  started 19:40:02
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2099       11103         737        3477       13503
+Mem:           15603        1659       11523         737        3497       13943
 -- top --
     ELAPSED   RSS COMMAND
-      18:34 592964 node
- 6-14:45:23 162164 systemd-journal
-      00:07 156924 node
-      18:35 78376 npm exec vitest
+      04:56 380372 claude
+ 6-14:50:23 88768 systemd-journal
+   01:19:14 13240 systemd
+   01:19:14 12172 sshd-session
 -- disk --
 /dev/sda1        75G   33G   40G  46% /
