@@ -1,19 +1,14 @@
-generated: 2026-09-09 18:25:01 UTC
+generated: 2026-09-09 18:30:01 UTC
 done:   213
-queued: 0
+queued: 1
 failed: 0
 hold:   0
 
 -- queued --
+a00-205-document-capture-upload-a-bill-get-a-filled-draft.md
 -- failed --
 
 -- log --
-     . mem: journeys step peaked at 4024MB (cgroup MemoryCurrent, sampled every 3s)
-     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
-     . gate: 66 pass, 19 fail, 0 pending
-     ! GATE FAILED: 4 of 3450 tests failing; 2 screen(s) broken: /invoices/[id], /quotations/[id]; screens (empty tenant) did not produce a result — treated as failed, not unknown; scripts/prove-no1cloud.ts failed (h00h-120 is marked done):  (failed after 2 retries) /     at withInfraRetry (/home/build/runurbusiness/scripts/lib/robust-wait.ts:146:9) /     at async gotoReady (/home/build/runurbusiness/scripts/lib/robust-wait.ts:163:3) /     at async signIn (/home/build/runurbusiness/scripts/prove-no1cloud.ts:99:3) /     at async main (/home/build/runurbusiness/scripts/prove-no1cloud.ts:198:18); scripts/prove-bank-reconciliation.ts failed (a02-138 is marked done): signing up as bank-reconcile-0600e1@runurbusiness.com, run 0600E1 /  /   [31m✗[0m http://localhost:3000 is answering — start it with "pnpm dev" and re-run /  / [31m1 CHECK(S) FAILED[0m; scripts/prove-search.ts failed (u16-100 is marked done):  / [1mL. Keyboard-only: / opens, arrows move, Enter opens, Esc restores focus[0m /   [31m✗[0m the site is up for the keyboard section — http://localhost:3000 is not answering — start it with "pnpm dev" and re-run /  / [31m2 check(s) failed.[0m; scripts/prove-home.ts failed (u22-106 is marked done): [1m9. Reset restores the default layout[0m /   [32m✓[0m the layout was actually saved /   [32m✓[0m reset clears hidden cards and the stored order in one action /  / [31m1 check(s) failed.[0m; scripts/prove-backup-restore.ts failed (u26-111 is marked done):       2950, 25, 3802, /       3802, 25 /     ] /   } / }; scripts/prove-scroll-containment.ts failed (h00f-119 is marked done):   - navigating to "http://localhost:3000/login", waiting until "load" /  /   cleaned up 200 ScrollList employee(s), 200 ScrollList contact(s) /  / [31m7 check(s) failed.[0m; scripts/prove-input-integrity.ts failed (v00-193 is marked done):   - navigating to "http://localhost:3000/login", waiting until "domcontentloaded" /  (failed after 2 retries) /     at withInfraRetry (/home/build/runurbusiness/scripts/lib/robust-wait.ts:146:9) /     at async gotoReady (/home/build/runurbusiness/scripts/lib/robust-wait.ts:163:3) /     at async main (/home/build/runurbusiness/scripts/prove-input-integrity.ts:207:3); journey "invite and sign in" failed: creating the employee did not reach a record page — landed on http://localhost:3000/hr/employees/new; journey "invoice → payment → reconcile, end to end — default tenant (a08-144 D)" failed: the arriving account's reconcile screen does not show the transfer as already identified (C6 state 3)
-     . mem: gate step peaked at 2979MB (cgroup MemoryCurrent, sampled every 3s)
-     ! GATE FAILED, caused by this task
      ! task had self-moved to tasks/done/ — moved back to tasks/failed/, the gate said otherwise
      [FAILED] (exit 97) 04:18:29
        moved to tasks/failed/ — the queue carries on
@@ -28,15 +23,21 @@ hold:   0
   failed tasks are in tasks/failed/ — nothing was deleted:
     w02-203-the-job-object-what-did-this-job-make.md
 ================================================
+================================================
+  RunUrBusiness — draining the task queue
+  started Wed 09 Sep 18:26
+================================================
+
+---- a00-205-document-capture-upload-a-bill-get-a-filled-draft ----  started 18:26:29
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1326       11710         673        3579       14277
+Mem:           15603        1632       11379         673        3603       13970
 -- top --
     ELAPSED   RSS COMMAND
- 6-13:30:23 159200 systemd-journal
- 6-13:30:29 12140 systemd
-      00:04 11792 sshd-session
-      00:03 11740 sshd-session
+      03:29 418940 claude
+ 6-13:35:23 159460 systemd-journal
+      04:13 13240 systemd
+      04:14 12172 sshd-session
 -- disk --
 /dev/sda1        75G   27G   46G  38% /
