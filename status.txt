@@ -1,4 +1,4 @@
-generated: 2026-09-09 21:00:01 UTC
+generated: 2026-09-09 21:05:01 UTC
 done:   215
 queued: 1
 failed: 0
@@ -9,12 +9,6 @@ a02-207-depreciation-as-a-percentage-table.md
 -- failed --
 
 -- log --
-================================================
-================================================
-  RunUrBusiness — draining the task queue
-  started Wed 09 Sep 18:26
-================================================
-
 ---- a00-205-document-capture-upload-a-bill-get-a-filled-draft ----  started 18:26:29
      ! exited clean but produced nothing verifiable — stalled — log ends on a waiting line, no completion marker (commit was made, but a commit is not proof of completion when the task's own words say it isn't finished)
      . build/screens/journeys: diff since a3da46462a01 touches something that could render — running fresh
@@ -29,15 +23,21 @@ a02-207-depreciation-as-a-percentage-table.md
      . build/screens/journeys: diff since a3da46462a01 touches something that could render — running fresh
      . build clean
      . mem: build step peaked at 11042MB (cgroup MemoryCurrent, sampled every 3s)
+================================================
+  RunUrBusiness — draining the task queue
+  started Wed 09 Sep 21:00
+================================================
+
+---- a02-207-depreciation-as-a-percentage-table ----  started 21:00:02
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2084       11107         778        3529       13518
+Mem:           15603        1683       11492         778        3545       13919
 -- top --
     ELAPSED   RSS COMMAND
-      18:55 603408 node
-      00:17 135072 node
-      18:55 78352 npm exec vitest
- 6-16:05:23 77984 systemd-journal
+      04:55 355808 claude
+ 6-16:10:22 78112 systemd-journal
+   02:39:13 13240 systemd
+   02:39:13 12156 sshd-session
 -- disk --
 /dev/sda1        75G   34G   39G  47% /
