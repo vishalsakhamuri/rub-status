@@ -1,4 +1,4 @@
-generated: 2026-09-09 20:25:01 UTC
+generated: 2026-09-09 20:30:01 UTC
 done:   214
 queued: 2
 failed: 0
@@ -33,12 +33,12 @@ a02-207-depreciation-as-a-percentage-table.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2200       10974         783        3550       13402
+Mem:           15603        2489       10474         741        3720       13113
 -- top --
     ELAPSED   RSS COMMAND
-      44:56 424380 claude
-      28:01 354044 node
-      00:05 138928 node
- 6-15:30:23 91076 systemd-journal
+      00:12 802380 next-server (v1
+      49:56 407008 claude
+      00:03 157280 node
+      00:03 144748 node
 -- disk --
 /dev/sda1        75G   33G   40G  46% /
