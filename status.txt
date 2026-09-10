@@ -1,4 +1,4 @@
-generated: 2026-09-10 09:25:01 UTC
+generated: 2026-09-10 09:30:01 UTC
 done:   217
 queued: 0
 failed: 0
@@ -8,8 +8,6 @@ hold:   0
 -- failed --
 
 -- log --
-  logs in logs/  ·  tell Claude in the chat
-
   failed tasks are in tasks/failed/ — nothing was deleted:
     a02-207-depreciation-as-a-percentage-table.md
 ================================================
@@ -28,15 +26,17 @@ hold:   0
      . build/screens/journeys: diff since a0dc943a31ca touches something that could render — running fresh
      . build clean
      . mem: build step peaked at 4351MB (cgroup MemoryCurrent, sampled every 3s)
+     ! SUITE RED: 4 of 3471 tests failing — see logs/suite-latest.log
+     . mem: tests step peaked at 1841MB (cgroup MemoryCurrent, sampled every 3s)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2337       10359         942        4184       13265
+Mem:           15603        3473        9224         932        4174       12129
 -- top --
     ELAPSED   RSS COMMAND
-      30:42 611536 node
-      00:01 157748 node
-      30:43 79724 npm exec vitest
-   03:18:52 70212 systemd-journal
+      02:51 912272 next-server (v1
+      02:47 648516 chrome-headless
+      02:49 281612 node
+      02:47 146092 chrome-headless
 -- disk --
 /dev/sda1        75G   27G   45G  38% /
