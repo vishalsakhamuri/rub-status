@@ -1,42 +1,44 @@
-generated: 2026-09-10 01:35:01 UTC
-done:   216
+generated: 2026-09-10 01:40:01 UTC
+done:   215
 queued: 0
-failed: 0
+failed: 1
 hold:   0
 
 -- queued --
 -- failed --
 
 -- log --
-     ! exited clean but produced nothing verifiable — stalled — log ends on a waiting line, no completion marker (commit was made, but a commit is not proof of completion when the task's own words say it isn't finished)
-     . build/screens/journeys: diff since a3da46462a01 touches something that could render — running fresh
-     . build clean
-     . mem: build step peaked at 10947MB (cgroup MemoryCurrent, sampled every 3s)
-================================================
-  RunUrBusiness — draining the task queue
-  started Wed 09 Sep 22:20
-================================================
-
----- a02-207-depreciation-as-a-percentage-table ----  started 22:20:02
-     . build/screens/journeys: diff since a3da46462a01 touches something that could render — running fresh
-     . build clean
-     . mem: build step peaked at 4285MB (cgroup MemoryCurrent, sampled every 3s)
-     ! SUITE RED: 4 of 3468 tests failing — see logs/suite-latest.log
-     . mem: tests step peaked at 1715MB (cgroup MemoryCurrent, sampled every 3s)
-     ! SCREENS: 1 broken, 0 blank, 1 404 of 241 — see docs/screen-audit.md
-     . mem: screens step peaked at 4016MB (cgroup MemoryCurrent, sampled every 3s)
-     ! JOURNEYS: 8 of 23 failed — invite and sign in, J4: the employee folder — nothing typed twice, J2: sign a document myself and take it away — DigiSign-only tenant, J4: the employee folder — nothing typed twice — tenant with no entity, one document through all four tools, one document through all four tools — hr+digisign tenant, no No1Cloud, one document through all four tools — digisign+cloud tenant, no HR, invoice → payment → reconcile, end to end — default tenant (a08-144 D) — see docs/journeys-report.md
      . mem: journeys step peaked at 4379MB (cgroup MemoryCurrent, sampled every 3s)
      . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
+     . gate: 66 pass, 21 fail, 0 pending
+     ! GATE FAILED: 4 of 3468 tests failing; 1 screen(s) 404: /no1cloud/training/courses/[id]; 1 screen(s) missing an empty state that teaches; 76 screen(s) flagged for density, up from 64 on the last green run: /accounting/journals, /accounting/packets/[packet], /accounting/packets/build/[statement], /accounts, /assets/[id], /assets/holders, /assets/locations, /assets — see docs/screen-density.md
+     . mem: gate step peaked at 2987MB (cgroup MemoryCurrent, sampled every 3s)
+     ! GATE FAILED, caused by this task
+     ! task had self-moved to tasks/done/ — moved back to tasks/failed/, the gate said otherwise
+     [FAILED] (exit 97) 01:39:06
+       moved to tasks/failed/ — the queue carries on
+       reason: completion marker + commit present, but the gate failed: 4 of 3468 tests failing; 1 screen(s) 404: /no1cloud/training/courses/[id]; 1 screen(s) missing an empty state that teaches; 76 screen(s) flagged for density, up from 64 on the last green run: /accounting/journals, /accounting/packets/[packet], /accounting/packets/build/[statement], /accounts, /assets/[id], /assets/holders, /assets/locations, /assets — see docs/screen-density.md
+       see logs/a02-207-depreciation-as-a-percentage-table.log
+
+================================================
+  0 task(s) completed, 1 failed, 0 blocked
+  finished Thu 10 Sep 01:39
+  logs in logs/  ·  tell Claude in the chat
+
+  failed tasks are in tasks/failed/ — nothing was deleted:
+    a02-207-depreciation-as-a-percentage-table.md
+================================================
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3977        8972        1266        4259       11625
+Mem:           15603        1516       11434         855        3847       14087
 -- top --
     ELAPSED   RSS COMMAND
-      06:13 1366720 node
-      02:45 421488 node
-      00:09 232836 node
-      06:13 130880 node
+ 6-20:45:23 101332 systemd-journal
+ 6-20:45:29 12128 systemd
+      00:03 11404 sshd-session
+ 6-20:45:17 11016 networkd-dispat
 -- disk --
+/dev/sda1        75G   27G   45G  38% /
+sk --
 /dev/sda1        75G   27G   45G  38% /
