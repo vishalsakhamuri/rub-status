@@ -1,4 +1,4 @@
-generated: 2026-09-10 23:20:01 UTC
+generated: 2026-09-10 23:25:02 UTC
 done:   218
 queued: 3
 failed: 0
@@ -11,12 +11,6 @@ b00-209-send-and-receive-over-the-network.md
 -- failed --
 
 -- log --
-       - waiting 500ms
-       see logs/a00-208-the-exact-path-is-the-one-that-does-not-work.log
-
-================================================
-  0 task(s) completed, 1 failed, 0 blocked
-  finished Thu 10 Sep 09:59
   logs in logs/  ·  tell Claude in the chat
 
   failed tasks are in tasks/failed/ — nothing was deleted:
@@ -31,15 +25,21 @@ b00-209-send-and-receive-over-the-network.md
      . build/screens/journeys: diff since 2715e3e515eb touches something that could render — running fresh
      . build clean
      . mem: build step peaked at 4522MB (cgroup MemoryCurrent, sampled every 3s)
+================================================
+  RunUrBusiness — draining the task queue
+  started Thu 10 Sep 23:20
+================================================
+
+---- a01-211-money-fields-forms-and-depreciation-numbers ----  started 23:20:01
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2274        9790         919        4810       13329
+Mem:           15603        1866       10186         919        4822       13736
 -- top --
     ELAPSED   RSS COMMAND
-      22:09 592528 node
-      00:12 121356 node
-   17:13:51 102952 systemd-journal
-      22:09 77928 npm exec vitest
+      04:58 348116 claude
+   17:18:52 103092 systemd-journal
+ 7-18:30:29 15400 systemd
+   17:18:52 13744 systemd-resolve
 -- disk --
 /dev/sda1        75G   28G   45G  39% /
