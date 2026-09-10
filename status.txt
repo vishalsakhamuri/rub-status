@@ -1,19 +1,17 @@
-generated: 2026-09-10 19:50:01 UTC
+generated: 2026-09-10 19:55:01 UTC
 done:   217
-queued: 0
+queued: 4
 failed: 0
 hold:   0
 
 -- queued --
+a00-210-a-validator-that-cries-wolf.md
+a01-211-money-fields-forms-and-depreciation-numbers.md
+a02-212-the-entity-is-the-legal-identity.md
+b00-209-send-and-receive-over-the-network.md
 -- failed --
 
 -- log --
-    - retrying click action
-    - waiting 20ms
-    2 × waiting for element to be visible, enabled and stable
-      - element is not enabled
-    - retrying click action
-      - waiting 100ms
     58 × waiting for element to be visible, enabled and stable
        - element is not enabled
      - retrying click action
@@ -28,15 +26,21 @@ hold:   0
   failed tasks are in tasks/failed/ — nothing was deleted:
     a00-208-the-exact-path-is-the-one-that-does-not-work.md
 ================================================
+================================================
+  RunUrBusiness — draining the task queue
+  started Thu 10 Sep 19:54
+================================================
+
+---- a00-210-a-validator-that-cries-wolf ----  started 19:54:57
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1570       10918         896        4347       14032
+Mem:           15603        1739       10747         896        4349       13863
 -- top --
     ELAPSED   RSS COMMAND
-   13:43:51 96688 systemd-journal
- 7-14:55:28 15324 systemd
-   13:43:51 13740 systemd-resolve
-   01:01:49 13016 systemd
+      00:01 281616 claude
+   13:48:51 96816 systemd-journal
+ 7-15:00:28 15396 systemd
+   13:48:51 13740 systemd-resolve
 -- disk --
 /dev/sda1        75G   28G   45G  38% /
