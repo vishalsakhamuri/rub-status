@@ -1,4 +1,4 @@
-generated: 2026-09-10 01:10:01 UTC
+generated: 2026-09-10 01:15:01 UTC
 done:   216
 queued: 0
 failed: 0
@@ -8,8 +8,6 @@ hold:   0
 -- failed --
 
 -- log --
-  RunUrBusiness — draining the task queue
-  started Wed 09 Sep 21:00
 ================================================
 
 ---- a02-207-depreciation-as-a-percentage-table ----  started 21:00:02
@@ -28,15 +26,17 @@ hold:   0
      . mem: build step peaked at 4285MB (cgroup MemoryCurrent, sampled every 3s)
      ! SUITE RED: 4 of 3468 tests failing — see logs/suite-latest.log
      . mem: tests step peaked at 1715MB (cgroup MemoryCurrent, sampled every 3s)
+     ! SCREENS: 1 broken, 0 blank, 1 404 of 241 — see docs/screen-audit.md
+     . mem: screens step peaked at 4016MB (cgroup MemoryCurrent, sampled every 3s)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3621        9526         893        3688       11981
+Mem:           15603        2269       10878         879        3674       13334
 -- top --
     ELAPSED   RSS COMMAND
-      05:34 975256 next-server (v1
-      05:30 443764 chrome-headless
-      05:32 375528 node
-      00:14 337556 chrome-headless
+      03:08 415964 next-server (v1
+      04:30 203516 node
+      00:11 176936 chrome-headless
+      03:06 143292 chrome-headless
 -- disk --
 /dev/sda1        75G   27G   46G  38% /
