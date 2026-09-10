@@ -1,4 +1,4 @@
-generated: 2026-09-10 09:45:02 UTC
+generated: 2026-09-10 09:50:01 UTC
 done:   217
 queued: 0
 failed: 0
@@ -31,12 +31,12 @@ hold:   0
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1853       10844         895        4138       13749
+Mem:           15603        2178       10519         985        4228       13425
 -- top --
     ELAPSED   RSS COMMAND
-      00:41 130260 node
-      00:40 124700 node
-      00:39 96816 node
-      07:53 77672 node
+      01:34 462784 node
+      01:35 131440 node
+      12:52 77960 node
+      12:52 77592 npm exec tsx --
 -- disk --
 /dev/sda1        75G   27G   45G  38% /
