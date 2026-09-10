@@ -1,4 +1,4 @@
-generated: 2026-09-10 05:05:01 UTC
+generated: 2026-09-10 05:10:01 UTC
 done:   216
 queued: 1
 failed: 0
@@ -32,12 +32,12 @@ a00-208-the-exact-path-is-the-one-that-does-not-work.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        4933        7267         857        4599       10669
+Mem:           15603        5846        6394         858        4560        9756
 -- top --
     ELAPSED   RSS COMMAND
-      17:20 2969668 next-server (v1
-      19:34 517996 claude
-      16:24 186088 node
-      17:21 127716 node
+      22:20 3052968 next-server (v1
+      00:03 783944 node
+      24:34 545852 claude
+      21:24 195200 node
 -- disk --
 /dev/sda1        75G   28G   45G  39% /
