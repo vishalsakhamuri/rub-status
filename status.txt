@@ -1,42 +1,43 @@
-generated: 2026-09-10 09:55:01 UTC
-done:   217
+generated: 2026-09-10 10:00:01 UTC
+done:   216
 queued: 0
-failed: 0
+failed: 1
 hold:   0
 
 -- queued --
 -- failed --
+a00-208-the-exact-path-is-the-one-that-does-not-work.md
 
 -- log --
-  started Thu 10 Sep 04:45
-================================================
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+      - waiting 100ms
+    58 × waiting for element to be visible, enabled and stable
+       - element is not enabled
+     - retrying click action
+       - waiting 500ms
+       see logs/a00-208-the-exact-path-is-the-one-that-does-not-work.log
 
----- a00-208-the-exact-path-is-the-one-that-does-not-work ----  started 04:45:24
 ================================================
-  RunUrBusiness — draining the task queue
-  started Thu 10 Sep 06:06
-================================================
+  0 task(s) completed, 1 failed, 0 blocked
+  finished Thu 10 Sep 09:59
+  logs in logs/  ·  tell Claude in the chat
 
----- a00-208-the-exact-path-is-the-one-that-does-not-work ----  started 06:06:11
-     . build/screens/journeys: diff since a0dc943a31ca touches something that could render — running fresh
-     . build clean
-     . mem: build step peaked at 4351MB (cgroup MemoryCurrent, sampled every 3s)
-     ! SUITE RED: 4 of 3471 tests failing — see logs/suite-latest.log
-     . mem: tests step peaked at 1841MB (cgroup MemoryCurrent, sampled every 3s)
-     ! SCREENS: 93 broken, 0 blank, 2 404 of 241 — see docs/screen-audit.md
-     . mem: screens step peaked at 4370MB (cgroup MemoryCurrent, sampled every 3s)
-     ! JOURNEYS: 7 of 23 failed — invite and sign in, J4: the employee folder — nothing typed twice, J2: sign a document myself and take it away — DigiSign-only tenant, one document through all four tools, one document through all four tools — hr+digisign tenant, no No1Cloud, one document through all four tools — digisign+cloud tenant, no HR, invoice → payment → reconcile, end to end — default tenant (a08-144 D) — see docs/journeys-report.md
-     . mem: journeys step peaked at 4583MB (cgroup MemoryCurrent, sampled every 3s)
-     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
+  failed tasks are in tasks/failed/ — nothing was deleted:
+    a00-208-the-exact-path-is-the-one-that-does-not-work.md
+================================================
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        4055        8470        1311        4725       11547
+Mem:           15603        1561       10964         896        4309       14041
 -- top --
     ELAPSED   RSS COMMAND
-      06:34 1377000 node
-      02:53 527308 node
-      00:01 193392 node
-      06:35 131440 node
+   03:53:51 70964 systemd-journal
+ 7-05:05:28 15324 systemd
+   03:53:51 13452 systemd-resolve
+ 7-05:05:17 12060 networkd-dispat
 -- disk --
 /dev/sda1        75G   28G   45G  38% /
