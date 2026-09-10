@@ -1,4 +1,4 @@
-generated: 2026-09-10 21:50:01 UTC
+generated: 2026-09-10 21:55:01 UTC
 done:   217
 queued: 4
 failed: 0
@@ -35,12 +35,12 @@ b00-209-send-and-receive-over-the-network.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        4016        8396        1279        4821       11586
+Mem:           15603        2801        9612         895        4436       12801
 -- top --
     ELAPSED   RSS COMMAND
-      03:14 1315236 node
-      13:59 382456 next-server (v1
-   01:55:02 366608 claude
-      03:14 129544 node
+      19:00 594328 next-server (v1
+   02:00:02 379180 claude
+      00:53 189076 node
+      00:51 140136 chrome-headless
 -- disk --
 /dev/sda1        75G   28G   45G  39% /
