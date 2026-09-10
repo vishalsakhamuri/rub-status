@@ -1,4 +1,4 @@
-generated: 2026-09-10 08:50:01 UTC
+generated: 2026-09-10 08:55:01 UTC
 done:   216
 queued: 1
 failed: 0
@@ -9,9 +9,6 @@ a00-208-the-exact-path-is-the-one-that-does-not-work.md
 -- failed --
 
 -- log --
-================================================
-  0 task(s) completed, 1 failed, 0 blocked
-  finished Thu 10 Sep 01:39
   logs in logs/  ·  tell Claude in the chat
 
   failed tasks are in tasks/failed/ — nothing was deleted:
@@ -29,15 +26,18 @@ a00-208-the-exact-path-is-the-one-that-does-not-work.md
 ================================================
 
 ---- a00-208-the-exact-path-is-the-one-that-does-not-work ----  started 06:06:11
+     . build/screens/journeys: diff since a0dc943a31ca touches something that could render — running fresh
+     . build clean
+     . mem: build step peaked at 4351MB (cgroup MemoryCurrent, sampled every 3s)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1828       10870         895        4136       13774
+Mem:           15603        2209       10489         921        4162       13394
 -- top --
     ELAPSED   RSS COMMAND
-   02:43:48 326124 claude
-   02:43:52 69760 systemd-journal
- 7-03:55:29 15324 systemd
-   02:43:52 13452 systemd-resolve
+      00:42 498980 node
+      00:23 152968 node
+      00:43 79724 npm exec vitest
+   02:48:52 69780 systemd-journal
 -- disk --
 /dev/sda1        75G   27G   45G  38% /
