@@ -1,18 +1,15 @@
-generated: 2026-09-11 01:30:01 UTC
-done:   218
-queued: 3
+generated: 2026-09-11 01:35:01 UTC
+done:   219
+queued: 2
 failed: 0
 hold:   0
 
 -- queued --
-a01-211-money-fields-forms-and-depreciation-numbers.md
 a02-212-the-entity-is-the-legal-identity.md
 b00-209-send-and-receive-over-the-network.md
 -- failed --
 
 -- log --
-
-  failed tasks are in tasks/failed/ — nothing was deleted:
     a00-208-the-exact-path-is-the-one-that-does-not-work.md
 ================================================
 ================================================
@@ -31,15 +28,17 @@ b00-209-send-and-receive-over-the-network.md
 
 ---- a01-211-money-fields-forms-and-depreciation-numbers ----  started 23:20:01
      . build/screens/journeys: diff since 2715e3e515eb touches something that could render — running fresh
+     . build clean
+     . mem: build step peaked at 10960MB (cgroup MemoryCurrent, sampled every 3s)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603       12511         530         930        3828        3092
+Mem:           15603        2302       10560         960        4038       13301
 -- top --
     ELAPSED   RSS COMMAND
-   01:40:01 9255508 next-server (v1
-      01:07 1737472 node
-      01:04 176520 node
-   01:39:58 144200 node
+      03:38 564416 node
+      00:07 147548 node
+   19:28:51 83164 systemd-journal
+      03:38 78004 npm exec vitest
 -- disk --
 /dev/sda1        75G   34G   39G  47% /
