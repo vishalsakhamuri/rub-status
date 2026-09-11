@@ -1,4 +1,4 @@
-generated: 2026-09-11 06:55:01 UTC
+generated: 2026-09-11 07:00:01 UTC
 done:   221
 queued: 0
 failed: 0
@@ -8,9 +8,6 @@ hold:   0
 -- failed --
 
 -- log --
-     . build/screens/journeys: diff since 2715e3e515eb touches something that could render — running fresh
-     . build clean
-     . mem: build step peaked at 4263MB (cgroup MemoryCurrent, sampled every 3s)
 ================================================
   RunUrBusiness — draining the task queue
   started Fri 11 Sep 03:20
@@ -28,15 +25,18 @@ hold:   0
      . mem: tests step peaked at 1899MB (cgroup MemoryCurrent, sampled every 3s)
      ! SCREENS: 1 broken, 0 blank, 1 404 of 242 — see docs/screen-audit.md
      . mem: screens step peaked at 4229MB (cgroup MemoryCurrent, sampled every 3s)
+     ! JOURNEYS: 7 of 23 failed — invite and sign in, J4: the employee folder — nothing typed twice, J2: sign a document myself and take it away — DigiSign-only tenant, one document through all four tools, one document through all four tools — hr+digisign tenant, no No1Cloud, one document through all four tools — digisign+cloud tenant, no HR, invoice → payment → reconcile, end to end — default tenant (a08-144 D) — see docs/journeys-report.md
+     . mem: journeys step peaked at 4516MB (cgroup MemoryCurrent, sampled every 3s)
+     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2497       10210        1100        4333       13105
+Mem:           15603        2317       10390        1067        4299       13286
 -- top --
     ELAPSED   RSS COMMAND
-      04:33 405456 next-server (v1
-      00:19 205472 chrome-headless
-      05:57 198816 node
-      04:30 145276 chrome-headless
+      03:33 295780 next-server (v1
+      00:07 150268 node
+      00:07 147648 node
+      03:34 129136 node
 -- disk --
 /dev/sda1        75G   28G   45G  39% /
