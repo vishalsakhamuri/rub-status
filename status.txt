@@ -1,20 +1,13 @@
-generated: 2026-09-11 05:25:01 UTC
+generated: 2026-09-11 05:30:01 UTC
 done:   220
 queued: 1
 failed: 0
 hold:   0
 
 -- queued --
-b00-209-send-and-receive-over-the-network.md
 -- failed --
 
 -- log --
-
----- a01-211-money-fields-forms-and-depreciation-numbers ----  started 23:20:01
-     . build/screens/journeys: diff since 2715e3e515eb touches something that could render — running fresh
-     . build clean
-     . mem: build step peaked at 10960MB (cgroup MemoryCurrent, sampled every 3s)
-================================================
   RunUrBusiness — draining the task queue
   started Fri 11 Sep 01:50
 ================================================
@@ -29,15 +22,23 @@ b00-209-send-and-receive-over-the-network.md
 ================================================
 
 ---- b00-209-send-and-receive-over-the-network ----  started 03:20:02
+     . build/screens/journeys: diff since 2715e3e515eb touches something that could render — running fresh
+     . build clean
+     . mem: build step peaked at 4339MB (cgroup MemoryCurrent, sampled every 3s)
+     ! orphaned dev server found: pid 1461453, owned by build, age 12m, cwd /home/build/runurbusiness (node /usr/bin/pnpm start) — killing it
+     ! orphaned dev server found: pid 1461466, owned by build, age 12m, cwd /home/build/runurbusiness (next-server (v16.2.11)) — killing it
+     . orphaned dev server(s) cleaned up before this task starts
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2368       10332        1020        4259       13234
+Mem:           15603        2291       10408        1046        4285       13311
 -- top --
     ELAPSED   RSS COMMAND
-   02:04:57 513024 claude
-      08:43 304320 next-server (v1
-      08:43 124116 node
-   23:18:51 97152 systemd-journal
+      01:35 496524 node
+      01:16 113360 node
+   23:23:51 97280 systemd-journal
+      01:36 80504 npm exec vitest
 -- disk --
+/dev/sda1        75G   34G   39G  47% /
+k --
 /dev/sda1        75G   34G   39G  47% /
