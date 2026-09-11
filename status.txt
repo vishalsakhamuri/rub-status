@@ -1,4 +1,4 @@
-generated: 2026-09-11 06:50:01 UTC
+generated: 2026-09-11 06:55:01 UTC
 done:   221
 queued: 0
 failed: 0
@@ -31,12 +31,12 @@ hold:   0
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        5683        7024        1067        4299        9919
+Mem:           15603        2497       10210        1100        4333       13105
 -- top --
     ELAPSED   RSS COMMAND
-      00:23 2312564 node
-      00:53 1432384 node
-      00:57 197864 node
-      00:50 151900 node
+      04:33 405456 next-server (v1
+      00:19 205472 chrome-headless
+      05:57 198816 node
+      04:30 145276 chrome-headless
 -- disk --
 /dev/sda1        75G   28G   45G  39% /
