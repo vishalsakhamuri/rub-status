@@ -1,4 +1,4 @@
-generated: 2026-09-11 06:40:01 UTC
+generated: 2026-09-11 06:45:01 UTC
 done:   221
 queued: 0
 failed: 0
@@ -8,8 +8,6 @@ hold:   0
 -- failed --
 
 -- log --
-  started Fri 11 Sep 01:50
-================================================
 
 ---- a02-212-the-entity-is-the-legal-identity ----  started 01:50:02
      . build/screens/journeys: diff since 2715e3e515eb touches something that could render — running fresh
@@ -28,15 +26,17 @@ hold:   0
      ! orphaned dev server found: pid 1461466, owned by build, age 12m, cwd /home/build/runurbusiness (next-server (v16.2.11)) — killing it
      . orphaned dev server(s) cleaned up before this task starts
 ./queue-gate-steps.sh: line 85: 1464081 Killed                     NODE_OPTIONS="--max-old-space-size=${TEST_HEAP_MB}" npx vitest run > "$suite_log" 2>&1
+     ! suite did not produce a result at all — see logs/suite-latest.log
+     . mem: tests step peaked at 1899MB (cgroup MemoryCurrent, sampled every 3s)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1759       10946        1067        4301       13844
+Mem:           15603        3853        8854        1112        4343       11749
 -- top --
     ELAPSED   RSS COMMAND
- 1-00:33:52 101584 systemd-journal
- 8-01:45:29 15272 systemd
- 1-00:33:52 13616 systemd-resolve
-   11:51:49 12856 systemd
+      03:37 919612 chrome-headless
+      03:41 878444 next-server (v1
+      03:39 299856 node
+      03:37 144916 chrome-headless
 -- disk --
-/dev/sda1        75G   34G   39G  47% /
+/dev/sda1        75G   28G   45G  39% /
