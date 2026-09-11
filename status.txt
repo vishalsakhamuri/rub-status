@@ -1,4 +1,4 @@
-generated: 2026-09-11 01:50:01 UTC
+generated: 2026-09-11 01:55:01 UTC
 done:   219
 queued: 2
 failed: 0
@@ -10,12 +10,6 @@ b00-209-send-and-receive-over-the-network.md
 -- failed --
 
 -- log --
-    a00-208-the-exact-path-is-the-one-that-does-not-work.md
-================================================
-================================================
-  RunUrBusiness — draining the task queue
-  started Thu 10 Sep 19:54
-================================================
 
 ---- a00-210-a-validator-that-cries-wolf ----  started 19:54:57
      . build/screens/journeys: diff since 2715e3e515eb touches something that could render — running fresh
@@ -30,15 +24,21 @@ b00-209-send-and-receive-over-the-network.md
      . build/screens/journeys: diff since 2715e3e515eb touches something that could render — running fresh
      . build clean
      . mem: build step peaked at 10960MB (cgroup MemoryCurrent, sampled every 3s)
+================================================
+  RunUrBusiness — draining the task queue
+  started Fri 11 Sep 01:50
+================================================
+
+---- a02-212-the-entity-is-the-legal-identity ----  started 01:50:02
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2304       10557         970        4047       13298
+Mem:           15603        1919       10659         970        4330       13683
 -- top --
     ELAPSED   RSS COMMAND
-      18:38 575536 node
-      00:09 141732 node
-   19:43:51 86936 systemd-journal
-      18:39 78004 npm exec vitest
+      04:56 378596 claude
+   19:48:51 87708 systemd-journal
+ 7-21:00:29 15240 systemd
+   19:48:51 13584 systemd-resolve
 -- disk --
 /dev/sda1        75G   34G   39G  47% /
