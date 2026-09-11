@@ -1,4 +1,4 @@
-generated: 2026-09-11 04:00:01 UTC
+generated: 2026-09-11 04:05:01 UTC
 done:   220
 queued: 1
 failed: 0
@@ -32,12 +32,12 @@ b00-209-send-and-receive-over-the-network.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2152       10572        1018        4234       13450
+Mem:           15603        2524       10199        1045        4261       13078
 -- top --
     ELAPSED   RSS COMMAND
-      39:57 566972 claude
-   21:53:51 90724 systemd-journal
- 7-23:05:29 15244 systemd
-   21:53:51 13596 systemd-resolve
+      44:57 563104 claude
+      01:00 286940 node
+      00:41 155312 node
+   21:58:51 90724 systemd-journal
 -- disk --
 /dev/sda1        75G   34G   39G  47% /
