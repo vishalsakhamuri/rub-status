@@ -1,4 +1,4 @@
-generated: 2026-09-11 01:25:01 UTC
+generated: 2026-09-11 01:30:01 UTC
 done:   218
 queued: 3
 failed: 0
@@ -11,7 +11,6 @@ b00-209-send-and-receive-over-the-network.md
 -- failed --
 
 -- log --
-  logs in logs/  ·  tell Claude in the chat
 
   failed tasks are in tasks/failed/ — nothing was deleted:
     a00-208-the-exact-path-is-the-one-that-does-not-work.md
@@ -31,15 +30,16 @@ b00-209-send-and-receive-over-the-network.md
 ================================================
 
 ---- a01-211-money-fields-forms-and-depreciation-numbers ----  started 23:20:01
+     . build/screens/journeys: diff since 2715e3e515eb touches something that could render — running fresh
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603       12677         240         933        3954        2925
+Mem:           15603       12511         530         930        3828        3092
 -- top --
     ELAPSED   RSS COMMAND
-   01:35:01 9440044 next-server (v1
-      05:17 1478752 node
-   02:04:57 443748 claude
-   01:34:58 111996 node
+   01:40:01 9255508 next-server (v1
+      01:07 1737472 node
+      01:04 176520 node
+   01:39:58 144200 node
 -- disk --
 /dev/sda1        75G   34G   39G  47% /
