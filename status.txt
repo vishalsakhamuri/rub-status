@@ -1,4 +1,4 @@
-generated: 2026-09-11 06:00:01 UTC
+generated: 2026-09-11 06:05:01 UTC
 done:   221
 queued: 0
 failed: 0
@@ -8,7 +8,6 @@ hold:   0
 -- failed --
 
 -- log --
-  RunUrBusiness — draining the task queue
   started Fri 11 Sep 01:50
 ================================================
 
@@ -28,15 +27,16 @@ hold:   0
      ! orphaned dev server found: pid 1461453, owned by build, age 12m, cwd /home/build/runurbusiness (node /usr/bin/pnpm start) — killing it
      ! orphaned dev server found: pid 1461466, owned by build, age 12m, cwd /home/build/runurbusiness (next-server (v16.2.11)) — killing it
      . orphaned dev server(s) cleaned up before this task starts
+./queue-gate-steps.sh: line 85: 1464081 Killed                     NODE_OPTIONS="--max-old-space-size=${TEST_HEAP_MB}" npx vitest run > "$suite_log" 2>&1
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2474       10223        1067        4310       13128
+Mem:           15603        1763       10933        1067        4310       13839
 -- top --
     ELAPSED   RSS COMMAND
-      31:36 605924 node
-      00:04 164028 node
-   23:53:52 98696 systemd-journal
-      31:36 80504 npm exec vitest
+   23:58:52 98836 systemd-journal
+ 8-01:10:29 15264 systemd
+   23:58:52 13616 systemd-resolve
+   11:16:50 12856 systemd
 -- disk --
 /dev/sda1        75G   34G   39G  47% /
