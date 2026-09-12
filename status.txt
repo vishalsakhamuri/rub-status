@@ -1,4 +1,4 @@
-generated: 2026-09-12 10:30:01 UTC
+generated: 2026-09-12 10:35:01 UTC
 done:   221
 queued: 2
 failed: 0
@@ -33,12 +33,12 @@ c01-214-french-dutch-spanish-document-language-and-the-locale-packs.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603       11844        1863         918        3151        3759
+Mem:           15603       11983        1724         579        2811        3620
 -- top --
     ELAPSED   RSS COMMAND
-      20:07 9195340 next-server (v1
-      19:40 585944 chrome-headless
-   03:09:50 268324 claude
-      19:42 195588 node
+      25:07 10455804 next-server (v1
+   03:14:50 322532 claude
+      24:51 126036 node
+ 2-04:28:52 90964 systemd-journal
 -- disk --
 /dev/sda1        75G   35G   37G  49% /
