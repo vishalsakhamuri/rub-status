@@ -1,19 +1,15 @@
-generated: 2026-09-12 06:10:01 UTC
+generated: 2026-09-12 06:15:01 UTC
 done:   221
-queued: 0
+queued: 2
 failed: 0
 hold:   0
 
 -- queued --
+c00-213-five-languages-the-framework-and-the-check.md
+c01-214-french-dutch-spanish-document-language-and-the-locale-packs.md
 -- failed --
 
 -- log --
-     . mem: journeys step peaked at 4516MB (cgroup MemoryCurrent, sampled every 3s)
-     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
-     . gate: 79 pass, 15 fail, 0 pending
-     ! GATE FAILED: the test suite did not produce a result — no summary line, treated as failed, not unknown; 1 screen(s) 404: /no1cloud/training/courses/[id]; 1 screen(s) missing an empty state that teaches; scripts/prove-search.ts failed (u16-100 is marked done):   [32m✓[0m the input is focused on open /   [32m✓[0m Enter on a result navigates (URL changed or overlay closed) /   [32m✓[0m Esc closes the overlay and returns focus to the trigger /  / [31m1 check(s) failed.[0m; scripts/prove-home.ts failed (u22-106 is marked done): [1m9. Reset restores the default layout[0m /   [32m✓[0m the layout was actually saved /   [32m✓[0m reset clears hidden cards and the stored order in one action /  / [31m1 check(s) failed.[0m; journey "invoice → payment → reconcile, end to end — default tenant (a08-144 D)" failed: the arriving account's reconcile screen does not show the transfer as already identified (C6 state 3); 77 screen(s) flagged for density, up from 64 on the last green run: /accounting/journals, /accounting/packets/[packet], /accounting/packets/build/[statement], /accounts, /assets/[id], /assets/holders, /assets/locations, /assets — see docs/screen-density.md
-     . mem: gate step peaked at 3383MB (cgroup MemoryCurrent, sampled every 3s)
-     ! GATE FAILED, caused by this task
      ! task had self-moved to tasks/done/ — moved back to tasks/failed/, the gate said otherwise
      [FAILED] (exit 97) 07:22:00
        moved to tasks/failed/ — the queue carries on
@@ -28,15 +24,21 @@ hold:   0
   failed tasks are in tasks/failed/ — nothing was deleted:
     b00-209-send-and-receive-over-the-network.md
 ================================================
+================================================
+  RunUrBusiness — draining the task queue
+  started Sat 12 Sep 06:11
+================================================
+
+---- c00-213-five-languages-the-framework-and-the-check ----  started 06:11:33
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1759       10738        1068        4510       13843
+Mem:           15603        1991       10504        1068        4512       13611
 -- top --
     ELAPSED   RSS COMMAND
- 2-00:03:52 90420 systemd-journal
- 9-01:15:29 15284 systemd
- 2-00:03:51 13620 systemd-resolve
-      01:51 13124 systemd
+      03:25 354656 claude
+ 2-00:08:51 90552 systemd-journal
+ 9-01:20:29 15288 systemd
+ 2-00:08:51 13620 systemd-resolve
 -- disk --
 /dev/sda1        75G   28G   44G  39% /
