@@ -1,4 +1,4 @@
-generated: 2026-09-12 12:05:01 UTC
+generated: 2026-09-12 12:10:01 UTC
 done:   221
 queued: 2
 failed: 0
@@ -10,9 +10,6 @@ c01-214-french-dutch-spanish-document-language-and-the-locale-packs.md
 -- failed --
 
 -- log --
-     [FAILED] (exit 97) 07:22:00
-       moved to tasks/failed/ — the queue carries on
-       reason: completion marker + commit present, but the gate failed: the test suite did not produce a result — no summary line, treated as failed, not unknown; 1 screen(s) 404: /no1cloud/training/courses/[id]; 1 screen(s) missing an empty state that teaches; scripts/prove-search.ts failed (u16-100 is marked done):   [32m✓[0m the input is focused on open /   [32m✓[0m Enter on a result navigates (URL changed or overlay closed) /   [32m✓[0m Esc closes the overlay and returns focus to the trigger /  / [31m1 check(s) failed.[0m; scripts/prove-home.ts failed (u22-106 is marked done): [1m9. Reset restores the default layout[0m /   [32m✓[0m the layout was actually saved /   [32m✓[0m reset clears hidden cards and the stored order in one action /  / [31m1 check(s) failed.[0m; journey "invoice → payment → reconcile, end to end — default tenant (a08-144 D)" failed: the arriving account's reconcile screen does not show the transfer as already identified (C6 state 3); 77 screen(s) flagged for density, up from 64 on the last green run: /accounting/journals, /accounting/packets/[packet], /accounting/packets/build/[statement], /accounts, /assets/[id], /assets/holders, /assets/locations, /assets — see docs/screen-density.md
        see logs/b00-209-send-and-receive-over-the-network.log
 
 ================================================
@@ -30,15 +27,18 @@ c01-214-french-dutch-spanish-document-language-and-the-locale-packs.md
 
 ---- c00-213-five-languages-the-framework-and-the-check ----  started 06:11:33
      .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
+     . build/screens/journeys: diff since 47ad72d35d1b touches something that could render — running fresh
+     . build clean
+     . mem: build step peaked at 4378MB (cgroup MemoryCurrent, sampled every 3s)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1763       11230         581        3526       13839
+Mem:           15603        2072       10904         614        3578       13531
 -- top --
     ELAPSED   RSS COMMAND
-   04:44:50 444452 claude
- 2-05:58:52 87472 systemd-journal
- 9-07:10:29 15288 systemd
- 2-05:58:52 13616 systemd-resolve
+      03:15 541252 node
+      00:08 117376 node
+ 2-06:03:51 87576 systemd-journal
+      03:15 77428 npm exec vitest
 -- disk --
 /dev/sda1        75G   36G   36G  50% /
