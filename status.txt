@@ -1,4 +1,4 @@
-generated: 2026-09-12 12:30:01 UTC
+generated: 2026-09-12 12:35:01 UTC
 done:   222
 queued: 1
 failed: 0
@@ -9,12 +9,6 @@ c01-214-french-dutch-spanish-document-language-and-the-locale-packs.md
 -- failed --
 
 -- log --
-       see logs/b00-209-send-and-receive-over-the-network.log
-
-================================================
-  0 task(s) completed, 1 failed, 0 blocked
-  finished Fri 11 Sep 07:22
-  logs in logs/  ·  tell Claude in the chat
 
   failed tasks are in tasks/failed/ — nothing was deleted:
     b00-209-send-and-receive-over-the-network.md
@@ -29,15 +23,21 @@ c01-214-french-dutch-spanish-document-language-and-the-locale-packs.md
      . build/screens/journeys: diff since 47ad72d35d1b touches something that could render — running fresh
      . build clean
      . mem: build step peaked at 4378MB (cgroup MemoryCurrent, sampled every 3s)
+================================================
+  RunUrBusiness — draining the task queue
+  started Sat 12 Sep 12:30
+================================================
+
+---- c01-214-french-dutch-spanish-document-language-and-the-locale-packs ----  started 12:30:02
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2169       10807         627        3591       13434
+Mem:           15603        1724       11129         628        3714       13878
 -- top --
     ELAPSED   RSS COMMAND
-      23:15 598836 node
-      00:03 139248 node
- 2-06:23:51 88220 systemd-journal
-      23:15 77428 npm exec vitest
+      04:57 364144 claude
+ 2-06:28:51 88220 systemd-journal
+ 9-07:40:28 15292 systemd
+ 2-06:28:51 13616 systemd-resolve
 -- disk --
 /dev/sda1        75G   36G   36G  50% /
