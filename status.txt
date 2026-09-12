@@ -1,42 +1,43 @@
-generated: 2026-09-12 14:55:01 UTC
-done:   223
+generated: 2026-09-12 15:00:01 UTC
+done:   222
 queued: 0
-failed: 0
+failed: 1
 hold:   0
 
 -- queued --
 -- failed --
+c01-214-french-dutch-spanish-document-language-and-the-locale-packs.md
 
 -- log --
-     .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
-     . build/screens/journeys: diff since 47ad72d35d1b touches something that could render — running fresh
-     . build clean
-     . mem: build step peaked at 4378MB (cgroup MemoryCurrent, sampled every 3s)
-================================================
-  RunUrBusiness — draining the task queue
-  started Sat 12 Sep 12:30
-================================================
+     ! task had self-moved to tasks/done/ — moved back to tasks/failed/, the gate said otherwise
+     [FAILED] (exit 97) 14:56:03
+       moved to tasks/failed/ — the queue carries on
+       reason: completion marker + commit present, but the gate failed: 3 of 3515 tests failing; screens (demo tenant) did not produce a result — treated as failed, not unknown; screens (empty tenant) did not produce a result — treated as failed, not unknown; scripts/prove-digisign-templates.ts failed (t11-93 is marked done):     at signIn (/home/build/runurbusiness/scripts/prove-digisign-templates.ts:91:14) /     at async main (/home/build/runurbusiness/scripts/prove-digisign-templates.ts:227:5) { /   log: [], /   name: 'TimeoutError' / }; scripts/prove-translated.ts failed (c00-213 is marked done):     at signIn (/home/build/runurbusiness/scripts/prove-translated.ts:290:14) /     at async main (/home/build/runurbusiness/scripts/prove-translated.ts:320:3) { /   log: [], /   name: 'TimeoutError' / }; scripts/prove-no1cloud.ts failed (h00h-120 is marked done):     at signIn (/home/build/runurbusiness/scripts/prove-no1cloud.ts:108:14) /     at async main (/home/build/runurbusiness/scripts/prove-no1cloud.ts:198:18) { /   log: [], /   name: 'TimeoutError' / }; scripts/prove-bank-reconciliation.ts failed (a02-138 is marked done):     at main (/home/build/runurbusiness/scripts/prove-bank-reconciliation.ts:191:16) /     at async outer (/home/build/runurbusiness/scripts/prove-bank-reconciliation.ts:662:5) { /   log: [], /   name: 'TimeoutError' / }; scripts/prove-search.ts failed (u16-100 is marked done):   log: [ /     "  - waiting for getByRole('button', { name: /search/i }).first() to be visible" /   ], /   name: 'TimeoutError' / }; scripts/prove-home.ts failed (u22-106 is marked done): [1m9. Reset restores the default layout[0m /   [32m✓[0m the layout was actually saved /   [32m✓[0m reset clears hidden cards and the stored order in one action /  / [31m1 check(s) failed.[0m; scripts/prove-no1edit-pages.ts failed (u19-103 is marked done): Warning: UnknownErrorException: Ensure that the `standardFontDataUrl` API parameter is provided.; scripts/prove-scroll-containment.ts failed (h00f-119 is marked done): killed (SIGTERM) after exceeding its 300000ms cap — did not finish; scripts/prove-input-integrity.ts failed (v00-193 is marked done): ============================================================ /     at main (/home/build/runurbusiness/scripts/prove-input-integrity.ts:211:14) { /   log: [], /   name: 'TimeoutError' / }; scripts/prove-number-formatting.ts failed (a00-210 is marked done):     at signIn (/home/build/runurbusiness/scripts/prove-number-formatting.ts:181:14) /     at async main (/home/build/runurbusiness/scripts/prove-number-formatting.ts:328:3) { /   log: [], /   name: 'TimeoutError' / }; scripts/prove-money-roundtrip.ts failed (a01-211 is marked done):     at async runFull (/home/build/runurbusiness/scripts/prove-money-roundtrip.ts:269:18) /     at async main (/home/build/runurbusiness/scripts/prove-money-roundtrip.ts:460:3) { /   log: [], /   name: 'TimeoutError' / }; scripts/prove-form-preservation.ts failed (a01-211 is marked done):     at signInAs (/home/build/runurbusiness/scripts/prove-form-preservation.ts:115:14) /     at async main (/home/build/runurbusiness/scripts/prove-form-preservation.ts:322:21) { /   log: [], /   name: 'TimeoutError' / }; journey "raise an invoice" failed: locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('summary[aria-label="Other ways to finish"]')
+; journey "invoice → payment → reconcile, end to end — default tenant (a08-144 D)" failed: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/login
+Call log:
+  - navigating to "http://localhost:3000/login", waiting until "load"
+; screen density check did not produce a result — treated as failed, not unknown
+       see logs/c01-214-french-dutch-spanish-document-language-and-the-locale-packs.log
 
----- c01-214-french-dutch-spanish-document-language-and-the-locale-packs ----  started 12:30:02
-     . build/screens/journeys: diff since 47ad72d35d1b touches something that could render — running fresh
-     . build clean
-     . mem: build step peaked at 4450MB (cgroup MemoryCurrent, sampled every 3s)
-     ! SUITE RED: 3 of 3515 tests failing — see logs/suite-latest.log
-     . mem: tests step peaked at 2105MB (cgroup MemoryCurrent, sampled every 3s)
-     ! screen audit did not produce a result at all — see logs/screens-latest.log
-     . mem: screens step peaked at 4039MB (cgroup MemoryCurrent, sampled every 3s)
-     ! JOURNEYS: 21 of 23 failed — upload and self-sign, invite and sign in, raise an invoice, invoice: three lines survive a submit with no customer chosen, run a No1Edit tool, J2: sign a document myself and take it away, J3: change a document and take it away, J4: the employee folder — nothing typed twice, file a signed document, by hand, from DigiSign, J1: file a document into a folder — No1Cloud-only tenant, J2: sign a document myself and take it away — DigiSign-only tenant, J3: change a document and take it away — No1Edit-only tenant, J1: file a document into a folder — tenant with no entity, J2: sign a document myself and take it away — tenant with no entity, J3: change a document and take it away — tenant with no entity, J4: the employee folder — nothing typed twice — tenant with no entity, one document through all four tools, one document through all four tools — hr+digisign tenant, no No1Cloud, one document through all four tools — digisign+cloud tenant, no HR, the offer letter, three doors — default tenant (a08-144 A), invoice → payment → reconcile, end to end — default tenant (a08-144 D) — see docs/journeys-report.md
-     . mem: journeys step peaked at 4315MB (cgroup MemoryCurrent, sampled every 3s)
-     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
+================================================
+  0 task(s) completed, 1 failed, 0 blocked
+  finished Sat 12 Sep 14:56
+  logs in logs/  ·  tell Claude in the chat
+
+  failed tasks are in tasks/failed/ — nothing was deleted:
+    c01-214-french-dutch-spanish-document-language-and-the-locale-packs.md
+================================================
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2258       10372         686        3995       13344
+Mem:           15603        1493       11137         644        3953       14109
 -- top --
     ELAPSED   RSS COMMAND
-      34:43 327368 next-server (v1
-      00:14 189396 node
-      00:12 157940 chrome-headless
-      00:14 147908 node
+ 2-08:53:52 89668 systemd-journal
+ 9-10:05:29 15292 systemd
+ 2-08:53:52 13616 systemd-resolve
+ 9-10:05:18 12060 networkd-dispat
 -- disk --
 /dev/sda1        75G   29G   44G  40% /
