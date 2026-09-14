@@ -1,4 +1,4 @@
-generated: 2026-09-14 19:00:01 UTC
+generated: 2026-09-14 19:05:01 UTC
 done:   224
 queued: 6
 failed: 0
@@ -14,12 +14,6 @@ c03-220-the-operator-console.md
 -- failed --
 
 -- log --
-; screen density check did not produce a result — treated as failed, not unknown
-       see logs/c01-214-french-dutch-spanish-document-language-and-the-locale-packs.log
-
-================================================
-  0 task(s) completed, 1 failed, 0 blocked
-  finished Sat 12 Sep 14:56
   logs in logs/  ·  tell Claude in the chat
 
   failed tasks are in tasks/failed/ — nothing was deleted:
@@ -34,15 +28,21 @@ c03-220-the-operator-console.md
      . build/screens/journeys: diff since ff1313e6d131 touches something that could render — running fresh
      . build clean
      . mem: build step peaked at 4667MB (cgroup MemoryCurrent, sampled every 3s)
+================================================
+  RunUrBusiness — draining the task queue
+  started Mon 14 Sep 19:00
+================================================
+
+---- a00b-221-provision-a-test-account ----  started 19:00:02
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2533        9762        1007        4651       13069
+Mem:           15603        2111       10172        1007        4664       13491
 -- top --
     ELAPSED   RSS COMMAND
-      19:09 642284 node
- 4-12:53:52 125368 systemd-journal
-      00:10 108336 node
-      19:10 77904 npm exec vitest
+      04:55 368016 claude
+ 4-12:58:51 127960 systemd-journal
+11-14:10:28 15452 systemd
+ 4-12:58:51 13684 systemd-resolve
 -- disk --
 /dev/sda1        75G   35G   37G  49% /
