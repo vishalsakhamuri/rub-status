@@ -1,19 +1,17 @@
-generated: 2026-09-14 13:40:01 UTC
+generated: 2026-09-14 13:45:01 UTC
 done:   223
-queued: 0
+queued: 4
 failed: 0
 hold:   0
 
 -- queued --
+a00-215-the-badge-that-wipes-every-form.md
+a01-216-money-held-must-be-usable-and-the-books-must-read-right.md
+a02-217-one-price-per-item-vouchers-are-a-debt-and-the-card-reader.md
+b01-218-two-things-called-projects-and-people-who-exist-twice.md
 -- failed --
 
 -- log --
-     ! task had self-moved to tasks/done/ — moved back to tasks/failed/, the gate said otherwise
-     [FAILED] (exit 97) 14:56:03
-       moved to tasks/failed/ — the queue carries on
-       reason: completion marker + commit present, but the gate failed: 3 of 3515 tests failing; screens (demo tenant) did not produce a result — treated as failed, not unknown; screens (empty tenant) did not produce a result — treated as failed, not unknown; scripts/prove-digisign-templates.ts failed (t11-93 is marked done):     at signIn (/home/build/runurbusiness/scripts/prove-digisign-templates.ts:91:14) /     at async main (/home/build/runurbusiness/scripts/prove-digisign-templates.ts:227:5) { /   log: [], /   name: 'TimeoutError' / }; scripts/prove-translated.ts failed (c00-213 is marked done):     at signIn (/home/build/runurbusiness/scripts/prove-translated.ts:290:14) /     at async main (/home/build/runurbusiness/scripts/prove-translated.ts:320:3) { /   log: [], /   name: 'TimeoutError' / }; scripts/prove-no1cloud.ts failed (h00h-120 is marked done):     at signIn (/home/build/runurbusiness/scripts/prove-no1cloud.ts:108:14) /     at async main (/home/build/runurbusiness/scripts/prove-no1cloud.ts:198:18) { /   log: [], /   name: 'TimeoutError' / }; scripts/prove-bank-reconciliation.ts failed (a02-138 is marked done):     at main (/home/build/runurbusiness/scripts/prove-bank-reconciliation.ts:191:16) /     at async outer (/home/build/runurbusiness/scripts/prove-bank-reconciliation.ts:662:5) { /   log: [], /   name: 'TimeoutError' / }; scripts/prove-search.ts failed (u16-100 is marked done):   log: [ /     "  - waiting for getByRole('button', { name: /search/i }).first() to be visible" /   ], /   name: 'TimeoutError' / }; scripts/prove-home.ts failed (u22-106 is marked done): [1m9. Reset restores the default layout[0m /   [32m✓[0m the layout was actually saved /   [32m✓[0m reset clears hidden cards and the stored order in one action /  / [31m1 check(s) failed.[0m; scripts/prove-no1edit-pages.ts failed (u19-103 is marked done): Warning: UnknownErrorException: Ensure that the `standardFontDataUrl` API parameter is provided.; scripts/prove-scroll-containment.ts failed (h00f-119 is marked done): killed (SIGTERM) after exceeding its 300000ms cap — did not finish; scripts/prove-input-integrity.ts failed (v00-193 is marked done): ============================================================ /     at main (/home/build/runurbusiness/scripts/prove-input-integrity.ts:211:14) { /   log: [], /   name: 'TimeoutError' / }; scripts/prove-number-formatting.ts failed (a00-210 is marked done):     at signIn (/home/build/runurbusiness/scripts/prove-number-formatting.ts:181:14) /     at async main (/home/build/runurbusiness/scripts/prove-number-formatting.ts:328:3) { /   log: [], /   name: 'TimeoutError' / }; scripts/prove-money-roundtrip.ts failed (a01-211 is marked done):     at async runFull (/home/build/runurbusiness/scripts/prove-money-roundtrip.ts:269:18) /     at async main (/home/build/runurbusiness/scripts/prove-money-roundtrip.ts:460:3) { /   log: [], /   name: 'TimeoutError' / }; scripts/prove-form-preservation.ts failed (a01-211 is marked done):     at signInAs (/home/build/runurbusiness/scripts/prove-form-preservation.ts:115:14) /     at async main (/home/build/runurbusiness/scripts/prove-form-preservation.ts:322:21) { /   log: [], /   name: 'TimeoutError' / }; journey "raise an invoice" failed: locator.click: Timeout 30000ms exceeded.
-Call log:
-  - waiting for locator('summary[aria-label="Other ways to finish"]')
 ; journey "invoice → payment → reconcile, end to end — default tenant (a08-144 D)" failed: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/login
 Call log:
   - navigating to "http://localhost:3000/login", waiting until "load"
@@ -28,15 +26,21 @@ Call log:
   failed tasks are in tasks/failed/ — nothing was deleted:
     c01-214-french-dutch-spanish-document-language-and-the-locale-packs.md
 ================================================
+================================================
+  RunUrBusiness — draining the task queue
+  started Mon 14 Sep 13:45
+================================================
+
+---- a00-215-the-badge-that-wipes-every-form ----  started 13:45:00
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1507       11010         633        4056       14095
+Mem:           15603        1492       11019         633        4062       14110
 -- top --
     ELAPSED   RSS COMMAND
- 4-07:33:52 140164 systemd-journal
-11-08:45:29 15384 systemd
- 4-07:33:52 13684 systemd-resolve
-      00:06 13168 systemd
+ 4-07:38:52 140164 systemd-journal
+11-08:50:29 15396 systemd
+ 4-07:38:52 13684 systemd-resolve
+      00:40 13276 systemd
 -- disk --
 /dev/sda1        75G   29G   44G  40% /
