@@ -1,4 +1,4 @@
-generated: 2026-09-14 23:40:01 UTC
+generated: 2026-09-14 23:45:01 UTC
 done:   225
 queued: 5
 failed: 0
@@ -13,12 +13,6 @@ c03-220-the-operator-console.md
 -- failed --
 
 -- log --
-     . build clean
-     . mem: build step peaked at 4667MB (cgroup MemoryCurrent, sampled every 3s)
-================================================
-  RunUrBusiness — draining the task queue
-  started Mon 14 Sep 19:00
-================================================
 
 ---- a00b-221-provision-a-test-account ----  started 19:00:02
      . build/screens/journeys: diff since ff1313e6d131 touches something that could render — running fresh
@@ -33,15 +27,21 @@ c03-220-the-operator-console.md
      . build/screens/journeys: diff since ff1313e6d131 touches something that could render — running fresh
      . build clean
      . mem: build step peaked at 6883MB (cgroup MemoryCurrent, sampled every 3s)
+================================================
+  RunUrBusiness — draining the task queue
+  started Mon 14 Sep 23:40
+================================================
+
+---- a01-216-money-held-must-be-usable-and-the-books-must-read-right ----  started 23:40:02
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2378        7735         855        6685       13224
+Mem:           15603        2305        7805         901        6734       13297
 -- top --
     ELAPSED   RSS COMMAND
-      17:37 623128 node
-      00:12 216764 node
- 4-17:33:51 132864 systemd-journal
-      17:37 78344 npm exec vitest
+      04:31 395836 node
+      04:56 306408 claude
+      00:42 163212 node
+ 4-17:38:51 132928 systemd-journal
 -- disk --
 /dev/sda1        75G   37G   36G  51% /
