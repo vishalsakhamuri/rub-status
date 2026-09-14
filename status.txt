@@ -1,4 +1,4 @@
-generated: 2026-09-14 18:35:02 UTC
+generated: 2026-09-14 18:40:01 UTC
 done:   223
 queued: 7
 failed: 0
@@ -15,7 +15,6 @@ c03-220-the-operator-console.md
 -- failed --
 
 -- log --
-; journey "invoice → payment → reconcile, end to end — default tenant (a08-144 D)" failed: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/login
 Call log:
   - navigating to "http://localhost:3000/login", waiting until "load"
 ; screen density check did not produce a result — treated as failed, not unknown
@@ -35,15 +34,17 @@ Call log:
 ================================================
 
 ---- a00-215-the-badge-that-wipes-every-form ----  started 13:45:00
+     . build/screens/journeys: diff since ff1313e6d131 touches something that could render — running fresh
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2816        9651         996        4468       12787
+Mem:           15603        4803        7493         954        4597       10799
 -- top --
     ELAPSED   RSS COMMAND
-   04:49:58 407904 claude
-      34:57 322600 next-server (v1
-      00:51 160456 node
-      00:49 153192 chrome-headless
+      00:31 2870184 node
+      00:26 175724 node
+      00:00 130808 node
+      00:31 129644 node
 -- disk --
 /dev/sda1        75G   35G   37G  49% /
+37G  49% /
