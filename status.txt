@@ -1,4 +1,4 @@
-generated: 2026-09-14 21:05:01 UTC
+generated: 2026-09-14 21:10:01 UTC
 done:   224
 queued: 6
 failed: 0
@@ -14,9 +14,6 @@ c03-220-the-operator-console.md
 -- failed --
 
 -- log --
-  logs in logs/  ·  tell Claude in the chat
-
-  failed tasks are in tasks/failed/ — nothing was deleted:
     c01-214-french-dutch-spanish-document-language-and-the-locale-packs.md
 ================================================
 ================================================
@@ -34,15 +31,18 @@ c03-220-the-operator-console.md
 ================================================
 
 ---- a00b-221-provision-a-test-account ----  started 19:00:02
+     . build/screens/journeys: diff since ff1313e6d131 touches something that could render — running fresh
+     . build clean
+     . mem: build step peaked at 6175MB (cgroup MemoryCurrent, sampled every 3s)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        4520        6142        1074        6351       11082
+Mem:           15603        2643        8018        1116        6394       12959
 -- top --
     ELAPSED   RSS COMMAND
-      00:33 2118988 node
-   02:04:56 599332 claude
- 4-14:58:51 132308 systemd-journal
-      00:33 75860 npm exec tsc --
+      02:20 593732 node
+      00:39 159068 node
+ 4-15:03:52 132508 systemd-journal
+      02:20 77464 npm exec vitest
 -- disk --
 /dev/sda1        75G   36G   37G  50% /
