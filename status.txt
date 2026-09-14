@@ -1,4 +1,4 @@
-generated: 2026-09-14 23:20:01 UTC
+generated: 2026-09-14 23:25:01 UTC
 done:   225
 queued: 5
 failed: 0
@@ -13,9 +13,6 @@ c03-220-the-operator-console.md
 -- failed --
 
 -- log --
-
----- a00-215-the-badge-that-wipes-every-form ----  started 13:45:00
-     . build/screens/journeys: diff since ff1313e6d131 touches something that could render — running fresh
      . build clean
      . mem: build step peaked at 4667MB (cgroup MemoryCurrent, sampled every 3s)
 ================================================
@@ -33,15 +30,18 @@ c03-220-the-operator-console.md
 ================================================
 
 ---- a01-216-money-held-must-be-usable-and-the-books-must-read-right ----  started 21:30:02
+     . build/screens/journeys: diff since ff1313e6d131 touches something that could render — running fresh
+     . build clean
+     . mem: build step peaked at 6883MB (cgroup MemoryCurrent, sampled every 3s)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        6373        3741         802        6631        9229
+Mem:           15603        2233        7881         845        6675       13370
 -- top --
     ELAPSED   RSS COMMAND
-      00:42 2214168 node
-      01:12 1519740 node
-   01:49:56 771116 claude
-      05:17 398436 node
+      02:37 589396 node
+ 4-17:18:51 132604 systemd-journal
+      00:44 106028 node
+      02:37 78344 npm exec vitest
 -- disk --
 /dev/sda1        75G   37G   36G  51% /
