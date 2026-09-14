@@ -1,4 +1,4 @@
-generated: 2026-09-14 22:05:01 UTC
+generated: 2026-09-14 22:10:01 UTC
 done:   225
 queued: 5
 failed: 0
@@ -36,12 +36,12 @@ c03-220-the-operator-console.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2459        8153        1130        6457       13143
+Mem:           15603        2373        8239        1130        6457       13229
 -- top --
     ELAPSED   RSS COMMAND
-      34:56 502312 claude
- 4-15:58:52 133512 systemd-journal
-      00:01 114452 node
-      00:01 85636 npm exec tsx --
+      39:56 520524 claude
+ 4-16:03:51 133544 systemd-journal
+11-17:15:29 15452 systemd
+ 4-16:03:51 13684 systemd-resolve
 -- disk --
 /dev/sda1        75G   36G   37G  50% /
