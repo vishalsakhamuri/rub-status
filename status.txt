@@ -1,4 +1,4 @@
-generated: 2026-09-15 07:10:02 UTC
+generated: 2026-09-15 07:15:01 UTC
 done:   228
 queued: 2
 failed: 0
@@ -10,12 +10,6 @@ c03-220-the-operator-console.md
 -- failed --
 
 -- log --
-     ! orphaned dev server found: pid 1856407, owned by build, age 34m, cwd /home/build/runurbusiness (next-server (v16.2.11)) — killing it
-     . orphaned dev server(s) cleaned up before this task starts
-================================================
-  RunUrBusiness — draining the task queue
-  started Tue 15 Sep 03:00
-================================================
 
 ---- b01-218-two-things-called-projects-and-people-who-exist-twice ----  started 03:00:02
      . build/screens/journeys: diff since ff1313e6d131 touches something that could render — running fresh
@@ -30,15 +24,21 @@ c03-220-the-operator-console.md
      . build/screens/journeys: diff since ff1313e6d131 touches something that could render — running fresh
      . build clean
      . mem: build step peaked at 4191MB (cgroup MemoryCurrent, sampled every 3s)
+================================================
+  RunUrBusiness — draining the task queue
+  started Tue 15 Sep 07:10
+================================================
+
+---- c02-219-the-margin-scheme ----  started 07:10:02
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2920       10094        1237        4162       12682
+Mem:           15603        2629       10385        1279        4205       12973
 -- top --
     ELAPSED   RSS COMMAND
-      15:50 635160 node
-      00:11 358340 node
- 5-01:03:52 142620 systemd-journal
-      15:50 78440 npm exec vitest
+      02:35 344224 node
+      04:57 319192 claude
+ 5-01:08:52 142752 systemd-journal
+      00:51 123312 node
 -- disk --
 /dev/sda1        75G   30G   43G  41% /
