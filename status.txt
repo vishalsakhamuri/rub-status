@@ -1,42 +1,42 @@
-generated: 2026-09-15 21:15:01 UTC
-done:   230
+generated: 2026-09-15 21:20:01 UTC
+done:   229
 queued: 0
-failed: 0
+failed: 1
 hold:   0
 
 -- queued --
 -- failed --
 
 -- log --
-     . build/screens/journeys: diff since ff1313e6d131 touches something that could render — running fresh
-     . build clean
-     . mem: build step peaked at 5493MB (cgroup MemoryCurrent, sampled every 3s)
-================================================
-  RunUrBusiness — draining the task queue
-  started Tue 15 Sep 18:40
-================================================
-
----- c03-220-the-operator-console ----  started 18:40:02
-     . build/screens/journeys: diff since ff1313e6d131 touches something that could render — running fresh
-     . build clean
-     . mem: build step peaked at 4263MB (cgroup MemoryCurrent, sampled every 3s)
-./queue-gate-steps.sh: line 85: 2120298 Killed                     NODE_OPTIONS="--max-old-space-size=${TEST_HEAP_MB}" npx vitest run > "$suite_log" 2>&1
-     ! suite did not produce a result at all — see logs/suite-latest.log
-     . mem: tests step peaked at 2029MB (cgroup MemoryCurrent, sampled every 3s)
-     ! screen audit did not produce a result at all — see logs/screens-latest.log
-     . mem: screens step peaked at 4181MB (cgroup MemoryCurrent, sampled every 3s)
-     ! JOURNEYS: 21 of 23 failed — upload and self-sign, invite and sign in, raise an invoice, invoice: three lines survive a submit with no customer chosen, run a No1Edit tool, J2: sign a document myself and take it away, J3: change a document and take it away, J4: the employee folder — nothing typed twice, file a signed document, by hand, from DigiSign, J1: file a document into a folder — No1Cloud-only tenant, J2: sign a document myself and take it away — DigiSign-only tenant, J3: change a document and take it away — No1Edit-only tenant, J1: file a document into a folder — tenant with no entity, J2: sign a document myself and take it away — tenant with no entity, J3: change a document and take it away — tenant with no entity, J4: the employee folder — nothing typed twice — tenant with no entity, one document through all four tools, one document through all four tools — hr+digisign tenant, no No1Cloud, one document through all four tools — digisign+cloud tenant, no HR, the offer letter, three doors — default tenant (a08-144 A), invoice → payment → reconcile, end to end — default tenant (a08-144 D) — see docs/journeys-report.md
      . mem: journeys step peaked at 4449MB (cgroup MemoryCurrent, sampled every 3s)
      . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
+     . gate: 60 pass, 39 fail, 0 pending
+     ! GATE FAILED: the test suite did not produce a result — no summary line, treated as failed, not unknown; screens (demo tenant) did not produce a result — treated as failed, not unknown; screens (empty tenant) did not produce a result — treated as failed, not unknown; screen density check did not produce a result — treated as failed, not unknown
+     . mem: gate step peaked at 3585MB (cgroup MemoryCurrent, sampled every 3s)
+     ! GATE FAILED, caused by this task
+     ! task had self-moved to tasks/done/ — moved back to tasks/failed/, the gate said otherwise
+     [FAILED] (exit 97) 21:16:10
+       moved to tasks/failed/ — the queue carries on
+       reason: completion marker + commit present, but the gate failed: the test suite did not produce a result — no summary line, treated as failed, not unknown; screens (demo tenant) did not produce a result — treated as failed, not unknown; screens (empty tenant) did not produce a result — treated as failed, not unknown; screen density check did not produce a result — treated as failed, not unknown
+       see logs/c03-220-the-operator-console.log
+
+================================================
+  0 task(s) completed, 1 failed, 0 blocked
+  finished Tue 15 Sep 21:16
+  logs in logs/  ·  tell Claude in the chat
+
+  failed tasks are in tasks/failed/ — nothing was deleted:
+    c03-220-the-operator-console.md
+================================================
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        4268        8230        2713        6155       11334
+Mem:           15603        3568        8930        2671        6114       12035
 -- top --
     ELAPSED   RSS COMMAND
-      34:19 334400 next-server (v1
-      00:29 161776 chrome-headless
-      00:30 146892 node
-      00:31 131332 node
+ 5-15:13:52 97440 systemd-journal
+12-16:25:29 15468 systemd
+ 5-15:13:52 13604 systemd-resolve
+      00:01 11976 sshd-session
 -- disk --
 /dev/sda1        75G   30G   42G  42% /
