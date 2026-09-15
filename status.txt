@@ -1,4 +1,4 @@
-generated: 2026-09-15 20:40:01 UTC
+generated: 2026-09-15 20:45:01 UTC
 done:   230
 queued: 0
 failed: 0
@@ -8,9 +8,6 @@ hold:   0
 -- failed --
 
 -- log --
-
----- c03-220-the-operator-console ----  started 14:30:02
-     .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
      . build/screens/journeys: diff since ff1313e6d131 touches something that could render — running fresh
      . build clean
      . mem: build step peaked at 5493MB (cgroup MemoryCurrent, sampled every 3s)
@@ -28,15 +25,18 @@ hold:   0
      . mem: tests step peaked at 2029MB (cgroup MemoryCurrent, sampled every 3s)
      ! screen audit did not produce a result at all — see logs/screens-latest.log
      . mem: screens step peaked at 4181MB (cgroup MemoryCurrent, sampled every 3s)
+     ! JOURNEYS: 21 of 23 failed — upload and self-sign, invite and sign in, raise an invoice, invoice: three lines survive a submit with no customer chosen, run a No1Edit tool, J2: sign a document myself and take it away, J3: change a document and take it away, J4: the employee folder — nothing typed twice, file a signed document, by hand, from DigiSign, J1: file a document into a folder — No1Cloud-only tenant, J2: sign a document myself and take it away — DigiSign-only tenant, J3: change a document and take it away — No1Edit-only tenant, J1: file a document into a folder — tenant with no entity, J2: sign a document myself and take it away — tenant with no entity, J3: change a document and take it away — tenant with no entity, J4: the employee folder — nothing typed twice — tenant with no entity, one document through all four tools, one document through all four tools — hr+digisign tenant, no No1Cloud, one document through all four tools — digisign+cloud tenant, no HR, the offer letter, three doors — default tenant (a08-144 A), invoice → payment → reconcile, end to end — default tenant (a08-144 D) — see docs/journeys-report.md
+     . mem: journeys step peaked at 4449MB (cgroup MemoryCurrent, sampled every 3s)
+     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        4254        8421        2702        5966       11348
+Mem:           15603        4083        8592        2671        5936       11519
 -- top --
     ELAPSED   RSS COMMAND
-      06:04 384404 next-server (v1
-      07:29 186028 node
-      00:04 156824 chrome-headless
-      06:01 142008 chrome-headless
+      04:19 274968 next-server (v1
+      00:15 144084 node
+      00:16 132568 node
+      04:20 129652 node
 -- disk --
 /dev/sda1        75G   30G   42G  42% /
