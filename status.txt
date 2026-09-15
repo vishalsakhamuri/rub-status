@@ -1,4 +1,4 @@
-generated: 2026-09-15 01:20:02 UTC
+generated: 2026-09-15 01:25:01 UTC
 done:   226
 queued: 4
 failed: 0
@@ -12,12 +12,6 @@ c03-220-the-operator-console.md
 -- failed --
 
 -- log --
-     . build clean
-     . mem: build step peaked at 6175MB (cgroup MemoryCurrent, sampled every 3s)
-================================================
-  RunUrBusiness — draining the task queue
-  started Mon 14 Sep 21:30
-================================================
 
 ---- a01-216-money-held-must-be-usable-and-the-books-must-read-right ----  started 21:30:02
      . build/screens/journeys: diff since ff1313e6d131 touches something that could render — running fresh
@@ -32,15 +26,21 @@ c03-220-the-operator-console.md
      . build/screens/journeys: diff since ff1313e6d131 touches something that could render — running fresh
      . build clean
      . mem: build step peaked at 4186MB (cgroup MemoryCurrent, sampled every 3s)
+================================================
+  RunUrBusiness — draining the task queue
+  started Tue 15 Sep 01:20
+================================================
+
+---- a02-217-one-price-per-item-vouchers-are-a-debt-and-the-card-reader ----  started 01:20:02
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2471        7492         968        6948       13131
+Mem:           15603        2011        7951         968        6950       13591
 -- top --
     ELAPSED   RSS COMMAND
-      20:08 620560 node
-      00:02 154824 node
- 4-19:13:52 133860 systemd-journal
-      20:09 77952 npm exec vitest
+      04:56 385520 claude
+ 4-19:18:51 133860 systemd-journal
+11-20:30:29 15460 systemd
+ 4-19:18:51 13604 systemd-resolve
 -- disk --
 /dev/sda1        75G   37G   36G  51% /
