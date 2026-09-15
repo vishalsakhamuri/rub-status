@@ -1,4 +1,4 @@
-generated: 2026-09-15 03:00:01 UTC
+generated: 2026-09-15 03:05:01 UTC
 done:   227
 queued: 3
 failed: 0
@@ -11,12 +11,6 @@ c03-220-the-operator-console.md
 -- failed --
 
 -- log --
-
----- a01-216-money-held-must-be-usable-and-the-books-must-read-right ----  started 23:40:02
-     . build/screens/journeys: diff since ff1313e6d131 touches something that could render — running fresh
-     . build clean
-     . mem: build step peaked at 4186MB (cgroup MemoryCurrent, sampled every 3s)
-================================================
   RunUrBusiness — draining the task queue
   started Tue 15 Sep 01:20
 ================================================
@@ -31,15 +25,21 @@ c03-220-the-operator-console.md
      ! orphaned dev server found: pid 1856390, owned by build, age 34m, cwd /home/build/runurbusiness (node /home/build/runurbusiness/node_modules/.bin/../.pnpm/next@16.2.11_@babel+core@7.29.7_supports-color@7.2.0__react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/bin/next dev) — killing it
      ! orphaned dev server found: pid 1856407, owned by build, age 34m, cwd /home/build/runurbusiness (next-server (v16.2.11)) — killing it
      . orphaned dev server(s) cleaned up before this task starts
+================================================
+  RunUrBusiness — draining the task queue
+  started Tue 15 Sep 03:00
+================================================
+
+---- b01-218-two-things-called-projects-and-people-who-exist-twice ----  started 03:00:02
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2556       10009        1064        4439       13046
+Mem:           15603        2267       10269        1064        4468       13335
 -- top --
     ELAPSED   RSS COMMAND
-      23:59 619964 node
-      00:06 190396 node
- 4-20:53:52 139056 systemd-journal
-      24:00 77924 npm exec vitest
+      04:56 551888 claude
+ 4-20:58:52 139164 systemd-journal
+11-22:10:29 15460 systemd
+ 4-20:58:52 13604 systemd-resolve
 -- disk --
 /dev/sda1        75G   45G   28G  62% /
