@@ -1,11 +1,10 @@
-generated: 2026-09-15 07:00:01 UTC
-done:   227
-queued: 3
+generated: 2026-09-15 07:05:02 UTC
+done:   228
+queued: 2
 failed: 0
 hold:   0
 
 -- queued --
-b01-218-two-things-called-projects-and-people-who-exist-twice.md
 c02-219-the-margin-scheme.md
 c03-220-the-operator-console.md
 -- failed --
@@ -34,12 +33,12 @@ c03-220-the-operator-console.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2707       10308        1231        4156       12895
+Mem:           15603        2817       10198        1233        4158       12786
 -- top --
     ELAPSED   RSS COMMAND
-      05:50 647668 node
- 5-00:53:52 142492 systemd-journal
-      00:32 134780 node
-      05:50 78440 npm exec vitest
+      10:50 619132 node
+      00:09 286128 node
+ 5-00:58:52 142492 systemd-journal
+      10:50 78440 npm exec vitest
 -- disk --
 /dev/sda1        75G   30G   43G  41% /
