@@ -1,4 +1,4 @@
-generated: 2026-09-15 02:30:01 UTC
+generated: 2026-09-15 02:35:01 UTC
 done:   226
 queued: 4
 failed: 0
@@ -12,8 +12,6 @@ c03-220-the-operator-console.md
 -- failed --
 
 -- log --
----- a01-216-money-held-must-be-usable-and-the-books-must-read-right ----  started 21:30:02
-     . build/screens/journeys: diff since ff1313e6d131 touches something that could render — running fresh
      . build clean
      . mem: build step peaked at 6883MB (cgroup MemoryCurrent, sampled every 3s)
 ================================================
@@ -32,15 +30,17 @@ c03-220-the-operator-console.md
 
 ---- a02-217-one-price-per-item-vouchers-are-a-debt-and-the-card-reader ----  started 01:20:02
      .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
+     ! exited clean but produced nothing verifiable — attempt 2 of 2 — no commit and no completion marker
+     . build/screens/journeys: diff since ff1313e6d131 touches something that could render — running fresh
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603       10248        2355        1005        4342        5354
+Mem:           15603       11525        1029        1008        4393        4077
 -- top --
     ELAPSED   RSS COMMAND
-      28:20 7758400 next-server (v1
-      10:42 427184 claude
-      07:32 372816 node
-      28:13 199012 node
+      33:20 7395172 next-server (v1
+      00:26 2465848 node
+      33:13 196672 node
+      00:20 180656 node
 -- disk --
-/dev/sda1        75G   42G   31G  58% /
+/dev/sda1        75G   44G   28G  62% /
