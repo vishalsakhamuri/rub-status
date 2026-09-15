@@ -1,4 +1,4 @@
-generated: 2026-09-15 14:05:01 UTC
+generated: 2026-09-15 14:10:01 UTC
 done:   229
 queued: 1
 failed: 0
@@ -9,7 +9,6 @@ c03-220-the-operator-console.md
 -- failed --
 
 -- log --
-     . build/screens/journeys: diff since ff1313e6d131 touches something that could render — running fresh
      . build clean
      . mem: build step peaked at 4456MB (cgroup MemoryCurrent, sampled every 3s)
 ================================================
@@ -29,15 +28,16 @@ c03-220-the-operator-console.md
 ================================================
 
 ---- c03-220-the-operator-console ----  started 13:50:02
+     . build/screens/journeys: diff since ff1313e6d131 touches something that could render — running fresh
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3246        9917        1710        4488       12357
+Mem:           15603        4959        8417        1712        4276       10643
 -- top --
     ELAPSED   RSS COMMAND
-      06:33 366804 node
-      14:56 366668 claude
-      00:15 158392 node
- 5-07:58:51 88880 systemd-journal
+      00:22 2247584 node
+      00:18 177996 node
+      00:22 129236 node
+ 5-08:03:52 88880 systemd-journal
 -- disk --
-/dev/sda1        75G   35G   38G  49% /
+/dev/sda1        75G   35G   38G  48% /
