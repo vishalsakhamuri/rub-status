@@ -1,4 +1,4 @@
-generated: 2026-09-15 02:35:01 UTC
+generated: 2026-09-15 02:40:01 UTC
 done:   226
 queued: 4
 failed: 0
@@ -12,12 +12,6 @@ c03-220-the-operator-console.md
 -- failed --
 
 -- log --
-     . build clean
-     . mem: build step peaked at 6883MB (cgroup MemoryCurrent, sampled every 3s)
-================================================
-  RunUrBusiness — draining the task queue
-  started Mon 14 Sep 23:40
-================================================
 
 ---- a01-216-money-held-must-be-usable-and-the-books-must-read-right ----  started 23:40:02
      . build/screens/journeys: diff since ff1313e6d131 touches something that could render — running fresh
@@ -32,15 +26,21 @@ c03-220-the-operator-console.md
      .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
      ! exited clean but produced nothing verifiable — attempt 2 of 2 — no commit and no completion marker
      . build/screens/journeys: diff since ff1313e6d131 touches something that could render — running fresh
+     . build clean
+     . mem: build step peaked at 10239MB (cgroup MemoryCurrent, sampled every 3s)
+     ! orphaned dev server found: pid 1856389, owned by build, age 34m, cwd /home/build/runurbusiness (sh -c next dev) — killing it
+     ! orphaned dev server found: pid 1856390, owned by build, age 34m, cwd /home/build/runurbusiness (node /home/build/runurbusiness/node_modules/.bin/../.pnpm/next@16.2.11_@babel+core@7.29.7_supports-color@7.2.0__react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/bin/next dev) — killing it
+     ! orphaned dev server found: pid 1856407, owned by build, age 34m, cwd /home/build/runurbusiness (next-server (v16.2.11)) — killing it
+     . orphaned dev server(s) cleaned up before this task starts
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603       11525        1029        1008        4393        4077
+Mem:           15603        2612        9953        1054        4429       12990
 -- top --
     ELAPSED   RSS COMMAND
-      33:20 7395172 next-server (v1
-      00:26 2465848 node
-      33:13 196672 node
-      00:20 180656 node
+      03:58 621848 node
+      00:15 256804 node
+ 4-20:33:51 138796 systemd-journal
+      03:59 77924 npm exec vitest
 -- disk --
-/dev/sda1        75G   44G   28G  62% /
+/dev/sda1        75G   45G   28G  62% /
