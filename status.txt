@@ -1,4 +1,4 @@
-generated: 2026-09-15 00:55:01 UTC
+generated: 2026-09-15 01:00:01 UTC
 done:   225
 queued: 5
 failed: 0
@@ -13,9 +13,6 @@ c03-220-the-operator-console.md
 -- failed --
 
 -- log --
-
----- a00b-221-provision-a-test-account ----  started 19:00:02
-     . build/screens/journeys: diff since ff1313e6d131 touches something that could render — running fresh
      . build clean
      . mem: build step peaked at 6175MB (cgroup MemoryCurrent, sampled every 3s)
 ================================================
@@ -33,15 +30,18 @@ c03-220-the-operator-console.md
 ================================================
 
 ---- a01-216-money-held-must-be-usable-and-the-books-must-read-right ----  started 23:40:02
+     . build/screens/journeys: diff since ff1313e6d131 touches something that could render — running fresh
+     . build clean
+     . mem: build step peaked at 4186MB (cgroup MemoryCurrent, sampled every 3s)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        5732        4232         914        6893        9870
+Mem:           15603        3183        6781         931        6911       12419
 -- top --
     ELAPSED   RSS COMMAND
-      00:49 2251240 node
-      01:20 1548816 node
-   01:14:56 398096 claude
-      01:16 159964 node
+      00:08 640320 node
+      00:02 233020 node
+      00:00 139316 node
+ 4-18:53:51 133664 systemd-journal
 -- disk --
 /dev/sda1        75G   37G   36G  51% /
