@@ -1,4 +1,4 @@
-generated: 2026-09-15 12:35:01 UTC
+generated: 2026-09-15 12:40:01 UTC
 done:   229
 queued: 1
 failed: 0
@@ -9,8 +9,6 @@ c03-220-the-operator-console.md
 -- failed --
 
 -- log --
----- b01-218-two-things-called-projects-and-people-who-exist-twice ----  started 04:40:02
-     . build/screens/journeys: diff since ff1313e6d131 touches something that could render — running fresh
      . build clean
      . mem: build step peaked at 4191MB (cgroup MemoryCurrent, sampled every 3s)
 ================================================
@@ -29,15 +27,17 @@ c03-220-the-operator-console.md
 
 ---- c03-220-the-operator-console ----  started 11:40:01
      .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
+     ! exited clean but produced nothing verifiable — attempt 2 of 2 — stalled — log ends on a waiting line, no commit, no marker
+     . build/screens/journeys: diff since ff1313e6d131 touches something that could render — running fresh
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2964       10219        1452        4209       12638
+Mem:           15603        4599        8584        1454        4210       11003
 -- top --
     ELAPSED   RSS COMMAND
-      07:37 368128 node
-      09:39 327140 claude
-      00:13 168888 node
- 5-06:28:51 150680 systemd-journal
+      01:21 1529940 node
+      00:01 180340 node
+      00:00 180140 node
+      00:00 174956 node
 -- disk --
 /dev/sda1        75G   35G   38G  49% /
