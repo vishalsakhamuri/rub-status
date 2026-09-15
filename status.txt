@@ -1,4 +1,4 @@
-generated: 2026-09-15 04:40:01 UTC
+generated: 2026-09-15 04:45:01 UTC
 done:   227
 queued: 3
 failed: 0
@@ -11,12 +11,6 @@ c03-220-the-operator-console.md
 -- failed --
 
 -- log --
-
----- a02-217-one-price-per-item-vouchers-are-a-debt-and-the-card-reader ----  started 01:20:02
-     .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
-     ! exited clean but produced nothing verifiable — attempt 2 of 2 — no commit and no completion marker
-     . build/screens/journeys: diff since ff1313e6d131 touches something that could render — running fresh
-     . build clean
      . mem: build step peaked at 10239MB (cgroup MemoryCurrent, sampled every 3s)
      ! orphaned dev server found: pid 1856389, owned by build, age 34m, cwd /home/build/runurbusiness (sh -c next dev) — killing it
      ! orphaned dev server found: pid 1856390, owned by build, age 34m, cwd /home/build/runurbusiness (node /home/build/runurbusiness/node_modules/.bin/../.pnpm/next@16.2.11_@babel+core@7.29.7_supports-color@7.2.0__react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/bin/next dev) — killing it
@@ -31,15 +25,21 @@ c03-220-the-operator-console.md
      . build/screens/journeys: diff since ff1313e6d131 touches something that could render — running fresh
      . build clean
      . mem: build step peaked at 4101MB (cgroup MemoryCurrent, sampled every 3s)
+================================================
+  RunUrBusiness — draining the task queue
+  started Tue 15 Sep 04:40
+================================================
+
+---- b01-218-two-things-called-projects-and-people-who-exist-twice ----  started 04:40:02
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2691        9172        1175        5252       12911
+Mem:           15603        2690        9164        1218        5303       12912
 -- top --
     ELAPSED   RSS COMMAND
-      18:33 654548 node
-      00:10 190184 node
- 4-22:33:52 141060 systemd-journal
-      18:33 78276 npm exec vitest
+      02:26 335256 node
+      04:57 324872 claude
+      00:51 257204 node
+ 4-22:38:52 141196 systemd-journal
 -- disk --
 /dev/sda1        75G   45G   28G  62% /
