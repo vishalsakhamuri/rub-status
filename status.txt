@@ -1,4 +1,4 @@
-generated: 2026-09-15 18:00:01 UTC
+generated: 2026-09-15 18:05:01 UTC
 done:   229
 queued: 1
 failed: 0
@@ -32,12 +32,12 @@ c03-220-the-operator-console.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        6704        5966        3314        6583        8898
+Mem:           15603        4959        7711        2953        6222       10643
 -- top --
     ELAPSED   RSS COMMAND
-      05:50 1420308 node
-   03:08:49 439108 claude
-      34:21 332748 next-server (v1
-      02:05 302116 node
+   03:13:49 404172 claude
+      39:22 380316 next-server (v1
+      00:23 253080 chrome-headless
+      03:31 197184 node
 -- disk --
 /dev/sda1        75G   30G   42G  42% /
