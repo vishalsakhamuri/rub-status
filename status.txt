@@ -1,4 +1,4 @@
-generated: 2026-09-15 12:40:01 UTC
+generated: 2026-09-15 12:45:01 UTC
 done:   229
 queued: 1
 failed: 0
@@ -9,8 +9,6 @@ c03-220-the-operator-console.md
 -- failed --
 
 -- log --
-     . build clean
-     . mem: build step peaked at 4191MB (cgroup MemoryCurrent, sampled every 3s)
 ================================================
   RunUrBusiness — draining the task queue
   started Tue 15 Sep 07:10
@@ -29,15 +27,17 @@ c03-220-the-operator-console.md
      .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
      ! exited clean but produced nothing verifiable — attempt 2 of 2 — stalled — log ends on a waiting line, no commit, no marker
      . build/screens/journeys: diff since ff1313e6d131 touches something that could render — running fresh
+     . build clean
+     . mem: build step peaked at 4456MB (cgroup MemoryCurrent, sampled every 3s)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        4599        8584        1454        4210       11003
+Mem:           15603        3117       10065        1501        4258       12485
 -- top --
     ELAPSED   RSS COMMAND
-      01:21 1529940 node
-      00:01 180340 node
-      00:00 180140 node
-      00:00 174956 node
+      04:58 588224 node
+      00:37 277948 node
+ 5-06:38:51 150760 systemd-journal
+      04:58 77580 npm exec vitest
 -- disk --
 /dev/sda1        75G   35G   38G  49% /
