@@ -1,4 +1,4 @@
-generated: 2026-09-17 11:15:01 UTC
+generated: 2026-09-17 11:20:01 UTC
 done:   230
 queued: 4
 failed: 0
@@ -12,9 +12,6 @@ b01-225-no1edit-against-sejda.md
 -- failed --
 
 -- log --
-  started Thu 17 Sep 06:39
-================================================
-
 ---- a00-222-the-second-factor-and-why-the-runner-dies ----  started 06:39:17
      .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
      ! exited clean but produced nothing verifiable — attempt 2 of 2 — stalled — log ends on a waiting line, no commit, no marker
@@ -32,15 +29,18 @@ b01-225-no1edit-against-sejda.md
 
 ---- a00-222-the-second-factor-and-why-the-runner-dies ----  started 08:50:02
      .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
+     . build/screens/journeys: diff since a87f5cd75a7f touches something that could render — running fresh
+     . build clean
+     . mem: build step peaked at 4263MB (cgroup MemoryCurrent, sampled every 3s)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2660       11316        1663        3627       12942
+Mem:           15603        3289       10448        1706        3907       12313
 -- top --
     ELAPSED   RSS COMMAND
-   02:08:03 303988 claude
- 7-05:08:52 77304 systemd-journal
-14-06:20:29 15796 systemd
- 7-05:08:52 13604 systemd-resolve
+      01:12 567828 node
+      00:53 269440 node
+      01:12 77836 npm exec vitest
+ 7-05:13:52 77324 systemd-journal
 -- disk --
 /dev/sda1        75G   39G   34G  54% /
