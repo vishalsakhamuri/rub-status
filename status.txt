@@ -1,4 +1,4 @@
-generated: 2026-09-17 13:45:01 UTC
+generated: 2026-09-17 13:50:01 UTC
 done:   230
 queued: 3
 failed: 1
@@ -12,7 +12,6 @@ b01-225-no1edit-against-sejda.md
 a00-222-the-second-factor-and-why-the-runner-dies.md
 
 -- log --
-     . mem: build step peaked at 4263MB (cgroup MemoryCurrent, sampled every 3s)
 ./queue-gate-steps.sh: line 85: 2281228 Killed                     NODE_OPTIONS="--max-old-space-size=${TEST_HEAP_MB}" npx vitest run > "$suite_log" 2>&1
      ! suite did not produce a result at all — see logs/suite-latest.log
      . mem: tests step peaked at 1977MB (cgroup MemoryCurrent, sampled every 3s)
@@ -32,15 +31,16 @@ a00-222-the-second-factor-and-why-the-runner-dies.md
        see logs/a00-222-the-second-factor-and-why-the-runner-dies.log
 
 ---- a00-223-inventory-needs-a-screen ----  started 13:18:02
+     .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3331       10000        1771        4380       12272
+Mem:           15603        4946        8377        1772        4388       10657
 -- top --
     ELAPSED   RSS COMMAND
-      26:57 459672 claude
-      07:31 359776 node
-      00:29 171916 node
- 7-07:38:52 77896 systemd-journal
+      00:39 2159564 node
+      01:49 321988 claude
+      00:39 78816 npm exec tsc --
+ 7-07:43:52 77896 systemd-journal
 -- disk --
 /dev/sda1        75G   31G   42G  43% /
