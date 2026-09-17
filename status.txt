@@ -1,4 +1,4 @@
-generated: 2026-09-17 12:30:01 UTC
+generated: 2026-09-17 12:35:01 UTC
 done:   231
 queued: 3
 failed: 0
@@ -11,10 +11,6 @@ b01-225-no1edit-against-sejda.md
 -- failed --
 
 -- log --
-     .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
-     ! exited clean but produced nothing verifiable — attempt 2 of 2 — stalled — log ends on a waiting line, no commit, no marker
-     . build/screens/journeys: diff since a87f5cd75a7f touches something that could render — running fresh
-     . build clean
      . mem: build step peaked at 10235MB (cgroup MemoryCurrent, sampled every 3s)
      ! orphaned dev server found: pid 2224579, owned by build, age 1h37m, cwd /home/build/runurbusiness (sh -c next dev) — killing it
      ! orphaned dev server found: pid 2224580, owned by build, age 1h37m, cwd /home/build/runurbusiness (node /home/build/runurbusiness/node_modules/.bin/../.pnpm/next@16.2.11_@babel+core@7.29.7_supports-color@7.2.0__react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/bin/next dev) — killing it
@@ -31,15 +27,19 @@ b01-225-no1edit-against-sejda.md
      . build clean
      . mem: build step peaked at 4263MB (cgroup MemoryCurrent, sampled every 3s)
 ./queue-gate-steps.sh: line 85: 2281228 Killed                     NODE_OPTIONS="--max-old-space-size=${TEST_HEAP_MB}" npx vitest run > "$suite_log" 2>&1
+     ! suite did not produce a result at all — see logs/suite-latest.log
+     . mem: tests step peaked at 1977MB (cgroup MemoryCurrent, sampled every 3s)
+     ! screen audit did not produce a result at all — see logs/screens-latest.log
+     . mem: screens step peaked at 4185MB (cgroup MemoryCurrent, sampled every 3s)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2535       11148        1722        3978       13067
+Mem:           15603        3192       10493        1753        4008       12410
 -- top --
     ELAPSED   RSS COMMAND
- 7-06:23:52 77640 systemd-journal
-14-07:35:29 15796 systemd
- 7-06:23:51 13604 systemd-resolve
-14-07:35:17 11788 networkd-dispat
+      01:04 349368 next-server (v1
+      02:29 191712 node
+      00:04 156476 chrome-headless
+      01:01 139748 chrome-headless
 -- disk --
-/dev/sda1        75G   39G   34G  54% /
+/dev/sda1        75G   31G   42G  42% /
