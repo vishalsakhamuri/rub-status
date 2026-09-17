@@ -1,4 +1,4 @@
-generated: 2026-09-17 20:30:01 UTC
+generated: 2026-09-17 20:35:01 UTC
 done:   232
 queued: 5
 failed: 0
@@ -13,7 +13,6 @@ b01-225-no1edit-against-sejda.md
 -- failed --
 
 -- log --
-     . gate: 62 pass, 40 fail, 0 pending
      ! GATE FAILED: the test suite did not produce a result — no summary line, treated as failed, not unknown; screens (demo tenant) did not produce a result — treated as failed, not unknown; screens (empty tenant) did not produce a result — treated as failed, not unknown; scripts/prove-digisign-templates.ts failed (t11-93 is marked done):   log: [ /     "  - waiting for getByRole('link', { name: 'New template' }).first() to be visible" /   ], /   name: 'TimeoutError' / }; scripts/prove-translated.ts failed (c00-213 is marked done):     at signIn (/home/build/runurbusiness/scripts/prove-translated.ts:300:14) /     at async main (/home/build/runurbusiness/scripts/prove-translated.ts:330:3) { /   log: [], /   name: 'TimeoutError' / }; scripts/prove-no1cloud.ts failed (h00h-120 is marked done):     at signIn (/home/build/runurbusiness/scripts/prove-no1cloud.ts:108:14) /     at async main (/home/build/runurbusiness/scripts/prove-no1cloud.ts:198:18) { /   log: [], /   name: 'TimeoutError' / }; scripts/prove-bank-reconciliation.ts failed (a02-138 is marked done):     at main (/home/build/runurbusiness/scripts/prove-bank-reconciliation.ts:191:16) /     at async outer (/home/build/runurbusiness/scripts/prove-bank-reconciliation.ts:662:5) { /   log: [], /   name: 'TimeoutError' / }; scripts/prove-search.ts failed (u16-100 is marked done):   log: [ /     "  - waiting for getByRole('button', { name: /search/i }).first() to be visible" /   ], /   name: 'TimeoutError' / }; scripts/prove-home.ts failed (u22-106 is marked done): [1m9. Reset restores the default layout[0m /   [32m✓[0m the layout was actually saved /   [32m✓[0m reset clears hidden cards and the stored order in one action /  / [31m1 check(s) failed.[0m; scripts/prove-no1edit-pages.ts failed (u19-103 is marked done): Warning: UnknownErrorException: Ensure that the `standardFontDataUrl` API parameter is provided.; scripts/prove-scroll-containment.ts failed (h00f-119 is marked done): killed (SIGTERM) after exceeding its 300000ms cap — did not finish; scripts/prove-number-formatting.ts failed (a00-210 is marked done):     at runForLocale (/home/build/runurbusiness/scripts/prove-number-formatting.ts:292:16) /     at async main (/home/build/runurbusiness/scripts/prove-number-formatting.ts:408:5) { /   log: [], /   name: 'TimeoutError' / }; scripts/prove-money-roundtrip.ts failed (a01-211 is marked done):     at async runFull (/home/build/runurbusiness/scripts/prove-money-roundtrip.ts:271:18) /     at async main (/home/build/runurbusiness/scripts/prove-money-roundtrip.ts:854:5) { /   log: [], /   name: 'TimeoutError' / }; scripts/prove-form-preservation.ts failed (a01-211 is marked done):     at signInAs (/home/build/runurbusiness/scripts/prove-form-preservation.ts:116:14) /     at async main (/home/build/runurbusiness/scripts/prove-form-preservation.ts:617:21) { /   log: [], /   name: 'TimeoutError' / }; scripts/prove-suspend-is-real.ts failed (a00-222 is marked done): Error: setup failed /     at main (/home/build/runurbusiness/scripts/prove-suspend-is-real.ts:118:123); scripts/prove-signup-without-mail.ts failed (a00-222 is marked done):   log: [ "  - waiting for locator('#business-name') to be visible" ], /   name: 'TimeoutError' / } /  / Node.js v22.23.1; screen density check did not produce a result — treated as failed, not unknown
      . mem: gate step peaked at 3696MB (cgroup MemoryCurrent, sampled every 3s)
      ! GATE FAILED, caused by this task
@@ -33,15 +32,16 @@ b01-225-no1edit-against-sejda.md
      ! orphaned dev server found: pid 2357961, owned by build, age 1h0m, cwd /home/build/runurbusiness (node /home/build/runurbusiness/node_modules/.bin/../.pnpm/next@16.2.11_@babel+core@7.29.7_supports-color@7.2.0__react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/bin/next dev) — killing it
      ! orphaned dev server found: pid 2357978, owned by build, age 1h0m, cwd /home/build/runurbusiness (next-server (v16.2.11)) — killing it
      . orphaned dev server(s) cleaned up before this task starts
+./queue-gate-steps.sh: line 85: 2372263 Killed                     NODE_OPTIONS="--max-old-space-size=${TEST_HEAP_MB}" npx vitest run > "$suite_log" 2>&1
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3456        8736        1875        5623       12146
+Mem:           15603        2691        9501        1875        5623       12912
 -- top --
     ELAPSED   RSS COMMAND
-      30:38 661684 node
-      00:08 157416 node
-      30:38 79412 npm exec vitest
- 7-14:23:52 54292 systemd-journal
+ 7-14:28:52 54612 systemd-journal
+14-15:40:29 15660 systemd
+ 7-14:28:52 13460 systemd-resolve
+14-15:40:18 11788 networkd-dispat
 -- disk --
 /dev/sda1        75G   32G   41G  44% /
