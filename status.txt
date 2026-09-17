@@ -1,4 +1,4 @@
-generated: 2026-09-17 08:30:01 UTC
+generated: 2026-09-17 08:35:01 UTC
 done:   230
 queued: 2
 failed: 0
@@ -10,14 +10,6 @@ a00-223-inventory-needs-a-screen.md
 -- failed --
 
 -- log --
-     [FAILED] (exit 97) 21:16:10
-       moved to tasks/failed/ — the queue carries on
-       reason: completion marker + commit present, but the gate failed: the test suite did not produce a result — no summary line, treated as failed, not unknown; screens (demo tenant) did not produce a result — treated as failed, not unknown; screens (empty tenant) did not produce a result — treated as failed, not unknown; screen density check did not produce a result — treated as failed, not unknown
-       see logs/c03-220-the-operator-console.log
-
-================================================
-  0 task(s) completed, 1 failed, 0 blocked
-  finished Tue 15 Sep 21:16
   logs in logs/  ·  tell Claude in the chat
 
   failed tasks are in tasks/failed/ — nothing was deleted:
@@ -30,15 +22,23 @@ a00-223-inventory-needs-a-screen.md
 
 ---- a00-222-the-second-factor-and-why-the-runner-dies ----  started 06:39:17
      .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
+     ! exited clean but produced nothing verifiable — attempt 2 of 2 — stalled — log ends on a waiting line, no commit, no marker
+     . build/screens/journeys: diff since a87f5cd75a7f touches something that could render — running fresh
+     . build clean
+     . mem: build step peaked at 10235MB (cgroup MemoryCurrent, sampled every 3s)
+     ! orphaned dev server found: pid 2224579, owned by build, age 1h37m, cwd /home/build/runurbusiness (sh -c next dev) — killing it
+     ! orphaned dev server found: pid 2224580, owned by build, age 1h37m, cwd /home/build/runurbusiness (node /home/build/runurbusiness/node_modules/.bin/../.pnpm/next@16.2.11_@babel+core@7.29.7_supports-color@7.2.0__react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/bin/next dev) — killing it
+     ! orphaned dev server found: pid 2224597, owned by build, age 1h37m, cwd /home/build/runurbusiness (next-server (v16.2.11)) — killing it
+     . orphaned dev server(s) cleaned up before this task starts
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        8753        1986        2766        7967        6849
+Mem:           15603        3878        8197        2423        6287       11724
 -- top --
     ELAPSED   RSS COMMAND
-   01:34:51 4374320 next-server (v1
-      10:42 373964 node
-      12:16 355284 claude
-   01:34:47 194712 node
+      02:35 597504 node
+      00:55 125268 node
+      02:36 78980 npm exec vitest
+ 7-02:28:51 75904 systemd-journal
 -- disk --
-/dev/sda1        75G   32G   41G  44% /
+/dev/sda1        75G   32G   41G  45% /
