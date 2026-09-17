@@ -1,4 +1,4 @@
-generated: 2026-09-17 12:40:01 UTC
+generated: 2026-09-17 12:45:01 UTC
 done:   231
 queued: 3
 failed: 0
@@ -11,9 +11,6 @@ b01-225-no1edit-against-sejda.md
 -- failed --
 
 -- log --
-     . mem: build step peaked at 10235MB (cgroup MemoryCurrent, sampled every 3s)
-     ! orphaned dev server found: pid 2224579, owned by build, age 1h37m, cwd /home/build/runurbusiness (sh -c next dev) — killing it
-     ! orphaned dev server found: pid 2224580, owned by build, age 1h37m, cwd /home/build/runurbusiness (node /home/build/runurbusiness/node_modules/.bin/../.pnpm/next@16.2.11_@babel+core@7.29.7_supports-color@7.2.0__react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/bin/next dev) — killing it
      ! orphaned dev server found: pid 2224597, owned by build, age 1h37m, cwd /home/build/runurbusiness (next-server (v16.2.11)) — killing it
      . orphaned dev server(s) cleaned up before this task starts
 ================================================
@@ -31,15 +28,18 @@ b01-225-no1edit-against-sejda.md
      . mem: tests step peaked at 1977MB (cgroup MemoryCurrent, sampled every 3s)
      ! screen audit did not produce a result at all — see logs/screens-latest.log
      . mem: screens step peaked at 4185MB (cgroup MemoryCurrent, sampled every 3s)
+     ! JOURNEYS: 21 of 23 failed — upload and self-sign, invite and sign in, raise an invoice, invoice: three lines survive a submit with no customer chosen, run a No1Edit tool, J2: sign a document myself and take it away, J3: change a document and take it away, J4: the employee folder — nothing typed twice, file a signed document, by hand, from DigiSign, J1: file a document into a folder — No1Cloud-only tenant, J2: sign a document myself and take it away — DigiSign-only tenant, J3: change a document and take it away — No1Edit-only tenant, J1: file a document into a folder — tenant with no entity, J2: sign a document myself and take it away — tenant with no entity, J3: change a document and take it away — tenant with no entity, J4: the employee folder — nothing typed twice — tenant with no entity, one document through all four tools, one document through all four tools — hr+digisign tenant, no No1Cloud, one document through all four tools — digisign+cloud tenant, no HR, the offer letter, three doors — default tenant (a08-144 A), invoice → payment → reconcile, end to end — default tenant (a08-144 D) — see docs/journeys-report.md
+     . mem: journeys step peaked at 4728MB (cgroup MemoryCurrent, sampled every 3s)
+     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3263       10422        1760        4014       12339
+Mem:           15603        3046       10639        1723        3977       12557
 -- top --
     ELAPSED   RSS COMMAND
-      06:04 381252 next-server (v1
-      01:03 227520 chrome-headless
-      07:29 190404 node
-      06:01 141516 chrome-headless
+      04:46 289596 next-server (v1
+      01:10 166708 node
+      01:10 131132 node
+      04:47 128412 node
 -- disk --
 /dev/sda1        75G   31G   42G  42% /
