@@ -1,4 +1,4 @@
-generated: 2026-09-17 08:15:01 UTC
+generated: 2026-09-17 08:20:01 UTC
 done:   230
 queued: 2
 failed: 0
@@ -10,7 +10,6 @@ a00-223-inventory-needs-a-screen.md
 -- failed --
 
 -- log --
-     ! task had self-moved to tasks/done/ — moved back to tasks/failed/, the gate said otherwise
      [FAILED] (exit 97) 21:16:10
        moved to tasks/failed/ — the queue carries on
        reason: completion marker + commit present, but the gate failed: the test suite did not produce a result — no summary line, treated as failed, not unknown; screens (demo tenant) did not produce a result — treated as failed, not unknown; screens (empty tenant) did not produce a result — treated as failed, not unknown; screen density check did not produce a result — treated as failed, not unknown
@@ -30,15 +29,16 @@ a00-223-inventory-needs-a-screen.md
 ================================================
 
 ---- a00-222-the-second-factor-and-why-the-runner-dies ----  started 06:39:17
+     .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        9030        1716        2717        7910        6572
+Mem:           15603        8797        1948        2760        7955        6805
 -- top --
     ELAPSED   RSS COMMAND
-   01:19:51 4374640 next-server (v1
-   01:35:41 559436 claude
-      07:44 365220 node
-   01:19:47 194708 node
+   01:24:51 4374476 next-server (v1
+      00:42 336964 node
+      02:16 323472 claude
+      00:22 253768 node
 -- disk --
 /dev/sda1        75G   32G   41G  44% /
