@@ -1,19 +1,14 @@
-generated: 2026-09-17 06:35:01 UTC
+generated: 2026-09-17 06:40:01 UTC
 done:   230
-queued: 0
+queued: 1
 failed: 0
 hold:   0
 
 -- queued --
+a00-222-the-second-factor-and-why-the-runner-dies.md
 -- failed --
 
 -- log --
-     . mem: journeys step peaked at 4449MB (cgroup MemoryCurrent, sampled every 3s)
-     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
-     . gate: 60 pass, 39 fail, 0 pending
-     ! GATE FAILED: the test suite did not produce a result — no summary line, treated as failed, not unknown; screens (demo tenant) did not produce a result — treated as failed, not unknown; screens (empty tenant) did not produce a result — treated as failed, not unknown; screen density check did not produce a result — treated as failed, not unknown
-     . mem: gate step peaked at 3585MB (cgroup MemoryCurrent, sampled every 3s)
-     ! GATE FAILED, caused by this task
      ! task had self-moved to tasks/done/ — moved back to tasks/failed/, the gate said otherwise
      [FAILED] (exit 97) 21:16:10
        moved to tasks/failed/ — the queue carries on
@@ -28,15 +23,21 @@ hold:   0
   failed tasks are in tasks/failed/ — nothing was deleted:
     c03-220-the-operator-console.md
 ================================================
+================================================
+  RunUrBusiness — draining the task queue
+  started Thu 17 Sep 06:39
+================================================
+
+---- a00-222-the-second-factor-and-why-the-runner-dies ----  started 06:39:17
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3539        8699        2663        6364       12063
+Mem:           15603        3798        8314        2666        6493       11804
 -- top --
     ELAPSED   RSS COMMAND
- 7-00:28:52 165524 systemd-journal
-14-01:40:29 15480 systemd
- 7-00:28:52 13604 systemd-resolve
-14-01:40:17 11804 networkd-dispat
+      00:41 326580 claude
+ 7-00:33:52 165820 systemd-journal
+      01:32 22612 packagekitd
+14-01:45:29 15788 systemd
 -- disk --
 /dev/sda1        75G   30G   42G  42% /
