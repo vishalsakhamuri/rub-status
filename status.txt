@@ -1,4 +1,4 @@
-generated: 2026-09-17 08:50:01 UTC
+generated: 2026-09-17 08:55:01 UTC
 done:   230
 queued: 2
 failed: 0
@@ -10,12 +10,6 @@ a00-223-inventory-needs-a-screen.md
 -- failed --
 
 -- log --
-  logs in logs/  ·  tell Claude in the chat
-
-  failed tasks are in tasks/failed/ — nothing was deleted:
-    c03-220-the-operator-console.md
-================================================
-================================================
   RunUrBusiness — draining the task queue
   started Thu 17 Sep 06:39
 ================================================
@@ -30,15 +24,21 @@ a00-223-inventory-needs-a-screen.md
      ! orphaned dev server found: pid 2224580, owned by build, age 1h37m, cwd /home/build/runurbusiness (node /home/build/runurbusiness/node_modules/.bin/../.pnpm/next@16.2.11_@babel+core@7.29.7_supports-color@7.2.0__react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/bin/next dev) — killing it
      ! orphaned dev server found: pid 2224597, owned by build, age 1h37m, cwd /home/build/runurbusiness (next-server (v16.2.11)) — killing it
      . orphaned dev server(s) cleaned up before this task starts
+================================================
+  RunUrBusiness — draining the task queue
+  started Thu 17 Sep 08:50
+================================================
+
+---- a00-222-the-second-factor-and-why-the-runner-dies ----  started 08:50:02
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        4051        8024        2432        6297       11551
+Mem:           15603        5601        6680        2432        6091       10001
 -- top --
     ELAPSED   RSS COMMAND
-      17:36 642760 node
-      00:10 215596 node
-      17:36 78980 npm exec vitest
- 7-02:43:52 76124 systemd-journal
+      00:06 2047252 node
+      04:57 350144 claude
+      00:02 178112 node
+      00:07 146272 node
 -- disk --
-/dev/sda1        75G   32G   41G  45% /
+/dev/sda1        75G   32G   41G  44% /
