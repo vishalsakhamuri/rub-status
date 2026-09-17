@@ -1,4 +1,4 @@
-generated: 2026-09-17 16:10:01 UTC
+generated: 2026-09-17 16:15:01 UTC
 done:   232
 queued: 2
 failed: 0
@@ -10,7 +10,6 @@ b01-225-no1edit-against-sejda.md
 -- failed --
 
 -- log --
-     ! screen audit did not produce a result at all — see logs/screens-latest.log
      . mem: screens step peaked at 4185MB (cgroup MemoryCurrent, sampled every 3s)
      ! JOURNEYS: 21 of 23 failed — upload and self-sign, invite and sign in, raise an invoice, invoice: three lines survive a submit with no customer chosen, run a No1Edit tool, J2: sign a document myself and take it away, J3: change a document and take it away, J4: the employee folder — nothing typed twice, file a signed document, by hand, from DigiSign, J1: file a document into a folder — No1Cloud-only tenant, J2: sign a document myself and take it away — DigiSign-only tenant, J3: change a document and take it away — No1Edit-only tenant, J1: file a document into a folder — tenant with no entity, J2: sign a document myself and take it away — tenant with no entity, J3: change a document and take it away — tenant with no entity, J4: the employee folder — nothing typed twice — tenant with no entity, one document through all four tools, one document through all four tools — hr+digisign tenant, no No1Cloud, one document through all four tools — digisign+cloud tenant, no HR, the offer letter, three doors — default tenant (a08-144 A), invoice → payment → reconcile, end to end — default tenant (a08-144 D) — see docs/journeys-report.md
      . mem: journeys step peaked at 4728MB (cgroup MemoryCurrent, sampled every 3s)
@@ -30,15 +29,16 @@ b01-225-no1edit-against-sejda.md
      . build/screens/journeys: diff since 893261abf186 touches something that could render — running fresh
      . build clean
      . mem: build step peaked at 4168MB (cgroup MemoryCurrent, sampled every 3s)
+./queue-gate-steps.sh: line 85: 2323945 Killed                     NODE_OPTIONS="--max-old-space-size=${TEST_HEAP_MB}" npx vitest run > "$suite_log" 2>&1
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3227       10361        1692        4044       12376
+Mem:           15603        2502       11085        1692        4045       13100
 -- top --
     ELAPSED   RSS COMMAND
-      31:56 659776 node
-      00:01 141564 node
- 7-10:03:52 78808 systemd-journal
-      31:57 78392 npm exec vitest
+ 7-10:08:52 78948 systemd-journal
+14-11:20:29 15796 systemd
+ 7-10:08:52 13604 systemd-resolve
+14-11:20:18 11788 networkd-dispat
 -- disk --
 /dev/sda1        75G   38G   35G  52% /
