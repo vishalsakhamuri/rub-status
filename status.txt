@@ -1,20 +1,16 @@
-generated: 2026-09-17 15:35:01 UTC
+generated: 2026-09-17 15:40:01 UTC
 done:   230
 queued: 3
 failed: 1
 hold:   0
 
 -- queued --
-a00-223-inventory-needs-a-screen.md
 b00-224-ten-businesses-end-to-end.md
 b01-225-no1edit-against-sejda.md
 -- failed --
 a00-222-the-second-factor-and-why-the-runner-dies.md
 
 -- log --
-./queue-gate-steps.sh: line 85: 2281228 Killed                     NODE_OPTIONS="--max-old-space-size=${TEST_HEAP_MB}" npx vitest run > "$suite_log" 2>&1
-     ! suite did not produce a result at all — see logs/suite-latest.log
-     . mem: tests step peaked at 1977MB (cgroup MemoryCurrent, sampled every 3s)
      ! screen audit did not produce a result at all — see logs/screens-latest.log
      . mem: screens step peaked at 4185MB (cgroup MemoryCurrent, sampled every 3s)
      ! JOURNEYS: 21 of 23 failed — upload and self-sign, invite and sign in, raise an invoice, invoice: three lines survive a submit with no customer chosen, run a No1Edit tool, J2: sign a document myself and take it away, J3: change a document and take it away, J4: the employee folder — nothing typed twice, file a signed document, by hand, from DigiSign, J1: file a document into a folder — No1Cloud-only tenant, J2: sign a document myself and take it away — DigiSign-only tenant, J3: change a document and take it away — No1Edit-only tenant, J1: file a document into a folder — tenant with no entity, J2: sign a document myself and take it away — tenant with no entity, J3: change a document and take it away — tenant with no entity, J4: the employee folder — nothing typed twice — tenant with no entity, one document through all four tools, one document through all four tools — hr+digisign tenant, no No1Cloud, one document through all four tools — digisign+cloud tenant, no HR, the offer letter, three doors — default tenant (a08-144 A), invoice → payment → reconcile, end to end — default tenant (a08-144 D) — see docs/journeys-report.md
@@ -32,15 +28,19 @@ a00-222-the-second-factor-and-why-the-runner-dies.md
 
 ---- a00-223-inventory-needs-a-screen ----  started 13:18:02
      .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
+     . build/screens/journeys: diff since 893261abf186 touches something that could render — running fresh
+     . build clean
+     . mem: build step peaked at 4168MB (cgroup MemoryCurrent, sampled every 3s)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2640       11188        1633        3744       12962
+Mem:           15603        3537       10050        1676        4027       12065
 -- top --
     ELAPSED   RSS COMMAND
-   01:46:49 314320 claude
- 7-09:28:52 78716 systemd-journal
-14-10:40:29 15796 systemd
- 7-09:28:52 13604 systemd-resolve
+      01:56 804864 node
+      00:07 236676 node
+ 7-09:33:52 78716 systemd-journal
+      01:56 78392 npm exec vitest
 -- disk --
 /dev/sda1        75G   38G   35G  52% /
+/sda1        75G   38G   35G  52% /
