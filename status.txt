@@ -1,4 +1,4 @@
-generated: 2026-09-17 18:05:01 UTC
+generated: 2026-09-17 18:10:01 UTC
 done:   231
 queued: 3
 failed: 1
@@ -35,12 +35,12 @@ a00-223-inventory-needs-a-screen.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3023       10225        1698        4389       12579
+Mem:           15603        2878       10369        1699        4391       12724
 -- top --
     ELAPSED   RSS COMMAND
-      26:33 458460 claude
-      10:31 142076 node
-      10:31 128628 node
- 7-11:58:52 79800 systemd-journal
+      31:33 485988 claude
+ 7-12:03:51 79800 systemd-journal
+14-13:15:29 15804 systemd
+ 7-12:03:51 13604 systemd-resolve
 -- disk --
 /dev/sda1        75G   31G   42G  43% /
