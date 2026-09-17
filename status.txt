@@ -1,4 +1,4 @@
-generated: 2026-09-17 07:05:01 UTC
+generated: 2026-09-17 07:10:01 UTC
 done:   230
 queued: 1
 failed: 0
@@ -32,12 +32,12 @@ a00-222-the-second-factor-and-why-the-runner-dies.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        6194        4952        2666        7460        9409
+Mem:           15603        6421        4773        2666        7412        9181
 -- top --
     ELAPSED   RSS COMMAND
-      09:51 2211064 next-server (v1
-      25:42 426080 claude
-      09:48 177712 node
-      09:52 128308 node
+      14:51 2419500 next-server (v1
+      30:42 434392 claude
+      14:48 208384 node
+      14:52 128308 node
 -- disk --
 /dev/sda1        75G   31G   41G  43% /
