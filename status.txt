@@ -1,4 +1,4 @@
-generated: 2026-09-18 09:00:01 UTC
+generated: 2026-09-18 09:05:01 UTC
 done:   233
 queued: 5
 failed: 1
@@ -14,9 +14,6 @@ b01-225-no1edit-against-sejda.md
 a01-226-one-standard-cost-per-item.md
 
 -- log --
-       see logs/a01-226-one-standard-cost-per-item.log
-
----- a02-227-a-check-that-did-not-run-is-not-a-failure ----  started 21:20:14
 ================================================
   RunUrBusiness — draining the task queue
   started Fri 18 Sep 04:30
@@ -34,15 +31,18 @@ a01-226-one-standard-cost-per-item.md
      . mem: tests step peaked at 3257MB (cgroup MemoryCurrent, sampled every 3s)
      ! screen audit did not produce a result at all — see logs/screens-latest.log
      . mem: screens step peaked at 5557MB (cgroup MemoryCurrent, sampled every 3s)
+     ! JOURNEYS: 19 of 23 failed — upload and self-sign, invite and sign in, raise an invoice, invoice: three lines survive a submit with no customer chosen, run a No1Edit tool, J2: sign a document myself and take it away, J3: change a document and take it away, J4: the employee folder — nothing typed twice, J2: sign a document myself and take it away — DigiSign-only tenant, J3: change a document and take it away — No1Edit-only tenant, J1: file a document into a folder — tenant with no entity, J2: sign a document myself and take it away — tenant with no entity, J3: change a document and take it away — tenant with no entity, J4: the employee folder — nothing typed twice — tenant with no entity, one document through all four tools, one document through all four tools — hr+digisign tenant, no No1Cloud, one document through all four tools — digisign+cloud tenant, no HR, the offer letter, three doors — default tenant (a08-144 A), invoice → payment → reconcile, end to end — default tenant (a08-144 D) — see docs/journeys-report.md
+     . mem: journeys step peaked at 5935MB (cgroup MemoryCurrent, sampled every 3s)
+     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3342       10466        1819        3963       12260
+Mem:           15603        3083       10724        1786        3931       12519
 -- top --
     ELAPSED   RSS COMMAND
-      08:30 394468 next-server (v1
-      09:56 223548 node
-      00:08 194116 chrome-headless
-      08:27 145088 chrome-headless
+      04:48 275656 next-server (v1
+      00:30 164784 node
+      00:30 129792 node
+      04:48 129548 node
 -- disk --
 /dev/sda1        75G   31G   42G  43% /
