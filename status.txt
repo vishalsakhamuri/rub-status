@@ -1,4 +1,4 @@
-generated: 2026-09-18 05:25:01 UTC
+generated: 2026-09-18 05:30:01 UTC
 done:   232
 queued: 5
 failed: 1
@@ -14,7 +14,6 @@ b01-225-no1edit-against-sejda.md
 a01-226-one-standard-cost-per-item.md
 
 -- log --
-     . orphaned dev server(s) cleaned up before this task starts
 ./queue-gate-steps.sh: line 85: 2372263 Killed                     NODE_OPTIONS="--max-old-space-size=${TEST_HEAP_MB}" npx vitest run > "$suite_log" 2>&1
      ! suite did not produce a result at all — see logs/suite-latest.log
      . mem: tests step peaked at 3812MB (cgroup MemoryCurrent, sampled every 3s)
@@ -34,15 +33,16 @@ a01-226-one-standard-cost-per-item.md
 ================================================
 
 ---- a02-227-a-check-that-did-not-run-is-not-a-failure ----  started 04:30:02
+     .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        4489       10091        1825        3197       11113
+Mem:           15603        3824       10499        1818        3447       11779
 -- top --
     ELAPSED   RSS COMMAND
-      00:50 749356 chrome-headless
-      00:58 727124 next-server (v1
-      54:56 284160 claude
-      00:53 199536 node
+      05:58 483764 next-server (v1
+      04:19 355196 claude
+      00:56 334988 node
+      00:32 253912 node
 -- disk --
 /dev/sda1        75G   31G   42G  43% /
