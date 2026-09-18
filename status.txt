@@ -1,4 +1,4 @@
-generated: 2026-09-18 18:20:01 UTC
+generated: 2026-09-18 18:25:01 UTC
 done:   234
 queued: 4
 failed: 1
@@ -13,7 +13,6 @@ b01-225-no1edit-against-sejda.md
 a03-228-the-proof-scripts-write-into-the-real-books.md
 
 -- log --
-     . mem: gate step peaked at 5198MB (cgroup MemoryCurrent, sampled every 3s)
      ! GATE FAILED, caused by this task
      ! task had self-moved to tasks/done/ — moved back to tasks/failed/, the gate said otherwise
      [FAILED] (exit 97) 17:24:45
@@ -33,15 +32,16 @@ Call log:
        see logs/a03-228-the-proof-scripts-write-into-the-real-books.log
 
 ---- a01-226-one-standard-cost-per-item ----  started 17:24:47
+     . build/screens/journeys: diff since a5e7ad14d90f touches something that could render — running fresh
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        4071        8612        1882        5151       11531
+Mem:           15603        5066        7831        1842        4897       10536
 -- top --
     ELAPSED   RSS COMMAND
-      55:12 620792 claude
-      33:50 399928 next-server (v1
-      00:08 187064 node
-      00:07 166312 chrome-headless
+      00:25 2343848 node
+      00:21 184256 node
+      00:25 128644 node
+ 8-12:18:52 57772 systemd-journal
 -- disk --
-/dev/sda1        75G   32G   41G  45% /
+/dev/sda1        75G   32G   41G  44% /
