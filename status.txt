@@ -1,15 +1,14 @@
-generated: 2026-09-18 07:00:01 UTC
+generated: 2026-09-18 07:05:01 UTC
 done:   232
-queued: 5
+queued: 4
 failed: 1
-hold:   0
+hold:   2
 
 -- queued --
+a00-229-the-box-is-out-of-memory.md
 a02-227-a-check-that-did-not-run-is-not-a-failure.md
 a03-228-the-proof-scripts-write-into-the-real-books.md
 a04-229-the-ten-prove-scripts-were-never-simultaneous.md
-b00-224-ten-businesses-end-to-end.md
-b01-225-no1edit-against-sejda.md
 -- failed --
 a01-226-one-standard-cost-per-item.md
 
@@ -37,12 +36,12 @@ a01-226-one-standard-cost-per-item.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3357       10725        1775        3645       12245
+Mem:           15603        3797       10282        1803        3676       11805
 -- top --
     ELAPSED   RSS COMMAND
-   01:35:58 485120 next-server (v1
-   01:34:19 421380 claude
-   01:35:59 128808 node
- 8-00:53:52 31148 systemd-journal
+   01:40:58 485404 next-server (v1
+   01:39:19 442596 claude
+      00:41 183144 node
+      00:39 131188 chrome-headless
 -- disk --
 /dev/sda1        75G   31G   42G  43% /
