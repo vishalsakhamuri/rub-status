@@ -1,26 +1,18 @@
-generated: 2026-09-18 14:10:01 UTC
+generated: 2026-09-18 14:15:01 UTC
 done:   234
-queued: 5
-failed: 0
+queued: 4
+failed: 1
 hold:   0
 
 -- queued --
-a01-226-one-standard-cost-per-item.md
 a03-228-the-proof-scripts-write-into-the-real-books.md
 a04-229-the-ten-prove-scripts-were-never-simultaneous.md
 b00-224-ten-businesses-end-to-end.md
 b01-225-no1edit-against-sejda.md
 -- failed --
+a01-226-one-standard-cost-per-item.md
 
 -- log --
-     . mem: journeys step peaked at 6336MB (cgroup MemoryCurrent, sampled every 3s)
-     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
-     . gate: 63 pass, 25 fail, 0 pending
-     . gate clean — see docs/gate-report.md
-     . mem: gate step peaked at 5273MB (cgroup MemoryCurrent, sampled every 3s)
-     [done] 12:48:08   ->  logs/a00-229-the-box-is-out-of-memory.log   (commit + completion marker)
-
----- a01-226-one-standard-cost-per-item ----  started 12:48:10
      .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
      ! exited clean but produced nothing verifiable — attempt 2 of 2 — no commit and no completion marker
      . build/screens/journeys: diff since c0fe7944bac5 touches something that could render — running fresh
@@ -33,15 +25,23 @@ b01-225-no1edit-against-sejda.md
      . mem: tests step peaked at 3967MB (cgroup MemoryCurrent, sampled every 3s)
      ! screen audit did not produce a result at all — see logs/screens-latest.log
      . mem: screens step peaked at 6196MB (cgroup MemoryCurrent, sampled every 3s)
+     ! JOURNEYS: 21 of 23 failed — upload and self-sign, invite and sign in, raise an invoice, invoice: three lines survive a submit with no customer chosen, run a No1Edit tool, J2: sign a document myself and take it away, J3: change a document and take it away, J4: the employee folder — nothing typed twice, file a signed document, by hand, from DigiSign, J1: file a document into a folder — No1Cloud-only tenant, J2: sign a document myself and take it away — DigiSign-only tenant, J3: change a document and take it away — No1Edit-only tenant, J1: file a document into a folder — tenant with no entity, J2: sign a document myself and take it away — tenant with no entity, J3: change a document and take it away — tenant with no entity, J4: the employee folder — nothing typed twice — tenant with no entity, one document through all four tools, one document through all four tools — hr+digisign tenant, no No1Cloud, one document through all four tools — digisign+cloud tenant, no HR, the offer letter, three doors — default tenant (a08-144 A), invoice → payment → reconcile, end to end — default tenant (a08-144 D) — see docs/journeys-report.md
+     . mem: journeys step peaked at 6373MB (cgroup MemoryCurrent, sampled every 3s)
+     [FAILED] (exit 98) 14:10:35
+       moved to tasks/failed/ — the queue carries on
+       reason: attempt 2 of 2 — no commit and no completion marker
+       see logs/a01-226-one-standard-cost-per-item.log
+
+---- a03-228-the-proof-scripts-write-into-the-real-books ----  started 14:10:37
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3312        9899        1887        4628       12290
+Mem:           15603        2866       10344        1839        4581       12736
 -- top --
     ELAPSED   RSS COMMAND
-      04:38 341688 next-server (v1
-      00:44 207476 chrome-headless
-      06:05 190792 node
-      04:35 141360 chrome-headless
+      04:22 352108 claude
+ 8-08:08:52 51500 systemd-journal
+15-09:20:29 13136 systemd
+ 8-08:08:52  9432 systemd-resolve
 -- disk --
 /dev/sda1        75G   32G   41G  44% /
