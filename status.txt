@@ -1,4 +1,4 @@
-generated: 2026-09-18 18:55:01 UTC
+generated: 2026-09-18 19:00:01 UTC
 done:   236
 queued: 3
 failed: 0
@@ -11,8 +11,6 @@ b01-225-no1edit-against-sejda.md
 -- failed --
 
 -- log --
-     [FAILED] (exit 97) 17:24:45
-       moved to tasks/failed/ — the queue carries on
        reason: completion marker + commit present, but the gate failed: scripts/prove-home.ts failed (u22-106 is marked done): [1m9. Reset restores the default layout[0m /   [32m✓[0m the layout was actually saved /   [32m✓[0m reset clears hidden cards and the stored order in one action /  / [31m1 check(s) failed.[0m; scripts/prove-scroll-containment.ts failed (h00f-119 is marked done):         25,   25,    25,    25,   25, 2950, /       2950, 3802, 27356,  1082, 1700,   25 /     ] /   } / }; scripts/prove-fixture-isolation.ts failed (a03-228 is marked done): 6 tenant(s) violated fixture isolation during this sweep:
   · aaf538cf-7cf7-4d60-a005-221fb9401c32 "Rheinbach Systemtechnik" — row count changed from 53990 to 54081
   · null "(no tenants row)" — row count changed from 21 to 22
@@ -31,15 +29,17 @@ Call log:
      . build/screens/journeys: diff since a5e7ad14d90f touches something that could render — running fresh
      . build clean
      . mem: build step peaked at 6592MB (cgroup MemoryCurrent, sampled every 3s)
+     . suite green: 3592 tests
+     . mem: tests step peaked at 4379MB (cgroup MemoryCurrent, sampled every 3s)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3415        9265        1902        5173       12187
+Mem:           15603        4336        8345        1876        5147       11266
 -- top --
     ELAPSED   RSS COMMAND
-      29:02 649168 node
-      00:03 142480 node
-      29:02 77948 npm exec vitest
- 8-12:48:52 57920 systemd-journal
+      00:53 791720 chrome-headless
+      00:57 644680 next-server (v1
+      00:55 240224 node
+      00:54 141820 chrome-headless
 -- disk --
 /dev/sda1        75G   32G   41G  45% /
