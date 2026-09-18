@@ -1,7 +1,7 @@
-generated: 2026-09-18 17:20:01 UTC
-done:   235
+generated: 2026-09-18 17:25:01 UTC
+done:   234
 queued: 4
-failed: 0
+failed: 1
 hold:   0
 
 -- queued --
@@ -10,37 +10,38 @@ a04-229-the-ten-prove-scripts-were-never-simultaneous.md
 b00-224-ten-businesses-end-to-end.md
 b01-225-no1edit-against-sejda.md
 -- failed --
+a03-228-the-proof-scripts-write-into-the-real-books.md
 
 -- log --
-     . mem: screens step peaked at 6196MB (cgroup MemoryCurrent, sampled every 3s)
-     ! JOURNEYS: 21 of 23 failed — upload and self-sign, invite and sign in, raise an invoice, invoice: three lines survive a submit with no customer chosen, run a No1Edit tool, J2: sign a document myself and take it away, J3: change a document and take it away, J4: the employee folder — nothing typed twice, file a signed document, by hand, from DigiSign, J1: file a document into a folder — No1Cloud-only tenant, J2: sign a document myself and take it away — DigiSign-only tenant, J3: change a document and take it away — No1Edit-only tenant, J1: file a document into a folder — tenant with no entity, J2: sign a document myself and take it away — tenant with no entity, J3: change a document and take it away — tenant with no entity, J4: the employee folder — nothing typed twice — tenant with no entity, one document through all four tools, one document through all four tools — hr+digisign tenant, no No1Cloud, one document through all four tools — digisign+cloud tenant, no HR, the offer letter, three doors — default tenant (a08-144 A), invoice → payment → reconcile, end to end — default tenant (a08-144 D) — see docs/journeys-report.md
-     . mem: journeys step peaked at 6373MB (cgroup MemoryCurrent, sampled every 3s)
-     [FAILED] (exit 98) 14:10:35
+     . mem: gate step peaked at 5198MB (cgroup MemoryCurrent, sampled every 3s)
+     ! GATE FAILED, caused by this task
+     ! task had self-moved to tasks/done/ — moved back to tasks/failed/, the gate said otherwise
+     [FAILED] (exit 97) 17:24:45
        moved to tasks/failed/ — the queue carries on
-       reason: attempt 2 of 2 — no commit and no completion marker
-       see logs/a01-226-one-standard-cost-per-item.log
+       reason: completion marker + commit present, but the gate failed: scripts/prove-home.ts failed (u22-106 is marked done): [1m9. Reset restores the default layout[0m /   [32m✓[0m the layout was actually saved /   [32m✓[0m reset clears hidden cards and the stored order in one action /  / [31m1 check(s) failed.[0m; scripts/prove-scroll-containment.ts failed (h00f-119 is marked done):         25,   25,    25,    25,   25, 2950, /       2950, 3802, 27356,  1082, 1700,   25 /     ] /   } / }; scripts/prove-fixture-isolation.ts failed (a03-228 is marked done): 6 tenant(s) violated fixture isolation during this sweep:
+  · aaf538cf-7cf7-4d60-a005-221fb9401c32 "Rheinbach Systemtechnik" — row count changed from 53990 to 54081
+  · null "(no tenants row)" — row count changed from 21 to 22
+  · 4479e19d-6aeb-4936-af8e-b536920bab89 "document-clocks-digisign-only test company" — new tenant created during the sweep, never torn down (154 row(s) left behind)
+  · 502103e5-5038-4b0c-988c-8d206abdbe4d "Prove No1Cloud test company" — new tenant created during the sweep, never torn down (141 row(s) left behind)
+  · 6c77b4db-89d1-41b1-8ee4-aeaaa534048a "Prove No1Cloud test company" — new tenant created during the sweep, never torn down (142 row(s) left behind)
+  · c5d319ca-e4f8-4ef9-b3a4-09edbeca450b "Prove No1Cloud test company" — new tenant created during the sweep, never torn down (141 row(s) left behind); journey "raise an invoice" failed: locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('summary[aria-label="Other ways to finish"]')
+; journey "invoice → payment → reconcile, end to end — default tenant (a08-144 D)" failed: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/login
+Call log:
+  - navigating to "http://localhost:3000/login", waiting until "load"
+       see logs/a03-228-the-proof-scripts-write-into-the-real-books.log
 
----- a03-228-the-proof-scripts-write-into-the-real-books ----  started 14:10:37
-     .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
-     . build/screens/journeys: diff since 7816ec1363dd touches something that could render — running fresh
-     . build clean
-     . mem: build step peaked at 6385MB (cgroup MemoryCurrent, sampled every 3s)
-     . suite green: 3592 tests
-     . mem: tests step peaked at 4147MB (cgroup MemoryCurrent, sampled every 3s)
-     ! screen audit did not produce a result at all — see logs/screens-latest.log
-     . mem: screens step peaked at 6429MB (cgroup MemoryCurrent, sampled every 3s)
-     ! JOURNEYS: 22 of 23 failed — upload and self-sign, invite and sign in, raise an invoice, invoice: three lines survive a submit with no customer chosen, run a No1Edit tool, J1: file a document into a folder, J2: sign a document myself and take it away, J3: change a document and take it away, J4: the employee folder — nothing typed twice, file a signed document, by hand, from DigiSign, J1: file a document into a folder — No1Cloud-only tenant, J2: sign a document myself and take it away — DigiSign-only tenant, J3: change a document and take it away — No1Edit-only tenant, J1: file a document into a folder — tenant with no entity, J2: sign a document myself and take it away — tenant with no entity, J3: change a document and take it away — tenant with no entity, J4: the employee folder — nothing typed twice — tenant with no entity, one document through all four tools, one document through all four tools — hr+digisign tenant, no No1Cloud, one document through all four tools — digisign+cloud tenant, no HR, the offer letter, three doors — default tenant (a08-144 A), invoice → payment → reconcile, end to end — default tenant (a08-144 D) — see docs/journeys-report.md
-     . mem: journeys step peaked at 6583MB (cgroup MemoryCurrent, sampled every 3s)
-     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
+---- a01-226-one-standard-cost-per-item ----  started 17:24:47
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3073        9788        1840        4931       12529
+Mem:           15603        2824       10036        1840        4932       12778
 -- top --
     ELAPSED   RSS COMMAND
-      59:29 383972 next-server (v1
-      59:29 129320 node
-      59:27 95552 node
-      59:27 76308 npm exec tsx --
+      00:12 298592 claude
+ 8-11:18:52 57116 systemd-journal
+15-12:30:29 13136 systemd
+ 8-11:18:52  9432 systemd-resolve
 -- disk --
 /dev/sda1        75G   32G   41G  44% /
