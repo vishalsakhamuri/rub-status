@@ -1,4 +1,4 @@
-generated: 2026-09-18 14:00:01 UTC
+generated: 2026-09-18 14:05:01 UTC
 done:   234
 queued: 5
 failed: 0
@@ -13,10 +13,6 @@ b01-225-no1edit-against-sejda.md
 -- failed --
 
 -- log --
-     . mem: tests step peaked at 3654MB (cgroup MemoryCurrent, sampled every 3s)
-     ! screen audit did not produce a result at all — see logs/screens-latest.log
-     . mem: screens step peaked at 5796MB (cgroup MemoryCurrent, sampled every 3s)
-     ! JOURNEYS: 22 of 23 failed — upload and self-sign, invite and sign in, raise an invoice, invoice: three lines survive a submit with no customer chosen, run a No1Edit tool, J1: file a document into a folder, J2: sign a document myself and take it away, J3: change a document and take it away, J4: the employee folder — nothing typed twice, file a signed document, by hand, from DigiSign, J1: file a document into a folder — No1Cloud-only tenant, J2: sign a document myself and take it away — DigiSign-only tenant, J3: change a document and take it away — No1Edit-only tenant, J1: file a document into a folder — tenant with no entity, J2: sign a document myself and take it away — tenant with no entity, J3: change a document and take it away — tenant with no entity, J4: the employee folder — nothing typed twice — tenant with no entity, one document through all four tools, one document through all four tools — hr+digisign tenant, no No1Cloud, one document through all four tools — digisign+cloud tenant, no HR, the offer letter, three doors — default tenant (a08-144 A), invoice → payment → reconcile, end to end — default tenant (a08-144 D) — see docs/journeys-report.md
      . mem: journeys step peaked at 6336MB (cgroup MemoryCurrent, sampled every 3s)
      . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
      . gate: 63 pass, 25 fail, 0 pending
@@ -33,15 +29,19 @@ b01-225-no1edit-against-sejda.md
      ! orphaned dev server found: pid 2521600, owned by build, age 11m, cwd /home/build/runurbusiness (node /usr/bin/pnpm start) — killing it
      ! orphaned dev server found: pid 2521614, owned by build, age 11m, cwd /home/build/runurbusiness (next-server (v16.2.11)) — killing it
      . orphaned dev server(s) cleaned up before this task starts
+     . suite green: 3592 tests
+     . mem: tests step peaked at 3967MB (cgroup MemoryCurrent, sampled every 3s)
+     ! screen audit did not produce a result at all — see logs/screens-latest.log
+     . mem: screens step peaked at 6196MB (cgroup MemoryCurrent, sampled every 3s)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3471        9741        1899        4639       12131
+Mem:           15603        6814        6397        1839        4579        8788
 -- top --
     ELAPSED   RSS COMMAND
-      31:43 652960 node
-      00:07 199188 node
-      31:43 77576 npm exec vitest
- 8-07:53:52 51496 systemd-journal
+      00:31 2602512 node
+      01:01 1365076 node
+      01:05 209560 node
+      00:56 158904 node
 -- disk --
 /dev/sda1        75G   32G   41G  44% /
