@@ -1,48 +1,49 @@
-generated: 2026-09-18 09:40:01 UTC
-done:   233
-queued: 5
+generated: 2026-09-18 09:45:01 UTC
+done:   232
+queued: 6
 failed: 1
 hold:   0
 
 -- queued --
 a00-229-the-box-is-out-of-memory.md
+a01-226-one-standard-cost-per-item.md
 a03-228-the-proof-scripts-write-into-the-real-books.md
 a04-229-the-ten-prove-scripts-were-never-simultaneous.md
 b00-224-ten-businesses-end-to-end.md
 b01-225-no1edit-against-sejda.md
 -- failed --
-a01-226-one-standard-cost-per-item.md
+a02-227-a-check-that-did-not-run-is-not-a-failure.md
 
 -- log --
-================================================
-  RunUrBusiness — draining the task queue
-  started Fri 18 Sep 04:30
-================================================
-
----- a02-227-a-check-that-did-not-run-is-not-a-failure ----  started 04:30:02
-     .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
-     . build/screens/journeys: diff since c4c668b57731 touches something that could render — running fresh
-     . build clean
-     . mem: build step peaked at 6063MB (cgroup MemoryCurrent, sampled every 3s)
-     ! orphaned dev server found: pid 2414479, owned by build, age 2h50m, cwd /home/build/runurbusiness (node /usr/bin/pnpm start) — killing it
-     ! orphaned dev server found: pid 2414492, owned by build, age 2h50m, cwd /home/build/runurbusiness (next-server (v16.2.11)) — killing it
-     . orphaned dev server(s) cleaned up before this task starts
-     . suite green: 3592 tests
-     . mem: tests step peaked at 3257MB (cgroup MemoryCurrent, sampled every 3s)
      ! screen audit did not produce a result at all — see logs/screens-latest.log
      . mem: screens step peaked at 5557MB (cgroup MemoryCurrent, sampled every 3s)
      ! JOURNEYS: 19 of 23 failed — upload and self-sign, invite and sign in, raise an invoice, invoice: three lines survive a submit with no customer chosen, run a No1Edit tool, J2: sign a document myself and take it away, J3: change a document and take it away, J4: the employee folder — nothing typed twice, J2: sign a document myself and take it away — DigiSign-only tenant, J3: change a document and take it away — No1Edit-only tenant, J1: file a document into a folder — tenant with no entity, J2: sign a document myself and take it away — tenant with no entity, J3: change a document and take it away — tenant with no entity, J4: the employee folder — nothing typed twice — tenant with no entity, one document through all four tools, one document through all four tools — hr+digisign tenant, no No1Cloud, one document through all four tools — digisign+cloud tenant, no HR, the offer letter, three doors — default tenant (a08-144 A), invoice → payment → reconcile, end to end — default tenant (a08-144 D) — see docs/journeys-report.md
      . mem: journeys step peaked at 5935MB (cgroup MemoryCurrent, sampled every 3s)
      . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
+     . gate: 65 pass, 23 fail, 0 pending
+     ! GATE FAILED: scripts/prove-home.ts failed (u22-106 is marked done): [1m9. Reset restores the default layout[0m /   [32m✓[0m the layout was actually saved /   [32m✓[0m reset clears hidden cards and the stored order in one action /  / [31m1 check(s) failed.[0m; scripts/prove-scroll-containment.ts failed (h00f-119 is marked done):   [32m✓[0m Accountel — contacts — a row actually moved, proving the scroll happened — 10149.25 -> 6149.25 /   [32m✓[0m Accountel — contacts — document.scrollingElement still has nothing to scroll (the table scrolled, not the page) — {"scrollHeight":900,"clientHeight":900} /   cleaned up 200 ScrollList employee(s), 200 ScrollList contact(s) /  / [31m10 check(s) failed.[0m; scripts/prove-suspend-is-real.ts failed (a00-222 is marked done):  / 6. Closing shows the distinct closed reason, same mechanism — run last: a closed tenant is deliberately terminal (StatusPanel offers no action out of 'closed') and this fixture is torn down right after: /   [32mPASS[0m closing also rejects the live session's next request, with its own distinct reason shown /  / [31m2 CHECK(S) FAILED[0m; journey "invoice → payment → reconcile, end to end — default tenant (a08-144 D)" failed: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/login
+Call log:
+  - navigating to "http://localhost:3000/login", waiting until "load"
+     . mem: gate step peaked at 4808MB (cgroup MemoryCurrent, sampled every 3s)
+     ! GATE FAILED, caused by this task
+     ! task had self-moved to tasks/done/ — moved back to tasks/failed/, the gate said otherwise
+     [FAILED] (exit 97) 09:40:59
+       moved to tasks/failed/ — the queue carries on
+       reason: completion marker + commit present, but the gate failed: scripts/prove-home.ts failed (u22-106 is marked done): [1m9. Reset restores the default layout[0m /   [32m✓[0m the layout was actually saved /   [32m✓[0m reset clears hidden cards and the stored order in one action /  / [31m1 check(s) failed.[0m; scripts/prove-scroll-containment.ts failed (h00f-119 is marked done):   [32m✓[0m Accountel — contacts — a row actually moved, proving the scroll happened — 10149.25 -> 6149.25 /   [32m✓[0m Accountel — contacts — document.scrollingElement still has nothing to scroll (the table scrolled, not the page) — {"scrollHeight":900,"clientHeight":900} /   cleaned up 200 ScrollList employee(s), 200 ScrollList contact(s) /  / [31m10 check(s) failed.[0m; scripts/prove-suspend-is-real.ts failed (a00-222 is marked done):  / 6. Closing shows the distinct closed reason, same mechanism — run last: a closed tenant is deliberately terminal (StatusPanel offers no action out of 'closed') and this fixture is torn down right after: /   [32mPASS[0m closing also rejects the live session's next request, with its own distinct reason shown /  / [31m2 CHECK(S) FAILED[0m; journey "invoice → payment → reconcile, end to end — default tenant (a08-144 D)" failed: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/login
+Call log:
+  - navigating to "http://localhost:3000/login", waiting until "load"
+       see logs/a02-227-a-check-that-did-not-run-is-not-a-failure.log
+
+---- a00-229-the-box-is-out-of-memory ----  started 09:41:02
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3403       10219        1819        4149       12200
+Mem:           15603        6069        7546        1786        4123        9533
 -- top --
     ELAPSED   RSS COMMAND
-      39:47 391028 next-server (v1
-      00:40 172168 node
-      00:38 155544 chrome-headless
-      00:14 142696 chrome-headless
+      00:17 2051400 node
+      00:48 1226948 node
+      03:57 321032 claude
+      00:44 158808 node
 -- disk --
 /dev/sda1        75G   31G   41G  43% /
