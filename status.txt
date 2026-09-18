@@ -1,4 +1,4 @@
-generated: 2026-09-18 19:10:01 UTC
+generated: 2026-09-18 19:15:01 UTC
 done:   236
 queued: 3
 failed: 0
@@ -11,9 +11,6 @@ b01-225-no1edit-against-sejda.md
 -- failed --
 
 -- log --
-  · null "(no tenants row)" — row count changed from 21 to 22
-  · 4479e19d-6aeb-4936-af8e-b536920bab89 "document-clocks-digisign-only test company" — new tenant created during the sweep, never torn down (154 row(s) left behind)
-  · 502103e5-5038-4b0c-988c-8d206abdbe4d "Prove No1Cloud test company" — new tenant created during the sweep, never torn down (141 row(s) left behind)
   · 6c77b4db-89d1-41b1-8ee4-aeaaa534048a "Prove No1Cloud test company" — new tenant created during the sweep, never torn down (142 row(s) left behind)
   · c5d319ca-e4f8-4ef9-b3a4-09edbeca450b "Prove No1Cloud test company" — new tenant created during the sweep, never torn down (141 row(s) left behind); journey "raise an invoice" failed: locator.click: Timeout 30000ms exceeded.
 Call log:
@@ -31,15 +28,18 @@ Call log:
      . mem: tests step peaked at 4379MB (cgroup MemoryCurrent, sampled every 3s)
      ! SCREENS: 187 broken, 0 blank, 0 404 of 257 — see docs/screen-audit.md
      . mem: screens step peaked at 6649MB (cgroup MemoryCurrent, sampled every 3s)
+     ! JOURNEYS: 19 of 23 failed — upload and self-sign, invite and sign in, raise an invoice, invoice: three lines survive a submit with no customer chosen, run a No1Edit tool, J2: sign a document myself and take it away, J3: change a document and take it away, J4: the employee folder — nothing typed twice, J2: sign a document myself and take it away — DigiSign-only tenant, J3: change a document and take it away — No1Edit-only tenant, J1: file a document into a folder — tenant with no entity, J2: sign a document myself and take it away — tenant with no entity, J3: change a document and take it away — tenant with no entity, J4: the employee folder — nothing typed twice — tenant with no entity, one document through all four tools, one document through all four tools — hr+digisign tenant, no No1Cloud, one document through all four tools — digisign+cloud tenant, no HR, the offer letter, three doors — default tenant (a08-144 A), invoice → payment → reconcile, end to end — default tenant (a08-144 D) — see docs/journeys-report.md
+     . mem: journeys step peaked at 6838MB (cgroup MemoryCurrent, sampled every 3s)
+     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3389        9291        1884        5156       12213
+Mem:           15603        3168        9512        1842        5114       12434
 -- top --
     ELAPSED   RSS COMMAND
-      07:51 362096 next-server (v1
-      00:28 234052 chrome-headless
-      09:16 205172 node
-      07:49 143420 chrome-headless
+      04:41 276188 next-server (v1
+      00:33 170296 node
+      00:34 131808 node
+      04:41 129516 node
 -- disk --
 /dev/sda1        75G   32G   41G  45% /
