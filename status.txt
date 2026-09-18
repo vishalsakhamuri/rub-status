@@ -1,4 +1,4 @@
-generated: 2026-09-18 08:45:01 UTC
+generated: 2026-09-18 08:50:01 UTC
 done:   233
 queued: 5
 failed: 1
@@ -14,8 +14,6 @@ b01-225-no1edit-against-sejda.md
 a01-226-one-standard-cost-per-item.md
 
 -- log --
-     . mem: journeys step peaked at 5335MB (cgroup MemoryCurrent, sampled every 3s)
-     [FAILED] (exit 98) 21:20:12
        moved to tasks/failed/ — the queue carries on
        reason: attempt 2 of 2 — stalled — log ends on a waiting line, no commit, no marker
        see logs/a01-226-one-standard-cost-per-item.log
@@ -34,15 +32,17 @@ a01-226-one-standard-cost-per-item.md
      ! orphaned dev server found: pid 2414479, owned by build, age 2h50m, cwd /home/build/runurbusiness (node /usr/bin/pnpm start) — killing it
      ! orphaned dev server found: pid 2414492, owned by build, age 2h50m, cwd /home/build/runurbusiness (next-server (v16.2.11)) — killing it
      . orphaned dev server(s) cleaned up before this task starts
+     . suite green: 3592 tests
+     . mem: tests step peaked at 3257MB (cgroup MemoryCurrent, sampled every 3s)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3372       10439        1845        3986       12230
+Mem:           15603        3436       10374        1786        3927       12166
 -- top --
     ELAPSED   RSS COMMAND
-      30:50 650144 node
-      00:08 146848 node
-      30:50 77560 npm exec vitest
- 8-02:38:52 33568 systemd-journal
+      00:03 277656 next-server (v1
+      00:01 202916 node
+      00:04 145996 node
+      00:01 144828 node
 -- disk --
 /dev/sda1        75G   31G   42G  43% /
