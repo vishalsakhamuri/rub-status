@@ -1,4 +1,4 @@
-generated: 2026-09-18 15:40:01 UTC
+generated: 2026-09-18 15:45:01 UTC
 done:   234
 queued: 4
 failed: 1
@@ -13,9 +13,6 @@ b01-225-no1edit-against-sejda.md
 a01-226-one-standard-cost-per-item.md
 
 -- log --
-     ! exited clean but produced nothing verifiable — attempt 2 of 2 — no commit and no completion marker
-     . build/screens/journeys: diff since c0fe7944bac5 touches something that could render — running fresh
-     . build clean
      . mem: build step peaked at 6571MB (cgroup MemoryCurrent, sampled every 3s)
      ! orphaned dev server found: pid 2521600, owned by build, age 11m, cwd /home/build/runurbusiness (node /usr/bin/pnpm start) — killing it
      ! orphaned dev server found: pid 2521614, owned by build, age 11m, cwd /home/build/runurbusiness (next-server (v16.2.11)) — killing it
@@ -33,15 +30,18 @@ a01-226-one-standard-cost-per-item.md
 
 ---- a03-228-the-proof-scripts-write-into-the-real-books ----  started 14:10:37
      .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
+     . build/screens/journeys: diff since 7816ec1363dd touches something that could render — running fresh
+     . build clean
+     . mem: build step peaked at 6385MB (cgroup MemoryCurrent, sampled every 3s)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2967       10037        1840        4788       12636
+Mem:           15603        3352        9650        1883        4833       12250
 -- top --
     ELAPSED   RSS COMMAND
-      58:07 395892 claude
- 8-09:33:52 56276 systemd-journal
-15-10:45:29 13136 systemd
-      00:00  9456 ssh
+      02:23 571972 node
+      00:35 166312 node
+      02:23 77520 npm exec vitest
+ 8-09:38:51 56308 systemd-journal
 -- disk --
 /dev/sda1        75G   32G   41G  44% /
