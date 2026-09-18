@@ -1,4 +1,4 @@
-generated: 2026-09-18 13:25:01 UTC
+generated: 2026-09-18 13:30:01 UTC
 done:   234
 queued: 5
 failed: 0
@@ -13,13 +13,6 @@ b01-225-no1edit-against-sejda.md
 -- failed --
 
 -- log --
-       see logs/a02-227-a-check-that-did-not-run-is-not-a-failure.log
-
----- a00-229-the-box-is-out-of-memory ----  started 09:41:02
-     . build/screens/journeys: diff since 4171e496defe touches something that could render — running fresh
-     . build clean
-     . mem: build step peaked at 5996MB (cgroup MemoryCurrent, sampled every 3s)
-     . suite green: 3592 tests
      . mem: tests step peaked at 3654MB (cgroup MemoryCurrent, sampled every 3s)
      ! screen audit did not produce a result at all — see logs/screens-latest.log
      . mem: screens step peaked at 5796MB (cgroup MemoryCurrent, sampled every 3s)
@@ -33,15 +26,22 @@ b01-225-no1edit-against-sejda.md
 
 ---- a01-226-one-standard-cost-per-item ----  started 12:48:10
      .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
+     ! exited clean but produced nothing verifiable — attempt 2 of 2 — no commit and no completion marker
+     . build/screens/journeys: diff since c0fe7944bac5 touches something that could render — running fresh
+     . build clean
+     . mem: build step peaked at 6571MB (cgroup MemoryCurrent, sampled every 3s)
+     ! orphaned dev server found: pid 2521600, owned by build, age 11m, cwd /home/build/runurbusiness (node /usr/bin/pnpm start) — killing it
+     ! orphaned dev server found: pid 2521614, owned by build, age 11m, cwd /home/build/runurbusiness (next-server (v16.2.11)) — killing it
+     . orphaned dev server(s) cleaned up before this task starts
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3677        9537        1839        4577       11925
+Mem:           15603        3464        9750        1882        4620       12138
 -- top --
     ELAPSED   RSS COMMAND
-      22:54 474492 claude
-      08:19 424936 next-server (v1
-      00:04 154980 node
-      00:05 148240 node
+      01:43 561292 node
+      01:19 280240 node
+      01:43 77576 npm exec vitest
+ 8-07:23:52 51288 systemd-journal
 -- disk --
 /dev/sda1        75G   32G   41G  44% /
