@@ -1,4 +1,4 @@
-generated: 2026-09-18 12:00:01 UTC
+generated: 2026-09-18 12:05:01 UTC
 done:   234
 queued: 5
 failed: 0
@@ -13,8 +13,6 @@ b01-225-no1edit-against-sejda.md
 -- failed --
 
 -- log --
-     . mem: journeys step peaked at 5935MB (cgroup MemoryCurrent, sampled every 3s)
-     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
      . gate: 65 pass, 23 fail, 0 pending
      ! GATE FAILED: scripts/prove-home.ts failed (u22-106 is marked done): [1m9. Reset restores the default layout[0m /   [32m✓[0m the layout was actually saved /   [32m✓[0m reset clears hidden cards and the stored order in one action /  / [31m1 check(s) failed.[0m; scripts/prove-scroll-containment.ts failed (h00f-119 is marked done):   [32m✓[0m Accountel — contacts — a row actually moved, proving the scroll happened — 10149.25 -> 6149.25 /   [32m✓[0m Accountel — contacts — document.scrollingElement still has nothing to scroll (the table scrolled, not the page) — {"scrollHeight":900,"clientHeight":900} /   cleaned up 200 ScrollList employee(s), 200 ScrollList contact(s) /  / [31m10 check(s) failed.[0m; scripts/prove-suspend-is-real.ts failed (a00-222 is marked done):  / 6. Closing shows the distinct closed reason, same mechanism — run last: a closed tenant is deliberately terminal (StatusPanel offers no action out of 'closed') and this fixture is torn down right after: /   [32mPASS[0m closing also rejects the live session's next request, with its own distinct reason shown /  / [31m2 CHECK(S) FAILED[0m; journey "invoice → payment → reconcile, end to end — default tenant (a08-144 D)" failed: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/login
 Call log:
@@ -33,15 +31,17 @@ Call log:
      . build/screens/journeys: diff since 4171e496defe touches something that could render — running fresh
      . build clean
      . mem: build step peaked at 5996MB (cgroup MemoryCurrent, sampled every 3s)
+     . suite green: 3592 tests
+     . mem: tests step peaked at 3654MB (cgroup MemoryCurrent, sampled every 3s)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3427        9984        1845        4386       12175
+Mem:           15603        5762        7648        1786        4328        9840
 -- top --
     ELAPSED   RSS COMMAND
-      29:31 662728 node
-      00:06 212340 node
-      29:31 78580 npm exec vitest
- 8-05:53:51 50544 systemd-journal
+      01:15 1180912 node
+      01:09 160080 node
+      01:16 128924 node
+ 8-05:58:52 50708 systemd-journal
 -- disk --
 /dev/sda1        75G   32G   41G  44% /
