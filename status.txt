@@ -1,4 +1,4 @@
-generated: 2026-09-18 11:25:01 UTC
+generated: 2026-09-18 11:30:01 UTC
 done:   232
 queued: 6
 failed: 1
@@ -15,7 +15,6 @@ b01-225-no1edit-against-sejda.md
 a02-227-a-check-that-did-not-run-is-not-a-failure.md
 
 -- log --
-     ! screen audit did not produce a result at all — see logs/screens-latest.log
      . mem: screens step peaked at 5557MB (cgroup MemoryCurrent, sampled every 3s)
      ! JOURNEYS: 19 of 23 failed — upload and self-sign, invite and sign in, raise an invoice, invoice: three lines survive a submit with no customer chosen, run a No1Edit tool, J2: sign a document myself and take it away, J3: change a document and take it away, J4: the employee folder — nothing typed twice, J2: sign a document myself and take it away — DigiSign-only tenant, J3: change a document and take it away — No1Edit-only tenant, J1: file a document into a folder — tenant with no entity, J2: sign a document myself and take it away — tenant with no entity, J3: change a document and take it away — tenant with no entity, J4: the employee folder — nothing typed twice — tenant with no entity, one document through all four tools, one document through all four tools — hr+digisign tenant, no No1Cloud, one document through all four tools — digisign+cloud tenant, no HR, the offer letter, three doors — default tenant (a08-144 A), invoice → payment → reconcile, end to end — default tenant (a08-144 D) — see docs/journeys-report.md
      . mem: journeys step peaked at 5935MB (cgroup MemoryCurrent, sampled every 3s)
@@ -35,15 +34,16 @@ Call log:
        see logs/a02-227-a-check-that-did-not-run-is-not-a-failure.log
 
 ---- a00-229-the-box-is-out-of-memory ----  started 09:41:02
+     . build/screens/journeys: diff since 4171e496defe touches something that could render — running fresh
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3410       10007        1828        4362       12192
+Mem:           15603        6391        7023        1786        4324        9211
 -- top --
     ELAPSED   RSS COMMAND
-   01:43:57 409996 claude
-      00:55 268440 next-server (v1
-      00:48 170876 node
-      00:47 153120 chrome-headless
+      00:23 2395720 node
+      00:53 1405280 node
+      00:49 161228 node
+      00:54 128740 node
 -- disk --
 /dev/sda1        75G   32G   41G  44% /
