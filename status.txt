@@ -1,4 +1,4 @@
-generated: 2026-09-18 13:00:01 UTC
+generated: 2026-09-18 13:05:01 UTC
 done:   234
 queued: 5
 failed: 0
@@ -13,7 +13,6 @@ b01-225-no1edit-against-sejda.md
 -- failed --
 
 -- log --
-  - navigating to "http://localhost:3000/login", waiting until "load"
        see logs/a02-227-a-check-that-did-not-run-is-not-a-failure.log
 
 ---- a00-229-the-box-is-out-of-memory ----  started 09:41:02
@@ -33,15 +32,16 @@ b01-225-no1edit-against-sejda.md
      [done] 12:48:08   ->  logs/a00-229-the-box-is-out-of-memory.log   (commit + completion marker)
 
 ---- a01-226-one-standard-cost-per-item ----  started 12:48:10
+     .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3356        9864        1834        4567       12247
+Mem:           15603        2962       10254        1835        4571       12640
 -- top --
     ELAPSED   RSS COMMAND
-      08:19 375960 node
-      11:48 360484 claude
-      00:06 173724 node
-      08:19 77316 npm exec vitest
+      02:53 454844 claude
+ 8-06:58:51 51084 systemd-journal
+15-08:10:28 13136 systemd
+ 8-06:58:51  9432 systemd-resolve
 -- disk --
 /dev/sda1        75G   32G   41G  44% /
