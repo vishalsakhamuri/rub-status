@@ -1,22 +1,18 @@
-generated: 2026-09-18 11:30:01 UTC
-done:   232
-queued: 6
-failed: 1
+generated: 2026-09-18 11:35:01 UTC
+done:   234
+queued: 5
+failed: 0
 hold:   0
 
 -- queued --
-a00-229-the-box-is-out-of-memory.md
 a01-226-one-standard-cost-per-item.md
 a03-228-the-proof-scripts-write-into-the-real-books.md
 a04-229-the-ten-prove-scripts-were-never-simultaneous.md
 b00-224-ten-businesses-end-to-end.md
 b01-225-no1edit-against-sejda.md
 -- failed --
-a02-227-a-check-that-did-not-run-is-not-a-failure.md
 
 -- log --
-     . mem: screens step peaked at 5557MB (cgroup MemoryCurrent, sampled every 3s)
-     ! JOURNEYS: 19 of 23 failed — upload and self-sign, invite and sign in, raise an invoice, invoice: three lines survive a submit with no customer chosen, run a No1Edit tool, J2: sign a document myself and take it away, J3: change a document and take it away, J4: the employee folder — nothing typed twice, J2: sign a document myself and take it away — DigiSign-only tenant, J3: change a document and take it away — No1Edit-only tenant, J1: file a document into a folder — tenant with no entity, J2: sign a document myself and take it away — tenant with no entity, J3: change a document and take it away — tenant with no entity, J4: the employee folder — nothing typed twice — tenant with no entity, one document through all four tools, one document through all four tools — hr+digisign tenant, no No1Cloud, one document through all four tools — digisign+cloud tenant, no HR, the offer letter, three doors — default tenant (a08-144 A), invoice → payment → reconcile, end to end — default tenant (a08-144 D) — see docs/journeys-report.md
      . mem: journeys step peaked at 5935MB (cgroup MemoryCurrent, sampled every 3s)
      . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
      . gate: 65 pass, 23 fail, 0 pending
@@ -35,15 +31,17 @@ Call log:
 
 ---- a00-229-the-box-is-out-of-memory ----  started 09:41:02
      . build/screens/journeys: diff since 4171e496defe touches something that could render — running fresh
+     . build clean
+     . mem: build step peaked at 5996MB (cgroup MemoryCurrent, sampled every 3s)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        6391        7023        1786        4324        9211
+Mem:           15603        3326       10087        1830        4369       12277
 -- top --
     ELAPSED   RSS COMMAND
-      00:23 2395720 node
-      00:53 1405280 node
-      00:49 161228 node
-      00:54 128740 node
+      04:31 589788 node
+      00:13 165860 node
+      04:31 78580 npm exec vitest
+ 8-05:28:52 49692 systemd-journal
 -- disk --
 /dev/sda1        75G   32G   41G  44% /
