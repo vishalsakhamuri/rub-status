@@ -1,4 +1,4 @@
-generated: 2026-09-18 08:10:01 UTC
+generated: 2026-09-18 08:15:01 UTC
 done:   232
 queued: 6
 failed: 1
@@ -15,12 +15,6 @@ b01-225-no1edit-against-sejda.md
 a01-226-one-standard-cost-per-item.md
 
 -- log --
-./queue-gate-steps.sh: line 85: 2372263 Killed                     NODE_OPTIONS="--max-old-space-size=${TEST_HEAP_MB}" npx vitest run > "$suite_log" 2>&1
-     ! suite did not produce a result at all — see logs/suite-latest.log
-     . mem: tests step peaked at 3812MB (cgroup MemoryCurrent, sampled every 3s)
-     ! screen audit did not produce a result at all — see logs/screens-latest.log
-     . mem: screens step peaked at 4894MB (cgroup MemoryCurrent, sampled every 3s)
-     ! JOURNEYS: 21 of 23 failed — upload and self-sign, invite and sign in, raise an invoice, invoice: three lines survive a submit with no customer chosen, run a No1Edit tool, J2: sign a document myself and take it away, J3: change a document and take it away, J4: the employee folder — nothing typed twice, file a signed document, by hand, from DigiSign, J1: file a document into a folder — No1Cloud-only tenant, J2: sign a document myself and take it away — DigiSign-only tenant, J3: change a document and take it away — No1Edit-only tenant, J1: file a document into a folder — tenant with no entity, J2: sign a document myself and take it away — tenant with no entity, J3: change a document and take it away — tenant with no entity, J4: the employee folder — nothing typed twice — tenant with no entity, one document through all four tools, one document through all four tools — hr+digisign tenant, no No1Cloud, one document through all four tools — digisign+cloud tenant, no HR, the offer letter, three doors — default tenant (a08-144 A), invoice → payment → reconcile, end to end — default tenant (a08-144 D) — see docs/journeys-report.md
      . mem: journeys step peaked at 5335MB (cgroup MemoryCurrent, sampled every 3s)
      [FAILED] (exit 98) 21:20:12
        moved to tasks/failed/ — the queue carries on
@@ -35,15 +29,21 @@ a01-226-one-standard-cost-per-item.md
 
 ---- a02-227-a-check-that-did-not-run-is-not-a-failure ----  started 04:30:02
      .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
+     . build/screens/journeys: diff since c4c668b57731 touches something that could render — running fresh
+     . build clean
+     . mem: build step peaked at 6063MB (cgroup MemoryCurrent, sampled every 3s)
+     ! orphaned dev server found: pid 2414479, owned by build, age 2h50m, cwd /home/build/runurbusiness (node /usr/bin/pnpm start) — killing it
+     ! orphaned dev server found: pid 2414492, owned by build, age 2h50m, cwd /home/build/runurbusiness (next-server (v16.2.11)) — killing it
+     . orphaned dev server(s) cleaned up before this task starts
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3473       10341        1786        3924       12129
+Mem:           15603        3381       10433        1829        3967       12221
 -- top --
     ELAPSED   RSS COMMAND
-   02:45:58 577644 next-server (v1
-   02:44:18 453040 claude
-   02:45:58 128808 node
- 8-02:03:51 32388 systemd-journal
+      00:50 552908 node
+      00:26 249328 node
+      00:50 77560 npm exec vitest
+ 8-02:08:51 32516 systemd-journal
 -- disk --
 /dev/sda1        75G   31G   42G  43% /
