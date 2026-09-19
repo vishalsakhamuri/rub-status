@@ -1,4 +1,4 @@
-generated: 2026-09-19 01:50:01 UTC
+generated: 2026-09-19 01:55:01 UTC
 done:   236
 queued: 2
 failed: 1
@@ -11,7 +11,6 @@ b01-225-no1edit-against-sejda.md
 a04-229-the-ten-prove-scripts-were-never-simultaneous.md
 
 -- log --
-  - navigating to "http://localhost:3000/login", waiting until "load"
 ; journey "one document through all four tools" failed: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/login
 Call log:
   - navigating to "http://localhost:3000/login", waiting until "load"
@@ -31,15 +30,16 @@ Call log:
        see logs/a04-229-the-ten-prove-scripts-were-never-simultaneous.log
 
 ---- b00-224-ten-businesses-end-to-end ----  started 01:18:46
+     . build/screens/journeys: diff since bd3bf2a96af3 touches something that could render — running fresh
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        5907        5388        1882        6539        9695
+Mem:           15603        9600        2368        1842        5826        6002
 -- top --
     ELAPSED   RSS COMMAND
-      15:42 2392696 next-server (v1
-      31:12 580548 claude
-      11:13 202772 node
-      00:43 170316 chrome-headless
+      20:42 4411140 next-server (v1
+      00:15 2258612 node
+      16:13 211016 node
+      00:10 182056 node
 -- disk --
-/dev/sda1        75G   33G   39G  46% /
+/dev/sda1        75G   34G   39G  47% /
