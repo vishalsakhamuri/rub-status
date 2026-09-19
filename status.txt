@@ -1,20 +1,16 @@
-generated: 2026-09-19 21:55:01 UTC
+generated: 2026-09-19 22:00:01 UTC
 done:   237
 queued: 3
 failed: 1
 hold:   1
 
 -- queued --
-a00-232-the-sweep-kills-what-it-should-protect.md
 b00-224-ten-businesses-end-to-end.md
 c00-230-bank-feeds.md
 -- failed --
 b02-231-two-tools-that-lie-and-a-route-nobody-can-reach.md
 
 -- log --
-     . build clean
-     . mem: build step peaked at 5452MB (cgroup MemoryCurrent, sampled every 3s)
-     . suite green: 3653 tests
      . mem: tests step peaked at 3634MB (cgroup MemoryCurrent, sampled every 3s)
      ! SCREENS: 1 broken, 0 blank, 2 404 of 257 — see docs/screen-audit.md
      . mem: screens step peaked at 5535MB (cgroup MemoryCurrent, sampled every 3s)
@@ -32,15 +28,20 @@ b02-231-two-tools-that-lie-and-a-route-nobody-can-reach.md
        see logs/b02-231-two-tools-that-lie-and-a-route-nobody-can-reach.log
 
 ---- a00-232-the-sweep-kills-what-it-should-protect ----  started 21:37:36
+     . build/screens/journeys: diff since 38c88e69f47d touches something that could render — running fresh
+     . build clean
+     . mem: build step peaked at 5960MB (cgroup MemoryCurrent, sampled every 3s)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        5690        7523        1845        4583        9912
+Mem:           15603        3327        9885        1877        4617       12275
 -- top --
     ELAPSED   RSS COMMAND
-      00:37 1497212 node
-      00:06 1238108 node
-      17:22 419060 claude
-      00:33 158364 node
+      00:43 511324 node
+      00:19 161124 node
+ 9-15:53:51 118068 systemd-journal
+      00:43 78520 npm exec vitest
 -- disk --
+/dev/sda1        75G   34G   39G  47% /
+- disk --
 /dev/sda1        75G   34G   39G  47% /
