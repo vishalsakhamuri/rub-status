@@ -1,4 +1,4 @@
-generated: 2026-09-19 22:40:01 UTC
+generated: 2026-09-19 22:45:01 UTC
 done:   239
 queued: 2
 failed: 0
@@ -10,8 +10,6 @@ c00-230-bank-feeds.md
 -- failed --
 
 -- log --
-     . mem: screens step peaked at 5535MB (cgroup MemoryCurrent, sampled every 3s)
-     ! JOURNEYS: 13 of 18 failed — upload and self-sign, invite and sign in, raise an invoice, invoice: three lines survive a submit with no customer chosen, run a No1Edit tool, J2: sign a document myself and take it away, J3: change a document and take it away, J4: the employee folder — nothing typed twice, J2: sign a document myself and take it away — DigiSign-only tenant, J3: change a document and take it away — No1Edit-only tenant, J2: sign a document myself and take it away — tenant with no entity, J3: change a document and take it away — tenant with no entity, (remaining journeys) — see docs/journeys-report.md
      . mem: journeys step peaked at 5573MB (cgroup MemoryCurrent, sampled every 3s)
      . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
      . gate: 69 pass, 23 fail, 0 pending
@@ -30,15 +28,17 @@ c00-230-bank-feeds.md
      . mem: build step peaked at 5960MB (cgroup MemoryCurrent, sampled every 3s)
      . suite green: 3653 tests
      . mem: tests step peaked at 4332MB (cgroup MemoryCurrent, sampled every 3s)
+     ! SCREENS: 1 broken, 0 blank, 2 404 of 257 — see docs/screen-audit.md
+     . mem: screens step peaked at 5535MB (cgroup MemoryCurrent, sampled every 3s)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        4947        8704        1887        4188       10655
+Mem:           15603        3403       10248        1882        4183       12200
 -- top --
     ELAPSED   RSS COMMAND
-      08:05 1089376 next-server (v1
-      01:29 512440 chrome-headless
-      08:01 405976 chrome-headless
-      08:03 403816 node
+      02:49 412544 next-server (v1
+      00:18 222688 chrome-headless
+      04:13 184524 node
+      02:46 141756 chrome-headless
 -- disk --
 /dev/sda1        75G   33G   39G  46% /
