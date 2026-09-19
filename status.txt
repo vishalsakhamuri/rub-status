@@ -1,44 +1,45 @@
-generated: 2026-09-19 01:15:01 UTC
-done:   237
+generated: 2026-09-19 01:20:01 UTC
+done:   236
 queued: 2
-failed: 0
+failed: 1
 hold:   0
 
 -- queued --
 b00-224-ten-businesses-end-to-end.md
 b01-225-no1edit-against-sejda.md
 -- failed --
+a04-229-the-ten-prove-scripts-were-never-simultaneous.md
 
 -- log --
-     . mem: screens step peaked at 6649MB (cgroup MemoryCurrent, sampled every 3s)
-     ! JOURNEYS: 19 of 23 failed — upload and self-sign, invite and sign in, raise an invoice, invoice: three lines survive a submit with no customer chosen, run a No1Edit tool, J2: sign a document myself and take it away, J3: change a document and take it away, J4: the employee folder — nothing typed twice, J2: sign a document myself and take it away — DigiSign-only tenant, J3: change a document and take it away — No1Edit-only tenant, J1: file a document into a folder — tenant with no entity, J2: sign a document myself and take it away — tenant with no entity, J3: change a document and take it away — tenant with no entity, J4: the employee folder — nothing typed twice — tenant with no entity, one document through all four tools, one document through all four tools — hr+digisign tenant, no No1Cloud, one document through all four tools — digisign+cloud tenant, no HR, the offer letter, three doors — default tenant (a08-144 A), invoice → payment → reconcile, end to end — default tenant (a08-144 D) — see docs/journeys-report.md
-     . mem: journeys step peaked at 6838MB (cgroup MemoryCurrent, sampled every 3s)
-     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
-     . gate: 66 pass, 24 fail, 0 pending
-     . gate clean — see docs/gate-report.md
-     . mem: gate step peaked at 5594MB (cgroup MemoryCurrent, sampled every 3s)
-     [done] 20:09:41   ->  logs/a01-226-one-standard-cost-per-item.log   (commit + completion marker)
+  - navigating to "http://localhost:3000/login", waiting until "load"
+; journey "one document through all four tools" failed: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/login
+Call log:
+  - navigating to "http://localhost:3000/login", waiting until "load"
+; journey "one document through all four tools — hr+digisign tenant, no No1Cloud" failed: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/login
+Call log:
+  - navigating to "http://localhost:3000/login", waiting until "load"
+; journey "one document through all four tools — digisign+cloud tenant, no HR" failed: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/login
+Call log:
+  - navigating to "http://localhost:3000/login", waiting until "load"
+; journey "the offer letter, three doors — default tenant (a08-144 A)" failed: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/login
+Call log:
+  - navigating to "http://localhost:3000/login", waiting until "load"
+; journey "invoice → payment → reconcile, end to end — default tenant (a08-144 D)" failed: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/login
+Call log:
+  - navigating to "http://localhost:3000/login", waiting until "load"
+; 79 screen(s) flagged for density, up from 14 on the last green run: /account/suspended, /accounting/packets/[packet], /accounting/packets/build/[statement], /accounts, /assets/[id], /assets/holders, /assets/locations, /assets — see docs/screen-density.md
+       see logs/a04-229-the-ten-prove-scripts-were-never-simultaneous.log
 
----- a04-229-the-ten-prove-scripts-were-never-simultaneous ----  started 20:09:43
-     . build/screens/journeys: diff since fab8783caa75 touches something that could render — running fresh
-     . build clean
-     . mem: build step peaked at 7183MB (cgroup MemoryCurrent, sampled every 3s)
-     . suite green: 3592 tests
-     . mem: tests step peaked at 5048MB (cgroup MemoryCurrent, sampled every 3s)
-     ! SCREENS: 1 broken, 0 blank, 2 404 of 257 — see docs/screen-audit.md
-     . mem: screens step peaked at 7301MB (cgroup MemoryCurrent, sampled every 3s)
-     ! JOURNEYS: 19 of 23 failed — upload and self-sign, invite and sign in, raise an invoice, invoice: three lines survive a submit with no customer chosen, run a No1Edit tool, J2: sign a document myself and take it away, J3: change a document and take it away, J4: the employee folder — nothing typed twice, J2: sign a document myself and take it away — DigiSign-only tenant, J3: change a document and take it away — No1Edit-only tenant, J1: file a document into a folder — tenant with no entity, J2: sign a document myself and take it away — tenant with no entity, J3: change a document and take it away — tenant with no entity, J4: the employee folder — nothing typed twice — tenant with no entity, one document through all four tools, one document through all four tools — hr+digisign tenant, no No1Cloud, one document through all four tools — digisign+cloud tenant, no HR, the offer letter, three doors — default tenant (a08-144 A), invoice → payment → reconcile, end to end — default tenant (a08-144 D) — see docs/journeys-report.md
-     . mem: journeys step peaked at 7119MB (cgroup MemoryCurrent, sampled every 3s)
-     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
+---- b00-224-ten-businesses-end-to-end ----  started 01:18:46
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3197        8899        1846        5702       12405
+Mem:           15603        2843        9253        1846        5703       12760
 -- top --
     ELAPSED   RSS COMMAND
-      44:45 502444 next-server (v1
-      44:46 129252 node
-      44:43 95428 node
-      44:43 76236 npm exec tsx --
+      01:12 323368 claude
+ 8-19:13:51 75572 systemd-journal
+15-20:25:28 13160 systemd
+      00:01 11700 sshd-session
 -- disk --
 /dev/sda1        75G   33G   40G  45% /
