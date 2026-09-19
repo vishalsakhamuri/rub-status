@@ -1,4 +1,4 @@
-generated: 2026-09-19 20:15:01 UTC
+generated: 2026-09-19 20:20:01 UTC
 done:   238
 queued: 3
 failed: 0
@@ -11,8 +11,6 @@ c00-230-bank-feeds.md
 -- failed --
 
 -- log --
-     . build/screens/journeys: diff since 1914af131ef6 touches something that could render — running fresh
-     ! BUILD BROKEN — see logs/build-latest.log
      . mem: build step peaked at 10243MB (cgroup MemoryCurrent, sampled every 3s)
      . suite green: 3651 tests
      . mem: tests step peaked at 3311MB (cgroup MemoryCurrent, sampled every 3s)
@@ -31,15 +29,17 @@ c00-230-bank-feeds.md
      . mem: build step peaked at 5452MB (cgroup MemoryCurrent, sampled every 3s)
      . suite green: 3653 tests
      . mem: tests step peaked at 3634MB (cgroup MemoryCurrent, sampled every 3s)
+     ! SCREENS: 1 broken, 0 blank, 2 404 of 257 — see docs/screen-audit.md
+     . mem: screens step peaked at 5535MB (cgroup MemoryCurrent, sampled every 3s)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        4611        9257        1878        3962       10991
+Mem:           15603        3325       10544        1892        3976       12278
 -- top --
     ELAPSED   RSS COMMAND
-      05:48 1122836 next-server (v1
-      05:44 475012 chrome-headless
-      05:46 379740 node
-      05:44 144156 chrome-headless
+      00:42 328804 next-server (v1
+      00:32 217136 chrome-headless
+      02:10 189592 node
+      00:40 140512 chrome-headless
 -- disk --
 /dev/sda1        75G   33G   40G  46% /
