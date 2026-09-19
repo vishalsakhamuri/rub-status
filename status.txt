@@ -1,4 +1,4 @@
-generated: 2026-09-19 03:50:01 UTC
+generated: 2026-09-19 03:55:01 UTC
 done:   237
 queued: 1
 failed: 1
@@ -10,7 +10,6 @@ b01-225-no1edit-against-sejda.md
 b00-224-ten-businesses-end-to-end.md
 
 -- log --
-     ! orphaned dev server found: pid 2691407, owned by build, age 21m, cwd /home/build/runurbusiness (node /home/build/runurbusiness/node_modules/.bin/../.pnpm/next@16.2.11_@babel+core@7.29.7_supports-color@7.2.0__react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/bin/next dev) — killing it
      ! orphaned dev server found: pid 2691424, owned by build, age 21m, cwd /home/build/runurbusiness (next-server (v16.2.11)) — killing it
      . orphaned dev server(s) cleaned up before this task starts
      . suite green: 3592 tests
@@ -30,15 +29,16 @@ b00-224-ten-businesses-end-to-end.md
        see logs/b00-224-ten-businesses-end-to-end.log
 
 ---- b01-225-no1edit-against-sejda ----  started 03:25:39
+     .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3547       10171        1930        4164       12055
+Mem:           15603        3898        9819        1935        4169       11704
 -- top --
     ELAPSED   RSS COMMAND
-      24:20 430732 claude
-      00:46 343220 node
-      00:22 251612 node
- 8-21:43:52 82676 systemd-journal
+      00:03 754672 node
+      00:56 314484 claude
+      00:04 161228 node
+      00:04 85384 npm exec vitest
 -- disk --
 /dev/sda1        75G   33G   40G  46% /
