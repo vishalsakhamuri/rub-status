@@ -1,4 +1,4 @@
-generated: 2026-09-19 05:40:01 UTC
+generated: 2026-09-19 05:45:01 UTC
 done:   237
 queued: 1
 failed: 1
@@ -10,7 +10,6 @@ b00-224-ten-businesses-end-to-end.md
 b01-225-no1edit-against-sejda.md
 
 -- log --
-     . mem: build step peaked at 5878MB (cgroup MemoryCurrent, sampled every 3s)
      . suite green: 3651 tests
      . mem: tests step peaked at 4340MB (cgroup MemoryCurrent, sampled every 3s)
      ! screen audit did not produce a result at all — see logs/screens-latest.log
@@ -30,15 +29,16 @@ b01-225-no1edit-against-sejda.md
        see logs/b01-225-no1edit-against-sejda.log
 
 ---- b00-224-ten-businesses-end-to-end ----  started 05:24:03
+     .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        9768        3500        1936        4620        5834
+Mem:           15603        8999        4573        1935        4315        6603
 -- top --
     ELAPSED   RSS COMMAND
-      12:12 6055980 next-server (v1
-      15:56 540008 claude
-      12:10 213608 node
-      00:01 184196 node
+      17:12 6000916 next-server (v1
+      04:13 345044 claude
+      17:10 213788 node
+      17:13 128096 node
 -- disk --
 /dev/sda1        75G   36G   37G  50% /
