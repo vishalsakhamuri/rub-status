@@ -1,4 +1,4 @@
-generated: 2026-09-19 15:25:02 UTC
+generated: 2026-09-19 15:30:01 UTC
 done:   237
 queued: 3
 failed: 0
@@ -11,8 +11,6 @@ c00-230-bank-feeds.md
 -- failed --
 
 -- log --
-     . suite green: 3651 tests
-     . mem: tests step peaked at 4340MB (cgroup MemoryCurrent, sampled every 3s)
      ! screen audit did not produce a result at all — see logs/screens-latest.log
      . mem: screens step peaked at 6013MB (cgroup MemoryCurrent, sampled every 3s)
      ! journeys did not produce a result at all — see logs/journeys-latest.log
@@ -31,15 +29,17 @@ c00-230-bank-feeds.md
 
 ---- b00-224-ten-businesses-end-to-end ----  started 05:24:03
      .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
+     ! exited clean but produced nothing verifiable — attempt 2 of 2 — no commit and no completion marker
+     . build/screens/journeys: diff since 1914af131ef6 touches something that could render — running fresh
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603       12807        2362        1898        2682        2796
+Mem:           15603       12821        2345        1865        2650        2782
 -- top --
     ELAPSED   RSS COMMAND
-   09:57:12 9293172 next-server (v1
-   09:44:13 478336 claude
-   01:19:56 113004 chrome-headless
- 9-09:18:52 111396 systemd-journal
+   10:02:12 9266940 next-server (v1
+      03:11 769384 node
+ 9-09:23:52 111528 systemd-journal
+   10:02:10 104428 node
 -- disk --
-/dev/sda1        75G   40G   33G  56% /
+/dev/sda1        75G   40G   33G  55% /
