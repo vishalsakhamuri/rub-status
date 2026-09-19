@@ -1,7 +1,7 @@
-generated: 2026-09-19 21:35:01 UTC
-done:   238
+generated: 2026-09-19 21:40:01 UTC
+done:   237
 queued: 3
-failed: 0
+failed: 1
 hold:   1
 
 -- queued --
@@ -9,19 +9,9 @@ a00-232-the-sweep-kills-what-it-should-protect.md
 b00-224-ten-businesses-end-to-end.md
 c00-230-bank-feeds.md
 -- failed --
+b02-231-two-tools-that-lie-and-a-route-nobody-can-reach.md
 
 -- log --
-     ! screen audit did not produce a result at all — see logs/screens-latest.log
-     . mem: screens step peaked at 4684MB (cgroup MemoryCurrent, sampled every 3s)
-     ! journeys did not produce a result at all — see logs/journeys-latest.log
-     . mem: journeys step peaked at 5002MB (cgroup MemoryCurrent, sampled every 3s)
-     [FAILED] (exit 98) 16:09:00
-       moved to tasks/failed/ — the queue carries on
-       reason: attempt 2 of 2 — no commit and no completion marker
-       see logs/b00-224-ten-businesses-end-to-end.log
-
----- b02-231-two-tools-that-lie-and-a-route-nobody-can-reach ----  started 16:09:02
-     . build/screens/journeys: diff since 36aadeacafba touches something that could render — running fresh
      . build clean
      . mem: build step peaked at 5452MB (cgroup MemoryCurrent, sampled every 3s)
      . suite green: 3653 tests
@@ -31,15 +21,26 @@ c00-230-bank-feeds.md
      ! JOURNEYS: 13 of 18 failed — upload and self-sign, invite and sign in, raise an invoice, invoice: three lines survive a submit with no customer chosen, run a No1Edit tool, J2: sign a document myself and take it away, J3: change a document and take it away, J4: the employee folder — nothing typed twice, J2: sign a document myself and take it away — DigiSign-only tenant, J3: change a document and take it away — No1Edit-only tenant, J2: sign a document myself and take it away — tenant with no entity, J3: change a document and take it away — tenant with no entity, (remaining journeys) — see docs/journeys-report.md
      . mem: journeys step peaked at 5573MB (cgroup MemoryCurrent, sampled every 3s)
      . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
+     . gate: 69 pass, 23 fail, 0 pending
+     ! GATE FAILED: 2 screen(s) 404: /no1cloud/training/courses/[id], /projects/people/[userId]; 1 screen(s) 404: /projects/people/[userId]; 24 screen(s) missing an empty state that teaches; scripts/prove-translated.ts failed (c00-213 is marked done):       "a   or a Word file"  — …a PDF or a Word file… /  / TRANSLATED: 2215 known, 26 new /  / [31m1 screen(s) failed[0m; scripts/prove-the-gate.ts failed (h000-124 is marked done):   [32m✓[0m second cold start: prove-no1cloud.ts passed again — round 2: passed /  / ────────────────────────────────────────────────────────────────────────────── /  / [31m2 check(s) failed[0m; scripts/prove-home.ts failed (u22-106 is marked done): [1m9. Reset restores the default layout[0m /   [32m✓[0m the layout was actually saved /   [32m✓[0m reset clears hidden cards and the stored order in one action /  / [31m1 check(s) failed.[0m; scripts/prove-scroll-containment.ts failed (h00f-119 is marked done):         25,   25,    25,    25,   25, 2950, /       2950, 3802, 27356,  1082, 1700,   25 /     ] /   } / }; scripts/prove-form-preservation.ts failed (a01-211 is marked done):   [32m✓[0m Item stock count: the badge request actually resolved during this check /   [32m✓[0m Item stock count: field holds exactly the typed string after the badge counters loaded — typed then before="QA-Preserve-2026aZ9x", after="QA-Preserve-2026aZ9x" /   [31m✗[0m Asset "Assign" panel — location: field found on the page — selector #holderLocation never appeared /  / [31mFAIL (1)[0m — prove-form-preservation; 79 screen(s) flagged for density, up from 14 on the last green run: /account/suspended, /accounting/packets/[packet], /accounting/packets/build/[statement], /accounts, /assets/[id], /assets/holders, /assets/locations, /assets — see docs/screen-density.md
+     . mem: gate step peaked at 4419MB (cgroup MemoryCurrent, sampled every 3s)
+     ! GATE FAILED, caused by this task
+     ! task had self-moved to tasks/done/ — moved back to tasks/failed/, the gate said otherwise
+     [FAILED] (exit 97) 21:37:34
+       moved to tasks/failed/ — the queue carries on
+       reason: completion marker + commit present, but the gate failed: 2 screen(s) 404: /no1cloud/training/courses/[id], /projects/people/[userId]; 1 screen(s) 404: /projects/people/[userId]; 24 screen(s) missing an empty state that teaches; scripts/prove-translated.ts failed (c00-213 is marked done):       "a   or a Word file"  — …a PDF or a Word file… /  / TRANSLATED: 2215 known, 26 new /  / [31m1 screen(s) failed[0m; scripts/prove-the-gate.ts failed (h000-124 is marked done):   [32m✓[0m second cold start: prove-no1cloud.ts passed again — round 2: passed /  / ────────────────────────────────────────────────────────────────────────────── /  / [31m2 check(s) failed[0m; scripts/prove-home.ts failed (u22-106 is marked done): [1m9. Reset restores the default layout[0m /   [32m✓[0m the layout was actually saved /   [32m✓[0m reset clears hidden cards and the stored order in one action /  / [31m1 check(s) failed.[0m; scripts/prove-scroll-containment.ts failed (h00f-119 is marked done):         25,   25,    25,    25,   25, 2950, /       2950, 3802, 27356,  1082, 1700,   25 /     ] /   } / }; scripts/prove-form-preservation.ts failed (a01-211 is marked done):   [32m✓[0m Item stock count: the badge request actually resolved during this check /   [32m✓[0m Item stock count: field holds exactly the typed string after the badge counters loaded — typed then before="QA-Preserve-2026aZ9x", after="QA-Preserve-2026aZ9x" /   [31m✗[0m Asset "Assign" panel — location: field found on the page — selector #holderLocation never appeared /  / [31mFAIL (1)[0m — prove-form-preservation; 79 screen(s) flagged for density, up from 14 on the last green run: /account/suspended, /accounting/packets/[packet], /accounting/packets/build/[statement], /accounts, /assets/[id], /assets/holders, /assets/locations, /assets — see docs/screen-density.md
+       see logs/b02-231-two-tools-that-lie-and-a-route-nobody-can-reach.log
+
+---- a00-232-the-sweep-kills-what-it-should-protect ----  started 21:37:36
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3222       10503        1845        4071       12380
+Mem:           15603        2851       10866        1845        4080       12752
 -- top --
     ELAPSED   RSS COMMAND
-   01:05:01 525992 next-server (v1
-   01:05:02 129748 node
- 9-15:28:52 117076 systemd-journal
-   01:04:59 99728 node
+      02:22 325416 claude
+ 9-15:33:52 117228 systemd-journal
+16-16:45:29 13160 systemd
+      00:00 11736 sshd-session
 -- disk --
 /dev/sda1        75G   33G   39G  46% /
