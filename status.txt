@@ -1,25 +1,15 @@
-generated: 2026-09-19 03:25:01 UTC
+generated: 2026-09-19 03:30:01 UTC
 done:   237
-queued: 2
-failed: 0
+queued: 1
+failed: 1
 hold:   0
 
 -- queued --
-b00-224-ten-businesses-end-to-end.md
 b01-225-no1edit-against-sejda.md
 -- failed --
+b00-224-ten-businesses-end-to-end.md
 
 -- log --
-Call log:
-  - navigating to "http://localhost:3000/login", waiting until "load"
-; 79 screen(s) flagged for density, up from 14 on the last green run: /account/suspended, /accounting/packets/[packet], /accounting/packets/build/[statement], /accounts, /assets/[id], /assets/holders, /assets/locations, /assets — see docs/screen-density.md
-       see logs/a04-229-the-ten-prove-scripts-were-never-simultaneous.log
-
----- b00-224-ten-businesses-end-to-end ----  started 01:18:46
-     . build/screens/journeys: diff since bd3bf2a96af3 touches something that could render — running fresh
-     . build clean
-     . mem: build step peaked at 10239MB (cgroup MemoryCurrent, sampled every 3s)
-     ! orphaned dev server found: pid 2691406, owned by build, age 21m, cwd /home/build/runurbusiness (sh -c next dev) — killing it
      ! orphaned dev server found: pid 2691407, owned by build, age 21m, cwd /home/build/runurbusiness (node /home/build/runurbusiness/node_modules/.bin/../.pnpm/next@16.2.11_@babel+core@7.29.7_supports-color@7.2.0__react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/bin/next dev) — killing it
      ! orphaned dev server found: pid 2691424, owned by build, age 21m, cwd /home/build/runurbusiness (next-server (v16.2.11)) — killing it
      . orphaned dev server(s) cleaned up before this task starts
@@ -30,15 +20,25 @@ Call log:
      ! JOURNEYS: 19 of 23 failed — upload and self-sign, invite and sign in, raise an invoice, invoice: three lines survive a submit with no customer chosen, run a No1Edit tool, J2: sign a document myself and take it away, J3: change a document and take it away, J4: the employee folder — nothing typed twice, J2: sign a document myself and take it away — DigiSign-only tenant, J3: change a document and take it away — No1Edit-only tenant, J1: file a document into a folder — tenant with no entity, J2: sign a document myself and take it away — tenant with no entity, J3: change a document and take it away — tenant with no entity, J4: the employee folder — nothing typed twice — tenant with no entity, one document through all four tools, one document through all four tools — hr+digisign tenant, no No1Cloud, one document through all four tools — digisign+cloud tenant, no HR, the offer letter, three doors — default tenant (a08-144 A), invoice → payment → reconcile, end to end — default tenant (a08-144 D) — see docs/journeys-report.md
      . mem: journeys step peaked at 5452MB (cgroup MemoryCurrent, sampled every 3s)
      . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
+     . gate: 70 pass, 26 fail, 0 pending
+     ! GATE FAILED: 17 screen(s) flagged for density, up from 14 on the last green run: /account/suspended, /accounting/packets/[packet], /accounting/packets/build/[statement], /accounts, /assets/[id], /assets/holders, /assets/locations, /assets — see docs/screen-density.md
+     . mem: gate step peaked at 4320MB (cgroup MemoryCurrent, sampled every 3s)
+     ! GATE FAILED, caused by this task
+     [FAILED] (exit 97) 03:25:37
+       moved to tasks/failed/ — the queue carries on
+       reason: completion marker + commit present, but the gate failed: 17 screen(s) flagged for density, up from 14 on the last green run: /account/suspended, /accounting/packets/[packet], /accounting/packets/build/[statement], /accounts, /assets/[id], /assets/holders, /assets/locations, /assets — see docs/screen-density.md
+       see logs/b00-224-ten-businesses-end-to-end.log
+
+---- b01-225-no1edit-against-sejda ----  started 03:25:39
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3187       10642        1843        3966       12415
+Mem:           15603        2905       10912        1843        3978       12697
 -- top --
     ELAPSED   RSS COMMAND
-      44:39 495120 next-server (v1
-      44:39 129384 node
-      44:37 95148 node
- 8-21:18:51 81232 systemd-journal
+      04:19 380136 claude
+ 8-21:23:51 81976 systemd-journal
+15-22:35:28 13160 systemd
+      00:05 11588 sshd-session
 -- disk --
 /dev/sda1        75G   33G   40G  46% /
