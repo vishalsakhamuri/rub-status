@@ -1,28 +1,16 @@
-generated: 2026-09-19 16:05:01 UTC
+generated: 2026-09-19 16:10:01 UTC
 done:   237
-queued: 3
-failed: 0
+queued: 2
+failed: 1
 hold:   1
 
 -- queued --
-b00-224-ten-businesses-end-to-end.md
 b02-231-two-tools-that-lie-and-a-route-nobody-can-reach.md
 c00-230-bank-feeds.md
 -- failed --
+b00-224-ten-businesses-end-to-end.md
 
 -- log --
-     ! journeys did not produce a result at all — see logs/journeys-latest.log
-     . mem: journeys step peaked at 6086MB (cgroup MemoryCurrent, sampled every 3s)
-     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
-     . gate: no production build on disk yet — building one
-     . gate: 76 pass, 2 fail, 0 pending
-     ! GATE FAILED: the gate's own readiness check could not reach the app (BASE_URL/login never answered) — the entire prove-* register was left unrun this pass; an unrun check is not a passed check; pnpm run build failed
-     . mem: gate step peaked at 5887MB (cgroup MemoryCurrent, sampled every 3s)
-     ! GATE FAILED, caused by this task
-     ! task had self-moved to tasks/done/ — moved back to tasks/failed/, the gate said otherwise
-     [FAILED] (exit 97) 05:24:01
-       moved to tasks/failed/ — the queue carries on
-       reason: completion marker + commit present, but the gate failed: the gate's own readiness check could not reach the app (BASE_URL/login never answered) — the entire prove-* register was left unrun this pass; an unrun check is not a passed check; pnpm run build failed
        see logs/b01-225-no1edit-against-sejda.log
 
 ---- b00-224-ten-businesses-end-to-end ----  started 05:24:03
@@ -31,15 +19,27 @@ c00-230-bank-feeds.md
      . build/screens/journeys: diff since 1914af131ef6 touches something that could render — running fresh
      ! BUILD BROKEN — see logs/build-latest.log
      . mem: build step peaked at 10243MB (cgroup MemoryCurrent, sampled every 3s)
+     . suite green: 3651 tests
+     . mem: tests step peaked at 3311MB (cgroup MemoryCurrent, sampled every 3s)
+     ! screen audit did not produce a result at all — see logs/screens-latest.log
+     . mem: screens step peaked at 4684MB (cgroup MemoryCurrent, sampled every 3s)
+     ! journeys did not produce a result at all — see logs/journeys-latest.log
+     . mem: journeys step peaked at 5002MB (cgroup MemoryCurrent, sampled every 3s)
+     [FAILED] (exit 98) 16:09:00
+       moved to tasks/failed/ — the queue carries on
+       reason: attempt 2 of 2 — no commit and no completion marker
+       see logs/b00-224-ten-businesses-end-to-end.log
+
+---- b02-231-two-tools-that-lie-and-a-route-nobody-can-reach ----  started 16:09:02
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3451       11099        1894        3296       12152
+Mem:           15603        2838       11335        1837        3616       12765
 -- top --
     ELAPSED   RSS COMMAND
-      30:40 645800 node
-      00:04 203760 node
- 9-09:58:51 102140 systemd-journal
-      30:40 77072 npm exec vitest
+      00:56 324032 claude
+ 9-10:03:51 103372 systemd-journal
+16-11:15:29 13160 systemd
+ 9-10:03:51  9432 systemd-resolve
 -- disk --
-/dev/sda1        75G   40G   33G  56% /
+/dev/sda1        75G   33G   40G  46% /
