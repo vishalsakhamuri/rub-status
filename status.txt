@@ -1,14 +1,13 @@
-generated: 2026-09-19 02:00:01 UTC
-done:   236
+generated: 2026-09-19 02:05:01 UTC
+done:   237
 queued: 2
-failed: 1
+failed: 0
 hold:   0
 
 -- queued --
 b00-224-ten-businesses-end-to-end.md
 b01-225-no1edit-against-sejda.md
 -- failed --
-a04-229-the-ten-prove-scripts-were-never-simultaneous.md
 
 -- log --
 ; journey "one document through all four tools — digisign+cloud tenant, no HR" failed: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/login
@@ -34,12 +33,12 @@ Call log:
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3395       10295        1889        4152       12208
+Mem:           15603        3397       10293        1892        4154       12206
 -- top --
     ELAPSED   RSS COMMAND
-      03:51 647588 node
-      00:19 142764 node
-      03:51 77284 npm exec vitest
- 8-19:53:52 74364 systemd-journal
+      08:51 625052 node
+      00:10 167112 node
+      08:51 77284 npm exec vitest
+ 8-19:58:52 74620 systemd-journal
 -- disk --
 /dev/sda1        75G   34G   38G  48% /
