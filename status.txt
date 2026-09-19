@@ -1,4 +1,4 @@
-generated: 2026-09-19 02:30:01 UTC
+generated: 2026-09-19 02:35:01 UTC
 done:   237
 queued: 2
 failed: 0
@@ -10,8 +10,6 @@ b01-225-no1edit-against-sejda.md
 -- failed --
 
 -- log --
-  - navigating to "http://localhost:3000/login", waiting until "load"
-; journey "the offer letter, three doors — default tenant (a08-144 A)" failed: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/login
 Call log:
   - navigating to "http://localhost:3000/login", waiting until "load"
 ; journey "invoice → payment → reconcile, end to end — default tenant (a08-144 D)" failed: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/login
@@ -30,15 +28,17 @@ Call log:
      . orphaned dev server(s) cleaned up before this task starts
      . suite green: 3592 tests
      . mem: tests step peaked at 3430MB (cgroup MemoryCurrent, sampled every 3s)
+     ! SCREENS: 182 broken, 0 blank, 0 404 of 257 — see docs/screen-audit.md
+     . mem: screens step peaked at 5089MB (cgroup MemoryCurrent, sampled every 3s)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        4078        9890        1872        3856       11524
+Mem:           15603        3405       10562        1885        3869       12197
 -- top --
     ELAPSED   RSS COMMAND
-      01:33 872168 next-server (v1
-      01:29 343484 chrome-headless
-      01:31 225092 node
-      01:29 142804 chrome-headless
+      02:38 402280 next-server (v1
+      00:08 230728 chrome-headless
+      04:03 181228 node
+      02:36 142016 chrome-headless
 -- disk --
 /dev/sda1        75G   33G   40G  45% /
