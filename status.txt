@@ -1,4 +1,4 @@
-generated: 2026-09-19 19:35:01 UTC
+generated: 2026-09-19 19:40:01 UTC
 done:   237
 queued: 4
 failed: 0
@@ -12,9 +12,6 @@ c00-230-bank-feeds.md
 -- failed --
 
 -- log --
-       see logs/b01-225-no1edit-against-sejda.log
-
----- b00-224-ten-businesses-end-to-end ----  started 05:24:03
      .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
      ! exited clean but produced nothing verifiable — attempt 2 of 2 — no commit and no completion marker
      . build/screens/journeys: diff since 1914af131ef6 touches something that could render — running fresh
@@ -32,15 +29,18 @@ c00-230-bank-feeds.md
        see logs/b00-224-ten-businesses-end-to-end.log
 
 ---- b02-231-two-tools-that-lie-and-a-route-nobody-can-reach ----  started 16:09:02
+     . build/screens/journeys: diff since 36aadeacafba touches something that could render — running fresh
+     . build clean
+     . mem: build step peaked at 5452MB (cgroup MemoryCurrent, sampled every 3s)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3168       10702        1845        3927       12434
+Mem:           15603        3308       10561        1888        3971       12294
 -- top --
     ELAPSED   RSS COMMAND
-   03:25:56 636076 claude
- 9-13:28:51 110844 systemd-journal
-16-14:40:29 13160 systemd
- 9-13:28:51  9432 systemd-resolve
+      02:49 569040 node
+      01:10 131784 node
+ 9-13:33:51 110876 systemd-journal
+      02:49 78392 npm exec vitest
 -- disk --
 /dev/sda1        75G   33G   40G  46% /
