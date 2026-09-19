@@ -1,4 +1,4 @@
-generated: 2026-09-19 22:30:01 UTC
+generated: 2026-09-19 22:35:01 UTC
 done:   239
 queued: 2
 failed: 0
@@ -10,8 +10,6 @@ c00-230-bank-feeds.md
 -- failed --
 
 -- log --
-     . mem: tests step peaked at 3634MB (cgroup MemoryCurrent, sampled every 3s)
-     ! SCREENS: 1 broken, 0 blank, 2 404 of 257 — see docs/screen-audit.md
      . mem: screens step peaked at 5535MB (cgroup MemoryCurrent, sampled every 3s)
      ! JOURNEYS: 13 of 18 failed — upload and self-sign, invite and sign in, raise an invoice, invoice: three lines survive a submit with no customer chosen, run a No1Edit tool, J2: sign a document myself and take it away, J3: change a document and take it away, J4: the employee folder — nothing typed twice, J2: sign a document myself and take it away — DigiSign-only tenant, J3: change a document and take it away — No1Edit-only tenant, J2: sign a document myself and take it away — tenant with no entity, J3: change a document and take it away — tenant with no entity, (remaining journeys) — see docs/journeys-report.md
      . mem: journeys step peaked at 5573MB (cgroup MemoryCurrent, sampled every 3s)
@@ -30,15 +28,17 @@ c00-230-bank-feeds.md
      . build/screens/journeys: diff since 38c88e69f47d touches something that could render — running fresh
      . build clean
      . mem: build step peaked at 5960MB (cgroup MemoryCurrent, sampled every 3s)
+     . suite green: 3653 tests
+     . mem: tests step peaked at 4332MB (cgroup MemoryCurrent, sampled every 3s)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3489        9721        1905        4647       12113
+Mem:           15603        4294        9357        1874        4175       11308
 -- top --
     ELAPSED   RSS COMMAND
-      30:43 657236 node
-      00:03 202752 node
- 9-16:23:52 118692 systemd-journal
-      30:43 78520 npm exec vitest
+      03:05 959736 next-server (v1
+      03:01 460628 chrome-headless
+      03:03 242064 node
+      03:01 144288 chrome-headless
 -- disk --
-/dev/sda1        75G   34G   39G  47% /
+/dev/sda1        75G   33G   39G  46% /
