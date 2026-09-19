@@ -1,4 +1,4 @@
-generated: 2026-09-19 00:10:01 UTC
+generated: 2026-09-19 00:15:01 UTC
 done:   237
 queued: 2
 failed: 0
@@ -10,8 +10,6 @@ b01-225-no1edit-against-sejda.md
 -- failed --
 
 -- log --
----- a01-226-one-standard-cost-per-item ----  started 17:24:47
-     . build/screens/journeys: diff since a5e7ad14d90f touches something that could render — running fresh
      . build clean
      . mem: build step peaked at 6592MB (cgroup MemoryCurrent, sampled every 3s)
      . suite green: 3592 tests
@@ -30,15 +28,17 @@ b01-225-no1edit-against-sejda.md
      . build/screens/journeys: diff since fab8783caa75 touches something that could render — running fresh
      . build clean
      . mem: build step peaked at 7183MB (cgroup MemoryCurrent, sampled every 3s)
+     . suite green: 3592 tests
+     . mem: tests step peaked at 5048MB (cgroup MemoryCurrent, sampled every 3s)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3429        8808        1906        5622       12174
+Mem:           15603        4100        8136        1875        5591       11502
 -- top --
     ELAPSED   RSS COMMAND
-      30:39 644340 node
-      00:02 146032 node
-      30:39 78132 npm exec vitest
- 8-18:03:51 74896 systemd-journal
+      03:11 814976 next-server (v1
+      03:07 371536 chrome-headless
+      03:09 272508 node
+      03:07 143808 chrome-headless
 -- disk --
 /dev/sda1        75G   32G   40G  45% /
