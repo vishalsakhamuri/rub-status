@@ -1,4 +1,4 @@
-generated: 2026-09-19 00:20:01 UTC
+generated: 2026-09-19 00:25:01 UTC
 done:   237
 queued: 2
 failed: 0
@@ -10,8 +10,6 @@ b01-225-no1edit-against-sejda.md
 -- failed --
 
 -- log --
-     . build clean
-     . mem: build step peaked at 6592MB (cgroup MemoryCurrent, sampled every 3s)
      . suite green: 3592 tests
      . mem: tests step peaked at 4379MB (cgroup MemoryCurrent, sampled every 3s)
      ! SCREENS: 187 broken, 0 blank, 0 404 of 257 — see docs/screen-audit.md
@@ -30,15 +28,17 @@ b01-225-no1edit-against-sejda.md
      . mem: build step peaked at 7183MB (cgroup MemoryCurrent, sampled every 3s)
      . suite green: 3592 tests
      . mem: tests step peaked at 5048MB (cgroup MemoryCurrent, sampled every 3s)
+     ! SCREENS: 1 broken, 0 blank, 2 404 of 257 — see docs/screen-audit.md
+     . mem: screens step peaked at 7301MB (cgroup MemoryCurrent, sampled every 3s)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        5756        6480        1890        5606        9847
+Mem:           15603        3386        8850        1884        5601       12216
 -- top --
     ELAPSED   RSS COMMAND
-      01:34 1204192 chrome-headless
-      08:11 1186912 next-server (v1
-      08:07 422348 chrome-headless
-      08:09 412184 node
+      02:48 397132 next-server (v1
+      00:16 224524 chrome-headless
+      04:15 194592 node
+      02:46 141020 chrome-headless
 -- disk --
 /dev/sda1        75G   32G   40G  45% /
