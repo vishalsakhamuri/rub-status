@@ -1,4 +1,4 @@
-generated: 2026-09-19 22:50:01 UTC
+generated: 2026-09-19 22:55:01 UTC
 done:   239
 queued: 2
 failed: 0
@@ -10,9 +10,6 @@ c00-230-bank-feeds.md
 -- failed --
 
 -- log --
-     . mem: journeys step peaked at 5573MB (cgroup MemoryCurrent, sampled every 3s)
-     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
-     . gate: 69 pass, 23 fail, 0 pending
      ! GATE FAILED: 2 screen(s) 404: /no1cloud/training/courses/[id], /projects/people/[userId]; 1 screen(s) 404: /projects/people/[userId]; 24 screen(s) missing an empty state that teaches; scripts/prove-translated.ts failed (c00-213 is marked done):       "a   or a Word file"  — …a PDF or a Word file… /  / TRANSLATED: 2215 known, 26 new /  / [31m1 screen(s) failed[0m; scripts/prove-the-gate.ts failed (h000-124 is marked done):   [32m✓[0m second cold start: prove-no1cloud.ts passed again — round 2: passed /  / ────────────────────────────────────────────────────────────────────────────── /  / [31m2 check(s) failed[0m; scripts/prove-home.ts failed (u22-106 is marked done): [1m9. Reset restores the default layout[0m /   [32m✓[0m the layout was actually saved /   [32m✓[0m reset clears hidden cards and the stored order in one action /  / [31m1 check(s) failed.[0m; scripts/prove-scroll-containment.ts failed (h00f-119 is marked done):         25,   25,    25,    25,   25, 2950, /       2950, 3802, 27356,  1082, 1700,   25 /     ] /   } / }; scripts/prove-form-preservation.ts failed (a01-211 is marked done):   [32m✓[0m Item stock count: the badge request actually resolved during this check /   [32m✓[0m Item stock count: field holds exactly the typed string after the badge counters loaded — typed then before="QA-Preserve-2026aZ9x", after="QA-Preserve-2026aZ9x" /   [31m✗[0m Asset "Assign" panel — location: field found on the page — selector #holderLocation never appeared /  / [31mFAIL (1)[0m — prove-form-preservation; 79 screen(s) flagged for density, up from 14 on the last green run: /account/suspended, /accounting/packets/[packet], /accounting/packets/build/[statement], /accounts, /assets/[id], /assets/holders, /assets/locations, /assets — see docs/screen-density.md
      . mem: gate step peaked at 4419MB (cgroup MemoryCurrent, sampled every 3s)
      ! GATE FAILED, caused by this task
@@ -30,15 +27,18 @@ c00-230-bank-feeds.md
      . mem: tests step peaked at 4332MB (cgroup MemoryCurrent, sampled every 3s)
      ! SCREENS: 1 broken, 0 blank, 2 404 of 257 — see docs/screen-audit.md
      . mem: screens step peaked at 5535MB (cgroup MemoryCurrent, sampled every 3s)
+     ! JOURNEYS: 14 of 19 failed — upload and self-sign, invite and sign in, raise an invoice, invoice: three lines survive a submit with no customer chosen, run a No1Edit tool, J2: sign a document myself and take it away, J3: change a document and take it away, J4: the employee folder — nothing typed twice, J2: sign a document myself and take it away — DigiSign-only tenant, J3: change a document and take it away — No1Edit-only tenant, J2: sign a document myself and take it away — tenant with no entity, J3: change a document and take it away — tenant with no entity, J4: the employee folder — nothing typed twice — tenant with no entity, (remaining journeys) — see docs/journeys-report.md
+     . mem: journeys step peaked at 5782MB (cgroup MemoryCurrent, sampled every 3s)
+     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3404       10246        1882        4183       12198
+Mem:           15603        3203       10447        1845        4146       12399
 -- top --
     ELAPSED   RSS COMMAND
-      07:49 387248 next-server (v1
-      00:38 221224 chrome-headless
-      09:14 217960 node
-      07:46 143908 chrome-headless
+      01:24 324328 next-server (v1
+      00:10 149888 node
+      01:25 129284 node
+ 9-16:48:52 121596 systemd-journal
 -- disk --
 /dev/sda1        75G   33G   39G  46% /
