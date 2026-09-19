@@ -1,4 +1,4 @@
-generated: 2026-09-19 02:40:01 UTC
+generated: 2026-09-19 02:45:01 UTC
 done:   237
 queued: 2
 failed: 0
@@ -10,9 +10,6 @@ b01-225-no1edit-against-sejda.md
 -- failed --
 
 -- log --
-Call log:
-  - navigating to "http://localhost:3000/login", waiting until "load"
-; journey "invoice → payment → reconcile, end to end — default tenant (a08-144 D)" failed: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/login
 Call log:
   - navigating to "http://localhost:3000/login", waiting until "load"
 ; 79 screen(s) flagged for density, up from 14 on the last green run: /account/suspended, /accounting/packets/[packet], /accounting/packets/build/[statement], /accounts, /assets/[id], /assets/holders, /assets/locations, /assets — see docs/screen-density.md
@@ -30,15 +27,18 @@ Call log:
      . mem: tests step peaked at 3430MB (cgroup MemoryCurrent, sampled every 3s)
      ! SCREENS: 182 broken, 0 blank, 0 404 of 257 — see docs/screen-audit.md
      . mem: screens step peaked at 5089MB (cgroup MemoryCurrent, sampled every 3s)
+     ! JOURNEYS: 19 of 23 failed — upload and self-sign, invite and sign in, raise an invoice, invoice: three lines survive a submit with no customer chosen, run a No1Edit tool, J2: sign a document myself and take it away, J3: change a document and take it away, J4: the employee folder — nothing typed twice, J2: sign a document myself and take it away — DigiSign-only tenant, J3: change a document and take it away — No1Edit-only tenant, J1: file a document into a folder — tenant with no entity, J2: sign a document myself and take it away — tenant with no entity, J3: change a document and take it away — tenant with no entity, J4: the employee folder — nothing typed twice — tenant with no entity, one document through all four tools, one document through all four tools — hr+digisign tenant, no No1Cloud, one document through all four tools — digisign+cloud tenant, no HR, the offer letter, three doors — default tenant (a08-144 A), invoice → payment → reconcile, end to end — default tenant (a08-144 D) — see docs/journeys-report.md
+     . mem: journeys step peaked at 5452MB (cgroup MemoryCurrent, sampled every 3s)
+     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3425       10541        1885        3870       12177
+Mem:           15603        3219       10747        1843        3829       12383
 -- top --
     ELAPSED   RSS COMMAND
-      07:38 382384 next-server (v1
-      00:26 238936 chrome-headless
-      09:03 216764 node
-      07:36 144068 chrome-headless
+      04:39 320228 next-server (v1
+      01:14 174852 node
+      01:15 131104 node
+      04:40 129384 node
 -- disk --
 /dev/sda1        75G   33G   40G  45% /
