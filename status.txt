@@ -1,4 +1,4 @@
-generated: 2026-09-19 20:25:01 UTC
+generated: 2026-09-19 20:30:01 UTC
 done:   238
 queued: 3
 failed: 0
@@ -11,9 +11,6 @@ c00-230-bank-feeds.md
 -- failed --
 
 -- log --
-     . mem: build step peaked at 10243MB (cgroup MemoryCurrent, sampled every 3s)
-     . suite green: 3651 tests
-     . mem: tests step peaked at 3311MB (cgroup MemoryCurrent, sampled every 3s)
      ! screen audit did not produce a result at all — see logs/screens-latest.log
      . mem: screens step peaked at 4684MB (cgroup MemoryCurrent, sampled every 3s)
      ! journeys did not produce a result at all — see logs/journeys-latest.log
@@ -31,15 +28,18 @@ c00-230-bank-feeds.md
      . mem: tests step peaked at 3634MB (cgroup MemoryCurrent, sampled every 3s)
      ! SCREENS: 1 broken, 0 blank, 2 404 of 257 — see docs/screen-audit.md
      . mem: screens step peaked at 5535MB (cgroup MemoryCurrent, sampled every 3s)
+     ! JOURNEYS: 13 of 18 failed — upload and self-sign, invite and sign in, raise an invoice, invoice: three lines survive a submit with no customer chosen, run a No1Edit tool, J2: sign a document myself and take it away, J3: change a document and take it away, J4: the employee folder — nothing typed twice, J2: sign a document myself and take it away — DigiSign-only tenant, J3: change a document and take it away — No1Edit-only tenant, J2: sign a document myself and take it away — tenant with no entity, J3: change a document and take it away — tenant with no entity, (remaining journeys) — see docs/journeys-report.md
+     . mem: journeys step peaked at 5573MB (cgroup MemoryCurrent, sampled every 3s)
+     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3358       10510        1882        3965       12244
+Mem:           15603        2914       10954        1845        3928       12688
 -- top --
     ELAPSED   RSS COMMAND
-      05:42 383360 next-server (v1
-      00:41 209352 chrome-headless
-      07:10 191124 node
-      05:40 141708 chrome-headless
+      00:01 246652 next-server (v1
+      00:01 146440 node
+ 9-14:23:51 111392 systemd-journal
+16-15:35:28 13160 systemd
 -- disk --
 /dev/sda1        75G   33G   40G  46% /
