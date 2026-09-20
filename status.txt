@@ -1,4 +1,4 @@
-generated: 2026-09-20 01:15:01 UTC
+generated: 2026-09-20 01:20:01 UTC
 done:   238
 queued: 2
 failed: 1
@@ -34,12 +34,12 @@ a00-232-the-sweep-kills-what-it-should-protect.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        8051        4259        1851        5493        7551
+Mem:           15603        8113        3939        1815        5716        7490
 -- top --
     ELAPSED   RSS COMMAND
-      49:35 4533524 next-server (v1
-      51:26 523408 claude
-      49:13 213264 node
-      04:58 207300 chrome-headless
+      54:35 4893200 next-server (v1
+      56:26 484440 claude
+      54:13 212224 node
+      54:35 128152 node
 -- disk --
-/dev/sda1        75G   35G   38G  49% /
+/dev/sda1        75G   35G   37G  49% /
