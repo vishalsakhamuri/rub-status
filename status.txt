@@ -1,22 +1,15 @@
-generated: 2026-09-20 15:30:01 UTC
-done:   238
+generated: 2026-09-20 15:35:01 UTC
+done:   239
 queued: 1
-failed: 2
+failed: 1
 hold:   1
 
 -- queued --
 c00-230-bank-feeds.md
 -- failed --
-a00-232-the-sweep-kills-what-it-should-protect.md
 b00-224-ten-businesses-end-to-end.md
 
 -- log --
-  · 66073a3b-9c56-47e3-b4e4-b468f6616e1f "document-clocks-digisign-only test company" — new tenant created during the sweep, never torn down (154 row(s) left behind); 79 screen(s) flagged for density, up from 14 on the last green run: /account/suspended, /accounting/packets/[packet], /accounting/packets/build/[statement], /accounts, /assets/[id], /assets/holders, /assets/locations, /assets — see docs/screen-density.md
-     . mem: gate step peaked at 4662MB (cgroup MemoryCurrent, sampled every 3s)
-     ! GATE FAILED, caused by this task
-     ! task had self-moved to tasks/done/ — moved back to tasks/failed/, the gate said otherwise
-     [FAILED] (exit 97) 00:23:30
-       moved to tasks/failed/ — the queue carries on
        reason: completion marker + commit present, but the gate failed: 2 screen(s) 404: /no1cloud/training/courses/[id], /projects/people/[userId]; 1 screen(s) 404: /projects/people/[userId]; 24 screen(s) missing an empty state that teaches; scripts/prove-fixture-isolation.ts failed (a03-228 is marked done): 4 tenant(s) violated fixture isolation during this sweep:
   · aaf538cf-7cf7-4d60-a005-221fb9401c32 "Rheinbach Systemtechnik" — row count changed from 55517 to 55611
   · 6cd34439-fc22-4d75-b883-a0ecc00494dc "Kiosk am Bahnhof" — row count changed from 1354 to 1398
@@ -31,15 +24,21 @@ b00-224-ten-businesses-end-to-end.md
 ================================================
 
 ---- b00-224-ten-businesses-end-to-end ----  started 09:53:42
+================================================
+  RunUrBusiness — draining the task queue
+  started Sun 20 Sep 15:30
+================================================
+
+---- c00-230-bank-feeds ----  started 15:30:02
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2563       12165        1774        2998       13039
+Mem:           15603        2867       11430        1774        3430       12735
 -- top --
     ELAPSED   RSS COMMAND
-10-09:23:52 143172 systemd-journal
-17-10:35:29 13236 systemd
-      00:02 10900 sshd-session
-10-09:23:51  9432 systemd-resolve
+      04:57 411904 claude
+10-09:28:51 138768 systemd-journal
+17-10:40:29 13236 systemd
+10-09:28:51  9432 systemd-resolve
 -- disk --
 /dev/sda1        75G   42G   31G  58% /
