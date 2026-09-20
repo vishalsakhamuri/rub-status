@@ -1,44 +1,45 @@
-generated: 2026-09-20 00:20:01 UTC
-done:   239
+generated: 2026-09-20 00:25:01 UTC
+done:   238
 queued: 2
-failed: 0
+failed: 1
 hold:   1
 
 -- queued --
 b00-224-ten-businesses-end-to-end.md
 c00-230-bank-feeds.md
 -- failed --
+a00-232-the-sweep-kills-what-it-should-protect.md
 
 -- log --
-     ! GATE FAILED: 2 screen(s) 404: /no1cloud/training/courses/[id], /projects/people/[userId]; 1 screen(s) 404: /projects/people/[userId]; 24 screen(s) missing an empty state that teaches; scripts/prove-translated.ts failed (c00-213 is marked done):       "a   or a Word file"  — …a PDF or a Word file… /  / TRANSLATED: 2215 known, 26 new /  / [31m1 screen(s) failed[0m; scripts/prove-the-gate.ts failed (h000-124 is marked done):   [32m✓[0m second cold start: prove-no1cloud.ts passed again — round 2: passed /  / ────────────────────────────────────────────────────────────────────────────── /  / [31m2 check(s) failed[0m; scripts/prove-home.ts failed (u22-106 is marked done): [1m9. Reset restores the default layout[0m /   [32m✓[0m the layout was actually saved /   [32m✓[0m reset clears hidden cards and the stored order in one action /  / [31m1 check(s) failed.[0m; scripts/prove-scroll-containment.ts failed (h00f-119 is marked done):         25,   25,    25,    25,   25, 2950, /       2950, 3802, 27356,  1082, 1700,   25 /     ] /   } / }; scripts/prove-form-preservation.ts failed (a01-211 is marked done):   [32m✓[0m Item stock count: the badge request actually resolved during this check /   [32m✓[0m Item stock count: field holds exactly the typed string after the badge counters loaded — typed then before="QA-Preserve-2026aZ9x", after="QA-Preserve-2026aZ9x" /   [31m✗[0m Asset "Assign" panel — location: field found on the page — selector #holderLocation never appeared /  / [31mFAIL (1)[0m — prove-form-preservation; 79 screen(s) flagged for density, up from 14 on the last green run: /account/suspended, /accounting/packets/[packet], /accounting/packets/build/[statement], /accounts, /assets/[id], /assets/holders, /assets/locations, /assets — see docs/screen-density.md
-     . mem: gate step peaked at 4419MB (cgroup MemoryCurrent, sampled every 3s)
+     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
+     . gate: 71 pass, 24 fail, 0 pending
+     ! GATE FAILED: 2 screen(s) 404: /no1cloud/training/courses/[id], /projects/people/[userId]; 1 screen(s) 404: /projects/people/[userId]; 24 screen(s) missing an empty state that teaches; scripts/prove-fixture-isolation.ts failed (a03-228 is marked done): 4 tenant(s) violated fixture isolation during this sweep:
+  · aaf538cf-7cf7-4d60-a005-221fb9401c32 "Rheinbach Systemtechnik" — row count changed from 55517 to 55611
+  · 6cd34439-fc22-4d75-b883-a0ecc00494dc "Kiosk am Bahnhof" — row count changed from 1354 to 1398
+  · null "(no tenants row)" — row count changed from 31 to 32
+  · 66073a3b-9c56-47e3-b4e4-b468f6616e1f "document-clocks-digisign-only test company" — new tenant created during the sweep, never torn down (154 row(s) left behind); 79 screen(s) flagged for density, up from 14 on the last green run: /account/suspended, /accounting/packets/[packet], /accounting/packets/build/[statement], /accounts, /assets/[id], /assets/holders, /assets/locations, /assets — see docs/screen-density.md
+     . mem: gate step peaked at 4662MB (cgroup MemoryCurrent, sampled every 3s)
      ! GATE FAILED, caused by this task
      ! task had self-moved to tasks/done/ — moved back to tasks/failed/, the gate said otherwise
-     [FAILED] (exit 97) 21:37:34
+     [FAILED] (exit 97) 00:23:30
        moved to tasks/failed/ — the queue carries on
-       reason: completion marker + commit present, but the gate failed: 2 screen(s) 404: /no1cloud/training/courses/[id], /projects/people/[userId]; 1 screen(s) 404: /projects/people/[userId]; 24 screen(s) missing an empty state that teaches; scripts/prove-translated.ts failed (c00-213 is marked done):       "a   or a Word file"  — …a PDF or a Word file… /  / TRANSLATED: 2215 known, 26 new /  / [31m1 screen(s) failed[0m; scripts/prove-the-gate.ts failed (h000-124 is marked done):   [32m✓[0m second cold start: prove-no1cloud.ts passed again — round 2: passed /  / ────────────────────────────────────────────────────────────────────────────── /  / [31m2 check(s) failed[0m; scripts/prove-home.ts failed (u22-106 is marked done): [1m9. Reset restores the default layout[0m /   [32m✓[0m the layout was actually saved /   [32m✓[0m reset clears hidden cards and the stored order in one action /  / [31m1 check(s) failed.[0m; scripts/prove-scroll-containment.ts failed (h00f-119 is marked done):         25,   25,    25,    25,   25, 2950, /       2950, 3802, 27356,  1082, 1700,   25 /     ] /   } / }; scripts/prove-form-preservation.ts failed (a01-211 is marked done):   [32m✓[0m Item stock count: the badge request actually resolved during this check /   [32m✓[0m Item stock count: field holds exactly the typed string after the badge counters loaded — typed then before="QA-Preserve-2026aZ9x", after="QA-Preserve-2026aZ9x" /   [31m✗[0m Asset "Assign" panel — location: field found on the page — selector #holderLocation never appeared /  / [31mFAIL (1)[0m — prove-form-preservation; 79 screen(s) flagged for density, up from 14 on the last green run: /account/suspended, /accounting/packets/[packet], /accounting/packets/build/[statement], /accounts, /assets/[id], /assets/holders, /assets/locations, /assets — see docs/screen-density.md
-       see logs/b02-231-two-tools-that-lie-and-a-route-nobody-can-reach.log
+       reason: completion marker + commit present, but the gate failed: 2 screen(s) 404: /no1cloud/training/courses/[id], /projects/people/[userId]; 1 screen(s) 404: /projects/people/[userId]; 24 screen(s) missing an empty state that teaches; scripts/prove-fixture-isolation.ts failed (a03-228 is marked done): 4 tenant(s) violated fixture isolation during this sweep:
+  · aaf538cf-7cf7-4d60-a005-221fb9401c32 "Rheinbach Systemtechnik" — row count changed from 55517 to 55611
+  · 6cd34439-fc22-4d75-b883-a0ecc00494dc "Kiosk am Bahnhof" — row count changed from 1354 to 1398
+  · null "(no tenants row)" — row count changed from 31 to 32
+  · 66073a3b-9c56-47e3-b4e4-b468f6616e1f "document-clocks-digisign-only test company" — new tenant created during the sweep, never torn down (154 row(s) left behind); 79 screen(s) flagged for density, up from 14 on the last green run: /account/suspended, /accounting/packets/[packet], /accounting/packets/build/[statement], /accounts, /assets/[id], /assets/holders, /assets/locations, /assets — see docs/screen-density.md
+       see logs/a00-232-the-sweep-kills-what-it-should-protect.log
 
----- a00-232-the-sweep-kills-what-it-should-protect ----  started 21:37:36
-     . build/screens/journeys: diff since 38c88e69f47d touches something that could render — running fresh
-     . build clean
-     . mem: build step peaked at 5960MB (cgroup MemoryCurrent, sampled every 3s)
-     . suite green: 3653 tests
-     . mem: tests step peaked at 4332MB (cgroup MemoryCurrent, sampled every 3s)
-     ! SCREENS: 1 broken, 0 blank, 2 404 of 257 — see docs/screen-audit.md
-     . mem: screens step peaked at 5535MB (cgroup MemoryCurrent, sampled every 3s)
-     ! JOURNEYS: 14 of 19 failed — upload and self-sign, invite and sign in, raise an invoice, invoice: three lines survive a submit with no customer chosen, run a No1Edit tool, J2: sign a document myself and take it away, J3: change a document and take it away, J4: the employee folder — nothing typed twice, J2: sign a document myself and take it away — DigiSign-only tenant, J3: change a document and take it away — No1Edit-only tenant, J2: sign a document myself and take it away — tenant with no entity, J3: change a document and take it away — tenant with no entity, J4: the employee folder — nothing typed twice — tenant with no entity, (remaining journeys) — see docs/journeys-report.md
-     . mem: journeys step peaked at 5782MB (cgroup MemoryCurrent, sampled every 3s)
-     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
+---- b00-224-ten-businesses-end-to-end ----  started 00:23:32
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3218       10289        1845        4289       12384
+Mem:           15603        2826       10681        1845        4290       12776
 -- top --
     ELAPSED   RSS COMMAND
-   01:26:24 501156 next-server (v1
-   01:26:24 129284 node
- 9-18:13:51 124012 systemd-journal
-   01:26:22 113524 node
+      01:26 310056 claude
+ 9-18:18:51 124012 systemd-journal
+16-19:30:28 13168 systemd
+ 9-18:18:51  9432 systemd-resolve
 -- disk --
 /dev/sda1        75G   33G   39G  46% /
