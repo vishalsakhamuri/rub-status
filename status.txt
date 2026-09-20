@@ -1,4 +1,4 @@
-generated: 2026-09-20 07:30:01 UTC
+generated: 2026-09-20 07:35:01 UTC
 done:   238
 queued: 2
 failed: 1
@@ -34,12 +34,12 @@ a00-232-the-sweep-kills-what-it-should-protect.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603       12842        2290        1791        2611        2760
+Mem:           15603       12873        2258        1791        2612        2729
 -- top --
     ELAPSED   RSS COMMAND
-   07:04:35 8747440 next-server (v1
-   01:38:56 1090448 node
-   07:06:27 469800 claude
-10-01:23:52 131912 systemd-journal
+   07:09:35 8764368 next-server (v1
+   01:43:55 1090440 node
+   07:11:27 469792 claude
+10-01:28:52 131928 systemd-journal
 -- disk --
 /dev/sda1        75G   39G   34G  54% /
