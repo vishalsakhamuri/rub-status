@@ -1,4 +1,4 @@
-generated: 2026-09-20 21:20:01 UTC
+generated: 2026-09-20 21:25:01 UTC
 done:   239
 queued: 1
 failed: 1
@@ -10,12 +10,6 @@ c00-230-bank-feeds.md
 b00-224-ten-businesses-end-to-end.md
 
 -- log --
-       reason: completion marker + commit present, but the gate failed: 2 screen(s) 404: /no1cloud/training/courses/[id], /projects/people/[userId]; 1 screen(s) 404: /projects/people/[userId]; 24 screen(s) missing an empty state that teaches; scripts/prove-fixture-isolation.ts failed (a03-228 is marked done): 4 tenant(s) violated fixture isolation during this sweep:
-  · aaf538cf-7cf7-4d60-a005-221fb9401c32 "Rheinbach Systemtechnik" — row count changed from 55517 to 55611
-  · 6cd34439-fc22-4d75-b883-a0ecc00494dc "Kiosk am Bahnhof" — row count changed from 1354 to 1398
-  · null "(no tenants row)" — row count changed from 31 to 32
-  · 66073a3b-9c56-47e3-b4e4-b468f6616e1f "document-clocks-digisign-only test company" — new tenant created during the sweep, never torn down (154 row(s) left behind); 79 screen(s) flagged for density, up from 14 on the last green run: /account/suspended, /accounting/packets/[packet], /accounting/packets/build/[statement], /accounts, /assets/[id], /assets/holders, /assets/locations, /assets — see docs/screen-density.md
-       see logs/a00-232-the-sweep-kills-what-it-should-protect.log
 
 ---- b00-224-ten-businesses-end-to-end ----  started 00:23:32
 ================================================
@@ -30,15 +24,21 @@ b00-224-ten-businesses-end-to-end.md
 ================================================
 
 ---- c00-230-bank-feeds ----  started 15:30:02
+================================================
+  RunUrBusiness — draining the task queue
+  started Sun 20 Sep 21:20
+================================================
+
+---- c00-230-bank-feeds ----  started 21:20:01
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2681       12048        1774        2997       12921
+Mem:           15603        3236       11088        1818        3446       12367
 -- top --
     ELAPSED   RSS COMMAND
-10-15:13:51 150140 systemd-journal
-17-16:25:29 13236 systemd
-      00:07 11568 sshd-session
-      00:01 11304 sshd-session
+      03:17 355852 node
+      04:56 342384 claude
+      00:24 146964 node
+10-15:18:51 87492 systemd-journal
 -- disk --
 /dev/sda1        75G   45G   27G  63% /
