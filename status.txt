@@ -1,14 +1,14 @@
-generated: 2026-09-20 15:25:01 UTC
+generated: 2026-09-20 15:30:01 UTC
 done:   238
-queued: 2
-failed: 1
+queued: 1
+failed: 2
 hold:   1
 
 -- queued --
-b00-224-ten-businesses-end-to-end.md
 c00-230-bank-feeds.md
 -- failed --
 a00-232-the-sweep-kills-what-it-should-protect.md
+b00-224-ten-businesses-end-to-end.md
 
 -- log --
   · 66073a3b-9c56-47e3-b4e4-b468f6616e1f "document-clocks-digisign-only test company" — new tenant created during the sweep, never torn down (154 row(s) left behind); 79 screen(s) flagged for density, up from 14 on the last green run: /account/suspended, /accounting/packets/[packet], /accounting/packets/build/[statement], /accounts, /assets/[id], /assets/holders, /assets/locations, /assets — see docs/screen-density.md
@@ -34,12 +34,12 @@ a00-232-the-sweep-kills-what-it-should-protect.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603       12933        2192        2004        2831        2669
+Mem:           15603        2563       12165        1774        2998       13039
 -- top --
     ELAPSED   RSS COMMAND
-   05:29:53 9256320 next-server (v1
-   05:31:16 300644 claude
-   03:57:17 261724 chrome-headless
-10-09:18:51 143048 systemd-journal
+10-09:23:52 143172 systemd-journal
+17-10:35:29 13236 systemd
+      00:02 10900 sshd-session
+10-09:23:51  9432 systemd-resolve
 -- disk --
-/dev/sda1        75G   41G   31G  58% /
+/dev/sda1        75G   42G   31G  58% /
