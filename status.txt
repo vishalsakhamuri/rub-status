@@ -1,4 +1,4 @@
-generated: 2026-09-21 01:55:01 UTC
+generated: 2026-09-21 02:00:01 UTC
 done:   240
 queued: 1
 failed: 0
@@ -9,11 +9,6 @@ b00-224-ten-businesses-end-to-end.md
 -- failed --
 
 -- log --
-       moved to tasks/failed/ — the queue carries on
-       reason: completion marker + commit present, but the gate failed: 2 screen(s) 404: /no1cloud/training/courses/[id], /projects/people/[userId]; 1 screen(s) 404: /projects/people/[userId]; 24 screen(s) missing an empty state that teaches; 79 screen(s) flagged for density, up from 14 on the last green run: /account/suspended, /accounting/packets/[packet], /accounting/packets/build/[statement], /accounts, /assets/[id], /assets/holders, /assets/locations, /assets — see docs/screen-density.md
-       see logs/c00-230-bank-feeds.log
-
----- b00-224-ten-businesses-end-to-end ----  started 00:48:34
      . build/screens/journeys: diff since 3310675b18cf touches something that could render — running fresh
      ! orphaned dev server found: pid 3156022, owned by build, age 27m, cwd /home/build/runurbusiness (sh -c next dev) — killing it
      ! orphaned dev server found: pid 3156023, owned by build, age 27m, cwd /home/build/runurbusiness (node /home/build/runurbusiness/node_modules/.bin/../.pnpm/next@16.2.11_@babel+core@7.29.7_supports-color@7.2.0__react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/bin/next dev) — killing it
@@ -29,15 +24,20 @@ b00-224-ten-businesses-end-to-end.md
      ! screen audit did not produce a result at all — see logs/screens-latest.log
      . mem: screens step peaked at 4729MB (cgroup MemoryCurrent, sampled every 3s)
      . journeys: starting clean — zero orphaned servers, zero stray browsers
+     ! journeys did not produce a result at all — see logs/journeys-latest.log
+     . mem: journeys step peaked at 4940MB (cgroup MemoryCurrent, sampled every 3s)
+     . gate: starting clean — zero orphaned servers, zero stray browsers
+     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
+     . gate: no production build on disk yet — building one
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2902       11147        1785        3688       12700
+Mem:           15603        5125        9138        1785        3474       10478
 -- top --
     ELAPSED   RSS COMMAND
-      00:03 208016 node
-      00:00 146084 node
-10-19:48:51 95336 systemd-journal
-      00:04 87024 npm exec tsx --
+      00:12 2323924 node
+      00:07 179068 node
+      00:12 145732 node
+10-19:53:52 95336 systemd-journal
 -- disk --
-/dev/sda1        75G   34G   39G  47% /
+/dev/sda1        75G   33G   39G  46% /
