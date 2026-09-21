@@ -1,4 +1,4 @@
-generated: 2026-09-21 01:15:01 UTC
+generated: 2026-09-21 01:20:01 UTC
 done:   239
 queued: 1
 failed: 1
@@ -10,12 +10,6 @@ b00-224-ten-businesses-end-to-end.md
 c00-230-bank-feeds.md
 
 -- log --
-     . mem: tests step peaked at 3454MB (cgroup MemoryCurrent, sampled every 3s)
-     . screens: starting clean — zero orphaned servers, zero stray browsers
-     ! SCREENS: 1 broken, 0 blank, 2 404 of 257 — see docs/screen-audit.md
-     . mem: screens step peaked at 5245MB (cgroup MemoryCurrent, sampled every 3s)
-     . journeys: starting clean — zero orphaned servers, zero stray browsers
-     ! JOURNEYS: 13 of 18 failed — upload and self-sign, invite and sign in, raise an invoice, invoice: three lines survive a submit with no customer chosen, run a No1Edit tool, J2: sign a document myself and take it away, J3: change a document and take it away, J4: the employee folder — nothing typed twice, J2: sign a document myself and take it away — DigiSign-only tenant, J3: change a document and take it away — No1Edit-only tenant, J2: sign a document myself and take it away — tenant with no entity, J3: change a document and take it away — tenant with no entity, (remaining journeys) — see docs/journeys-report.md
      . mem: journeys step peaked at 5332MB (cgroup MemoryCurrent, sampled every 3s)
      . gate: starting clean — zero orphaned servers, zero stray browsers
      . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
@@ -30,15 +24,21 @@ c00-230-bank-feeds.md
        see logs/c00-230-bank-feeds.log
 
 ---- b00-224-ten-businesses-end-to-end ----  started 00:48:34
+     . build/screens/journeys: diff since 3310675b18cf touches something that could render — running fresh
+     ! orphaned dev server found: pid 3156022, owned by build, age 27m, cwd /home/build/runurbusiness (sh -c next dev) — killing it
+     ! orphaned dev server found: pid 3156023, owned by build, age 27m, cwd /home/build/runurbusiness (node /home/build/runurbusiness/node_modules/.bin/../.pnpm/next@16.2.11_@babel+core@7.29.7_supports-color@7.2.0__react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/bin/next dev) — killing it
+     ! orphaned dev server found: pid 3156040, owned by build, age 27m, cwd /home/build/runurbusiness (next-server (v16.2.11)) — killing it
+     . orphaned dev server(s) cleaned up before this task starts
+     . build: starting clean — zero orphaned servers, zero stray browsers
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603       11193        2702        1937        3994        4409
+Mem:           15603        6335        7102        1781        4296        9267
 -- top --
     ELAPSED   RSS COMMAND
-      23:42 7109108 next-server (v1
-      26:24 491180 claude
-      00:25 229784 chrome-headless
-      00:05 227848 chrome-headless
+      00:28 2616356 node
+      00:59 1126880 node
+      00:56 161316 node
+      01:00 128764 node
 -- disk --
-/dev/sda1        75G   37G   35G  52% /
+/dev/sda1        75G   38G   35G  52% /
