@@ -1,43 +1,43 @@
-generated: 2026-09-21 02:00:01 UTC
+generated: 2026-09-21 02:05:01 UTC
 done:   240
-queued: 1
-failed: 0
+queued: 0
+failed: 1
 hold:   1
 
 -- queued --
-b00-224-ten-businesses-end-to-end.md
 -- failed --
+b00-224-ten-businesses-end-to-end.md
 
 -- log --
-     . build/screens/journeys: diff since 3310675b18cf touches something that could render — running fresh
-     ! orphaned dev server found: pid 3156022, owned by build, age 27m, cwd /home/build/runurbusiness (sh -c next dev) — killing it
-     ! orphaned dev server found: pid 3156023, owned by build, age 27m, cwd /home/build/runurbusiness (node /home/build/runurbusiness/node_modules/.bin/../.pnpm/next@16.2.11_@babel+core@7.29.7_supports-color@7.2.0__react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/bin/next dev) — killing it
-     ! orphaned dev server found: pid 3156040, owned by build, age 27m, cwd /home/build/runurbusiness (next-server (v16.2.11)) — killing it
-     . orphaned dev server(s) cleaned up before this task starts
-     . build: starting clean — zero orphaned servers, zero stray browsers
-     ! BUILD BROKEN — see logs/build-latest.log
-     . mem: build step peaked at 5255MB (cgroup MemoryCurrent, sampled every 3s)
-     . tests: starting clean — zero orphaned servers, zero stray browsers
-     . suite green: 3664 tests
-     . mem: tests step peaked at 3988MB (cgroup MemoryCurrent, sampled every 3s)
-     . screens: starting clean — zero orphaned servers, zero stray browsers
-     ! screen audit did not produce a result at all — see logs/screens-latest.log
-     . mem: screens step peaked at 4729MB (cgroup MemoryCurrent, sampled every 3s)
-     . journeys: starting clean — zero orphaned servers, zero stray browsers
-     ! journeys did not produce a result at all — see logs/journeys-latest.log
-     . mem: journeys step peaked at 4940MB (cgroup MemoryCurrent, sampled every 3s)
      . gate: starting clean — zero orphaned servers, zero stray browsers
      . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
      . gate: no production build on disk yet — building one
+     . gate: 79 pass, 2 fail, 0 pending
+     ! GATE FAILED: the gate's own readiness check could not reach the app (BASE_URL/login never answered) — the entire prove-* register was left unrun this pass; an unrun check is not a passed check; pnpm run build failed
+     . mem: gate step peaked at 4929MB (cgroup MemoryCurrent, sampled every 3s)
+     ! GATE FAILED, caused by this task
+     [FAILED] (exit 97) 02:01:14
+       moved to tasks/failed/ — the queue carries on
+       reason: completion marker + commit present, but the gate failed: the gate's own readiness check could not reach the app (BASE_URL/login never answered) — the entire prove-* register was left unrun this pass; an unrun check is not a passed check; pnpm run build failed
+       see logs/b00-224-ten-businesses-end-to-end.log
+
+================================================
+  0 task(s) completed, 2 failed, 0 blocked
+  finished Mon 21 Sep 02:01
+  logs in logs/  ·  tell Claude in the chat
+
+  failed tasks are in tasks/failed/ — nothing was deleted:
+    b00-224-ten-businesses-end-to-end.md
+================================================
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        5125        9138        1785        3474       10478
+Mem:           15603        2571       11477        1785        3689       13031
 -- top --
     ELAPSED   RSS COMMAND
-      00:12 2323924 node
-      00:07 179068 node
-      00:12 145732 node
-10-19:53:52 95336 systemd-journal
+10-19:58:52 95464 systemd-journal
+17-21:10:29 13236 systemd
+10-19:58:52  9440 systemd-resolve
+17-21:10:18  8832 networkd-dispat
 -- disk --
-/dev/sda1        75G   33G   39G  46% /
+/dev/sda1        75G   34G   39G  47% /
