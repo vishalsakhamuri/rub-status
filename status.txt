@@ -1,4 +1,4 @@
-generated: 2026-09-21 00:00:01 UTC
+generated: 2026-09-21 00:05:01 UTC
 done:   240
 queued: 1
 failed: 0
@@ -9,10 +9,6 @@ b00-224-ten-businesses-end-to-end.md
 -- failed --
 
 -- log --
-================================================
-
----- c00-230-bank-feeds ----  started 15:30:02
-================================================
   RunUrBusiness — draining the task queue
   started Sun 20 Sep 21:20
 ================================================
@@ -29,15 +25,19 @@ b00-224-ten-businesses-end-to-end.md
      ! SCREENS: 1 broken, 0 blank, 2 404 of 257 — see docs/screen-audit.md
      . mem: screens step peaked at 5245MB (cgroup MemoryCurrent, sampled every 3s)
      . journeys: starting clean — zero orphaned servers, zero stray browsers
+     ! JOURNEYS: 13 of 18 failed — upload and self-sign, invite and sign in, raise an invoice, invoice: three lines survive a submit with no customer chosen, run a No1Edit tool, J2: sign a document myself and take it away, J3: change a document and take it away, J4: the employee folder — nothing typed twice, J2: sign a document myself and take it away — DigiSign-only tenant, J3: change a document and take it away — No1Edit-only tenant, J2: sign a document myself and take it away — tenant with no entity, J3: change a document and take it away — tenant with no entity, (remaining journeys) — see docs/journeys-report.md
+     . mem: journeys step peaked at 5332MB (cgroup MemoryCurrent, sampled every 3s)
+     . gate: starting clean — zero orphaned servers, zero stray browsers
+     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3450       10378        1816        3940       12153
+Mem:           15603        3207       10620        1787        3911       12395
 -- top --
     ELAPSED   RSS COMMAND
-      07:15 529112 next-server (v1
-      08:41 203420 node
-      00:17 191992 chrome-headless
-      07:12 144024 chrome-headless
+      01:35 328820 next-server (v1
+      00:05 181740 node
+      00:06 149992 node
+      01:35 129200 node
 -- disk --
 /dev/sda1        75G   33G   39G  46% /
