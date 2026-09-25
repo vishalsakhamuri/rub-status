@@ -1,19 +1,26 @@
-generated: 2026-09-25 21:50:01 UTC
+generated: 2026-09-25 21:55:01 UTC
 done:   240
-queued: 0
+queued: 13
 failed: 0
 hold:   1
 
 -- queued --
+a00-233-the-first-click-fails-and-the-form-forgets.md
+a01-234-every-new-shelf-price-is-wrong.md
+a02-235-stock-on-the-shelf-not-on-the-balance-sheet.md
+a03-236-the-final-invoice-refuses-its-own-deposit.md
+a04-237-a-date-the-signer-cannot-fill-and-a-signature-on-the-wrong-page.md
+a05-238-the-german-customer-gets-an-english-invoice.md
+a06-239-there-is-no-month-close.md
+a07-240-the-owner-is-not-an-employee-and-a-category-cannot-be-capitalised.md
+b03-241-mail-must-leave-the-building.md
+b04-242-the-registers-iso-9001-expects.md
+b05-243-meetings-minutes-actions-and-the-templates-in-german.md
+b06-244-the-steuerberater-wants-datev.md
+b07-224-ten-businesses-end-to-end.md
 -- failed --
 
 -- log --
-     . gate: starting clean — zero orphaned servers, zero stray browsers
-     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
-     . gate: no production build on disk yet — building one
-     . gate: 79 pass, 2 fail, 0 pending
-     ! GATE FAILED: the gate's own readiness check could not reach the app (BASE_URL/login never answered) — the entire prove-* register was left unrun this pass; an unrun check is not a passed check; pnpm run build failed
-     . mem: gate step peaked at 4929MB (cgroup MemoryCurrent, sampled every 3s)
      ! GATE FAILED, caused by this task
      [FAILED] (exit 97) 02:01:14
        moved to tasks/failed/ — the queue carries on
@@ -28,15 +35,21 @@ hold:   1
   failed tasks are in tasks/failed/ — nothing was deleted:
     b00-224-ten-businesses-end-to-end.md
 ================================================
+================================================
+  RunUrBusiness — draining the task queue
+  started Fri 25 Sep 21:52
+================================================
+
+---- a00-233-the-first-click-fails-and-the-form-forgets ----  started 21:52:38
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2028       11612        1262        3574       13574
+Mem:           15603        2510       11046        1270        3666       13092
 -- top --
     ELAPSED   RSS COMMAND
-15-15:43:52 143252 systemd-journal
-22-16:55:29 13584 systemd
-15-15:43:52  9620 systemd-resolve
-      00:00  9348 ssh
+      02:20 352888 claude
+15-15:48:52 143572 systemd-journal
+      00:09 136296 chrome-headless
+      00:09 134616 chrome-headless
 -- disk --
-/dev/sda1        75G   34G   39G  47% /
+/dev/sda1        75G   33G   39G  47% /
