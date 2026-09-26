@@ -1,4 +1,4 @@
-generated: 2026-09-26 11:05:01 UTC
+generated: 2026-09-26 11:10:01 UTC
 done:   241
 queued: 10
 failed: 2
@@ -43,12 +43,12 @@ a02-235-stock-on-the-shelf-not-on-the-balance-sheet.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3330        9419         419        3623       12273
+Mem:           15603        1483       11264         419        3623       14119
 -- top --
     ELAPSED   RSS COMMAND
-      00:24 1841372 node
-      20:42 469080 claude
-16-04:58:52 139464 systemd-journal
-      00:24 77168 npm exec tsc --
+      25:42 461524 claude
+16-05:03:51 139464 systemd-journal
+23-06:15:29 13616 systemd
+16-05:03:51  9620 systemd-resolve
 -- disk --
 /dev/sda1        75G   34G   38G  48% /
