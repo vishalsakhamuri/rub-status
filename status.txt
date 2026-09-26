@@ -1,4 +1,4 @@
-generated: 2026-09-26 04:50:01 UTC
+generated: 2026-09-26 04:55:01 UTC
 done:   240
 queued: 12
 failed: 1
@@ -21,14 +21,6 @@ b07-224-ten-businesses-end-to-end.md
 a00-233-the-first-click-fails-and-the-form-forgets.md
 
 -- log --
-  · 5c48dc66-21ac-4008-a61c-23d9edbda0e0 "document-clocks-digisign-only test company" — new tenant created during the sweep, never torn down (154 row(s) left behind); journey "invite and sign in" failed: creating the employee did not reach a record page — landed on http://localhost:3000/hr/employees/new; journey "raise an invoice" failed: locator.click: Timeout 30000ms exceeded.
-Call log:
-  - waiting for locator('summary[aria-label="Other ways to finish"]')
-; 78 screen(s) flagged for density, up from 14 on the last green run: /account/suspended, /accounting/packets/[packet], /accounting/packets/build/[statement], /accounts, /assets/[id], /assets/holders, /assets/locations, /assets — see docs/screen-density.md
-     . mem: gate step peaked at 3569MB (cgroup MemoryCurrent, sampled every 3s)
-     ! GATE FAILED, caused by this task
-     ! task had self-moved to tasks/done/ — moved back to tasks/failed/, the gate said otherwise
-     [FAILED] (exit 97) 03:25:18
        moved to tasks/failed/ — the queue carries on
        reason: completion marker + commit present, but the gate failed: 2 screen(s) 404: /no1cloud/training/courses/[id], /projects/people/[userId]; 1 screen(s) 404: /projects/people/[userId]; 24 screen(s) missing an empty state that teaches; scripts/prove-fixture-isolation.ts failed (a03-228 is marked done): 3 tenant(s) violated fixture isolation during this sweep:
   · aaf538cf-7cf7-4d60-a005-221fb9401c32 "Rheinbach Systemtechnik" — row count changed from 56256 to 56350
@@ -41,15 +33,23 @@ Call log:
 
 ---- a01-234-every-new-shelf-price-is-wrong ----  started 03:25:20
      .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
+     ! exited clean but produced nothing verifiable — stalled — log ends on a waiting line, no completion marker (commit was made, but a commit is not proof of completion when the task's own words say it isn't finished)
+     . build/screens/journeys: diff since 33db87a00864 touches something that could render — running fresh
+     ! orphaned dev server found: pid 3625157, owned by build, age 1h23m, cwd /home/build/runurbusiness (sh -c next dev) — killing it
+     ! orphaned dev server found: pid 3625158, owned by build, age 1h23m, cwd /home/build/runurbusiness (node /home/build/runurbusiness/node_modules/.bin/../.pnpm/next@16.2.11_@babel+core@7.29.7_supports-color@7.2.0__react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/bin/next dev) — killing it
+     ! orphaned dev server found: pid 3625175, owned by build, age 1h23m, cwd /home/build/runurbusiness (next-server (v16.2.11)) — killing it
+     ! orphaned dev server found: pid 3647510, owned by build, age 1m, cwd /home/build/runurbusiness (npm exec vitest run) — killing it
+     . orphaned dev server(s) cleaned up before this task starts
+     . build: starting clean — zero orphaned servers, zero stray browsers
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603       10799        2746        1263        3671        4803
+Mem:           15603        5002        8829        1307        3428       10601
 -- top --
     ELAPSED   RSS COMMAND
-   01:18:56 8430888 next-server (v1
-      16:47 356948 claude
-   01:10:59 147384 node
-15-22:43:51 130496 systemd-journal
+      00:17 2304060 node
+      01:36 338196 node
+      01:02 258552 node
+      00:13 187424 node
 -- disk --
-/dev/sda1        75G   38G   35G  53% /
+/dev/sda1        75G   38G   35G  52% /
