@@ -1,4 +1,4 @@
-generated: 2026-09-26 05:05:01 UTC
+generated: 2026-09-26 05:10:01 UTC
 done:   241
 queued: 12
 failed: 0
@@ -20,9 +20,6 @@ b07-224-ten-businesses-end-to-end.md
 -- failed --
 
 -- log --
-  - waiting for locator('summary[aria-label="Other ways to finish"]')
-; 78 screen(s) flagged for density, up from 14 on the last green run: /account/suspended, /accounting/packets/[packet], /accounting/packets/build/[statement], /accounts, /assets/[id], /assets/holders, /assets/locations, /assets — see docs/screen-density.md
-       see logs/a00-233-the-first-click-fails-and-the-form-forgets.log
 
 ---- a01-234-every-new-shelf-price-is-wrong ----  started 03:25:20
      .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
@@ -40,15 +37,18 @@ b07-224-ten-businesses-end-to-end.md
      ! suite did not produce a result at all — see logs/suite-latest.log
      . mem: tests step peaked at 726MB (cgroup MemoryCurrent, sampled every 3s)
      . screens: starting clean — zero orphaned servers, zero stray browsers
+     ! SCREENS: 3 broken, 0 blank, 2 404 of 257 — see docs/screen-audit.md
+     . mem: screens step peaked at 4619MB (cgroup MemoryCurrent, sampled every 3s)
+     . journeys: starting clean — zero orphaned servers, zero stray browsers
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        5371        8241        1376        3716       10231
+Mem:           15603        3261       10351        1355        3695       12341
 -- top --
     ELAPSED   RSS COMMAND
-      07:09 1240656 next-server (v1
-      02:12 759708 chrome-headless
-      07:05 453948 chrome-headless
-      07:07 453636 node
+      03:17 405200 next-server (v1
+      16:35 384840 node
+      00:44 208448 chrome-headless
+      04:45 185324 node
 -- disk --
 /dev/sda1        75G   34G   39G  47% /
