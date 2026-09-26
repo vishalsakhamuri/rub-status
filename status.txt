@@ -1,4 +1,4 @@
-generated: 2026-09-26 04:30:01 UTC
+generated: 2026-09-26 04:35:01 UTC
 done:   240
 queued: 12
 failed: 1
@@ -21,7 +21,6 @@ b07-224-ten-businesses-end-to-end.md
 a00-233-the-first-click-fails-and-the-form-forgets.md
 
 -- log --
-  · null "(no tenants row)" — row count changed from 35 to 36
   · 5c48dc66-21ac-4008-a61c-23d9edbda0e0 "document-clocks-digisign-only test company" — new tenant created during the sweep, never torn down (154 row(s) left behind); journey "invite and sign in" failed: creating the employee did not reach a record page — landed on http://localhost:3000/hr/employees/new; journey "raise an invoice" failed: locator.click: Timeout 30000ms exceeded.
 Call log:
   - waiting for locator('summary[aria-label="Other ways to finish"]')
@@ -41,15 +40,16 @@ Call log:
        see logs/a00-233-the-first-click-fails-and-the-form-forgets.log
 
 ---- a01-234-every-new-shelf-price-is-wrong ----  started 03:25:20
+     .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        6163        6178        1312        4924        9439
+Mem:           15603        9650        1583        2094        6812        5952
 -- top --
     ELAPSED   RSS COMMAND
-      58:56 3034504 next-server (v1
-   01:04:38 585168 claude
-      12:29 387384 node
-      00:04 226504 node
+   01:03:57 5395524 next-server (v1
+      00:43 735688 chrome-headless
+      01:47 314240 claude
+      56:00 181344 node
 -- disk --
-/dev/sda1        75G   35G   38G  48% /
+/dev/sda1        75G   36G   37G  50% /
