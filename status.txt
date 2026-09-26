@@ -1,4 +1,4 @@
-generated: 2026-09-26 09:50:01 UTC
+generated: 2026-09-26 09:55:01 UTC
 done:   242
 queued: 10
 failed: 1
@@ -42,12 +42,12 @@ a01-234-every-new-shelf-price-is-wrong.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1887       11074         456        3446       13715
+Mem:           15603        1908       11053         456        3447       13694
 -- top --
     ELAPSED   RSS COMMAND
-      03:21 413040 next-server (v1
-      00:46 211984 chrome-headless
-      04:48 182968 node
-      03:18 142360 chrome-headless
+      08:21 392752 next-server (v1
+      01:00 224032 chrome-headless
+      09:48 216884 node
+      08:19 144452 chrome-headless
 -- disk --
 /dev/sda1        75G   34G   38G  48% /
