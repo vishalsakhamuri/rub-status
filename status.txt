@@ -1,4 +1,4 @@
-generated: 2026-09-26 06:45:01 UTC
+generated: 2026-09-26 06:50:01 UTC
 done:   241
 queued: 11
 failed: 1
@@ -20,12 +20,6 @@ b07-224-ten-businesses-end-to-end.md
 a01-234-every-new-shelf-price-is-wrong.md
 
 -- log --
-     . journeys: starting clean — zero orphaned servers, zero stray browsers
-     ! JOURNEYS: 13 of 18 failed — upload and self-sign, invite and sign in, raise an invoice, invoice: three lines survive a submit with no customer chosen, run a No1Edit tool, J2: sign a document myself and take it away, J3: change a document and take it away, J4: the employee folder — nothing typed twice, J2: sign a document myself and take it away — DigiSign-only tenant, J3: change a document and take it away — No1Edit-only tenant, J2: sign a document myself and take it away — tenant with no entity, J3: change a document and take it away — tenant with no entity, (remaining journeys) — see docs/journeys-report.md
-     . mem: journeys step peaked at 4725MB (cgroup MemoryCurrent, sampled every 3s)
-     [FAILED] (exit 98) 05:17:29
-       moved to tasks/failed/ — the queue carries on
-       reason: stalled — log ends on a waiting line, no completion marker (commit was made, but a commit is not proof of completion when the task's own words say it isn't finished)
        see logs/a01-234-every-new-shelf-price-is-wrong.log
 
 ---- a02-235-stock-on-the-shelf-not-on-the-balance-sheet ----  started 05:17:31
@@ -40,15 +34,21 @@ a01-234-every-new-shelf-price-is-wrong.md
      ! SCREENS: 3 broken, 0 blank, 2 404 of 257 — see docs/screen-audit.md
      . mem: screens step peaked at 4215MB (cgroup MemoryCurrent, sampled every 3s)
      . journeys: starting clean — zero orphaned servers, zero stray browsers
+================================================
+  RunUrBusiness — draining the task queue
+  started Sat 26 Sep 06:48
+================================================
+
+---- a02-235-stock-on-the-shelf-not-on-the-balance-sheet ----  started 06:48:24
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1907       11284         456        3218       13695
+Mem:           15603        1376       11838         415        3152       14226
 -- top --
     ELAPSED   RSS COMMAND
-      03:06 377340 next-server (v1
-      00:30 247968 chrome-headless
-      04:34 196884 node
-      03:03 143236 chrome-headless
+      01:35 347300 claude
+16-00:43:52 132620 systemd-journal
+      01:41 22584 packagekitd
+23-01:55:29 13608 systemd
 -- disk --
 /dev/sda1        75G   34G   38G  48% /
