@@ -1,11 +1,10 @@
-generated: 2026-09-26 05:15:01 UTC
+generated: 2026-09-26 05:20:01 UTC
 done:   241
-queued: 12
-failed: 0
+queued: 11
+failed: 1
 hold:   1
 
 -- queued --
-a01-234-every-new-shelf-price-is-wrong.md
 a02-235-stock-on-the-shelf-not-on-the-balance-sheet.md
 a03-236-the-final-invoice-refuses-its-own-deposit.md
 a04-237-a-date-the-signer-cannot-fill-and-a-signature-on-the-wrong-page.md
@@ -18,16 +17,9 @@ b05-243-meetings-minutes-actions-and-the-templates-in-german.md
 b06-244-the-steuerberater-wants-datev.md
 b07-224-ten-businesses-end-to-end.md
 -- failed --
+a01-234-every-new-shelf-price-is-wrong.md
 
 -- log --
-
----- a01-234-every-new-shelf-price-is-wrong ----  started 03:25:20
-     .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
-     ! exited clean but produced nothing verifiable — stalled — log ends on a waiting line, no completion marker (commit was made, but a commit is not proof of completion when the task's own words say it isn't finished)
-     . build/screens/journeys: diff since 33db87a00864 touches something that could render — running fresh
-     ! orphaned dev server found: pid 3625157, owned by build, age 1h23m, cwd /home/build/runurbusiness (sh -c next dev) — killing it
-     ! orphaned dev server found: pid 3625158, owned by build, age 1h23m, cwd /home/build/runurbusiness (node /home/build/runurbusiness/node_modules/.bin/../.pnpm/next@16.2.11_@babel+core@7.29.7_supports-color@7.2.0__react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/bin/next dev) — killing it
-     ! orphaned dev server found: pid 3625175, owned by build, age 1h23m, cwd /home/build/runurbusiness (next-server (v16.2.11)) — killing it
      ! orphaned dev server found: pid 3647510, owned by build, age 1m, cwd /home/build/runurbusiness (npm exec vitest run) — killing it
      . orphaned dev server(s) cleaned up before this task starts
      . build: starting clean — zero orphaned servers, zero stray browsers
@@ -40,15 +32,23 @@ b07-224-ten-businesses-end-to-end.md
      ! SCREENS: 3 broken, 0 blank, 2 404 of 257 — see docs/screen-audit.md
      . mem: screens step peaked at 4619MB (cgroup MemoryCurrent, sampled every 3s)
      . journeys: starting clean — zero orphaned servers, zero stray browsers
+     ! JOURNEYS: 13 of 18 failed — upload and self-sign, invite and sign in, raise an invoice, invoice: three lines survive a submit with no customer chosen, run a No1Edit tool, J2: sign a document myself and take it away, J3: change a document and take it away, J4: the employee folder — nothing typed twice, J2: sign a document myself and take it away — DigiSign-only tenant, J3: change a document and take it away — No1Edit-only tenant, J2: sign a document myself and take it away — tenant with no entity, J3: change a document and take it away — tenant with no entity, (remaining journeys) — see docs/journeys-report.md
+     . mem: journeys step peaked at 4725MB (cgroup MemoryCurrent, sampled every 3s)
+     [FAILED] (exit 98) 05:17:29
+       moved to tasks/failed/ — the queue carries on
+       reason: stalled — log ends on a waiting line, no completion marker (commit was made, but a commit is not proof of completion when the task's own words say it isn't finished)
+       see logs/a01-234-every-new-shelf-price-is-wrong.log
+
+---- a02-235-stock-on-the-shelf-not-on-the-balance-sheet ----  started 05:17:31
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2306       11319         451        2778       13296
+Mem:           15603        1769       11828         417        2772       13833
 -- top --
     ELAPSED   RSS COMMAND
-      21:36 379396 node
-      08:18 370096 next-server (v1
-      00:56 224856 chrome-headless
-      09:46 206472 node
+      26:35 387388 node
+      02:27 302652 claude
+      00:04 153152 node
+15-23:13:51 130944 systemd-journal
 -- disk --
 /dev/sda1        75G   34G   39G  47% /
