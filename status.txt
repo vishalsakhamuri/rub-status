@@ -1,7 +1,7 @@
-generated: 2026-09-26 03:25:01 UTC
-done:   241
+generated: 2026-09-26 03:30:01 UTC
+done:   240
 queued: 12
-failed: 0
+failed: 1
 hold:   1
 
 -- queued --
@@ -18,37 +18,38 @@ b05-243-meetings-minutes-actions-and-the-templates-in-german.md
 b06-244-the-steuerberater-wants-datev.md
 b07-224-ten-businesses-end-to-end.md
 -- failed --
+a00-233-the-first-click-fails-and-the-form-forgets.md
 
 -- log --
+  · null "(no tenants row)" — row count changed from 35 to 36
+  · 5c48dc66-21ac-4008-a61c-23d9edbda0e0 "document-clocks-digisign-only test company" — new tenant created during the sweep, never torn down (154 row(s) left behind); journey "invite and sign in" failed: creating the employee did not reach a record page — landed on http://localhost:3000/hr/employees/new; journey "raise an invoice" failed: locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('summary[aria-label="Other ways to finish"]')
+; 78 screen(s) flagged for density, up from 14 on the last green run: /account/suspended, /accounting/packets/[packet], /accounting/packets/build/[statement], /accounts, /assets/[id], /assets/holders, /assets/locations, /assets — see docs/screen-density.md
+     . mem: gate step peaked at 3569MB (cgroup MemoryCurrent, sampled every 3s)
+     ! GATE FAILED, caused by this task
+     ! task had self-moved to tasks/done/ — moved back to tasks/failed/, the gate said otherwise
+     [FAILED] (exit 97) 03:25:18
+       moved to tasks/failed/ — the queue carries on
+       reason: completion marker + commit present, but the gate failed: 2 screen(s) 404: /no1cloud/training/courses/[id], /projects/people/[userId]; 1 screen(s) 404: /projects/people/[userId]; 24 screen(s) missing an empty state that teaches; scripts/prove-fixture-isolation.ts failed (a03-228 is marked done): 3 tenant(s) violated fixture isolation during this sweep:
+  · aaf538cf-7cf7-4d60-a005-221fb9401c32 "Rheinbach Systemtechnik" — row count changed from 56256 to 56350
+  · null "(no tenants row)" — row count changed from 35 to 36
+  · 5c48dc66-21ac-4008-a61c-23d9edbda0e0 "document-clocks-digisign-only test company" — new tenant created during the sweep, never torn down (154 row(s) left behind); journey "invite and sign in" failed: creating the employee did not reach a record page — landed on http://localhost:3000/hr/employees/new; journey "raise an invoice" failed: locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('summary[aria-label="Other ways to finish"]')
+; 78 screen(s) flagged for density, up from 14 on the last green run: /account/suspended, /accounting/packets/[packet], /accounting/packets/build/[statement], /accounts, /assets/[id], /assets/holders, /assets/locations, /assets — see docs/screen-density.md
+       see logs/a00-233-the-first-click-fails-and-the-form-forgets.log
 
----- a00-233-the-first-click-fails-and-the-form-forgets ----  started 21:52:38
-     . build/screens/journeys: diff since ce759e8f161e touches something that could render — running fresh
-     ! orphaned dev server found: pid 3591199, owned by build, age 1h1m, cwd /home/build/runurbusiness (node /usr/bin/pnpm start) — killing it
-     ! orphaned dev server found: pid 3591214, owned by build, age 1h1m, cwd /home/build/runurbusiness (next-server (v16.2.11)) — killing it
-     . orphaned dev server(s) cleaned up before this task starts
-     . build: starting clean — zero orphaned servers, zero stray browsers
-     . build clean
-     . mem: build step peaked at 4417MB (cgroup MemoryCurrent, sampled every 3s)
-     . tests: starting clean — zero orphaned servers, zero stray browsers
-     . suite green: 3664 tests
-     . mem: tests step peaked at 2755MB (cgroup MemoryCurrent, sampled every 3s)
-     . screens: starting clean — zero orphaned servers, zero stray browsers
-     ! SCREENS: 3 broken, 0 blank, 2 404 of 257 — see docs/screen-audit.md
-     . mem: screens step peaked at 4570MB (cgroup MemoryCurrent, sampled every 3s)
-     . journeys: starting clean — zero orphaned servers, zero stray browsers
-     ! JOURNEYS: 13 of 18 failed — upload and self-sign, invite and sign in, raise an invoice, invoice: three lines survive a submit with no customer chosen, run a No1Edit tool, J2: sign a document myself and take it away, J3: change a document and take it away, J4: the employee folder — nothing typed twice, J2: sign a document myself and take it away — DigiSign-only tenant, J3: change a document and take it away — No1Edit-only tenant, J2: sign a document myself and take it away — tenant with no entity, J3: change a document and take it away — tenant with no entity, (remaining journeys) — see docs/journeys-report.md
-     . mem: journeys step peaked at 4488MB (cgroup MemoryCurrent, sampled every 3s)
-     . gate: starting clean — zero orphaned servers, zero stray browsers
-     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
+---- a01-234-every-new-shelf-price-is-wrong ----  started 03:25:20
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2594       10654        1257        3962       13009
+Mem:           15603        2266       10929        1257        4014       13336
 -- top --
     ELAPSED   RSS COMMAND
-      39:01 517540 next-server (v1
-15-21:18:51 129412 systemd-journal
-      39:01 129408 node
-      38:59 99904 node
+      04:38 361832 claude
+15-21:23:51 129604 systemd-journal
+22-22:35:28 13596 systemd
+      00:03 10832 sshd-session
 -- disk --
 /dev/sda1        75G   34G   39G  47% /
