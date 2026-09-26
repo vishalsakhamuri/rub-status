@@ -1,4 +1,4 @@
-generated: 2026-09-26 02:25:01 UTC
+generated: 2026-09-26 02:30:01 UTC
 done:   241
 queued: 12
 failed: 0
@@ -20,9 +20,6 @@ b07-224-ten-businesses-end-to-end.md
 -- failed --
 
 -- log --
-  finished Mon 21 Sep 02:01
-  logs in logs/  ·  tell Claude in the chat
-
   failed tasks are in tasks/failed/ — nothing was deleted:
     b00-224-ten-businesses-end-to-end.md
 ================================================
@@ -40,15 +37,18 @@ b07-224-ten-businesses-end-to-end.md
      . build clean
      . mem: build step peaked at 4417MB (cgroup MemoryCurrent, sampled every 3s)
      . tests: starting clean — zero orphaned servers, zero stray browsers
+     . suite green: 3664 tests
+     . mem: tests step peaked at 2755MB (cgroup MemoryCurrent, sampled every 3s)
+     . screens: starting clean — zero orphaned servers, zero stray browsers
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2898       10493        1318        3879       12704
+Mem:           15603        4160        9231        1307        3868       11443
 -- top --
     ELAPSED   RSS COMMAND
-      31:47 669824 node
-      00:04 204956 node
-15-20:18:51 128080 systemd-journal
-      31:47 77932 npm exec vitest
+      03:23 968556 next-server (v1
+      03:19 833020 chrome-headless
+      03:21 299888 node
+      03:19 180168 chrome-headless
 -- disk --
 /dev/sda1        75G   34G   39G  47% /
