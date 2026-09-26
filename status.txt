@@ -1,4 +1,4 @@
-generated: 2026-09-26 17:30:01 UTC
+generated: 2026-09-26 17:35:01 UTC
 done:   238
 queued: 0
 failed: 0
@@ -8,18 +8,6 @@ hold:   0
 -- failed --
 
 -- log --
-     . tests: starting clean — zero orphaned servers, zero stray browsers
-     . suite green: 3676 tests
-     . mem: tests step peaked at 2840MB (cgroup MemoryCurrent, sampled every 3s)
-     . screens: starting clean — zero orphaned servers, zero stray browsers
-     ! SCREENS: 3 broken, 0 blank, 2 404 of 257 — see docs/screen-audit.md
-     . mem: screens step peaked at 4444MB (cgroup MemoryCurrent, sampled every 3s)
-     . journeys: starting clean — zero orphaned servers, zero stray browsers
-     ! JOURNEYS: 13 of 18 failed — upload and self-sign, invite and sign in, raise an invoice, invoice: three lines survive a submit with no customer chosen, run a No1Edit tool, J2: sign a document myself and take it away, J3: change a document and take it away, J4: the employee folder — nothing typed twice, J2: sign a document myself and take it away — DigiSign-only tenant, J3: change a document and take it away — No1Edit-only tenant, J2: sign a document myself and take it away — tenant with no entity, J3: change a document and take it away — tenant with no entity, (remaining journeys) — see docs/journeys-report.md
-     . mem: journeys step peaked at 4711MB (cgroup MemoryCurrent, sampled every 3s)
-     . gate: starting clean — zero orphaned servers, zero stray browsers
-     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
-     . gate: 78 pass, 23 fail, 0 pending
      ! GATE FAILED: 2 screen(s) 404: /no1cloud/training/courses/[id], /projects/people/[userId]; 1 screen(s) 404: /projects/people/[userId]; 24 screen(s) missing an empty state that teaches; 78 screen(s) flagged for density, up from 14 on the last green run: /account/suspended, /accounting/packets/[packet], /accounting/packets/build/[statement], /accounts, /assets/[id], /assets/holders, /assets/locations, /assets — see docs/screen-density.md
      . mem: gate step peaked at 3610MB (cgroup MemoryCurrent, sampled every 3s)
      ! GATE FAILED, unrelated to this task — same gate reason was already failing before this task ran: 2 screen(s) 404: /no1cloud/training/courses/[id], /projects/people/[userId]; 1 screen(s) 404: /projects/people/[userId]; 24 screen(s) missing an empty state that teaches; 78 screen(s) flagged for density, up from 14 on the last green run: /account/suspended, /accounting/packets/[packet], /accounting/packets/build/[statement], /accounts, /assets/[id], /assets/holders, /assets/locations, /assets — see docs/screen-density.md (streak: 1)
@@ -29,14 +17,26 @@ hold:   0
        reason: completion marker + commit present, but the gate failed: 2 screen(s) 404: /no1cloud/training/courses/[id], /projects/people/[userId]; 1 screen(s) 404: /projects/people/[userId]; 24 screen(s) missing an empty state that teaches; 78 screen(s) flagged for density, up from 14 on the last green run: /account/suspended, /accounting/packets/[packet], /accounting/packets/build/[statement], /accounts, /assets/[id], /assets/holders, /assets/locations, /assets — see docs/screen-density.md
        see logs/a01b-234-every-new-shelf-price-is-wrong-second-run.log
 
+================================================
+  0 task(s) completed, 2 failed, 1 blocked
+  finished Sat 26 Sep 17:30
+  logs in logs/  ·  tell Claude in the chat
+
+  failed tasks are in tasks/failed/ — nothing was deleted:
+
+  blocked tasks are in tasks/blocked/ — failed for a cause outside themselves,
+  requeued automatically once it clears (h003-127 C):
+    b00-224-ten-businesses-end-to-end.md
+================================================
+
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1212       11586         494        3648       14390
+Mem:           15603        1206       11592         494        3648       14396
 -- top --
     ELAPSED   RSS COMMAND
-16-11:23:51 95620 systemd-journal
-23-12:35:29 13616 systemd
-      00:32  9996 sshd-session
-      00:00  9792 ssh
+16-11:28:52 95684 systemd-journal
+23-12:40:29 13616 systemd
+16-11:28:51  9620 systemd-resolve
+      00:38  9264 sshd-session
 -- disk --
 /dev/sda1        75G   35G   38G  48% /
