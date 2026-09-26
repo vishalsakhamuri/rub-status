@@ -1,22 +1,13 @@
-generated: 2026-09-26 13:15:01 UTC
-done:   242
-queued: 10
+generated: 2026-09-26 13:20:01 UTC
+done:   237
+queued: 1
 failed: 1
-hold:   1
+hold:   0
 
 -- queued --
-a01b-234-every-new-shelf-price-is-wrong-second-run.md
-a04-237-a-date-the-signer-cannot-fill-and-a-signature-on-the-wrong-page.md
-a05-238-the-german-customer-gets-an-english-invoice.md
-a06-239-there-is-no-month-close.md
-a07-240-the-owner-is-not-an-employee-and-a-category-cannot-be-capitalised.md
-b03-241-mail-must-leave-the-building.md
-b04-242-the-registers-iso-9001-expects.md
-b05-243-meetings-minutes-actions-and-the-templates-in-german.md
-b06-244-the-steuerberater-wants-datev.md
-b07-224-ten-businesses-end-to-end.md
+b01-225-no1edit-against-sejda.md
 -- failed --
-a03-236-the-final-invoice-refuses-its-own-deposit.md
+b00-224-ten-businesses-end-to-end.md
 
 -- log --
      ! orphaned dev server found: pid 3749647, owned by build, age 27m, cwd /home/build/runurbusiness (next-server (v16.2.11)) — killing it
@@ -42,12 +33,12 @@ a03-236-the-final-invoice-refuses-its-own-deposit.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1403       11368         486        3667       14199
+Mem:           15603        8522        3168         436        4698        7081
 -- top --
     ELAPSED   RSS COMMAND
-      01:55 314108 claude
-16-07:08:51 88392 systemd-journal
-23-08:20:29 13616 systemd
-      00:03 11408 sshd-session
+      03:37 7306268 next-server (v1
+      06:55 216396 claude
+      03:34 113192 node
+16-07:13:51 88524 systemd-journal
 -- disk --
-/dev/sda1        75G   34G   38G  48% /
+/dev/sda1        75G   37G   35G  52% /
