@@ -1,4 +1,4 @@
-generated: 2026-09-26 09:45:01 UTC
+generated: 2026-09-26 09:50:01 UTC
 done:   242
 queued: 10
 failed: 1
@@ -19,9 +19,6 @@ b07-224-ten-businesses-end-to-end.md
 a01-234-every-new-shelf-price-is-wrong.md
 
 -- log --
-     . suite green: 3676 tests
-     . mem: tests step peaked at 5665MB (cgroup MemoryCurrent, sampled every 3s)
-     . screens: starting clean — zero orphaned servers, zero stray browsers
      ! SCREENS: 3 broken, 0 blank, 2 404 of 257 — see docs/screen-audit.md
      . mem: screens step peaked at 4215MB (cgroup MemoryCurrent, sampled every 3s)
      . journeys: starting clean — zero orphaned servers, zero stray browsers
@@ -39,15 +36,18 @@ a01-234-every-new-shelf-price-is-wrong.md
      . suite green: 3676 tests
      . mem: tests step peaked at 2865MB (cgroup MemoryCurrent, sampled every 3s)
      . screens: starting clean — zero orphaned servers, zero stray browsers
+     ! SCREENS: 3 broken, 0 blank, 2 404 of 257 — see docs/screen-audit.md
+     . mem: screens step peaked at 4396MB (cgroup MemoryCurrent, sampled every 3s)
+     . journeys: starting clean — zero orphaned servers, zero stray browsers
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        4003        8959         474        3463       11599
+Mem:           15603        1887       11074         456        3446       13715
 -- top --
     ELAPSED   RSS COMMAND
-      07:17 1316512 next-server (v1
-      02:19 740016 chrome-headless
-      07:13 437212 chrome-headless
-      07:15 427124 node
+      03:21 413040 next-server (v1
+      00:46 211984 chrome-headless
+      04:48 182968 node
+      03:18 142360 chrome-headless
 -- disk --
 /dev/sda1        75G   34G   38G  48% /
