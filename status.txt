@@ -1,4 +1,4 @@
-generated: 2026-09-26 09:55:01 UTC
+generated: 2026-09-26 10:00:01 UTC
 done:   242
 queued: 10
 failed: 1
@@ -19,10 +19,6 @@ b07-224-ten-businesses-end-to-end.md
 a01-234-every-new-shelf-price-is-wrong.md
 
 -- log --
-     ! SCREENS: 3 broken, 0 blank, 2 404 of 257 — see docs/screen-audit.md
-     . mem: screens step peaked at 4215MB (cgroup MemoryCurrent, sampled every 3s)
-     . journeys: starting clean — zero orphaned servers, zero stray browsers
-================================================
   RunUrBusiness — draining the task queue
   started Sat 26 Sep 06:48
 ================================================
@@ -39,15 +35,19 @@ a01-234-every-new-shelf-price-is-wrong.md
      ! SCREENS: 3 broken, 0 blank, 2 404 of 257 — see docs/screen-audit.md
      . mem: screens step peaked at 4396MB (cgroup MemoryCurrent, sampled every 3s)
      . journeys: starting clean — zero orphaned servers, zero stray browsers
+     ! JOURNEYS: 13 of 18 failed — upload and self-sign, invite and sign in, raise an invoice, invoice: three lines survive a submit with no customer chosen, run a No1Edit tool, J2: sign a document myself and take it away, J3: change a document and take it away, J4: the employee folder — nothing typed twice, J2: sign a document myself and take it away — DigiSign-only tenant, J3: change a document and take it away — No1Edit-only tenant, J2: sign a document myself and take it away — tenant with no entity, J3: change a document and take it away — tenant with no entity, (remaining journeys) — see docs/journeys-report.md
+     . mem: journeys step peaked at 4709MB (cgroup MemoryCurrent, sampled every 3s)
+     . gate: starting clean — zero orphaned servers, zero stray browsers
+     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1908       11053         456        3447       13694
+Mem:           15603        1755       11206         419        3410       13847
 -- top --
     ELAPSED   RSS COMMAND
-      08:21 392752 next-server (v1
-      01:00 224032 chrome-headless
-      09:48 216884 node
-      08:19 144452 chrome-headless
+      02:36 323688 next-server (v1
+      00:07 174592 node
+      00:08 148092 node
+16-03:53:51 138884 systemd-journal
 -- disk --
 /dev/sda1        75G   34G   38G  48% /
