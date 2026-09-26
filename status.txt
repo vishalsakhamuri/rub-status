@@ -1,4 +1,4 @@
-generated: 2026-09-26 09:00:01 UTC
+generated: 2026-09-26 09:05:01 UTC
 done:   241
 queued: 11
 failed: 1
@@ -20,11 +20,6 @@ b07-224-ten-businesses-end-to-end.md
 a01-234-every-new-shelf-price-is-wrong.md
 
 -- log --
-       see logs/a01-234-every-new-shelf-price-is-wrong.log
-
----- a02-235-stock-on-the-shelf-not-on-the-balance-sheet ----  started 05:17:31
-     . build/screens/journeys: diff since ac8b6ccdedc0 touches something that could render — running fresh
-     . build: starting clean — zero orphaned servers, zero stray browsers
      ! BUILD BROKEN — see logs/build-latest.log
      . mem: build step peaked at 2476MB (cgroup MemoryCurrent, sampled every 3s)
      . tests: starting clean — zero orphaned servers, zero stray browsers
@@ -40,15 +35,20 @@ a01-234-every-new-shelf-price-is-wrong.md
 ================================================
 
 ---- a02-235-stock-on-the-shelf-not-on-the-balance-sheet ----  started 06:48:24
+     . build/screens/journeys: diff since ac8b6ccdedc0 touches something that could render — running fresh
+     . build: starting clean — zero orphaned servers, zero stray browsers
+     . build clean
+     . mem: build step peaked at 4284MB (cgroup MemoryCurrent, sampled every 3s)
+     . tests: starting clean — zero orphaned servers, zero stray browsers
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1429       11539         419        3403       14173
+Mem:           15603        2988        9978         446        3432       12614
 -- top --
     ELAPSED   RSS COMMAND
-   02:11:35 418104 claude
-16-02:53:52 138068 systemd-journal
-23-04:05:29 13616 systemd
-16-02:53:52  9620 systemd-resolve
+      00:15 757920 node
+      00:01 268256 node
+      00:00 194348 node
+      00:01 146112 node
 -- disk --
 /dev/sda1        75G   34G   38G  48% /
