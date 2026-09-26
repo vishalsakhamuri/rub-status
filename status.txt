@@ -1,12 +1,11 @@
-generated: 2026-09-26 13:10:01 UTC
+generated: 2026-09-26 13:15:01 UTC
 done:   242
-queued: 11
-failed: 0
+queued: 10
+failed: 1
 hold:   1
 
 -- queued --
 a01b-234-every-new-shelf-price-is-wrong-second-run.md
-a03-236-the-final-invoice-refuses-its-own-deposit.md
 a04-237-a-date-the-signer-cannot-fill-and-a-signature-on-the-wrong-page.md
 a05-238-the-german-customer-gets-an-english-invoice.md
 a06-239-there-is-no-month-close.md
@@ -17,16 +16,9 @@ b05-243-meetings-minutes-actions-and-the-templates-in-german.md
 b06-244-the-steuerberater-wants-datev.md
 b07-224-ten-businesses-end-to-end.md
 -- failed --
+a03-236-the-final-invoice-refuses-its-own-deposit.md
 
 -- log --
-       see logs/a02-235-stock-on-the-shelf-not-on-the-balance-sheet.log
-
----- a03-236-the-final-invoice-refuses-its-own-deposit ----  started 10:44:17
-     .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
-     ! exited clean but produced nothing verifiable — attempt 2 of 2 — no commit and no completion marker
-     . build/screens/journeys: diff since 50c7758004d0 touches something that could render — running fresh
-     ! orphaned dev server found: pid 3749629, owned by build, age 27m, cwd /home/build/runurbusiness (sh -c next dev) — killing it
-     ! orphaned dev server found: pid 3749630, owned by build, age 27m, cwd /home/build/runurbusiness (node /home/build/runurbusiness/node_modules/.bin/../.pnpm/next@16.2.11_@babel+core@7.29.7_supports-color@7.2.0__react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/bin/next dev) — killing it
      ! orphaned dev server found: pid 3749647, owned by build, age 27m, cwd /home/build/runurbusiness (next-server (v16.2.11)) — killing it
      . orphaned dev server(s) cleaned up before this task starts
      . build: starting clean — zero orphaned servers, zero stray browsers
@@ -39,15 +31,23 @@ b07-224-ten-businesses-end-to-end.md
      ! SCREENS: 3 broken, 0 blank, 2 404 of 257 — see docs/screen-audit.md
      . mem: screens step peaked at 4673MB (cgroup MemoryCurrent, sampled every 3s)
      . journeys: starting clean — zero orphaned servers, zero stray browsers
+     ! JOURNEYS: 13 of 18 failed — upload and self-sign, invite and sign in, raise an invoice, invoice: three lines survive a submit with no customer chosen, run a No1Edit tool, J2: sign a document myself and take it away, J3: change a document and take it away, J4: the employee folder — nothing typed twice, J2: sign a document myself and take it away — DigiSign-only tenant, J3: change a document and take it away — No1Edit-only tenant, J2: sign a document myself and take it away — tenant with no entity, J3: change a document and take it away — tenant with no entity, (remaining journeys) — see docs/journeys-report.md
+     . mem: journeys step peaked at 4935MB (cgroup MemoryCurrent, sampled every 3s)
+     [FAILED] (exit 98) 13:13:01
+       moved to tasks/failed/ — the queue carries on
+       reason: attempt 2 of 2 — no commit and no completion marker
+       see logs/a03-236-the-final-invoice-refuses-its-own-deposit.log
+
+---- a01b-234-every-new-shelf-price-is-wrong-second-run ----  started 13:13:03
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1951       10821         538        3718       13651
+Mem:           15603        1403       11368         486        3667       14199
 -- top --
     ELAPSED   RSS COMMAND
-      07:42 362828 next-server (v1
-      00:23 250304 chrome-headless
-      09:11 206072 node
-      07:40 144764 chrome-headless
+      01:55 314108 claude
+16-07:08:51 88392 systemd-journal
+23-08:20:29 13616 systemd
+      00:03 11408 sshd-session
 -- disk --
 /dev/sda1        75G   34G   38G  48% /
