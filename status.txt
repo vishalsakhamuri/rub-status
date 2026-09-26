@@ -1,4 +1,4 @@
-generated: 2026-09-26 05:30:01 UTC
+generated: 2026-09-26 05:35:01 UTC
 done:   241
 queued: 11
 failed: 1
@@ -43,12 +43,12 @@ a01-234-every-new-shelf-price-is-wrong.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1347       12248         359        2716       14255
+Mem:           15603        3430        9765         362        3119       12173
 -- top --
     ELAPSED   RSS COMMAND
-      12:27 396256 claude
-15-23:23:51 131060 systemd-journal
-23-00:35:29 13596 systemd
-15-23:23:51  9620 systemd-resolve
+      00:17 2053432 node
+      17:27 410352 claude
+15-23:28:51 131220 systemd-journal
+      00:18 78964 npm exec tsc --
 -- disk --
-/dev/sda1        75G   34G   39G  47% /
+/dev/sda1        75G   34G   38G  48% /
