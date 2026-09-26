@@ -1,4 +1,4 @@
-generated: 2026-09-26 11:35:01 UTC
+generated: 2026-09-26 11:40:01 UTC
 done:   241
 queued: 10
 failed: 2
@@ -20,7 +20,6 @@ a01-234-every-new-shelf-price-is-wrong.md
 a02-235-stock-on-the-shelf-not-on-the-balance-sheet.md
 
 -- log --
-     . mem: tests step peaked at 2865MB (cgroup MemoryCurrent, sampled every 3s)
      . screens: starting clean — zero orphaned servers, zero stray browsers
      ! SCREENS: 3 broken, 0 blank, 2 404 of 257 — see docs/screen-audit.md
      . mem: screens step peaked at 4396MB (cgroup MemoryCurrent, sampled every 3s)
@@ -40,15 +39,16 @@ a02-235-stock-on-the-shelf-not-on-the-balance-sheet.md
        see logs/a02-235-stock-on-the-shelf-not-on-the-balance-sheet.log
 
 ---- a03-236-the-final-invoice-refuses-its-own-deposit ----  started 10:44:17
+     .. silent run (no commit, no completion marker) — retrying immediately, attempt 2 of 2
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2939        8959         419        4473       12663
+Mem:           15603        1576       10537         420        4259       14026
 -- top --
     ELAPSED   RSS COMMAND
-      00:05 1102896 node
-      50:41 551652 claude
-      04:54 293224 next-server (v1
-16-05:28:51 139724 systemd-journal
+      03:50 362196 claude
+      09:54 295180 next-server (v1
+16-05:33:51 139728 systemd-journal
+23-06:45:29 13616 systemd
 -- disk --
-/dev/sda1        75G   35G   37G  49% /
+/dev/sda1        75G   35G   38G  49% /
