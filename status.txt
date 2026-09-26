@@ -1,4 +1,4 @@
-generated: 2026-09-26 13:00:01 UTC
+generated: 2026-09-26 13:05:01 UTC
 done:   242
 queued: 11
 failed: 0
@@ -19,9 +19,6 @@ b07-224-ten-businesses-end-to-end.md
 -- failed --
 
 -- log --
-     [FAILED] (exit 97) 10:44:15
-       moved to tasks/failed/ — the queue carries on
-       reason: completion marker + commit present, but the gate failed: 2 screen(s) 404: /no1cloud/training/courses/[id], /projects/people/[userId]; 1 screen(s) 404: /projects/people/[userId]; 24 screen(s) missing an empty state that teaches; 78 screen(s) flagged for density, up from 14 on the last green run: /account/suspended, /accounting/packets/[packet], /accounting/packets/build/[statement], /accounts, /assets/[id], /assets/holders, /assets/locations, /assets — see docs/screen-density.md
        see logs/a02-235-stock-on-the-shelf-not-on-the-balance-sheet.log
 
 ---- a03-236-the-final-invoice-refuses-its-own-deposit ----  started 10:44:17
@@ -39,15 +36,18 @@ b07-224-ten-businesses-end-to-end.md
      . suite green: 3681 tests
      . mem: tests step peaked at 4796MB (cgroup MemoryCurrent, sampled every 3s)
      . screens: starting clean — zero orphaned servers, zero stray browsers
+     ! SCREENS: 3 broken, 0 blank, 2 404 of 257 — see docs/screen-audit.md
+     . mem: screens step peaked at 4673MB (cgroup MemoryCurrent, sampled every 3s)
+     . journeys: starting clean — zero orphaned servers, zero stray browsers
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3816        8958         544        3722       11787
+Mem:           15603        1986       10787         528        3707       13616
 -- top --
     ELAPSED   RSS COMMAND
-      06:33 1224716 next-server (v1
-      01:40 574864 chrome-headless
-      06:30 463876 node
-      06:28 426628 chrome-headless
+      02:42 403092 next-server (v1
+      00:08 231772 chrome-headless
+      04:11 181696 node
+      02:40 141920 chrome-headless
 -- disk --
 /dev/sda1        75G   34G   38G  48% /
