@@ -1,4 +1,4 @@
-generated: 2026-09-26 06:00:01 UTC
+generated: 2026-09-26 06:05:01 UTC
 done:   241
 queued: 11
 failed: 1
@@ -20,11 +20,6 @@ b07-224-ten-businesses-end-to-end.md
 a01-234-every-new-shelf-price-is-wrong.md
 
 -- log --
-     ! orphaned dev server found: pid 3647510, owned by build, age 1m, cwd /home/build/runurbusiness (npm exec vitest run) — killing it
-     . orphaned dev server(s) cleaned up before this task starts
-     . build: starting clean — zero orphaned servers, zero stray browsers
-     . build clean
-     . mem: build step peaked at 4643MB (cgroup MemoryCurrent, sampled every 3s)
      . tests: starting clean — zero orphaned servers, zero stray browsers
      ! suite did not produce a result at all — see logs/suite-latest.log
      . mem: tests step peaked at 726MB (cgroup MemoryCurrent, sampled every 3s)
@@ -40,15 +35,20 @@ a01-234-every-new-shelf-price-is-wrong.md
        see logs/a01-234-every-new-shelf-price-is-wrong.log
 
 ---- a02-235-stock-on-the-shelf-not-on-the-balance-sheet ----  started 05:17:31
+     . build/screens/journeys: diff since ac8b6ccdedc0 touches something that could render — running fresh
+     . build: starting clean — zero orphaned servers, zero stray browsers
+     ! BUILD BROKEN — see logs/build-latest.log
+     . mem: build step peaked at 2476MB (cgroup MemoryCurrent, sampled every 3s)
+     . tests: starting clean — zero orphaned servers, zero stray browsers
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        4330        9076         411        2956       11272
+Mem:           15603        1859       11332         456        3216       13743
 -- top --
     ELAPSED   RSS COMMAND
-      00:25 2279796 node
-      42:28 464160 claude
-      10:58 379656 node
-      00:21 199840 node
+      04:45 626368 node
+      00:23 151872 node
+15-23:58:52 131892 systemd-journal
+      04:46 78644 npm exec vitest
 -- disk --
-/dev/sda1        75G   34G   39G  47% /
+/dev/sda1        75G   34G   38G  48% /
