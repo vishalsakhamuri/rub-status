@@ -1,4 +1,4 @@
-generated: 2026-09-28 22:15:01 UTC
+generated: 2026-09-28 22:20:01 UTC
 done:   245
 queued: 12
 failed: 0
@@ -20,9 +20,6 @@ b07-224-ten-businesses-end-to-end.md
 -- failed --
 
 -- log --
-     . gate: 77 pass, 20 fail, 1 pending
-     ! GATE FAILED: 24 screen(s) missing an empty state that teaches; scripts/prove-fixture-isolation.ts failed (a03-228 is marked done): 2 tenant(s) violated fixture isolation during this sweep:
-  · aaf538cf-7cf7-4d60-a005-221fb9401c32 "Rheinbach Systemtechnik" — row count changed from 58017 to 58111
   · null "(no tenants row)" — row count changed from 44 to 45; 79 screen(s) flagged for density, up from 14 on the last green run: /account/suspended, /accounting/packets/[packet], /accounting/packets/build/[statement], /accounts, /assets/[id], /assets/holders, /assets/locations, /assets — see docs/screen-density.md
      . mem: gate step peaked at 4075MB (cgroup MemoryCurrent, sampled every 3s)
      ! GATE FAILED, caused by this task
@@ -40,15 +37,18 @@ b07-224-ten-businesses-end-to-end.md
      . build clean
      . mem: build step peaked at 4972MB (cgroup MemoryCurrent, sampled every 3s)
      . tests: starting clean — zero orphaned servers, zero stray browsers
+     . suite green: 3681 tests
+     . mem: tests step peaked at 3624MB (cgroup MemoryCurrent, sampled every 3s)
+     . screens: starting clean — zero orphaned servers, zero stray browsers
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1738        9856         272        4630       13864
+Mem:           15603        4128        7466         212        4570       11474
 -- top --
     ELAPSED   RSS COMMAND
-      30:10 657220 node
-      00:05 152880 node
-18-16:08:51 133160 systemd-journal
-      30:10 77772 npm exec vitest
+      00:14 1847848 node
+      00:44 1343424 node
+      00:39 163596 node
+18-16:13:51 133188 systemd-journal
 -- disk --
 /dev/sda1        75G   36G   37G  50% /
