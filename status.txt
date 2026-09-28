@@ -1,6 +1,6 @@
-generated: 2026-09-28 17:45:01 UTC
+generated: 2026-09-28 17:50:01 UTC
 done:   243
-queued: 13
+queued: 14
 failed: 0
 hold:   1
 
@@ -13,6 +13,7 @@ a06-239-there-is-no-month-close.md
 a07-240-the-owner-is-not-an-employee-and-a-category-cannot-be-capitalised.md
 a08-246-twenty-four-screens-teach-nothing-on-day-one.md
 a09-247-the-screen-density-baseline-has-not-moved-since-18-september.md
+a10-248-the-sweep-keeps-writing-into-the-real-tenant.md
 b03-241-mail-must-leave-the-building.md
 b04-242-the-registers-iso-9001-expects.md
 b05-243-meetings-minutes-actions-and-the-templates-in-german.md
@@ -44,12 +45,12 @@ b07-224-ten-businesses-end-to-end.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1917        9983         208        4260       13685
+Mem:           15603        1385       10514         208        4260       14217
 -- top --
     ELAPSED   RSS COMMAND
-   06:45:55 525340 claude
-      38:26 499236 next-server (v1
-      38:26 129480 node
-18-11:38:51 115384 systemd-journal
+   06:50:55 590512 claude
+18-11:43:51 115512 systemd-journal
+25-12:55:28 13648 systemd
+18-11:43:51  9620 systemd-resolve
 -- disk --
 /dev/sda1        75G   35G   37G  49% /
