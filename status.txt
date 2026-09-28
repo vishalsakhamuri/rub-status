@@ -1,4 +1,4 @@
-generated: 2026-09-28 18:35:01 UTC
+generated: 2026-09-28 18:40:01 UTC
 done:   244
 queued: 13
 failed: 0
@@ -22,9 +22,6 @@ b07-224-ten-businesses-end-to-end.md
 
 -- log --
 ================================================
-  RunUrBusiness — draining the task queue
-  started Mon 28 Sep 10:56
-================================================
 
 ---- a03-236-the-final-invoice-refuses-its-own-deposit ----  started 10:56:25
 ================================================
@@ -41,15 +38,18 @@ b07-224-ten-businesses-end-to-end.md
      . suite green: 3676 tests
      . mem: tests step peaked at 3364MB (cgroup MemoryCurrent, sampled every 3s)
      . screens: starting clean — zero orphaned servers, zero stray browsers
+     ! SCREENS: 3 broken, 0 blank, 0 404 of 257 — see docs/screen-audit.md
+     . mem: screens step peaked at 4957MB (cgroup MemoryCurrent, sampled every 3s)
+     . journeys: starting clean — zero orphaned servers, zero stray browsers
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3630        8265         271        4327       11972
+Mem:           15603        1714       10181         250        4307       13888
 -- top --
     ELAPSED   RSS COMMAND
-      07:11 1199628 next-server (v1
-      02:03 714580 chrome-headless
-      07:09 441716 node
-      07:07 438068 chrome-headless
+      03:07 411560 next-server (v1
+      00:30 248684 chrome-headless
+      04:32 182768 node
+      03:04 141832 chrome-headless
 -- disk --
 /dev/sda1        75G   35G   37G  49% /
