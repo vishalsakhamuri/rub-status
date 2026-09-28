@@ -1,4 +1,4 @@
-generated: 2026-09-28 18:25:01 UTC
+generated: 2026-09-28 18:30:01 UTC
 done:   244
 queued: 13
 failed: 0
@@ -21,9 +21,6 @@ b07-224-ten-businesses-end-to-end.md
 -- failed --
 
 -- log --
-  requeued automatically once it clears (h003-127 C):
-    b00-224-ten-businesses-end-to-end.md
-================================================
 ================================================
   RunUrBusiness — draining the task queue
   started Mon 28 Sep 10:56
@@ -41,15 +38,18 @@ b07-224-ten-businesses-end-to-end.md
      . build clean
      . mem: build step peaked at 4658MB (cgroup MemoryCurrent, sampled every 3s)
      . tests: starting clean — zero orphaned servers, zero stray browsers
+     . suite green: 3676 tests
+     . mem: tests step peaked at 3364MB (cgroup MemoryCurrent, sampled every 3s)
+     . screens: starting clean — zero orphaned servers, zero stray browsers
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1763       10133         269        4325       13839
+Mem:           15603        2676        9220         254        4310       12926
 -- top --
     ELAPSED   RSS COMMAND
-      32:51 645760 node
-      00:03 192920 node
-18-12:18:52 115772 systemd-journal
-      32:51 78560 npm exec vitest
+      02:12 997000 next-server (v1
+      02:07 432820 chrome-headless
+      02:09 265236 node
+      02:08 178004 chrome-headless
 -- disk --
 /dev/sda1        75G   35G   37G  49% /
