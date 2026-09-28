@@ -1,4 +1,4 @@
-generated: 2026-09-28 22:40:01 UTC
+generated: 2026-09-28 22:45:01 UTC
 done:   245
 queued: 12
 failed: 0
@@ -20,10 +20,6 @@ b07-224-ten-businesses-end-to-end.md
 -- failed --
 
 -- log --
-     ! task had self-moved to tasks/done/ — moved back to tasks/failed/, the gate said otherwise
-     [FAILED] (exit 97) 19:35:30
-       moved to tasks/failed/ — the queue carries on
-       reason: completion marker + commit present, but the gate failed: 24 screen(s) missing an empty state that teaches; scripts/prove-fixture-isolation.ts failed (a03-228 is marked done): 2 tenant(s) violated fixture isolation during this sweep:
   · aaf538cf-7cf7-4d60-a005-221fb9401c32 "Rheinbach Systemtechnik" — row count changed from 58017 to 58111
   · null "(no tenants row)" — row count changed from 44 to 45; 79 screen(s) flagged for density, up from 14 on the last green run: /account/suspended, /accounting/packets/[packet], /accounting/packets/build/[statement], /accounts, /assets/[id], /assets/holders, /assets/locations, /assets — see docs/screen-density.md
        see logs/a00-245-a-stash-erased-the-queue.log
@@ -40,15 +36,19 @@ b07-224-ten-businesses-end-to-end.md
      ! SCREENS: 3 broken, 0 blank, 0 404 of 257 — see docs/screen-audit.md
      . mem: screens step peaked at 5262MB (cgroup MemoryCurrent, sampled every 3s)
      . journeys: starting clean — zero orphaned servers, zero stray browsers
+     ! JOURNEYS: 13 of 18 failed — upload and self-sign, invite and sign in, raise an invoice, invoice: three lines survive a submit with no customer chosen, run a No1Edit tool, J2: sign a document myself and take it away, J3: change a document and take it away, J4: the employee folder — nothing typed twice, J2: sign a document myself and take it away — DigiSign-only tenant, J3: change a document and take it away — No1Edit-only tenant, J2: sign a document myself and take it away — tenant with no entity, J3: change a document and take it away — tenant with no entity, (remaining journeys) — see docs/journeys-report.md
+     . mem: journeys step peaked at 5695MB (cgroup MemoryCurrent, sampled every 3s)
+     . gate: starting clean — zero orphaned servers, zero stray browsers
+     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1700        9893         254        4612       13902
+Mem:           15603        1513       10080         212        4571       14089
 -- top --
     ELAPSED   RSS COMMAND
-      10:17 392264 next-server (v1
-      00:28 247752 chrome-headless
-      11:44 190468 node
-      10:15 144116 chrome-headless
+      04:23 329620 next-server (v1
+      00:39 170616 node
+18-16:38:51 133336 systemd-journal
+      00:40 131840 node
 -- disk --
 /dev/sda1        75G   36G   37G  50% /
