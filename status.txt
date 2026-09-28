@@ -1,4 +1,4 @@
-generated: 2026-09-28 19:40:01 UTC
+generated: 2026-09-28 19:45:01 UTC
 done:   243
 queued: 13
 failed: 1
@@ -45,12 +45,12 @@ a00-245-a-stash-erased-the-queue.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1184       10574         209        4402       14418
+Mem:           15603        1663       10095         253        4446       13939
 -- top --
     ELAPSED   RSS COMMAND
-      04:26 373164 claude
-18-13:33:51 126380 systemd-journal
-25-14:45:29 13648 systemd
-      00:02 11824 sshd-session
+      09:27 391832 claude
+      03:45 358300 node
+      00:39 173608 node
+18-13:38:52 126856 systemd-journal
 -- disk --
 /dev/sda1        75G   35G   37G  49% /
