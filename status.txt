@@ -1,4 +1,4 @@
-generated: 2026-09-28 21:40:01 UTC
+generated: 2026-09-28 21:45:01 UTC
 done:   243
 queued: 13
 failed: 1
@@ -22,11 +22,6 @@ b07-224-ten-businesses-end-to-end.md
 a00-245-a-stash-erased-the-queue.md
 
 -- log --
-     . journeys: starting clean — zero orphaned servers, zero stray browsers
-     ! JOURNEYS: 13 of 18 failed — upload and self-sign, invite and sign in, raise an invoice, invoice: three lines survive a submit with no customer chosen, run a No1Edit tool, J2: sign a document myself and take it away, J3: change a document and take it away, J4: the employee folder — nothing typed twice, J2: sign a document myself and take it away — DigiSign-only tenant, J3: change a document and take it away — No1Edit-only tenant, J2: sign a document myself and take it away — tenant with no entity, J3: change a document and take it away — tenant with no entity, (remaining journeys) — see docs/journeys-report.md
-     . mem: journeys step peaked at 4969MB (cgroup MemoryCurrent, sampled every 3s)
-     . gate: starting clean — zero orphaned servers, zero stray browsers
-     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
      . gate: 77 pass, 20 fail, 1 pending
      ! GATE FAILED: 24 screen(s) missing an empty state that teaches; scripts/prove-fixture-isolation.ts failed (a03-228 is marked done): 2 tenant(s) violated fixture isolation during this sweep:
   · aaf538cf-7cf7-4d60-a005-221fb9401c32 "Rheinbach Systemtechnik" — row count changed from 58017 to 58111
@@ -42,15 +37,20 @@ a00-245-a-stash-erased-the-queue.md
        see logs/a00-245-a-stash-erased-the-queue.log
 
 ---- a03b-236-the-final-invoice-refuses-its-own-deposit-second-run ----  started 19:35:32
+     . build/screens/journeys: diff since 2bb5e17bc4f3 touches something that could render — running fresh
+     . build: starting clean — zero orphaned servers, zero stray browsers
+     . build clean
+     . mem: build step peaked at 4972MB (cgroup MemoryCurrent, sampled every 3s)
+     . tests: starting clean — zero orphaned servers, zero stray browsers
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1231       10366         212        4567       14371
+Mem:           15603        2587        9010         232        4587       13015
 -- top --
     ELAPSED   RSS COMMAND
-   02:04:27 439576 claude
-18-15:33:52 133084 systemd-journal
-25-16:45:29 13648 systemd
-18-15:33:52  9620 systemd-resolve
+      00:11 693556 node
+      00:00 249804 node
+      00:00 243640 node
+      00:00 144944 node
 -- disk --
 /dev/sda1        75G   36G   37G  50% /
