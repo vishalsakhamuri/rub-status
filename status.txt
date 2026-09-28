@@ -1,25 +1,24 @@
-generated: 2026-09-28 10:55:01 UTC
+generated: 2026-09-28 11:00:02 UTC
 done:   238
-queued: 0
+queued: 11
 failed: 0
 hold:   0
 
 -- queued --
+a00-245-a-stash-erased-the-queue.md
+a03b-236-the-final-invoice-refuses-its-own-deposit-second-run.md
+a04-237-a-date-the-signer-cannot-fill-and-a-signature-on-the-wrong-page.md
+a05-238-the-german-customer-gets-an-english-invoice.md
+a06-239-there-is-no-month-close.md
+a07-240-the-owner-is-not-an-employee-and-a-category-cannot-be-capitalised.md
+b03-241-mail-must-leave-the-building.md
+b04-242-the-registers-iso-9001-expects.md
+b05-243-meetings-minutes-actions-and-the-templates-in-german.md
+b06-244-the-steuerberater-wants-datev.md
+b07-224-ten-businesses-end-to-end.md
 -- failed --
 
 -- log --
-     ! GATE FAILED: 2 screen(s) 404: /no1cloud/training/courses/[id], /projects/people/[userId]; 1 screen(s) 404: /projects/people/[userId]; 24 screen(s) missing an empty state that teaches; 78 screen(s) flagged for density, up from 14 on the last green run: /account/suspended, /accounting/packets/[packet], /accounting/packets/build/[statement], /accounts, /assets/[id], /assets/holders, /assets/locations, /assets — see docs/screen-density.md
-     . mem: gate step peaked at 3610MB (cgroup MemoryCurrent, sampled every 3s)
-     ! GATE FAILED, unrelated to this task — same gate reason was already failing before this task ran: 2 screen(s) 404: /no1cloud/training/courses/[id], /projects/people/[userId]; 1 screen(s) 404: /projects/people/[userId]; 24 screen(s) missing an empty state that teaches; 78 screen(s) flagged for density, up from 14 on the last green run: /account/suspended, /accounting/packets/[packet], /accounting/packets/build/[statement], /accounts, /assets/[id], /assets/holders, /assets/locations, /assets — see docs/screen-density.md (streak: 1)
-     [BLOCKED] (exit 97) 17:29:58
-       moved to tasks/blocked/ — failed/ must mean failed on its own merits (h003-127 C)
-       requeued automatically once the blocking reason clears — nothing here is rebuilt
-       reason: completion marker + commit present, but the gate failed: 2 screen(s) 404: /no1cloud/training/courses/[id], /projects/people/[userId]; 1 screen(s) 404: /projects/people/[userId]; 24 screen(s) missing an empty state that teaches; 78 screen(s) flagged for density, up from 14 on the last green run: /account/suspended, /accounting/packets/[packet], /accounting/packets/build/[statement], /accounts, /assets/[id], /assets/holders, /assets/locations, /assets — see docs/screen-density.md
-       see logs/a01b-234-every-new-shelf-price-is-wrong-second-run.log
-
-================================================
-  0 task(s) completed, 2 failed, 1 blocked
-  finished Sat 26 Sep 17:30
   logs in logs/  ·  tell Claude in the chat
 
   failed tasks are in tasks/failed/ — nothing was deleted:
@@ -28,15 +27,27 @@ hold:   0
   requeued automatically once it clears (h003-127 C):
     b00-224-ten-businesses-end-to-end.md
 ================================================
+================================================
+  RunUrBusiness — draining the task queue
+  started Mon 28 Sep 10:56
+================================================
+
+---- a03-236-the-final-invoice-refuses-its-own-deposit ----  started 10:56:25
+================================================
+  RunUrBusiness — draining the task queue
+  started Mon 28 Sep 10:59
+================================================
+
+---- a00-245-a-stash-erased-the-queue ----  started 10:59:03
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603         926       11718         211        3518       14676
+Mem:           15603        1131       11475         211        3556       14471
 -- top --
     ELAPSED   RSS COMMAND
-18-04:48:52 107480 systemd-journal
-25-06:00:29 13636 systemd
-18-04:48:52  9620 systemd-resolve
-18-04:48:52  9012 chronyd
+      00:56 314872 claude
+18-04:53:52 108108 systemd-journal
+25-06:05:29 13636 systemd
+18-04:53:52  9620 systemd-resolve
 -- disk --
 /dev/sda1        75G   35G   38G  48% /
