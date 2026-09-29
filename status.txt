@@ -1,7 +1,7 @@
-generated: 2026-09-29 07:35:01 UTC
-done:   246
+generated: 2026-09-29 07:40:01 UTC
+done:   245
 queued: 11
-failed: 0
+failed: 1
 hold:   1
 
 -- queued --
@@ -17,37 +17,38 @@ b05-243-meetings-minutes-actions-and-the-templates-in-german.md
 b06-244-the-steuerberater-wants-datev.md
 b07-224-ten-businesses-end-to-end.md
 -- failed --
+a04-237-a-date-the-signer-cannot-fill-and-a-signature-on-the-wrong-page.md
 
 -- log --
-; 79 screen(s) flagged for density, up from 14 on the last green run: /account/suspended, /accounting/packets/[packet], /accounting/packets/build/[statement], /accounts, /assets/[id], /assets/holders, /assets/locations, /assets — see docs/screen-density.md
-       see logs/a03b-236-the-final-invoice-refuses-its-own-deposit-second-run.log
-
----- a04-237-a-date-the-signer-cannot-fill-and-a-signature-on-the-wrong-page ----  started 23:55:44
-mv: cannot stat 'logs/queue-heartbeat.json.tmp': No such file or directory
-     . build/screens/journeys: diff since b97fb005fb23 touches something that could render — running fresh
-     . build: starting clean — zero orphaned servers, zero stray browsers
-     . build clean
-     . mem: build step peaked at 4245MB (cgroup MemoryCurrent, sampled every 3s)
-     . tests: starting clean — zero orphaned servers, zero stray browsers
-     . suite green: 3705 tests
-     . mem: tests step peaked at 2462MB (cgroup MemoryCurrent, sampled every 3s)
-     . screens: starting clean — zero orphaned servers, zero stray browsers
-     ! SCREENS: 3 broken, 0 blank, 0 404 of 257 — see docs/screen-audit.md
-     . mem: screens step peaked at 4199MB (cgroup MemoryCurrent, sampled every 3s)
-     . journeys: starting clean — zero orphaned servers, zero stray browsers
-     ! JOURNEYS: 13 of 18 failed — upload and self-sign, invite and sign in, raise an invoice, invoice: three lines survive a submit with no customer chosen, run a No1Edit tool, J2: sign a document myself and take it away, J3: change a document and take it away, J4: the employee folder — nothing typed twice, J2: sign a document myself and take it away — DigiSign-only tenant, J3: change a document and take it away — No1Edit-only tenant, J2: sign a document myself and take it away — tenant with no entity, J3: change a document and take it away — tenant with no entity, (remaining journeys) — see docs/journeys-report.md
-     . mem: journeys step peaked at 4030MB (cgroup MemoryCurrent, sampled every 3s)
-     . gate: starting clean — zero orphaned servers, zero stray browsers
      . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
+     . gate: 75 pass, 21 fail, 1 pending
+     ! GATE FAILED: 24 screen(s) missing an empty state that teaches; scripts/prove-translated.ts failed (c00-213 is marked done):       "a   or a Word file"  — …a PDF or a Word file… /  / TRANSLATED: 2392 known, 33 new /  / [31m1 screen(s) failed[0m; scripts/prove-scroll-containment.ts failed (h00f-119 is marked done):         25,   25,    25,    25,   25, 2950, /       2950, 3802, 27356,  1082, 1700,   25 /     ] /   } / }; scripts/prove-suspend-is-real.ts failed (a00-222 is marked done):  / 6. Closing shows the distinct closed reason, same mechanism — run last: a closed tenant is deliberately terminal (StatusPanel offers no action out of 'closed') and this fixture is torn down right after: /   [32mPASS[0m closing also rejects the live session's next request, with its own distinct reason shown /  / [31m2 CHECK(S) FAILED[0m; scripts/prove-fixture-isolation.ts failed (a03-228 is marked done): 4 tenant(s) violated fixture isolation during this sweep:
+  · aaf538cf-7cf7-4d60-a005-221fb9401c32 "Rheinbach Systemtechnik" — row count changed from 58748 to 58842
+  · null "(no tenants row)" — row count changed from 48 to 49
+  · b0d70f51-1d29-4518-b8b8-e7b6d3c9fed3 "CT- Standard Cost Proof GmbH" — new tenant created during the sweep, never torn down (15 row(s) left behind)
+  · ea188d8d-e925-4ce8-9065-e37f216d6504 "CT- Stock Equals Ledger Proof GmbH" — new tenant created during the sweep, never torn down (15 row(s) left behind); journey "invite and sign in" failed: creating the employee did not reach a record page — landed on http://localhost:3000/hr/employees/new; 79 screen(s) flagged for density, up from 14 on the last green run: /account/suspended, /accounting/packets/[packet], /accounting/packets/build/[statement], /accounts, /assets/[id], /assets/holders, /assets/locations, /assets — see docs/screen-density.md
+     . mem: gate step peaked at 3390MB (cgroup MemoryCurrent, sampled every 3s)
+     ! GATE FAILED, caused by this task
+     ! task had self-moved to tasks/done/ — moved back to tasks/failed/, the gate said otherwise
+     [FAILED] (exit 97) 07:35:25
+       moved to tasks/failed/ — the queue carries on
+       reason: completion marker + commit present, but the gate failed: 24 screen(s) missing an empty state that teaches; scripts/prove-translated.ts failed (c00-213 is marked done):       "a   or a Word file"  — …a PDF or a Word file… /  / TRANSLATED: 2392 known, 33 new /  / [31m1 screen(s) failed[0m; scripts/prove-scroll-containment.ts failed (h00f-119 is marked done):         25,   25,    25,    25,   25, 2950, /       2950, 3802, 27356,  1082, 1700,   25 /     ] /   } / }; scripts/prove-suspend-is-real.ts failed (a00-222 is marked done):  / 6. Closing shows the distinct closed reason, same mechanism — run last: a closed tenant is deliberately terminal (StatusPanel offers no action out of 'closed') and this fixture is torn down right after: /   [32mPASS[0m closing also rejects the live session's next request, with its own distinct reason shown /  / [31m2 CHECK(S) FAILED[0m; scripts/prove-fixture-isolation.ts failed (a03-228 is marked done): 4 tenant(s) violated fixture isolation during this sweep:
+  · aaf538cf-7cf7-4d60-a005-221fb9401c32 "Rheinbach Systemtechnik" — row count changed from 58748 to 58842
+  · null "(no tenants row)" — row count changed from 48 to 49
+  · b0d70f51-1d29-4518-b8b8-e7b6d3c9fed3 "CT- Standard Cost Proof GmbH" — new tenant created during the sweep, never torn down (15 row(s) left behind)
+  · ea188d8d-e925-4ce8-9065-e37f216d6504 "CT- Stock Equals Ledger Proof GmbH" — new tenant created during the sweep, never torn down (15 row(s) left behind); journey "invite and sign in" failed: creating the employee did not reach a record page — landed on http://localhost:3000/hr/employees/new; 79 screen(s) flagged for density, up from 14 on the last green run: /account/suspended, /accounting/packets/[packet], /accounting/packets/build/[statement], /accounts, /assets/[id], /assets/holders, /assets/locations, /assets — see docs/screen-density.md
+       see logs/a04-237-a-date-the-signer-cannot-fill-and-a-signature-on-the-wrong-page.log
+
+---- a05-238-the-german-customer-gets-an-english-invoice ----  started 07:35:27
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1455       10899         210        3795       14147
+Mem:           15603        1178       11152         210        3820       14424
 -- top --
     ELAPSED   RSS COMMAND
-      59:16 485560 next-server (v1
-      59:16 129340 node
-19-01:28:52 112724 systemd-journal
-      59:14 100244 node
+      04:31 379504 claude
+19-01:33:51 112724 systemd-journal
+26-02:45:29 13520 systemd
+      00:05  9700 sshd-session
 -- disk --
 /dev/sda1        75G   36G   37G  50% /
