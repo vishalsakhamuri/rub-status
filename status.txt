@@ -1,4 +1,4 @@
-generated: 2026-09-29 19:15:01 UTC
+generated: 2026-09-29 19:20:01 UTC
 done:   248
 queued: 9
 failed: 0
@@ -17,9 +17,6 @@ b07-224-ten-businesses-end-to-end.md
 -- failed --
 
 -- log --
-  · 5f7e9f26-d4fc-4408-97ce-cde8922701fd "CT- Standard Cost Proof GmbH" — new tenant created during the sweep, never torn down (15 row(s) left behind)
-  · 12c3a827-874d-4f28-af78-522eada89a96 "CT- Stock Equals Ledger Proof GmbH" — new tenant created during the sweep, never torn down (15 row(s) left behind); journey "invite and sign in" failed: creating the employee did not reach a record page — landed on http://localhost:3000/hr/employees/new; 79 screen(s) flagged for density, up from 14 on the last green run: /account/suspended, /accounting/packets/[packet], /accounting/packets/build/[statement], /accounts, /assets/[id], /assets/holders, /assets/locations, /assets — see docs/screen-density.md
-     . mem: gate step peaked at 3864MB (cgroup MemoryCurrent, sampled every 3s)
      ! GATE FAILED, caused by this task
      ! task had self-moved to tasks/done/ — moved back to tasks/failed/, the gate said otherwise
      [FAILED] (exit 97) 14:47:53
@@ -37,15 +34,18 @@ b07-224-ten-businesses-end-to-end.md
      . build clean
      . mem: build step peaked at 6151MB (cgroup MemoryCurrent, sampled every 3s)
      . tests: starting clean — zero orphaned servers, zero stray browsers
+     . suite green: 3762 tests
+     . mem: tests step peaked at 4533MB (cgroup MemoryCurrent, sampled every 3s)
+     . screens: starting clean — zero orphaned servers, zero stray browsers
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1803        9376         351        5112       13799
+Mem:           15603        2896       10045         341        3340       12706
 -- top --
     ELAPSED   RSS COMMAND
-      35:05 647704 node
-      00:03 146860 node
-19-13:08:52 92844 systemd-journal
-      35:06 78532 npm exec vitest
+      02:58 1087576 next-server (v1
+      02:53 486528 chrome-headless
+      02:55 292532 node
+      02:53 179208 chrome-headless
 -- disk --
-/dev/sda1        75G   43G   30G  60% /
+/dev/sda1        75G   37G   36G  51% /
