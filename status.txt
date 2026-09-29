@@ -1,7 +1,7 @@
-generated: 2026-09-29 22:00:01 UTC
-done:   247
+generated: 2026-09-29 22:05:01 UTC
+done:   248
 queued: 9
-failed: 1
+failed: 0
 hold:   1
 
 -- queued --
@@ -15,7 +15,6 @@ b05-243-meetings-minutes-actions-and-the-templates-in-german.md
 b06-244-the-steuerberater-wants-datev.md
 b07-224-ten-businesses-end-to-end.md
 -- failed --
-a06-239-there-is-no-month-close.md
 
 -- log --
   · 9e84ba1f-2f0e-4ee8-8054-e987a369ab39 "CT- Standard Cost Proof GmbH" — new tenant created during the sweep, never torn down (15 row(s) left behind)
@@ -41,12 +40,12 @@ a06-239-there-is-no-month-close.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1886       10729         394        3718       13716
+Mem:           15603        1866       10749         398        3722       13736
 -- top --
     ELAPSED   RSS COMMAND
-      01:17 574732 node
-      00:53 275188 node
-19-15:53:52 102944 systemd-journal
-      01:17 78324 npm exec vitest
+      06:17 636304 node
+      00:28 223180 node
+19-15:58:52 102948 systemd-journal
+      06:17 78324 npm exec vitest
 -- disk --
 /dev/sda1        75G   37G   36G  51% /
