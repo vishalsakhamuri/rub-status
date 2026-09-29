@@ -1,4 +1,4 @@
-generated: 2026-09-29 12:30:01 UTC
+generated: 2026-09-29 12:35:01 UTC
 done:   245
 queued: 11
 failed: 1
@@ -20,14 +20,6 @@ b07-224-ten-businesses-end-to-end.md
 a04-237-a-date-the-signer-cannot-fill-and-a-signature-on-the-wrong-page.md
 
 -- log --
-  · b0d70f51-1d29-4518-b8b8-e7b6d3c9fed3 "CT- Standard Cost Proof GmbH" — new tenant created during the sweep, never torn down (15 row(s) left behind)
-  · ea188d8d-e925-4ce8-9065-e37f216d6504 "CT- Stock Equals Ledger Proof GmbH" — new tenant created during the sweep, never torn down (15 row(s) left behind); journey "invite and sign in" failed: creating the employee did not reach a record page — landed on http://localhost:3000/hr/employees/new; 79 screen(s) flagged for density, up from 14 on the last green run: /account/suspended, /accounting/packets/[packet], /accounting/packets/build/[statement], /accounts, /assets/[id], /assets/holders, /assets/locations, /assets — see docs/screen-density.md
-     . mem: gate step peaked at 3390MB (cgroup MemoryCurrent, sampled every 3s)
-     ! GATE FAILED, caused by this task
-     ! task had self-moved to tasks/done/ — moved back to tasks/failed/, the gate said otherwise
-     [FAILED] (exit 97) 07:35:25
-       moved to tasks/failed/ — the queue carries on
-       reason: completion marker + commit present, but the gate failed: 24 screen(s) missing an empty state that teaches; scripts/prove-translated.ts failed (c00-213 is marked done):       "a   or a Word file"  — …a PDF or a Word file… /  / TRANSLATED: 2392 known, 33 new /  / [31m1 screen(s) failed[0m; scripts/prove-scroll-containment.ts failed (h00f-119 is marked done):         25,   25,    25,    25,   25, 2950, /       2950, 3802, 27356,  1082, 1700,   25 /     ] /   } / }; scripts/prove-suspend-is-real.ts failed (a00-222 is marked done):  / 6. Closing shows the distinct closed reason, same mechanism — run last: a closed tenant is deliberately terminal (StatusPanel offers no action out of 'closed') and this fixture is torn down right after: /   [32mPASS[0m closing also rejects the live session's next request, with its own distinct reason shown /  / [31m2 CHECK(S) FAILED[0m; scripts/prove-fixture-isolation.ts failed (a03-228 is marked done): 4 tenant(s) violated fixture isolation during this sweep:
   · aaf538cf-7cf7-4d60-a005-221fb9401c32 "Rheinbach Systemtechnik" — row count changed from 58748 to 58842
   · null "(no tenants row)" — row count changed from 48 to 49
   · b0d70f51-1d29-4518-b8b8-e7b6d3c9fed3 "CT- Standard Cost Proof GmbH" — new tenant created during the sweep, never torn down (15 row(s) left behind)
@@ -40,15 +32,23 @@ mv: cannot stat 'logs/queue-heartbeat.json.tmp': No such file or directory
 mv: cannot stat 'logs/queue-heartbeat.json.tmp': No such file or directory
 mv: cannot stat 'logs/queue-heartbeat.json.tmp': No such file or directory
 mv: cannot stat 'logs/queue-heartbeat.json.tmp': No such file or directory
+     . build/screens/journeys: diff since b63b10b824e9 touches something that could render — running fresh
+     ! orphaned dev server found: pid 99929, owned by build, age 12m, cwd /home/build/runurbusiness (node /usr/bin/pnpm start) — killing it
+     ! orphaned dev server found: pid 99943, owned by build, age 12m, cwd /home/build/runurbusiness (next-server (v16.2.11)) — killing it
+     . orphaned dev server(s) cleaned up before this task starts
+     . build: starting clean — zero orphaned servers, zero stray browsers
+     . build clean
+     . mem: build step peaked at 4749MB (cgroup MemoryCurrent, sampled every 3s)
+     . tests: starting clean — zero orphaned servers, zero stray browsers
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2044       10715         368        3550       13559
+Mem:           15603        3657        9100         381        3563       11945
 -- top --
     ELAPSED   RSS COMMAND
-   04:54:31 587156 claude
-      09:00 427412 next-server (v1
-      09:00 128180 node
-19-06:23:51 115944 systemd-journal
+      00:04 597744 node
+      00:03 458092 node
+      00:03 428280 node
+      00:03 382180 node
 -- disk --
 /dev/sda1        75G   36G   36G  50% /
