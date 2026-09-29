@@ -1,4 +1,4 @@
-generated: 2026-09-29 06:20:01 UTC
+generated: 2026-09-29 06:25:01 UTC
 done:   246
 queued: 11
 failed: 0
@@ -19,9 +19,6 @@ b07-224-ten-businesses-end-to-end.md
 -- failed --
 
 -- log --
-     ! GATE FAILED, caused by this task
-     ! task had self-moved to tasks/done/ — moved back to tasks/failed/, the gate said otherwise
-     [FAILED] (exit 97) 23:55:41
        moved to tasks/failed/ — the queue carries on
        reason: completion marker + commit present, but the gate failed: 24 screen(s) missing an empty state that teaches; scripts/prove-translated.ts failed (c00-213 is marked done):       "a   or a Word file"  — …a PDF or a Word file… /  / TRANSLATED: 2366 known, 30 new /  / [31m1 screen(s) failed[0m; scripts/prove-scroll-containment.ts failed (h00f-119 is marked done):         25,   25,    25,    25,   25, 2950, /       2950, 3802, 27356,  1082, 1700,   25 /     ] /   } / }; scripts/prove-suspend-is-real.ts failed (a00-222 is marked done):  / 6. Closing shows the distinct closed reason, same mechanism — run last: a closed tenant is deliberately terminal (StatusPanel offers no action out of 'closed') and this fixture is torn down right after: /   [32mPASS[0m closing also rejects the live session's next request, with its own distinct reason shown /  / [31m2 CHECK(S) FAILED[0m; journey "raise an invoice" failed: locator.click: Timeout 30000ms exceeded.
 Call log:
@@ -39,15 +36,18 @@ mv: cannot stat 'logs/queue-heartbeat.json.tmp': No such file or directory
      . suite green: 3705 tests
      . mem: tests step peaked at 2462MB (cgroup MemoryCurrent, sampled every 3s)
      . screens: starting clean — zero orphaned servers, zero stray browsers
+     ! SCREENS: 3 broken, 0 blank, 0 404 of 257 — see docs/screen-audit.md
+     . mem: screens step peaked at 4199MB (cgroup MemoryCurrent, sampled every 3s)
+     . journeys: starting clean — zero orphaned servers, zero stray browsers
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3401        9196         255        3597       12202
+Mem:           15603        1693       10904         241        3584       13909
 -- top --
     ELAPSED   RSS COMMAND
-      04:07 1281584 next-server (v1
-      04:03 797368 chrome-headless
-      04:05 359344 node
-      04:03 179236 chrome-headless
+      00:10 351924 next-server (v1
+      00:08 191324 chrome-headless
+      01:37 189592 node
+      00:11 146208 node
 -- disk --
 /dev/sda1        75G   36G   37G  50% /
