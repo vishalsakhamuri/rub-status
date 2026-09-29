@@ -1,11 +1,10 @@
-generated: 2026-09-29 18:35:01 UTC
+generated: 2026-09-29 18:40:01 UTC
 done:   246
 queued: 10
-failed: 1
+failed: 0
 hold:   1
 
 -- queued --
-a06-239-there-is-no-month-close.md
 a07-240-the-owner-is-not-an-employee-and-a-category-cannot-be-capitalised.md
 a08-246-twenty-four-screens-teach-nothing-on-day-one.md
 a09-247-the-screen-density-baseline-has-not-moved-since-18-september.md
@@ -16,14 +15,8 @@ b05-243-meetings-minutes-actions-and-the-templates-in-german.md
 b06-244-the-steuerberater-wants-datev.md
 b07-224-ten-businesses-end-to-end.md
 -- failed --
-a05-238-the-german-customer-gets-an-english-invoice.md
 
 -- log --
-     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
-     . gate: 75 pass, 21 fail, 1 pending
-     ! GATE FAILED: 24 screen(s) missing an empty state that teaches; scripts/prove-translated.ts failed (c00-213 is marked done):       "PROVE-TRANSLATED fixture"  — …PROVE-TRANSLATED fixture… /  / TRANSLATED: 2392 known, 9 new /  / [31m1 screen(s) failed[0m; scripts/prove-scroll-containment.ts failed (h00f-119 is marked done):         25,   25,    25,    25,   25, 2950, /       2950, 3802, 27356,  1082, 1700,   25 /     ] /   } / }; scripts/prove-form-preservation.ts failed (a01-211 is marked done):   [32m✓[0m Item stock count: the badge request actually resolved during this check /   [32m✓[0m Item stock count: field holds exactly the typed string after the badge counters loaded — typed then before="QA-Preserve-2026aZ9x", after="QA-Preserve-2026aZ9x" /   [31m✗[0m Asset "Assign" panel — location: field found on the page — selector #holderLocation never appeared /  / [31mFAIL (1)[0m — prove-form-preservation; scripts/prove-fixture-isolation.ts failed (a03-228 is marked done): 4 tenant(s) violated fixture isolation during this sweep:
-  · aaf538cf-7cf7-4d60-a005-221fb9401c32 "Rheinbach Systemtechnik" — row count changed from 59120 to 59215
-  · null "(no tenants row)" — row count changed from 50 to 51
   · 5f7e9f26-d4fc-4408-97ce-cde8922701fd "CT- Standard Cost Proof GmbH" — new tenant created during the sweep, never torn down (15 row(s) left behind)
   · 12c3a827-874d-4f28-af78-522eada89a96 "CT- Stock Equals Ledger Proof GmbH" — new tenant created during the sweep, never torn down (15 row(s) left behind); journey "invite and sign in" failed: creating the employee did not reach a record page — landed on http://localhost:3000/hr/employees/new; 79 screen(s) flagged for density, up from 14 on the last green run: /account/suspended, /accounting/packets/[packet], /accounting/packets/build/[statement], /accounts, /assets/[id], /assets/holders, /assets/locations, /assets — see docs/screen-density.md
      . mem: gate step peaked at 3864MB (cgroup MemoryCurrent, sampled every 3s)
@@ -39,15 +32,24 @@ a05-238-the-german-customer-gets-an-english-invoice.md
        see logs/a05-238-the-german-customer-gets-an-english-invoice.log
 
 ---- a06-239-there-is-no-month-close ----  started 14:47:56
+     . build/screens/journeys: diff since 4f26d233c738 touches something that could render — running fresh
+     . build: starting clean — zero orphaned servers, zero stray browsers
+     . build clean
+     . mem: build step peaked at 6151MB (cgroup MemoryCurrent, sampled every 3s)
+     . tests: starting clean — zero orphaned servers, zero stray browsers
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1761        9644         290        4825       13841
+Mem:           15603        3756        7426         302        5060       11846
 -- top --
     ELAPSED   RSS COMMAND
-   03:47:03 415572 claude
-      34:52 388348 node
-      00:04 150684 node
-19-12:28:52 86724 systemd-journal
+      00:05 778728 node
+      00:06 620216 node
+      00:05 395272 node
+      00:05 361040 node
+-- disk --
+/dev/sda1        75G   43G   30G  60% /
+05 395100 node
+      00:05 361032 node
 -- disk --
 /dev/sda1        75G   43G   30G  60% /
