@@ -1,4 +1,4 @@
-generated: 2026-09-29 05:00:01 UTC
+generated: 2026-09-29 05:05:01 UTC
 done:   244
 queued: 12
 failed: 1
@@ -44,12 +44,12 @@ mv: cannot stat 'logs/queue-heartbeat.json.tmp': No such file or directory
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603       11087        1801         232        3284        4515
+Mem:           15603       11725        1160         233        3287        3877
 -- top --
     ELAPSED   RSS COMMAND
-      07:03 9632076 next-server (v1
-   05:04:15 299004 claude
-      06:34 253516 chrome-headless
-      06:39 209492 node
+      12:03 10240224 next-server (v1
+   05:09:15 302444 claude
+      11:34 229904 chrome-headless
+      11:39 204020 node
 -- disk --
-/dev/sda1        75G   43G   30G  60% /
+/dev/sda1        75G   44G   29G  61% /
