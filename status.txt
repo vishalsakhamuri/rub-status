@@ -1,4 +1,4 @@
-generated: 2026-09-29 09:45:01 UTC
+generated: 2026-09-29 09:50:01 UTC
 done:   245
 queued: 11
 failed: 1
@@ -20,7 +20,6 @@ b07-224-ten-businesses-end-to-end.md
 a04-237-a-date-the-signer-cannot-fill-and-a-signature-on-the-wrong-page.md
 
 -- log --
-  · null "(no tenants row)" — row count changed from 48 to 49
   · b0d70f51-1d29-4518-b8b8-e7b6d3c9fed3 "CT- Standard Cost Proof GmbH" — new tenant created during the sweep, never torn down (15 row(s) left behind)
   · ea188d8d-e925-4ce8-9065-e37f216d6504 "CT- Stock Equals Ledger Proof GmbH" — new tenant created during the sweep, never torn down (15 row(s) left behind); journey "invite and sign in" failed: creating the employee did not reach a record page — landed on http://localhost:3000/hr/employees/new; 79 screen(s) flagged for density, up from 14 on the last green run: /account/suspended, /accounting/packets/[packet], /accounting/packets/build/[statement], /accounts, /assets/[id], /assets/holders, /assets/locations, /assets — see docs/screen-density.md
      . mem: gate step peaked at 3390MB (cgroup MemoryCurrent, sampled every 3s)
@@ -40,15 +39,16 @@ mv: cannot stat 'logs/queue-heartbeat.json.tmp': No such file or directory
 mv: cannot stat 'logs/queue-heartbeat.json.tmp': No such file or directory
 mv: cannot stat 'logs/queue-heartbeat.json.tmp': No such file or directory
 mv: cannot stat 'logs/queue-heartbeat.json.tmp': No such file or directory
+mv: cannot stat 'logs/queue-heartbeat.json.tmp': No such file or directory
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603       12099        1160         259        2939        3503
+Mem:           15603       12070        1189         261        2942        3532
 -- top --
     ELAPSED   RSS COMMAND
-   01:14:07 10398208 next-server (v1
-   02:09:31 511164 claude
-      17:44 280736 node
-   01:13:13 182392 node
+   01:19:07 10398216 next-server (v1
+   02:14:31 431940 claude
+      22:44 215736 node
+   01:18:13 180936 node
 -- disk --
 /dev/sda1        75G   42G   30G  59% /
