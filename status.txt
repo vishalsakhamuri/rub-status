@@ -1,4 +1,4 @@
-generated: 2026-09-29 16:55:01 UTC
+generated: 2026-09-29 17:00:01 UTC
 done:   246
 queued: 10
 failed: 1
@@ -42,12 +42,12 @@ a05-238-the-german-customer-gets-an-english-invoice.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2225       10177         372        3909       13377
+Mem:           15603        2249       10153         372        3910       13353
 -- top --
     ELAPSED   RSS COMMAND
-   02:07:03 550516 claude
-      39:42 491000 next-server (v1
-      40:47 128352 node
-      39:43 124040 node
+   02:12:03 566132 claude
+      44:43 491148 next-server (v1
+      45:47 128352 node
+      44:43 124040 node
 -- disk --
 /dev/sda1        75G   37G   36G  51% /
