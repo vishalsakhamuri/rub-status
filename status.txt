@@ -1,4 +1,4 @@
-generated: 2026-09-29 13:10:01 UTC
+generated: 2026-09-29 13:15:01 UTC
 done:   247
 queued: 10
 failed: 0
@@ -18,9 +18,6 @@ b07-224-ten-businesses-end-to-end.md
 -- failed --
 
 -- log --
-  · aaf538cf-7cf7-4d60-a005-221fb9401c32 "Rheinbach Systemtechnik" — row count changed from 58748 to 58842
-  · null "(no tenants row)" — row count changed from 48 to 49
-  · b0d70f51-1d29-4518-b8b8-e7b6d3c9fed3 "CT- Standard Cost Proof GmbH" — new tenant created during the sweep, never torn down (15 row(s) left behind)
   · ea188d8d-e925-4ce8-9065-e37f216d6504 "CT- Stock Equals Ledger Proof GmbH" — new tenant created during the sweep, never torn down (15 row(s) left behind); journey "invite and sign in" failed: creating the employee did not reach a record page — landed on http://localhost:3000/hr/employees/new; 79 screen(s) flagged for density, up from 14 on the last green run: /account/suspended, /accounting/packets/[packet], /accounting/packets/build/[statement], /accounts, /assets/[id], /assets/holders, /assets/locations, /assets — see docs/screen-density.md
        see logs/a04-237-a-date-the-signer-cannot-fill-and-a-signature-on-the-wrong-page.log
 
@@ -38,15 +35,18 @@ mv: cannot stat 'logs/queue-heartbeat.json.tmp': No such file or directory
      . build clean
      . mem: build step peaked at 4749MB (cgroup MemoryCurrent, sampled every 3s)
      . tests: starting clean — zero orphaned servers, zero stray browsers
+     . suite green: 3762 tests
+     . mem: tests step peaked at 3056MB (cgroup MemoryCurrent, sampled every 3s)
+     . screens: starting clean — zero orphaned servers, zero stray browsers
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1953       10804         430        3613       13649
+Mem:           15603        2776        9981         418        3600       12826
 -- top --
     ELAPSED   RSS COMMAND
-      35:04 650016 node
-      00:02 210776 node
-19-07:03:52 116244 systemd-journal
-      35:04 79100 npm exec vitest
+      02:27 931656 next-server (v1
+      02:23 467208 chrome-headless
+      02:25 276208 node
+      02:23 179968 chrome-headless
 -- disk --
 /dev/sda1        75G   36G   36G  50% /
