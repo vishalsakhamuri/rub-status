@@ -1,4 +1,4 @@
-generated: 2026-09-29 13:30:01 UTC
+generated: 2026-09-29 13:35:01 UTC
 done:   247
 queued: 10
 failed: 0
@@ -18,10 +18,6 @@ b07-224-ten-businesses-end-to-end.md
 -- failed --
 
 -- log --
----- a05-238-the-german-customer-gets-an-english-invoice ----  started 07:35:27
-mv: cannot stat 'logs/queue-heartbeat.json.tmp': No such file or directory
-mv: cannot stat 'logs/queue-heartbeat.json.tmp': No such file or directory
-mv: cannot stat 'logs/queue-heartbeat.json.tmp': No such file or directory
 mv: cannot stat 'logs/queue-heartbeat.json.tmp': No such file or directory
 mv: cannot stat 'logs/queue-heartbeat.json.tmp': No such file or directory
      . build/screens/journeys: diff since b63b10b824e9 touches something that could render — running fresh
@@ -38,15 +34,19 @@ mv: cannot stat 'logs/queue-heartbeat.json.tmp': No such file or directory
      ! SCREENS: 3 broken, 0 blank, 0 404 of 257 — see docs/screen-audit.md
      . mem: screens step peaked at 4454MB (cgroup MemoryCurrent, sampled every 3s)
      . journeys: starting clean — zero orphaned servers, zero stray browsers
+     ! JOURNEYS: 13 of 18 failed — upload and self-sign, invite and sign in, raise an invoice, invoice: three lines survive a submit with no customer chosen, run a No1Edit tool, J2: sign a document myself and take it away, J3: change a document and take it away, J4: the employee folder — nothing typed twice, J2: sign a document myself and take it away — DigiSign-only tenant, J3: change a document and take it away — No1Edit-only tenant, J2: sign a document myself and take it away — tenant with no entity, J3: change a document and take it away — tenant with no entity, (remaining journeys) — see docs/journeys-report.md
+     . mem: journeys step peaked at 4726MB (cgroup MemoryCurrent, sampled every 3s)
+     . gate: starting clean — zero orphaned servers, zero stray browsers
+     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1814       10943         406        3588       13788
+Mem:           15603        1720       11037         368        3551       13882
 -- top --
     ELAPSED   RSS COMMAND
-      08:11 381240 next-server (v1
-      00:39 209932 chrome-headless
-      09:39 207252 node
-      08:09 144020 chrome-headless
+      02:12 320992 next-server (v1
+      00:02 216052 node
+      00:03 148344 node
+      02:12 129024 node
 -- disk --
 /dev/sda1        75G   36G   36G  50% /
