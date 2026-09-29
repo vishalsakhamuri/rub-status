@@ -1,7 +1,7 @@
-generated: 2026-09-28 23:55:01 UTC
-done:   245
+generated: 2026-09-29 00:00:02 UTC
+done:   244
 queued: 12
-failed: 0
+failed: 1
 hold:   1
 
 -- queued --
@@ -18,37 +18,38 @@ b05-243-meetings-minutes-actions-and-the-templates-in-german.md
 b06-244-the-steuerberater-wants-datev.md
 b07-224-ten-businesses-end-to-end.md
 -- failed --
+a03b-236-the-final-invoice-refuses-its-own-deposit-second-run.md
 
 -- log --
-  · aaf538cf-7cf7-4d60-a005-221fb9401c32 "Rheinbach Systemtechnik" — row count changed from 58017 to 58111
-  · null "(no tenants row)" — row count changed from 44 to 45; 79 screen(s) flagged for density, up from 14 on the last green run: /account/suspended, /accounting/packets/[packet], /accounting/packets/build/[statement], /accounts, /assets/[id], /assets/holders, /assets/locations, /assets — see docs/screen-density.md
-       see logs/a00-245-a-stash-erased-the-queue.log
-
----- a03b-236-the-final-invoice-refuses-its-own-deposit-second-run ----  started 19:35:32
-     . build/screens/journeys: diff since 2bb5e17bc4f3 touches something that could render — running fresh
-     . build: starting clean — zero orphaned servers, zero stray browsers
-     . build clean
-     . mem: build step peaked at 4972MB (cgroup MemoryCurrent, sampled every 3s)
-     . tests: starting clean — zero orphaned servers, zero stray browsers
-     . suite green: 3681 tests
-     . mem: tests step peaked at 3624MB (cgroup MemoryCurrent, sampled every 3s)
-     . screens: starting clean — zero orphaned servers, zero stray browsers
-     ! SCREENS: 3 broken, 0 blank, 0 404 of 257 — see docs/screen-audit.md
-     . mem: screens step peaked at 5262MB (cgroup MemoryCurrent, sampled every 3s)
-     . journeys: starting clean — zero orphaned servers, zero stray browsers
-     ! JOURNEYS: 13 of 18 failed — upload and self-sign, invite and sign in, raise an invoice, invoice: three lines survive a submit with no customer chosen, run a No1Edit tool, J2: sign a document myself and take it away, J3: change a document and take it away, J4: the employee folder — nothing typed twice, J2: sign a document myself and take it away — DigiSign-only tenant, J3: change a document and take it away — No1Edit-only tenant, J2: sign a document myself and take it away — tenant with no entity, J3: change a document and take it away — tenant with no entity, (remaining journeys) — see docs/journeys-report.md
      . mem: journeys step peaked at 5695MB (cgroup MemoryCurrent, sampled every 3s)
      . gate: starting clean — zero orphaned servers, zero stray browsers
      . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
+     . gate: 75 pass, 21 fail, 1 pending
+     ! GATE FAILED: 24 screen(s) missing an empty state that teaches; scripts/prove-translated.ts failed (c00-213 is marked done):       "a   or a Word file"  — …a PDF or a Word file… /  / TRANSLATED: 2366 known, 30 new /  / [31m1 screen(s) failed[0m; scripts/prove-scroll-containment.ts failed (h00f-119 is marked done):         25,   25,    25,    25,   25, 2950, /       2950, 3802, 27356,  1082, 1700,   25 /     ] /   } / }; scripts/prove-suspend-is-real.ts failed (a00-222 is marked done):  / 6. Closing shows the distinct closed reason, same mechanism — run last: a closed tenant is deliberately terminal (StatusPanel offers no action out of 'closed') and this fixture is torn down right after: /   [32mPASS[0m closing also rejects the live session's next request, with its own distinct reason shown /  / [31m2 CHECK(S) FAILED[0m; journey "raise an invoice" failed: locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('summary[aria-label="Other ways to finish"]')
+; 79 screen(s) flagged for density, up from 14 on the last green run: /account/suspended, /accounting/packets/[packet], /accounting/packets/build/[statement], /accounts, /assets/[id], /assets/holders, /assets/locations, /assets — see docs/screen-density.md
+     . mem: gate step peaked at 4339MB (cgroup MemoryCurrent, sampled every 3s)
+     ! GATE FAILED, caused by this task
+     ! task had self-moved to tasks/done/ — moved back to tasks/failed/, the gate said otherwise
+     [FAILED] (exit 97) 23:55:41
+       moved to tasks/failed/ — the queue carries on
+       reason: completion marker + commit present, but the gate failed: 24 screen(s) missing an empty state that teaches; scripts/prove-translated.ts failed (c00-213 is marked done):       "a   or a Word file"  — …a PDF or a Word file… /  / TRANSLATED: 2366 known, 30 new /  / [31m1 screen(s) failed[0m; scripts/prove-scroll-containment.ts failed (h00f-119 is marked done):         25,   25,    25,    25,   25, 2950, /       2950, 3802, 27356,  1082, 1700,   25 /     ] /   } / }; scripts/prove-suspend-is-real.ts failed (a00-222 is marked done):  / 6. Closing shows the distinct closed reason, same mechanism — run last: a closed tenant is deliberately terminal (StatusPanel offers no action out of 'closed') and this fixture is torn down right after: /   [32mPASS[0m closing also rejects the live session's next request, with its own distinct reason shown /  / [31m2 CHECK(S) FAILED[0m; journey "raise an invoice" failed: locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('summary[aria-label="Other ways to finish"]')
+; 79 screen(s) flagged for density, up from 14 on the last green run: /account/suspended, /accounting/packets/[packet], /accounting/packets/build/[statement], /accounts, /assets/[id], /assets/holders, /assets/locations, /assets — see docs/screen-density.md
+       see logs/a03b-236-the-final-invoice-refuses-its-own-deposit-second-run.log
+
+---- a04-237-a-date-the-signer-cannot-fill-and-a-signature-on-the-wrong-page ----  started 23:55:44
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1510        9928         213        4727       14092
+Mem:           15603        1207       10226         213        4731       14395
 -- top --
     ELAPSED   RSS COMMAND
-   01:14:23 515616 next-server (v1
-18-17:48:51 134116 systemd-journal
-   01:14:23 129044 node
-   01:14:21 104932 node
+      04:15 383540 claude
+18-17:53:52 134124 systemd-journal
+25-19:05:29 13648 systemd
+18-17:53:52  9620 systemd-resolve
 -- disk --
 /dev/sda1        75G   36G   37G  50% /
