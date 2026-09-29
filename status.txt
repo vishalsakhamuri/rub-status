@@ -1,4 +1,4 @@
-generated: 2026-09-29 06:35:01 UTC
+generated: 2026-09-29 06:40:01 UTC
 done:   246
 queued: 11
 failed: 0
@@ -19,10 +19,6 @@ b07-224-ten-businesses-end-to-end.md
 -- failed --
 
 -- log --
-       moved to tasks/failed/ — the queue carries on
-       reason: completion marker + commit present, but the gate failed: 24 screen(s) missing an empty state that teaches; scripts/prove-translated.ts failed (c00-213 is marked done):       "a   or a Word file"  — …a PDF or a Word file… /  / TRANSLATED: 2366 known, 30 new /  / [31m1 screen(s) failed[0m; scripts/prove-scroll-containment.ts failed (h00f-119 is marked done):         25,   25,    25,    25,   25, 2950, /       2950, 3802, 27356,  1082, 1700,   25 /     ] /   } / }; scripts/prove-suspend-is-real.ts failed (a00-222 is marked done):  / 6. Closing shows the distinct closed reason, same mechanism — run last: a closed tenant is deliberately terminal (StatusPanel offers no action out of 'closed') and this fixture is torn down right after: /   [32mPASS[0m closing also rejects the live session's next request, with its own distinct reason shown /  / [31m2 CHECK(S) FAILED[0m; journey "raise an invoice" failed: locator.click: Timeout 30000ms exceeded.
-Call log:
-  - waiting for locator('summary[aria-label="Other ways to finish"]')
 ; 79 screen(s) flagged for density, up from 14 on the last green run: /account/suspended, /accounting/packets/[packet], /accounting/packets/build/[statement], /accounts, /assets/[id], /assets/holders, /assets/locations, /assets — see docs/screen-density.md
        see logs/a03b-236-the-final-invoice-refuses-its-own-deposit-second-run.log
 
@@ -39,15 +35,19 @@ mv: cannot stat 'logs/queue-heartbeat.json.tmp': No such file or directory
      ! SCREENS: 3 broken, 0 blank, 0 404 of 257 — see docs/screen-audit.md
      . mem: screens step peaked at 4199MB (cgroup MemoryCurrent, sampled every 3s)
      . journeys: starting clean — zero orphaned servers, zero stray browsers
+     ! JOURNEYS: 13 of 18 failed — upload and self-sign, invite and sign in, raise an invoice, invoice: three lines survive a submit with no customer chosen, run a No1Edit tool, J2: sign a document myself and take it away, J3: change a document and take it away, J4: the employee folder — nothing typed twice, J2: sign a document myself and take it away — DigiSign-only tenant, J3: change a document and take it away — No1Edit-only tenant, J2: sign a document myself and take it away — tenant with no entity, J3: change a document and take it away — tenant with no entity, (remaining journeys) — see docs/journeys-report.md
+     . mem: journeys step peaked at 4030MB (cgroup MemoryCurrent, sampled every 3s)
+     . gate: starting clean — zero orphaned servers, zero stray browsers
+     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1674       10922         243        3586       13928
+Mem:           15603        1496       11101         207        3551       14106
 -- top --
     ELAPSED   RSS COMMAND
-      10:10 392956 next-server (v1
-      00:21 223372 chrome-headless
-      11:37 217764 node
-      10:08 144168 chrome-headless
+      04:16 325912 next-server (v1
+      00:38 169748 node
+      00:39 130084 node
+      04:16 129340 node
 -- disk --
 /dev/sda1        75G   36G   37G  50% /
