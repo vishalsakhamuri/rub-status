@@ -1,4 +1,4 @@
-generated: 2026-09-29 19:35:01 UTC
+generated: 2026-09-29 19:40:01 UTC
 done:   248
 queued: 9
 failed: 0
@@ -17,10 +17,6 @@ b07-224-ten-businesses-end-to-end.md
 -- failed --
 
 -- log --
-       moved to tasks/failed/ — the queue carries on
-       reason: completion marker + commit present, but the gate failed: 24 screen(s) missing an empty state that teaches; scripts/prove-translated.ts failed (c00-213 is marked done):       "PROVE-TRANSLATED fixture"  — …PROVE-TRANSLATED fixture… /  / TRANSLATED: 2392 known, 9 new /  / [31m1 screen(s) failed[0m; scripts/prove-scroll-containment.ts failed (h00f-119 is marked done):         25,   25,    25,    25,   25, 2950, /       2950, 3802, 27356,  1082, 1700,   25 /     ] /   } / }; scripts/prove-form-preservation.ts failed (a01-211 is marked done):   [32m✓[0m Item stock count: the badge request actually resolved during this check /   [32m✓[0m Item stock count: field holds exactly the typed string after the badge counters loaded — typed then before="QA-Preserve-2026aZ9x", after="QA-Preserve-2026aZ9x" /   [31m✗[0m Asset "Assign" panel — location: field found on the page — selector #holderLocation never appeared /  / [31mFAIL (1)[0m — prove-form-preservation; scripts/prove-fixture-isolation.ts failed (a03-228 is marked done): 4 tenant(s) violated fixture isolation during this sweep:
-  · aaf538cf-7cf7-4d60-a005-221fb9401c32 "Rheinbach Systemtechnik" — row count changed from 59120 to 59215
-  · null "(no tenants row)" — row count changed from 50 to 51
   · 5f7e9f26-d4fc-4408-97ce-cde8922701fd "CT- Standard Cost Proof GmbH" — new tenant created during the sweep, never torn down (15 row(s) left behind)
   · 12c3a827-874d-4f28-af78-522eada89a96 "CT- Stock Equals Ledger Proof GmbH" — new tenant created during the sweep, never torn down (15 row(s) left behind); journey "invite and sign in" failed: creating the employee did not reach a record page — landed on http://localhost:3000/hr/employees/new; 79 screen(s) flagged for density, up from 14 on the last green run: /account/suspended, /accounting/packets/[packet], /accounting/packets/build/[statement], /accounts, /assets/[id], /assets/holders, /assets/locations, /assets — see docs/screen-density.md
        see logs/a05-238-the-german-customer-gets-an-english-invoice.log
@@ -37,15 +33,19 @@ b07-224-ten-businesses-end-to-end.md
      ! SCREENS: 3 broken, 0 blank, 0 404 of 257 — see docs/screen-audit.md
      . mem: screens step peaked at 4218MB (cgroup MemoryCurrent, sampled every 3s)
      . journeys: starting clean — zero orphaned servers, zero stray browsers
+     ! JOURNEYS: 13 of 18 failed — upload and self-sign, invite and sign in, raise an invoice, invoice: three lines survive a submit with no customer chosen, run a No1Edit tool, J2: sign a document myself and take it away, J3: change a document and take it away, J4: the employee folder — nothing typed twice, J2: sign a document myself and take it away — DigiSign-only tenant, J3: change a document and take it away — No1Edit-only tenant, J2: sign a document myself and take it away — tenant with no entity, J3: change a document and take it away — tenant with no entity, (remaining journeys) — see docs/journeys-report.md
+     . mem: journeys step peaked at 4499MB (cgroup MemoryCurrent, sampled every 3s)
+     . gate: starting clean — zero orphaned servers, zero stray browsers
+     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1742       11198         334        3334       13860
+Mem:           15603        1610       11328         294        3295       13992
 -- top --
     ELAPSED   RSS COMMAND
-      08:23 362820 next-server (v1
-      00:28 235040 chrome-headless
-      09:50 206836 node
-      08:21 144476 chrome-headless
+      02:02 323344 next-server (v1
+      00:06 185004 node
+      00:06 148396 node
+      02:02 129308 node
 -- disk --
 /dev/sda1        75G   37G   36G  51% /
