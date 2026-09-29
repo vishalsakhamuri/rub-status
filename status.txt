@@ -1,4 +1,4 @@
-generated: 2026-09-29 09:20:01 UTC
+generated: 2026-09-29 09:25:01 UTC
 done:   245
 queued: 11
 failed: 1
@@ -20,8 +20,6 @@ b07-224-ten-businesses-end-to-end.md
 a04-237-a-date-the-signer-cannot-fill-and-a-signature-on-the-wrong-page.md
 
 -- log --
-     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
-     . gate: 75 pass, 21 fail, 1 pending
      ! GATE FAILED: 24 screen(s) missing an empty state that teaches; scripts/prove-translated.ts failed (c00-213 is marked done):       "a   or a Word file"  — …a PDF or a Word file… /  / TRANSLATED: 2392 known, 33 new /  / [31m1 screen(s) failed[0m; scripts/prove-scroll-containment.ts failed (h00f-119 is marked done):         25,   25,    25,    25,   25, 2950, /       2950, 3802, 27356,  1082, 1700,   25 /     ] /   } / }; scripts/prove-suspend-is-real.ts failed (a00-222 is marked done):  / 6. Closing shows the distinct closed reason, same mechanism — run last: a closed tenant is deliberately terminal (StatusPanel offers no action out of 'closed') and this fixture is torn down right after: /   [32mPASS[0m closing also rejects the live session's next request, with its own distinct reason shown /  / [31m2 CHECK(S) FAILED[0m; scripts/prove-fixture-isolation.ts failed (a03-228 is marked done): 4 tenant(s) violated fixture isolation during this sweep:
   · aaf538cf-7cf7-4d60-a005-221fb9401c32 "Rheinbach Systemtechnik" — row count changed from 58748 to 58842
   · null "(no tenants row)" — row count changed from 48 to 49
@@ -40,15 +38,17 @@ a04-237-a-date-the-signer-cannot-fill-and-a-signature-on-the-wrong-page.md
        see logs/a04-237-a-date-the-signer-cannot-fill-and-a-signature-on-the-wrong-page.log
 
 ---- a05-238-the-german-customer-gets-an-english-invoice ----  started 07:35:27
+mv: cannot stat 'logs/queue-heartbeat.json.tmp': No such file or directory
+mv: cannot stat 'logs/queue-heartbeat.json.tmp': No such file or directory
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603       12753         177         251        3261        2849
+Mem:           15603       12958         194         251        3039        2644
 -- top --
     ELAPSED   RSS COMMAND
-      49:08 10399480 next-server (v1
-      11:46 1246684 node
-   01:44:32 442476 claude
-      48:14 181584 node
+      54:08 10399396 next-server (v1
+      16:46 1467332 node
+   01:49:32 459104 claude
+      53:14 181072 node
 -- disk --
 /dev/sda1        75G   42G   31G  59% /
