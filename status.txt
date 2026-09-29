@@ -1,4 +1,4 @@
-generated: 2026-09-29 05:35:01 UTC
+generated: 2026-09-29 05:40:01 UTC
 done:   244
 queued: 12
 failed: 1
@@ -21,11 +21,6 @@ b07-224-ten-businesses-end-to-end.md
 a03b-236-the-final-invoice-refuses-its-own-deposit-second-run.md
 
 -- log --
-     . gate: starting clean — zero orphaned servers, zero stray browsers
-     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
-     . gate: 75 pass, 21 fail, 1 pending
-     ! GATE FAILED: 24 screen(s) missing an empty state that teaches; scripts/prove-translated.ts failed (c00-213 is marked done):       "a   or a Word file"  — …a PDF or a Word file… /  / TRANSLATED: 2366 known, 30 new /  / [31m1 screen(s) failed[0m; scripts/prove-scroll-containment.ts failed (h00f-119 is marked done):         25,   25,    25,    25,   25, 2950, /       2950, 3802, 27356,  1082, 1700,   25 /     ] /   } / }; scripts/prove-suspend-is-real.ts failed (a00-222 is marked done):  / 6. Closing shows the distinct closed reason, same mechanism — run last: a closed tenant is deliberately terminal (StatusPanel offers no action out of 'closed') and this fixture is torn down right after: /   [32mPASS[0m closing also rejects the live session's next request, with its own distinct reason shown /  / [31m2 CHECK(S) FAILED[0m; journey "raise an invoice" failed: locator.click: Timeout 30000ms exceeded.
-Call log:
   - waiting for locator('summary[aria-label="Other ways to finish"]')
 ; 79 screen(s) flagged for density, up from 14 on the last green run: /account/suspended, /accounting/packets/[packet], /accounting/packets/build/[statement], /accounts, /assets/[id], /assets/holders, /assets/locations, /assets — see docs/screen-density.md
      . mem: gate step peaked at 4339MB (cgroup MemoryCurrent, sampled every 3s)
@@ -41,15 +36,20 @@ Call log:
 
 ---- a04-237-a-date-the-signer-cannot-fill-and-a-signature-on-the-wrong-page ----  started 23:55:44
 mv: cannot stat 'logs/queue-heartbeat.json.tmp': No such file or directory
+     . build/screens/journeys: diff since b97fb005fb23 touches something that could render — running fresh
+     . build: starting clean — zero orphaned servers, zero stray browsers
+     . build clean
+     . mem: build step peaked at 4245MB (cgroup MemoryCurrent, sampled every 3s)
+     . tests: starting clean — zero orphaned servers, zero stray browsers
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1162       11722         201        3258       14441
+Mem:           15603        2296       10359         230        3514       13306
 -- top --
     ELAPSED   RSS COMMAND
-   05:39:15 368120 claude
-18-23:28:51 101948 systemd-journal
-26-00:40:29 13520 systemd
-18-23:28:51  9492 systemd-resolve
+      00:20 703628 node
+      00:00 148888 node
+18-23:33:51 102680 systemd-journal
+      00:20 77764 npm exec vitest
 -- disk --
 /dev/sda1        75G   43G   29G  60% /
