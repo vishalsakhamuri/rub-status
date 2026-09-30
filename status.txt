@@ -1,4 +1,4 @@
-generated: 2026-09-30 04:00:02 UTC
+generated: 2026-09-30 04:05:01 UTC
 done:   248
 queued: 8
 failed: 1
@@ -40,12 +40,12 @@ a07-240-the-owner-is-not-an-employee-and-a-category-cannot-be-capitalised.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3828        8861         626        3877       11774
+Mem:           15603        2579       10110         358        3609       13023
 -- top --
     ELAPSED   RSS COMMAND
-      01:15 1163036 node
-   01:19:04 698748 next-server (v1
-   03:48:22 446724 claude
-      20:24 128628 node
+   01:24:04 696144 next-server (v1
+   03:53:22 460220 claude
+      00:24 258428 chrome-headless
+      00:26 180072 node
 -- disk --
 /dev/sda1        75G   44G   29G  61% /
