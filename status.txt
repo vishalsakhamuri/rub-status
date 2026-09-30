@@ -1,4 +1,4 @@
-generated: 2026-09-30 12:15:01 UTC
+generated: 2026-09-30 12:20:01 UTC
 done:   249
 queued: 6
 failed: 2
@@ -39,12 +39,12 @@ a09-247-the-screen-density-baseline-has-not-moved-since-18-september.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603       11431        1539         762        3732        4171
+Mem:           15603       11105        1957         334        3211        4497
 -- top --
     ELAPSED   RSS COMMAND
-   01:04:42 8510432 next-server (v1
-      01:22 619680 chrome-headless
-   01:12:24 304280 claude
-      01:27 204836 node
+   01:09:41 9425504 next-server (v1
+   01:17:23 325692 claude
+      00:05 217516 node
+      00:03 202136 chrome-headless
 -- disk --
-/dev/sda1        75G   42G   31G  58% /
+/dev/sda1        75G   43G   29G  60% /
