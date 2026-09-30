@@ -1,7 +1,7 @@
-generated: 2026-09-30 23:15:01 UTC
-done:   252
+generated: 2026-09-30 23:20:01 UTC
+done:   251
 queued: 3
-failed: 2
+failed: 3
 hold:   1
 
 -- queued --
@@ -11,37 +11,38 @@ b07-224-ten-businesses-end-to-end.md
 -- failed --
 a07-240-the-owner-is-not-an-employee-and-a-category-cannot-be-capitalised.md
 b03-241-mail-must-leave-the-building.md
+b04-242-the-registers-iso-9001-expects.md
 
 -- log --
-       moved to tasks/failed/ — the queue carries on
-       reason: completion marker + commit present, but the gate failed: the gate's own readiness check could not reach the app (BASE_URL/login never answered) — the entire prove-* register was left unrun this pass; an unrun check is not a passed check; 2 of 3801 tests failing; pnpm run build failed
-       see logs/b03-241-mail-must-leave-the-building.log
-
----- b04-242-the-registers-iso-9001-expects ----  started 18:42:18
-     . build/screens/journeys: diff since dcec4135e0d9 touches something that could render — running fresh
-     . build: starting clean — zero orphaned servers, zero stray browsers
-     . build clean
-     . mem: build step peaked at 5674MB (cgroup MemoryCurrent, sampled every 3s)
-     . tests: starting clean — zero orphaned servers, zero stray browsers
-     ! SUITE RED: 2 of 3801 tests failing — see logs/suite-latest.log
-     . mem: tests step peaked at 4160MB (cgroup MemoryCurrent, sampled every 3s)
-     . screens: starting clean — zero orphaned servers, zero stray browsers
-     ! SCREENS: 4 broken, 0 blank, 0 404 of 266 — see docs/screen-audit.md
-     . mem: screens step peaked at 4479MB (cgroup MemoryCurrent, sampled every 3s)
      . journeys: starting clean — zero orphaned servers, zero stray browsers
      ! JOURNEYS: 12 of 17 failed — upload and self-sign, invite and sign in, raise an invoice, invoice: three lines survive a submit with no customer chosen, run a No1Edit tool, J2: sign a document myself and take it away, J3: change a document and take it away, J4: the employee folder — nothing typed twice, J2: sign a document myself and take it away — DigiSign-only tenant, J3: change a document and take it away — No1Edit-only tenant, J2: sign a document myself and take it away — tenant with no entity, (remaining journeys) — see docs/journeys-report.md
      . mem: journeys step peaked at 4554MB (cgroup MemoryCurrent, sampled every 3s)
      . gate: starting clean — zero orphaned servers, zero stray browsers
      . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
+     . gate: 79 pass, 20 fail, 0 pending
+     ! GATE FAILED: 2 of 3801 tests failing; scripts/prove-translated.ts failed (c00-213 is marked done):       "PROVE-TRANSLATED fixture"  — …PROVE-TRANSLATED fixture… /  / TRANSLATED: 2857 known, 333 new /  / [31m1 screen(s) failed[0m; scripts/prove-scroll-containment.ts failed (h00f-119 is marked done):         25, 2950, 2950,  3802, 27356, 1082, /       1700,   25 /     ] /   } / }; scripts/prove-fixture-isolation.ts failed (a03-228 is marked done): 2 tenant(s) violated fixture isolation during this sweep:
+  · ef93f646-39f6-414a-9938-31a2618eace6 "CT- Standard Cost Proof GmbH" — new tenant created during the sweep, never torn down (15 row(s) left behind)
+  · dd4f9b12-d6d5-4bb4-a749-feeef98d286a "CT- Stock Equals Ledger Proof GmbH" — new tenant created during the sweep, never torn down (15 row(s) left behind); scripts/prove-bank-feeds.ts passed on the last green run and cannot claim PENDING now that QONTO_SANDBOX_TOKEN, WISE_SANDBOX_TOKEN, TRUELAYER_CLIENT_ID, TRUELAYER_CLIENT_SECRET is empty — that is a regression, not a gap; journey "J4: the employee folder — nothing typed twice" failed: creating the employee did not reach a record page — landed on http://localhost:3000/hr/employees/new; 73 screen(s) flagged for density, up from 72 on the last green run: /account/suspended, /accounting/packets/[packet], /accounting/packets/build/[statement], /accounting/periods, /accounts, /assets/[id], /assets/locations, /assets — see docs/screen-density.md
+     . mem: gate step peaked at 3665MB (cgroup MemoryCurrent, sampled every 3s)
+     ! GATE FAILED, caused by this task
+     ! task had self-moved to tasks/done/ — moved back to tasks/failed/, the gate said otherwise
+     [FAILED] (exit 97) 23:16:16
+       moved to tasks/failed/ — the queue carries on
+       reason: completion marker + commit present, but the gate failed: 2 of 3801 tests failing; scripts/prove-translated.ts failed (c00-213 is marked done):       "PROVE-TRANSLATED fixture"  — …PROVE-TRANSLATED fixture… /  / TRANSLATED: 2857 known, 333 new /  / [31m1 screen(s) failed[0m; scripts/prove-scroll-containment.ts failed (h00f-119 is marked done):         25, 2950, 2950,  3802, 27356, 1082, /       1700,   25 /     ] /   } / }; scripts/prove-fixture-isolation.ts failed (a03-228 is marked done): 2 tenant(s) violated fixture isolation during this sweep:
+  · ef93f646-39f6-414a-9938-31a2618eace6 "CT- Standard Cost Proof GmbH" — new tenant created during the sweep, never torn down (15 row(s) left behind)
+  · dd4f9b12-d6d5-4bb4-a749-feeef98d286a "CT- Stock Equals Ledger Proof GmbH" — new tenant created during the sweep, never torn down (15 row(s) left behind); scripts/prove-bank-feeds.ts passed on the last green run and cannot claim PENDING now that QONTO_SANDBOX_TOKEN, WISE_SANDBOX_TOKEN, TRUELAYER_CLIENT_ID, TRUELAYER_CLIENT_SECRET is empty — that is a regression, not a gap; journey "J4: the employee folder — nothing typed twice" failed: creating the employee did not reach a record page — landed on http://localhost:3000/hr/employees/new; 73 screen(s) flagged for density, up from 72 on the last green run: /account/suspended, /accounting/packets/[packet], /accounting/packets/build/[statement], /accounting/periods, /accounts, /assets/[id], /assets/locations, /assets — see docs/screen-density.md
+       see logs/b04-242-the-registers-iso-9001-expects.log
+
+---- b05-243-meetings-minutes-actions-and-the-templates-in-german ----  started 23:16:18
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1686       10842         386        3797       13916
+Mem:           15603        1344       11103         386        3879       14258
 -- top --
     ELAPSED   RSS COMMAND
-   01:13:49 525640 next-server (v1
-   01:13:50 129548 node
-   01:13:47 114664 node
-20-17:08:52 87848 systemd-journal
+      03:40 375156 claude
+20-17:13:51 88108 systemd-journal
+27-18:25:28 13524 systemd
+20-17:13:51  9492 systemd-resolve
 -- disk --
 /dev/sda1        75G   38G   35G  53% /
