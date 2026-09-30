@@ -1,4 +1,4 @@
-generated: 2026-09-30 21:35:01 UTC
+generated: 2026-09-30 21:40:01 UTC
 done:   252
 queued: 3
 failed: 2
@@ -13,9 +13,6 @@ a07-240-the-owner-is-not-an-employee-and-a-category-cannot-be-capitalised.md
 b03-241-mail-must-leave-the-building.md
 
 -- log --
-     ! journeys did not produce a result at all — see logs/journeys-latest.log
-     . mem: journeys step peaked at 5080MB (cgroup MemoryCurrent, sampled every 3s)
-     . gate: starting clean — zero orphaned servers, zero stray browsers
      . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
      . gate: no production build on disk yet — building one
      . gate: 87 pass, 3 fail, 0 pending
@@ -33,15 +30,18 @@ b03-241-mail-must-leave-the-building.md
      . build clean
      . mem: build step peaked at 5674MB (cgroup MemoryCurrent, sampled every 3s)
      . tests: starting clean — zero orphaned servers, zero stray browsers
+     ! SUITE RED: 2 of 3801 tests failing — see logs/suite-latest.log
+     . mem: tests step peaked at 4160MB (cgroup MemoryCurrent, sampled every 3s)
+     . screens: starting clean — zero orphaned servers, zero stray browsers
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1858        9819         376        4638       13744
+Mem:           15603        2730       10057         416        3570       12873
 -- top --
     ELAPSED   RSS COMMAND
-      49:29 653404 node
-      00:04 194600 node
-20-15:28:52 147872 systemd-journal
-      49:29 77988 npm exec vitest
+      00:58 813224 next-server (v1
+      00:53 552444 chrome-headless
+      00:56 207112 node
+20-15:33:52 148048 systemd-journal
 -- disk --
-/dev/sda1        75G   44G   28G  62% /
+/dev/sda1        75G   38G   35G  52% /
