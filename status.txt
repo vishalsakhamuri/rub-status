@@ -1,4 +1,4 @@
-generated: 2026-09-30 14:45:01 UTC
+generated: 2026-09-30 14:50:01 UTC
 done:   249
 queued: 6
 failed: 2
@@ -16,11 +16,6 @@ a07-240-the-owner-is-not-an-employee-and-a-category-cannot-be-capitalised.md
 a09-247-the-screen-density-baseline-has-not-moved-since-18-september.md
 
 -- log --
-     . mem: tests step peaked at 3277MB (cgroup MemoryCurrent, sampled every 3s)
-     . screens: starting clean — zero orphaned servers, zero stray browsers
-     ! SCREENS: 3 broken, 0 blank, 0 404 of 258 — see docs/screen-audit.md
-     . mem: screens step peaked at 5069MB (cgroup MemoryCurrent, sampled every 3s)
-     . journeys: starting clean — zero orphaned servers, zero stray browsers
      ! JOURNEYS: 13 of 18 failed — upload and self-sign, invite and sign in, raise an invoice, invoice: three lines survive a submit with no customer chosen, run a No1Edit tool, J2: sign a document myself and take it away, J3: change a document and take it away, J4: the employee folder — nothing typed twice, J2: sign a document myself and take it away — DigiSign-only tenant, J3: change a document and take it away — No1Edit-only tenant, J2: sign a document myself and take it away — tenant with no entity, J3: change a document and take it away — tenant with no entity, (remaining journeys) — see docs/journeys-report.md
      . mem: journeys step peaked at 5230MB (cgroup MemoryCurrent, sampled every 3s)
      . gate: starting clean — zero orphaned servers, zero stray browsers
@@ -36,15 +31,20 @@ a09-247-the-screen-density-baseline-has-not-moved-since-18-september.md
        see logs/a09-247-the-screen-density-baseline-has-not-moved-since-18-september.log
 
 ---- a10-248-the-sweep-keeps-writing-into-the-real-tenant ----  started 11:02:35
+     . build/screens/journeys: diff since 584241c34a8f touches something that could render — running fresh
+     . build: starting clean — zero orphaned servers, zero stray browsers
+     . build clean
+     . mem: build step peaked at 4866MB (cgroup MemoryCurrent, sampled every 3s)
+     . tests: starting clean — zero orphaned servers, zero stray browsers
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603       11544        1529         567        3434        4058
+Mem:           15603        2218       10597         611        3737       13384
 -- top --
     ELAPSED   RSS COMMAND
-   03:34:41 9944752 next-server (v1
-   03:42:23 458204 claude
-   03:34:11 161724 node
-20-08:38:51 131708 systemd-journal
+      00:52 578360 node
+      00:29 249720 node
+20-08:43:52 131484 systemd-journal
+   02:43:58 105792 node
 -- disk --
 /dev/sda1        75G   44G   29G  61% /
