@@ -1,4 +1,4 @@
-generated: 2026-09-30 15:20:02 UTC
+generated: 2026-09-30 15:25:01 UTC
 done:   251
 queued: 5
 failed: 1
@@ -14,9 +14,6 @@ b07-224-ten-businesses-end-to-end.md
 a07-240-the-owner-is-not-an-employee-and-a-category-cannot-be-capitalised.md
 
 -- log --
-     ! JOURNEYS: 13 of 18 failed — upload and self-sign, invite and sign in, raise an invoice, invoice: three lines survive a submit with no customer chosen, run a No1Edit tool, J2: sign a document myself and take it away, J3: change a document and take it away, J4: the employee folder — nothing typed twice, J2: sign a document myself and take it away — DigiSign-only tenant, J3: change a document and take it away — No1Edit-only tenant, J2: sign a document myself and take it away — tenant with no entity, J3: change a document and take it away — tenant with no entity, (remaining journeys) — see docs/journeys-report.md
-     . mem: journeys step peaked at 5230MB (cgroup MemoryCurrent, sampled every 3s)
-     . gate: starting clean — zero orphaned servers, zero stray browsers
      . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
      . gate: 78 pass, 19 fail, 1 pending
      ! GATE FAILED: journey "invite and sign in" failed: creating the employee did not reach a record page — landed on http://localhost:3000/hr/employees/new
@@ -34,15 +31,18 @@ a07-240-the-owner-is-not-an-employee-and-a-category-cannot-be-capitalised.md
      . build clean
      . mem: build step peaked at 4866MB (cgroup MemoryCurrent, sampled every 3s)
      . tests: starting clean — zero orphaned servers, zero stray browsers
+     . suite green: 3780 tests
+     . mem: tests step peaked at 3161MB (cgroup MemoryCurrent, sampled every 3s)
+     . screens: starting clean — zero orphaned servers, zero stray browsers
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2234       10579         628        3754       13368
+Mem:           15603        2274       10782         567        3451       13328
 -- top --
     ELAPSED   RSS COMMAND
-      30:53 698516 node
-      00:05 147392 node
-20-09:13:52 136884 systemd-journal
-   03:13:59 105792 node
+      00:02 941516 node
+      00:03 145736 node
+20-09:18:51 136900 systemd-journal
+   03:18:58 105792 node
 -- disk --
-/dev/sda1        75G   44G   29G  61% /
+/dev/sda1        75G   37G   35G  52% /
