@@ -1,7 +1,7 @@
-generated: 2026-09-30 06:25:01 UTC
-done:   249
+generated: 2026-09-30 06:30:01 UTC
+done:   248
 queued: 7
-failed: 1
+failed: 2
 hold:   1
 
 -- queued --
@@ -14,37 +14,38 @@ b06-244-the-steuerberater-wants-datev.md
 b07-224-ten-businesses-end-to-end.md
 -- failed --
 a07-240-the-owner-is-not-an-employee-and-a-category-cannot-be-capitalised.md
+a08-246-twenty-four-screens-teach-nothing-on-day-one.md
 
 -- log --
-  · b48f3e7e-afb8-4b4a-8842-8a7814e617dd "CT- Standard Cost Proof GmbH" — new tenant created during the sweep, never torn down (15 row(s) left behind)
-  · 5ddd9603-cd3b-42e8-bf0b-63c9b0657d40 "CT- Stock Equals Ledger Proof GmbH" — new tenant created during the sweep, never torn down (15 row(s) left behind); journey "invite and sign in" failed: creating the employee did not reach a record page — landed on http://localhost:3000/hr/employees/new; 83 screen(s) flagged for density, up from 14 on the last green run: /account/suspended, /accounting/packets/[packet], /accounting/packets/build/[statement], /accounting/periods, /accounts, /assets/[id], /assets/holders, /assets/locations — see docs/screen-density.md
-       see logs/a07-240-the-owner-is-not-an-employee-and-a-category-cannot-be-capitalised.log
+No1DigiSign
 
----- a08-246-twenty-four-screens-teach-nothing-on-day-one ----  started 00:11:37
-     . build/screens/journeys: diff since 2d28d5d8d6ac touches something that could render — running fresh
-     . build: starting clean — zero orphaned servers, zero stray browsers
-     . build clean
-     . mem: build step peaked at 4652MB (cgroup MemoryCurrent, sampled every 3s)
-     . tests: starting clean — zero orphaned servers, zero stray browsers
-     . suite green: 3775 tests
-     . mem: tests step peaked at 2956MB (cgroup MemoryCurrent, sampled every 3s)
-     . screens: starting clean — zero orphaned servers, zero stray browsers
-     ! SCREENS: 3 broken, 0 blank, 0 404 of 258 — see docs/screen-audit.md
-     . mem: screens step peaked at 4704MB (cgroup MemoryCurrent, sampled every 3s)
-     . journeys: starting clean — zero orphaned servers, zero stray browsers
-     ! JOURNEYS: 13 of 18 failed — upload and self-sign, invite and sign in, raise an invoice, invoice: three lines survive a submit with no customer chosen, run a No1Edit tool, J2: sign a document myself and take it away, J3: change a document and take it away, J4: the employee folder — nothing typed twice, J2: sign a document myself and take it away — DigiSign-only tenant, J3: change a document and take it away — No1Edit-only tenant, J2: sign a document myself and take it away — tenant with no entity, J3: change a document and take it away — tenant with no entity, (remaining journeys) — see docs/journeys-report.md
-     . mem: journeys step peaked at 4948MB (cgroup MemoryCurrent, sampled every 3s)
-     . gate: starting clean — zero orphaned servers, zero stray browsers
-     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
+Dokument unterschreiben
+
+Laden Sie ein Dokument hoch und u"; locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for getByRole('button', { name: /^Signature$/ }).first()
+; journey "invite and sign in" failed: creating the employee did not reach a record page — landed on http://localhost:3000/hr/employees/new; journey "raise an invoice" failed: locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('summary[aria-label="Other ways to finish"]')
+; journey "J2: sign a document myself and take it away" failed: locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for getByRole('button', { name: /^Signature$/ }).first()
+; journey "J4: the employee folder — nothing typed twice" failed: creating the employee did not reach a record page — landed on http://localhost:3000/hr/employees/new; journey "J2: sign a document myself and take it away — DigiSign-only tenant" failed: the uploaded PDF never rendered on canvas; journey "J2: sign a document myself and take it away — tenant with no entity" failed: locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for getByRole('button', { name: /^Signature$/ }).first()
+; 83 screen(s) flagged for density, up from 14 on the last green run: /account/suspended, /accounting/packets/[packet], /accounting/packets/build/[statement], /accounting/periods, /accounts, /assets/[id], /assets/holders, /assets/locations — see docs/screen-density.md
+       see logs/a08-246-twenty-four-screens-teach-nothing-on-day-one.log
+
+---- a09-247-the-screen-density-baseline-has-not-moved-since-18-september ----  started 06:28:50
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1577       10852         287        3799       14025
+Mem:           15603        3858        8790         287        3579       11744
 -- top --
     ELAPSED   RSS COMMAND
-      51:21 525900 next-server (v1
-      51:22 129168 node
-20-00:18:51 111216 systemd-journal
-      51:19 99288 node
+      00:27 2616084 node
+      01:09 331808 claude
+      00:23 182120 node
+      00:28 129620 node
 -- disk --
-/dev/sda1        75G   37G   35G  52% /
+/dev/sda1        75G   37G   36G  51% /
