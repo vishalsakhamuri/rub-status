@@ -1,4 +1,4 @@
-generated: 2026-09-30 09:45:01 UTC
+generated: 2026-09-30 09:50:01 UTC
 done:   250
 queued: 6
 failed: 1
@@ -15,10 +15,6 @@ b07-224-ten-businesses-end-to-end.md
 a07-240-the-owner-is-not-an-employee-and-a-category-cannot-be-capitalised.md
 
 -- log --
-Call log:
-  - waiting for getByRole('button', { name: /^Signature$/ }).first()
-; journey "J4: the employee folder — nothing typed twice" failed: creating the employee did not reach a record page — landed on http://localhost:3000/hr/employees/new; journey "J2: sign a document myself and take it away — DigiSign-only tenant" failed: the uploaded PDF never rendered on canvas; journey "J2: sign a document myself and take it away — tenant with no entity" failed: locator.click: Timeout 30000ms exceeded.
-Call log:
   - waiting for getByRole('button', { name: /^Signature$/ }).first()
 ; 83 screen(s) flagged for density, up from 14 on the last green run: /account/suspended, /accounting/packets/[packet], /accounting/packets/build/[statement], /accounting/periods, /accounts, /assets/[id], /assets/holders, /assets/locations — see docs/screen-density.md
        see logs/a08-246-twenty-four-screens-teach-nothing-on-day-one.log
@@ -35,15 +31,19 @@ Call log:
      ! SCREENS: 3 broken, 0 blank, 0 404 of 258 — see docs/screen-audit.md
      . mem: screens step peaked at 5069MB (cgroup MemoryCurrent, sampled every 3s)
      . journeys: starting clean — zero orphaned servers, zero stray browsers
+     ! JOURNEYS: 13 of 18 failed — upload and self-sign, invite and sign in, raise an invoice, invoice: three lines survive a submit with no customer chosen, run a No1Edit tool, J2: sign a document myself and take it away, J3: change a document and take it away, J4: the employee folder — nothing typed twice, J2: sign a document myself and take it away — DigiSign-only tenant, J3: change a document and take it away — No1Edit-only tenant, J2: sign a document myself and take it away — tenant with no entity, J3: change a document and take it away — tenant with no entity, (remaining journeys) — see docs/journeys-report.md
+     . mem: journeys step peaked at 5230MB (cgroup MemoryCurrent, sampled every 3s)
+     . gate: starting clean — zero orphaned servers, zero stray browsers
+     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1739       10461         325        4064       13863
+Mem:           15603        1656       10545         287        4027       13946
 -- top --
     ELAPSED   RSS COMMAND
-      08:49 385216 next-server (v1
-      00:57 224568 chrome-headless
-      10:19 207736 node
-      08:47 143472 chrome-headless
+      02:32 334228 next-server (v1
+      00:08 197292 node
+      00:09 148536 node
+      02:33 129424 node
 -- disk --
 /dev/sda1        75G   37G   35G  52% /
