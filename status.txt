@@ -1,4 +1,4 @@
-generated: 2026-09-30 22:00:01 UTC
+generated: 2026-09-30 22:05:01 UTC
 done:   252
 queued: 3
 failed: 2
@@ -13,10 +13,6 @@ a07-240-the-owner-is-not-an-employee-and-a-category-cannot-be-capitalised.md
 b03-241-mail-must-leave-the-building.md
 
 -- log --
-     ! GATE FAILED: the gate's own readiness check could not reach the app (BASE_URL/login never answered) — the entire prove-* register was left unrun this pass; an unrun check is not a passed check; 2 of 3801 tests failing; pnpm run build failed
-     . mem: gate step peaked at 5188MB (cgroup MemoryCurrent, sampled every 3s)
-     ! GATE FAILED, caused by this task
-     [FAILED] (exit 97) 18:42:15
        moved to tasks/failed/ — the queue carries on
        reason: completion marker + commit present, but the gate failed: the gate's own readiness check could not reach the app (BASE_URL/login never answered) — the entire prove-* register was left unrun this pass; an unrun check is not a passed check; 2 of 3801 tests failing; pnpm run build failed
        see logs/b03-241-mail-must-leave-the-building.log
@@ -33,15 +29,19 @@ b03-241-mail-must-leave-the-building.md
      ! SCREENS: 4 broken, 0 blank, 0 404 of 266 — see docs/screen-audit.md
      . mem: screens step peaked at 4479MB (cgroup MemoryCurrent, sampled every 3s)
      . journeys: starting clean — zero orphaned servers, zero stray browsers
+     ! JOURNEYS: 12 of 17 failed — upload and self-sign, invite and sign in, raise an invoice, invoice: three lines survive a submit with no customer chosen, run a No1Edit tool, J2: sign a document myself and take it away, J3: change a document and take it away, J4: the employee folder — nothing typed twice, J2: sign a document myself and take it away — DigiSign-only tenant, J3: change a document and take it away — No1Edit-only tenant, J2: sign a document myself and take it away — tenant with no entity, (remaining journeys) — see docs/journeys-report.md
+     . mem: journeys step peaked at 4554MB (cgroup MemoryCurrent, sampled every 3s)
+     . gate: starting clean — zero orphaned servers, zero stray browsers
+     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1832       10953         413        3568       13770
+Mem:           15603        1712       11072         383        3539       13890
 -- top --
     ELAPSED   RSS COMMAND
-      09:40 401720 next-server (v1
-      11:11 211716 node
-      00:11 195892 chrome-headless
-20-15:53:52 152500 systemd-journal
+      03:49 341296 next-server (v1
+      00:01 163532 node
+20-15:58:52 152960 systemd-journal
+      00:02 148936 node
 -- disk --
 /dev/sda1        75G   38G   35G  52% /
