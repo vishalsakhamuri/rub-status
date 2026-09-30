@@ -1,4 +1,4 @@
-generated: 2026-09-30 09:30:01 UTC
+generated: 2026-09-30 09:35:01 UTC
 done:   250
 queued: 6
 failed: 1
@@ -16,9 +16,6 @@ a07-240-the-owner-is-not-an-employee-and-a-category-cannot-be-capitalised.md
 
 -- log --
 Call log:
-  - waiting for locator('summary[aria-label="Other ways to finish"]')
-; journey "J2: sign a document myself and take it away" failed: locator.click: Timeout 30000ms exceeded.
-Call log:
   - waiting for getByRole('button', { name: /^Signature$/ }).first()
 ; journey "J4: the employee folder — nothing typed twice" failed: creating the employee did not reach a record page — landed on http://localhost:3000/hr/employees/new; journey "J2: sign a document myself and take it away — DigiSign-only tenant" failed: the uploaded PDF never rendered on canvas; journey "J2: sign a document myself and take it away — tenant with no entity" failed: locator.click: Timeout 30000ms exceeded.
 Call log:
@@ -35,15 +32,18 @@ Call log:
      . suite green: 3775 tests
      . mem: tests step peaked at 3277MB (cgroup MemoryCurrent, sampled every 3s)
      . screens: starting clean — zero orphaned servers, zero stray browsers
+     ! SCREENS: 3 broken, 0 blank, 0 404 of 258 — see docs/screen-audit.md
+     . mem: screens step peaked at 5069MB (cgroup MemoryCurrent, sampled every 3s)
+     . journeys: starting clean — zero orphaned servers, zero stray browsers
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2709        9491         333        4072       12893
+Mem:           15603        3685        8757         287        3785       11917
 -- top --
     ELAPSED   RSS COMMAND
-      03:30 834328 next-server (v1
-      03:25 564412 chrome-headless
-      03:27 296184 node
-      03:26 177380 chrome-headless
+      00:15 2302660 node
+      00:19 214980 node
+      00:09 181992 node
+      00:15 145644 node
 -- disk --
-/dev/sda1        75G   37G   35G  52% /
+/dev/sda1        75G   37G   36G  52% /
