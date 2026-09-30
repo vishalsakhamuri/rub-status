@@ -1,4 +1,4 @@
-generated: 2026-09-30 20:40:01 UTC
+generated: 2026-09-30 20:45:01 UTC
 done:   251
 queued: 4
 failed: 2
@@ -14,8 +14,6 @@ a07-240-the-owner-is-not-an-employee-and-a-category-cannot-be-capitalised.md
 b03-241-mail-must-leave-the-building.md
 
 -- log --
-     . mem: tests step peaked at 3190MB (cgroup MemoryCurrent, sampled every 3s)
-     . screens: starting clean — zero orphaned servers, zero stray browsers
      ! screen audit did not produce a result at all — see logs/screens-latest.log
      . mem: screens step peaked at 4876MB (cgroup MemoryCurrent, sampled every 3s)
      . journeys: starting clean — zero orphaned servers, zero stray browsers
@@ -34,15 +32,17 @@ b03-241-mail-must-leave-the-building.md
        see logs/b03-241-mail-must-leave-the-building.log
 
 ---- b04-242-the-registers-iso-9001-expects ----  started 18:42:18
+     . build/screens/journeys: diff since dcec4135e0d9 touches something that could render — running fresh
+     . build: starting clean — zero orphaned servers, zero stray browsers
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603       11297        1764         313        3192        4305
+Mem:           15603        4988        6694         313        4571       10614
 -- top --
     ELAPSED   RSS COMMAND
-      03:57 7464896 next-server (v1
-      00:25 2507528 node
-   01:57:40 358524 claude
-20-14:33:51 145444 systemd-journal
+      00:23 2461840 node
+      00:56 1511036 node
+      00:52 158872 node
+20-14:38:51 144868 systemd-journal
 -- disk --
-/dev/sda1        75G   44G   29G  61% /
+/dev/sda1        75G   44G   28G  62% /
