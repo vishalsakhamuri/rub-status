@@ -1,4 +1,4 @@
-generated: 2026-09-30 05:10:01 UTC
+generated: 2026-09-30 05:15:01 UTC
 done:   249
 queued: 7
 failed: 1
@@ -16,9 +16,6 @@ b07-224-ten-businesses-end-to-end.md
 a07-240-the-owner-is-not-an-employee-and-a-category-cannot-be-capitalised.md
 
 -- log --
-  · b48f3e7e-afb8-4b4a-8842-8a7814e617dd "CT- Standard Cost Proof GmbH" — new tenant created during the sweep, never torn down (15 row(s) left behind)
-  · 5ddd9603-cd3b-42e8-bf0b-63c9b0657d40 "CT- Stock Equals Ledger Proof GmbH" — new tenant created during the sweep, never torn down (15 row(s) left behind); journey "invite and sign in" failed: creating the employee did not reach a record page — landed on http://localhost:3000/hr/employees/new; 83 screen(s) flagged for density, up from 14 on the last green run: /account/suspended, /accounting/packets/[packet], /accounting/packets/build/[statement], /accounting/periods, /accounts, /assets/[id], /assets/holders, /assets/locations — see docs/screen-density.md
-     . mem: gate step peaked at 3962MB (cgroup MemoryCurrent, sampled every 3s)
      ! GATE FAILED, caused by this task
      [FAILED] (exit 97) 00:11:35
        moved to tasks/failed/ — the queue carries on
@@ -36,15 +33,18 @@ a07-240-the-owner-is-not-an-employee-and-a-category-cannot-be-capitalised.md
      . build clean
      . mem: build step peaked at 4652MB (cgroup MemoryCurrent, sampled every 3s)
      . tests: starting clean — zero orphaned servers, zero stray browsers
+     . suite green: 3775 tests
+     . mem: tests step peaked at 2956MB (cgroup MemoryCurrent, sampled every 3s)
+     . screens: starting clean — zero orphaned servers, zero stray browsers
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1791       10807         352        3694       13812
+Mem:           15603        2724        9874         342        3684       12878
 -- top --
     ELAPSED   RSS COMMAND
-      34:17 653188 node
-      00:02 148340 node
-19-23:03:51 109900 systemd-journal
-      34:17 78128 npm exec vitest
+      02:09 1030004 next-server (v1
+      02:04 419752 chrome-headless
+      02:06 248896 node
+      02:05 178180 chrome-headless
 -- disk --
-/dev/sda1        75G   44G   29G  61% /
+/dev/sda1        75G   37G   36G  52% /
