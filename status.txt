@@ -1,4 +1,4 @@
-generated: 2026-09-30 17:00:01 UTC
+generated: 2026-09-30 17:05:01 UTC
 done:   250
 queued: 5
 failed: 2
@@ -38,12 +38,12 @@ a10-248-the-sweep-keeps-writing-into-the-real-tenant.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1606       10922         568        3979       13996
+Mem:           15603        1975       10553         572        3984       13627
 -- top --
     ELAPSED   RSS COMMAND
-      13:13 434960 claude
-20-10:53:52 138356 systemd-journal
-27-12:05:29 13524 systemd
-      00:03 11488 sshd-session
+      18:14 450612 claude
+      00:09 273360 node
+      00:09 149520 node
+20-10:58:52 138620 systemd-journal
 -- disk --
 /dev/sda1        75G   38G   35G  52% /
