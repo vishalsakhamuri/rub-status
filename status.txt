@@ -1,11 +1,10 @@
-generated: 2026-09-30 00:10:01 UTC
+generated: 2026-09-30 00:15:01 UTC
 done:   248
-queued: 9
-failed: 0
+queued: 8
+failed: 1
 hold:   1
 
 -- queued --
-a07-240-the-owner-is-not-an-employee-and-a-category-cannot-be-capitalised.md
 a08-246-twenty-four-screens-teach-nothing-on-day-one.md
 a09-247-the-screen-density-baseline-has-not-moved-since-18-september.md
 a10-248-the-sweep-keeps-writing-into-the-real-tenant.md
@@ -15,37 +14,38 @@ b05-243-meetings-minutes-actions-and-the-templates-in-german.md
 b06-244-the-steuerberater-wants-datev.md
 b07-224-ten-businesses-end-to-end.md
 -- failed --
+a07-240-the-owner-is-not-an-employee-and-a-category-cannot-be-capitalised.md
 
 -- log --
-  · 9e84ba1f-2f0e-4ee8-8054-e987a369ab39 "CT- Standard Cost Proof GmbH" — new tenant created during the sweep, never torn down (15 row(s) left behind)
-  · f54f88c7-4dca-45ab-9f2f-9f6f1c9bf1cd "CT- Stock Equals Ledger Proof GmbH" — new tenant created during the sweep, never torn down (15 row(s) left behind); journey "invite and sign in" failed: creating the employee did not reach a record page — landed on http://localhost:3000/hr/employees/new; 80 screen(s) flagged for density, up from 14 on the last green run: /account/suspended, /accounting/packets/[packet], /accounting/packets/build/[statement], /accounting/periods, /accounts, /assets/[id], /assets/holders, /assets/locations — see docs/screen-density.md
-       see logs/a06-239-there-is-no-month-close.log
+     . gate: 77 pass, 21 fail, 1 pending
+     ! GATE FAILED: 24 screen(s) missing an empty state that teaches; scripts/prove-translated.ts failed (c00-213 is marked done):       "PROVE-TRANSLATED fixture"  — …PROVE-TRANSLATED fixture… /  / TRANSLATED: 2647 known, 234 new /  / [31m1 screen(s) failed[0m; scripts/prove-scroll-containment.ts failed (h00f-119 is marked done):         25, 2950, 2950,  3802, 27356, 1082, /       1700,   25 /     ] /   } / }; scripts/prove-suspend-is-real.ts failed (a00-222 is marked done):  / 6. Closing shows the distinct closed reason, same mechanism — run last: a closed tenant is deliberately terminal (StatusPanel offers no action out of 'closed') and this fixture is torn down right after: /   [32mPASS[0m closing also rejects the live session's next request, with its own distinct reason shown /  / [31m2 CHECK(S) FAILED[0m; scripts/prove-fixture-isolation.ts failed (a03-228 is marked done): 5 tenant(s) violated fixture isolation during this sweep:
+  · 0f4c4ed4-6c1e-4f0d-8f53-d87f5e896636 "shell-proof's Company" — row count changed from 194 to 197
+  · aaf538cf-7cf7-4d60-a005-221fb9401c32 "Rheinbach Systemtechnik" — row count changed from 59623 to 59716
+  · null "(no tenants row)" — row count changed from 53 to 54
+  · b48f3e7e-afb8-4b4a-8842-8a7814e617dd "CT- Standard Cost Proof GmbH" — new tenant created during the sweep, never torn down (15 row(s) left behind)
+  · 5ddd9603-cd3b-42e8-bf0b-63c9b0657d40 "CT- Stock Equals Ledger Proof GmbH" — new tenant created during the sweep, never torn down (15 row(s) left behind); journey "invite and sign in" failed: creating the employee did not reach a record page — landed on http://localhost:3000/hr/employees/new; 83 screen(s) flagged for density, up from 14 on the last green run: /account/suspended, /accounting/packets/[packet], /accounting/packets/build/[statement], /accounting/periods, /accounts, /assets/[id], /assets/holders, /assets/locations — see docs/screen-density.md
+     . mem: gate step peaked at 3962MB (cgroup MemoryCurrent, sampled every 3s)
+     ! GATE FAILED, caused by this task
+     [FAILED] (exit 97) 00:11:35
+       moved to tasks/failed/ — the queue carries on
+       reason: completion marker + commit present, but the gate failed: 24 screen(s) missing an empty state that teaches; scripts/prove-translated.ts failed (c00-213 is marked done):       "PROVE-TRANSLATED fixture"  — …PROVE-TRANSLATED fixture… /  / TRANSLATED: 2647 known, 234 new /  / [31m1 screen(s) failed[0m; scripts/prove-scroll-containment.ts failed (h00f-119 is marked done):         25, 2950, 2950,  3802, 27356, 1082, /       1700,   25 /     ] /   } / }; scripts/prove-suspend-is-real.ts failed (a00-222 is marked done):  / 6. Closing shows the distinct closed reason, same mechanism — run last: a closed tenant is deliberately terminal (StatusPanel offers no action out of 'closed') and this fixture is torn down right after: /   [32mPASS[0m closing also rejects the live session's next request, with its own distinct reason shown /  / [31m2 CHECK(S) FAILED[0m; scripts/prove-fixture-isolation.ts failed (a03-228 is marked done): 5 tenant(s) violated fixture isolation during this sweep:
+  · 0f4c4ed4-6c1e-4f0d-8f53-d87f5e896636 "shell-proof's Company" — row count changed from 194 to 197
+  · aaf538cf-7cf7-4d60-a005-221fb9401c32 "Rheinbach Systemtechnik" — row count changed from 59623 to 59716
+  · null "(no tenants row)" — row count changed from 53 to 54
+  · b48f3e7e-afb8-4b4a-8842-8a7814e617dd "CT- Standard Cost Proof GmbH" — new tenant created during the sweep, never torn down (15 row(s) left behind)
+  · 5ddd9603-cd3b-42e8-bf0b-63c9b0657d40 "CT- Stock Equals Ledger Proof GmbH" — new tenant created during the sweep, never torn down (15 row(s) left behind); journey "invite and sign in" failed: creating the employee did not reach a record page — landed on http://localhost:3000/hr/employees/new; 83 screen(s) flagged for density, up from 14 on the last green run: /account/suspended, /accounting/packets/[packet], /accounting/packets/build/[statement], /accounting/periods, /accounts, /assets/[id], /assets/holders, /assets/locations — see docs/screen-density.md
+       see logs/a07-240-the-owner-is-not-an-employee-and-a-category-cannot-be-capitalised.log
 
----- a07-240-the-owner-is-not-an-employee-and-a-category-cannot-be-capitalised ----  started 20:53:05
-     . build/screens/journeys: diff since 23c61c5b4bc5 touches something that could render — running fresh
-     . build: starting clean — zero orphaned servers, zero stray browsers
-     . build clean
-     . mem: build step peaked at 4546MB (cgroup MemoryCurrent, sampled every 3s)
-     . tests: starting clean — zero orphaned servers, zero stray browsers
-     . suite green: 3775 tests
-     . mem: tests step peaked at 3131MB (cgroup MemoryCurrent, sampled every 3s)
-     . screens: starting clean — zero orphaned servers, zero stray browsers
-     ! SCREENS: 3 broken, 0 blank, 0 404 of 258 — see docs/screen-audit.md
-     . mem: screens step peaked at 4837MB (cgroup MemoryCurrent, sampled every 3s)
-     . journeys: starting clean — zero orphaned servers, zero stray browsers
-     ! JOURNEYS: 13 of 18 failed — upload and self-sign, invite and sign in, raise an invoice, invoice: three lines survive a submit with no customer chosen, run a No1Edit tool, J2: sign a document myself and take it away, J3: change a document and take it away, J4: the employee folder — nothing typed twice, J2: sign a document myself and take it away — DigiSign-only tenant, J3: change a document and take it away — No1Edit-only tenant, J2: sign a document myself and take it away — tenant with no entity, J3: change a document and take it away — tenant with no entity, (remaining journeys) — see docs/journeys-report.md
-     . mem: journeys step peaked at 5198MB (cgroup MemoryCurrent, sampled every 3s)
-     . gate: starting clean — zero orphaned servers, zero stray browsers
-     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
+---- a08-246-twenty-four-screens-teach-nothing-on-day-one ----  started 00:11:37
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1688       10768         416        3899       13914
+Mem:           15603       11189        1634         458        3575        4413
 -- top --
     ELAPSED   RSS COMMAND
-   01:13:30 505040 next-server (v1
-   01:13:30 128928 node
-19-18:03:51 103848 systemd-journal
-   01:13:28 103272 node
+      02:48 8553520 next-server (v1
+      02:19 602848 chrome-headless
+      03:21 332804 claude
+      02:20 228132 node
 -- disk --
-/dev/sda1        75G   37G   36G  51% /
+/dev/sda1        75G   40G   33G  56% /
