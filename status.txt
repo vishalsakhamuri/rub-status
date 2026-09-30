@@ -1,7 +1,7 @@
-generated: 2026-09-30 16:45:01 UTC
-done:   251
+generated: 2026-09-30 16:50:01 UTC
+done:   250
 queued: 5
-failed: 1
+failed: 2
 hold:   1
 
 -- queued --
@@ -12,37 +12,38 @@ b06-244-the-steuerberater-wants-datev.md
 b07-224-ten-businesses-end-to-end.md
 -- failed --
 a07-240-the-owner-is-not-an-employee-and-a-category-cannot-be-capitalised.md
+a10-248-the-sweep-keeps-writing-into-the-real-tenant.md
 
 -- log --
-       moved to tasks/failed/ — the queue carries on
-       reason: completion marker + commit present, but the gate failed: journey "invite and sign in" failed: creating the employee did not reach a record page — landed on http://localhost:3000/hr/employees/new
-       see logs/a09-247-the-screen-density-baseline-has-not-moved-since-18-september.log
-
----- a10-248-the-sweep-keeps-writing-into-the-real-tenant ----  started 11:02:35
-     . build/screens/journeys: diff since 584241c34a8f touches something that could render — running fresh
-     . build: starting clean — zero orphaned servers, zero stray browsers
-     . build clean
-     . mem: build step peaked at 4866MB (cgroup MemoryCurrent, sampled every 3s)
-     . tests: starting clean — zero orphaned servers, zero stray browsers
-     . suite green: 3780 tests
-     . mem: tests step peaked at 3161MB (cgroup MemoryCurrent, sampled every 3s)
-     . screens: starting clean — zero orphaned servers, zero stray browsers
-     ! SCREENS: 3 broken, 0 blank, 0 404 of 258 — see docs/screen-audit.md
-     . mem: screens step peaked at 4467MB (cgroup MemoryCurrent, sampled every 3s)
      . journeys: starting clean — zero orphaned servers, zero stray browsers
      ! JOURNEYS: 14 of 19 failed — upload and self-sign, invite and sign in, raise an invoice, invoice: three lines survive a submit with no customer chosen, run a No1Edit tool, J2: sign a document myself and take it away, J3: change a document and take it away, J4: the employee folder — nothing typed twice, J2: sign a document myself and take it away — DigiSign-only tenant, J3: change a document and take it away — No1Edit-only tenant, J2: sign a document myself and take it away — tenant with no entity, J3: change a document and take it away — tenant with no entity, J4: the employee folder — nothing typed twice — tenant with no entity, (remaining journeys) — see docs/journeys-report.md
      . mem: journeys step peaked at 4775MB (cgroup MemoryCurrent, sampled every 3s)
      . gate: starting clean — zero orphaned servers, zero stray browsers
      . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
+     . gate: 79 pass, 21 fail, 0 pending
+     ! GATE FAILED: scripts/prove-scroll-containment.ts failed (h00f-119 is marked done):         25, 2950, 2950,  3802, 27356, 1082, /       1700,   25 /     ] /   } / }; scripts/prove-fixture-isolation.ts failed (a03-228 is marked done): 2 tenant(s) violated fixture isolation during this sweep:
+  · 0ddc34a4-1eaa-46dd-9c3e-98c47549c378 "CT- Standard Cost Proof GmbH" — new tenant created during the sweep, never torn down (15 row(s) left behind)
+  · cb24f59c-4691-4221-b585-e42c9966d0c6 "CT- Stock Equals Ledger Proof GmbH" — new tenant created during the sweep, never torn down (15 row(s) left behind)
+     . mem: gate step peaked at 3828MB (cgroup MemoryCurrent, sampled every 3s)
+     ! GATE FAILED, caused by this task
+     ! task had self-moved to tasks/done/ — moved back to tasks/failed/, the gate said otherwise
+     [FAILED] (exit 97) 16:46:43
+       moved to tasks/failed/ — the queue carries on
+       reason: completion marker + commit present, but the gate failed: scripts/prove-scroll-containment.ts failed (h00f-119 is marked done):         25, 2950, 2950,  3802, 27356, 1082, /       1700,   25 /     ] /   } / }; scripts/prove-fixture-isolation.ts failed (a03-228 is marked done): 2 tenant(s) violated fixture isolation during this sweep:
+  · 0ddc34a4-1eaa-46dd-9c3e-98c47549c378 "CT- Standard Cost Proof GmbH" — new tenant created during the sweep, never torn down (15 row(s) left behind)
+  · cb24f59c-4691-4221-b585-e42c9966d0c6 "CT- Stock Equals Ledger Proof GmbH" — new tenant created during the sweep, never torn down (15 row(s) left behind)
+       see logs/a10-248-the-sweep-keeps-writing-into-the-real-tenant.log
+
+---- b03-241-mail-must-leave-the-building ----  started 16:46:45
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1846       10709         568        3953       13756
+Mem:           15603        1496       11035         568        3976       14106
 -- top --
     ELAPSED   RSS COMMAND
-      57:27 518748 next-server (v1
-20-10:38:52 137760 systemd-journal
-      57:27 129328 node
-      57:25 99484 node
+      03:13 338996 claude
+20-10:43:52 137844 systemd-journal
+27-11:55:29 13524 systemd
+      00:00 11444 sshd-session
 -- disk --
 /dev/sda1        75G   38G   35G  52% /
