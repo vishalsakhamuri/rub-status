@@ -1,4 +1,4 @@
-generated: 2026-09-30 18:30:01 UTC
+generated: 2026-09-30 18:35:01 UTC
 done:   251
 queued: 5
 failed: 1
@@ -14,9 +14,6 @@ b07-224-ten-businesses-end-to-end.md
 a07-240-the-owner-is-not-an-employee-and-a-category-cannot-be-capitalised.md
 
 -- log --
-     . gate: 79 pass, 21 fail, 0 pending
-     ! GATE FAILED: scripts/prove-scroll-containment.ts failed (h00f-119 is marked done):         25, 2950, 2950,  3802, 27356, 1082, /       1700,   25 /     ] /   } / }; scripts/prove-fixture-isolation.ts failed (a03-228 is marked done): 2 tenant(s) violated fixture isolation during this sweep:
-  · 0ddc34a4-1eaa-46dd-9c3e-98c47549c378 "CT- Standard Cost Proof GmbH" — new tenant created during the sweep, never torn down (15 row(s) left behind)
   · cb24f59c-4691-4221-b585-e42c9966d0c6 "CT- Stock Equals Ledger Proof GmbH" — new tenant created during the sweep, never torn down (15 row(s) left behind)
      . mem: gate step peaked at 3828MB (cgroup MemoryCurrent, sampled every 3s)
      ! GATE FAILED, caused by this task
@@ -34,15 +31,18 @@ a07-240-the-owner-is-not-an-employee-and-a-category-cannot-be-capitalised.md
      ! BUILD BROKEN — see logs/build-latest.log
      . mem: build step peaked at 5252MB (cgroup MemoryCurrent, sampled every 3s)
      . tests: starting clean — zero orphaned servers, zero stray browsers
+     ! SUITE RED: 2 of 3801 tests failing — see logs/suite-latest.log
+     . mem: tests step peaked at 3190MB (cgroup MemoryCurrent, sampled every 3s)
+     . screens: starting clean — zero orphaned servers, zero stray browsers
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2188       10325         686        4112       13414
+Mem:           15603        1320       11193         624        4051       14282
 -- top --
     ELAPSED   RSS COMMAND
-      32:23 632812 node
-      00:04 220484 node
-20-12:23:52 146644 systemd-journal
-      32:23 78128 npm exec vitest
+20-12:28:52 146676 systemd-journal
+27-13:40:29 13524 systemd
+20-12:28:52  9492 systemd-resolve
+20-12:28:52  9012 chronyd
 -- disk --
 /dev/sda1        75G   38G   35G  52% /
