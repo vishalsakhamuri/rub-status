@@ -1,4 +1,4 @@
-generated: 2026-09-30 15:45:01 UTC
+generated: 2026-09-30 15:50:01 UTC
 done:   251
 queued: 5
 failed: 1
@@ -14,10 +14,6 @@ b07-224-ten-businesses-end-to-end.md
 a07-240-the-owner-is-not-an-employee-and-a-category-cannot-be-capitalised.md
 
 -- log --
-     . mem: gate step peaked at 4191MB (cgroup MemoryCurrent, sampled every 3s)
-     ! GATE FAILED, caused by this task
-     ! task had self-moved to tasks/done/ — moved back to tasks/failed/, the gate said otherwise
-     [FAILED] (exit 97) 11:02:33
        moved to tasks/failed/ — the queue carries on
        reason: completion marker + commit present, but the gate failed: journey "invite and sign in" failed: creating the employee did not reach a record page — landed on http://localhost:3000/hr/employees/new
        see logs/a09-247-the-screen-density-baseline-has-not-moved-since-18-september.log
@@ -34,15 +30,19 @@ a07-240-the-owner-is-not-an-employee-and-a-category-cannot-be-capitalised.md
      ! SCREENS: 3 broken, 0 blank, 0 404 of 258 — see docs/screen-audit.md
      . mem: screens step peaked at 4467MB (cgroup MemoryCurrent, sampled every 3s)
      . journeys: starting clean — zero orphaned servers, zero stray browsers
+     ! JOURNEYS: 14 of 19 failed — upload and self-sign, invite and sign in, raise an invoice, invoice: three lines survive a submit with no customer chosen, run a No1Edit tool, J2: sign a document myself and take it away, J3: change a document and take it away, J4: the employee folder — nothing typed twice, J2: sign a document myself and take it away — DigiSign-only tenant, J3: change a document and take it away — No1Edit-only tenant, J2: sign a document myself and take it away — tenant with no entity, J3: change a document and take it away — tenant with no entity, J4: the employee folder — nothing typed twice — tenant with no entity, (remaining journeys) — see docs/journeys-report.md
+     . mem: journeys step peaked at 4775MB (cgroup MemoryCurrent, sampled every 3s)
+     . gate: starting clean — zero orphaned servers, zero stray browsers
+     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1985       10820         615        3750       13618
+Mem:           15603        1915       10889         567        3703       13687
 -- top --
     ELAPSED   RSS COMMAND
-      08:51 360944 next-server (v1
-      00:32 211600 chrome-headless
-      10:19 209312 node
-      08:48 144216 chrome-headless
+      02:27 349756 next-server (v1
+      00:01 173064 node
+      00:02 148272 node
+20-09:43:52 137092 systemd-journal
 -- disk --
 /dev/sda1        75G   38G   35G  52% /
