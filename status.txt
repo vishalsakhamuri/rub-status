@@ -1,4 +1,4 @@
-generated: 2026-09-30 05:20:01 UTC
+generated: 2026-09-30 05:25:01 UTC
 done:   249
 queued: 7
 failed: 1
@@ -16,9 +16,6 @@ b07-224-ten-businesses-end-to-end.md
 a07-240-the-owner-is-not-an-employee-and-a-category-cannot-be-capitalised.md
 
 -- log --
-     ! GATE FAILED, caused by this task
-     [FAILED] (exit 97) 00:11:35
-       moved to tasks/failed/ — the queue carries on
        reason: completion marker + commit present, but the gate failed: 24 screen(s) missing an empty state that teaches; scripts/prove-translated.ts failed (c00-213 is marked done):       "PROVE-TRANSLATED fixture"  — …PROVE-TRANSLATED fixture… /  / TRANSLATED: 2647 known, 234 new /  / [31m1 screen(s) failed[0m; scripts/prove-scroll-containment.ts failed (h00f-119 is marked done):         25, 2950, 2950,  3802, 27356, 1082, /       1700,   25 /     ] /   } / }; scripts/prove-suspend-is-real.ts failed (a00-222 is marked done):  / 6. Closing shows the distinct closed reason, same mechanism — run last: a closed tenant is deliberately terminal (StatusPanel offers no action out of 'closed') and this fixture is torn down right after: /   [32mPASS[0m closing also rejects the live session's next request, with its own distinct reason shown /  / [31m2 CHECK(S) FAILED[0m; scripts/prove-fixture-isolation.ts failed (a03-228 is marked done): 5 tenant(s) violated fixture isolation during this sweep:
   · 0f4c4ed4-6c1e-4f0d-8f53-d87f5e896636 "shell-proof's Company" — row count changed from 194 to 197
   · aaf538cf-7cf7-4d60-a005-221fb9401c32 "Rheinbach Systemtechnik" — row count changed from 59623 to 59716
@@ -36,15 +33,18 @@ a07-240-the-owner-is-not-an-employee-and-a-category-cannot-be-capitalised.md
      . suite green: 3775 tests
      . mem: tests step peaked at 2956MB (cgroup MemoryCurrent, sampled every 3s)
      . screens: starting clean — zero orphaned servers, zero stray browsers
+     ! SCREENS: 3 broken, 0 blank, 0 404 of 258 — see docs/screen-audit.md
+     . mem: screens step peaked at 4704MB (cgroup MemoryCurrent, sampled every 3s)
+     . journeys: starting clean — zero orphaned servers, zero stray browsers
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3682        8916         337        3679       11920
+Mem:           15603        1655       10943         316        3657       13948
 -- top --
     ELAPSED   RSS COMMAND
-      07:09 1366432 next-server (v1
-      01:41 514316 chrome-headless
-      07:07 434840 node
-      07:05 426324 chrome-headless
+      02:34 337520 next-server (v1
+      00:29 212192 chrome-headless
+      04:02 184224 node
+      02:32 140660 chrome-headless
 -- disk --
 /dev/sda1        75G   37G   36G  52% /
