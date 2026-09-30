@@ -1,29 +1,19 @@
-generated: 2026-09-30 18:40:01 UTC
+generated: 2026-09-30 18:45:01 UTC
 done:   251
-queued: 5
-failed: 1
+queued: 4
+failed: 2
 hold:   1
 
 -- queued --
-b03-241-mail-must-leave-the-building.md
 b04-242-the-registers-iso-9001-expects.md
 b05-243-meetings-minutes-actions-and-the-templates-in-german.md
 b06-244-the-steuerberater-wants-datev.md
 b07-224-ten-businesses-end-to-end.md
 -- failed --
 a07-240-the-owner-is-not-an-employee-and-a-category-cannot-be-capitalised.md
+b03-241-mail-must-leave-the-building.md
 
 -- log --
-  · cb24f59c-4691-4221-b585-e42c9966d0c6 "CT- Stock Equals Ledger Proof GmbH" — new tenant created during the sweep, never torn down (15 row(s) left behind)
-       see logs/a10-248-the-sweep-keeps-writing-into-the-real-tenant.log
-
----- b03-241-mail-must-leave-the-building ----  started 16:46:45
-     . build/screens/journeys: diff since a9839ccdb01f touches something that could render — running fresh
-     . build: starting clean — zero orphaned servers, zero stray browsers
-     ! BUILD BROKEN — see logs/build-latest.log
-     . mem: build step peaked at 5252MB (cgroup MemoryCurrent, sampled every 3s)
-     . tests: starting clean — zero orphaned servers, zero stray browsers
-     ! SUITE RED: 2 of 3801 tests failing — see logs/suite-latest.log
      . mem: tests step peaked at 3190MB (cgroup MemoryCurrent, sampled every 3s)
      . screens: starting clean — zero orphaned servers, zero stray browsers
      ! screen audit did not produce a result at all — see logs/screens-latest.log
@@ -34,15 +24,25 @@ a07-240-the-owner-is-not-an-employee-and-a-category-cannot-be-capitalised.md
      . gate: starting clean — zero orphaned servers, zero stray browsers
      . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
      . gate: no production build on disk yet — building one
+     . gate: 87 pass, 3 fail, 0 pending
+     ! GATE FAILED: the gate's own readiness check could not reach the app (BASE_URL/login never answered) — the entire prove-* register was left unrun this pass; an unrun check is not a passed check; 2 of 3801 tests failing; pnpm run build failed
+     . mem: gate step peaked at 5188MB (cgroup MemoryCurrent, sampled every 3s)
+     ! GATE FAILED, caused by this task
+     [FAILED] (exit 97) 18:42:15
+       moved to tasks/failed/ — the queue carries on
+       reason: completion marker + commit present, but the gate failed: the gate's own readiness check could not reach the app (BASE_URL/login never answered) — the entire prove-* register was left unrun this pass; an unrun check is not a passed check; 2 of 3801 tests failing; pnpm run build failed
+       see logs/b03-241-mail-must-leave-the-building.log
+
+---- b04-242-the-registers-iso-9001-expects ----  started 18:42:18
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1474       11039         624        4051       14128
+Mem:           15603        1556       10956         624        4052       14046
 -- top --
     ELAPSED   RSS COMMAND
-      00:14 159676 node
-20-12:33:52 146708 systemd-journal
-      00:14 76744 npm exec tsx --
-      00:14 55528 node
+      02:40 356340 claude
+20-12:38:51 146724 systemd-journal
+27-13:50:28 13524 systemd
+20-12:38:51  9492 systemd-resolve
 -- disk --
 /dev/sda1        75G   38G   35G  52% /
