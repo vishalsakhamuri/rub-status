@@ -1,11 +1,10 @@
-generated: 2026-09-30 14:50:01 UTC
-done:   249
-queued: 6
-failed: 2
+generated: 2026-09-30 14:55:01 UTC
+done:   251
+queued: 5
+failed: 1
 hold:   1
 
 -- queued --
-a10-248-the-sweep-keeps-writing-into-the-real-tenant.md
 b03-241-mail-must-leave-the-building.md
 b04-242-the-registers-iso-9001-expects.md
 b05-243-meetings-minutes-actions-and-the-templates-in-german.md
@@ -13,7 +12,6 @@ b06-244-the-steuerberater-wants-datev.md
 b07-224-ten-businesses-end-to-end.md
 -- failed --
 a07-240-the-owner-is-not-an-employee-and-a-category-cannot-be-capitalised.md
-a09-247-the-screen-density-baseline-has-not-moved-since-18-september.md
 
 -- log --
      ! JOURNEYS: 13 of 18 failed — upload and self-sign, invite and sign in, raise an invoice, invoice: three lines survive a submit with no customer chosen, run a No1Edit tool, J2: sign a document myself and take it away, J3: change a document and take it away, J4: the employee folder — nothing typed twice, J2: sign a document myself and take it away — DigiSign-only tenant, J3: change a document and take it away — No1Edit-only tenant, J2: sign a document myself and take it away — tenant with no entity, J3: change a document and take it away — tenant with no entity, (remaining journeys) — see docs/journeys-report.md
@@ -39,12 +37,12 @@ a09-247-the-screen-density-baseline-has-not-moved-since-18-september.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2218       10597         611        3737       13384
+Mem:           15603        2254       10560         616        3741       13348
 -- top --
     ELAPSED   RSS COMMAND
-      00:52 578360 node
-      00:29 249720 node
-20-08:43:52 131484 systemd-journal
-   02:43:58 105792 node
+      05:53 689556 node
+      00:07 223628 node
+20-08:48:52 132948 systemd-journal
+   02:48:58 105792 node
 -- disk --
 /dev/sda1        75G   44G   29G  61% /
