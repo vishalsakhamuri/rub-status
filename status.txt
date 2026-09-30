@@ -1,4 +1,4 @@
-generated: 2026-09-30 21:45:01 UTC
+generated: 2026-09-30 21:50:01 UTC
 done:   252
 queued: 3
 failed: 2
@@ -13,9 +13,6 @@ a07-240-the-owner-is-not-an-employee-and-a-category-cannot-be-capitalised.md
 b03-241-mail-must-leave-the-building.md
 
 -- log --
-     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
-     . gate: no production build on disk yet — building one
-     . gate: 87 pass, 3 fail, 0 pending
      ! GATE FAILED: the gate's own readiness check could not reach the app (BASE_URL/login never answered) — the entire prove-* register was left unrun this pass; an unrun check is not a passed check; 2 of 3801 tests failing; pnpm run build failed
      . mem: gate step peaked at 5188MB (cgroup MemoryCurrent, sampled every 3s)
      ! GATE FAILED, caused by this task
@@ -33,15 +30,18 @@ b03-241-mail-must-leave-the-building.md
      ! SUITE RED: 2 of 3801 tests failing — see logs/suite-latest.log
      . mem: tests step peaked at 4160MB (cgroup MemoryCurrent, sampled every 3s)
      . screens: starting clean — zero orphaned servers, zero stray browsers
+     ! SCREENS: 4 broken, 0 blank, 0 404 of 266 — see docs/screen-audit.md
+     . mem: screens step peaked at 4479MB (cgroup MemoryCurrent, sampled every 3s)
+     . journeys: starting clean — zero orphaned servers, zero stray browsers
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3538        9248         432        3586       12065
+Mem:           15603        5149        7637         381        3535       10453
 -- top --
     ELAPSED   RSS COMMAND
-      05:58 1223796 next-server (v1
-      05:53 814624 chrome-headless
-      05:55 388164 node
-      05:53 179428 chrome-headless
+      00:35 2598128 node
+      01:08 1246876 node
+      01:11 214964 node
+      01:02 159572 node
 -- disk --
 /dev/sda1        75G   38G   35G  52% /
