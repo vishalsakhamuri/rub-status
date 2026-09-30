@@ -1,11 +1,10 @@
-generated: 2026-09-30 08:50:01 UTC
-done:   248
-queued: 7
-failed: 2
+generated: 2026-09-30 08:55:01 UTC
+done:   250
+queued: 6
+failed: 1
 hold:   1
 
 -- queued --
-a09-247-the-screen-density-baseline-has-not-moved-since-18-september.md
 a10-248-the-sweep-keeps-writing-into-the-real-tenant.md
 b03-241-mail-must-leave-the-building.md
 b04-242-the-registers-iso-9001-expects.md
@@ -14,7 +13,6 @@ b06-244-the-steuerberater-wants-datev.md
 b07-224-ten-businesses-end-to-end.md
 -- failed --
 a07-240-the-owner-is-not-an-employee-and-a-category-cannot-be-capitalised.md
-a08-246-twenty-four-screens-teach-nothing-on-day-one.md
 
 -- log --
 Call log:
@@ -40,12 +38,12 @@ Call log:
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1903       10298         332        4071       13700
+Mem:           15603        1882       10319         337        4076       13721
 -- top --
     ELAPSED   RSS COMMAND
-      00:53 584292 node
-      00:30 251840 node
-20-02:43:51 122072 systemd-journal
-      57:55 106136 node
+      05:54 650176 node
+      00:11 187684 node
+20-02:48:52 122160 systemd-journal
+   01:02:56 106136 node
 -- disk --
 /dev/sda1        75G   37G   35G  52% /
