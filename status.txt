@@ -1,7 +1,7 @@
-generated: 2026-09-30 18:00:01 UTC
-done:   250
+generated: 2026-09-30 18:05:01 UTC
+done:   251
 queued: 5
-failed: 2
+failed: 1
 hold:   1
 
 -- queued --
@@ -12,7 +12,6 @@ b06-244-the-steuerberater-wants-datev.md
 b07-224-ten-businesses-end-to-end.md
 -- failed --
 a07-240-the-owner-is-not-an-employee-and-a-category-cannot-be-capitalised.md
-a10-248-the-sweep-keeps-writing-into-the-real-tenant.md
 
 -- log --
      . gate: 79 pass, 21 fail, 0 pending
@@ -38,12 +37,12 @@ a10-248-the-sweep-keeps-writing-into-the-real-tenant.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2061       10453         669        4094       13541
+Mem:           15603        2060       10454         674        4099       13542
 -- top --
     ELAPSED   RSS COMMAND
-      02:23 584716 node
-      00:26 175496 node
-20-11:53:51 145880 systemd-journal
-      02:23 78128 npm exec vitest
+      07:23 621168 node
+      00:27 170388 node
+20-11:58:51 146136 systemd-journal
+      07:23 78128 npm exec vitest
 -- disk --
 /dev/sda1        75G   38G   35G  52% /
