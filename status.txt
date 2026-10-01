@@ -1,4 +1,4 @@
-generated: 2026-10-01 03:10:01 UTC
+generated: 2026-10-01 03:15:01 UTC
 done:   251
 queued: 3
 failed: 3
@@ -14,15 +14,6 @@ b03-241-mail-must-leave-the-building.md
 b04-242-the-registers-iso-9001-expects.md
 
 -- log --
-     . journeys: starting clean — zero orphaned servers, zero stray browsers
-     ! JOURNEYS: 12 of 17 failed — upload and self-sign, invite and sign in, raise an invoice, invoice: three lines survive a submit with no customer chosen, run a No1Edit tool, J2: sign a document myself and take it away, J3: change a document and take it away, J4: the employee folder — nothing typed twice, J2: sign a document myself and take it away — DigiSign-only tenant, J3: change a document and take it away — No1Edit-only tenant, J2: sign a document myself and take it away — tenant with no entity, (remaining journeys) — see docs/journeys-report.md
-     . mem: journeys step peaked at 4554MB (cgroup MemoryCurrent, sampled every 3s)
-     . gate: starting clean — zero orphaned servers, zero stray browsers
-     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
-     . gate: 79 pass, 20 fail, 0 pending
-     ! GATE FAILED: 2 of 3801 tests failing; scripts/prove-translated.ts failed (c00-213 is marked done):       "PROVE-TRANSLATED fixture"  — …PROVE-TRANSLATED fixture… /  / TRANSLATED: 2857 known, 333 new /  / [31m1 screen(s) failed[0m; scripts/prove-scroll-containment.ts failed (h00f-119 is marked done):         25, 2950, 2950,  3802, 27356, 1082, /       1700,   25 /     ] /   } / }; scripts/prove-fixture-isolation.ts failed (a03-228 is marked done): 2 tenant(s) violated fixture isolation during this sweep:
-  · ef93f646-39f6-414a-9938-31a2618eace6 "CT- Standard Cost Proof GmbH" — new tenant created during the sweep, never torn down (15 row(s) left behind)
-  · dd4f9b12-d6d5-4bb4-a749-feeef98d286a "CT- Stock Equals Ledger Proof GmbH" — new tenant created during the sweep, never torn down (15 row(s) left behind); scripts/prove-bank-feeds.ts passed on the last green run and cannot claim PENDING now that QONTO_SANDBOX_TOKEN, WISE_SANDBOX_TOKEN, TRUELAYER_CLIENT_ID, TRUELAYER_CLIENT_SECRET is empty — that is a regression, not a gap; journey "J4: the employee folder — nothing typed twice" failed: creating the employee did not reach a record page — landed on http://localhost:3000/hr/employees/new; 73 screen(s) flagged for density, up from 72 on the last green run: /account/suspended, /accounting/packets/[packet], /accounting/packets/build/[statement], /accounting/periods, /accounts, /assets/[id], /assets/locations, /assets — see docs/screen-density.md
      . mem: gate step peaked at 3665MB (cgroup MemoryCurrent, sampled every 3s)
      ! GATE FAILED, caused by this task
      ! task had self-moved to tasks/done/ — moved back to tasks/failed/, the gate said otherwise
@@ -34,15 +25,24 @@ b04-242-the-registers-iso-9001-expects.md
        see logs/b04-242-the-registers-iso-9001-expects.log
 
 ---- b05-243-meetings-minutes-actions-and-the-templates-in-german ----  started 23:16:18
+     . build/screens/journeys: diff since f29bf332f7c5 touches something that could render — running fresh
+     ! orphaned dev server found: pid 537638, owned by build, age 3m, cwd /home/build/runurbusiness (sh -c next dev) — killing it
+     ! orphaned dev server found: pid 537639, owned by build, age 3m, cwd /home/build/runurbusiness (node /home/build/runurbusiness/node_modules/.bin/../.pnpm/next@16.2.11_@babel+core@7.29.7_supports-color@7.2.0__react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/bin/next dev) — killing it
+     ! orphaned dev server found: pid 537656, owned by build, age 3m, cwd /home/build/runurbusiness (next-server (v16.2.11)) — killing it
+     . orphaned dev server(s) cleaned up before this task starts
+     . build: starting clean — zero orphaned servers, zero stray browsers
+     . build clean
+     . mem: build step peaked at 6883MB (cgroup MemoryCurrent, sampled every 3s)
+     . tests: starting clean — zero orphaned servers, zero stray browsers
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        7354        3209         191        5567        8248
+Mem:           15603        1672        8637         236        5867       13930
 -- top --
     ELAPSED   RSS COMMAND
-      01:55 8393540 next-server (v1
-   03:53:40 336652 claude
-      01:45 178788 node
-      01:56 128124 node
+      01:49 576000 node
+      01:25 239664 node
+      01:49 78392 npm exec vitest
+20-21:08:51 51648 systemd-journal
 -- disk --
 /dev/sda1        75G   44G   28G  61% /
