@@ -1,4 +1,4 @@
-generated: 2026-10-01 17:45:01 UTC
+generated: 2026-10-01 17:50:01 UTC
 done:   253
 queued: 5
 failed: 0
@@ -13,9 +13,6 @@ b06b-244-the-steuerberater-wants-datev.md
 -- failed --
 
 -- log --
-     . mem: screens step peaked at 4544MB (cgroup MemoryCurrent, sampled every 3s)
-     . journeys: starting clean — zero orphaned servers, zero stray browsers
-     ! JOURNEYS: 13 of 18 failed — upload and self-sign, invite and sign in, raise an invoice, invoice: three lines survive a submit with no customer chosen, run a No1Edit tool, J2: sign a document myself and take it away, J3: change a document and take it away, J4: the employee folder — nothing typed twice, J2: sign a document myself and take it away — DigiSign-only tenant, J3: change a document and take it away — No1Edit-only tenant, J2: sign a document myself and take it away — tenant with no entity, J3: change a document and take it away — tenant with no entity, (remaining journeys) — see docs/journeys-report.md
      . mem: journeys step peaked at 4801MB (cgroup MemoryCurrent, sampled every 3s)
      [FAILED] (exit 98) 06:40:35
        moved to tasks/failed/ — the queue carries on
@@ -33,15 +30,18 @@ b06b-244-the-steuerberater-wants-datev.md
      ! suite did not produce a result at all — see logs/suite-latest.log
      . mem: tests step peaked at 839MB (cgroup MemoryCurrent, sampled every 3s)
      . screens: starting clean — zero orphaned servers, zero stray browsers
+     ! SCREENS: 4 broken, 0 blank, 0 404 of 270 — see docs/screen-audit.md
+     . mem: screens step peaked at 4941MB (cgroup MemoryCurrent, sampled every 3s)
+     . journeys: starting clean — zero orphaned servers, zero stray browsers
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        4699        8018         308        3531       10903
+Mem:           15603        2180       10537         289        3511       13422
 -- top --
     ELAPSED   RSS COMMAND
-      08:46 1439244 next-server (v1
-      02:36 1013560 chrome-headless
-      08:42 468344 chrome-headless
-      08:44 455880 node
+      03:13 416500 next-server (v1
+      17:58 408436 node
+      00:22 222684 chrome-headless
+      04:44 186264 node
 -- disk --
 /dev/sda1        75G   38G   35G  53% /
