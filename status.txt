@@ -1,26 +1,18 @@
-generated: 2026-10-01 06:40:01 UTC
+generated: 2026-10-01 06:45:01 UTC
 done:   252
-queued: 2
-failed: 3
+queued: 1
+failed: 4
 hold:   1
 
 -- queued --
-b06-244-the-steuerberater-wants-datev.md
 b07-224-ten-businesses-end-to-end.md
 -- failed --
 a07-240-the-owner-is-not-an-employee-and-a-category-cannot-be-capitalised.md
 b03-241-mail-must-leave-the-building.md
 b05-243-meetings-minutes-actions-and-the-templates-in-german.md
+b06-244-the-steuerberater-wants-datev.md
 
 -- log --
-     ! JOURNEYS: 13 of 18 failed — upload and self-sign, invite and sign in, raise an invoice, invoice: three lines survive a submit with no customer chosen, run a No1Edit tool, J2: sign a document myself and take it away, J3: change a document and take it away, J4: the employee folder — nothing typed twice, J2: sign a document myself and take it away — DigiSign-only tenant, J3: change a document and take it away — No1Edit-only tenant, J2: sign a document myself and take it away — tenant with no entity, J3: change a document and take it away — tenant with no entity, (remaining journeys) — see docs/journeys-report.md
-     . mem: journeys step peaked at 4402MB (cgroup MemoryCurrent, sampled every 3s)
-     [FAILED] (exit 1) 04:28:58
-       moved to tasks/failed/ — the queue carries on
-       reason: claude exited with status 1
-       see logs/b05-243-meetings-minutes-actions-and-the-templates-in-german.log
-
----- b06-244-the-steuerberater-wants-datev ----  started 04:29:00
      ! exited clean but produced nothing verifiable — stalled — log ends on a waiting line, no completion marker (commit was made, but a commit is not proof of completion when the task's own words say it isn't finished)
      . build/screens/journeys: diff since 4db43abd4568 touches something that could render — running fresh
      . build: starting clean — zero orphaned servers, zero stray browsers
@@ -33,15 +25,23 @@ b05-243-meetings-minutes-actions-and-the-templates-in-german.md
      ! SCREENS: 3 broken, 0 blank, 0 404 of 270 — see docs/screen-audit.md
      . mem: screens step peaked at 4544MB (cgroup MemoryCurrent, sampled every 3s)
      . journeys: starting clean — zero orphaned servers, zero stray browsers
+     ! JOURNEYS: 13 of 18 failed — upload and self-sign, invite and sign in, raise an invoice, invoice: three lines survive a submit with no customer chosen, run a No1Edit tool, J2: sign a document myself and take it away, J3: change a document and take it away, J4: the employee folder — nothing typed twice, J2: sign a document myself and take it away — DigiSign-only tenant, J3: change a document and take it away — No1Edit-only tenant, J2: sign a document myself and take it away — tenant with no entity, J3: change a document and take it away — tenant with no entity, (remaining journeys) — see docs/journeys-report.md
+     . mem: journeys step peaked at 4801MB (cgroup MemoryCurrent, sampled every 3s)
+     [FAILED] (exit 98) 06:40:35
+       moved to tasks/failed/ — the queue carries on
+       reason: stalled — log ends on a waiting line, no completion marker (commit was made, but a commit is not proof of completion when the task's own words say it isn't finished)
+       see logs/b06-244-the-steuerberater-wants-datev.log
+
+---- b07-224-ten-businesses-end-to-end ----  started 06:40:37
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1720       10950         291        3561       13882
+Mem:           15603        1174       11494         254        3525       14428
 -- top --
     ELAPSED   RSS COMMAND
-      10:56 398044 next-server (v1
-      00:31 221656 chrome-headless
-      12:27 206016 node
-      10:54 144800 chrome-headless
+      04:22 338556 claude
+21-00:38:52 57552 systemd-journal
+28-01:50:29 13524 systemd
+21-00:38:52  9492 systemd-resolve
 -- disk --
 /dev/sda1        75G   38G   35G  53% /
