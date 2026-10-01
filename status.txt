@@ -1,4 +1,4 @@
-generated: 2026-10-01 23:50:01 UTC
+generated: 2026-10-01 23:55:01 UTC
 done:   254
 queued: 4
 failed: 0
@@ -12,9 +12,6 @@ b06b-244-the-steuerberater-wants-datev.md
 -- failed --
 
 -- log --
-     ! JOURNEYS: 14 of 18 failed — upload and self-sign, invite and sign in, raise an invoice, invoice: three lines survive a submit with no customer chosen, run a No1Edit tool, J2: sign a document myself and take it away, J3: change a document and take it away, J4: the employee folder — nothing typed twice, file a signed document, by hand, from DigiSign, J2: sign a document myself and take it away — DigiSign-only tenant, J3: change a document and take it away — No1Edit-only tenant, J2: sign a document myself and take it away — tenant with no entity, J3: change a document and take it away — tenant with no entity, (remaining journeys) — see docs/journeys-report.md
-     . mem: journeys step peaked at 4994MB (cgroup MemoryCurrent, sampled every 3s)
-     . gate: starting clean — zero orphaned servers, zero stray browsers
      . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
      . gate: 79 pass, 21 fail, 0 pending
      ! GATE FAILED: 75 screen(s) flagged for density, up from 72 on the last green run: /account/suspended, /accounting/packets/[packet], /accounting/packets/build/[statement], /accounting/periods, /accounts, /assets/[id], /assets/locations, /assets — see docs/screen-density.md
@@ -32,15 +29,18 @@ b06b-244-the-steuerberater-wants-datev.md
      . build clean
      . mem: build step peaked at 5007MB (cgroup MemoryCurrent, sampled every 3s)
      . tests: starting clean — zero orphaned servers, zero stray browsers
+     . suite green: 3801 tests
+     . mem: tests step peaked at 3429MB (cgroup MemoryCurrent, sampled every 3s)
+     . screens: starting clean — zero orphaned servers, zero stray browsers
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1782       10320         330        4167       13820
+Mem:           15603        2117        9986         307        4145       13485
 -- top --
     ELAPSED   RSS COMMAND
-      33:54 645828 node
-      00:04 153056 node
-      33:54 78600 npm exec vitest
-   17:02:00 64856 systemd-journal
+      00:38 514980 next-server (v1
+      00:34 388600 chrome-headless
+      00:36 203504 node
+      00:34 140044 chrome-headless
 -- disk --
 /dev/sda1        75G   38G   34G  53% /
