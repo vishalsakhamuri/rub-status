@@ -1,26 +1,18 @@
-generated: 2026-10-01 04:25:01 UTC
+generated: 2026-10-01 04:30:01 UTC
 done:   252
-queued: 3
-failed: 2
+queued: 2
+failed: 3
 hold:   1
 
 -- queued --
-b05-243-meetings-minutes-actions-and-the-templates-in-german.md
 b06-244-the-steuerberater-wants-datev.md
 b07-224-ten-businesses-end-to-end.md
 -- failed --
 a07-240-the-owner-is-not-an-employee-and-a-category-cannot-be-capitalised.md
 b03-241-mail-must-leave-the-building.md
+b05-243-meetings-minutes-actions-and-the-templates-in-german.md
 
 -- log --
-  · ef93f646-39f6-414a-9938-31a2618eace6 "CT- Standard Cost Proof GmbH" — new tenant created during the sweep, never torn down (15 row(s) left behind)
-  · dd4f9b12-d6d5-4bb4-a749-feeef98d286a "CT- Stock Equals Ledger Proof GmbH" — new tenant created during the sweep, never torn down (15 row(s) left behind); scripts/prove-bank-feeds.ts passed on the last green run and cannot claim PENDING now that QONTO_SANDBOX_TOKEN, WISE_SANDBOX_TOKEN, TRUELAYER_CLIENT_ID, TRUELAYER_CLIENT_SECRET is empty — that is a regression, not a gap; journey "J4: the employee folder — nothing typed twice" failed: creating the employee did not reach a record page — landed on http://localhost:3000/hr/employees/new; 73 screen(s) flagged for density, up from 72 on the last green run: /account/suspended, /accounting/packets/[packet], /accounting/packets/build/[statement], /accounting/periods, /accounts, /assets/[id], /assets/locations, /assets — see docs/screen-density.md
-       see logs/b04-242-the-registers-iso-9001-expects.log
-
----- b05-243-meetings-minutes-actions-and-the-templates-in-german ----  started 23:16:18
-     . build/screens/journeys: diff since f29bf332f7c5 touches something that could render — running fresh
-     ! orphaned dev server found: pid 537638, owned by build, age 3m, cwd /home/build/runurbusiness (sh -c next dev) — killing it
-     ! orphaned dev server found: pid 537639, owned by build, age 3m, cwd /home/build/runurbusiness (node /home/build/runurbusiness/node_modules/.bin/../.pnpm/next@16.2.11_@babel+core@7.29.7_supports-color@7.2.0__react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/bin/next dev) — killing it
      ! orphaned dev server found: pid 537656, owned by build, age 3m, cwd /home/build/runurbusiness (next-server (v16.2.11)) — killing it
      . orphaned dev server(s) cleaned up before this task starts
      . build: starting clean — zero orphaned servers, zero stray browsers
@@ -33,15 +25,23 @@ b03-241-mail-must-leave-the-building.md
      ! SCREENS: 4 broken, 0 blank, 0 404 of 269 — see docs/screen-audit.md
      . mem: screens step peaked at 4218MB (cgroup MemoryCurrent, sampled every 3s)
      . journeys: starting clean — zero orphaned servers, zero stray browsers
+     ! JOURNEYS: 13 of 18 failed — upload and self-sign, invite and sign in, raise an invoice, invoice: three lines survive a submit with no customer chosen, run a No1Edit tool, J2: sign a document myself and take it away, J3: change a document and take it away, J4: the employee folder — nothing typed twice, J2: sign a document myself and take it away — DigiSign-only tenant, J3: change a document and take it away — No1Edit-only tenant, J2: sign a document myself and take it away — tenant with no entity, J3: change a document and take it away — tenant with no entity, (remaining journeys) — see docs/journeys-report.md
+     . mem: journeys step peaked at 4402MB (cgroup MemoryCurrent, sampled every 3s)
+     [FAILED] (exit 1) 04:28:58
+       moved to tasks/failed/ — the queue carries on
+       reason: claude exited with status 1
+       see logs/b05-243-meetings-minutes-actions-and-the-templates-in-german.log
+
+---- b06-244-the-steuerberater-wants-datev ----  started 04:29:00
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1836       10914         238        3427       13766
+Mem:           15603        1106       11595         197        3435       14496
 -- top --
     ELAPSED   RSS COMMAND
-      07:25 457972 next-server (v1
-      00:24 243512 chrome-headless
-      08:55 201324 node
-      00:04 158316 chrome-headless
+      00:58 323240 claude
+20-22:23:51 56344 systemd-journal
+27-23:35:29 13524 systemd
+20-22:23:51  9492 systemd-resolve
 -- disk --
 /dev/sda1        75G   38G   35G  53% /
