@@ -1,4 +1,4 @@
-generated: 2026-10-01 19:30:01 UTC
+generated: 2026-10-01 19:35:01 UTC
 done:   252
 queued: 5
 failed: 1
@@ -37,12 +37,12 @@ b07-224-ten-businesses-end-to-end.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1227       11201         202        3714       14375
+Mem:           15603        1681       10746         253        3766       13921
 -- top --
     ELAPSED   RSS COMMAND
-      32:23 434936 claude
-   12:42:00 53696 systemd-journal
-28-14:35:29 15936 systemd
-   12:42:00 14152 systemd-resolve
+      37:23 440344 claude
+      03:06 383940 node
+      00:47 130884 node
+      03:06 77184 npm exec vitest
 -- disk --
 /dev/sda1        75G   38G   35G  53% /
