@@ -1,4 +1,4 @@
-generated: 2026-10-01 23:15:01 UTC
+generated: 2026-10-01 23:20:01 UTC
 done:   252
 queued: 5
 failed: 1
@@ -14,9 +14,6 @@ b06b-244-the-steuerberater-wants-datev.md
 b07-224-ten-businesses-end-to-end.md
 
 -- log --
-     ! SCREENS: 4 broken, 0 blank, 0 404 of 270 — see docs/screen-audit.md
-     . mem: screens step peaked at 4941MB (cgroup MemoryCurrent, sampled every 3s)
-     . journeys: starting clean — zero orphaned servers, zero stray browsers
      ! JOURNEYS: 14 of 18 failed — upload and self-sign, invite and sign in, raise an invoice, invoice: three lines survive a submit with no customer chosen, run a No1Edit tool, J2: sign a document myself and take it away, J3: change a document and take it away, J4: the employee folder — nothing typed twice, file a signed document, by hand, from DigiSign, J2: sign a document myself and take it away — DigiSign-only tenant, J3: change a document and take it away — No1Edit-only tenant, J2: sign a document myself and take it away — tenant with no entity, J3: change a document and take it away — tenant with no entity, (remaining journeys) — see docs/journeys-report.md
      . mem: journeys step peaked at 4994MB (cgroup MemoryCurrent, sampled every 3s)
      . gate: starting clean — zero orphaned servers, zero stray browsers
@@ -34,15 +31,18 @@ b07-224-ten-businesses-end-to-end.md
 ---- a00-249-three-red-checks ----  started 18:57:35
      . build/screens/journeys: diff since 962c60bfaec2 touches something that could render — running fresh
      . build: starting clean — zero orphaned servers, zero stray browsers
+     . build clean
+     . mem: build step peaked at 5007MB (cgroup MemoryCurrent, sampled every 3s)
+     . tests: starting clean — zero orphaned servers, zero stray browsers
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3496        8865         267        3845       12106
+Mem:           15603        1701       10402         313        4150       13901
 -- top --
     ELAPSED   RSS COMMAND
-      00:22 2360352 node
-      00:15 200168 node
-      00:23 129044 node
-   16:27:00 64728 systemd-journal
+      03:54 600324 node
+      00:45 177380 node
+      03:54 78600 npm exec vitest
+   16:32:00 64728 systemd-journal
 -- disk --
-/dev/sda1        75G   38G   35G  53% /
+/dev/sda1        75G   38G   34G  53% /
