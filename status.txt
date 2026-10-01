@@ -1,4 +1,4 @@
-generated: 2026-10-01 05:35:01 UTC
+generated: 2026-10-01 05:40:01 UTC
 done:   252
 queued: 2
 failed: 3
@@ -13,12 +13,6 @@ b03-241-mail-must-leave-the-building.md
 b05-243-meetings-minutes-actions-and-the-templates-in-german.md
 
 -- log --
-     ! orphaned dev server found: pid 537656, owned by build, age 3m, cwd /home/build/runurbusiness (next-server (v16.2.11)) — killing it
-     . orphaned dev server(s) cleaned up before this task starts
-     . build: starting clean — zero orphaned servers, zero stray browsers
-     . build clean
-     . mem: build step peaked at 6883MB (cgroup MemoryCurrent, sampled every 3s)
-     . tests: starting clean — zero orphaned servers, zero stray browsers
      . suite green: 3801 tests
      . mem: tests step peaked at 4982MB (cgroup MemoryCurrent, sampled every 3s)
      . screens: starting clean — zero orphaned servers, zero stray browsers
@@ -33,15 +27,21 @@ b05-243-meetings-minutes-actions-and-the-templates-in-german.md
        see logs/b05-243-meetings-minutes-actions-and-the-templates-in-german.log
 
 ---- b06-244-the-steuerberater-wants-datev ----  started 04:29:00
+     ! exited clean but produced nothing verifiable — stalled — log ends on a waiting line, no completion marker (commit was made, but a commit is not proof of completion when the task's own words say it isn't finished)
+     . build/screens/journeys: diff since 4db43abd4568 touches something that could render — running fresh
+     . build: starting clean — zero orphaned servers, zero stray browsers
+     . build clean
+     . mem: build step peaked at 4420MB (cgroup MemoryCurrent, sampled every 3s)
+     . tests: starting clean — zero orphaned servers, zero stray browsers
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3935        8736         253        3522       11668
+Mem:           15603        1749       10922         299        3568       13853
 -- top --
     ELAPSED   RSS COMMAND
-      00:17 2071344 node
-   01:05:58 528632 claude
-      11:33 370312 node
-      00:03 210120 node
+      01:54 585700 node
+      01:30 228828 node
+      01:54 77500 npm exec vitest
+20-23:33:51 57068 systemd-journal
 -- disk --
 /dev/sda1        75G   38G   35G  53% /
