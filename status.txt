@@ -1,4 +1,4 @@
-generated: 2026-10-01 04:15:01 UTC
+generated: 2026-10-01 04:20:01 UTC
 done:   252
 queued: 3
 failed: 2
@@ -13,9 +13,6 @@ a07-240-the-owner-is-not-an-employee-and-a-category-cannot-be-capitalised.md
 b03-241-mail-must-leave-the-building.md
 
 -- log --
-     [FAILED] (exit 97) 23:16:16
-       moved to tasks/failed/ — the queue carries on
-       reason: completion marker + commit present, but the gate failed: 2 of 3801 tests failing; scripts/prove-translated.ts failed (c00-213 is marked done):       "PROVE-TRANSLATED fixture"  — …PROVE-TRANSLATED fixture… /  / TRANSLATED: 2857 known, 333 new /  / [31m1 screen(s) failed[0m; scripts/prove-scroll-containment.ts failed (h00f-119 is marked done):         25, 2950, 2950,  3802, 27356, 1082, /       1700,   25 /     ] /   } / }; scripts/prove-fixture-isolation.ts failed (a03-228 is marked done): 2 tenant(s) violated fixture isolation during this sweep:
   · ef93f646-39f6-414a-9938-31a2618eace6 "CT- Standard Cost Proof GmbH" — new tenant created during the sweep, never torn down (15 row(s) left behind)
   · dd4f9b12-d6d5-4bb4-a749-feeef98d286a "CT- Stock Equals Ledger Proof GmbH" — new tenant created during the sweep, never torn down (15 row(s) left behind); scripts/prove-bank-feeds.ts passed on the last green run and cannot claim PENDING now that QONTO_SANDBOX_TOKEN, WISE_SANDBOX_TOKEN, TRUELAYER_CLIENT_ID, TRUELAYER_CLIENT_SECRET is empty — that is a regression, not a gap; journey "J4: the employee folder — nothing typed twice" failed: creating the employee did not reach a record page — landed on http://localhost:3000/hr/employees/new; 73 screen(s) flagged for density, up from 72 on the last green run: /account/suspended, /accounting/packets/[packet], /accounting/packets/build/[statement], /accounting/periods, /accounts, /assets/[id], /assets/locations, /assets — see docs/screen-density.md
        see logs/b04-242-the-registers-iso-9001-expects.log
@@ -33,15 +30,18 @@ b03-241-mail-must-leave-the-building.md
      . suite green: 3801 tests
      . mem: tests step peaked at 4982MB (cgroup MemoryCurrent, sampled every 3s)
      . screens: starting clean — zero orphaned servers, zero stray browsers
+     ! SCREENS: 4 broken, 0 blank, 0 404 of 269 — see docs/screen-audit.md
+     . mem: screens step peaked at 4218MB (cgroup MemoryCurrent, sampled every 3s)
+     . journeys: starting clean — zero orphaned servers, zero stray browsers
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        4090        8660         254        3443       11512
+Mem:           15603        1661       11090         226        3415       13942
 -- top --
     ELAPSED   RSS COMMAND
-      08:26 1277364 next-server (v1
-      01:55 1180524 chrome-headless
-      08:24 427584 node
-      08:22 421324 chrome-headless
+      02:25 422836 next-server (v1
+      00:18 212144 chrome-headless
+      03:56 179096 node
+      02:23 141972 chrome-headless
 -- disk --
 /dev/sda1        75G   38G   35G  53% /
