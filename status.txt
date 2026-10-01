@@ -1,4 +1,4 @@
-generated: 2026-10-01 22:45:01 UTC
+generated: 2026-10-01 22:50:01 UTC
 done:   252
 queued: 5
 failed: 1
@@ -37,12 +37,12 @@ b07-224-ten-businesses-end-to-end.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2137        9966         267        4103       13465
+Mem:           15603        1830       10273         267        4103       13772
 -- top --
     ELAPSED   RSS COMMAND
-      50:14 491092 next-server (v1
-   03:47:23 445292 claude
-      00:02 215984 node
-      00:03 148992 node
+      55:13 492628 next-server (v1
+   03:52:23 417356 claude
+      55:14 129628 node
+      55:11 107636 node
 -- disk --
 /dev/sda1        75G   38G   34G  53% /
