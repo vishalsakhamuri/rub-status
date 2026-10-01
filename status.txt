@@ -1,4 +1,4 @@
-generated: 2026-10-01 17:30:01 UTC
+generated: 2026-10-01 17:35:01 UTC
 done:   252
 queued: 6
 failed: 0
@@ -14,16 +14,6 @@ b07-224-ten-businesses-end-to-end.md
 -- failed --
 
 -- log --
-     ! exited clean but produced nothing verifiable — stalled — log ends on a waiting line, no completion marker (commit was made, but a commit is not proof of completion when the task's own words say it isn't finished)
-     . build/screens/journeys: diff since 4db43abd4568 touches something that could render — running fresh
-     . build: starting clean — zero orphaned servers, zero stray browsers
-     . build clean
-     . mem: build step peaked at 4420MB (cgroup MemoryCurrent, sampled every 3s)
-     . tests: starting clean — zero orphaned servers, zero stray browsers
-     . suite green: 3801 tests
-     . mem: tests step peaked at 2865MB (cgroup MemoryCurrent, sampled every 3s)
-     . screens: starting clean — zero orphaned servers, zero stray browsers
-     ! SCREENS: 3 broken, 0 blank, 0 404 of 270 — see docs/screen-audit.md
      . mem: screens step peaked at 4544MB (cgroup MemoryCurrent, sampled every 3s)
      . journeys: starting clean — zero orphaned servers, zero stray browsers
      ! JOURNEYS: 13 of 18 failed — upload and self-sign, invite and sign in, raise an invoice, invoice: three lines survive a submit with no customer chosen, run a No1Edit tool, J2: sign a document myself and take it away, J3: change a document and take it away, J4: the employee folder — nothing typed twice, J2: sign a document myself and take it away — DigiSign-only tenant, J3: change a document and take it away — No1Edit-only tenant, J2: sign a document myself and take it away — tenant with no entity, J3: change a document and take it away — tenant with no entity, (remaining journeys) — see docs/journeys-report.md
@@ -34,15 +24,25 @@ b07-224-ten-businesses-end-to-end.md
        see logs/b06-244-the-steuerberater-wants-datev.log
 
 ---- b07-224-ten-businesses-end-to-end ----  started 06:40:37
+     . build/screens/journeys: diff since e5ba8a3072e6 touches something that could render — running fresh
+     ! orphaned dev server found: pid 703636, owned by build, age 0m, cwd /home/build/runurbusiness (npm exec vitest run) — killing it
+     . orphaned dev server(s) cleaned up before this task starts
+     . build: starting clean — zero orphaned servers, zero stray browsers
+     . build clean
+     . mem: build step peaked at 4604MB (cgroup MemoryCurrent, sampled every 3s)
+     . tests: starting clean — zero orphaned servers, zero stray browsers
+     ! suite did not produce a result at all — see logs/suite-latest.log
+     . mem: tests step peaked at 839MB (cgroup MemoryCurrent, sampled every 3s)
+     . screens: starting clean — zero orphaned servers, zero stray browsers
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603       11261        1742         192        3129        4341
+Mem:           15603        3788        9195         238        3194       11814
 -- top --
     ELAPSED   RSS COMMAND
-      57:35 10178476 next-server (v1
-   10:49:22 517524 claude
-      57:21 161972 node
-      57:36 53788 node
+      00:10 2342964 node
+      02:58 371456 node
+      00:05 194076 node
+      00:11 146464 node
 -- disk --
-/dev/sda1        75G   48G   25G  67% /
+/dev/sda1        75G   38G   35G  52% /
