@@ -1,17 +1,15 @@
-generated: 2026-10-01 23:20:01 UTC
-done:   252
-queued: 5
-failed: 1
+generated: 2026-10-01 23:25:01 UTC
+done:   254
+queued: 4
+failed: 0
 hold:   1
 
 -- queued --
-a00-249-three-red-checks.md
 a07b-240-the-owner-is-not-an-employee-and-a-category-cannot-be-capitalised.md
 b03b-241-mail-must-leave-the-building.md
 b05b-243-meetings-minutes-actions-and-the-templates-in-german.md
 b06b-244-the-steuerberater-wants-datev.md
 -- failed --
-b07-224-ten-businesses-end-to-end.md
 
 -- log --
      ! JOURNEYS: 14 of 18 failed — upload and self-sign, invite and sign in, raise an invoice, invoice: three lines survive a submit with no customer chosen, run a No1Edit tool, J2: sign a document myself and take it away, J3: change a document and take it away, J4: the employee folder — nothing typed twice, file a signed document, by hand, from DigiSign, J2: sign a document myself and take it away — DigiSign-only tenant, J3: change a document and take it away — No1Edit-only tenant, J2: sign a document myself and take it away — tenant with no entity, J3: change a document and take it away — tenant with no entity, (remaining journeys) — see docs/journeys-report.md
@@ -37,12 +35,12 @@ b07-224-ten-businesses-end-to-end.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1701       10402         313        4150       13901
+Mem:           15603        1709       10393         318        4155       13893
 -- top --
     ELAPSED   RSS COMMAND
-      03:54 600324 node
-      00:45 177380 node
-      03:54 78600 npm exec vitest
-   16:32:00 64728 systemd-journal
+      08:54 617076 node
+      00:25 162392 node
+      08:55 78600 npm exec vitest
+   16:37:01 64856 systemd-journal
 -- disk --
 /dev/sda1        75G   38G   34G  53% /
