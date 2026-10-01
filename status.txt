@@ -1,7 +1,7 @@
-generated: 2026-10-01 18:55:01 UTC
-done:   253
+generated: 2026-10-01 19:00:01 UTC
+done:   252
 queued: 5
-failed: 0
+failed: 1
 hold:   1
 
 -- queued --
@@ -11,19 +11,9 @@ b03b-241-mail-must-leave-the-building.md
 b05b-243-meetings-minutes-actions-and-the-templates-in-german.md
 b06b-244-the-steuerberater-wants-datev.md
 -- failed --
+b07-224-ten-businesses-end-to-end.md
 
 -- log --
-       see logs/b06-244-the-steuerberater-wants-datev.log
-
----- b07-224-ten-businesses-end-to-end ----  started 06:40:37
-     . build/screens/journeys: diff since e5ba8a3072e6 touches something that could render — running fresh
-     ! orphaned dev server found: pid 703636, owned by build, age 0m, cwd /home/build/runurbusiness (npm exec vitest run) — killing it
-     . orphaned dev server(s) cleaned up before this task starts
-     . build: starting clean — zero orphaned servers, zero stray browsers
-     . build clean
-     . mem: build step peaked at 4604MB (cgroup MemoryCurrent, sampled every 3s)
-     . tests: starting clean — zero orphaned servers, zero stray browsers
-     ! suite did not produce a result at all — see logs/suite-latest.log
      . mem: tests step peaked at 839MB (cgroup MemoryCurrent, sampled every 3s)
      . screens: starting clean — zero orphaned servers, zero stray browsers
      ! SCREENS: 4 broken, 0 blank, 0 404 of 270 — see docs/screen-audit.md
@@ -33,15 +23,26 @@ b06b-244-the-steuerberater-wants-datev.md
      . mem: journeys step peaked at 4994MB (cgroup MemoryCurrent, sampled every 3s)
      . gate: starting clean — zero orphaned servers, zero stray browsers
      . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
+     . gate: 79 pass, 21 fail, 0 pending
+     ! GATE FAILED: 75 screen(s) flagged for density, up from 72 on the last green run: /account/suspended, /accounting/packets/[packet], /accounting/packets/build/[statement], /accounting/periods, /accounts, /assets/[id], /assets/locations, /assets — see docs/screen-density.md
+     . mem: gate step peaked at 3597MB (cgroup MemoryCurrent, sampled every 3s)
+     ! GATE FAILED, caused by this task
+     ! task had self-moved to tasks/done/ — moved back to tasks/failed/, the gate said otherwise
+     [FAILED] (exit 97) 18:57:32
+       moved to tasks/failed/ — the queue carries on
+       reason: completion marker + commit present, but the gate failed: 75 screen(s) flagged for density, up from 72 on the last green run: /account/suspended, /accounting/packets/[packet], /accounting/packets/build/[statement], /accounting/periods, /accounts, /assets/[id], /assets/locations, /assets — see docs/screen-density.md
+       see logs/b07-224-ten-businesses-end-to-end.log
+
+---- a00-249-three-red-checks ----  started 18:57:35
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1746       10160         202        4236       13856
+Mem:           15603        1126       11308         202        3708       14476
 -- top --
     ELAPSED   RSS COMMAND
-      57:10 532192 next-server (v1
-      00:05 149032 node
-      57:11 129000 node
-      57:08 117264 node
+      02:23 343712 claude
+   12:12:01 49544 systemd-journal
+28-14:05:29 15936 systemd
+   12:12:01 14152 systemd-resolve
 -- disk --
-/dev/sda1        75G   39G   34G  54% /
+/dev/sda1        75G   38G   35G  53% /
