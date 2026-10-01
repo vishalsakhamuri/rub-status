@@ -1,4 +1,4 @@
-generated: 2026-10-01 06:15:01 UTC
+generated: 2026-10-01 06:20:01 UTC
 done:   252
 queued: 2
 failed: 3
@@ -13,9 +13,6 @@ b03-241-mail-must-leave-the-building.md
 b05-243-meetings-minutes-actions-and-the-templates-in-german.md
 
 -- log --
-     . suite green: 3801 tests
-     . mem: tests step peaked at 4982MB (cgroup MemoryCurrent, sampled every 3s)
-     . screens: starting clean — zero orphaned servers, zero stray browsers
      ! SCREENS: 4 broken, 0 blank, 0 404 of 269 — see docs/screen-audit.md
      . mem: screens step peaked at 4218MB (cgroup MemoryCurrent, sampled every 3s)
      . journeys: starting clean — zero orphaned servers, zero stray browsers
@@ -33,15 +30,18 @@ b05-243-meetings-minutes-actions-and-the-templates-in-german.md
      . build clean
      . mem: build step peaked at 4420MB (cgroup MemoryCurrent, sampled every 3s)
      . tests: starting clean — zero orphaned servers, zero stray browsers
+     . suite green: 3801 tests
+     . mem: tests step peaked at 2865MB (cgroup MemoryCurrent, sampled every 3s)
+     . screens: starting clean — zero orphaned servers, zero stray browsers
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1812       10858         317        3587       13790
+Mem:           15603        2909        9761         288        3558       12694
 -- top --
     ELAPSED   RSS COMMAND
-      36:54 652684 node
-      00:07 256820 node
-      36:54 77500 npm exec vitest
-21-00:08:51 57376 systemd-journal
+      01:17 969276 next-server (v1
+      01:13 717308 chrome-headless
+      01:15 236564 node
+      01:13 140536 chrome-headless
 -- disk --
 /dev/sda1        75G   38G   35G  53% /
