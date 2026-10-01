@@ -1,16 +1,17 @@
-generated: 2026-10-01 17:20:01 UTC
+generated: 2026-10-01 17:25:01 UTC
 done:   252
-queued: 1
-failed: 4
+queued: 6
+failed: 0
 hold:   1
 
 -- queued --
+a00-249-three-red-checks.md
+a07b-240-the-owner-is-not-an-employee-and-a-category-cannot-be-capitalised.md
+b03b-241-mail-must-leave-the-building.md
+b05b-243-meetings-minutes-actions-and-the-templates-in-german.md
+b06b-244-the-steuerberater-wants-datev.md
 b07-224-ten-businesses-end-to-end.md
 -- failed --
-a07-240-the-owner-is-not-an-employee-and-a-category-cannot-be-capitalised.md
-b03-241-mail-must-leave-the-building.md
-b05-243-meetings-minutes-actions-and-the-templates-in-german.md
-b06-244-the-steuerberater-wants-datev.md
 
 -- log --
      ! exited clean but produced nothing verifiable — stalled — log ends on a waiting line, no completion marker (commit was made, but a commit is not proof of completion when the task's own words say it isn't finished)
@@ -36,12 +37,12 @@ b06-244-the-steuerberater-wants-datev.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603       11533        1470         192        3128        4069
+Mem:           15603       11287        1716         192        3129        4315
 -- top --
     ELAPSED   RSS COMMAND
-      47:35 10194964 next-server (v1
-   10:39:22 555792 claude
-      01:09 185688 node
-      47:21 157276 node
+      52:35 10177728 next-server (v1
+   10:44:22 525688 claude
+      52:21 157572 node
+      00:05 84800 npm exec tsx --
 -- disk --
 /dev/sda1        75G   48G   25G  67% /
