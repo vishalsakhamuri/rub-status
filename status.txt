@@ -1,4 +1,4 @@
-generated: 2026-10-02 20:55:01 UTC
+generated: 2026-10-02 21:00:01 UTC
 done:   257
 queued: 2
 failed: 0
@@ -10,11 +10,6 @@ b06b-244-the-steuerberater-wants-datev.md
 -- failed --
 
 -- log --
-     . mem: tests step peaked at 2963MB (cgroup MemoryCurrent, sampled every 3s)
-     . screens: starting clean — zero orphaned servers, zero stray browsers
-     ! SCREENS: 4 broken, 0 blank, 0 404 of 270 — see docs/screen-audit.md
-     . mem: screens step peaked at 4768MB (cgroup MemoryCurrent, sampled every 3s)
-     . journeys: starting clean — zero orphaned servers, zero stray browsers
      ! JOURNEYS: 17 of 23 failed — upload and self-sign, invite and sign in, raise an invoice, invoice: three lines survive a submit with no customer chosen, run a No1Edit tool, J2: sign a document myself and take it away, J3: change a document and take it away, J4: the employee folder — nothing typed twice, J2: sign a document myself and take it away — DigiSign-only tenant, J3: change a document and take it away — No1Edit-only tenant, J2: sign a document myself and take it away — tenant with no entity, J3: change a document and take it away — tenant with no entity, J4: the employee folder — nothing typed twice — tenant with no entity, one document through all four tools, one document through all four tools — hr+digisign tenant, no No1Cloud, one document through all four tools — digisign+cloud tenant, no HR, invoice → payment → reconcile, end to end — default tenant (a08-144 D) — see docs/journeys-report.md
      . mem: journeys step peaked at 4668MB (cgroup MemoryCurrent, sampled every 3s)
      . gate: starting clean — zero orphaned servers, zero stray browsers
@@ -30,15 +25,20 @@ b06b-244-the-steuerberater-wants-datev.md
        see logs/b05b-243-meetings-minutes-actions-and-the-templates-in-german.log
 
 ---- b06b-244-the-steuerberater-wants-datev ----  started 18:19:48
+     . build/screens/journeys: diff since 56839f0c5070 touches something that could render — running fresh
+     . build: starting clean — zero orphaned servers, zero stray browsers
+     . build clean
+     . mem: build step peaked at 4933MB (cgroup MemoryCurrent, sampled every 3s)
+     . tests: starting clean — zero orphaned servers, zero stray browsers
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1345       10698         246        4143       14258
+Mem:           15603        2112        9930         288        4185       13490
 -- top --
     ELAPSED   RSS COMMAND
-   02:35:11 383324 claude
-   01:43:24 128688 node
-   01:43:24 100800 node
- 1-14:07:00 79420 systemd-journal
+      00:26 881628 node
+      00:03 195636 node
+ 1-14:12:00 79568 systemd-journal
+      00:27 78204 npm exec vitest
 -- disk --
 /dev/sda1        75G   40G   33G  55% /
