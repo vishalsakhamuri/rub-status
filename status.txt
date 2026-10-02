@@ -1,13 +1,12 @@
-generated: 2026-10-02 16:00:01 UTC
-done:   255
-queued: 2
-failed: 1
+generated: 2026-10-02 16:05:01 UTC
+done:   257
+queued: 1
+failed: 0
 hold:   1
 
 -- queued --
 b06b-244-the-steuerberater-wants-datev.md
 -- failed --
-b03b-241-mail-must-leave-the-building.md
 
 -- log --
      ! GATE FAILED, caused by this task
@@ -33,15 +32,12 @@ Call log:
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2091       10321         291        3819       13512
+Mem:           15603        1773       10639         295        3823       13829
 -- top --
     ELAPSED   RSS COMMAND
-      00:39 872924 node
-      00:15 238512 node
-      00:39 78228 npm exec vitest
- 1-09:12:01 70616 systemd-journal
--- disk --
-/dev/sda1        75G   45G   27G  63% /
-stemd-journal
+      05:38 615988 node
+      00:31 280916 node
+      05:39 78228 npm exec vitest
+ 1-09:17:00 70744 systemd-journal
 -- disk --
 /dev/sda1        75G   45G   27G  63% /
