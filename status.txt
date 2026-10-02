@@ -1,4 +1,4 @@
-generated: 2026-10-02 00:15:01 UTC
+generated: 2026-10-02 00:20:01 UTC
 done:   254
 queued: 4
 failed: 0
@@ -12,10 +12,6 @@ b06b-244-the-steuerberater-wants-datev.md
 -- failed --
 
 -- log --
-     . mem: gate step peaked at 3597MB (cgroup MemoryCurrent, sampled every 3s)
-     ! GATE FAILED, caused by this task
-     ! task had self-moved to tasks/done/ — moved back to tasks/failed/, the gate said otherwise
-     [FAILED] (exit 97) 18:57:32
        moved to tasks/failed/ — the queue carries on
        reason: completion marker + commit present, but the gate failed: 75 screen(s) flagged for density, up from 72 on the last green run: /account/suspended, /accounting/packets/[packet], /accounting/packets/build/[statement], /accounting/periods, /accounts, /assets/[id], /assets/locations, /assets — see docs/screen-density.md
        see logs/b07-224-ten-businesses-end-to-end.log
@@ -32,15 +28,19 @@ b06b-244-the-steuerberater-wants-datev.md
      ! SCREENS: 3 broken, 0 blank, 0 404 of 270 — see docs/screen-audit.md
      . mem: screens step peaked at 5137MB (cgroup MemoryCurrent, sampled every 3s)
      . journeys: starting clean — zero orphaned servers, zero stray browsers
+     ! JOURNEYS: 12 of 17 failed — upload and self-sign, invite and sign in, raise an invoice, invoice: three lines survive a submit with no customer chosen, run a No1Edit tool, J2: sign a document myself and take it away, J3: change a document and take it away, J4: the employee folder — nothing typed twice, J2: sign a document myself and take it away — DigiSign-only tenant, J3: change a document and take it away — No1Edit-only tenant, J2: sign a document myself and take it away — tenant with no entity, (remaining journeys) — see docs/journeys-report.md
+     . mem: journeys step peaked at 5257MB (cgroup MemoryCurrent, sampled every 3s)
+     . gate: starting clean — zero orphaned servers, zero stray browsers
+     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1755       10347         312        4150       13847
+Mem:           15603        1574       10528         267        4105       14029
 -- top --
     ELAPSED   RSS COMMAND
-      10:42 439496 next-server (v1
-      00:31 208708 chrome-headless
-      12:14 203436 node
-      10:39 143884 chrome-headless
+      04:24 353280 next-server (v1
+      00:29 166028 node
+      00:30 130080 node
+      04:24 129532 node
 -- disk --
 /dev/sda1        75G   38G   34G  53% /
