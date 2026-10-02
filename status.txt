@@ -1,4 +1,4 @@
-generated: 2026-10-02 13:05:01 UTC
+generated: 2026-10-02 13:10:01 UTC
 done:   256
 queued: 2
 failed: 0
@@ -36,9 +36,9 @@ b06b-244-the-steuerberater-wants-datev.md
 Mem:           15603        1687        9370         270        5152       13915
 -- top --
     ELAPSED   RSS COMMAND
-      42:44 520792 next-server (v1
-      42:45 129616 node
-      03:23 129500 node
-      03:23 110520 node
+      47:44 523040 next-server (v1
+      47:44 129616 node
+      03:23 129252 node
+      47:42 106912 node
 -- disk --
 /dev/sda1        75G   39G   33G  55% /
