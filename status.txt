@@ -1,4 +1,4 @@
-generated: 2026-10-02 16:45:01 UTC
+generated: 2026-10-02 16:50:01 UTC
 done:   257
 queued: 1
 failed: 0
@@ -9,9 +9,6 @@ b06b-244-the-steuerberater-wants-datev.md
 -- failed --
 
 -- log --
-       moved to tasks/failed/ — the queue carries on
-       reason: completion marker + commit present, but the gate failed: scripts/prove-translated.ts failed (c00-213 is marked done):       "PROVE-TRANSLATED fixture"  — …PROVE-TRANSLATED fixture… /  / TRANSLATED: 3399 known, 413 new /  / [31m1 screen(s) failed[0m; scripts/prove-scroll-containment.ts failed (h00f-119 is marked done):         25, 2950, 2950,  3802, 27356, 1082, /       1700,   25 /     ] /   } / }; scripts/prove-fixture-isolation.ts failed (a03-228 is marked done): 2 tenant(s) violated fixture isolation during this sweep:
-  · 8b2be116-eef4-43a5-b6d4-a45f28749f5d "CT- Standard Cost Proof GmbH" — new tenant created during the sweep, never torn down (15 row(s) left behind)
   · b6110d98-a82d-40de-a1b2-f6e55d23f60b "CT- Stock Equals Ledger Proof GmbH" — new tenant created during the sweep, never torn down (15 row(s) left behind); journey "invite and sign in" failed: locator.click: Timeout 30000ms exceeded.
 Call log:
   - waiting for locator('summary').filter({ hasText: 'Grant login access' }).first()
@@ -29,15 +26,18 @@ Call log:
      . suite green: 3804 tests
      . mem: tests step peaked at 2963MB (cgroup MemoryCurrent, sampled every 3s)
      . screens: starting clean — zero orphaned servers, zero stray browsers
+     ! SCREENS: 4 broken, 0 blank, 0 404 of 270 — see docs/screen-audit.md
+     . mem: screens step peaked at 4768MB (cgroup MemoryCurrent, sampled every 3s)
+     . journeys: starting clean — zero orphaned servers, zero stray browsers
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3629        8782         299        3828       11973
+Mem:           15603        1639       10772         290        3819       13963
 -- top --
     ELAPSED   RSS COMMAND
-      06:24 1316996 next-server (v1
-      06:20 486796 chrome-headless
-      00:24 476200 chrome-headless
-      06:22 409280 node
+      01:05 344956 next-server (v1
+      00:50 215528 chrome-headless
+      02:37 193164 node
+      01:02 140524 chrome-headless
 -- disk --
 /dev/sda1        75G   39G   33G  55% /
