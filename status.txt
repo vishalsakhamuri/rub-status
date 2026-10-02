@@ -1,25 +1,15 @@
-generated: 2026-10-02 23:15:01 UTC
-done:   258
+generated: 2026-10-02 23:20:01 UTC
+done:   257
 queued: 1
-failed: 0
+failed: 1
 hold:   1
 
 -- queued --
 a00-250-the-gate-says-pass-while-eighteen-proofs-fail.md
 -- failed --
+b06b-244-the-steuerberater-wants-datev.md
 
 -- log --
-       moved to tasks/failed/ — the queue carries on
-       reason: completion marker + commit present, but the gate failed: gate failed — see logs/gate-latest.log
-       see logs/b05b-243-meetings-minutes-actions-and-the-templates-in-german.log
-
----- b06b-244-the-steuerberater-wants-datev ----  started 18:19:48
-     . build/screens/journeys: diff since 56839f0c5070 touches something that could render — running fresh
-     . build: starting clean — zero orphaned servers, zero stray browsers
-     . build clean
-     . mem: build step peaked at 4933MB (cgroup MemoryCurrent, sampled every 3s)
-     . tests: starting clean — zero orphaned servers, zero stray browsers
-     . suite green: 3804 tests
      . mem: tests step peaked at 3340MB (cgroup MemoryCurrent, sampled every 3s)
      . screens: starting clean — zero orphaned servers, zero stray browsers
      ! SCREENS: 3 broken, 0 blank, 0 404 of 270 — see docs/screen-audit.md
@@ -29,15 +19,26 @@ a00-250-the-gate-says-pass-while-eighteen-proofs-fail.md
      . mem: journeys step peaked at 5052MB (cgroup MemoryCurrent, sampled every 3s)
      . gate: starting clean — zero orphaned servers, zero stray browsers
      . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
+     . gate: 82 pass, 24 fail, 1 pending
+     ! GATE FAILED: 77 screen(s) flagged for density, up from 75 on the last green run: /account/suspended, /accounting/packets/[packet], /accounting/packets/build/[statement], /accounting/periods, /accounts, /assets/[id], /assets/locations, /assets — see docs/screen-density.md
+     . mem: gate step peaked at 4289MB (cgroup MemoryCurrent, sampled every 3s)
+     ! GATE FAILED, caused by this task
+     ! task had self-moved to tasks/done/ — moved back to tasks/failed/, the gate said otherwise
+     [FAILED] (exit 97) 23:19:35
+       moved to tasks/failed/ — the queue carries on
+       reason: completion marker + commit present, but the gate failed: 77 screen(s) flagged for density, up from 75 on the last green run: /account/suspended, /accounting/packets/[packet], /accounting/packets/build/[statement], /accounting/periods, /accounts, /assets/[id], /assets/locations, /assets — see docs/screen-density.md
+       see logs/b06b-244-the-steuerberater-wants-datev.log
+
+---- a00-250-the-gate-says-pass-while-eighteen-proofs-fail ----  started 23:19:37
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1547       10333         246        4305       14055
+Mem:           15603        1134       10746         246        4305       14468
 -- top --
     ELAPSED   RSS COMMAND
-   01:10:30 529808 next-server (v1
-   01:10:30 129384 node
-   01:10:28 109472 node
-   01:10:28 82532 npm exec tsx --
+      00:21 290344 claude
+ 1-16:32:00 81856 systemd-journal
+29-18:25:28 15260 systemd
+ 1-16:32:00 11324 systemd-network
 -- disk --
 /dev/sda1        75G   40G   33G  55% /
