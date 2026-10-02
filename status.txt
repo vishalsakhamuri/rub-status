@@ -1,4 +1,4 @@
-generated: 2026-10-02 10:05:01 UTC
+generated: 2026-10-02 10:10:02 UTC
 done:   254
 queued: 3
 failed: 1
@@ -35,12 +35,12 @@ Call log:
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1247        9990         269        4972       14355
+Mem:           15603        3763        7732         269        4713       11839
 -- top --
     ELAPSED   RSS COMMAND
-      18:16 398992 claude
- 1-03:17:00 87744 systemd-journal
-29-05:10:28 15964 systemd
- 1-03:17:00 14152 systemd-resolve
+      00:23 2332620 node
+      23:17 423860 claude
+      00:16 183804 node
+      00:24 129344 node
 -- disk --
 /dev/sda1        75G   39G   34G  54% /
