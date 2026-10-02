@@ -1,4 +1,4 @@
-generated: 2026-10-02 16:35:01 UTC
+generated: 2026-10-02 16:40:01 UTC
 done:   257
 queued: 1
 failed: 0
@@ -9,9 +9,6 @@ b06b-244-the-steuerberater-wants-datev.md
 -- failed --
 
 -- log --
-     ! GATE FAILED, caused by this task
-     ! task had self-moved to tasks/done/ — moved back to tasks/failed/, the gate said otherwise
-     [FAILED] (exit 97) 13:37:21
        moved to tasks/failed/ — the queue carries on
        reason: completion marker + commit present, but the gate failed: scripts/prove-translated.ts failed (c00-213 is marked done):       "PROVE-TRANSLATED fixture"  — …PROVE-TRANSLATED fixture… /  / TRANSLATED: 3399 known, 413 new /  / [31m1 screen(s) failed[0m; scripts/prove-scroll-containment.ts failed (h00f-119 is marked done):         25, 2950, 2950,  3802, 27356, 1082, /       1700,   25 /     ] /   } / }; scripts/prove-fixture-isolation.ts failed (a03-228 is marked done): 2 tenant(s) violated fixture isolation during this sweep:
   · 8b2be116-eef4-43a5-b6d4-a45f28749f5d "CT- Standard Cost Proof GmbH" — new tenant created during the sweep, never torn down (15 row(s) left behind)
@@ -29,15 +26,18 @@ Call log:
      . build clean
      . mem: build step peaked at 4491MB (cgroup MemoryCurrent, sampled every 3s)
      . tests: starting clean — zero orphaned servers, zero stray browsers
+     . suite green: 3804 tests
+     . mem: tests step peaked at 2963MB (cgroup MemoryCurrent, sampled every 3s)
+     . screens: starting clean — zero orphaned servers, zero stray browsers
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1795       10616         309        3837       13807
+Mem:           15603        3064        9347         275        3803       12538
 -- top --
     ELAPSED   RSS COMMAND
-      35:39 649812 node
-      00:01 197376 node
-      35:39 78228 npm exec vitest
- 1-09:47:00 71088 systemd-journal
+      01:20 944832 chrome-headless
+      01:24 912536 next-server (v1
+      01:22 244760 node
+      01:20 141284 chrome-headless
 -- disk --
-/dev/sda1        75G   45G   27G  63% /
+/dev/sda1        75G   39G   33G  55% /
