@@ -1,4 +1,4 @@
-generated: 2026-10-02 04:25:01 UTC
+generated: 2026-10-02 04:30:01 UTC
 done:   255
 queued: 3
 failed: 0
@@ -11,9 +11,6 @@ b06b-244-the-steuerberater-wants-datev.md
 -- failed --
 
 -- log --
-     ! JOURNEYS: 12 of 17 failed — upload and self-sign, invite and sign in, raise an invoice, invoice: three lines survive a submit with no customer chosen, run a No1Edit tool, J2: sign a document myself and take it away, J3: change a document and take it away, J4: the employee folder — nothing typed twice, J2: sign a document myself and take it away — DigiSign-only tenant, J3: change a document and take it away — No1Edit-only tenant, J2: sign a document myself and take it away — tenant with no entity, (remaining journeys) — see docs/journeys-report.md
-     . mem: journeys step peaked at 5257MB (cgroup MemoryCurrent, sampled every 3s)
-     . gate: starting clean — zero orphaned servers, zero stray browsers
      . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
      . gate: 83 pass, 19 fail, 0 pending
      ! GATE FAILED: gate failed — see logs/gate-latest.log
@@ -31,15 +28,18 @@ b06b-244-the-steuerberater-wants-datev.md
      . build clean
      . mem: build step peaked at 5203MB (cgroup MemoryCurrent, sampled every 3s)
      . tests: starting clean — zero orphaned servers, zero stray browsers
+     . suite green: 3804 tests
+     . mem: tests step peaked at 3579MB (cgroup MemoryCurrent, sampled every 3s)
+     . screens: starting clean — zero orphaned servers, zero stray browsers
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1779        9991         330        4501       13824
+Mem:           15603        2509        9261         296        4466       13094
 -- top --
     ELAPSED   RSS COMMAND
-      36:43 653196 node
-      00:02 145896 node
-      36:43 78836 npm exec vitest
-   21:37:00 72268 systemd-journal
+      00:57 730648 next-server (v1
+      00:53 550488 chrome-headless
+      00:55 228748 node
+      00:53 140560 chrome-headless
 -- disk --
 /dev/sda1        75G   39G   34G  54% /
