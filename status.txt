@@ -1,12 +1,11 @@
-generated: 2026-10-02 21:00:01 UTC
-done:   257
-queued: 2
+generated: 2026-10-02 21:05:01 UTC
+done:   258
+queued: 1
 failed: 0
 hold:   1
 
 -- queued --
 a00-250-the-gate-says-pass-while-eighteen-proofs-fail.md
-b06b-244-the-steuerberater-wants-datev.md
 -- failed --
 
 -- log --
@@ -33,12 +32,12 @@ b06b-244-the-steuerberater-wants-datev.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2112        9930         288        4185       13490
+Mem:           15603        1766       10276         295        4193       13836
 -- top --
     ELAPSED   RSS COMMAND
-      00:26 881628 node
-      00:03 195636 node
- 1-14:12:00 79568 systemd-journal
-      00:27 78204 npm exec vitest
+      05:27 607140 node
+      00:25 262844 node
+ 1-14:17:00 79848 systemd-journal
+      05:27 78204 npm exec vitest
 -- disk --
 /dev/sda1        75G   40G   33G  55% /
