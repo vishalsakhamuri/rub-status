@@ -1,4 +1,4 @@
-generated: 2026-10-02 19:15:01 UTC
+generated: 2026-10-02 19:20:01 UTC
 done:   256
 queued: 1
 failed: 1
@@ -33,12 +33,12 @@ b05b-243-meetings-minutes-actions-and-the-templates-in-german.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1967       10240         246        3978       13635
+Mem:           15603        2145       10062         275        4008       13457
 -- top --
     ELAPSED   RSS COMMAND
-      12:28 455580 next-server (v1
-      55:11 354572 claude
-      00:02 174160 node
-      00:03 140684 node
+      17:28 485844 next-server (v1
+   01:00:11 355480 claude
+      00:13 187560 node
+      00:08 156468 chrome-headless
 -- disk --
 /dev/sda1        75G   40G   33G  55% /
