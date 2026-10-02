@@ -1,25 +1,15 @@
-generated: 2026-10-02 18:15:01 UTC
-done:   257
+generated: 2026-10-02 18:20:01 UTC
+done:   256
 queued: 1
-failed: 0
+failed: 1
 hold:   1
 
 -- queued --
 b06b-244-the-steuerberater-wants-datev.md
 -- failed --
+b05b-243-meetings-minutes-actions-and-the-templates-in-german.md
 
 -- log --
-Call log:
-  - waiting for getByRole('button', { name: /Send for signing|Send for signature/i })
-       see logs/b03b-241-mail-must-leave-the-building.log
-
----- b05b-243-meetings-minutes-actions-and-the-templates-in-german ----  started 13:37:24
-     . build/screens/journeys: diff since fc64888b120d touches something that could render — running fresh
-     . build: starting clean — zero orphaned servers, zero stray browsers
-     . build clean
-     . mem: build step peaked at 4491MB (cgroup MemoryCurrent, sampled every 3s)
-     . tests: starting clean — zero orphaned servers, zero stray browsers
-     . suite green: 3804 tests
      . mem: tests step peaked at 2963MB (cgroup MemoryCurrent, sampled every 3s)
      . screens: starting clean — zero orphaned servers, zero stray browsers
      ! SCREENS: 4 broken, 0 blank, 0 404 of 270 — see docs/screen-audit.md
@@ -29,15 +19,26 @@ Call log:
      . mem: journeys step peaked at 4668MB (cgroup MemoryCurrent, sampled every 3s)
      . gate: starting clean — zero orphaned servers, zero stray browsers
      . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
+     . gate: 83 pass, 25 fail, 0 pending
+     ! GATE FAILED: gate failed — see logs/gate-latest.log
+     . mem: gate step peaked at 3887MB (cgroup MemoryCurrent, sampled every 3s)
+     ! GATE FAILED, caused by this task
+     ! task had self-moved to tasks/done/ — moved back to tasks/failed/, the gate said otherwise
+     [FAILED] (exit 97) 18:19:45
+       moved to tasks/failed/ — the queue carries on
+       reason: completion marker + commit present, but the gate failed: gate failed — see logs/gate-latest.log
+       see logs/b05b-243-meetings-minutes-actions-and-the-templates-in-german.log
+
+---- b06b-244-the-steuerberater-wants-datev ----  started 18:19:48
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1564       10668         246        3953       14038
+Mem:           15603        1125       11083         246        3977       14477
 -- top --
     ELAPSED   RSS COMMAND
-   01:10:20 546032 next-server (v1
-   01:10:20 130576 node
-   01:10:18 101620 node
-   01:10:18 77316 npm exec tsx --
+      00:11 286456 claude
+ 1-11:32:00 71828 systemd-journal
+29-13:25:29 15248 systemd
+ 1-11:32:00 11324 systemd-network
 -- disk --
 /dev/sda1        75G   40G   33G  55% /
