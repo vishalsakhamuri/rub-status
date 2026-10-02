@@ -1,4 +1,4 @@
-generated: 2026-10-02 12:00:01 UTC
+generated: 2026-10-02 12:05:01 UTC
 done:   256
 queued: 2
 failed: 0
@@ -10,9 +10,6 @@ b06b-244-the-steuerberater-wants-datev.md
 -- failed --
 
 -- log --
-Call log:
-  - waiting for locator('summary').filter({ hasText: 'Grant login access' }).first()
-       see logs/a07b-240-the-owner-is-not-an-employee-and-a-category-cannot-be-capitalised.log
 
 ---- b03b-241-mail-must-leave-the-building ----  started 05:44:24
      ! received SIGTERM — cleaning up before exit
@@ -30,15 +27,18 @@ Call log:
      . suite green: 3804 tests
      . mem: tests step peaked at 4118MB (cgroup MemoryCurrent, sampled every 3s)
      . screens: starting clean — zero orphaned servers, zero stray browsers
+     ! SCREENS: 3 broken, 0 blank, 0 404 of 270 — see docs/screen-audit.md
+     . mem: screens step peaked at 5714MB (cgroup MemoryCurrent, sampled every 3s)
+     . journeys: starting clean — zero orphaned servers, zero stray browsers
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3209        8019         315        5026       12393
+Mem:           15603        1190       10037         269        4982       14412
 -- top --
     ELAPSED   RSS COMMAND
-      03:43 1127808 next-server (v1
-      03:38 794068 chrome-headless
-      03:40 319272 node
-      03:38 176016 chrome-headless
+      00:02 213556 node
+ 1-05:17:00 93828 systemd-journal
+      00:02 86580 npm exec tsx --
+      00:02 57892 node
 -- disk --
 /dev/sda1        75G   39G   34G  54% /
