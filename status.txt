@@ -1,4 +1,4 @@
-generated: 2026-10-02 12:20:01 UTC
+generated: 2026-10-02 12:25:01 UTC
 done:   256
 queued: 2
 failed: 0
@@ -10,10 +10,6 @@ b06b-244-the-steuerberater-wants-datev.md
 -- failed --
 
 -- log --
-
----- b03b-241-mail-must-leave-the-building ----  started 05:44:24
-     ! received SIGTERM — cleaning up before exit
-================================================
   RunUrBusiness — draining the task queue
   started Fri 02 Oct 09:46
 ================================================
@@ -30,15 +26,19 @@ b06b-244-the-steuerberater-wants-datev.md
      ! SCREENS: 3 broken, 0 blank, 0 404 of 270 — see docs/screen-audit.md
      . mem: screens step peaked at 5714MB (cgroup MemoryCurrent, sampled every 3s)
      . journeys: starting clean — zero orphaned servers, zero stray browsers
+     ! JOURNEYS: 17 of 23 failed — upload and self-sign, invite and sign in, raise an invoice, invoice: three lines survive a submit with no customer chosen, run a No1Edit tool, J2: sign a document myself and take it away, J3: change a document and take it away, J4: the employee folder — nothing typed twice, J2: sign a document myself and take it away — DigiSign-only tenant, J3: change a document and take it away — No1Edit-only tenant, J2: sign a document myself and take it away — tenant with no entity, J3: change a document and take it away — tenant with no entity, J4: the employee folder — nothing typed twice — tenant with no entity, one document through all four tools, one document through all four tools — hr+digisign tenant, no No1Cloud, one document through all four tools — digisign+cloud tenant, no HR, invoice → payment → reconcile, end to end — default tenant (a08-144 D) — see docs/journeys-report.md
+     . mem: journeys step peaked at 6006MB (cgroup MemoryCurrent, sampled every 3s)
+     . gate: starting clean — zero orphaned servers, zero stray browsers
+     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1839        9388         302        5015       13763
+Mem:           15603        1624        9602         269        4983       13978
 -- top --
     ELAPSED   RSS COMMAND
-      13:29 466120 next-server (v1
-      00:14 234608 chrome-headless
-      15:02 194180 node
-      13:26 145156 chrome-headless
+      02:44 340328 next-server (v1
+      00:02 177920 node
+      00:02 148988 node
+      02:44 129616 node
 -- disk --
 /dev/sda1        75G   39G   34G  54% /
