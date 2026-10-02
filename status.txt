@@ -1,44 +1,45 @@
-generated: 2026-10-02 13:35:01 UTC
-done:   256
+generated: 2026-10-02 13:40:01 UTC
+done:   255
 queued: 2
-failed: 0
+failed: 1
 hold:   1
 
 -- queued --
 b05b-243-meetings-minutes-actions-and-the-templates-in-german.md
 b06b-244-the-steuerberater-wants-datev.md
 -- failed --
+b03b-241-mail-must-leave-the-building.md
 
 -- log --
-  RunUrBusiness — draining the task queue
-  started Fri 02 Oct 09:46
-================================================
+  - waiting for locator('summary').filter({ hasText: 'Grant login access' }).first()
+; journey "one document through all four tools" failed: step 1: no "Grant login access" control on the employee record — step 9 cannot be attempted; the recipient chip has no "Copy signing link" control — the envelope may not be in a sent/open state; step 5: after signing, HR's own assignment record has no link to a No1Cloud document — the signed item's documentId is still null; step 6: could not reach No1Cloud's own view of the document — step 5 had no link to follow; step 7: skipped — no downloaded copy of the filed contract to open (step 6 did not produce one); step 9: skipped — no employee login was available from step 1; B7: expected exactly one No1Cloud document for this employee after one signed contract, found 0; journey "one document through all four tools — hr+digisign tenant, no No1Cloud" failed: step 1: no "Grant login access" control on the employee record — step 9 cannot be attempted; the recipient chip has no "Copy signing link" control — the envelope may not be in a sent/open state; step 5: after signing, HR's own assignment record has no link to a No1Cloud document — the signed item's documentId is still null; step 6: could not reach No1Cloud's own view of the document — step 5 had no link to follow; step 8: searching for "Journeys OneStore1790943633118" did not return the contract in the results; step 9: skipped — no employee login was available from step 1; B7: expected exactly one No1Cloud document for this employee after one signed contract, found 0; journey "one document through all four tools — digisign+cloud tenant, no HR" failed: locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for getByRole('button', { name: /Send for signing|Send for signature/i })
+     . mem: gate step peaked at 5152MB (cgroup MemoryCurrent, sampled every 3s)
+     ! GATE FAILED, caused by this task
+     ! task had self-moved to tasks/done/ — moved back to tasks/failed/, the gate said otherwise
+     [FAILED] (exit 97) 13:37:21
+       moved to tasks/failed/ — the queue carries on
+       reason: completion marker + commit present, but the gate failed: scripts/prove-translated.ts failed (c00-213 is marked done):       "PROVE-TRANSLATED fixture"  — …PROVE-TRANSLATED fixture… /  / TRANSLATED: 3399 known, 413 new /  / [31m1 screen(s) failed[0m; scripts/prove-scroll-containment.ts failed (h00f-119 is marked done):         25, 2950, 2950,  3802, 27356, 1082, /       1700,   25 /     ] /   } / }; scripts/prove-fixture-isolation.ts failed (a03-228 is marked done): 2 tenant(s) violated fixture isolation during this sweep:
+  · 8b2be116-eef4-43a5-b6d4-a45f28749f5d "CT- Standard Cost Proof GmbH" — new tenant created during the sweep, never torn down (15 row(s) left behind)
+  · b6110d98-a82d-40de-a1b2-f6e55d23f60b "CT- Stock Equals Ledger Proof GmbH" — new tenant created during the sweep, never torn down (15 row(s) left behind); journey "invite and sign in" failed: locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('summary').filter({ hasText: 'Grant login access' }).first()
+; journey "one document through all four tools" failed: step 1: no "Grant login access" control on the employee record — step 9 cannot be attempted; the recipient chip has no "Copy signing link" control — the envelope may not be in a sent/open state; step 5: after signing, HR's own assignment record has no link to a No1Cloud document — the signed item's documentId is still null; step 6: could not reach No1Cloud's own view of the document — step 5 had no link to follow; step 7: skipped — no downloaded copy of the filed contract to open (step 6 did not produce one); step 9: skipped — no employee login was available from step 1; B7: expected exactly one No1Cloud document for this employee after one signed contract, found 0; journey "one document through all four tools — hr+digisign tenant, no No1Cloud" failed: step 1: no "Grant login access" control on the employee record — step 9 cannot be attempted; the recipient chip has no "Copy signing link" control — the envelope may not be in a sent/open state; step 5: after signing, HR's own assignment record has no link to a No1Cloud document — the signed item's documentId is still null; step 6: could not reach No1Cloud's own view of the document — step 5 had no link to follow; step 8: searching for "Journeys OneStore1790943633118" did not return the contract in the results; step 9: skipped — no employee login was available from step 1; B7: expected exactly one No1Cloud document for this employee after one signed contract, found 0; journey "one document through all four tools — digisign+cloud tenant, no HR" failed: locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for getByRole('button', { name: /Send for signing|Send for signature/i })
+       see logs/b03b-241-mail-must-leave-the-building.log
 
----- b03b-241-mail-must-leave-the-building ----  started 09:46:42
-     . build/screens/journeys: diff since 02bfc7120d36 touches something that could render — running fresh
-     . build: starting clean — zero orphaned servers, zero stray browsers
-     . build clean
-     . mem: build step peaked at 6047MB (cgroup MemoryCurrent, sampled every 3s)
-     . tests: starting clean — zero orphaned servers, zero stray browsers
-     . suite green: 3804 tests
-     . mem: tests step peaked at 4118MB (cgroup MemoryCurrent, sampled every 3s)
-     . screens: starting clean — zero orphaned servers, zero stray browsers
-     ! SCREENS: 3 broken, 0 blank, 0 404 of 270 — see docs/screen-audit.md
-     . mem: screens step peaked at 5714MB (cgroup MemoryCurrent, sampled every 3s)
-     . journeys: starting clean — zero orphaned servers, zero stray browsers
-     ! JOURNEYS: 17 of 23 failed — upload and self-sign, invite and sign in, raise an invoice, invoice: three lines survive a submit with no customer chosen, run a No1Edit tool, J2: sign a document myself and take it away, J3: change a document and take it away, J4: the employee folder — nothing typed twice, J2: sign a document myself and take it away — DigiSign-only tenant, J3: change a document and take it away — No1Edit-only tenant, J2: sign a document myself and take it away — tenant with no entity, J3: change a document and take it away — tenant with no entity, J4: the employee folder — nothing typed twice — tenant with no entity, one document through all four tools, one document through all four tools — hr+digisign tenant, no No1Cloud, one document through all four tools — digisign+cloud tenant, no HR, invoice → payment → reconcile, end to end — default tenant (a08-144 D) — see docs/journeys-report.md
-     . mem: journeys step peaked at 6006MB (cgroup MemoryCurrent, sampled every 3s)
-     . gate: starting clean — zero orphaned servers, zero stray browsers
-     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
+---- b05b-243-meetings-minutes-actions-and-the-templates-in-german ----  started 13:37:24
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1563        9493         270        5154       14040
+Mem:           15603        1193        9860         270        5157       14409
 -- top --
     ELAPSED   RSS COMMAND
-   01:12:44 527144 next-server (v1
-   01:12:44 129616 node
-   01:12:42 109268 node
- 1-06:47:00 96772 systemd-journal
+      02:35 335320 claude
+ 1-06:52:00 96900 systemd-journal
+29-08:45:29 16008 systemd
+ 1-06:52:00 14160 systemd-resolve
 -- disk --
 /dev/sda1        75G   39G   33G  55% /
