@@ -1,4 +1,4 @@
-generated: 2026-10-02 00:05:01 UTC
+generated: 2026-10-02 00:10:01 UTC
 done:   254
 queued: 4
 failed: 0
@@ -35,12 +35,12 @@ b06b-244-the-steuerberater-wants-datev.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1877       10225         313        4150       13725
+Mem:           15603        1656       10446         312        4150       13946
 -- top --
     ELAPSED   RSS COMMAND
-      00:41 527492 next-server (v1
-      00:27 260236 chrome-headless
-      02:13 192800 node
-      00:38 141320 chrome-headless
+      05:42 356660 next-server (v1
+      01:11 204924 chrome-headless
+      07:14 191520 node
+      05:39 142176 chrome-headless
 -- disk --
 /dev/sda1        75G   38G   34G  53% /
