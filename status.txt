@@ -1,13 +1,13 @@
-generated: 2026-10-02 20:10:01 UTC
-done:   256
-queued: 1
-failed: 1
+generated: 2026-10-02 20:15:01 UTC
+done:   257
+queued: 2
+failed: 0
 hold:   1
 
 -- queued --
+a00-250-the-gate-says-pass-while-eighteen-proofs-fail.md
 b06b-244-the-steuerberater-wants-datev.md
 -- failed --
-b05b-243-meetings-minutes-actions-and-the-templates-in-german.md
 
 -- log --
      . mem: tests step peaked at 2963MB (cgroup MemoryCurrent, sampled every 3s)
@@ -33,12 +33,12 @@ b05b-243-meetings-minutes-actions-and-the-templates-in-german.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1340       10705         246        4141       14262
+Mem:           15603        1331       10714         246        4141       14271
 -- top --
     ELAPSED   RSS COMMAND
-   01:50:11 370972 claude
-      58:25 128688 node
-      58:25 100800 node
- 1-13:22:00 73704 systemd-journal
+   01:55:11 366604 claude
+   01:03:25 128688 node
+   01:03:25 100800 node
+ 1-13:27:00 73968 systemd-journal
 -- disk --
 /dev/sda1        75G   40G   33G  55% /
