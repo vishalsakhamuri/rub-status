@@ -1,4 +1,4 @@
-generated: 2026-10-02 03:45:01 UTC
+generated: 2026-10-02 03:50:01 UTC
 done:   253
 queued: 4
 failed: 1
@@ -13,11 +13,6 @@ b06b-244-the-steuerberater-wants-datev.md
 a00-249-three-red-checks.md
 
 -- log --
-     . mem: tests step peaked at 3429MB (cgroup MemoryCurrent, sampled every 3s)
-     . screens: starting clean — zero orphaned servers, zero stray browsers
-     ! SCREENS: 3 broken, 0 blank, 0 404 of 270 — see docs/screen-audit.md
-     . mem: screens step peaked at 5137MB (cgroup MemoryCurrent, sampled every 3s)
-     . journeys: starting clean — zero orphaned servers, zero stray browsers
      ! JOURNEYS: 12 of 17 failed — upload and self-sign, invite and sign in, raise an invoice, invoice: three lines survive a submit with no customer chosen, run a No1Edit tool, J2: sign a document myself and take it away, J3: change a document and take it away, J4: the employee folder — nothing typed twice, J2: sign a document myself and take it away — DigiSign-only tenant, J3: change a document and take it away — No1Edit-only tenant, J2: sign a document myself and take it away — tenant with no entity, (remaining journeys) — see docs/journeys-report.md
      . mem: journeys step peaked at 5257MB (cgroup MemoryCurrent, sampled every 3s)
      . gate: starting clean — zero orphaned servers, zero stray browsers
@@ -33,15 +28,20 @@ a00-249-three-red-checks.md
        see logs/a00-249-three-red-checks.log
 
 ---- a07b-240-the-owner-is-not-an-employee-and-a-category-cannot-be-capitalised ----  started 01:30:43
+     . build/screens/journeys: diff since 2752b3b22342 touches something that could render — running fresh
+     . build: starting clean — zero orphaned servers, zero stray browsers
+     . build clean
+     . mem: build step peaked at 5203MB (cgroup MemoryCurrent, sampled every 3s)
+     . tests: starting clean — zero orphaned servers, zero stray browsers
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1384       10387         267        4436       14218
+Mem:           15603        1780        9991         312        4481       13823
 -- top --
     ELAPSED   RSS COMMAND
-   02:14:16 403784 claude
-   01:26:08 128596 node
-   01:26:07 104184 node
-   20:57:00 71080 systemd-journal
+      01:43 582488 node
+      01:19 256072 node
+      01:43 78836 npm exec vitest
+   21:02:00 71080 systemd-journal
 -- disk --
 /dev/sda1        75G   39G   34G  54% /
