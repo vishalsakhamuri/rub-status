@@ -1,7 +1,7 @@
-generated: 2026-10-02 01:30:01 UTC
-done:   254
+generated: 2026-10-02 01:35:01 UTC
+done:   253
 queued: 4
-failed: 0
+failed: 1
 hold:   1
 
 -- queued --
@@ -10,19 +10,9 @@ b03b-241-mail-must-leave-the-building.md
 b05b-243-meetings-minutes-actions-and-the-templates-in-german.md
 b06b-244-the-steuerberater-wants-datev.md
 -- failed --
+a00-249-three-red-checks.md
 
 -- log --
-       moved to tasks/failed/ — the queue carries on
-       reason: completion marker + commit present, but the gate failed: 75 screen(s) flagged for density, up from 72 on the last green run: /account/suspended, /accounting/packets/[packet], /accounting/packets/build/[statement], /accounting/periods, /accounts, /assets/[id], /assets/locations, /assets — see docs/screen-density.md
-       see logs/b07-224-ten-businesses-end-to-end.log
-
----- a00-249-three-red-checks ----  started 18:57:35
-     . build/screens/journeys: diff since 962c60bfaec2 touches something that could render — running fresh
-     . build: starting clean — zero orphaned servers, zero stray browsers
-     . build clean
-     . mem: build step peaked at 5007MB (cgroup MemoryCurrent, sampled every 3s)
-     . tests: starting clean — zero orphaned servers, zero stray browsers
-     . suite green: 3801 tests
      . mem: tests step peaked at 3429MB (cgroup MemoryCurrent, sampled every 3s)
      . screens: starting clean — zero orphaned servers, zero stray browsers
      ! SCREENS: 3 broken, 0 blank, 0 404 of 270 — see docs/screen-audit.md
@@ -32,15 +22,26 @@ b06b-244-the-steuerberater-wants-datev.md
      . mem: journeys step peaked at 5257MB (cgroup MemoryCurrent, sampled every 3s)
      . gate: starting clean — zero orphaned servers, zero stray browsers
      . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
+     . gate: 83 pass, 19 fail, 0 pending
+     ! GATE FAILED: gate failed — see logs/gate-latest.log
+     . mem: gate step peaked at 4302MB (cgroup MemoryCurrent, sampled every 3s)
+     ! GATE FAILED, caused by this task
+     ! task had self-moved to tasks/done/ — moved back to tasks/failed/, the gate said otherwise
+     [FAILED] (exit 97) 01:30:41
+       moved to tasks/failed/ — the queue carries on
+       reason: completion marker + commit present, but the gate failed: gate failed — see logs/gate-latest.log
+       see logs/a00-249-three-red-checks.log
+
+---- a07b-240-the-owner-is-not-an-employee-and-a-category-cannot-be-capitalised ----  started 01:30:43
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1647       10294         267        4266       13955
+Mem:           15603        1222       10716         267        4268       14380
 -- top --
     ELAPSED   RSS COMMAND
-   01:14:24 610076 next-server (v1
-   01:14:25 129532 node
-   01:14:22 101872 node
-   01:14:22 77220 npm exec tsx --
+      04:16 360248 claude
+   18:47:00 69136 systemd-journal
+28-20:40:29 15964 systemd
+   18:47:00 14152 systemd-resolve
 -- disk --
 /dev/sda1        75G   39G   34G  54% /
