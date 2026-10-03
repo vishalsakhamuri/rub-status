@@ -1,4 +1,4 @@
-generated: 2026-10-03 09:05:01 UTC
+generated: 2026-10-03 09:10:02 UTC
 done:   259
 queued: 0
 failed: 0
@@ -8,10 +8,6 @@ hold:   1
 -- failed --
 
 -- log --
-     ! task had self-moved to tasks/done/ — moved back to tasks/failed/, the gate said otherwise
-     [FAILED] (exit 97) 23:19:35
-       moved to tasks/failed/ — the queue carries on
-       reason: completion marker + commit present, but the gate failed: 77 screen(s) flagged for density, up from 75 on the last green run: /account/suspended, /accounting/packets/[packet], /accounting/packets/build/[statement], /accounting/periods, /accounts, /assets/[id], /assets/locations, /assets — see docs/screen-density.md
        see logs/b06b-244-the-steuerberater-wants-datev.log
 
 ---- a00-250-the-gate-says-pass-while-eighteen-proofs-fail ----  started 23:19:37
@@ -28,15 +24,19 @@ hold:   1
      ! SCREENS: 4 broken, 0 blank, 0 404 of 270 — see docs/screen-audit.md
      . mem: screens step peaked at 5682MB (cgroup MemoryCurrent, sampled every 3s)
      . journeys: starting clean — zero orphaned servers, zero stray browsers
+     ! JOURNEYS: 17 of 23 failed — upload and self-sign, invite and sign in, raise an invoice, invoice: three lines survive a submit with no customer chosen, run a No1Edit tool, J2: sign a document myself and take it away, J3: change a document and take it away, J4: the employee folder — nothing typed twice, J2: sign a document myself and take it away — DigiSign-only tenant, J3: change a document and take it away — No1Edit-only tenant, J2: sign a document myself and take it away — tenant with no entity, J3: change a document and take it away — tenant with no entity, J4: the employee folder — nothing typed twice — tenant with no entity, one document through all four tools, one document through all four tools — hr+digisign tenant, no No1Cloud, one document through all four tools — digisign+cloud tenant, no HR, invoice → payment → reconcile, end to end — default tenant (a08-144 D) — see docs/journeys-report.md
+     . mem: journeys step peaked at 5952MB (cgroup MemoryCurrent, sampled every 3s)
+     . gate: starting clean — zero orphaned servers, zero stray browsers
+     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1735        9628         275        4851       13867
+Mem:           15603        1583        9781         247        4823       14019
 -- top --
     ELAPSED   RSS COMMAND
-      15:12 437924 next-server (v1
-      00:25 210440 chrome-headless
-      16:43 202204 node
-      15:10 143364 chrome-headless
+      04:09 342516 next-server (v1
+      00:15 185896 node
+      00:16 149264 node
+      04:10 129404 node
 -- disk --
 /dev/sda1        75G   40G   32G  56% /
