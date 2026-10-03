@@ -1,4 +1,4 @@
-generated: 2026-10-03 21:05:01 UTC
+generated: 2026-10-03 21:10:01 UTC
 done:   260
 queued: 1
 failed: 0
@@ -9,9 +9,6 @@ a01-252-the-last-red-on-the-gate.md
 -- failed --
 
 -- log --
-  RunUrBusiness — draining the task queue
-  started Sat 03 Oct 12:08
-================================================
 
 ---- a00-251-one-login-six-companies ----  started 12:08:52
      ! received SIGTERM — cleaning up before exit
@@ -29,15 +26,18 @@ a01-252-the-last-red-on-the-gate.md
      . suite green: 3807 tests
      . mem: tests step peaked at 4233MB (cgroup MemoryCurrent, sampled every 3s)
      . screens: starting clean — zero orphaned servers, zero stray browsers
+     . screens clean: 270 screens, 30 not reachable
+     . mem: screens step peaked at 6101MB (cgroup MemoryCurrent, sampled every 3s)
+     . journeys: starting clean — zero orphaned servers, zero stray browsers
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        4118        6881         364        5304       11484
+Mem:           15603        1789        9211         350        5290       13813
 -- top --
     ELAPSED   RSS COMMAND
-      11:58 1359544 next-server (v1
-      01:13 1040468 chrome-headless
-      11:55 445656 node
-      11:53 315648 chrome-headless
+      02:07 427912 next-server (v1
+      00:16 197380 chrome-headless
+      03:38 195632 node
+      02:04 141180 chrome-headless
 -- disk --
 /dev/sda1        75G   41G   32G  57% /
