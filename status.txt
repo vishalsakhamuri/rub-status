@@ -1,4 +1,4 @@
-generated: 2026-10-03 20:50:01 UTC
+generated: 2026-10-03 20:55:01 UTC
 done:   260
 queued: 1
 failed: 0
@@ -9,9 +9,6 @@ a01-252-the-last-red-on-the-gate.md
 -- failed --
 
 -- log --
-    a00-250-the-gate-says-pass-while-eighteen-proofs-fail.md
-================================================
-================================================
   RunUrBusiness — draining the task queue
   started Sat 03 Oct 12:08
 ================================================
@@ -29,15 +26,18 @@ a01-252-the-last-red-on-the-gate.md
      . build clean
      . mem: build step peaked at 6011MB (cgroup MemoryCurrent, sampled every 3s)
      . tests: starting clean — zero orphaned servers, zero stray browsers
+     . suite green: 3807 tests
+     . mem: tests step peaked at 4233MB (cgroup MemoryCurrent, sampled every 3s)
+     . screens: starting clean — zero orphaned servers, zero stray browsers
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1793        9207         314        5254       13810
+Mem:           15603        2598        8402         352        5292       13004
 -- top --
     ELAPSED   RSS COMMAND
-      36:51 649804 node
-      00:01 208732 node
-      36:51 78320 npm exec vitest
-   14:14:32 72588 systemd-journal
+      01:58 995872 next-server (v1
+      01:54 319472 chrome-headless
+      01:56 227968 node
+      01:54 140016 chrome-headless
 -- disk --
 /dev/sda1        75G   41G   32G  57% /
