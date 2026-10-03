@@ -1,4 +1,4 @@
-generated: 2026-10-03 20:10:01 UTC
+generated: 2026-10-03 20:15:02 UTC
 done:   259
 queued: 2
 failed: 0
@@ -10,11 +10,6 @@ a01-252-the-last-red-on-the-gate.md
 -- failed --
 
 -- log --
-  0 task(s) completed, 4 failed, 0 blocked
-  finished Sat 03 Oct 10:21
-  logs in logs/  ·  tell Claude in the chat
-
-  failed tasks are in tasks/failed/ — nothing was deleted:
     a00-250-the-gate-says-pass-while-eighteen-proofs-fail.md
 ================================================
 ================================================
@@ -30,15 +25,20 @@ a01-252-the-last-red-on-the-gate.md
 ================================================
 
 ---- a00-251-one-login-six-companies ----  started 20:08:13
+     . build/screens/journeys: diff since f0ac6085e9ee touches something that could render — running fresh
+     . build: starting clean — zero orphaned servers, zero stray browsers
+     . build clean
+     . mem: build step peaked at 6011MB (cgroup MemoryCurrent, sampled every 3s)
+     . tests: starting clean — zero orphaned servers, zero stray browsers
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3209        8055         250        4926       12394
+Mem:           15603        1718        9287         296        5231       13884
 -- top --
     ELAPSED   RSS COMMAND
-      00:06 1988924 node
-      01:45 322848 claude
-      00:02 179424 node
-      00:07 144984 node
+      01:51 583192 node
+      01:28 222984 node
+      01:51 78320 npm exec vitest
+   13:39:33 68392 systemd-journal
 -- disk --
-/dev/sda1        75G   40G   32G  56% /
+/dev/sda1        75G   41G   32G  57% /
