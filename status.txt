@@ -1,42 +1,43 @@
-generated: 2026-10-03 10:20:01 UTC
-done:   259
+generated: 2026-10-03 10:25:02 UTC
+done:   258
 queued: 0
-failed: 0
+failed: 1
 hold:   1
 
 -- queued --
 -- failed --
+a00-250-the-gate-says-pass-while-eighteen-proofs-fail.md
 
 -- log --
-       see logs/b06b-244-the-steuerberater-wants-datev.log
+  · 31c2aeda-84fd-4294-8c86-fd01c7184947 "money-roundtrip-be-7f8f398f's Company" — new tenant created during the sweep, never torn down (162 row(s) left behind)
+  · 0d00d519-bab5-44ff-93ed-a70df52c2523 "money-roundtrip-be-7f8f398f's Company" — new tenant created during the sweep, never torn down (162 row(s) left behind)
+  · a0384116-0c86-4f30-a2e6-bae7877b5c63 "money-roundtrip-be-7f8f398f's Company" — new tenant created during the sweep, never torn down (162 row(s) left behind)
+  · c6737d01-128f-4ef8-b366-a192a46a7731 "money-roundtrip-nl-f1239806's Company" — new tenant created during the sweep, never torn down (162 row(s) left behind)
+  · 41b61fbe-a76c-419c-9685-6ac35685833c "money-roundtrip-es-c2d052f7's Company" — new tenant created during the sweep, never torn down (162 row(s) left behind)
+  · 8bc78a08-96cd-4d91-8ff6-80ec0adaaf62 "money-roundtrip-es-c2d052f7's Company" — new tenant created during the sweep, never torn down (162 row(s) left behind)
+  · 323aa6c9-897b-4e09-9fc5-3a1685ea6ab9 "money-roundtrip-ie-0baa9f33's Company" — new tenant created during the sweep, never torn down (162 row(s) left behind)
+  · d5b9bba2-34ce-4a3c-935d-23ceabb16cab "money-roundtrip-be-7f8f398f's Company" — new tenant created during the sweep, never torn down (162 row(s) left behind)
+  · caccf97f-0c44-48e9-ae9b-9279f6a2b40d "money-roundtrip-be-7f8f398f's Company" — new tenant created during the sweep, never torn down (162 row(s) left behind)
+  · 99017c8b-e716-4a82-9867-eafde6303344 "money-roundtrip-es-c2d052f7's Company" — new tenant created during the sweep, never torn down (162 row(s) left behind); 78 screen(s) flagged for density, up from 75 on the last green run: /account/suspended, /accounting/packets/[packet], /accounting/packets/build/[statement], /accounting/periods, /accounts, /assets/[id], /assets/locations, /assets — see docs/screen-density.md
+       see logs/a00-250-the-gate-says-pass-while-eighteen-proofs-fail.log
 
----- a00-250-the-gate-says-pass-while-eighteen-proofs-fail ----  started 23:19:37
-     . build/screens/journeys: diff since 8c1d7551bffa touches something that could render — running fresh
-     ! orphaned dev server found: pid 1097008, owned by build, age 52m, cwd /home/build/runurbusiness (next-server (v16.2.11)) — killing it
-     . orphaned dev server(s) cleaned up before this task starts
-     . build: starting clean — zero orphaned servers, zero stray browsers
-     . build clean
-     . mem: build step peaked at 5872MB (cgroup MemoryCurrent, sampled every 3s)
-     . tests: starting clean — zero orphaned servers, zero stray browsers
-     . suite green: 3807 tests
-     . mem: tests step peaked at 4061MB (cgroup MemoryCurrent, sampled every 3s)
-     . screens: starting clean — zero orphaned servers, zero stray browsers
-     ! SCREENS: 4 broken, 0 blank, 0 404 of 270 — see docs/screen-audit.md
-     . mem: screens step peaked at 5682MB (cgroup MemoryCurrent, sampled every 3s)
-     . journeys: starting clean — zero orphaned servers, zero stray browsers
-     ! JOURNEYS: 17 of 23 failed — upload and self-sign, invite and sign in, raise an invoice, invoice: three lines survive a submit with no customer chosen, run a No1Edit tool, J2: sign a document myself and take it away, J3: change a document and take it away, J4: the employee folder — nothing typed twice, J2: sign a document myself and take it away — DigiSign-only tenant, J3: change a document and take it away — No1Edit-only tenant, J2: sign a document myself and take it away — tenant with no entity, J3: change a document and take it away — tenant with no entity, J4: the employee folder — nothing typed twice — tenant with no entity, one document through all four tools, one document through all four tools — hr+digisign tenant, no No1Cloud, one document through all four tools — digisign+cloud tenant, no HR, invoice → payment → reconcile, end to end — default tenant (a08-144 D) — see docs/journeys-report.md
-     . mem: journeys step peaked at 5952MB (cgroup MemoryCurrent, sampled every 3s)
-     . gate: starting clean — zero orphaned servers, zero stray browsers
-     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
+================================================
+  0 task(s) completed, 4 failed, 0 blocked
+  finished Sat 03 Oct 10:21
+  logs in logs/  ·  tell Claude in the chat
+
+  failed tasks are in tasks/failed/ — nothing was deleted:
+    a00-250-the-gate-says-pass-while-eighteen-proofs-fail.md
+================================================
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1532        9665         247        4989       14070
+Mem:           15603         949       10249         247        4990       14654
 -- top --
     ELAPSED   RSS COMMAND
-   01:14:09 525380 next-server (v1
-   01:14:09 129404 node
-   01:14:07 103760 node
-   01:14:07 76600 npm exec tsx --
+   03:49:33 43392 systemd-journal
+30-05:30:29 16284 systemd
+   03:49:33 14832 systemd-resolve
+   03:49:32 12288 systemd-network
 -- disk --
 /dev/sda1        75G   41G   32G  56% /
