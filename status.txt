@@ -1,4 +1,4 @@
-generated: 2026-10-03 14:30:01 UTC
+generated: 2026-10-03 14:35:02 UTC
 done:   259
 queued: 2
 failed: 0
@@ -33,12 +33,12 @@ a01-252-the-last-red-on-the-gate.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2491        8693         249        5005       13111
+Mem:           15603        3567        7617         301        5058       12036
 -- top --
     ELAPSED   RSS COMMAND
-   02:21:06 554240 claude
-      00:45 529704 next-server (v1
-      03:11 161948 node
-      00:35 161076 node
+      05:46 962488 next-server (v1
+   02:26:07 548196 claude
+      02:10 352068 chrome-headless
+      02:12 246752 node
 -- disk --
 /dev/sda1        75G   41G   32G  56% /
