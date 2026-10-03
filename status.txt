@@ -1,4 +1,4 @@
-generated: 2026-10-03 10:25:02 UTC
+generated: 2026-10-03 10:30:01 UTC
 done:   258
 queued: 0
 failed: 1
@@ -6,7 +6,6 @@ hold:   1
 
 -- queued --
 -- failed --
-a00-250-the-gate-says-pass-while-eighteen-proofs-fail.md
 
 -- log --
   · 31c2aeda-84fd-4294-8c86-fd01c7184947 "money-roundtrip-be-7f8f398f's Company" — new tenant created during the sweep, never torn down (162 row(s) left behind)
@@ -32,12 +31,15 @@ a00-250-the-gate-says-pass-while-eighteen-proofs-fail.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603         949       10249         247        4990       14654
+Mem:           15603         952       10245         247        4990       14650
 -- top --
     ELAPSED   RSS COMMAND
-   03:49:33 43392 systemd-journal
-30-05:30:29 16284 systemd
-   03:49:33 14832 systemd-resolve
-   03:49:32 12288 systemd-network
+   03:54:32 43528 systemd-journal
+30-05:35:29 16284 systemd
+   03:54:32 14832 systemd-resolve
+   03:54:32 12288 systemd-network
+-- disk --
+/dev/sda1        75G   41G   32G  56% /
+twork
 -- disk --
 /dev/sda1        75G   41G   32G  56% /
