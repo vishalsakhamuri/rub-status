@@ -1,4 +1,4 @@
-generated: 2026-10-03 20:05:01 UTC
+generated: 2026-10-03 20:10:01 UTC
 done:   259
 queued: 2
 failed: 0
@@ -10,13 +10,6 @@ a01-252-the-last-red-on-the-gate.md
 -- failed --
 
 -- log --
-  · 323aa6c9-897b-4e09-9fc5-3a1685ea6ab9 "money-roundtrip-ie-0baa9f33's Company" — new tenant created during the sweep, never torn down (162 row(s) left behind)
-  · d5b9bba2-34ce-4a3c-935d-23ceabb16cab "money-roundtrip-be-7f8f398f's Company" — new tenant created during the sweep, never torn down (162 row(s) left behind)
-  · caccf97f-0c44-48e9-ae9b-9279f6a2b40d "money-roundtrip-be-7f8f398f's Company" — new tenant created during the sweep, never torn down (162 row(s) left behind)
-  · 99017c8b-e716-4a82-9867-eafde6303344 "money-roundtrip-es-c2d052f7's Company" — new tenant created during the sweep, never torn down (162 row(s) left behind); 78 screen(s) flagged for density, up from 75 on the last green run: /account/suspended, /accounting/packets/[packet], /accounting/packets/build/[statement], /accounting/periods, /accounts, /assets/[id], /assets/locations, /assets — see docs/screen-density.md
-       see logs/a00-250-the-gate-says-pass-while-eighteen-proofs-fail.log
-
-================================================
   0 task(s) completed, 4 failed, 0 blocked
   finished Sat 03 Oct 10:21
   logs in logs/  ·  tell Claude in the chat
@@ -30,15 +23,22 @@ a01-252-the-last-red-on-the-gate.md
 ================================================
 
 ---- a00-251-one-login-six-companies ----  started 12:08:52
+     ! received SIGTERM — cleaning up before exit
+================================================
+  RunUrBusiness — draining the task queue
+  started Sat 03 Oct 20:08
+================================================
+
+---- a00-251-one-login-six-companies ----  started 20:08:13
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1480        9525         250        5184       14122
+Mem:           15603        3209        8055         250        4926       12394
 -- top --
     ELAPSED   RSS COMMAND
-   07:56:06 625976 claude
-   13:29:32 68264 systemd-journal
-30-15:10:29 16292 systemd
-   13:29:32 14880 systemd-resolve
+      00:06 1988924 node
+      01:45 322848 claude
+      00:02 179424 node
+      00:07 144984 node
 -- disk --
-/dev/sda1        75G   41G   32G  57% /
+/dev/sda1        75G   40G   32G  56% /
