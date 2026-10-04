@@ -1,4 +1,4 @@
-generated: 2026-10-04 17:15:01 UTC
+generated: 2026-10-04 17:20:01 UTC
 done:   259
 queued: 1
 failed: 1
@@ -10,14 +10,6 @@ a01-252-the-last-red-on-the-gate.md
 a00-251-one-login-six-companies.md
 
 -- log --
-     . mem: tests step peaked at 4233MB (cgroup MemoryCurrent, sampled every 3s)
-     . screens: starting clean — zero orphaned servers, zero stray browsers
-     . screens clean: 270 screens, 30 not reachable
-     . mem: screens step peaked at 6101MB (cgroup MemoryCurrent, sampled every 3s)
-     . journeys: starting clean — zero orphaned servers, zero stray browsers
-     ! JOURNEYS: 17 of 23 failed — upload and self-sign, invite and sign in, raise an invoice, invoice: three lines survive a submit with no customer chosen, run a No1Edit tool, J2: sign a document myself and take it away, J3: change a document and take it away, J4: the employee folder — nothing typed twice, J2: sign a document myself and take it away — DigiSign-only tenant, J3: change a document and take it away — No1Edit-only tenant, J2: sign a document myself and take it away — tenant with no entity, J3: change a document and take it away — tenant with no entity, J4: the employee folder — nothing typed twice — tenant with no entity, one document through all four tools, one document through all four tools — hr+digisign tenant, no No1Cloud, one document through all four tools — digisign+cloud tenant, no HR, invoice → payment → reconcile, end to end — default tenant (a08-144 D) — see docs/journeys-report.md
-     . mem: journeys step peaked at 6204MB (cgroup MemoryCurrent, sampled every 3s)
-     . gate: starting clean — zero orphaned servers, zero stray browsers
      . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
      . gate: 95 pass, 24 fail, 1 pending
      ! GATE FAILED: 79 screen(s) flagged for density, up from 75 on the last green run: /account/suspended, /accounting/packets/[packet], /accounting/packets/build/[statement], /accounting/periods, /accounts, /assets/[id], /assets/locations, /assets — see docs/screen-density.md
@@ -30,15 +22,23 @@ a00-251-one-login-six-companies.md
        see logs/a00-251-one-login-six-companies.log
 
 ---- a01-252-the-last-red-on-the-gate ----  started 22:38:59
+     . build/screens/journeys: diff since 0b3833b18b10 touches something that could render — running fresh
+     ! orphaned dev server found: pid 1421625, owned by build, age 8m, cwd /home/build/runurbusiness (node /usr/bin/pnpm start) — killing it
+     ! orphaned dev server found: pid 1421644, owned by build, age 8m, cwd /home/build/runurbusiness (next-server (v16.2.11)) — killing it
+     . orphaned dev server(s) cleaned up before this task starts
+     . build: starting clean — zero orphaned servers, zero stray browsers
+     . build clean
+     . mem: build step peaked at 7532MB (cgroup MemoryCurrent, sampled every 3s)
+     . tests: starting clean — zero orphaned servers, zero stray browsers
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2184        7692         323        6387       13418
+Mem:           15603        1750        8126         368        6432       13852
 -- top --
     ELAPSED   RSS COMMAND
-   18:35:59 708220 claude
-      07:23 450292 next-server (v1
- 1-10:39:32 128352 systemd-journal
-      07:24 128332 node
+      02:33 575336 node
+      00:37 181952 node
+ 1-10:44:32 128620 systemd-journal
+      02:33 78760 npm exec vitest
 -- disk --
 /dev/sda1        75G   42G   31G  58% /
