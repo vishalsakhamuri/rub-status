@@ -1,4 +1,4 @@
-generated: 2026-10-04 18:40:01 UTC
+generated: 2026-10-04 18:45:01 UTC
 done:   261
 queued: 0
 failed: 0
@@ -31,12 +31,12 @@ hold:   1
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3314        6384         713        6955       12288
+Mem:           15603        1990        7707         355        6597       13612
 -- top --
     ELAPSED   RSS COMMAND
-      01:57 1321424 node
-      19:43 501088 next-server (v1
- 1-12:04:32 130412 systemd-journal
-      19:44 129952 node
+      24:44 546844 next-server (v1
+      00:24 184112 node
+      00:10 167140 chrome-headless
+      00:22 140384 chrome-headless
 -- disk --
 /dev/sda1        75G   42G   31G  58% /
