@@ -1,4 +1,4 @@
-generated: 2026-10-04 15:25:01 UTC
+generated: 2026-10-04 15:30:01 UTC
 done:   259
 queued: 1
 failed: 1
@@ -33,12 +33,12 @@ a00-251-one-login-six-companies.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2588        7470         357        6239       13014
+Mem:           15603        1763        8293         323        6206       13839
 -- top --
     ELAPSED   RSS COMMAND
-   16:45:59 714124 claude
-   01:06:50 497076 next-server (v1
-      01:02 196884 chrome-headless
-      01:19 175684 node
+   16:50:59 716328 claude
+   01:08:53 130416 node
+ 1-08:54:32 120484 systemd-journal
+   01:08:52 102284 node
 -- disk --
 /dev/sda1        75G   41G   31G  58% /
