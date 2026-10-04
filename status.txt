@@ -1,4 +1,4 @@
-generated: 2026-10-04 18:10:01 UTC
+generated: 2026-10-04 18:15:01 UTC
 done:   261
 queued: 0
 failed: 0
@@ -8,9 +8,6 @@ hold:   1
 -- failed --
 
 -- log --
-     . mem: gate step peaked at 5354MB (cgroup MemoryCurrent, sampled every 3s)
-     ! GATE FAILED, caused by this task
-     ! task had self-moved to tasks/done/ — moved back to tasks/failed/, the gate said otherwise
      [FAILED] (exit 97) 22:38:57
        moved to tasks/failed/ — the queue carries on
        reason: completion marker + commit present, but the gate failed: 79 screen(s) flagged for density, up from 75 on the last green run: /account/suspended, /accounting/packets/[packet], /accounting/packets/build/[statement], /accounting/periods, /accounts, /assets/[id], /assets/locations, /assets — see docs/screen-density.md
@@ -28,15 +25,18 @@ hold:   1
      . suite green: 3807 tests
      . mem: tests step peaked at 5928MB (cgroup MemoryCurrent, sampled every 3s)
      . screens: starting clean — zero orphaned servers, zero stray browsers
+     . screens clean: 270 screens, 30 not reachable
+     . mem: screens step peaked at 7567MB (cgroup MemoryCurrent, sampled every 3s)
+     . journeys: starting clean — zero orphaned servers, zero stray browsers
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        4318        5557         360        6424       11284
+Mem:           15603        2143        7732         354        6419       13460
 -- top --
     ELAPSED   RSS COMMAND
-      13:00 1397728 next-server (v1
-      01:39 1198440 chrome-headless
-      12:58 444428 node
-      12:56 329152 chrome-headless
+      02:31 805780 next-server (v1
+      04:04 213468 node
+      00:03 158508 chrome-headless
+      02:29 142868 chrome-headless
 -- disk --
 /dev/sda1        75G   42G   31G  58% /
