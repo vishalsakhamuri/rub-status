@@ -1,4 +1,4 @@
-generated: 2026-10-04 18:20:01 UTC
+generated: 2026-10-04 18:25:01 UTC
 done:   261
 queued: 0
 failed: 0
@@ -8,10 +8,6 @@ hold:   1
 -- failed --
 
 -- log --
-     [FAILED] (exit 97) 22:38:57
-       moved to tasks/failed/ — the queue carries on
-       reason: completion marker + commit present, but the gate failed: 79 screen(s) flagged for density, up from 75 on the last green run: /account/suspended, /accounting/packets/[packet], /accounting/packets/build/[statement], /accounting/periods, /accounts, /assets/[id], /assets/locations, /assets — see docs/screen-density.md
-       see logs/a00-251-one-login-six-companies.log
 
 ---- a01-252-the-last-red-on-the-gate ----  started 22:38:59
      . build/screens/journeys: diff since 0b3833b18b10 touches something that could render — running fresh
@@ -28,15 +24,19 @@ hold:   1
      . screens clean: 270 screens, 30 not reachable
      . mem: screens step peaked at 7567MB (cgroup MemoryCurrent, sampled every 3s)
      . journeys: starting clean — zero orphaned servers, zero stray browsers
+     . journeys clean: 23 of 23 passed
+     . mem: journeys step peaked at 7683MB (cgroup MemoryCurrent, sampled every 3s)
+     . gate: starting clean — zero orphaned servers, zero stray browsers
+     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2179        7696         354        6419       13424
+Mem:           15603        1608        8267         322        6387       13994
 -- top --
     ELAPSED   RSS COMMAND
-      07:31 824736 next-server (v1
-      09:04 223972 node
-      00:09 159300 chrome-headless
-      07:29 145652 chrome-headless
+      04:44 343300 next-server (v1
+      00:55 153816 node
+      00:55 131556 node
+      04:45 129952 node
 -- disk --
 /dev/sda1        75G   42G   31G  58% /
