@@ -1,4 +1,4 @@
-generated: 2026-10-10 04:55:01 UTC
+generated: 2026-10-10 05:00:01 UTC
 done:   262
 queued: 0
 failed: 0
@@ -8,10 +8,6 @@ hold:   1
 -- failed --
 
 -- log --
-  failed tasks are in tasks/failed/ — nothing was deleted:
-    a01-252-the-last-red-on-the-gate.md
-================================================
-================================================
   RunUrBusiness — draining the task queue
   started Sat 10 Oct 00:43
 ================================================
@@ -28,15 +24,19 @@ hold:   1
      . screens clean: 270 screens, 30 not reachable
      . mem: screens step peaked at 8343MB (cgroup MemoryCurrent, sampled every 3s)
      . journeys: starting clean — zero orphaned servers, zero stray browsers
+     . journeys clean: 23 of 23 passed
+     . mem: journeys step peaked at 8344MB (cgroup MemoryCurrent, sampled every 3s)
+     . gate: starting clean — zero orphaned servers, zero stray browsers
+     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2247        6940         273        7025       13355
+Mem:           15603        1877        7311         276        7027       13725
 -- top --
     ELAPSED   RSS COMMAND
-      03:20 941060 next-server (v1
-      04:51 211504 node
-      00:40 204076 chrome-headless
-      03:18 144588 chrome-headless
+      00:37 352488 next-server (v1
+      00:06 211920 node
+      00:05 177996 chrome-headless
+      00:07 148788 node
 -- disk --
 /dev/sda1        75G   42G   31G  59% /
