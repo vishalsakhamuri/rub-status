@@ -1,4 +1,4 @@
-generated: 2026-10-10 18:25:01 UTC
+generated: 2026-10-10 18:30:01 UTC
 done:   262
 queued: 4
 failed: 1
@@ -36,12 +36,12 @@ a00-254-the-poll-that-wipes-every-form-third-time.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        5947        3811         197        6378        9656
+Mem:           15603        7056        3181         197        5899        8546
 -- top --
     ELAPSED   RSS COMMAND
-      03:05 4454924 next-server (v1
-   02:30:17 698136 claude
-      02:56 194648 node
-      03:05 128548 node
+      08:05 4653568 next-server (v1
+      00:03 901972 node
+   02:35:17 695772 claude
+      07:55 187844 node
 -- disk --
 /dev/sda1        75G   47G   26G  65% /
