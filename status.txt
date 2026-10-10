@@ -1,4 +1,4 @@
-generated: 2026-10-10 03:55:01 UTC
+generated: 2026-10-10 04:00:01 UTC
 done:   261
 queued: 1
 failed: 0
@@ -9,11 +9,6 @@ a02-253-one-round-trip-for-search-and-a-baseline-that-stays-accepted.md
 -- failed --
 
 -- log --
-     ! task had self-moved to tasks/done/ — moved back to tasks/failed/, the gate said otherwise
-     [FAILED] (exit 97) 19:35:21
-       moved to tasks/failed/ — the queue carries on
-       reason: completion marker + commit present, but the gate failed: scripts/prove-translated.ts failed (c00-213 is marked done):       "agrees to the terms of employment."  — …{{person.full_name}} agrees to the terms of employment.… /  / TRANSLATED: 4228 known, 36 new /  / [31m1 screen(s) failed[0m; scripts/prove-search.ts failed (u16-100 is marked done):   [32m✓[0m the input is focused on open /   [32m✓[0m Enter on a result navigates (URL changed or overlay closed) /   [32m✓[0m Esc closes the overlay and returns focus to the trigger /  / [31m1 check(s) failed.[0m
-       see logs/a01-252-the-last-red-on-the-gate.log
 
 ================================================
   0 task(s) completed, 2 failed, 0 blocked
@@ -29,15 +24,20 @@ a02-253-one-round-trip-for-search-and-a-baseline-that-stays-accepted.md
 ================================================
 
 ---- a02-253-one-round-trip-for-search-and-a-baseline-that-stays-accepted ----  started 00:43:34
+     . build/screens/journeys: diff since 948e77150725 touches something that could render — running fresh
+     . build: starting clean — zero orphaned servers, zero stray browsers
+     . build clean
+     . mem: build step peaked at 7887MB (cgroup MemoryCurrent, sampled every 3s)
+     . tests: starting clean — zero orphaned servers, zero stray browsers
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1261        7929         180        6929       14341
+Mem:           15603        1602        7588         225        6975       14000
 -- top --
     ELAPSED   RSS COMMAND
-   03:11:25 504124 claude
- 6-21:19:32 130460 systemd-journal
-36-23:00:29 16368 systemd
- 6-21:19:32 14884 systemd-resolve
+      02:42 572804 node
+      00:44 176380 node
+ 6-21:24:32 130596 systemd-journal
+      02:42 78244 npm exec vitest
 -- disk --
 /dev/sda1        75G   42G   31G  59% /
