@@ -1,7 +1,7 @@
-generated: 2026-10-10 15:50:02 UTC
-done:   263
+generated: 2026-10-10 15:55:01 UTC
+done:   262
 queued: 4
-failed: 0
+failed: 1
 hold:   1
 
 -- queued --
@@ -10,19 +10,9 @@ a02-256-german-chart-of-accounts-audit-log-pdf-labels-timezone.md
 a03-257-hr-hours-pattern-prefill-numbers.md
 a04-258-digisign-signer-filing-tax-defaults-search.md
 -- failed --
+a00-254-the-poll-that-wipes-every-form-third-time.md
 
 -- log --
-  RunUrBusiness — draining the task queue
-  started Sat 10 Oct 09:40
-================================================
-
----- a00-254-the-poll-that-wipes-every-form-third-time ----  started 09:40:46
-     . build/screens/journeys: diff since 34c4cce3bfb2 touches something that could render — running fresh
-     . build: starting clean — zero orphaned servers, zero stray browsers
-     . build clean
-     . mem: build step peaked at 8516MB (cgroup MemoryCurrent, sampled every 3s)
-     . tests: starting clean — zero orphaned servers, zero stray browsers
-     . suite green: 3807 tests
      . mem: tests step peaked at 6835MB (cgroup MemoryCurrent, sampled every 3s)
      . screens: starting clean — zero orphaned servers, zero stray browsers
      . screens clean: 270 screens, 30 not reachable
@@ -32,15 +22,26 @@ a04-258-digisign-signer-filing-tax-defaults-search.md
      . mem: journeys step peaked at 8689MB (cgroup MemoryCurrent, sampled every 3s)
      . gate: starting clean — zero orphaned servers, zero stray browsers
      . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
+     . gate: 119 pass, 3 fail, 1 pending
+     ! GATE FAILED: scripts/prove-translated.ts failed (c00-213 is marked done):       "Verbesserungsmöglichkeiten"  — …Verbesserungsmöglichkeiten… /  / TRANSLATED: 3163 known, 15 new /  / [31m1 screen(s) failed[0m; scripts/prove-search.ts failed (u16-100 is marked done):   [32m✓[0m the input is focused on open /   [32m✓[0m Enter on a result navigates (URL changed or overlay closed) /   [32m✓[0m Esc closes the overlay and returns focus to the trigger /  / [31m1 check(s) failed.[0m
+     . mem: gate step peaked at 7866MB (cgroup MemoryCurrent, sampled every 3s)
+     ! GATE FAILED, caused by this task
+     ! task had self-moved to tasks/done/ — moved back to tasks/failed/, the gate said otherwise
+     [FAILED] (exit 97) 15:54:40
+       moved to tasks/failed/ — the queue carries on
+       reason: completion marker + commit present, but the gate failed: scripts/prove-translated.ts failed (c00-213 is marked done):       "Verbesserungsmöglichkeiten"  — …Verbesserungsmöglichkeiten… /  / TRANSLATED: 3163 known, 15 new /  / [31m1 screen(s) failed[0m; scripts/prove-search.ts failed (u16-100 is marked done):   [32m✓[0m the input is focused on open /   [32m✓[0m Enter on a result navigates (URL changed or overlay closed) /   [32m✓[0m Esc closes the overlay and returns focus to the trigger /  / [31m1 check(s) failed.[0m
+       see logs/a00-254-the-poll-that-wipes-every-form-third-time.log
+
+---- a01-255-journals-payroll-posting-einvoice-oversell-disposal ----  started 15:54:42
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1735        6879         248        7574       13867
+Mem:           15603        1159        7448         248        7581       14443
 -- top --
     ELAPSED   RSS COMMAND
-   01:05:21 556020 next-server (v1
- 7-09:14:33 164188 systemd-journal
-      00:11 148684 node
-   01:05:22 129332 node
+      00:17 302588 claude
+ 7-09:19:32 164316 systemd-journal
+37-11:00:29 16428 systemd
+ 7-09:19:32 14892 systemd-resolve
 -- disk --
 /dev/sda1        75G   43G   30G  59% /
