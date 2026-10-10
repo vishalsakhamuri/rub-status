@@ -1,4 +1,4 @@
-generated: 2026-10-10 13:45:01 UTC
+generated: 2026-10-10 13:50:01 UTC
 done:   262
 queued: 5
 failed: 0
@@ -13,11 +13,6 @@ a04-258-digisign-signer-filing-tax-defaults-search.md
 -- failed --
 
 -- log --
-     ! task had self-moved to tasks/done/ — moved back to tasks/failed/, the gate said otherwise
-     [FAILED] (exit 97) 06:08:59
-       moved to tasks/failed/ — the queue carries on
-       reason: completion marker + commit present, but the gate failed: scripts/prove-translated.ts failed (c00-213 is marked done):       "Verbesserungsmöglichkeiten"  — …Verbesserungsmöglichkeiten… /  / TRANSLATED: 3082 known, 6 new /  / [31m1 screen(s) failed[0m; scripts/prove-search.ts failed (u16-100 is marked done):   [32m✓[0m the input is focused on open /   [32m✓[0m Enter on a result navigates (URL changed or overlay closed) /   [32m✓[0m Esc closes the overlay and returns focus to the trigger /  / [31m1 check(s) failed.[0m; scripts/prove-number-formatting.ts failed (a00-210 is marked done):     file: 'pl_exec.c', /     line: '3911', /     routine: 'exec_stmt_raise' /   } / }
-       see logs/a02-253-one-round-trip-for-search-and-a-baseline-that-stays-accepted.log
 
 ================================================
   0 task(s) completed, 1 failed, 0 blocked
@@ -33,15 +28,20 @@ a04-258-digisign-signer-filing-tax-defaults-search.md
 ================================================
 
 ---- a00-254-the-poll-that-wipes-every-form-third-time ----  started 09:40:46
+     . build/screens/journeys: diff since 34c4cce3bfb2 touches something that could render — running fresh
+     . build: starting clean — zero orphaned servers, zero stray browsers
+     . build clean
+     . mem: build step peaked at 8516MB (cgroup MemoryCurrent, sampled every 3s)
+     . tests: starting clean — zero orphaned servers, zero stray browsers
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1418        7378         248        7391       14184
+Mem:           15603        1802        6995         294        7437       13800
 -- top --
     ELAPSED   RSS COMMAND
-   04:04:13 600516 claude
- 7-07:09:32 157816 systemd-journal
-37-08:50:29 16428 systemd
- 7-07:09:32 14892 systemd-resolve
+      01:27 587592 node
+      01:04 283992 node
+ 7-07:14:32 157816 systemd-journal
+      01:27 78908 npm exec vitest
 -- disk --
 /dev/sda1        75G   42G   30G  59% /
