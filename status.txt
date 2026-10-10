@@ -1,4 +1,4 @@
-generated: 2026-10-10 14:40:01 UTC
+generated: 2026-10-10 14:45:01 UTC
 done:   263
 queued: 4
 failed: 0
@@ -12,10 +12,6 @@ a04-258-digisign-signer-filing-tax-defaults-search.md
 -- failed --
 
 -- log --
-  failed tasks are in tasks/failed/ — nothing was deleted:
-    a02-253-one-round-trip-for-search-and-a-baseline-that-stays-accepted.md
-================================================
-================================================
   RunUrBusiness — draining the task queue
   started Sat 10 Oct 09:40
 ================================================
@@ -32,15 +28,19 @@ a04-258-digisign-signer-filing-tax-defaults-search.md
      . screens clean: 270 screens, 30 not reachable
      . mem: screens step peaked at 8153MB (cgroup MemoryCurrent, sampled every 3s)
      . journeys: starting clean — zero orphaned servers, zero stray browsers
+     . journeys clean: 23 of 23 passed
+     . mem: journeys step peaked at 8689MB (cgroup MemoryCurrent, sampled every 3s)
+     . gate: starting clean — zero orphaned servers, zero stray browsers
+     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1825        6970         280        7424       13777
+Mem:           15603        1616        7179         248        7393       13986
 -- top --
     ELAPSED   RSS COMMAND
-      02:13 577128 next-server (v1
-      03:42 200028 node
- 7-08:04:32 162888 systemd-journal
-      00:07 156744 chrome-headless
+      00:21 286896 next-server (v1
+ 7-08:09:32 163404 systemd-journal
+      00:01 160452 node
+      00:19 151916 node
 -- disk --
 /dev/sda1        75G   42G   30G  59% /
