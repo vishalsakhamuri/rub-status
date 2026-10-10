@@ -1,4 +1,4 @@
-generated: 2026-10-10 04:50:01 UTC
+generated: 2026-10-10 04:55:01 UTC
 done:   262
 queued: 0
 failed: 0
@@ -8,9 +8,6 @@ hold:   1
 -- failed --
 
 -- log --
-  finished Sun 04 Oct 19:35
-  logs in logs/  ·  tell Claude in the chat
-
   failed tasks are in tasks/failed/ — nothing was deleted:
     a01-252-the-last-red-on-the-gate.md
 ================================================
@@ -28,15 +25,18 @@ hold:   1
      . suite green: 3807 tests
      . mem: tests step peaked at 6389MB (cgroup MemoryCurrent, sampled every 3s)
      . screens: starting clean — zero orphaned servers, zero stray browsers
+     . screens clean: 270 screens, 30 not reachable
+     . mem: screens step peaked at 8343MB (cgroup MemoryCurrent, sampled every 3s)
+     . journeys: starting clean — zero orphaned servers, zero stray browsers
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        4356        4833         299        7050       11247
+Mem:           15603        2247        6940         273        7025       13355
 -- top --
     ELAPSED   RSS COMMAND
-      13:49 1467256 next-server (v1
-      02:27 1165980 chrome-headless
-      13:47 473672 node
-      13:45 326272 chrome-headless
+      03:20 941060 next-server (v1
+      04:51 211504 node
+      00:40 204076 chrome-headless
+      03:18 144588 chrome-headless
 -- disk --
 /dev/sda1        75G   42G   31G  59% /
