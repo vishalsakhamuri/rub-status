@@ -1,42 +1,45 @@
-generated: 2026-10-10 06:05:01 UTC
-done:   262
+generated: 2026-10-10 06:10:01 UTC
+done:   261
 queued: 0
-failed: 0
+failed: 1
 hold:   1
 
 -- queued --
 -- failed --
 
 -- log --
-  RunUrBusiness — draining the task queue
-  started Sat 10 Oct 00:43
-================================================
-
----- a02-253-one-round-trip-for-search-and-a-baseline-that-stays-accepted ----  started 00:43:34
-     . build/screens/journeys: diff since 948e77150725 touches something that could render — running fresh
-     . build: starting clean — zero orphaned servers, zero stray browsers
-     . build clean
-     . mem: build step peaked at 7887MB (cgroup MemoryCurrent, sampled every 3s)
-     . tests: starting clean — zero orphaned servers, zero stray browsers
-     . suite green: 3807 tests
-     . mem: tests step peaked at 6389MB (cgroup MemoryCurrent, sampled every 3s)
-     . screens: starting clean — zero orphaned servers, zero stray browsers
-     . screens clean: 270 screens, 30 not reachable
-     . mem: screens step peaked at 8343MB (cgroup MemoryCurrent, sampled every 3s)
-     . journeys: starting clean — zero orphaned servers, zero stray browsers
-     . journeys clean: 23 of 23 passed
-     . mem: journeys step peaked at 8344MB (cgroup MemoryCurrent, sampled every 3s)
      . gate: starting clean — zero orphaned servers, zero stray browsers
      . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
+     . gate: 116 pass, 3 fail, 1 pending
+     ! GATE FAILED: scripts/prove-translated.ts failed (c00-213 is marked done):       "Verbesserungsmöglichkeiten"  — …Verbesserungsmöglichkeiten… /  / TRANSLATED: 3082 known, 6 new /  / [31m1 screen(s) failed[0m; scripts/prove-search.ts failed (u16-100 is marked done):   [32m✓[0m the input is focused on open /   [32m✓[0m Enter on a result navigates (URL changed or overlay closed) /   [32m✓[0m Esc closes the overlay and returns focus to the trigger /  / [31m1 check(s) failed.[0m; scripts/prove-number-formatting.ts failed (a00-210 is marked done):     file: 'pl_exec.c', /     line: '3911', /     routine: 'exec_stmt_raise' /   } / }
+     . mem: gate step peaked at 7412MB (cgroup MemoryCurrent, sampled every 3s)
+     ! GATE FAILED, caused by this task
+     ! task had self-moved to tasks/done/ — moved back to tasks/failed/, the gate said otherwise
+     [FAILED] (exit 97) 06:08:59
+       moved to tasks/failed/ — the queue carries on
+       reason: completion marker + commit present, but the gate failed: scripts/prove-translated.ts failed (c00-213 is marked done):       "Verbesserungsmöglichkeiten"  — …Verbesserungsmöglichkeiten… /  / TRANSLATED: 3082 known, 6 new /  / [31m1 screen(s) failed[0m; scripts/prove-search.ts failed (u16-100 is marked done):   [32m✓[0m the input is focused on open /   [32m✓[0m Enter on a result navigates (URL changed or overlay closed) /   [32m✓[0m Esc closes the overlay and returns focus to the trigger /  / [31m1 check(s) failed.[0m; scripts/prove-number-formatting.ts failed (a00-210 is marked done):     file: 'pl_exec.c', /     line: '3911', /     routine: 'exec_stmt_raise' /   } / }
+       see logs/a02-253-one-round-trip-for-search-and-a-baseline-that-stays-accepted.log
+
+================================================
+  0 task(s) completed, 1 failed, 0 blocked
+  finished Sat 10 Oct 06:09
+  logs in logs/  ·  tell Claude in the chat
+
+  failed tasks are in tasks/failed/ — nothing was deleted:
+    a02-253-one-round-trip-for-search-and-a-baseline-that-stays-accepted.md
+================================================
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1980        7031         281        7209       13622
+Mem:           15603         937        8072         244        7175       14665
 -- top --
     ELAPSED   RSS COMMAND
-   01:05:37 553672 next-server (v1
-      02:08 241080 chrome-headless
-      02:25 176116 node
-      02:23 140616 chrome-headless
+ 6-23:34:32 135684 systemd-journal
+37-01:15:28 16376 systemd
+ 6-23:34:32 14884 systemd-resolve
+ 6-23:34:32 12292 systemd-network
+-- disk --
+/dev/sda1        75G   42G   30G  59% /
+2292 systemd-network
 -- disk --
 /dev/sda1        75G   42G   30G  59% /
