@@ -1,19 +1,14 @@
-generated: 2026-10-10 00:40:01 UTC
+generated: 2026-10-10 00:45:01 UTC
 done:   261
-queued: 0
+queued: 1
 failed: 0
 hold:   1
 
 -- queued --
+a02-253-one-round-trip-for-search-and-a-baseline-that-stays-accepted.md
 -- failed --
 
 -- log --
-     . gate: starting clean — zero orphaned servers, zero stray browsers
-     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
-     . gate: 117 pass, 2 fail, 1 pending
-     ! GATE FAILED: scripts/prove-translated.ts failed (c00-213 is marked done):       "agrees to the terms of employment."  — …{{person.full_name}} agrees to the terms of employment.… /  / TRANSLATED: 4228 known, 36 new /  / [31m1 screen(s) failed[0m; scripts/prove-search.ts failed (u16-100 is marked done):   [32m✓[0m the input is focused on open /   [32m✓[0m Enter on a result navigates (URL changed or overlay closed) /   [32m✓[0m Esc closes the overlay and returns focus to the trigger /  / [31m1 check(s) failed.[0m
-     . mem: gate step peaked at 7007MB (cgroup MemoryCurrent, sampled every 3s)
-     ! GATE FAILED, caused by this task
      ! task had self-moved to tasks/done/ — moved back to tasks/failed/, the gate said otherwise
      [FAILED] (exit 97) 19:35:21
        moved to tasks/failed/ — the queue carries on
@@ -28,15 +23,21 @@ hold:   1
   failed tasks are in tasks/failed/ — nothing was deleted:
     a01-252-the-last-red-on-the-gate.md
 ================================================
+================================================
+  RunUrBusiness — draining the task queue
+  started Sat 10 Oct 00:43
+================================================
+
+---- a02-253-one-round-trip-for-search-and-a-baseline-that-stays-accepted ----  started 00:43:34
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603         884        8568         178        6665       14718
+Mem:           15603        1079        8355         178        6684       14523
 -- top --
     ELAPSED   RSS COMMAND
- 6-18:04:32 124464 systemd-journal
-36-19:45:29 16368 systemd
- 6-18:04:32 14884 systemd-resolve
- 6-18:04:32 12292 systemd-network
+      01:25 313132 claude
+ 6-18:09:32 124800 systemd-journal
+36-19:50:29 16368 systemd
+ 6-18:09:32 14884 systemd-resolve
 -- disk --
 /dev/sda1        75G   42G   31G  58% /
