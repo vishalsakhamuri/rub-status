@@ -1,4 +1,4 @@
-generated: 2026-10-10 14:25:01 UTC
+generated: 2026-10-10 14:30:01 UTC
 done:   263
 queued: 4
 failed: 0
@@ -12,9 +12,6 @@ a04-258-digisign-signer-filing-tax-defaults-search.md
 -- failed --
 
 -- log --
-
-================================================
-  0 task(s) completed, 1 failed, 0 blocked
   finished Sat 10 Oct 06:09
   logs in logs/  ·  tell Claude in the chat
 
@@ -32,15 +29,18 @@ a04-258-digisign-signer-filing-tax-defaults-search.md
      . build clean
      . mem: build step peaked at 8516MB (cgroup MemoryCurrent, sampled every 3s)
      . tests: starting clean — zero orphaned servers, zero stray browsers
+     . suite green: 3807 tests
+     . mem: tests step peaked at 6835MB (cgroup MemoryCurrent, sampled every 3s)
+     . screens: starting clean — zero orphaned servers, zero stray browsers
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1704        7092         312        7456       13898
+Mem:           15603        2977        5818         292        7436       12625
 -- top --
     ELAPSED   RSS COMMAND
-      36:27 668296 node
- 7-07:49:32 158496 systemd-journal
-      36:27 78908 npm exec vitest
-      00:00 72312 node
+      02:46 1001228 next-server (v1
+      02:42 783616 chrome-headless
+      02:44 257064 node
+ 7-07:54:32 158756 systemd-journal
 -- disk --
 /dev/sda1        75G   42G   30G  59% /
