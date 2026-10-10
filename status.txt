@@ -1,19 +1,18 @@
-generated: 2026-10-10 09:40:02 UTC
+generated: 2026-10-10 09:45:01 UTC
 done:   262
-queued: 0
+queued: 5
 failed: 0
 hold:   1
 
 -- queued --
+a00-254-the-poll-that-wipes-every-form-third-time.md
+a01-255-journals-payroll-posting-einvoice-oversell-disposal.md
+a02-256-german-chart-of-accounts-audit-log-pdf-labels-timezone.md
+a03-257-hr-hours-pattern-prefill-numbers.md
+a04-258-digisign-signer-filing-tax-defaults-search.md
 -- failed --
 
 -- log --
-     . gate: starting clean — zero orphaned servers, zero stray browsers
-     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
-     . gate: 116 pass, 3 fail, 1 pending
-     ! GATE FAILED: scripts/prove-translated.ts failed (c00-213 is marked done):       "Verbesserungsmöglichkeiten"  — …Verbesserungsmöglichkeiten… /  / TRANSLATED: 3082 known, 6 new /  / [31m1 screen(s) failed[0m; scripts/prove-search.ts failed (u16-100 is marked done):   [32m✓[0m the input is focused on open /   [32m✓[0m Enter on a result navigates (URL changed or overlay closed) /   [32m✓[0m Esc closes the overlay and returns focus to the trigger /  / [31m1 check(s) failed.[0m; scripts/prove-number-formatting.ts failed (a00-210 is marked done):     file: 'pl_exec.c', /     line: '3911', /     routine: 'exec_stmt_raise' /   } / }
-     . mem: gate step peaked at 7412MB (cgroup MemoryCurrent, sampled every 3s)
-     ! GATE FAILED, caused by this task
      ! task had self-moved to tasks/done/ — moved back to tasks/failed/, the gate said otherwise
      [FAILED] (exit 97) 06:08:59
        moved to tasks/failed/ — the queue carries on
@@ -28,15 +27,21 @@ hold:   1
   failed tasks are in tasks/failed/ — nothing was deleted:
     a02-253-one-round-trip-for-search-and-a-baseline-that-stays-accepted.md
 ================================================
+================================================
+  RunUrBusiness — draining the task queue
+  started Sat 10 Oct 09:40
+================================================
+
+---- a00-254-the-poll-that-wipes-every-form-third-time ----  started 09:40:46
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603         961        8039         244        7185       14642
+Mem:           15603        1171        7827         244        7186       14432
 -- top --
     ELAPSED   RSS COMMAND
- 7-03:04:33 144092 systemd-journal
-37-04:45:29 16424 systemd
- 7-03:04:33 14884 systemd-resolve
- 7-03:04:32 12292 systemd-network
+      04:13 328640 claude
+ 7-03:09:32 146516 systemd-journal
+37-04:50:29 16424 systemd
+ 7-03:09:32 14884 systemd-resolve
 -- disk --
 /dev/sda1        75G   42G   30G  59% /
