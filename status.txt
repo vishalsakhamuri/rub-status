@@ -1,15 +1,13 @@
-generated: 2026-10-11 08:50:01 UTC
-done:   263
-queued: 3
-failed: 1
+generated: 2026-10-11 08:55:01 UTC
+done:   265
+queued: 2
+failed: 0
 hold:   1
 
 -- queued --
-a02-256-german-chart-of-accounts-audit-log-pdf-labels-timezone.md
 a03-257-hr-hours-pattern-prefill-numbers.md
 a04-258-digisign-signer-filing-tax-defaults-search.md
 -- failed --
-a01-255-journals-payroll-posting-einvoice-oversell-disposal.md
 
 -- log --
      . journeys clean: 24 of 24 passed
@@ -35,12 +33,12 @@ a01-255-journals-payroll-posting-einvoice-oversell-disposal.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1547       11458          95        3030       14055
+Mem:           15603        1552       11453          97        3032       14050
 -- top --
     ELAPSED   RSS COMMAND
-      07:44 626580 node
-      00:07 207956 node
- 8-02:14:32 108440 systemd-journal
-      07:44 78512 npm exec vitest
+      12:45 637804 node
+      00:23 205296 node
+ 8-02:19:33 108668 systemd-journal
+      12:45 78512 npm exec vitest
 -- disk --
 /dev/sda1        75G   50G   23G  69% /
