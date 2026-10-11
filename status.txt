@@ -1,7 +1,7 @@
-generated: 2026-10-11 02:30:01 UTC
-done:   264
+generated: 2026-10-11 02:35:01 UTC
+done:   263
 queued: 3
-failed: 0
+failed: 1
 hold:   1
 
 -- queued --
@@ -9,19 +9,9 @@ a02-256-german-chart-of-accounts-audit-log-pdf-labels-timezone.md
 a03-257-hr-hours-pattern-prefill-numbers.md
 a04-258-digisign-signer-filing-tax-defaults-search.md
 -- failed --
+a01-255-journals-payroll-posting-einvoice-oversell-disposal.md
 
 -- log --
-       moved to tasks/failed/ — the queue carries on
-       reason: completion marker + commit present, but the gate failed: scripts/prove-translated.ts failed (c00-213 is marked done):       "Verbesserungsmöglichkeiten"  — …Verbesserungsmöglichkeiten… /  / TRANSLATED: 3163 known, 15 new /  / [31m1 screen(s) failed[0m; scripts/prove-search.ts failed (u16-100 is marked done):   [32m✓[0m the input is focused on open /   [32m✓[0m Enter on a result navigates (URL changed or overlay closed) /   [32m✓[0m Esc closes the overlay and returns focus to the trigger /  / [31m1 check(s) failed.[0m
-       see logs/a00-254-the-poll-that-wipes-every-form-third-time.log
-
----- a01-255-journals-payroll-posting-einvoice-oversell-disposal ----  started 15:54:42
-     . build/screens/journeys: diff since 45ac6ff5aa4d touches something that could render — running fresh
-     . build: starting clean — zero orphaned servers, zero stray browsers
-     . build clean
-     . mem: build step peaked at 4863MB (cgroup MemoryCurrent, sampled every 3s)
-     . tests: starting clean — zero orphaned servers, zero stray browsers
-     . suite green: 3825 tests
      . mem: tests step peaked at 3469MB (cgroup MemoryCurrent, sampled every 3s)
      . screens: starting clean — zero orphaned servers, zero stray browsers
      . screens clean: 272 screens, 30 not reachable
@@ -31,15 +21,26 @@ a04-258-digisign-signer-filing-tax-defaults-search.md
      . mem: journeys step peaked at 5395MB (cgroup MemoryCurrent, sampled every 3s)
      . gate: starting clean — zero orphaned servers, zero stray browsers
      . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
+     . gate: 118 pass, 4 fail, 1 pending
+     ! GATE FAILED: scripts/prove-translated.ts failed (c00-213 is marked done):       "Verbesserungsmöglichkeiten"  — …Verbesserungsmöglichkeiten… /  / TRANSLATED: 3263 known, 6 new /  / [31m1 screen(s) failed[0m; scripts/prove-search.ts failed (u16-100 is marked done):   [32m✓[0m the input is focused on open /   [32m✓[0m Enter on a result navigates (URL changed or overlay closed) /   [32m✓[0m Esc closes the overlay and returns focus to the trigger /  / [31m1 check(s) failed.[0m; scripts/prove-form-preservation.ts failed (a01-211 is marked done):   [32m✓[0m Item stock count: the badge request actually resolved during this check /   [32m✓[0m Item stock count: field holds exactly the typed string after the badge counters loaded — typed then before="QA-Preserve-2026aZ9x", after="QA-Preserve-2026aZ9x" /   [31m✗[0m Asset "Assign" panel — location: field found on the page — selector #holderLocation never appeared /  / [31mFAIL (1)[0m — prove-form-preservation
+     . mem: gate step peaked at 4458MB (cgroup MemoryCurrent, sampled every 3s)
+     ! GATE FAILED, caused by this task
+     ! task had self-moved to tasks/done/ — moved back to tasks/failed/, the gate said otherwise
+     [FAILED] (exit 97) 02:32:34
+       moved to tasks/failed/ — the queue carries on
+       reason: completion marker + commit present, but the gate failed: scripts/prove-translated.ts failed (c00-213 is marked done):       "Verbesserungsmöglichkeiten"  — …Verbesserungsmöglichkeiten… /  / TRANSLATED: 3263 known, 6 new /  / [31m1 screen(s) failed[0m; scripts/prove-search.ts failed (u16-100 is marked done):   [32m✓[0m the input is focused on open /   [32m✓[0m Enter on a result navigates (URL changed or overlay closed) /   [32m✓[0m Esc closes the overlay and returns focus to the trigger /  / [31m1 check(s) failed.[0m; scripts/prove-form-preservation.ts failed (a01-211 is marked done):   [32m✓[0m Item stock count: the badge request actually resolved during this check /   [32m✓[0m Item stock count: field holds exactly the typed string after the badge counters loaded — typed then before="QA-Preserve-2026aZ9x", after="QA-Preserve-2026aZ9x" /   [31m✗[0m Asset "Assign" panel — location: field found on the page — selector #holderLocation never appeared /  / [31mFAIL (1)[0m — prove-form-preservation
+       see logs/a01-255-journals-payroll-posting-einvoice-oversell-disposal.log
+
+---- a02-256-german-chart-of-accounts-audit-log-pdf-labels-timezone ----  started 02:32:36
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2134        9389         210        4627       13468
+Mem:           15603        1110       10388         168        4610       14492
 -- top --
     ELAPSED   RSS COMMAND
-   01:09:08 822972 next-server (v1
-      00:17 204484 chrome-headless
-      00:18 155100 node
-      00:17 135744 chrome-headless
+      02:22 345916 claude
+ 7-19:59:32 93992 systemd-journal
+37-21:40:29 16432 systemd
+ 7-19:59:32 14492 systemd-resolve
 -- disk --
 /dev/sda1        75G   43G   29G  60% /
