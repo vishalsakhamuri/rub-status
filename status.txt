@@ -1,26 +1,16 @@
-generated: 2026-10-11 10:50:01 UTC
-done:   265
+generated: 2026-10-11 10:55:01 UTC
+done:   264
 queued: 2
-failed: 0
+failed: 1
 hold:   1
 
 -- queued --
 a03-257-hr-hours-pattern-prefill-numbers.md
 a04-258-digisign-signer-filing-tax-defaults-search.md
 -- failed --
+a02-256-german-chart-of-accounts-audit-log-pdf-labels-timezone.md
 
 -- log --
-       moved to tasks/failed/ — the queue carries on
-       reason: completion marker + commit present, but the gate failed: scripts/prove-translated.ts failed (c00-213 is marked done):       "Verbesserungsmöglichkeiten"  — …Verbesserungsmöglichkeiten… /  / TRANSLATED: 3263 known, 6 new /  / [31m1 screen(s) failed[0m; scripts/prove-search.ts failed (u16-100 is marked done):   [32m✓[0m the input is focused on open /   [32m✓[0m Enter on a result navigates (URL changed or overlay closed) /   [32m✓[0m Esc closes the overlay and returns focus to the trigger /  / [31m1 check(s) failed.[0m; scripts/prove-form-preservation.ts failed (a01-211 is marked done):   [32m✓[0m Item stock count: the badge request actually resolved during this check /   [32m✓[0m Item stock count: field holds exactly the typed string after the badge counters loaded — typed then before="QA-Preserve-2026aZ9x", after="QA-Preserve-2026aZ9x" /   [31m✗[0m Asset "Assign" panel — location: field found on the page — selector #holderLocation never appeared /  / [31mFAIL (1)[0m — prove-form-preservation
-       see logs/a01-255-journals-payroll-posting-einvoice-oversell-disposal.log
-
----- a02-256-german-chart-of-accounts-audit-log-pdf-labels-timezone ----  started 02:32:36
-     . build/screens/journeys: diff since 55c28c93ed6e touches something that could render — running fresh
-     . build: starting clean — zero orphaned servers, zero stray browsers
-     . build clean
-     . mem: build step peaked at 4210MB (cgroup MemoryCurrent, sampled every 3s)
-     . tests: starting clean — zero orphaned servers, zero stray browsers
-     . suite green: 3825 tests
      . mem: tests step peaked at 2657MB (cgroup MemoryCurrent, sampled every 3s)
      . screens: starting clean — zero orphaned servers, zero stray browsers
      . screens clean: 272 screens, 30 not reachable
@@ -30,15 +20,26 @@ a04-258-digisign-signer-filing-tax-defaults-search.md
      . mem: journeys step peaked at 4512MB (cgroup MemoryCurrent, sampled every 3s)
      . gate: starting clean — zero orphaned servers, zero stray browsers
      . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
+     . gate: 119 pass, 3 fail, 1 pending
+     ! GATE FAILED: scripts/prove-translated.ts failed (c00-213 is marked done):       "Verbesserungsmöglichkeiten"  — …Verbesserungsmöglichkeiten… /  / TRANSLATED: 3268 known, 58 new /  / [31m1 screen(s) failed[0m; scripts/prove-search.ts failed (u16-100 is marked done):   [32m✓[0m the input is focused on open /   [32m✓[0m Enter on a result navigates (URL changed or overlay closed) /   [32m✓[0m Esc closes the overlay and returns focus to the trigger /  / [31m1 check(s) failed.[0m
+     . mem: gate step peaked at 3786MB (cgroup MemoryCurrent, sampled every 3s)
+     ! GATE FAILED, caused by this task
+     ! task had self-moved to tasks/done/ — moved back to tasks/failed/, the gate said otherwise
+     [FAILED] (exit 97) 10:50:22
+       moved to tasks/failed/ — the queue carries on
+       reason: completion marker + commit present, but the gate failed: scripts/prove-translated.ts failed (c00-213 is marked done):       "Verbesserungsmöglichkeiten"  — …Verbesserungsmöglichkeiten… /  / TRANSLATED: 3268 known, 58 new /  / [31m1 screen(s) failed[0m; scripts/prove-search.ts failed (u16-100 is marked done):   [32m✓[0m the input is focused on open /   [32m✓[0m Enter on a result navigates (URL changed or overlay closed) /   [32m✓[0m Esc closes the overlay and returns focus to the trigger /  / [31m1 check(s) failed.[0m
+       see logs/a02-256-german-chart-of-accounts-audit-log-pdf-labels-timezone.log
+
+---- a03-257-hr-hours-pattern-prefill-numbers ----  started 10:50:24
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1852       10645         100        3543       13750
+Mem:           15603         971       11494          58        3533       14631
 -- top --
     ELAPSED   RSS COMMAND
-   01:10:31 627324 next-server (v1
-      00:12 198000 chrome-headless
-      02:30 170884 node
-      02:29 139008 chrome-headless
+      04:35 322464 claude
+ 8-04:19:32 120072 systemd-journal
+38-06:00:29 16432 systemd
+ 8-04:19:32 14492 systemd-resolve
 -- disk --
 /dev/sda1        75G   44G   29G  61% /
