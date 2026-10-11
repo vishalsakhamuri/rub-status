@@ -1,25 +1,15 @@
-generated: 2026-10-11 19:50:01 UTC
-done:   266
+generated: 2026-10-11 19:55:01 UTC
+done:   265
 queued: 1
-failed: 0
+failed: 1
 hold:   1
 
 -- queued --
 a04-258-digisign-signer-filing-tax-defaults-search.md
 -- failed --
+a03-257-hr-hours-pattern-prefill-numbers.md
 
 -- log --
-       moved to tasks/failed/ — the queue carries on
-       reason: completion marker + commit present, but the gate failed: scripts/prove-translated.ts failed (c00-213 is marked done):       "Verbesserungsmöglichkeiten"  — …Verbesserungsmöglichkeiten… /  / TRANSLATED: 3268 known, 58 new /  / [31m1 screen(s) failed[0m; scripts/prove-search.ts failed (u16-100 is marked done):   [32m✓[0m the input is focused on open /   [32m✓[0m Enter on a result navigates (URL changed or overlay closed) /   [32m✓[0m Esc closes the overlay and returns focus to the trigger /  / [31m1 check(s) failed.[0m
-       see logs/a02-256-german-chart-of-accounts-audit-log-pdf-labels-timezone.log
-
----- a03-257-hr-hours-pattern-prefill-numbers ----  started 10:50:24
-     . build/screens/journeys: diff since c6fe7e1bc6e4 touches something that could render — running fresh
-     . build: starting clean — zero orphaned servers, zero stray browsers
-     . build clean
-     . mem: build step peaked at 5536MB (cgroup MemoryCurrent, sampled every 3s)
-     . tests: starting clean — zero orphaned servers, zero stray browsers
-     . suite green: 3828 tests
      . mem: tests step peaked at 3910MB (cgroup MemoryCurrent, sampled every 3s)
      . screens: starting clean — zero orphaned servers, zero stray browsers
      . screens clean: 272 screens, 30 not reachable
@@ -29,15 +19,26 @@ a04-258-digisign-signer-filing-tax-defaults-search.md
      . mem: journeys step peaked at 5540MB (cgroup MemoryCurrent, sampled every 3s)
      . gate: starting clean — zero orphaned servers, zero stray browsers
      . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
+     . gate: 120 pass, 3 fail, 1 pending
+     ! GATE FAILED: scripts/prove-translated.ts failed (c00-213 is marked done):       "Verbesserungsmöglichkeiten"  — …Verbesserungsmöglichkeiten… /  / TRANSLATED: 3489 known, 6 new /  / [31m1 screen(s) failed[0m; scripts/prove-search.ts failed (u16-100 is marked done):   [32m✓[0m the input is focused on open /   [32m✓[0m Enter on a result navigates (URL changed or overlay closed) /   [32m✓[0m Esc closes the overlay and returns focus to the trigger /  / [31m1 check(s) failed.[0m
+     . mem: gate step peaked at 5058MB (cgroup MemoryCurrent, sampled every 3s)
+     ! GATE FAILED, caused by this task
+     ! task had self-moved to tasks/done/ — moved back to tasks/failed/, the gate said otherwise
+     [FAILED] (exit 97) 19:52:18
+       moved to tasks/failed/ — the queue carries on
+       reason: completion marker + commit present, but the gate failed: scripts/prove-translated.ts failed (c00-213 is marked done):       "Verbesserungsmöglichkeiten"  — …Verbesserungsmöglichkeiten… /  / TRANSLATED: 3489 known, 6 new /  / [31m1 screen(s) failed[0m; scripts/prove-search.ts failed (u16-100 is marked done):   [32m✓[0m the input is focused on open /   [32m✓[0m Enter on a result navigates (URL changed or overlay closed) /   [32m✓[0m Esc closes the overlay and returns focus to the trigger /  / [31m1 check(s) failed.[0m
+       see logs/a03-257-hr-hours-pattern-prefill-numbers.log
+
+---- a04-258-digisign-signer-filing-tax-defaults-search ----  started 19:52:20
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1849        9610         158        4640       13754
+Mem:           15603        1081       10376         129        4611       14521
 -- top --
     ELAPSED   RSS COMMAND
-   01:09:07 627268 next-server (v1
-      00:44 162124 node
-      00:06 158256 chrome-headless
-      00:43 138436 chrome-headless
+      02:39 369700 claude
+ 8-13:19:32 128848 systemd-journal
+38-15:00:29 16432 systemd
+ 8-13:19:32 14492 systemd-resolve
 -- disk --
 /dev/sda1        75G   45G   28G  62% /
