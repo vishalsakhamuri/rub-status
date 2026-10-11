@@ -1,4 +1,4 @@
-generated: 2026-10-11 23:45:01 UTC
+generated: 2026-10-11 23:50:01 UTC
 done:   267
 queued: 0
 failed: 0
@@ -8,9 +8,6 @@ hold:   1
 -- failed --
 
 -- log --
-     . journeys clean: 24 of 24 passed
-     . mem: journeys step peaked at 5540MB (cgroup MemoryCurrent, sampled every 3s)
-     . gate: starting clean — zero orphaned servers, zero stray browsers
      . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
      . gate: 120 pass, 3 fail, 1 pending
      ! GATE FAILED: scripts/prove-translated.ts failed (c00-213 is marked done):       "Verbesserungsmöglichkeiten"  — …Verbesserungsmöglichkeiten… /  / TRANSLATED: 3489 known, 6 new /  / [31m1 screen(s) failed[0m; scripts/prove-search.ts failed (u16-100 is marked done):   [32m✓[0m the input is focused on open /   [32m✓[0m Enter on a result navigates (URL changed or overlay closed) /   [32m✓[0m Esc closes the overlay and returns focus to the trigger /  / [31m1 check(s) failed.[0m
@@ -28,15 +25,18 @@ hold:   1
      . build clean
      . mem: build step peaked at 5177MB (cgroup MemoryCurrent, sampled every 3s)
      . tests: starting clean — zero orphaned servers, zero stray browsers
+     . suite green: 3832 tests
+     . mem: tests step peaked at 3572MB (cgroup MemoryCurrent, sampled every 3s)
+     . screens: starting clean — zero orphaned servers, zero stray browsers
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1581       10463         119        4015       14021
+Mem:           15603        4416        8306          55        3272       11186
 -- top --
     ELAPSED   RSS COMMAND
-      33:54 664648 node
-      00:05 153752 node
- 8-17:09:32 128120 systemd-journal
-      33:55 78176 npm exec vitest
+      00:17 2179720 node
+      00:50 1461116 node
+      00:43 160872 node
+ 8-17:14:32 129600 systemd-journal
 -- disk --
-/dev/sda1        75G   51G   21G  71% /
+/dev/sda1        75G   45G   28G  62% /
