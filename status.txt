@@ -1,4 +1,4 @@
-generated: 2026-10-11 11:15:01 UTC
+generated: 2026-10-11 11:20:01 UTC
 done:   264
 queued: 2
 failed: 1
@@ -34,12 +34,12 @@ a02-256-german-chart-of-accounts-audit-log-pdf-labels-timezone.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3368        9045          60        3587       12235
+Mem:           15603        1154       11258          61        3589       14448
 -- top --
     ELAPSED   RSS COMMAND
-      00:44 2231864 node
-      24:35 476424 claude
- 8-04:39:32 120256 systemd-journal
-      00:44 76264 npm exec tsc --
+      29:34 504072 claude
+ 8-04:44:32 120296 systemd-journal
+38-06:25:29 16432 systemd
+ 8-04:44:32 14492 systemd-resolve
 -- disk --
 /dev/sda1        75G   44G   29G  61% /
