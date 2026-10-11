@@ -1,4 +1,4 @@
-generated: 2026-10-11 08:00:01 UTC
+generated: 2026-10-11 08:05:01 UTC
 done:   263
 queued: 3
 failed: 1
@@ -35,12 +35,12 @@ a01-255-journals-payroll-posting-einvoice-oversell-disposal.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2802       10482          68        2724       12801
+Mem:           15603        1599       11684          95        2752       14003
 -- top --
     ELAPSED   RSS COMMAND
-      00:11 576032 node
-   05:27:22 423332 claude
-      00:01 267284 node
-      00:01 260212 node
+   05:32:23 433864 claude
+      05:12 406680 node
+      00:11 177960 node
+ 8-01:29:32 102976 systemd-journal
 -- disk --
 /dev/sda1        75G   50G   23G  69% /
