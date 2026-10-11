@@ -1,4 +1,4 @@
-generated: 2026-10-11 12:55:01 UTC
+generated: 2026-10-11 13:00:01 UTC
 done:   264
 queued: 2
 failed: 1
@@ -34,12 +34,12 @@ a02-256-german-chart-of-accounts-audit-log-pdf-labels-timezone.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3890        8336         494        4207       11712
+Mem:           15603        2035       10192          82        3795       13568
 -- top --
     ELAPSED   RSS COMMAND
-      04:06 1457300 node
-   02:04:34 514464 claude
-      19:57 500900 next-server (v1
-      01:31 229928 node
+   02:09:35 531140 claude
+      24:57 457860 next-server (v1
+      02:32 219344 node
+      02:30 139352 chrome-headless
 -- disk --
 /dev/sda1        75G   44G   29G  61% /
