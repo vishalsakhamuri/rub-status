@@ -1,4 +1,4 @@
-generated: 2026-10-11 09:30:01 UTC
+generated: 2026-10-11 09:35:01 UTC
 done:   265
 queued: 2
 failed: 0
@@ -10,9 +10,6 @@ a04-258-digisign-signer-filing-tax-defaults-search.md
 -- failed --
 
 -- log --
-     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
-     . gate: 118 pass, 4 fail, 1 pending
-     ! GATE FAILED: scripts/prove-translated.ts failed (c00-213 is marked done):       "Verbesserungsmöglichkeiten"  — …Verbesserungsmöglichkeiten… /  / TRANSLATED: 3263 known, 6 new /  / [31m1 screen(s) failed[0m; scripts/prove-search.ts failed (u16-100 is marked done):   [32m✓[0m the input is focused on open /   [32m✓[0m Enter on a result navigates (URL changed or overlay closed) /   [32m✓[0m Esc closes the overlay and returns focus to the trigger /  / [31m1 check(s) failed.[0m; scripts/prove-form-preservation.ts failed (a01-211 is marked done):   [32m✓[0m Item stock count: the badge request actually resolved during this check /   [32m✓[0m Item stock count: field holds exactly the typed string after the badge counters loaded — typed then before="QA-Preserve-2026aZ9x", after="QA-Preserve-2026aZ9x" /   [31m✗[0m Asset "Assign" panel — location: field found on the page — selector #holderLocation never appeared /  / [31mFAIL (1)[0m — prove-form-preservation
      . mem: gate step peaked at 4458MB (cgroup MemoryCurrent, sampled every 3s)
      ! GATE FAILED, caused by this task
      ! task had self-moved to tasks/done/ — moved back to tasks/failed/, the gate said otherwise
@@ -30,15 +27,18 @@ a04-258-digisign-signer-filing-tax-defaults-search.md
      . suite green: 3825 tests
      . mem: tests step peaked at 2657MB (cgroup MemoryCurrent, sampled every 3s)
      . screens: starting clean — zero orphaned servers, zero stray browsers
+     . screens clean: 272 screens, 30 not reachable
+     . mem: screens step peaked at 4496MB (cgroup MemoryCurrent, sampled every 3s)
+     . journeys: starting clean — zero orphaned servers, zero stray browsers
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        4042        8948          94        3044       11560
+Mem:           15603        1762       11027          84        3235       13840
 -- top --
     ELAPSED   RSS COMMAND
-      08:18 1330056 next-server (v1
-      01:26 1232328 chrome-headless
-      08:16 441140 node
-      08:13 383660 chrome-headless
+      02:42 657732 next-server (v1
+      00:24 213104 chrome-headless
+      04:12 199276 node
+      02:39 144328 chrome-headless
 -- disk --
 /dev/sda1        75G   44G   29G  61% /
