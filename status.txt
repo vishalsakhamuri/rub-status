@@ -1,4 +1,4 @@
-generated: 2026-10-11 23:05:01 UTC
+generated: 2026-10-11 23:10:01 UTC
 done:   266
 queued: 1
 failed: 0
@@ -9,8 +9,6 @@ a04-258-digisign-signer-filing-tax-defaults-search.md
 -- failed --
 
 -- log --
-     . mem: tests step peaked at 3910MB (cgroup MemoryCurrent, sampled every 3s)
-     . screens: starting clean — zero orphaned servers, zero stray browsers
      . screens clean: 272 screens, 30 not reachable
      . mem: screens step peaked at 5519MB (cgroup MemoryCurrent, sampled every 3s)
      . journeys: starting clean — zero orphaned servers, zero stray browsers
@@ -29,15 +27,17 @@ a04-258-digisign-signer-filing-tax-defaults-search.md
        see logs/a03-257-hr-hours-pattern-prefill-numbers.log
 
 ---- a04-258-digisign-signer-filing-tax-defaults-search ----  started 19:52:20
+     . build/screens/journeys: diff since a89bdf2ad173 touches something that could render — running fresh
+     . build: starting clean — zero orphaned servers, zero stray browsers
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1671       10643         119        3744       13931
+Mem:           15603        3233        9065          55        3697       12369
 -- top --
     ELAPSED   RSS COMMAND
-   03:12:38 438848 claude
-      34:26 425080 node
-      00:01 142428 node
- 8-16:29:32 126872 systemd-journal
+      00:19 2349328 node
+      00:15 183408 node
+      00:20 129252 node
+ 8-16:34:32 127000 systemd-journal
 -- disk --
-/dev/sda1        75G   51G   21G  71% /
+/dev/sda1        75G   51G   22G  71% /
