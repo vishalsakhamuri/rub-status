@@ -1,4 +1,4 @@
-generated: 2026-10-11 22:25:02 UTC
+generated: 2026-10-11 22:30:01 UTC
 done:   266
 queued: 1
 failed: 0
@@ -32,12 +32,12 @@ a04-258-digisign-signer-filing-tax-defaults-search.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        7710        2870          54        5414        7893
+Mem:           15603        9749        2578          69        3681        5854
 -- top --
     ELAPSED   RSS COMMAND
-      00:44 6604696 next-server (v1
-   02:32:39 308812 claude
-      00:36 160484 node
-      00:45 127524 node
+      05:44 8114992 next-server (v1
+      00:09 390756 node
+   02:37:39 389584 claude
+      00:09 342748 node
 -- disk --
-/dev/sda1        75G   51G   22G  71% /
+/dev/sda1        75G   51G   21G  71% /
