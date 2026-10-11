@@ -1,4 +1,4 @@
-generated: 2026-10-11 20:20:01 UTC
+generated: 2026-10-11 20:25:02 UTC
 done:   265
 queued: 1
 failed: 1
@@ -33,12 +33,12 @@ a03-257-hr-hours-pattern-prefill-numbers.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3303        8136         129        4630       12300
+Mem:           15603        1611        9828         132        4633       13992
 -- top --
     ELAPSED   RSS COMMAND
-      00:25 2053480 node
-      27:38 518940 claude
- 8-13:44:32 129104 systemd-journal
-      00:25 76480 npm exec tsc --
+      32:39 559852 claude
+      00:02 267232 node
+      00:01 142728 node
+ 8-13:49:33 129104 systemd-journal
 -- disk --
 /dev/sda1        75G   45G   28G  62% /
