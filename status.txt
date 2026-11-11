@@ -1,19 +1,15 @@
-generated: 2026-11-11 20:00:01 UTC
+generated: 2026-11-11 20:05:01 UTC
 done:   267
-queued: 0
+queued: 2
 failed: 0
 hold:   1
 
 -- queued --
+a00-259.md
+a01-260.md
 -- failed --
 
 -- log --
-     . gate: starting clean — zero orphaned servers, zero stray browsers
-     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
-     . gate: 120 pass, 3 fail, 1 pending
-     ! GATE FAILED: scripts/prove-translated.ts failed (c00-213 is marked done):       "decide	Review"  — …450 still full	—	Due — decide	Review… /       "decide	Review"  — …450 mailbox full, try later	—	Due — decide	Review… /       "decide	Review"  — …550 no such user	—	Due — decide	Review… /       "decide	Review"  — …550 mailbox does not exist	—	Due — decide	Review… /       "decide	Review"  — …550 mailbox does not exist	—	Due — decide	Review…; scripts/prove-search.ts failed (u16-100 is marked done):   [32m✓[0m the input is focused on open /   [32m✓[0m Enter on a result navigates (URL changed or overlay closed) /   [32m✓[0m Esc closes the overlay and returns focus to the trigger /  / [31m1 check(s) failed.[0m
-     . mem: gate step peaked at 3900MB (cgroup MemoryCurrent, sampled every 3s)
-     ! GATE FAILED, caused by this task
      ! task had self-moved to tasks/done/ — moved back to tasks/failed/, the gate said otherwise
      [FAILED] (exit 97) 01:20:17
        moved to tasks/failed/ — the queue carries on
@@ -28,15 +24,21 @@ hold:   1
   failed tasks are in tasks/failed/ — nothing was deleted:
     a04-258-digisign-signer-filing-tax-defaults-search.md
 ================================================
+================================================
+  RunUrBusiness — draining the task queue
+  started Wed 11 Nov 20:01
+================================================
+
+---- a00-259 ----  started 20:01:24
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603         665       10828           4        4453       14937
+Mem:           15603         892       10556           6        4500       14710
 -- top --
     ELAPSED   RSS COMMAND
- 5-13:54:14 98264 systemd-journal
-69-15:05:29 16228 systemd
- 5-13:54:14 14804 systemd-resolve
- 5-13:54:14 12380 systemd-network
+      03:34 334548 claude
+ 5-13:59:14 98456 systemd-journal
+69-15:10:29 16228 systemd
+ 5-13:59:14 14804 systemd-resolve
 -- disk --
-/dev/sda1        75G   45G   27G  63% /
+/dev/sda1        75G   45G   28G  63% /
