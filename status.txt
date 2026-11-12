@@ -1,4 +1,4 @@
-generated: 2026-11-12 08:00:01 UTC
+generated: 2026-11-12 08:05:01 UTC
 done:   268
 queued: 1
 failed: 0
@@ -9,9 +9,6 @@ a01-260.md
 -- failed --
 
 -- log --
-  RunUrBusiness — draining the task queue
-  started Wed 11 Nov 20:01
-================================================
 
 ---- a00-259 ----  started 20:01:24
      ! received SIGTERM — cleaning up before exit
@@ -29,15 +26,18 @@ a01-260.md
      . suite green: 3870 tests
      . mem: tests step peaked at 3882MB (cgroup MemoryCurrent, sampled every 3s)
      . screens: starting clean — zero orphaned servers, zero stray browsers
+     . screens clean: 273 screens, 30 not reachable
+     . mem: screens step peaked at 4252MB (cgroup MemoryCurrent, sampled every 3s)
+     . journeys: starting clean — zero orphaned servers, zero stray browsers
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        4160        8400          64        3445       11442
+Mem:           15603        1930       10629          52        3435       13672
 -- top --
     ELAPSED   RSS COMMAND
-      08:26 1399412 next-server (v1
-      01:28 1293820 chrome-headless
-      08:23 438280 node
-      08:21 415204 chrome-headless
+      02:42 886956 next-server (v1
+      00:38 219304 chrome-headless
+      04:16 198876 node
+      02:39 144348 chrome-headless
 -- disk --
 /dev/sda1        75G   46G   27G  64% /
