@@ -1,4 +1,4 @@
-generated: 2026-11-12 12:05:01 UTC
+generated: 2026-11-12 12:10:01 UTC
 done:   269
 queued: 0
 failed: 0
@@ -8,10 +8,6 @@ hold:   1
 -- failed --
 
 -- log --
-     . mem: journeys step peaked at 4761MB (cgroup MemoryCurrent, sampled every 3s)
-     . gate: starting clean — zero orphaned servers, zero stray browsers
-     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
-================================================
   RunUrBusiness — draining the task queue
   started Thu 12 Nov 08:28
 ================================================
@@ -28,15 +24,19 @@ hold:   1
      . screens clean: 273 screens, 30 not reachable
      . mem: screens step peaked at 4788MB (cgroup MemoryCurrent, sampled every 3s)
      . journeys: starting clean — zero orphaned servers, zero stray browsers
+     . journeys clean: 24 of 24 passed
+     . mem: journeys step peaked at 4950MB (cgroup MemoryCurrent, sampled every 3s)
+     . gate: starting clean — zero orphaned servers, zero stray browsers
+     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1702       10468          85        3857       13900
+Mem:           15603        1336       10833          54        3826       14266
 -- top --
     ELAPSED   RSS COMMAND
-      04:24 634884 next-server (v1
-      05:59 235932 node
-      00:04 159136 chrome-headless
-      04:22 146216 chrome-headless
+      02:46 335904 next-server (v1
+      00:10 149496 node
+      00:10 141888 node
+      02:46 129460 node
 -- disk --
 /dev/sda1        75G   46G   27G  64% /
