@@ -1,4 +1,4 @@
-generated: 2026-11-12 09:05:01 UTC
+generated: 2026-11-12 09:10:01 UTC
 done:   268
 queued: 1
 failed: 0
@@ -32,12 +32,12 @@ a01-260.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1209       10992          50        3790       14393
+Mem:           15603        3740        8461          50        3790       11862
 -- top --
     ELAPSED   RSS COMMAND
-      36:26 624916 claude
- 6-02:59:14 52708 systemd-journal
-70-04:10:29 16128 systemd
- 6-02:59:14 14208 systemd-resolve
+      00:40 2520792 node
+      41:26 608204 claude
+      00:40 77996 npm exec tsc --
+ 6-03:04:14 52708 systemd-journal
 -- disk --
 /dev/sda1        75G   46G   27G  64% /
