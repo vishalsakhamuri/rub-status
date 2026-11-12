@@ -1,4 +1,4 @@
-generated: 2026-11-12 07:50:02 UTC
+generated: 2026-11-12 07:55:01 UTC
 done:   268
 queued: 1
 failed: 0
@@ -9,9 +9,6 @@ a01-260.md
 -- failed --
 
 -- log --
-    a04-258-digisign-signer-filing-tax-defaults-search.md
-================================================
-================================================
   RunUrBusiness — draining the task queue
   started Wed 11 Nov 20:01
 ================================================
@@ -29,15 +26,18 @@ a01-260.md
      . build clean
      . mem: build step peaked at 5567MB (cgroup MemoryCurrent, sampled every 3s)
      . tests: starting clean — zero orphaned servers, zero stray browsers
+     . suite green: 3870 tests
+     . mem: tests step peaked at 3882MB (cgroup MemoryCurrent, sampled every 3s)
+     . screens: starting clean — zero orphaned servers, zero stray browsers
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1541        9822          77        4655       14061
+Mem:           15603        2721        9843          56        3434       12882
 -- top --
     ELAPSED   RSS COMMAND
-      37:40 663420 node
-      00:02 210824 node
- 6-01:44:14 83128 systemd-journal
-      37:40 77720 npm exec vitest
+      03:26 1194524 next-server (v1
+      03:22 530040 chrome-headless
+      03:24 303580 node
+      03:22 145364 chrome-headless
 -- disk --
-/dev/sda1        75G   47G   26G  65% /
+/dev/sda1        75G   46G   27G  64% /
