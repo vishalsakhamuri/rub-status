@@ -1,19 +1,14 @@
-generated: 2026-11-12 20:45:01 UTC
+generated: 2026-11-12 20:50:01 UTC
 done:   269
-queued: 0
+queued: 1
 failed: 0
 hold:   1
 
 -- queued --
+a01b-260.md
 -- failed --
 
 -- log --
-     . gate: starting clean — zero orphaned servers, zero stray browsers
-     . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
-     . gate: 123 pass, 4 fail, 1 pending
-     ! GATE FAILED: scripts/prove-translated.ts failed (c00-213 is marked done):       "Verbesserungsmöglichkeiten"  — …Verbesserungsmöglichkeiten… /  / TRANSLATED: 3655 known, 6 new /  / [31m1 screen(s) failed[0m; scripts/prove-search.ts failed (u16-100 is marked done):   [32m✓[0m the input is focused on open /   [32m✓[0m Enter on a result navigates (URL changed or overlay closed) /   [32m✓[0m Esc closes the overlay and returns focus to the trigger /  / [31m1 check(s) failed.[0m; scripts/prove-form-preservation.ts failed (a01-211 is marked done):   [32m✓[0m Item stock count: the badge request actually resolved during this check /   [32m✓[0m Item stock count: field holds exactly the typed string after the badge counters loaded — typed then before="QA-Preserve-2026aZ9x", after="QA-Preserve-2026aZ9x" /   [31m✗[0m Asset "Assign" panel — location: field found on the page — selector #holderLocation never appeared /  / [31mFAIL (1)[0m — prove-form-preservation
-     . mem: gate step peaked at 5325MB (cgroup MemoryCurrent, sampled every 3s)
-     ! GATE FAILED, caused by this task
      ! task had self-moved to tasks/done/ — moved back to tasks/failed/, the gate said otherwise
      [FAILED] (exit 97) 13:18:09
        moved to tasks/failed/ — the queue carries on
@@ -28,15 +23,21 @@ hold:   1
   failed tasks are in tasks/failed/ — nothing was deleted:
     a01-260.md
 ================================================
+================================================
+  RunUrBusiness — draining the task queue
+  started Thu 12 Nov 20:49
+================================================
+
+---- a01b-260 ----  started 20:49:44
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603         717       11090          54        4188       14885
+Mem:           15603         892       10913          54        4190       14710
 -- top --
     ELAPSED   RSS COMMAND
- 6-14:39:14 82244 systemd-journal
-70-15:50:29 16148 systemd
- 6-14:39:14 14208 systemd-resolve
- 6-14:39:13 12256 systemd-network
+      00:14 285396 claude
+ 6-14:44:13 84404 systemd-journal
+70-15:55:29 16156 systemd
+ 6-14:44:13 14208 systemd-resolve
 -- disk --
 /dev/sda1        75G   46G   26G  65% /
