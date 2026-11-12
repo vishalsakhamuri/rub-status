@@ -1,4 +1,4 @@
-generated: 2026-11-12 11:10:01 UTC
+generated: 2026-11-12 11:15:01 UTC
 done:   269
 queued: 0
 failed: 0
@@ -8,9 +8,6 @@ hold:   1
 -- failed --
 
 -- log --
-     . mem: build step peaked at 5567MB (cgroup MemoryCurrent, sampled every 3s)
-     . tests: starting clean — zero orphaned servers, zero stray browsers
-     . suite green: 3870 tests
      . mem: tests step peaked at 3882MB (cgroup MemoryCurrent, sampled every 3s)
      . screens: starting clean — zero orphaned servers, zero stray browsers
      . screens clean: 273 screens, 30 not reachable
@@ -28,15 +25,18 @@ hold:   1
 ---- a01-260 ----  started 08:28:32
      . build/screens/journeys: diff since a310bd4471b5 touches something that could render — running fresh
      . build: starting clean — zero orphaned servers, zero stray browsers
+     . build clean
+     . mem: build step peaked at 4889MB (cgroup MemoryCurrent, sampled every 3s)
+     . tests: starting clean — zero orphaned servers, zero stray browsers
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3407        8771          53        3817       12195
+Mem:           15603        1490       10687         101        3865       14112
 -- top --
     ELAPSED   RSS COMMAND
-      01:28 1634128 node
-      00:01 218476 node
-      00:01 217892 node
-      00:01 216144 node
+      04:58 608836 node
+      00:44 211548 node
+      04:58 77828 npm exec vitest
+ 6-05:09:13 54120 systemd-journal
 -- disk --
 /dev/sda1        75G   46G   27G  64% /
