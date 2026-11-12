@@ -1,4 +1,4 @@
-generated: 2026-11-12 03:45:01 UTC
+generated: 2026-11-12 03:50:01 UTC
 done:   267
 queued: 2
 failed: 0
@@ -10,7 +10,6 @@ a01-260.md
 -- failed --
 
 -- log --
-     ! task had self-moved to tasks/done/ — moved back to tasks/failed/, the gate said otherwise
      [FAILED] (exit 97) 01:20:17
        moved to tasks/failed/ — the queue carries on
        reason: completion marker + commit present, but the gate failed: scripts/prove-translated.ts failed (c00-213 is marked done):       "decide	Review"  — …450 still full	—	Due — decide	Review… /       "decide	Review"  — …450 mailbox full, try later	—	Due — decide	Review… /       "decide	Review"  — …550 no such user	—	Due — decide	Review… /       "decide	Review"  — …550 mailbox does not exist	—	Due — decide	Review… /       "decide	Review"  — …550 mailbox does not exist	—	Due — decide	Review…; scripts/prove-search.ts failed (u16-100 is marked done):   [32m✓[0m the input is focused on open /   [32m✓[0m Enter on a result navigates (URL changed or overlay closed) /   [32m✓[0m Esc closes the overlay and returns focus to the trigger /  / [31m1 check(s) failed.[0m
@@ -30,15 +29,16 @@ a01-260.md
 ================================================
 
 ---- a00-259 ----  started 20:01:24
+     ! received SIGTERM — cleaning up before exit
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        2010        9213          57        4775       13592
+Mem:           15603        1105       10119          49        4767       14498
 -- top --
     ELAPSED   RSS COMMAND
-      42:35 565620 next-server (v1
-   07:43:35 430028 claude
-      03:53 219620 node
-      02:49 169800 chrome-headless
+      08:53 220744 node
+      07:49 138936 chrome-headless
+      08:53 131212 node
+      39:38 102412 node
 -- disk --
 /dev/sda1        75G   53G   19G  74% /
