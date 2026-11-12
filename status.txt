@@ -1,4 +1,4 @@
-generated: 2026-11-12 11:45:01 UTC
+generated: 2026-11-12 11:50:01 UTC
 done:   269
 queued: 0
 failed: 0
@@ -8,9 +8,6 @@ hold:   1
 -- failed --
 
 -- log --
-     . mem: tests step peaked at 3882MB (cgroup MemoryCurrent, sampled every 3s)
-     . screens: starting clean — zero orphaned servers, zero stray browsers
-     . screens clean: 273 screens, 30 not reachable
      . mem: screens step peaked at 4252MB (cgroup MemoryCurrent, sampled every 3s)
      . journeys: starting clean — zero orphaned servers, zero stray browsers
      . journeys clean: 24 of 24 passed
@@ -28,15 +25,18 @@ hold:   1
      . build clean
      . mem: build step peaked at 4889MB (cgroup MemoryCurrent, sampled every 3s)
      . tests: starting clean — zero orphaned servers, zero stray browsers
+     . suite green: 3886 tests
+     . mem: tests step peaked at 3218MB (cgroup MemoryCurrent, sampled every 3s)
+     . screens: starting clean — zero orphaned servers, zero stray browsers
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1624       10550         118        3886       13978
+Mem:           15603        1566       10608          83        3851       14036
 -- top --
     ELAPSED   RSS COMMAND
-      34:58 688836 node
-      00:03 257332 node
-      34:58 77828 npm exec vitest
- 6-05:39:13 55020 systemd-journal
+      00:19 431580 next-server (v1
+      00:15 186688 chrome-headless
+      00:17 186472 node
+      00:15 137092 chrome-headless
 -- disk --
 /dev/sda1        75G   46G   27G  64% /
