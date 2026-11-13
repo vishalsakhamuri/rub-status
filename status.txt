@@ -1,25 +1,15 @@
-generated: 2026-11-13 05:40:01 UTC
-done:   270
+generated: 2026-11-13 05:45:01 UTC
+done:   269
 queued: 1
-failed: 0
+failed: 1
 hold:   1
 
 -- queued --
 a07-266.md
 -- failed --
+a01b-260.md
 
 -- log --
-  RunUrBusiness — draining the task queue
-  started Thu 12 Nov 20:49
-================================================
-
----- a01b-260 ----  started 20:49:44
-     . build/screens/journeys: diff since 5a203b968fa0 touches something that could render — running fresh
-     . build: starting clean — zero orphaned servers, zero stray browsers
-     . build clean
-     . mem: build step peaked at 4689MB (cgroup MemoryCurrent, sampled every 3s)
-     . tests: starting clean — zero orphaned servers, zero stray browsers
-     . suite green: 3909 tests
      . mem: tests step peaked at 3360MB (cgroup MemoryCurrent, sampled every 3s)
      . screens: starting clean — zero orphaned servers, zero stray browsers
      . screens clean: 275 screens, 30 not reachable
@@ -29,15 +19,26 @@ a07-266.md
      . mem: journeys step peaked at 4909MB (cgroup MemoryCurrent, sampled every 3s)
      . gate: starting clean — zero orphaned servers, zero stray browsers
      . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
+     . gate: 125 pass, 3 fail, 1 pending
+     ! GATE FAILED: scripts/prove-translated.ts failed (c00-213 is marked done):       "Filing failed"  — …Filing failed — zugferd-einfach… /       "decide	File"  — …no destination folder was set before this envelope was sent	—	Due — decide	File… /       "Filing failed"  — …Filing failed — journeys self-sign 1788790342038… /       "decide	File"  — …no destination folder was set before this envelope was sent	—	Due — decide	File… /       "Delivery failed"  — …Delivery failed — Proof envelope — mail failure must not undo this…; scripts/prove-search.ts failed (u16-100 is marked done):   [32m✓[0m the input is focused on open /   [32m✓[0m Enter on a result navigates (URL changed or overlay closed) /   [32m✓[0m Esc closes the overlay and returns focus to the trigger /  / [31m1 check(s) failed.[0m
+     . mem: gate step peaked at 5474MB (cgroup MemoryCurrent, sampled every 3s)
+     ! GATE FAILED, caused by this task
+     ! task had self-moved to tasks/done/ — moved back to tasks/failed/, the gate said otherwise
+     [FAILED] (exit 97) 05:43:18
+       moved to tasks/failed/ — the queue carries on
+       reason: completion marker + commit present, but the gate failed: scripts/prove-translated.ts failed (c00-213 is marked done):       "Filing failed"  — …Filing failed — zugferd-einfach… /       "decide	File"  — …no destination folder was set before this envelope was sent	—	Due — decide	File… /       "Filing failed"  — …Filing failed — journeys self-sign 1788790342038… /       "decide	File"  — …no destination folder was set before this envelope was sent	—	Due — decide	File… /       "Delivery failed"  — …Delivery failed — Proof envelope — mail failure must not undo this…; scripts/prove-search.ts failed (u16-100 is marked done):   [32m✓[0m the input is focused on open /   [32m✓[0m Enter on a result navigates (URL changed or overlay closed) /   [32m✓[0m Esc closes the overlay and returns focus to the trigger /  / [31m1 check(s) failed.[0m
+       see logs/a01b-260.log
+
+---- a07-266 ----  started 05:43:20
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1642       10069         135        4366       13960
+Mem:           15603        1061       10583         135        4433       14541
 -- top --
     ELAPSED   RSS COMMAND
-   01:07:18 580948 next-server (v1
-      00:04 148608 node
-      00:04 135152 node
-   01:07:18 129352 node
+      01:39 365084 claude
+ 6-23:39:13 100932 systemd-journal
+71-00:50:29 16212 systemd
+ 6-23:39:13 14208 systemd-resolve
 -- disk --
 /dev/sda1        75G   47G   26G  65% /
