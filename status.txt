@@ -1,4 +1,4 @@
-generated: 2026-11-13 13:20:01 UTC
+generated: 2026-11-13 13:25:01 UTC
 done:   269
 queued: 1
 failed: 1
@@ -10,8 +10,6 @@ a07-266.md
 a01b-260.md
 
 -- log --
-     . mem: tests step peaked at 3360MB (cgroup MemoryCurrent, sampled every 3s)
-     . screens: starting clean — zero orphaned servers, zero stray browsers
      . screens clean: 275 screens, 30 not reachable
      . mem: screens step peaked at 4725MB (cgroup MemoryCurrent, sampled every 3s)
      . journeys: starting clean — zero orphaned servers, zero stray browsers
@@ -30,15 +28,17 @@ a01b-260.md
        see logs/a01b-260.log
 
 ---- a07-266 ----  started 05:43:20
+     . build/screens/journeys: diff since 937ac017c03f touches something that could render — running fresh
+     . build: starting clean — zero orphaned servers, zero stray browsers
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1359        9616         143        5110       14243
+Mem:           15603        4672        6303         143        5110       10930
 -- top --
     ELAPSED   RSS COMMAND
-   07:36:38 670444 claude
- 7-07:14:13 115408 systemd-journal
-71-08:25:28 16252 systemd
- 7-07:14:13 14208 systemd-resolve
+      00:44 2610600 node
+      01:18 1250856 node
+      01:13 165792 node
+      01:18 128916 node
 -- disk --
 /dev/sda1        75G   47G   25G  66% /
