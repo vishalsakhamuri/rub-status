@@ -1,4 +1,4 @@
-generated: 2026-11-13 04:20:01 UTC
+generated: 2026-11-13 04:25:01 UTC
 done:   270
 queued: 1
 failed: 0
@@ -9,9 +9,6 @@ a07-266.md
 -- failed --
 
 -- log --
-  finished Thu 12 Nov 13:18
-  logs in logs/  ·  tell Claude in the chat
-
   failed tasks are in tasks/failed/ — nothing was deleted:
     a01-260.md
 ================================================
@@ -29,15 +26,18 @@ a07-266.md
      . suite green: 3909 tests
      . mem: tests step peaked at 3360MB (cgroup MemoryCurrent, sampled every 3s)
      . screens: starting clean — zero orphaned servers, zero stray browsers
+     . screens clean: 275 screens, 30 not reachable
+     . mem: screens step peaked at 4725MB (cgroup MemoryCurrent, sampled every 3s)
+     . journeys: starting clean — zero orphaned servers, zero stray browsers
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        3056        8978         166        4074       12546
+Mem:           15603        3691        8600         135        3786       11911
 -- top --
     ELAPSED   RSS COMMAND
-      05:07 1151112 next-server (v1
-      05:02 760728 chrome-headless
-      05:04 322536 node
-      05:03 142548 chrome-headless
+      00:27 2624464 node
+      00:31 214820 node
+      00:21 193188 node
+      00:27 129184 node
 -- disk --
-/dev/sda1        75G   47G   26G  65% /
+/dev/sda1        75G   46G   26G  65% /
