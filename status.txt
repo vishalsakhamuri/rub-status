@@ -1,4 +1,4 @@
-generated: 2026-11-13 14:00:01 UTC
+generated: 2026-11-13 14:05:01 UTC
 done:   271
 queued: 0
 failed: 0
@@ -8,9 +8,6 @@ hold:   1
 -- failed --
 
 -- log --
-     . journeys clean: 24 of 24 passed
-     . mem: journeys step peaked at 4909MB (cgroup MemoryCurrent, sampled every 3s)
-     . gate: starting clean — zero orphaned servers, zero stray browsers
      . gate: nothing answering :3000 — starting one for the prove-* sweep (a05-141 D)
      . gate: 125 pass, 3 fail, 1 pending
      ! GATE FAILED: scripts/prove-translated.ts failed (c00-213 is marked done):       "Filing failed"  — …Filing failed — zugferd-einfach… /       "decide	File"  — …no destination folder was set before this envelope was sent	—	Due — decide	File… /       "Filing failed"  — …Filing failed — journeys self-sign 1788790342038… /       "decide	File"  — …no destination folder was set before this envelope was sent	—	Due — decide	File… /       "Delivery failed"  — …Delivery failed — Proof envelope — mail failure must not undo this…; scripts/prove-search.ts failed (u16-100 is marked done):   [32m✓[0m the input is focused on open /   [32m✓[0m Enter on a result navigates (URL changed or overlay closed) /   [32m✓[0m Esc closes the overlay and returns focus to the trigger /  / [31m1 check(s) failed.[0m
@@ -28,16 +25,18 @@ hold:   1
      . build clean
      . mem: build step peaked at 5725MB (cgroup MemoryCurrent, sampled every 3s)
      . tests: starting clean — zero orphaned servers, zero stray browsers
+     . suite green: 3909 tests
+     . mem: tests step peaked at 4259MB (cgroup MemoryCurrent, sampled every 3s)
+     . screens: starting clean — zero orphaned servers, zero stray browsers
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        1693        9281         208        5176       13909
+Mem:           15603        1850        9125         177        5145       13753
 -- top --
     ELAPSED   RSS COMMAND
-      34:46 656912 node
- 7-07:54:13 115616 systemd-journal
-      34:46 78828 npm exec vitest
-      00:00 29532 node
+      00:30 517772 next-server (v1
+      00:26 313496 chrome-headless
+      00:28 195704 node
+      00:26 138484 chrome-headless
 -- disk --
 /dev/sda1        75G   47G   25G  66% /
-
