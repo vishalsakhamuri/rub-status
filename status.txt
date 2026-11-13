@@ -1,4 +1,4 @@
-generated: 2026-11-13 02:40:01 UTC
+generated: 2026-11-13 02:45:01 UTC
 done:   269
 queued: 2
 failed: 0
@@ -33,12 +33,12 @@ a07-266.md
 
 -- memory --
                total        used        free      shared  buff/cache   available
-Mem:           15603        5007        7063         833        4704       10595
+Mem:           15603        2132        9938         153        4024       13470
 -- top --
     ELAPSED   RSS COMMAND
-      04:25 2226480 node
-   05:50:15 599076 claude
-      20:09 512324 next-server (v1
-      01:34 227224 node
+   05:55:14 615940 claude
+      25:09 459608 next-server (v1
+      02:53 223476 node
+      02:51 140648 chrome-headless
 -- disk --
 /dev/sda1        75G   47G   26G  65% /
